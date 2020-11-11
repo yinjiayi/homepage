@@ -1,0 +1,248 @@
+.index{
+    position: relative;
+}
+
+.indexBanner{
+    width: 100%;
+    height: 526px;
+    background-image: url(./../../img/index/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    background-position: center;
+    position: relative;
+}
+
+.indexBannerWrapper{
+    position: relative;
+    padding-top: 64px;
+}
+
+.indexText{
+    position: relative;
+    background-image: url(./../../img/index/text.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1004px;
+    height: 237px;
+
+}
+
+.indexButton{
+    position: relative;
+    width: 350px;
+	height: 54px;
+	background-image: linear-gradient(90deg, 
+		#006cff 0%, 
+		#00b5f2 100%), 
+	linear-gradient(
+		#006cff, 
+		#006cff);
+	background-blend-mode: normal, 
+		normal;
+    border-radius: 27px;
+    text-align: center;
+    margin: 44px auto 0;
+    cursor: pointer;
+}
+
+.indexButtonText{
+    width: auto;
+    position: relative;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 52px;
+    letter-spacing: 4px;
+    color: #ffffff;
+    
+}
+
+.indexButtonText::after{
+    content:url(./../../img/index/button.png);
+    position: absolute;
+  
+    right: -13px;
+    top: -10px;
+}
+.indexOne{
+    position: relative;
+    padding-top: 64px;
+    text-align: center;
+    padding-bottom: 90px;
+}
+
+
+.indexOneTitle{
+    position: relative;
+    font-size: 36px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #333333;
+    text-align: center;
+    height: 64px;
+    line-height: 64px;
+    padding-left: 45px;
+    display: inline-block;
+    padding-right: 45px;
+    margin-bottom: 35px;
+
+
+}
+
+.indexOneTitle::before{
+    content: url(./../../img/index/right.png);
+    position: absolute;
+  
+    bottom: 0;
+    height: 100%;
+    left: 0;
+}
+
+.indexOneTitle::after{
+    content: url(./../../img/index/left.png);
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    right: 0;
+
+}
+
+
+.indexOneListLine{
+    position: relative;
+    padding-bottom: 27px;
+}
+
+
+.indexOneListItem{
+    display: inline-block;
+    text-align: left;
+    height: 100%;
+}
+
+.indexOneListLine.left{
+    width: 50%;
+    text-align: right;
+    .indexOneListItem{
+        position: relative;
+        padding-right: 30px;
+       
+    }
+    .indexOneListItem::after{
+        content:"";
+        width: 12px;
+        height: 12px;
+        background-color: #00b4f2;
+        border-radius: 6px;
+        position: absolute;
+        z-index: 10;
+        top: 50%;
+        left: 100%;
+    }
+
+    
+
+}
+
+.indexOneListLine.left::after{
+    content:"";
+    width: 12px;
+    height: 150%;
+    background-color: #d8e1f1;
+    border-radius: 6px;
+    position: absolute;
+}
+
+.indexOneListLine.right{
+    margin-left: 50%;
+    text-align: left;
+    .indexOneListItem{
+        position: relative;
+        padding-left: 40px;
+    }
+    .indexOneListItem::before{
+        content:"";
+        width: 12px;
+        height: 12px;
+        background-color: #00b4f2;
+        border-radius: 6px;
+        position: absolute;
+        z-index: 10;
+        top: 50%;
+        left: 0;
+    }
+
+}
+
+.indexOneListLine.right::before{
+    content:"";
+    width: 12px;
+    height: 110%;
+    background-color: #d8e1f1;
+    border-radius: 6px;
+    position: absolute;
+}
+
+.indexOneListItemTitle{
+    font-size: 28px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #4d4d4d;
+    line-height: 28px;
+}
+.indexOneListItemTime{
+    font-size: 22px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #00b4f2;
+    line-height: 22px;
+    margin-top: 8px;
+}
+
+.indexTwoWrapper{
+    position: relative;
+}
+
+.indexTwoText{
+    position: relative;
+    font-size: 28px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 1px;
+    color: #333333;
+    margin-bottom: 48px;
+}
+
+.indexTwoBlue{
+    position: relative;
+    font-size: 28px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 1px;
+    color: #00b4f2;
+    display: inline-block;
+    padding-left: 45px;
+
+}
+.indexTwo{
+    position: relative;
+    padding-bottom: 120px;
+}
+
+.indexTwoBlue::before{
+    position: absolute;
+    content:"";
+    background-image:url(./../../img/index/mail.png);
+    left: 0;
+   
+    width: 39px;
+    height: 100%;
+ 
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
