@@ -10,8 +10,8 @@ pages:
   tags:
     - internal
   script:
-    - npm install
-    - npm run build
+    - yarn install
+    - yarn build
     - mv build/* public/
   artifacts:
     paths:
