@@ -11,7 +11,7 @@ pages:
     - internal
   script:
     - yarn install
-    - yarn build
+    - CI=false yarn build
     - mv build/* public/
   artifacts:
     paths:
