@@ -74,7 +74,7 @@ export default class Index extends React.Component{
                         <div className="indexTwoWrapper">
                             <div className="indexTwoText">如果您有暑期2021的活动合作意向，欢迎与我们联系!</div>
                             <div className="indexTwoBlue">
-                                <span>官方邮箱 summer@iscas.ac.cn</span>
+                                <span>官方邮箱 <a href="mailto:summer@iscas.ac.cn">summer@iscas.ac.cn</a></span>
                             </div>
                         </div>
                     </div>
