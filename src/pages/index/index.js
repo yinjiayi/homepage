@@ -18,8 +18,12 @@ export default class Index extends React.Component{
     constructor(props){
        super(props)
        this.state ={
-        data
+        data,
+        url:"https://isrc.iscas.ac.cn/summer2020/",
        }
+    }
+    gourl(url){
+        window.open(url)
     }
 
  
@@ -33,7 +37,7 @@ export default class Index extends React.Component{
                    <div className="content1200 indexBannerWrapper">
                    <div className="indexText"></div>
                    <div className="indexButton">
-                       <span className="indexButtonText">暑期2020回顾</span>
+                       <span className="indexButtonText" onClick={()=>{this.gourl(this.state.url)}}>暑期2020回顾</span>
                    </div>
                    </div>
                 </div>
@@ -68,7 +72,7 @@ export default class Index extends React.Component{
                             <span className="indexOneTitleText">官方联系方式</span>
                         </div>
                         <div className="indexTwoWrapper">
-                            <div className="indexTwoText">如果您有暑期2021的合作活动合作意向，欢迎与我们联系!</div>
+                            <div className="indexTwoText">如果您有暑期2021的活动合作意向，欢迎与我们联系!</div>
                             <div className="indexTwoBlue">
                                 <span>官方邮箱 summer@iscas.ac.cn</span>
                             </div>
