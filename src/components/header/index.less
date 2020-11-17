@@ -8,6 +8,12 @@
     top:0;
 }
 
+.headerContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .osscHeaderLogo{
     position: relative;
     background-image: url(./../../img/logo_n.svg);
@@ -18,3 +24,38 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.headerChiEn{
+    position: relative;
+    display: flex;
+    font-size: 16px;
+    color: #999999;
+    line-height: 16px;
+
+}
+.headerChi{
+    padding-right: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-right: 1px solid #999;
+
+}
+
+.headerEn{
+    padding-left: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.headerChiEn.chi{
+    .headerChi{
+        color: #333;
+    }
+}
+
+.headerChiEn.en{
+    .headerEn{
+        color: #333;
+    }
+}
+

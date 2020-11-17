@@ -20,20 +20,37 @@ import Index from './pages/index/index.js';
 export default class IRouter extends React.Component{
     constructor(props){
         super(props);
+        this.getchiflag = this.getchiflag.bind(this)
+        this.state = {
+            chiflag: 'chi'
+        }  
+
         
+    }
+
+    componentDidMount(){
+       
+    }
+   
+    //子组件调用父组件的方法传值
+    getchiflag(val){
+        
+        this.setState({
+            chiflag: val
+        });
     }
 
     render(){
         return(
-            <Router>
+            <Router >
                 <App>
                     
                     <Route path="/" render={()=>
-                        <Wrapper>
+                        <Wrapper getchiflag={this.getchiflag}>
                             <Switch >
-                                     <Route path="/index" component={Index} exact/>
-                                    
-                                     <Route path="/" component={Index} />
+                                
+                                <Route path="/index"component={Index} exact></Route>                                                                                     
+                                <Route path="/" render={()=>{return <Index flag={this.state.chiflag}/>}} /> 
                             </Switch>
                         </Wrapper>
                     }/>

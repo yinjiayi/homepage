@@ -18,21 +18,28 @@ export default class Header extends React.Component{
     constructor(props){
        super(props)
        this.state ={
-           
+       
        }
     }
+   
 
- 
+    
+
+    
 
 
     render(){
-       
+        const {switchFlag}=this.props
         return(         
             <div className="header">
-                <div className="content1200">
+                <div className="content1200 headerContent">
                      <NavLink to="/index">
-                     <div className="osscHeaderLogo"></div>
+                        <div className="osscHeaderLogo"></div>
                     </NavLink>
+                    <div className={["headerChiEn",this.props.chiFlag].join(" ")}>
+                        <div className="headerChi" onClick={()=>{switchFlag('chi')}}>中文</div>
+                        <div className="headerEn" onClick={()=>{switchFlag('en')}}>En</div>
+                    </div>
 
                 </div>
 

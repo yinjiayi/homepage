@@ -16,12 +16,24 @@ import Footer from './components/footer';
 
 
 export default class Wrapper extends React.Component{
-
+    constructor(props){
+        super(props)
+        this.state ={
+            chiFlag:"chi",
+        }
+     }
+     switchFlag(msg){
+        this.setState({
+            chiFlag:msg
+        })
+        this.props.getchiflag(msg)
+       
+    }
     render(){
         return (
            <div className="container">
                <div className="wrapper">
-                    <Header/>
+                   <Header switchFlag={this.switchFlag.bind(this)} chiFlag={this.state.chiFlag}/>
                    <div className="content">
                         {this.props.children}    
                    </div>
