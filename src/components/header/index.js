@@ -13,15 +13,21 @@
 import React from 'react'
 import './index.less';
 import {NavLink} from 'react-router-dom';
-
-export default class Header extends React.Component{
+import { connect } from 'react-redux';
+class Header extends React.Component{
     constructor(props){
        super(props)
        this.state ={
-       
+        chiFlag:"chi"
        }
     }
    
+    switchFlag(msg){
+        msg === 'chi'?this.props.chiFlag_chi():this.props.chiFlag_en();
+        this.setState({
+            chiFlag:msg
+        })
+    }
 
     
 
@@ -29,16 +35,16 @@ export default class Header extends React.Component{
 
 
     render(){
-        const {switchFlag}=this.props
+        
         return(         
-            <div className="header">
+            <div className={["header", this.state.chiFlag].join(" ")}>
                 <div className="content1200 headerContent">
                      <NavLink to="/index">
                         <div className="osscHeaderLogo"></div>
                     </NavLink>
-                    <div className={["headerChiEn",this.props.chiFlag].join(" ")}>
-                        <div className="headerChi" onClick={()=>{switchFlag('chi')}}>中文</div>
-                        <div className="headerEn" onClick={()=>{switchFlag('en')}}>En</div>
+                    <div className="headerChiEn" >
+                        <div className="headerChi" onClick={()=>{this.switchFlag('chi')}}>中文</div>
+                        <div className="headerEn" onClick={()=>{this.switchFlag('en')}}>ENG</div>
                     </div>
 
                 </div>
@@ -50,3 +56,20 @@ export default class Header extends React.Component{
         
     }
 }
+
+const mapDispatchToProps = dispatch => {
+    return {
+        chiFlag_chi:()=>{
+            dispatch({
+                type:'chiFlag_chi'
+            })
+        },
+        chiFlag_en:()=>{
+            dispatch({
+                type:'chiFlag_en'
+            })
+        }
+    }
+}
+
+export default connect(null,mapDispatchToProps)(Header)

@@ -12,46 +12,28 @@
 
 import React from 'react'
 import './index.less';
-import {endata,data} from './data.js'
-
-export default class Index extends React.Component{
+import {data} from './data.js'
+import { connect } from 'react-redux'
+class Index extends React.Component{
     constructor(props){
        super(props)
+      
        this.state ={
         data,
-        endata,
-        showdata:data,   
+        showdata:data[props.chiFlag],   
         url:"https://isrc.iscas.ac.cn/summer2020/",
        }
     }
     gourl(url){
         window.open(url)
     }
-
-    // componentDidMount(){
-    //    console.log(this)
-    // }
-
-    componentWillReceiveProps(nextProps){
-       
-      if(nextProps.flag){
-        console.log(nextProps)
-         if(nextProps.flag === this.state.showdata.flag){
-             return 0;
-         }
-        
-          if(nextProps.flag === "chi"){
-
-              this.setState({
-                showdata:this.state.data
-              })
-          }else{
-            this.setState({
-                showdata:this.state.endata
-            })
-          }
-      }
+    componentDidMount(){
+        // this.setState({
+        //     showdata:this.state.data[this.props.chiFlag]
+        // })
     }
+
+
     
 
 
@@ -62,25 +44,27 @@ export default class Index extends React.Component{
 
     render(){
        
+        let showdata = this.state.data[this.props.chiFlag]
+      
         return(         
-            <div className={["index" , this.props.flag].join(" ")}>
-                
+            <div className={["index", this.props.chiFlag].join(" ")}>
+               
                 <div className="indexBanner">
                    <div className="content1200 indexBannerWrapper">
                    <div className="indexText"></div>
                    <div className="indexButton">
-                <span className="indexButtonText" onClick={()=>{this.gourl(this.state.url)}}>{this.state.showdata.banner.textone}</span>
+                <span className="indexButtonText" onClick={()=>{this.gourl(this.state.url)}}>{showdata.banner.textone}</span>
                    </div>
                    </div>
                 </div>
                 <div className="indexOne">
                     <div className="content1200">
                     <div className="indexOneTitle">
-                    <span className="indexOneTitleText">{this.state.showdata.indexOne.title}</span>
+                    <span className="indexOneTitleText">{showdata.indexOne.title}</span>
                     </div>
                     <div className="indexOneList">
                         {
-                            this.state.showdata.time.map((item,index)=>{
+                            showdata.time.map((item,index)=>{
                                 return (
                                     <div className={["indexOneListLine", index%2 === 0 ? 'left':'right'].join(" ")}  key={index}>
                                         <div className="indexOneListItem" >
@@ -99,12 +83,12 @@ export default class Index extends React.Component{
                 <div className="indexTwo">
                     <div className="content1200">
                         <div className="indexOneTitle">
-                    <span className="indexOneTitleText">{this.state.showdata.indexTwo.title}</span>
+                    <span className="indexOneTitleText">{showdata.indexTwo.title}</span>
                         </div>
                         <div className="indexTwoWrapper">
-                    <div className="indexTwoText">{this.state.showdata.indexTwo.text}</div>
+                    <div className="indexTwoText">{showdata.indexTwo.text}</div>
                             <div className="indexTwoBlue">
-                                <span>{this.state.showdata.indexTwo.text2} <a href="mailto:summer@iscas.ac.cn">summer@iscas.ac.cn</a></span>
+                                <span>{showdata.indexTwo.text2} <a href="mailto:summer@iscas.ac.cn">summer@iscas.ac.cn</a></span>
                             </div>
                         </div>
                     </div>
@@ -120,3 +104,11 @@ export default class Index extends React.Component{
         
     }
 }
+
+
+const mapStateToProps = (state)=>{
+   console.log(state)
+    return state
+ }
+
+export default connect(mapStateToProps)(Index)

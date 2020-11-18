@@ -12,13 +12,18 @@
 
 import React, { Component } from 'react';
 import './App.css';
+import {Provider} from 'react-redux';
+import store from './store/store/index.js';
+
 class App extends Component {
 
   render() {
     return (
-      <div>
-        {this.props.children}   
-      </div>
+      <Provider store={store}>
+        <>
+          {this.props.children}   
+        </>
+      </Provider>
     );
   }
 }

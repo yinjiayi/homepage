@@ -12,12 +12,16 @@
 
 import React from 'react'
 import './index.less';
+import { connect } from 'react-redux'
 
-
-export default class Footer extends React.Component{
+class Footer extends React.Component{
     constructor(props){
        super(props)
        this.state ={
+           text:{
+               chi:'版权所有 @开源软件供应链点亮计划-暑期2021 活动组委会',
+               en:'Copyright @Open Source Promotion Plan - Summer 2021 Organizing Committee.'
+           },
            
        }
     }
@@ -26,12 +30,11 @@ export default class Footer extends React.Component{
 
 
     render(){
-       
+       let showtext = this.state.text[this.props.chiFlag]
         return(         
             <div className="footer">
                 <div className="content1200">
-                    <div className="footerWrapper">版权所有 @开源软件供应链点亮计划-暑期2021 活动组委会</div>
-
+        <div className="footerWrapper">{showtext}</div>
                 </div>
 
             </div>
@@ -41,3 +44,10 @@ export default class Footer extends React.Component{
         
     }
 }
+
+const mapStateToProps = (state)=>{
+
+     return state
+  }
+ 
+ export default connect(mapStateToProps)(Footer)
