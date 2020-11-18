@@ -21,7 +21,7 @@ class Footer extends React.Component{
            text:{
                chi:'版权所有 @开源软件供应链点亮计划-暑期2021 活动组委会',
                en:'Copyright @Open Source Promotion Plan - Summer 2021 Organizing Committee.'
-           },
+           }
            
        }
     }
