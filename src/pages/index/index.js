@@ -87,7 +87,7 @@ class Index extends React.Component{
                         </div>
                         <div className="indexTwoWrapper">
                     <div className="indexTwoText">{showdata.indexTwo.text}</div>
-                            <div className="indexTwoBlue">
+                            <div className="indexTwoBlue mail">
                                 <span>{showdata.indexTwo.text2} <a href="mailto:summer@iscas.ac.cn">summer@iscas.ac.cn</a></span>
                             </div>
                         </div>
