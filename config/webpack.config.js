@@ -55,6 +55,8 @@ const useTypeScript = fs.existsSync(paths.appTsConfig);
 // Get the path to the uncompiled service worker (if it exists).
 const swSrc = paths.swSrc;
 
+const GenerateSW = require('workbox-webpack-plugin');
+
 // style files regexes
 const cssRegex = /\.css$/;
 const cssModuleRegex = /\.module\.css$/;
@@ -564,6 +566,13 @@ module.exports = function (webpackEnv) {
       ],
     },
     plugins: [
+      new GenerateSW.GenerateSW({
+        // 帮助 serviceworker 快速启动
+        // 删除旧的 serviceworker
+        // 生成一个 serviceworker 配置文件
+        clientsClaim: true,
+        skipWaiting: true
+    }),
       // Generates an `index.html` file with the <script> injected.
       new HtmlWebpackPlugin(
         Object.assign(
