@@ -26,6 +26,10 @@ class Footer extends React.Component{
        }
     }
 
+    goLink(url){
+        window.open(url)
+    }
+
  
 
 
@@ -34,7 +38,10 @@ class Footer extends React.Component{
         return(         
             <div className="footer">
                 <div className="content1200">
-        <div className="footerWrapper">{showtext}</div>
+                    
+                    <div className="footerWrapper">
+                    <span className="footerNumber" onClick={()=>{this.goLink('https://beian.miit.gov.cn')}}>京ICP备05046678号-1</span>
+                    <span>   {showtext}</span> </div>
                 </div>
 
             </div>
