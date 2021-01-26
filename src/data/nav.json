@@ -1,0 +1,44 @@
+{
+    "link":[
+        "homepage"  ,"organisations" ,"howitworks" ,"apply","help" 
+    ],
+    "chi":[
+        {
+            "name":"首页"
+              
+        },
+        {
+            "name":"开源社区"
+               
+        },
+        {
+            "name":"活动规划"
+           
+        },
+        {
+            "name":"如何加入"    
+               
+        },
+        {
+            "name":"帮助"        
+        }
+    ],
+    "en":[
+        {
+            "name":"Hompage"    
+        },
+        {
+            "name":"Open Source Community"
+        },
+        {
+            "name":"Activity Planning" 
+        },
+        {
+            "name":"How to Apply"      
+        },
+        {
+            "name":"Contact Us"  
+        }
+
+    ]
+}

@@ -1,0 +1,67 @@
+{
+    "bannerclass":["Cooperation","Community","Students"],
+    "chi":{
+        "banner":[
+            {
+                "title":"合作单位",
+                "text":"和我们一起贡献开源"
+            },
+            {
+                "title":"社区",
+                "text":"让更多的学生和开发者们加入你的社区!"
+            },
+            {
+                "title":"学生",
+                "text":"利用暑期的时间，贡献你的代码吧！"
+            }
+
+        ],
+        "re":[
+            {
+                "title":"合作单位要求",
+                "text":["支持开源的公司、高校、科研院所及其他机构。"]
+            },
+            {
+                "title":"社区要求",
+                "text":["有活跃的开源软件仓库的社区或个人；","开源软件仓库采用的协议需要是OSI 组织认可的协议。"]
+            },
+            {
+                "title":"学生要求",
+                "text":["年满 18 周岁的在校学生；","具有有效的学生证和身份证。"]
+            }
+
+        ]
+    },
+    "en":{
+        "banner":[
+            {
+                "title":"Cooperation Partner",
+                "text":"Contribute to open source with us!"
+            },
+            {
+                "title":"Community",
+                "text":"Encourage more students and developers to join your community!"
+            },
+            {
+                "title":"Students",
+                "text":"Contribute your code in this summer!"
+            }
+
+        ],
+        "re":[
+            {
+                "title":"Requirements for cooperations partners",
+                "text":["Welcome the companies, universities, research institutes and other institutions that support open source. "]
+            },
+            {
+                "title":"Requirements for community",
+                "text":["Community or individual with active open source software repository;"," Open source software repository needs to adopt the open source license approved by OSI organization."]
+            },
+            {
+                "title":"Requirements for students",
+                "text":["Students over 18 years old with valid student card and ID card"]
+            }
+
+        ]
+    }
+}

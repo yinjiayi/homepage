@@ -7,6 +7,16 @@
     z-index: 20;
     top:0;
 }
+.headerMobileList,
+.headerMobileIcon{
+    display: none;
+}
+
+.headerList{
+    display:flex;
+    align-items: center;
+    height: 100%;
+}
 
 .headerContent{
     display: flex;
@@ -23,6 +33,73 @@
     // margin-left: -10px;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+
+
+.headerNav{
+    cursor: pointer;
+    transition: all 0.3s;
+
+}
+
+
+
+
+.headerTabWrapper{
+    display: flex;
+    
+    height: 100%;
+   
+}
+
+.headerTabWrapper{
+    a{
+        text-decoration: none;
+    }
+    .headerNav:hover{
+        color: #0d86ff;
+    }
+
+    .headerNav:hover::after{
+        width: 100%;
+    }
+
+    a.active{
+        .headerNav{
+            color: #0d86ff;
+        }
+        .headerNav::after{
+            width: 100%;
+        }
+    }
+}
+
+.headerTabItem{
+    margin-left: 30px;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #333333;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    padding: 22px 0;
+    box-sizing: border-box;
+    line-height: 16px;
+}
+
+.headerTabItem::after{
+    content: "";
+    background-color: #0d86ff;
+    bottom: 0;
+    height: 4px;
+    /* left: -80px; */
+    transition: all .3s;
+    width: 0;
+    display: block;
+    position: absolute;
 }
 
 .headerChiEn{
@@ -59,3 +136,10 @@
     }
 }
 
+.en{
+    .headerTabItem{
+        font-size: 15px;
+        margin-left: 15px;
+        font-weight: 500;
+    }
+}

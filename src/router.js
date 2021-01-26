@@ -15,20 +15,17 @@ import {HashRouter as Router, Route, Switch} from 'react-router-dom';
 import App from './App';
 import Wrapper from './wrapper.js';
 import Index from './pages/index/index.js';
-
-
+import HomePage from './pages/homepage/index.js';
+import Help from './pages/help/index.js';
+import Howitworks from './pages/howitworks/index.js';
+import Apply from './pages/apply/index.js';
 export default class IRouter extends React.Component{
     constructor(props){
         super(props);
-         
-
-        
+             
     }
 
-    componentDidMount(){
-       
-    }
-   
+
    
 
     render(){
@@ -40,8 +37,12 @@ export default class IRouter extends React.Component{
                         <Wrapper>
                             <Switch >
                                 
-                                <Route path="/index"component={Index} exact></Route>                                                                                     
-                                <Route path="/" component={Index} /> 
+                                <Route path="/homepage"component={HomePage} ></Route> 
+                                <Route path="/help"component={Help} ></Route>
+                                <Route path="/howitworks"component={Howitworks} ></Route> 
+                                <Route path="/apply"component={Apply} ></Route>
+                                <Route path="/index"component={Index} ></Route>                                                                                     
+                                <Route path="/" component={HomePage} /> 
                             </Switch>
                         </Wrapper>
                     }/>

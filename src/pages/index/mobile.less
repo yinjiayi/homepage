@@ -1,17 +1,63 @@
-@media screen and (min-width: 100px)and (max-width: 700px){
+@media screen and (min-width: 100px)and (max-width: 750px){
     .container{
         .content1200{
             width: 94vw;
         }
     }
+    .displayblock{
+        display: block !important;
+    }
 
     .header{
         .osscHeaderLogo{
-            width: 60vw;
+            width: 55vw;
         }
 
         .headerChiEn{
             font-size: 12px;
+            margin-left: 6px;
+        }
+
+        .headerMobileIcon{
+            background-image: url(./../../img/icon_nav.png);
+            width: 22px;
+            height: 20px;
+            display: inline-block;
+            background-size: contain;
+        }
+
+        .headerTabWrapper{
+            display: none;
+        }
+
+        .headerMobileList{
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            text-align: center;
+            right: 0;
+            left: 0;
+            z-index: 10;
+            top: 0;
+            background-color: #187ef2;
+            padding: 30vh 0;
+
+           .osscListItem {
+                padding: 10px 0;
+                font-size: 20px;
+                text-decoration: none;
+                color: #fff;
+                position: relative;
+            }
+        }
+        .headerClose{
+            position: absolute;
+            width: 35px;
+            height: 35px;
+            background-image: url(./../../img/close.svg);
+            background-size: contain;
+            right: 5vw;
+            top: 2vh;
         }
     }
 
@@ -22,6 +68,25 @@
     }
    }
 
+    .indexOne{
+        .indexOneTitle{
+            font-size: 20px;
+            }
+            .indexOneListItemTitle{
+                font-size: 16px;
+            }
+            .indexOneListLine.right .indexOneListItem{
+                padding-left: 25px;
+            }
+            .indexOneListLine.left .indexOneListItem{
+                padding-right: 16px;
+            }
+        
+            .indexOneListItemTime{
+                font-size: 14px;
+            }
+    }
+
     .index{
         .indexText{
             width: 78vw;
@@ -29,12 +94,12 @@
             height: 100px;
         }
         
-    .indexBanner{
-       
-        background-image: url(./../../img/index/banner-BG.jpg);
-        height: 366px;
-      
-    }
+        .indexBanner{
+        
+            background-image: url(./../../img/index/banner-BG.jpg);
+            height: 366px;
+        
+        }
         .indexButton{
             width: 200px;
         }
@@ -55,22 +120,7 @@
             text-align: center;
         }
 
-        .indexOneTitle{
-            font-size: 20px;
-        }
-        .indexOneListItemTitle{
-            font-size: 16px;
-        }
-        .indexOneListLine.right .indexOneListItem{
-            padding-left: 25px;
-        }
-        .indexOneListLine.left .indexOneListItem{
-            padding-right: 16px;
-        }
-
-        .indexOneListItemTime{
-            font-size: 14px;
-        }
+        
         .indexTwoText{
             font-size: 18px;
         }
@@ -79,5 +129,191 @@
             font-size: 14px;
         }
     }
+
+    .homepage{
+        .homepageBannerLine{
+            display: inline;
+        }
+        .homepageIconItemImage {
+            width: 20vw;
+            height: 20vw;
+        }
+
+        .homepageLogoImage{
+            width: 80vw;
+            height: 12.5vw;
+            max-width: 384px;
+        }
+
+
+        .homepageText{
+            padding-top: 29px;
+            font-size: 17px;
+            line-height: 28px;
+        }
+
+       
+        .homepageIcon {
+           
+            margin: 60px 0 50px;
+            flex-wrap: wrap;
+        }
+
+        .homepageIconItem {
+            width: 45vw;
+            flex: none;
+            max-width: 180px;
+            margin-bottom: 20px;
+            .homepageIconItemImageWrapper{
+                border:none
+            }
+        }
+
+     
+
+        .homepageIconItemText{
+            display: inline;
+        }
+
+        .homepageLogoTitle{
+            font-size: 24px;
+        }
+
+    }
+
+    .help{
+        .helpBlueText,
+        .helpEmail{
+            font-size: 18px;
+        }
+        .indexOneTitle{
+            font-size: 22px;
+        }
+    }
+
+    .Howitworks{
+        
+        .HowitworksContent{
+            margin-bottom: 0;
+            margin: 40px 0;
+        }
+       
+        .HowitworksContentTitle{
+            font-weight: bold;
+        }
+        .HowitworksContentContent{
+            color:#666;
+        }
+        .HowitworksContentTitle::before{
+            position: absolute;
+            content: "";
+            width: 4px;
+            height: 100%;
+            background: #366afc;
+            left: -3vw;
+
+        }
+        .HowitworksBanner{
+            height: auto;
+        }
+        .HowitworksBannerTitle{
+            font-size: 21px;
+            padding: 30px 0 30px;
+            letter-spacing: 1px;
+        }
+        .HowitworksBannerTitleMobile{
+            display: block;
+            text-align: center;
+            padding: 20px 0; 
+            font-size: 18px;
+            color: #fff;
+            .HowitworkOne{
+                font-size: 26px;
+                /* text-align: center; */
+                color: #fff;
+                margin-bottom: 6px;
+            }
+        }
+
+    }
+
+    .HowitworksList{
+        flex-direction: column;
+        .HowitworksListItem {
+            width: 100% !important;
+            margin-bottom: 30px;
+        }
+        .HowitworksListItemImage{
+             position: absolute;
+            /* margin-top: 12px; */
+            width: 30px;
+            margin-top: -20px;
+            min-height: 30px;
+        }
+        .HowitworksListItemTitle{
+            font-size: 20px;
+            margin: 0;
+            position: absolute;
+            left: 12vw;
+            top: -5px;
+        }
+        
+        .HowitworksListItemContent{
+            width: 81vw;
+            margin-left: 12vw;
+            text-align: left;
+            font-size: 14px;
+            margin-top: 24px;
+            line-height: 24px;
+        }
+    }
+
+    .Apply{
+        .ApplyRes{
+            padding-top: 60px;
+            padding-bottom: 48px;
+            .HowitworksListItem{
+                text-align: left;
+                .ApplyListItemTitle {
+                    margin-bottom: 10px;
+                }
+                .HowitworksListItemContent {
+                    color: #666;
+                    font-size: 16px;
+                    margin: 0;
+                    width: 90vw;
+                }
+            }
+            .ApplyListItemTitle::before {
+                position: absolute;
+                content: "";
+                width: 4px;
+                height: 100%;
+                background: #366afc;
+                left: -3vw;
+            }
+    
+        }
+        
+        
+       
+       
+    }
+
+    .en{
+        .homepageText{
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .indexOne{
+            .indexOneList{
+                width: auto;
+            }
+            .indexOneListItemTitle {
+                font-size: 14px;
+            }
+        }
+    }
+    
     
 }

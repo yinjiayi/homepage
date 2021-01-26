@@ -1,0 +1,118 @@
+{
+    "bannerclass":["apply","program","reward"],
+    "bannericon":["1.png","2.png","3.png"],
+    "chi":{
+        "title":"开源软件供应链点亮计划-暑期2020 活动规划",
+        "banner":[
+            {
+                
+                "title":"申请",
+                "text":"学生自由选择项目，撰写项目申请书提出申请"
+            },
+            {
+               
+                "title":"项目",
+                "text":"学生在社区导师的指导下开展项目，贡献代码至社区"
+            },
+            {
+               
+                "title":"申请",
+                "text":"根据学生参与度、代码贡献等提供奖金，证书"
+            }
+        ],
+        "ls":[
+            {
+                "title":"学生",
+                "text":"学生自由选择项目，与社区导师沟通实现方案并撰写项目计划书。被选中的学生将在社区导师指导下，按计划完成开发工作，并将成果贡献给社区。社区评估学生的完成度，主办方根据评估结果给学生发放奖金。"
+            },
+            {
+                "title":"社区",
+                "text":"社区提供项目列表和描述，并安排项目对应的导师，导师与申请者沟通方案、并从申请者中选中一位承接项目。在为期三个月的开发周期中，导师指导学生进行对应项目的开发工作。"
+            },
+            {
+                "title":"导师",
+                "text":"社区针对每一个项目指定一个社区导师，与学生一起制定合适的开发计划和方案，指导学生按计划完成开发。"
+            }
+        ],
+        "ttile":"暑期2021 活动里程碑",
+        "time":[
+            {
+                "title":"活动合作报名",
+                "time":"2021 年 1 月 - 3 月"
+            },
+            {
+                "title":"社区报名",
+                "time":"2021 年 1 月 - 3 月"
+            },
+            {
+                "title":"社区项目提交",
+                "time":"2021 年 4 月"
+            },
+            {
+                "title":"学生申请及审核",
+                "time":"2021 年 5  - 6 月"
+            },
+            {
+                "title":"项目开发",
+                "time":"2021 年 7 月 - 9 月"
+            }
+        ]
+    },
+    "en":{
+        "title":"Summer 2021 of Open Source Promotion Plan",
+        "banner":[
+            {
+               
+                "title":"Application",
+                "text":"students are free to choose projects and write project application."
+            },
+            {
+               
+                "title":"Project",
+                "text":"students conduct the project under the guidance of the community mentor and contribute the code to the community."
+            },
+            {
+                
+                "title":"Reward",
+                "text":"Certificate and award is provided according to students' contribution."
+            }
+        ],
+        "ls":[
+            {
+                "title":"Students",
+                "text":"Students are free to choose projects and communicate with mentors on implementation plans in order to write project plans. The selected students will complete the development task as planned and contribute the results to the community under the guidance of the community mentor. The community evaluates student completion and the organizer committee grants the money award to students based on the evaluation results."
+            },
+            {
+                "title":"Community",
+                "text":"The community provides a list and description of the project, and arranges for a mentor to communicate the program with the applicant and select one of the applicants to undertake the project. During the three-month development period, the mentor guides the students in developing the corresponding projects."
+            },
+            {
+                "title":"Mentor",
+                "text":"For each project, the community assigns a mentor to work with the students to develop appropriate plan and guide the students to complete the task as planned."
+            }
+        ],
+        "ttile":"Calendar of Events",
+        "time":[
+            {
+                "title":"Cooperation Registration",
+                "time":"Jan. 2021 - Mar. 2021"
+            },
+            {
+                "title":"Organization Registration",
+                "time":"Jan. 2021 - Mar. 2021"
+            },
+            {
+                "title":"Community Project Submission",
+                "time":"Apr. 2021"
+            },
+            {
+                "title":"Student Application and Review",
+                "time":"May 2021 - Jun. 2021"
+            },
+            {
+                "title":"Project Development",
+                "time":"Jul. 2021 - Sep. 2021"
+            }
+        ]
+    }
+}

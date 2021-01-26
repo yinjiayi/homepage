@@ -1,0 +1,35 @@
+{ 
+    "chi":{
+        "bannertext":[
+            "开源软件供应链点亮计划鼓励大家关注开源软件和开源社区，致力于培养和发掘更多优秀的开发者。",
+            "活动将在<span class=\"emphasis\">暑期</span>进行，我们将与开源社区紧密合作，提供一对一的导师指导，邀请技术大牛开展线上免费讲座",
+            "我们鼓励研究人员、开源爱好者、在校师生参与开源软件的开发与维护，促进<span class=\"emphasis\">开源软件</span>在国内的发展和优秀开源软件社区建设，",
+            "增加开源项目在国内的活跃度，在开源领域与世界接轨。"
+        ],
+        "icontext":[
+            ["参与暑期2021活动","给你的编程能力加个buff"],
+            ["结识更多的小伙伴和技术大牛","一起热爱开源"],
+            ["软件所与开源社区","将为您匹配资深的社区导师"],
+            ["根据活动中的“战绩”","您将获得活动荣誉奖杯和奖金奖励"]
+        ],
+        "logotitle":["组织方及合作伙伴","主办方","承办方","协办方","合作单位"]
+
+    },
+    "en":{
+        "bannertext":[
+            "Open Source Promotion Plan encourages everyone to pay close attention to open source software and open source community, aiming to cultivate and explore more outstanding developers.",
+            "‘Summer 2021’ will be held in the summer. We will collaborate closely with the open source community to provide one-to-one mentor guidance and invite some specialists to deliever free online lectures.",
+            "We encourage researchers , open source enthusiasts, teachers as well as students to participate in the development and maintenance of open source software in order to promote the development of open source software in China and facilitate the construction of excellent open source software community.",
+            "Furthermore,‘Summer 2021’could promote the activity of open source projects in China, even integrate the system into the wolrd."
+        ],
+        "icontext":[
+            ["Join ‘Summer 2021’! Enhance Programming Capabilities!"],
+            ["Make the acquaintance with big gun and friends! "],
+            ["Matched you with senior community mentors!"],
+            ["Obtain the award and trophy with your achievements!"]
+        ],
+        "logotitle":["Organizors And Partners","Host","Organizer","Co-Organizer","Partners"]
+
+    },
+    "host":["iscas.jpg"]
+}

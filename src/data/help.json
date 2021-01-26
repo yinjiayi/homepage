@@ -1,0 +1,18 @@
+{
+    "chi":{
+        "list":[
+            "资源链接",
+            "热点问题",
+            "官方联系方式",
+            "官方邮箱"
+        ]
+    },
+    "en":{
+        "list":[
+            "Resource Link",
+            "Key Issues",
+            "Official Contacts",
+            "Official Email"
+        ]
+    }
+}

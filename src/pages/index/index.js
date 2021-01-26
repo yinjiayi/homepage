@@ -16,8 +16,7 @@ import {data} from './data.js'
 import { connect } from 'react-redux'
 class Index extends React.Component{
     constructor(props){
-       super(props)
-      
+       super(props)  
        this.state ={
         data,
         showdata:data[props.chiFlag],   
@@ -27,11 +26,11 @@ class Index extends React.Component{
     gourl(url){
         window.open(url)
     }
-    componentDidMount(){
-        // this.setState({
-        //     showdata:this.state.data[this.props.chiFlag]
-        // })
-    }
+    // componentDidMount(){
+    //     // this.setState({
+    //     //     showdata:this.state.data[this.props.chiFlag]
+    //     // })
+    // }
 
 
     
@@ -42,10 +41,8 @@ class Index extends React.Component{
     
 
 
-    render(){
-       
+    render(){    
         let showdata = this.state.data[this.props.chiFlag]
-      
         return(         
             <div className={["index", this.props.chiFlag].join(" ")}>
                
