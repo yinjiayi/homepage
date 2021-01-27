@@ -22,7 +22,9 @@ class Help extends React.Component{
            
        }
     }
-
+    goLink(url){
+        window.open(url)
+    }
  
 
 
@@ -42,7 +44,7 @@ class Help extends React.Component{
                             <div className="indexOneTitle">
                                 <span>{showdata.list[0]}</span>
                             </div>
-                            <div className="helpBlueText"><span className="underline">{showdata.list[1]}</span>--></div>
+                            <div className="helpBlueText" onClick={()=>this.goLink("https://github.com/summer-ospp/help")}><span className="underline">{showdata.list[1]}</span>--></div>
                         </div>
 
                         <div className="helptitle">
@@ -50,7 +52,8 @@ class Help extends React.Component{
                                 <span>{showdata.list[2]}</span>
                             </div>
                             <div className="helpEmail mail">
-                                <span>{showdata.list[3]}:<a href="mailto:summer@iscas.ac.cn">summer@iscas.ac.cn</a></span>
+                                <span className="emaillogo"></span>
+                                <span className="helpemailtext">{showdata.list[3]}:<a href="mailto:summer@iscas.ac.cn">summer@iscas.ac.cn</a></span>
                             </div>
                         </div>
                 </div>

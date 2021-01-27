@@ -1,15 +1,11 @@
 {
     "link":[
-        "homepage"  ,"organisations" ,"howitworks" ,"apply","help" 
+        "homepage"  ,"howitworks" ,"apply","help" 
     ],
     "chi":[
         {
             "name":"首页"
               
-        },
-        {
-            "name":"开源社区"
-               
         },
         {
             "name":"活动规划"
@@ -26,9 +22,6 @@
     "en":[
         {
             "name":"Hompage"    
-        },
-        {
-            "name":"Open Source Community"
         },
         {
             "name":"Activity Planning" 

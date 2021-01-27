@@ -15,7 +15,7 @@ import './index.less';
 import {NavLink} from 'react-router-dom';
 import { connect } from 'react-redux';
 import data from './../../data/nav.json';
-
+import {titleChange} from './../../util/url.js';
 class Header extends React.Component{
     constructor(props){
        super(props)
@@ -45,6 +45,19 @@ class Header extends React.Component{
         window.location.hash = "/"+title
         this.headerlist(false)
     }
+
+    
+    componentDidMount(){
+       
+        titleChange();
+       setTimeout(()=>{
+           let hashopl = window.location.hash.split("#/");         
+           if(hashopl[1] === ""){
+               window.history.replaceState('','',window.location.pathname)
+           }
+       },5) 
+
+   }
 
     
 

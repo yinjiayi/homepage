@@ -86,6 +86,7 @@ class HomePage extends React.Component{
                             </div>
                             <div className="homepageLogoItemList ">
                                 <div className="homepageLogoImage Host"></div>
+                                <div className="homepageLogoImage openeuler"></div>
                             </div>
                             <div className="homepageLogoItemTitle">
                                 {showdata.logotitle[2]}
