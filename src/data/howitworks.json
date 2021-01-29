@@ -2,7 +2,7 @@
     "bannerclass":["apply","program","reward"],
     "bannericon":["1.png","2.png","3.png"],
     "chi":{
-        "title":"开源软件供应链点亮计划-暑期2020 活动规划",
+        "title":"开源软件供应链点亮计划-暑期2021 活动规划",
         "banner":[
             {
                 
@@ -35,26 +35,51 @@
             }
         ],
         "ttile":"暑期2021 活动里程碑",
+        "tip":"*默认时区为北京时间（GMT+8）",
         "time":[
             {
-                "title":"活动合作报名",
-                "time":"2021 年 1 月 - 3 月"
+                "title":"社区报名启动",
+                "time":"01 月 29 日"
             },
             {
-                "title":"社区报名",
-                "time":"2021 年 1 月 - 3 月"
+                "title":"第一批社区名单公示，学生开始与社区沟通项目意向",
+                "time":"04 月 02 日"
             },
             {
-                "title":"社区项目提交",
-                "time":"2021 年 4 月"
+                "title":"社区报名截止",
+                "time":"04 月 30 日"
             },
             {
-                "title":"学生申请及审核",
-                "time":"2021 年 5  - 6 月"
+                "title":"第二批社区名单公示",
+                "time":"05 月 02 日"
             },
             {
-                "title":"项目开发",
-                "time":"2021 年 7 月 - 9 月"
+                "title":"学生提交项目申请阶段",
+                "time":"05 月 24 日 - 06 月 13 日"
+            },
+            {
+                "title":"项目申请审核结果公示",
+                "time":"06 月 30 日"
+            },
+            {
+                "title":"项目研发第一阶段",
+                "time":"07 月 01 日 - 08 月 15 日"
+            },
+            {
+                "title":"项目中期考核结果公示",
+                "time":"08 月 30 日"
+            },
+            {
+                "title":"项目研发第二阶段",
+                "time":"08 月 16 日 - 09 月 30 日"
+            },
+            {
+                "title":"项目结项考核结果公示",
+                "time":"10 月 22 日"
+            },
+            {
+                "title":"年度优秀项目公示",
+                "time":"11 月上旬"
             }
         ]
     },
@@ -92,26 +117,51 @@
             }
         ],
         "ttile":"Calendar of Events",
+        "tip":" *The default timezone is ‘GMT+8’",
         "time":[
             {
-                "title":"Cooperation Registration",
-                "time":"Jan. 2021 - Mar. 2021"
+                "title":"Open of application for open source community",
+                "time":"Jan 29th"
             },
             {
-                "title":"Organization Registration",
-                "time":"Jan. 2021 - Mar. 2021"
+                "title":"Announcement of the first list of accepted open source community",
+                "time":"Apr 2nd"
             },
             {
-                "title":"Community Project Submission",
-                "time":"Apr. 2021"
+                "title":"Deadline of application for open source community",
+                "time":"Apr 30th"
             },
             {
-                "title":"Student Application and Review",
-                "time":"May 2021 - Jun. 2021"
+                "title":"Announcement of the second list of accepted open source community",
+                "time":"May 2nd"
             },
             {
-                "title":"Project Development",
-                "time":"Jul. 2021 - Sep. 2021"
+                "title":"Student application period",
+                "time":"May 24th - Jun 13th"
+            },
+            {
+                "title":"Announcement of accepted student application",
+                "time":"Jun 30th"
+            },
+            {
+                "title":"The first phase of developing project",
+                "time":"Jul 1st - Aug 15th"
+            },
+            {
+                "title":"Announcement of the students who pass mid-term assessment",
+                "time":"Aug 30th"
+            },
+            {
+                "title":"The second phase of developing project",
+                "time":"Aug 16th - Sep 30th"
+            },
+            {
+                "title":"Announcement of the students who pass final assessment",
+                "time":"Oct 22th"
+            },
+            {
+                "title":"Announcement of excellent projects",
+                "time":"Early November"
             }
         ]
     }

@@ -73,6 +73,7 @@ class Howitworks extends React.Component{
                <div className="content1200">
                     <div className="indexOneTitle">
                     <span className="indexOneTitleText">{showdata.ttile}</span>
+                    <span className="indexOneTitletip">{showdata.tip}</span>
                     </div>
                     <div className="indexOneList">
                         {
