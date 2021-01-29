@@ -70,7 +70,7 @@ class Header extends React.Component{
         return(         
             <div className={["header", this.state.chiFlag].join(" ")}>
                 <div className="content1200 headerContent">
-                     <NavLink to="/index">
+                     <NavLink to="/homepage">
                         <div className="osscHeaderLogo"></div>
                     </NavLink>
                     
@@ -93,11 +93,12 @@ class Header extends React.Component{
                         
 
                     </div>
-                    <div className="headerMobileIcon" onClick={()=>this.headerlist(true)}>
-                    </div>
+                   
                     <div className="headerChiEn headerTabItem" >
                             <div className="headerChi" onClick={()=>{this.switchFlag('chi')}}>中文</div>
                             <div className="headerEn" onClick={()=>{this.switchFlag('en')}}>ENG</div>
+                    </div>
+                    <div className="headerMobileIcon" onClick={()=>this.headerlist(true)}>
                     </div>
 
                     </div>

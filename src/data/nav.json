@@ -21,16 +21,16 @@
     ],
     "en":[
         {
-            "name":"Hompage"    
+            "name":"ABOUT"    
         },
         {
-            "name":"Activity Planning" 
+            "name":"HOW IT WORKS" 
         },
         {
-            "name":"How to Apply"      
+            "name":"GET STARTED"      
         },
         {
-            "name":"Contact Us"  
+            "name":"HELP"  
         }
 
     ]

@@ -23,7 +23,7 @@
             },
             {
                 "title":"社区要求",
-                "text":["有活跃的开源软件仓库的社区或个人；","开源软件仓库采用的协议需要是OSI 组织认可的协议。"]
+                "text":["有活跃的开源软件仓库的社区或个人；","开源项目采用的协议需要是 <a href=\"https://opendefinition.org/licenses/\">OSI</a> 组织或 <a href=\"https://opensource.org/licenses\">ODI</a> 组织接收并推荐的"]
             },
             {
                 "title":"学生要求",
@@ -55,7 +55,7 @@
             },
             {
                 "title":"Requirements for community",
-                "text":["Community or individual with active open source software repository;"," Open source software repository needs to adopt the open source license approved by OSI organization."]
+                "text":["Community or individual with active open source software repository","The open source project should be relesaed with the license that has been approved by OSI or ODI."]
             },
             {
                 "title":"Requirements for students",

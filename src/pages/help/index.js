@@ -44,7 +44,7 @@ class Help extends React.Component{
                             <div className="indexOneTitle">
                                 <span>{showdata.list[0]}</span>
                             </div>
-                            <div className="helpBlueText" onClick={()=>this.goLink("https://github.com/summer-ospp/help")}><span className="underline">{showdata.list[1]}</span>--></div>
+                            <div className="helpBlueText" onClick={()=>this.goLink(showdata.link)}><span className="underline">{showdata.list[1]}</span>--></div>
                         </div>
 
                         <div className="helptitle">

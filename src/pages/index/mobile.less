@@ -20,10 +20,12 @@
 
         .headerMobileIcon{
             background-image: url(./../../img/icon_nav.png);
-            width: 22px;
-            height: 20px;
+            width: 16px;
+            height: 16px;
             display: inline-block;
             background-size: contain;
+            background-repeat: no-repeat;
+            margin-left: 8px;
         }
 
         .headerTabWrapper{
@@ -131,8 +133,12 @@
     }
 
     .homepage{
+        .homepageBanner{
+            background-image: url(./../../img/index/bannerM.jpg);
+            max-height: 400px;
+        }
         .homepageBannerLine{
-            display: inline;
+            text-align: left;
         }
         .homepageIconItemImage {
             width: 20vw;
@@ -147,7 +153,7 @@
 
 
         .homepageText{
-            padding-top: 29px;
+            padding-top: 54px;
             font-size: 17px;
             line-height: 28px;
         }
@@ -181,15 +187,32 @@
 
     }
 
-    .help{
+    .Help{
+        .HelpBanner{
+            background-image: url(./../../img/contact/bannerM.jpg);
+        }
         .helpBlueText,
         .helpEmail{
             font-size: 18px;
+            a,
+            .helpemailtext {
+                font-size: 16px !important;}
         }
+
+       .emaillogo{
+        width: 24px;
+        height: 24px;
+       }
         .indexOneTitle{
             font-size: 22px;
         }
+
+        .helptitle {
+            margin-bottom: 76px;
+        }
     }
+
+    
 
     .Howitworks{
         
@@ -246,7 +269,7 @@
         .HowitworksListItemImage{
              position: absolute;
             /* margin-top: 12px; */
-            width: 30px;
+            width: 26px;
             margin-top: -20px;
             min-height: 30px;
         }
@@ -269,6 +292,11 @@
     }
 
     .Apply{
+
+        .ApplyBanner{
+            padding-top: 10vw;
+            height: 300px;
+        }
         .ApplyRes{
             padding-top: 60px;
             padding-bottom: 48px;

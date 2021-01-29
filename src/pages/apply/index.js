@@ -62,7 +62,7 @@ class Apply extends React.Component{
                                                 {
                                                     item.text.map((sitem,sindex)=>{
                                                         return(
-                                                            <span key={sindex}>{sitem}</span>
+                                                            <span key={sindex}  dangerouslySetInnerHTML={{ __html: sitem }}></span>
                                                         )
                                                     })
                                                 }

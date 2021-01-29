@@ -5,7 +5,8 @@
             "热点问题",
             "官方联系方式",
             "官方邮箱"
-        ]
+        ],
+        "link":"https://summer.iscas.ac.cn/help/"
     },
     "en":{
         "list":[
@@ -13,6 +14,7 @@
             "Key Issues",
             "Official Contacts",
             "Official Email"
-        ]
+        ],
+        "link":"https://summer.iscas.ac.cn/help/en/"
     }
 }
