@@ -32,6 +32,7 @@
 - React Dom
 - React js
 - React Router
+- React-Redux
 - Webpack
 
 ## 协议

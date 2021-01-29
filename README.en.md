@@ -32,6 +32,7 @@ Thanks to many open source projects:
 - React Dom
 - React js
 - React Router
+- React-Redux
 - Webpack
 
 ## License
