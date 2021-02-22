@@ -36,30 +36,30 @@ Thanks to many open source projects:
 - Webpack
 
 ## Code structure
-src
-├─components 
-│  ├─footer  
-│  └─header
-├─data website text
-│  ├─apply.json 
-│  ├─help.json 
-│  ├─homepage.json 
-│  ├─howitworks.json 
-│  └─nav.json 
-├─data_org
-│  └─icon
-├─img
-├─pages
-│  ├─apply
-│  ├─back
-│  ├─help
-│  ├─homepage
-│  ├─howitworks
-│  └─index
-├─store
-│  ├─reducer
-│  └─store
-└─util
+    |--src
+        ├─components 
+        │  ├─footer  
+        │  └─header
+        ├─data website text
+        │  ├─apply.json 
+        │  ├─help.json 
+        │  ├─homepage.json 
+        │  ├─howitworks.json 
+        │  └─nav.json 
+        ├─data_org
+        │  └─icon
+        ├─img
+        ├─pages
+        │  ├─apply
+        │  ├─back
+        │  ├─help
+        │  ├─homepage
+        │  ├─howitworks
+        │  └─index
+        ├─store
+        │  ├─reducer
+        │  └─store
+        └─util
 
 ## License
 
