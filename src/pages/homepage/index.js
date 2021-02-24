@@ -13,8 +13,9 @@
 import React from 'react'
 import './index.less';
 import { connect } from 'react-redux';
-import data from "./../../data/homepage.json"
-
+import data from "./../../data/homepage.json";
+import { Carousel } from 'antd';
+import {gourl} from "./../../util/url.js";
 class HomePage extends React.Component{
     constructor(props){
        super(props)
@@ -59,7 +60,8 @@ class HomePage extends React.Component{
         let showdata = this.state.data[this.props.chiFlag]
         return(         
             <div className="homepage">
-                <div className="homepageBanner">
+            <Carousel autoplay>
+                {/* <div className="homepageBanner One">
                     <div className="homepageText content1200">
                         { 
                             showdata.bannertext.map((item,index)=>{
@@ -70,7 +72,21 @@ class HomePage extends React.Component{
                         }
 
                     </div>
+                </div> */}
+                <div className="homepageBanner Two">
+                    <div className="homepageText content1200">
+                        <div className="homepageTitle">{showdata.bannerTwo[0]}</div>
+                        <div className="homepageTitleTime">{showdata.bannerTwo[1]}</div>
+                        <div className="homepageTitleGuide">
+                            <span className="homepageTiO" onClick={()=>gourl(this.state.data.communitylink)}>{showdata.bannerTwo[2]} </span>
+                            <span className="homepageTiTw">{showdata.bannerTwo[3]}</span>
+                        </div>
+                    </div>
+
                 </div>
+
+                </Carousel>
+                
                 <div className="homepageWrapper">
                     <div className="content1200">
                         <div className="homepageIcon">

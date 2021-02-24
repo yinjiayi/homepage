@@ -8,7 +8,9 @@
             },
             {
                 "title":"社区",
-                "text":"让更多的学生和开发者们加入你的社区!"
+                "text":"让更多的学生和开发者们加入你的社区!</br><a class=\"linkguide\" href=\"https://summer.iscas.ac.cn/help/community/\">社区加入</a>详情"
+               
+                
             },
             {
                 "title":"学生",
@@ -40,7 +42,7 @@
             },
             {
                 "title":"Community",
-                "text":"Encourage more students and developers to join your community!"
+                "text":"Encourage more students and developers to join your community!</br><a class=\"linkguide\" href=\"https://summer.iscas.ac.cn/help/community/\">community participation </a> guide"
             },
             {
                 "title":"Students",

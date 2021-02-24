@@ -41,7 +41,7 @@ class Apply extends React.Component{
                                     <div className="HowitworksListItem" key={index}>
                                             <div className={["HowitworksListItemImage",bannerclass[index]].join(" ")}></div>
                                             <div className="HowitworksListItemTitle">{item.title}</div>
-                                            <div className="HowitworksListItemContent">{item.text}</div>
+                                            <div className="HowitworksListItemContent" dangerouslySetInnerHTML={{ __html: item.text }}></div>
                                     </div>
                                    )
                                })
