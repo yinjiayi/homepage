@@ -16,12 +16,37 @@ import { connect } from 'react-redux';
 import data from "./../../data/homepage.json";
 import { Carousel } from 'antd';
 import {gourl} from "./../../util/url.js";
+import logocoopdata from "./../../data/coorganizer.json"
 class HomePage extends React.Component{
     constructor(props){
        super(props)
        this.state ={
             data
        }
+    }
+    goLogoLink(url){
+        if(url){
+            gourl(url)
+        }
+        
+    }
+
+    createLogo(){
+        var logo=[];
+        
+        logocoopdata.cooper.map((item,index)=>{
+            const iconUrl = require('./../../img/logo/'+item.img).default;
+            logo.push(
+                <div 
+                key={index}
+                onClick={()=>{this.goLogoLink(item.url)}}
+                className={["homepagelogocoop",item.url?'':'cursordefault'].join(" ")}
+                style={{backgroundImage:"url("+iconUrl + ")"}} >
+
+                </div>
+            )
+        })
+        return logo;
     }
 
     createIconBanner(text){
@@ -61,7 +86,7 @@ class HomePage extends React.Component{
         return(         
             <div className="homepage">
             <Carousel autoplay>
-                {/* <div className="homepageBanner One">
+                <div className="homepageBanner One">
                     <div className="homepageText content1200">
                         { 
                             showdata.bannertext.map((item,index)=>{
@@ -72,7 +97,7 @@ class HomePage extends React.Component{
                         }
 
                     </div>
-                </div> */}
+                </div>
                 <div className="homepageBanner Two">
                     <div className="homepageText content1200">
                         <div className="homepageTitle">{showdata.bannerTwo[0]}</div>
@@ -109,6 +134,12 @@ class HomePage extends React.Component{
                             </div>
                             <div className="homepageLogoItemList ">
                                 <div className="homepageLogoImage nanjing"></div>
+                            </div>
+                            <div className="homepageLogoItemTitle">
+                                {showdata.logotitle[3]}
+                            </div>
+                            <div className="homepageLogoItemList Coop">
+                                {this.createLogo()}
                             </div>
                            
                         </div>
