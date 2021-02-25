@@ -136,7 +136,7 @@ class HomePage extends React.Component{
                                 <div className="homepageLogoImage nanjing"></div>
                             </div>
                             <div className="homepageLogoItemTitle">
-                                {showdata.logotitle[3]}
+                                {showdata.logotitle[4]}
                             </div>
                             <div className="homepageLogoItemList Coop">
                                 {this.createLogo()}
