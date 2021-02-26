@@ -35,6 +35,32 @@ Thanks to many open source projects:
 - React-Redux
 - Webpack
 
+## Code structure
+    |--src
+        ├─components 
+        │  ├─footer  
+        │  └─header
+        ├─data website text
+        │  ├─apply.json 
+        │  ├─help.json 
+        │  ├─homepage.json 
+        │  ├─howitworks.json 
+        │  └─nav.json 
+        ├─data_org
+        │  └─icon
+        ├─img
+        ├─pages
+        │  ├─apply
+        │  ├─back
+        │  ├─help
+        │  ├─homepage
+        │  ├─howitworks
+        │  └─index
+        ├─store
+        │  ├─reducer
+        │  └─store
+        └─util
+
 ## License
 
 The project is provided by [Mulan Permissive Software License (Version 2)](http://license.coscl.org.cn/MulanPSL2) open source license.
