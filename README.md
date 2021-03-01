@@ -34,6 +34,32 @@
 - React Router
 - React-Redux
 - Webpack
+  
+## 代码结构
+    |--src
+        ├─components 组件库
+        │  ├─footer  
+        │  └─header
+        ├─data 网站的文本数据
+        │  ├─apply.json 如何加入
+        │  ├─help.json 帮助页面
+        │  ├─homepage.json 首页
+        │  ├─howitworks.json 活动规划
+        │  └─nav.json 导航
+        ├─data_org
+        │  └─icon
+        ├─img
+        ├─pages
+        │  ├─apply
+        │  ├─back
+        │  ├─help
+        │  ├─homepage
+        │  ├─howitworks
+        │  └─index
+        ├─store
+        │  ├─reducer
+        │  └─store
+        └─util
 
 ## 协议
 

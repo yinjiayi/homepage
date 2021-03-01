@@ -5,7 +5,7 @@
 .homepageBanner{
     width: 100%;
     height: 526px;
-    background-image: url(./../../img/index/banner2.jpg);
+   
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -14,9 +14,57 @@
     
 }
 
+.homepageBanner.One{
+    background-image: url(./../../img/index/banner2.jpg);
+}
+
+.homepageBanner.Two{
+    background-image: url(./../../img/index/banner.png);
+    .homepageTitle{
+        font-family: SourceHanSansCN-Bold;
+        font-size: 76px;
+        font-weight: normal;
+        font-stretch: normal;
+        letter-spacing: 4px;
+        color: #ffffff;
+        line-height: 76px;
+    }
+    .homepageTitleTime{
+        font-family: AdobeHeitiStd-Regular;
+        margin-top:56px;
+        margin-bottom: 97px;
+        line-height: 30px;
+        font-size: 30px;
+        font-weight: normal;
+        font-stretch: normal;
+        letter-spacing: 0px;
+        color: #ffffff;
+    }
+    .homepageTitleGuide{
+        font-family: SourceHanSansCN-Bold;
+        font-size: 30px;
+        font-weight: normal;
+        font-stretch: normal;
+        letter-spacing: 0px;
+        color: #ffffff;
+    }
+    .homepageTiO{
+        display: inline-block;
+        border-bottom: 3px solid #fff;
+        cursor: pointer;
+    }
+}
+
 .emphasis{
     color: #ffe566;
 }
+
+.ant-carousel .slick-slide {
+    text-align: center;
+    height: 100%px;
+   
+    overflow: hidden;
+  }
 
 .homepageText{
     padding-top:86px;
@@ -26,7 +74,7 @@
 	letter-spacing: 0px;
     color: #ffffff;
     text-align: center;
-
+    box-sizing: border-box;
     margin: 0 auto;
 }
 
@@ -48,7 +96,7 @@
 
 .homepageIconItemImage{
     width: 165px;
-    height: 165px;
+    height: 130px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -138,6 +186,21 @@
     position: relative;
     margin-bottom: 38px;
 }
+.homepagelogocoop.cursordefault{
+    cursor: default;
+}
+.homepageLogoItemList.Coop{
+    width: calc(~'100% + 25px');
+}
+
+.homepagelogocoop{
+    width: 220px;
+    height: 60px;
+    margin-bottom: 40px;
+    display: inline-block;
+    margin-right: 25px;
+    cursor: pointer;
+}
 
 .en{
     .homepageText{
@@ -149,6 +212,13 @@
     .homepageIconItemText{
         font-size: 16px;
         line-height: 20px;
+    }
+
+    .homepageBanner.Two{
+        .homepageTitle{
+            font-size: 3vw !important;
+            letter-spacing: 0 !important;
+        }
     }
 
 }

@@ -8,7 +8,9 @@
             },
             {
                 "title":"社区",
-                "text":"让更多的学生和开发者们加入你的社区!"
+                "text":"让更多的学生和开发者们加入你的社区!</br><a class=\"linkguide\" href=\"https://summer.iscas.ac.cn/help/community/\">社区加入</a>详情"
+               
+                
             },
             {
                 "title":"学生",
@@ -23,7 +25,7 @@
             },
             {
                 "title":"社区要求",
-                "text":["有活跃的开源软件仓库的社区或个人；","开源项目采用的协议需要是 <a href=\"https://opendefinition.org/licenses/\">OSI</a> 组织或 <a href=\"https://opensource.org/licenses\">ODI</a> 组织接收并推荐的"]
+                "text":["有活跃的开源软件仓库的社区或个人；","开源项目采用的协议需要是 <a href=\"https://opendefinition.org/licenses/\">OSI 组织认证的</a> 或者 <a href=\"https://summer.iscas.ac.cn/help/community/#%E6%8E%A8%E8%8D%90%E7%9A%84%E5%BC%80%E6%94%BE%E7%9F%A5%E8%AF%86%E5%8D%8F%E8%AE%AE\"> 推荐的开放知识协议</a> 等开放共享的协议"]
             },
             {
                 "title":"学生要求",
@@ -40,7 +42,7 @@
             },
             {
                 "title":"Community",
-                "text":"Encourage more students and developers to join your community!"
+                "text":"Encourage more students and developers to join your community!</br><a class=\"linkguide\" href=\"https://summer.iscas.ac.cn/help/community/\">community participation </a> guide"
             },
             {
                 "title":"Students",
@@ -55,7 +57,7 @@
             },
             {
                 "title":"Requirements for community",
-                "text":["Community or individual with active open source software repository;","The open source project should be relesaed with the license that has been approved by OSI or ODI."]
+                "text":["Community or individual with active open source software repository;","The open source project should be relesaed with the license that has been approved by <a href=\"https://opendefinition.org/licenses/\">OSI</a> or <a href=\"https://summer.iscas.ac.cn/help/en/community/#recommended-open-knowledge-license\">Recommended Open Knowledge License</a>."]
             },
             {
                 "title":"Requirements for students",

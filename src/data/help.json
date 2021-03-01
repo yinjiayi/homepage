@@ -6,6 +6,7 @@
             "官方联系方式",
             "官方邮箱"
         ],
+        "community":"社区加入",
         "link":"https://summer.iscas.ac.cn/help/"
     },
     "en":{
@@ -15,6 +16,7 @@
             "Official Contacts",
             "Official Email"
         ],
+        "community":"Community Participation ",
         "link":"https://summer.iscas.ac.cn/help/en/"
     }
 }
