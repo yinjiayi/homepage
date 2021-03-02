@@ -133,14 +133,16 @@ class HomePage extends React.Component{
                                 {showdata.logotitle[2]}
                             </div>
                             <div className="homepageLogoItemList ">
-                                <div className="homepageLogoImage nanjing"></div>
+                                <div className="homepageLogoImage kaiyuanshe"></div>
                             </div>
+                           
                             <div className="homepageLogoItemTitle ">
                                 {showdata.logotitle[3]}
                             </div>
                             <div className="homepageLogoItemList ">
-                                <div className="homepageLogoImage kaiyuanshe"></div>
+                                <div className="homepageLogoImage nanjing"></div>
                             </div>
+                            
                             <div className="homepageLogoItemTitle">
                                 {showdata.logotitle[4]}
                             </div>
