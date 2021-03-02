@@ -19,7 +19,7 @@
             ["组委会与开源社区","将为您匹配资深的社区导师"],
             ["根据活动中的“战绩”","您将获得活动奖金及证书奖励"]
         ],
-        "logotitle":["组织方及合作伙伴","主办方","承办方","协办方","合作单位"]
+        "logotitle":["组织方及合作伙伴","主办方","协办方","承办方","合作单位"]
 
     },
     "en":{
@@ -37,7 +37,7 @@
             ["Matched you with senior community mentors!"],
             ["Obtain the award with your achievements!"]
         ],
-        "logotitle":["Organizers and Partners","Host","Organizer","Co-Organizer","Partners"]
+        "logotitle":["Organizers and Partners","Host","Co-Organizer","Organizer","Partners"]
 
     },
     "host":["iscas.jpg","openeuler.jpg"]
