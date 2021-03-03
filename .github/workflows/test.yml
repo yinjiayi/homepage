@@ -1,0 +1,28 @@
+name: deploy
+
+on: [pull_request]
+
+jobs:
+  release:
+    name: Test Homepage
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Environment 
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12 
+
+    - name: Test
+      run: |
+        npm install
+        CI=false npm run build
+
+    - name: Artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: pull-request-artifact
+        path: |
+          build
