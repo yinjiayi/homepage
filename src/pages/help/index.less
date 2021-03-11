@@ -49,6 +49,13 @@
     margin-right:5vw;
 }
 
+.helpcontact{
+    position: relative;
+    display: flex;
+    align-items: initial;
+    justify-content: space-around;
+}
+
 .helpBlueText::before{
     content: "";
     width: 5px;
@@ -68,8 +75,18 @@
     margin-right: 4px;
 }
 
-.helptitle{
-    margin-bottom: 100px;
+
+
+.Help{
+    background: #f5f6fa;
+}
+
+.helpTwoCode{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+    padding-top: 70px;
 }
 
 .helpEmail{
@@ -79,20 +96,20 @@
         font-weight: normal;
         font-stretch: normal;
         letter-spacing: 1px;
-        color: #00b4f2;
+        color:#0d86ff;
         a{
             font-size: 24px;
             font-weight: normal;
             font-stretch: normal;
             letter-spacing: 1px;
-            color: #00b4f2;
+            color:#0d86ff;
         }
     }
 }
 .emaillogo{
     display: inline-block;
     position: relative;
-    background-image:url(./../../img/index/mail.png);
+    background-image:url(./../../img/index/maill.png);
     left: 0;
     width: 30px;
     height: 30px;
@@ -103,9 +120,88 @@
     margin-right: 5px;
 }
 
+.emaillogo.maillist{
+    background-image:url(./../../img/index/maillist.png);
+}
+
 .helpBlueTextLine{
     position: relative;
     display: flex;
+}
+
+.helptitle.resourcelink{
+    margin-bottom: 120px;
+}
+
+.helpTwoCodeItem{
+    width: 310px;
+    height: 330px;
+    max-width: 25vw;
+    max-height: 27vw;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.helptitle.eng{
+    .helpcontact{
+        display: block;
+    text-align: left;
+    }
+    .helpEmail{
+        line-height: 24px;
+  
+    }
+    .helpECListWrapper{
+        margin-bottom: 50px;
+    }
+    .helpECList{
+        font-family: MyriadPro-Regular;
+        font-size: 24px;
+        font-weight: normal;
+        font-style: italic;
+        font-stretch: normal;
+        color: #000000;
+        margin-left: 31px;
+       line-height: 40px;
+       position: relative;
+       word-break: break-all;
+        
+    }
+
+    .helpTwoCode{
+        padding-top:40px;
+    }
+
+    .helpECListWrapper.maillist{
+        .helpECList::before{
+            content: "";
+            width: 5px;
+            height: 5px;
+            position: absolute;
+            border-radius: 50%;
+            background-color: #000;
+            top: 16px;
+            left: 10px;
+        }
+        .helpECList{
+            .helpEClline{
+                display: inline-block;
+                margin-left: 24px;
+            }
+            .blue{
+                color: #006efe;
+            }
+        }
+    }
+
+    .helpemailtext{
+        color: #010101;
+        font-family: MyriadPro-Regular;
+        word-break: break-all;
+    }
+    
 }
 
 

@@ -1,22 +1,38 @@
 {
     "chi":{
-        "list":[
-            "资源链接",
-            "热点问题",
-            "官方联系方式",
-            "官方邮箱"
-        ],
-        "community":"社区加入",
-        "link":"https://summer.iscas.ac.cn/help/"
+        
+        "ressourcelink":{
+            "name":"资源链接",
+            "keyissue":"热点问题",
+            "community":"社区加入"
+        },
+        "contact":{
+            "name":"官方联系方式",
+            "email":"官方邮箱",
+            "maillist":"公开邮件列表"
+        },
+        "kilink":"https://summer.iscas.ac.cn/help",
+        "link":"https://summer.iscas.ac.cn/help/community/"
     },
     "en":{
-        "list":[
-            "Resource Link",
-            "Key Issues",
-            "Official Contacts",
-            "Official Email"
-        ],
-        "community":"Community Participation ",
-        "link":"https://summer.iscas.ac.cn/help/en/"
+        "ressourcelink":{
+            "name":"Resource Link",
+            "keyissue":"Key Issues",
+            "community":"Community Participation "
+        },
+        "contact":{
+            "name":"Official Contacts",
+            "email":"Official Email",
+            "emailcontent":"Feel free to contact us, we will contact you as soon as possible.",
+            "maillist":"Disscussion Mailing List",
+            "maillistctx":[
+                "For general discussion and feedback about Summer 2021.",
+                "Anyone can send mail to this list, subscribe this and view mail archive.",
+                "How to Subcribe: Send one mail to <span class=\"blue\">summer-ospp+subscribe@googlegroups.com</span>, and later you will receive the confirmation email, and then you reply the email to confirm.",
+                "Visit mail archive: <span class=\"blue\">https://groups.google.com/g/summer-ospp</span>"
+            ]
+        },
+        "kilink":"https://summer.iscas.ac.cn/help/en/",
+        "link":"https://summer.iscas.ac.cn/help/en/community/"
     }
 }
