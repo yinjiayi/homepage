@@ -2,36 +2,42 @@
     "link":[
         "homepage"  ,"howitworks" ,"apply","help" 
     ],
-    "chi":[
-        {
-            "name":"首页"
-              
-        },
-        {
-            "name":"活动规划"
-           
-        },
-        {
-            "name":"如何加入"    
+    "chi":{
+        "linkdata":[
+            {
+                "name":"首页"
+                  
+            },
+            {
+                "name":"活动规划"
                
-        },
-        {
-            "name":"帮助"        
-        }
-    ],
-    "en":[
-        {
-            "name":"ABOUT"    
-        },
-        {
-            "name":"HOW IT WORKS" 
-        },
-        {
-            "name":"GET STARTED"      
-        },
-        {
-            "name":"HELP"  
-        }
-
-    ]
+            },
+            {
+                "name":"如何加入"    
+                   
+            },
+            {
+                "name":"帮助"        
+            }
+        ],
+        "summer2020":"2020活动回顾"
+    },
+    "en":{
+        "linkdata":[
+            {
+                "name":"ABOUT"    
+            },
+            {
+                "name":"HOW IT WORKS" 
+            },
+            {
+                "name":"GET STARTED"      
+            },
+            {
+                "name":"HELP"  
+            }
+    
+        ],
+        "summer2020":"Summer2020"
+    }
 }

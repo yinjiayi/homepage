@@ -59,6 +59,10 @@ class Header extends React.Component{
 
    }
 
+   gosummer2020(){
+       window.open("https://isrc.iscas.ac.cn/summer2020/")
+   }
+
     
 
     
@@ -78,18 +82,23 @@ class Header extends React.Component{
                     <div className="headerTabWrapper">
                         
                         {
-                            showdata.map((ele,index)=>{
+                            showdata.linkdata.map((ele,index)=>{
                                 return (
+                                   
                                     <NavLink key={index} to={'/'+link[index]} >
-                                        <div className={["headerTabItem","headerNav",this.state.pageflag===link[index]?'left0':''].join(" ")} key={index}>
+                                        <div className={["headerTabItem","headerNav"].join(" ")}>
                                             <span>{ele.name}</span>
-                                        </div>
-                                      
-                                    </NavLink>  
+                                        </div>                                
+                                    </NavLink>
+                                  
+                                 
                                     
                                 )
                             })
                         }
+                        <div onClick={()=>{this.gosummer2020()}}className={["headerTabItem","headerNav"].join(" ")} key="summer2020">
+                                        <span>{showdata.summer2020}</span>
+                        </div> 
                         
 
                     </div>
@@ -107,11 +116,11 @@ class Header extends React.Component{
                     <div className={["headerMobileList" ,this.state.moblieListFlag?"displayblock":""].join(" ")}>
                         <div className="headerClose" onClick={()=>this.headerlist(false)}></div>
                         {
-                            showdata.map((item,index)=>{
+                            showdata.linkdata.map((item,index)=>{
                             return (                            
                                 <div key={index}
                                     onClick={()=>this.getLink(link[index])}
-                                    className={["osscListItem",this.state.pageflag===link[index]?'left0':''].join(" ")}>                                
+                                    className={["osscListItem"].join(" ")}>                                
                                     <span> {item.name}</span>                
                                 </div>
                               
@@ -119,6 +128,11 @@ class Header extends React.Component{
                                 
                             })
                         }
+                        <div
+                            onClick={()=>this.gosummer2020()}
+                            className={["osscListItem"].join(" ")}>                                
+                            <span>{showdata.summer2020}</span>                
+                        </div>
                     </div>
                    
 
