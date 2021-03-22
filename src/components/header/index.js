@@ -71,6 +71,7 @@ class Header extends React.Component{
     render(){
         let showdata = this.state.data[this.state.chiFlag]
         let link = this.state.data.link
+        
         return(         
             <div className={["header", this.state.chiFlag].join(" ")}>
                 <div className="content1200 headerContent">
