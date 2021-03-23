@@ -31,16 +31,16 @@ class HomePage extends React.Component{
         
     }
 
-    createLogo(){
-        var logo=[];
+    createLogo(logoclassname,data){
         
-        logocoopdata.cooper.map((item,index)=>{
+        var logo=[];     
+        data.map((item,index)=>{
             const iconUrl = require('./../../img/logo/'+item.img).default;
             logo.push(
                 <div 
                 key={index}
                 onClick={()=>{this.goLogoLink(item.url)}}
-                className={["homepagelogocoop",item.url?'':'cursordefault'].join(" ")}
+                className={[logoclassname,item.url?'':'cursordefault'].join(" ")}
                 style={{backgroundImage:"url("+iconUrl + ")"}} >
 
                 </div>
@@ -83,6 +83,7 @@ class HomePage extends React.Component{
 
     render(){
         let showdata = this.state.data[this.props.chiFlag]
+        let cohost = this.state.data.cohost
         return(         
             <div className="homepage">
             <Carousel autoplay>
@@ -133,7 +134,7 @@ class HomePage extends React.Component{
                                 {showdata.logotitle[2]}
                             </div>
                             <div className="homepageLogoItemList ">
-                                <div className="homepageLogoImage kaiyuanshe"></div>
+                                {this.createLogo("homepageLogoImage",cohost)}
                             </div>
                             <div className="homepageLogoItemTitle ">
                                 {showdata.logotitle[3]}
@@ -142,11 +143,12 @@ class HomePage extends React.Component{
                                 <div className="homepageLogoImage nanjing"></div>
                                 
                             </div>
-                            <div className="homepageLogoItemTitle">
-                                {showdata.logotitle[4]}
+                            <div className="homepageLogoItemTitle CoopTitle">
+                                <div>{showdata.logotitle[4]}</div>
+                                <div className="CoopTitleRank">{showdata.rank}</div>
                             </div>
                             <div className="homepageLogoItemList Coop">
-                                {this.createLogo()}
+                                {this.createLogo("homepagelogocoop",logocoopdata.cooper)}
                             </div>
                            
                         </div>
