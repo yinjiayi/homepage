@@ -4,17 +4,17 @@
         "banner":[
             {
                 "title":"合作单位",
-                "text":"和我们一起贡献开源"
+                "text":"和我们一起贡献开源</br><a target=\"_blank\" class=\"linkguide\" href=\"https://summer.iscas.ac.cn/help/cooperation/\">合作单位加入</a>详情"
             },
             {
                 "title":"社区",
-                "text":"让更多的学生和开发者们加入你的社区!</br><a class=\"linkguide\" href=\"https://summer.iscas.ac.cn/help/community/\">社区加入</a>详情"
+                "text":"让更多的学生和开发者们加入你的社区!</br><a target=\"_blank\" class=\"linkguide\" href=\"https://summer.iscas.ac.cn/help/community/\">社区加入</a>详情"
                
                 
             },
             {
                 "title":"学生",
-                "text":"利用暑期的时间，贡献你的代码吧！"
+                "text":"利用暑期的时间，贡献你的代码吧！</br><a target=\"_blank\" class=\"linkguide\" href=\"https://summer.iscas.ac.cn/help/student/\">学生加入</a>详情"
             }
 
         ],
