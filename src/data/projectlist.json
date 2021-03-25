@@ -1,0 +1,33 @@
+{
+    "chi":{
+        "searchPlaceholder":"请输入关键字/项目编号",
+        "order":["中选优先","社区顺序"],
+        "applyState":["开放申请中","申请结束"],
+        "pronum":["共","个项目"],
+        "pagenum":["第","页"],
+        "pagesum":["共","页"],
+        "projectID":"项目ID：",
+        "proDi":"项目难度：",
+        "proSelectStu":"中选学生：",
+        "proStore":"项目公示",
+        "proMentor":"项目社区导师：",
+        "proMentorContact":"导师联系方式",
+        "proDetail":"项目详情"
+
+    },
+    "en":{
+        "searchPlaceholder":"Please enter key words/project id",
+        "order":["Select priority","Community Order"],
+        "applyState":["Open application","Close application"],
+        "pronum":["Total of","projects"],
+        "pagenum":["Page",""],
+        "pagesum":["Total of","Pages"],
+        "projectID":"Project ID:",
+        "proDi":"Degree of Difficulty:",
+        "proSelectStu":"Selected Student:",
+        "proStore":"Repository of Project ",
+        "proMentor":"Mentor of Project:",
+        "proMentorContact":"Contact Information:",
+        "proDetail":"Project Details"
+    }
+}

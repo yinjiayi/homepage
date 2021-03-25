@@ -19,6 +19,9 @@ import HomePage from './pages/homepage/index.js';
 import Help from './pages/help/index.js';
 import Howitworks from './pages/howitworks/index.js';
 import Apply from './pages/apply/index.js';
+import Org from './pages/org/index.js';
+import Orglist from './components/orglist/index.js';
+import Projectlist from './components/projectlist/index.js';
 export default class IRouter extends React.Component{
     constructor(props){
         super(props);
@@ -39,6 +42,14 @@ export default class IRouter extends React.Component{
                                 
                                 <Route path="/homepage"component={HomePage} ></Route> 
                                 <Route path="/help"component={Help} ></Route>
+                                <Route path="/org" component={Org}>
+                                    <Org>                                  
+                                        <Switch>
+                                            <Route path = {["/org", "/org/orglist"]}  component={Orglist} exact ></Route>                      
+                                            <Route path="/org/projectlist" component={Projectlist} ></Route>      
+                                        </Switch>                                     
+                                    </Org>   
+                                </Route>
                                 <Route path="/howitworks"component={Howitworks} ></Route> 
                                 <Route path="/apply"component={Apply} ></Route>
                                 <Route path="/index"component={Index} ></Route>                                                                                     

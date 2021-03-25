@@ -1,0 +1,173 @@
+.projectListItem{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 300px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.projectListItemLeft{
+    grid-column: 1;
+    width: 500px;
+    height: 300px;
+    padding: 30px 23px 30px 35px;
+    position: relative;
+}
+
+.projectListItemRight{
+    grid-column: 2;
+    padding: 30px;
+    width: 700px;
+    background-color: #f5f7fa;
+    position: relative;
+    height: 300px;
+}
+
+.org1{
+    .projectListItemLeft{
+        background-color: #3b76d1;
+    }
+}
+
+.org0{
+    .projectListItemLeft{
+        background-color: #3d4599;
+    }
+}
+
+.org2{
+    .projectListItemLeft{
+        background-color: #5555cf;
+    }
+}
+
+.orgProjectTitleBar{
+    min-height: 40px;
+    height: 110px;
+}
+
+.orgProjectId{
+   
+    font-size: 16px;
+    color: #aec9ff;
+}
+
+.orgProjectTitle{
+    font-weight: bolder;
+    line-height: 28px;
+    width: 390px;
+    font-size: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    height: 77px;
+}
+.orgProjectWiki{
+    font-family: MicrosoftYaHei;
+	font-size: 18px;
+    color:#fff;
+    line-height: 32px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    width: 150px;
+	height: 32px;
+	background-color: #62c2ff;
+	border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.orgProjectWiki a {
+    color: #fff;
+    font-size: 18px;
+}
+.orgProjectWiki:hover{
+    background-color: #35aefb;
+}
+
+.orgProjectGap{
+    height: 20px;
+    width: 1px;
+}
+
+.orgProjectBottomLeft{
+    padding-bottom: 26px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    bottom: 0;
+    position: absolute;
+}
+
+.orgProjectName{
+    color: #aec9ff;
+    font-size: 20px;
+}
+
+.orgProjectLine{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+
+
+.orgProjectDes{
+    line-height: 25px;
+    
+    color: #666;
+    font-size: 16px;
+    text-overflow: ellipsis;
+    overflow: auto;
+    margin-bottom: 24px;
+    height: 170px;
+}
+
+.projectListItemRightUl{
+    li {
+        list-style: circle;
+        color: #1d8eff;
+        font-size: 16px;
+        line-height: 25px;
+        margin-left: -20px;
+    }
+    a{
+        color: #1d8eff;
+    }
+}
+
+.orgProjectButton{
+    position: absolute;
+    margin-top: -50px;
+    right: 28px;
+    display: inline-block;
+    width: 150px;
+	height: 40px;
+	background-color: #1d8eff;
+	border-radius: 4px;
+    font-family: MicrosoftYaHei;
+	font-size: 18px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 40px;
+	letter-spacing: 1px;
+	color: #ffffff;
+    padding-left: 28px;
+    cursor: pointer;
+    transition: all 0.3s;;
+}
+.orgProjectButton::after{
+    content:url(../../img/organisation/arrow.png);
+    position: absolute;
+    right: 10%;
+}
+
+.orgProjectButton:hover {
+    background-color: #35aefb;
+   
+    box-shadow: none;
+}
+
+

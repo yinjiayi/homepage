@@ -52,7 +52,35 @@
 
     }
 
+    .Org{
+        .OrgTipItemContent{
+            width: 97vw;
+        }
+        .OrgListItem:nth-child(3n+2) .OrgTipItemContent {
+            left: auto;
+        }
+        
+        .OrgListItem:nth-child(3n+3) .OrgTipItemContent {
+            left: auto;
+        }
+
+        .OrgListItem:nth-child(odd) .OrgTipItemContent {
+            left: 0;
+        }
+
+        .OrgListItem:nth-child(even) .OrgTipItemContent{
+            left: calc(~'-97vw + 386px')
+        }
+    }
+
     
     
   
+}
+
+@media screen and (min-width: 750px)and (max-width: 796px){
+    .OrgListItem .OrgTipItemContent {
+        left: 0 !important;
+    }
+
 }

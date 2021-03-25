@@ -1,0 +1,77 @@
+.OrglistBanner{
+    position: relative;
+    text-align: right;
+    font-family: SourceHanSansCN-Regular;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: italic;
+	color: #5c5c5c;
+    padding:24px 0;
+}
+
+.content1200{
+    width: 1200px;
+    position: relative;
+    margin:0 auto
+}
+
+.OrgListItem{
+    margin-bottom: 27px;
+}
+
+.OrgListWrapper{
+    position: relative;
+    display: grid;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fill,386px);
+}
+
+.OrgListItemModal{
+    position: relative;
+    text-align: left;
+    width: 386px;
+    height: 340px;
+    margin: 0 auto;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.OrgListItemModal:hover{
+    box-shadow:0 9px 11px -5px rgba(0, 0, 0, .2), 0 18px 28px 2px rgba(0, 0, 0, .14), 0 7px 34px 6px rgba(0, 0, 0, .12);
+}
+
+.OrgListItemModalImage{
+    background-size: contain;
+    width: 382px;
+    height: 228px;
+    background-position: 50%;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+}
+
+.OrgListItemModalTitle{
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: .005em;
+    padding: 0 18px 0;
+    height: 48px;
+    box-sizing: border-box;
+    color: #333333;
+    line-height: 22px;
+
+}
+
+.OrgListItemModalDesc{
+    color: #666a80;
+    font-size: 18px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 0 18px 18px;
+    height: 60px ;
+    display:-webkit-box;
+    -webkit-line-clamp:2; 
+    -webkit-box-orient:vertical;
+    line-height: 24px;
+}
+
