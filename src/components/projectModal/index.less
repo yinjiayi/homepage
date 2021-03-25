@@ -1,13 +1,13 @@
 .projectListItem{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    display: flex;
+   
     height: 300px;
     margin-bottom: 40px;
     color: #fff;
 }
 
 .projectListItemLeft{
-    grid-column: 1;
+   
     width: 500px;
     height: 300px;
     padding: 30px 23px 30px 35px;
@@ -15,7 +15,7 @@
 }
 
 .projectListItemRight{
-    grid-column: 2;
+  
     padding: 30px;
     width: 700px;
     background-color: #f5f7fa;
@@ -55,7 +55,7 @@
 .orgProjectTitle{
     font-weight: bolder;
     line-height: 28px;
-    width: 390px;
+    width: 100%;
     font-size: 24px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -168,6 +168,22 @@
     background-color: #35aefb;
    
     box-shadow: none;
+}
+
+.en{
+    .orgProjectWiki a{
+        font-size: 13px;
+    }
+
+    .orgProjectButton{
+        font-size: 13px;
+        padding-left: 10px;
+    }
+
+    .orgProjectButton::after {
+        
+        bottom: -8%;
+    }
 }
 
 

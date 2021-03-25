@@ -17,6 +17,7 @@ import { Input, Space } from 'antd';
 import data from '../../data/orglist.json';
 import projectlist from '../../data/projectlist.json';
 import ProjectModal from '../projectModal/index.js';
+import { Pagination } from 'antd';
 const { Search } = Input;
 
 class Projectlist extends React.Component{
@@ -25,26 +26,97 @@ class Projectlist extends React.Component{
        this.state ={
            showdata:[],
            page:1,
-           datall:data.orgList[0].project_list
+           pagesize:10,
+           datall: this.getData(),
+           datastock:[],
         
        }
     }
 
-    onSearch(){
+   
 
+    filterItem(value){
+        console.log(value)
+        if(value){
+            var showdataTemp = []
+            this.state.datall.map((item)=>{
+                if(item.label.toString().includes(value)||
+                item.name.toLocaleLowerCase().includes(value)||
+                item.description.toLocaleLowerCase().includes(value)){
+                    showdataTemp.push(item)
+                }
+                return 0;
+            })
+            
+            this.setState({
+                datall:showdataTemp,
+                page:1,
+                
+            })
+        }else{
+            console.log(this.state.datastock)
+            this.setState({
+                datall:this.state.datastock,
+                pagenow:1,
+                
+            })
+
+        }
+        
+        
+        setTimeout(()=>{
+            this.getPageData(1)
+        },100)
+        
+        
+        return 0;
+    }
+
+    componentDidMount(){       
+        this.getPageData(1)
+        this.setState({
+            datastock:this.state.datall
+        })
+    }
+
+    getPageData(page){
+        this.setState({
+            showdata:this.state.datall.slice(this.state.pagesize*(page-1),this.state.pagesize*page),
+           
+        })
+        
     }
 
     getData(){
         var prodata = []
         data.orgList.map((item)=>{
-            let _arr = []
-            item.project_list.map((items) => {
-                _arr.push(Object.assign({},items,{orgtitle: item.title}))
+            let _arr = []         
+            item.project_list.map((items) => {           
+                _arr.push(Object.assign({},items,{orgtitle: item.title}))            
             })
-            prodata.concat(_arr)
+            prodata = prodata.concat(_arr)         
         })
+       
         return prodata
     }
+
+    itemRender(current, type, originalElement) {
+        if (type === 'prev') {
+          return <a>上一页</a>;
+        }
+        if (type === 'next') {
+          return <a>下一页</a>;
+        }
+        return originalElement;
+      }
+
+    onChange = page => {
+        console.log(page);
+        this.setState({
+            page: page,
+            showdata:this.state.datall.slice(this.state.pagesize*(page-1),this.state.pagesize*page)
+        });
+    };
 
 
 
@@ -57,22 +129,32 @@ class Projectlist extends React.Component{
         return(         
             <div className="Projectlist">
                <div className="ProjectListBanner">
-               <Search
-                    
-                    placeholder={showdata.searchPlaceholder}
-                    allowClear
-                    size="large"
-                    onSearch={this.onSearch}
-                />
-                <div className="ProjectListRank">
-                    <span className="ProjectListRankItem ">{showdata.order[0]}</span>
-                    <span className="ProjectListRankItem">{showdata.order[1]}</span>
-                </div>
-               
+                <Search
+                        
+                        placeholder={showdata.searchPlaceholder}
+                        allowClear
+                        size="large"
+                        onSearch={value => this.filterItem(value)}
+                    />
+                    <div className="ProjectListRank">
+                        {/* <span className="ProjectListRankItem ">{showdata.order[0]}</span> */}
+                        <span className="ProjectListRankItem">{showdata.order[1]}</span>
+                    </div>           
                </div> 
+               <div className="ProjectListPageState">
+                    <div className="ProjectListPage">
+                        <span className="ProjectListPageItemOne">{showdata.pronum[0]}{this.state.datall.length}{showdata.pronum[1]}</span>
+                        <span className="ProjectListPageItem">
+                            {showdata.pagenum[0]}{this.state.page}{showdata.pagenum[1]} 
+                            <span className="ProjectListPageItemGap">/ </span>
+                            <span className="ProjectListPageItemSum">{showdata.pagesum[0]}{Math.ceil(this.state.datall.length/this.state.pagesize)}{showdata.pagesum[1]}</span>
+                        </span>
+                    </div>
+                    <div className="ProjectListApplyState">{showdata.applyState[0]}</div>
+                </div>
                <div className="projectListWrapper">
                    {
-                       this.state.datall.map((item,index)=>{
+                       this.state.showdata.map((item,index)=>{
                            return (
                                 <ProjectModal showdata={showdata} item={item} key={index}/>
                            )
@@ -81,6 +163,14 @@ class Projectlist extends React.Component{
 
 
                </div>
+               <Pagination 
+                defaultCurrent={this.state.page} 
+                defaultPageSize ={this.state.pagesize} 
+                total={this.state.datall.length} 
+                itemRender={this.itemRender}
+                onChange={this.onChange}
+                showSizeChanger={false}
+                />
                
 
             </div>

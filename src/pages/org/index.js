@@ -24,6 +24,13 @@ class Org extends React.Component{
        }
     }
 
+    componentDidMount(){    
+        var hashurl = this.props.history.location.pathname;
+        this.setState({
+            tabflag:hashurl.split("/")[2]
+        })
+    }
+
     handleClick(hashurl){
         this.setState({
             tabflag:hashurl
