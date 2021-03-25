@@ -38,7 +38,7 @@
         "banner":[
             {
                 "title":"Cooperation Partner",
-                "text":"Contribute to open source with us!"
+                "text":"Contribute to open source with us!</br><a target=\"_blank\" class=\"linkguide\" href=\"https://summer.iscas.ac.cn/help/cooperation/\">cooperation</a>"
             },
             {
                 "title":"Community",
@@ -46,7 +46,7 @@
             },
             {
                 "title":"Students",
-                "text":"Contribute your code in this summer!"
+                "text":"Contribute your code in this summer!</br><a target=\"_blank\" class=\"linkguide\" href=\"https://summer.iscas.ac.cn/help/student/\">student guide</a>"
             }
 
         ],
