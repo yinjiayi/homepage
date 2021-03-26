@@ -22,6 +22,7 @@ import Apply from './pages/apply/index.js';
 import Org from './pages/org/index.js';
 import Orglist from './components/orglist/index.js';
 import Projectlist from './components/projectlist/index.js';
+import OrgDetail from './components/orgdetail/index.js';
 export default class IRouter extends React.Component{
     constructor(props){
         super(props);
@@ -46,7 +47,8 @@ export default class IRouter extends React.Component{
                                     <Org>                                  
                                         <Switch>
                                             <Route path = {["/org", "/org/orglist"]}  component={Orglist} exact ></Route>                      
-                                            <Route path="/org/projectlist" component={Projectlist} ></Route>      
+                                            <Route path="/org/projectlist" component={Projectlist} exact></Route>  
+                                            <Route path="/org/orgdetail/:orgname" component={OrgDetail} ></Route>     
                                         </Switch>                                     
                                     </Org>   
                                 </Route>

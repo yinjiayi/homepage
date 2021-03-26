@@ -32,6 +32,7 @@ class Orglist extends React.Component{
     }
 
     openOrgModal(anchor){
+        console.log(anchor)
         let flag = anchor;
         if(anchor === this.state.orgflag){
             flag=""
@@ -64,13 +65,18 @@ class Orglist extends React.Component{
                         this.state.orglist.orgList.map((item,index)=>{
                             const iconUrl = require('./../../img/organisation/'+item.img).default;
                             return(
-                                <div className="OrgListItem" key={index} onClick={()=>{this.openOrgModal(item.anchor)}}>
-                                    <div className="OrgListItemModal">
+                                <div className="OrgListItem" key={index} >
+                                    <div className="OrgListItemModal" onClick={()=>{this.openOrgModal(item.anchor)}}>
                                         <div className="OrgListItemModalImage" style={{backgroundImage:"url("+iconUrl + ")"}}></div>
                                         <div className="OrgListItemModalTitle">{item.title}</div>
                                         <div className="OrgListItemModalDesc">{item.description}</div>
                                     </div>
-                                    <OrgTip item={item} showdata={showdata} orgflag={this.state.orgflag} closeModal={this.closeModall}/>
+                                    <OrgTip 
+                                        item={item} 
+                                        showdata={showdata} 
+                                        orgflag={this.state.orgflag} 
+                                        closeModal={this.closeModall}
+                                    />
 
                                 </div>
                             )
@@ -88,10 +94,12 @@ class Orglist extends React.Component{
 }
 
 const mapStateToProps = (state)=>{
-
     return {
         chiFlag:state.chiFlag
     }
  }
+
+
+
 
 export default connect(mapStateToProps)(Orglist)

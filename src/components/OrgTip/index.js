@@ -14,11 +14,17 @@ import React from 'react'
 import './index.less';
 import { connect } from 'react-redux'
 
+
 class OrgTip extends React.Component{
     constructor(props){
        super(props)
        this.state ={      
        }
+       this.goOrgDetail = this.goOrgDetail.bind(this)
+    }
+
+    goOrgDetail(){
+        this.props.setOrgDetail(this.props.item)
     }
 
    
@@ -27,9 +33,9 @@ class OrgTip extends React.Component{
 
 
     render(){
-        const {closeModal} =this.props;
+        const {closeModal,orgflag,orgDetailflag} =this.props;
         return(         
-            <div className={["OrgListItemTip",this.props.orgflag === this.props.item.anchor?"show":"hide"].join(" ")}>
+            <div className={["OrgListItemTip",orgDetailflag,orgflag === this.props.item.anchor?"show":"hide"].join(" ")}>
                 <div className="triangle"></div>
                 <div className="OrgTipItemContent">
                     <div className="OrgTipClose" onClick={closeModal}></div>
@@ -80,7 +86,9 @@ class OrgTip extends React.Component{
                             })
                         }
                     </div>
-                    <div className="OrgTipButton">{this.props.showdata.button}</div>
+                    <div className="OrgTipButton" 
+                    onClick={()=>{this.goOrgDetail()}}
+                    >{this.props.showdata.button}</div>
 
                 </div>
                 
@@ -98,5 +106,16 @@ const mapStateToProps = (state)=>{
         chiFlag:state.chiFlag
     }
   }
+
+const mapDispatchToProps = dispatch => {
+    return {
+        setOrgDetail:(data)=>{
+            dispatch({
+                type:'setOrgDetail',
+                payload:data
+            })
+        },
+    }
+}
  
- export default connect(mapStateToProps)(OrgTip)
+ export default connect(mapStateToProps,mapDispatchToProps)(OrgTip)

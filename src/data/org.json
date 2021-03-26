@@ -17,7 +17,8 @@
         "email":"社区官方公共联系邮箱：",
         "domain":"专注领域",
         "tech":"技术标签",
-        "button":"查看详情"
+        "button":"查看详情",
+        "orgDetailNav":["社区列表","社区详情"]
     },
     "en":{
         "tab":[
@@ -37,7 +38,8 @@
         "email":"Public E-mail Address:",
         "domain":"Labels of Focus Field",
         "tech":"Labels of Technical Field",
-        "button":"Detailed Info"
+        "button":"Detailed Info",
+        "orgDetailNav":["Community List","Detailed Information"]
 
     }
 }

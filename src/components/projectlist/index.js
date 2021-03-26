@@ -160,8 +160,6 @@ class Projectlist extends React.Component{
                            )
                        })
                    }
-
-
                </div>
                <Pagination 
                 defaultCurrent={this.state.page} 
