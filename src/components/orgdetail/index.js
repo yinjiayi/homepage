@@ -49,18 +49,20 @@ class OrgDetail extends React.Component{
                     break       
                  }
              }
-             console.log("1111")
-            console.log(showorg)
         }
-        // if(!showorg){
-        //     this.props.history.push("/")
-        //     return false
-        // }
+        if(!showorg){
+            this.props.history.push("/")
+            return false
+        }
         this.setState({
             showdata:showorg,
             showprojectlist:showorg.project_list.slice(0,this.state.pagesize)
         })
         console.log(this.state.showdata)   
+    }
+
+    goOrgList(){
+        window.location.hash = "/org/orglist"
     }
 
 
@@ -76,9 +78,10 @@ class OrgDetail extends React.Component{
 
     onChange = page => {
         console.log(page);
+        console.log(this.state.showdata);
         this.setState({
             page: page,
-            showdata:this.state.showdata.slice(this.state.pagesize*(page-1),this.state.pagesize*page)
+            showprojectlist:this.state.showdata.project_list.slice(this.state.pagesize*(page-1),this.state.pagesize*page)
         });
     };
 
@@ -95,7 +98,7 @@ class OrgDetail extends React.Component{
         return(         
             <div className="OrgDetail">   
                 <div className="OrgDetailNavLink content1200">   
-                    <span className="orgListNavBarItem orgClick">社区列表</span>
+                    <span className="orgListNavBarItem orgClick" onClick={()=>{this.goOrgList()}}>社区列表</span>
                     <span className="orgListNavBarItem orgGrey"> &gt; 社区详情</span>              
                 </div>
                 <div className="OrgDetailWrapper">

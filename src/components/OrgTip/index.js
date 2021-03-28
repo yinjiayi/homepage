@@ -25,13 +25,10 @@ class OrgTip extends React.Component{
 
     goOrgDetail(){
         this.props.setOrgDetail(this.props.item)
+        window.location.hash = "/org/orgdetail/"+this.props.item.anchor
     }
 
    
-
- 
-
-
     render(){
         const {closeModal,orgflag,orgDetailflag} =this.props;
         return(         
