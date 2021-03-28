@@ -88,16 +88,22 @@ class HomePage extends React.Component{
             <div className="homepage">
             <Carousel autoplay>
                 <div className="homepageBanner One">
-                    <div className="homepageText content1200">
-                        { 
-                            showdata.bannertext.map((item,index)=>{
-                                return(
-                                    <span className="homepageBannerLine" key={index} dangerouslySetInnerHTML={{ __html: item }}/>                              
-                                )
-                            })
-                        }
+                    <div className="homepageBannerTitle">开源软件供应链点亮计划 - 暑期2021</div>
+                    <div className="homepageTextOne">
+                    {
+                        showdata.bannerone.map((item,index)=>{
+                            return(
+                                <div className="homepageBannerFline" key={index} >
+                                    <span className="homepageBannerFlineIcon"></span>
+                                    <span  className="homepageBannerFlineText" dangerouslySetInnerHTML={{ __html: item }}></span>
+                                </div>
+                            )
 
+                        })
+                    }
                     </div>
+                    
+
                 </div>
                 <div className="homepageBanner Two">
                     <div className="homepageText content1200">
@@ -115,6 +121,12 @@ class HomePage extends React.Component{
                 
                 <div className="homepageWrapper">
                     <div className="content1200">
+                        <div 
+                        className="homepageDesc"
+                        dangerouslySetInnerHTML={{ __html: showdata.bannertext }}
+                        ></div>
+
+                        
                         <div className="homepageIcon">
                             {
                                 this.createIconBanner(showdata.icontext)
