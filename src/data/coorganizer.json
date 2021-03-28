@@ -1,4 +1,12 @@
 {
+    "media":[
+        {
+            "name":"芽木科技",
+            "img":"yamu.png",
+            "url":"https://www.debian.org/"
+        }
+    ],
+    
     "cooper":[
         {
             "name":"ApacheDolphinScheduler",
@@ -77,11 +85,6 @@
             "url":"https://openlookeng.io/"
         },
         {
-            "name":"openLooKeng",
-            "img":"openLooKeng.png",
-            "url":"https://openlookeng.io/"
-        },
-        {
             "name":"openGauss",
             "img":"openGauss.png",
             "url":"https://opengauss.org/"
@@ -100,10 +103,11 @@
             "name":"The Debian Project",
             "img":"debian.png",
             "url":"https://www.debian.org/"
-        }
-        
-        
-        
-        
+        },
+        {
+            "name":"春松客服",
+            "img":"cskf.png",
+            "url":"https://github.com/chatopera/cosin"
+        }    
     ]
 }

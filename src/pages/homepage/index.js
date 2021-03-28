@@ -140,11 +140,18 @@ class HomePage extends React.Component{
                                 {showdata.logotitle[3]}
                             </div>
                             <div className="homepageLogoItemList ">
-                                <div className="homepageLogoImage nanjing"></div>
-                                
+                                <div className="homepageLogoImage nanjing"></div>                            
                             </div>
+                            <div className="homepageLogoItemTitle ">
+                                {showdata.logotitle[4]}
+                            </div>
+                            <div className="homepageLogoItemList ">
+                                {this.createLogo("homepagelogoMedia",logocoopdata.media)}                           
+                            </div>
+
+
                             <div className="homepageLogoItemTitle CoopTitle">
-                                <div>{showdata.logotitle[4]}</div>
+                                <div>{showdata.logotitle[5]}</div>
                                 <div className="CoopTitleRank">{showdata.rank}</div>
                             </div>
                             <div className="homepageLogoItemList Coop">
