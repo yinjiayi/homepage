@@ -1,3 +1,5 @@
+name: git-sync
+
 on:
   push:
     branches: [ main ]
