@@ -81,10 +81,8 @@ class Projectlist extends React.Component{
 
     getPageData(page){
         this.setState({
-            showdata:this.state.datall.slice(this.state.pagesize*(page-1),this.state.pagesize*page),
-           
-        })
-        
+            showdata:this.state.datall.slice(this.state.pagesize*(page-1),this.state.pagesize*page),      
+        })     
     }
 
     getData(){

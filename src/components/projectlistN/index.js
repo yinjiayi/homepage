@@ -16,17 +16,22 @@ import { connect } from 'react-redux';
 import { Input, Space } from 'antd';
 import data from '../../data/orglist.json';
 import projectlist from '../../data/projectlist.json';
-import ProjectModal from '../projectModal/index.js';
 import { Pagination } from 'antd';
+import org from '../../pages/org';
 const { Search } = Input;
 
 class ProjectlistN extends React.Component{
     constructor(props){
        super(props)
-       this.state ={
-           showdata:[],       
-           datall: this.getData(),
-           datastock:[],
+       this.state ={   
+           page:1,
+           pagesize:40,
+           datall: [],  
+           searchdatastock:[],      
+           datastock:[],      // project 所有数据
+           projectlistdata:[],// 显示的project数据
+           degreeselect:"all",
+           
             
         
        }
@@ -36,27 +41,172 @@ class ProjectlistN extends React.Component{
 
 
 
-    componentDidMount(){       
+    componentDidMount(){ 
+           
       
+        this.getData()
+        
+        
+    }
+
+    getPageData(page){
         this.setState({
-            datastock:this.state.datall
+            page:page,
+            projectlistdata:this.state.datall.slice(this.state.pagesize*(page-1),this.state.pagesize*page),       
+        })  
+    }
+
+    filterItem(value){
+        console.log(value)
+        this.setState({ 
+            degreeselect:"all"           
         })
-        console.log(data)
+        if(value){
+            var showdataTemp = []
+            this.state.datall.map((item)=>{
+                if(item.name.toString().includes(value)||
+                item.orgtitle.toLocaleLowerCase().includes(value)||
+                item.description.toLocaleLowerCase().includes(value)){
+                    showdataTemp.push(item)
+                }
+                return 0;
+            })
+            
+            this.setState({
+                datall:showdataTemp,
+                searchdatastock:showdataTemp,
+                page:1,
+                
+            })
+        }else{
+            console.log(this.state.datastock)
+            this.setState({
+                datall:this.state.datastock,  
+                searchdatastock:[], 
+                degreeselect:"all"           
+            })
+
+        }       
+        setTimeout(()=>{
+            this.getPageData(1)
+        },100)
+        
+        
+        return 0;
     }
 
 
     getData(){
         var prodata = []
+        var domain_tag = []
+        var tech_tag = []
         data.orgList.map((item)=>{
-            let _arr = []         
+            let _arr = []    
+            domain_tag = domain_tag.concat(item.domain_tag)  
+            tech_tag = tech_tag.concat(item.tech_tag)   
             item.project_list.map((items) => {           
-                _arr.push(Object.assign({},items,{orgtitle: item.title}))            
+                _arr.push(Object.assign({},items,
+                    {orgtitle: item.title,
+                    anchor:item.anchor,
+                    prourl:item.project_url}))            
             })
             prodata = prodata.concat(_arr)         
         })
        
-        return prodata
+        this.setState({
+            datall:prodata,
+            datastock:prodata,
+            projectlistdata:prodata.slice(0,this.state.pagesize),
+        })
     }
+
+    itemRender(current, type, originalElement) {
+        if (type === 'prev') {
+          return <a>上一页</a>;
+        }
+        if (type === 'next') {
+          return <a>下一页</a>;
+        }
+        return originalElement;
+      }
+
+    onChange = page => {
+        console.log(page);
+        this.getPageData(page)
+    };
+
+    gohashlink(orgtitle){
+        window.location.hash="/org/orgdetail/"+orgtitle
+    }
+
+    goLink(link){
+        window.open(link)
+    }
+
+    filterTag(tag){ 
+        let filterdata = [] 
+        if(this.state.searchdatastock.length>0){
+            if(tag === "all"){
+                this.setState({
+                    datall:this.state.searchdatastock,              
+                })
+            }else{
+                const degree = this.getSelectDToChi(tag)
+                filterdata = this.state.searchdatastock.filter(item => item.difficulty === degree);
+                this.setState({
+                    datall:filterdata,              
+                })
+            }
+        } else{
+            if(tag === "all"){
+                this.setState({
+                    datall:this.state.datastock,              
+                })
+            }else{
+                const degree = this.getSelectDToChi(tag)
+                filterdata = this.state.datastock.filter(item => item.difficulty === degree);
+                this.setState({
+                    datall:filterdata,              
+                })
+            }
+        }
+
+        setTimeout(()=>{
+            this.getPageData(1)
+        },100)
+    }
+    setDegree(tag){
+        const tagen = this.getSelectM(tag)
+        this.setState({
+            degreeselect:tagen
+        })
+        this.filterTag(tagen)
+
+    }
+
+    getSelectM(item){
+        return {
+            "全部":"all",
+            "低":"low",
+            "中":"medium",
+            "高":"high",
+            "All":"all",
+            "Low":"low",
+            "Medium":"medium",
+            "High":"high"
+        }[item]||"all"
+    }
+
+    getSelectDToChi(tagen){
+        return {
+            "low":"低",
+            "medium":"中",
+            "high":"高"
+        }[tagen]||"全部"
+
+    }
+
+   
 
 
 
@@ -67,22 +217,93 @@ class ProjectlistN extends React.Component{
 
     render(){
         let showdata = projectlist[this.props.chiFlag]
-        
+        let {projectlistdata,degreeselect} = this.state
         return(         
             <div className="Projectlist">
                <div className="ProjectListBanner">
-                <Search
-                        
+                <Search                      
                         placeholder={showdata.searchPlaceholder}
                         allowClear
                         size="large"
                         onSearch={value => this.filterItem(value)}
                     />
-                    <div className="ProjectListRank">
-                        {/* <span className="ProjectListRankItem ">{showdata.order[0]}</span> */}
+                    {/* <div className="ProjectListRank">
+                        <span className="ProjectListRankItem ">{showdata.order[0]}</span>
                         <span className="ProjectListRankItem">{showdata.order[1]}</span>
-                    </div>           
+                    </div>            */}
                </div> 
+               <div className="projectListWrapper content1200">
+                    <div className="ProjectListPageState">
+                        <div className="ProjectListPage">
+                            <span className="ProjectListPageItemOne">{showdata.pronum[0]} {this.state.datall.length} {showdata.pronum[1]}</span>
+                            <span className="ProjectListPageItem">
+                                {showdata.pagenum[0]}{this.state.page} {showdata.pagenum[1]} 
+                                <span className="ProjectListPageItemGap">/ </span>
+                                <span className="ProjectListPageItemSum">{showdata.pagesum[0]} {Math.ceil(this.state.datall.length/this.state.pagesize)} {showdata.pagesum[1]}</span>
+                            </span>
+                        </div>
+                        <div className="ProjectListApplyState">{showdata.applyState[0]}</div>
+                    </div>
+                    <div className="ProjectListSelect">
+                        <div className="ProjectListSelectItem Degree">
+                            <span className="ProjectListSelectItemTitle" >{showdata.proDi}</span>
+                            {
+                                showdata.prodegree.map((item,index)=>{
+                                    return (
+                                        <span 
+                                        key={index} 
+                                        onClick={()=>{this.setDegree(item)}}
+                                        className={["ProjectListSelectItemContent",this.getSelectM(item) === degreeselect ? "ProjectListSelectTagDe":""].join(" ")}>
+                                            {item}
+                                        </span>
+                                    )
+                                })
+                            }
+                        </div>
+                    </div>
+                    <div className="ProjectListLC">
+                        <div className="ProjectListLCLine Header">
+                            <span className="ProjectListLCID ">{showdata.projectNumber}</span>
+                            <span className="ProjectListLCName">{showdata.projectName}</span>
+                            <span className="ProjectListLCCommunity">{showdata.projectCommunity}</span>
+                            <span className="ProjectListLCDegree">{showdata.proDegree}</span>
+                            <span className="ProjectListLCOperation">{showdata.operation}</span>
+                        </div>
+                        {
+                          
+                                         
+                                projectlistdata.map((item,index)=>{
+                                    return(
+                                        <div className="ProjectListLCLine Item" key={index}>
+                                            <span className="ProjectListLCID ">{item.label}</span>
+                                            <span className="ProjectListLCName" onClick={()=>{this.goLink(item.prourl)}}>{item.name}</span>
+                                            <span className="ProjectListLCCommunity" onClick={()=>{this.gohashlink(item.anchor)}}>{item.orgtitle}</span>
+                                            <span className="ProjectListLCDegree">{item.difficulty}</span>
+                                            <span className="ProjectListLCOperation Item">
+                                                <span className="PLOperationButton">{showdata.operationbutton[0]}</span>
+                                                <span className="PLOperationButton">{showdata.operationbutton[1]}</span>
+                                            </span>
+                                        </div>
+                                    )
+    
+                                })
+                          
+                            
+                        }
+
+                    </div>
+
+                    <Pagination 
+                    current={this.state.page}
+                    defaultPageSize ={this.state.pagesize} 
+                    total={this.state.datall.length} 
+                    itemRender={this.itemRender}
+                    onChange={this.onChange}
+                    showSizeChanger={false}
+                    />
+
+               </div>
+               
                
               
                

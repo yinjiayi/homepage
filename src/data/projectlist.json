@@ -7,12 +7,19 @@
         "pagenum":["第","页"],
         "pagesum":["共","页"],
         "projectID":"项目ID：",
-        "proDi":"项目难度：",
+        "projectNumber":"项目编号",
+        "projectName":"项目名称",
+        "projectCommunity":"社区名称",
+        "operation":"操作",
+        "operationbutton":["项目详情","我要报名"],
+        "proDi":"难   度：",
+        "proDegree":"难度",
         "proSelectStu":"中选学生：",
         "proStore":"项目公示",
         "proMentor":"项目社区导师：",
         "proMentorContact":"导师联系方式",
-        "proDetail":"项目详情"
+        "proDetail":"项目详情",
+        "prodegree":["全部","低","中","高"]
 
     },
     "en":{
@@ -23,11 +30,18 @@
         "pagenum":["Page",""],
         "pagesum":["Total of","Pages"],
         "projectID":"Project ID:",
+        "projectNumber":"Project ID ",
+        "projectName":"Name of Project ",
+        "projectCommunity":"Name of Community",
+        "operation":"Operation",
+        "operationbutton":["Detailed Info","Applicate"],
         "proDi":"Degree of Difficulty:",
+        "proDegree":"Degree of Difficulty",
         "proSelectStu":"Selected Student:",
         "proStore":"Repository of Project ",
         "proMentor":"Mentor of Project:",
         "proMentorContact":"Contact Information:",
-        "proDetail":"Project Details"
+        "proDetail":"Project Details",
+        "prodegree":["all","Low","Medium","High"]
     }
 }

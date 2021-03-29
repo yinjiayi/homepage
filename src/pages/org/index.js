@@ -25,12 +25,14 @@ class Org extends React.Component{
     }
 
     componentDidMount(){    
-        var hashurl = this.props.history.location.pathname.split("/")[2];
-        if(hashurl === "orgdetail"){
-            hashurl = "orglist"
+        var hashurl = this.props.history.location.pathname.split("/");
+        let orgflag = "orglist"
+        console.log(hashurl)
+        if(hashurl[2] === "projectlist"){
+            orgflag = "projectlist"
         }
         this.setState({
-            tabflag:hashurl
+            tabflag:orgflag
         })
     }
 

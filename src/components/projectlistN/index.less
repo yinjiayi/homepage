@@ -2,10 +2,9 @@
 
 .ProjectListBanner{
     margin:36px 0 20px;
-    display: flex;
-    justify-content: space-between;
+   text-align: center;
     .ant-input-search{
-        width: 500px;
+        width: 600px;
         height: 60px;
         background-color: #ffffff;
         border-radius: 4px;
@@ -37,6 +36,30 @@
 
 }
 
+.projectListWrapper{
+    position: relative;
+    overflow: auto;
+}
+
+.ProjectListPageState{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-family: MicrosoftYaHei;
+	font-size: 20px;
+    padding-bottom:22px;
+    color:#666;
+}
+
+.ProjectListPageItemOne{
+    margin-right: 40px;
+}
+.ProjectListPageItemSum{
+    display: inline-block;
+    color: #999999;
+  
+}
+
 .ProjectListRank{
     position: relative;
     font-family: MicrosoftYaHei;
@@ -53,51 +76,41 @@
     color: #1d8eff;
     
 }
-// 功能还未上线
-// .ProjectListRankItem:first-child::after{
-//     content: "";
-//     position: relative;
-//     border-left: 1px solid #b0b2b9;
-//     right: -10px;
-//     height: 40px;
-// }
 
-.projectListWrapper{
-    overflow: auto;  
-}
-.ProjectListPageState{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    font-family: MicrosoftYaHei;
-	font-size: 20px;
-    padding-bottom:26px;
-    color:#666;
-}
 
-.ProjectListPageItemOne{
-    margin-right: 40px;
-}
-.ProjectListPageItemSum{
-    display: inline-block;
-    color: #999999;
-  
-}
-.ProjectListPageItemGap{
-    display: inline-block;
-    margin:0 5px;
-    color: #999999;
-}
+
+
+
 
 .en{
     .ProjectListApplyState{
-        line-height: 22px;
+        line-height: 18px;
+    }
+    .ProjectListLCLine.Header {
+        .ProjectListLCName{
+            text-align: left;
+        }
+        .ProjectListLCCommunity{
+            text-align: left;
+            width: 220px;
+        }
+
+        .ProjectListLCDegree{
+            width: 170px;
+        }
+
+    }
+    
+
+    .ProjectListSelectItem.Degree .ProjectListSelectItemTitle{
+        letter-spacing: 0;
+        margin-right: 10px;
     }
 
 }
 
 .ProjectListApplyState{
-    width: 101px;
+    padding:2px 10px;
 	height: 24px;
 	background-color: #13e493;
 	border-radius: 10px;
@@ -105,11 +118,68 @@
 	font-size: 16px;
 	font-weight: normal;
 	font-stretch: normal;
-	line-height: 25px;
+	line-height: 22px;
 	letter-spacing: 0px;
 	color: #ffffff;
     text-align: center;
 }
+
+
+
+.ProjectListSelect{
+    position: relative;
+    width: 100%;
+    background-color: #ffffff;
+	border: solid 1px #a6a6a6;
+    padding:0 10px;
+    margin-bottom: 10px;
+}
+
+.ProjectListSelectItem{
+    font-family: MicrosoftYaHei;
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 36px;
+	letter-spacing: 0px;
+	color: #666666;
+    display: inline-block;
+}
+
+.ProjectListSelectItemContent{
+    display: inline-block;
+    margin-right: 12px;
+    color: #2190ff;
+    cursor: pointer;
+    line-height: 12px;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.PLOperationButton{
+    width: 90px;
+	height: 24px;
+	background-color: #4b9dfe;
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    color:#fff;
+    text-align: center;
+    line-height: 24px;
+    cursor:pointer
+}
+
+.ProjectListSelectTagDe{
+    background-color: #d7e3fa;   
+    
+}
+
+.ProjectListSelectItem.Degree{
+    .ProjectListSelectItemTitle{
+        letter-spacing: 10px;
+    }
+}
+
 
 .Projectlist{
     .ant-pagination-next,
@@ -147,6 +217,98 @@
             color:#fff !important;
         }
     }
+}
+
+.ProjectListLC{
+    font-family: MicrosoftYaHei;
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+    
+}
+
+.ProjectListLCLine{
+    line-height: 36px;
+    width: 100%;
+    padding-left: 15px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+}
+
+.ProjectListLCLine.Item:nth-child(2n){
+    background-color: #ebeef5;
+}
+
+.ProjectListLCLine.Item:nth-child(2n+1){
+    background-color: #f4f7f9;
+}
+
+
+
+.ProjectListLCID{
+    width: 110px;
+    display: inline-block;
+    color: #000000;
+   
+}
+
+.ProjectListLCName{
+    width: 512px;
+    display: inline-block;
+    color: #1d8eff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.ProjectListLCCommunity{
+    width: 260px;
+    display: inline-block;
+    color: #000000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.ProjectListLCDegree{
+    width: 100px;
+    display: inline-block;
+    color: #000000;
+}
+
+.ProjectListLCOperation{
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    
+}
+
+.ProjectListLCOperation.Item{
+    display: flex;
+}
+
+.ProjectListLCLine.Header{
+    height: 40px;
+    line-height: 40px;
+    background-color: #7485a7;
+    span{
+        color:#fff !important;
+        cursor: default;
+        
+    }
+
+    .ProjectListLCName,
+    .ProjectListLCCommunity{
+        text-align: center;
+    }
+
 }
 
 
