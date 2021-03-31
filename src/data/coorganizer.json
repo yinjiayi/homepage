@@ -108,6 +108,26 @@
             "name":"春松客服",
             "img":"cskf.png",
             "url":"https://github.com/chatopera/cosin"
-        }    
+        }, 
+        {
+            "name":"kubesphere",
+            "img":"kubesphere.png",
+            "url":"https://kubesphere.io/"
+        }, 
+        {
+            "name":"Curve",
+            "img":"curve.png",
+            "url":"https://www.opencurve.io/"
+        }, 
+        {
+            "name":"Bookos",
+            "img":"bookos.png",
+            "url":"https://www.book-os.org/"
+        }, 
+        {
+            "name":"WebCell",
+            "img":"webcell.png",
+            "url":"https://web-cell.dev/"
+        } 
     ]
 }
