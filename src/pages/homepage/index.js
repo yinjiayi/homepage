@@ -105,7 +105,7 @@ class HomePage extends React.Component{
                     
 
                 </div>
-                {/* <div className="homepageBanner Two">
+                <div className="homepageBanner Two">
                     <div className="homepageText content1200">
                         <div className="homepageTitle">{showdata.bannerTwo[0]}</div>
                         <div className="homepageTitleTime">{showdata.bannerTwo[1]}</div>
@@ -115,7 +115,7 @@ class HomePage extends React.Component{
                         </div>
                     </div>
 
-                </div> */}
+                </div>
 
                 </Carousel>
                 
