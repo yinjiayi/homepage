@@ -105,11 +105,6 @@
             "url":"https://www.debian.org/"
         },
         {
-            "name":"春松客服",
-            "img":"cskf.png",
-            "url":"https://github.com/chatopera/cosin"
-        }, 
-        {
             "name":"kubesphere",
             "img":"kubesphere.png",
             "url":"https://kubesphere.io/"
