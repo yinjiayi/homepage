@@ -88,7 +88,7 @@ class HomePage extends React.Component{
             <div className="homepage">
             <Carousel autoplay>
                 <div className="homepageBanner One">
-                    <div className="homepageBannerTitle">开源软件供应链点亮计划 - 暑期2021</div>
+                    <div className="homepageBannerTitle">{showdata.title}</div>
                     <div className="homepageTextOne">
                     {
                         showdata.bannerone.map((item,index)=>{
