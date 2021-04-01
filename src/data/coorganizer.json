@@ -103,7 +103,8 @@
             "name":"The Debian Project",
             "img":"debian.png",
             "url":"https://www.debian.org/"
-        }, 
+        },
+
         {
             "name":"kubesphere",
             "img":"kubesphere.png",
