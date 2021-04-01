@@ -13,7 +13,7 @@ var gourl = (url)=>{
  * MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
  * See the Mulan PSL v2 for more details.
  */
-
+import {readyWeixin, initWeixin} from './weixin.js';
 const linkDataMap = {
     homepage:'首页',
     howitworks:'活动规划',
@@ -32,12 +32,19 @@ var gettitle = function(){
         document.title = `${linkDataMap[location[1]]||'首页'}${titleContent}`;
         document.getElementsByTagName("meta")[2].content = "关注开源软件和开源社区，培养和发掘更多优秀的开发者。";
     }
+
+    try {
+        readyWeixin();
+    } catch (e) {
+        console.log(e);
+    }
     
     
 }
 
 
 var titleChange = function(){
+    initWeixin();
     gettitle();
    
     window.addEventListener('hashchange',()=>{
