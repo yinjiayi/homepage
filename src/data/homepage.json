@@ -1,12 +1,13 @@
 { 
     "communitylink":"https://summer.iscas.ac.cn/help/community/",
     "chi":{
+        "title":"开源软件供应链点亮计划 - 暑期2021",
         "bannertext":[
             "开源软件供应链点亮计划鼓励大家关注开源软件和开源社区，致力于培养和发掘更多优秀的开发者。<br class=\"displaynone\"/>活动将在暑期进行，我们将与开源社区紧密合作，提供一对一的导师指导，邀请技术大牛开展线上免费讲座。<br  class=\"displaynone\"/>我们鼓励研究人员、开源爱好者、在校师生参与开源软件的开发与维护，促进开源软件的发展和优秀开源软件社区建设，<br  class=\"displaynone\"/>增加开源项目的活跃度，推进开源生态的发展。"
         ],
         "bannerone":[
             "社区报名正在进行中, <span class=\"homepageTime\">4 月 30 日</span> 报名截止。详情请查看 <a target=\"_blank\" class=\"homepageLinkguide\" href=\"https://summer.iscas.ac.cn/help/community/\">社区指南<span  class=\"fire\"></span></a>",
-            "第一批社区名单将于 4 月 2 日公示， <a target=\"_blank\" class=\"homepageLinkguide\" href=\"https://summer.iscas.ac.cn/help/communities-list/\">查看详情</a>",
+            "第一批社区名单于 4 月 2 日公示， <a target=\"_blank\" class=\"homepageLinkguide\" href=\"https://summer.iscas.ac.cn/help/communities-list/\">查看详情</a>",
             "4 月中下旬开始启动“大咖说开源”系列讲座活动， 敬请期待",
             "5 月 24 日- 6 月 13 日是学生提交项目申请阶段，详情请查看 <a target=\"_blank\" class=\"homepageLinkguide\" href=\"https://summer.iscas.ac.cn/help/student/\">学生指南</a>"
         ],
@@ -26,6 +27,7 @@
         "logotitle":["组织方及合作伙伴","主办方","协办方","承办方","媒体合作方","合作单位"]
     },
     "en":{
+        "title":"Summer 2021 of Open Source Promotion Plan",
         "bannertext":[
             "Open Source Promotion Plan encourages everyone to pay close attention to open source software and open source community, aiming to cultivate and explore more outstanding developers. ‘Summer 2021’ will be held in this summer. We will collaborate closely with the open source community to provide one-to-one mentor guidance and invite some specialists to conduct free online lectures. In order to promote the development of open source software and facilitate the construction of excellent open source software community, we encourage researchers, open source enthusiasts, professors as well as students to participate in the development and maintenance of open source software. Furthermore, ‘Summer 2021’ is supposed to increase the activity of open source projects, and promote the development of open source ecology."
         ],
