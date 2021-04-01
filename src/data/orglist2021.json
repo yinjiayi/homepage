@@ -1,33 +1,5 @@
 [
   {
-    "anchor": "ApacheAPISIX",
-    "slide": "",
-    "video": "",
-    "img": "ApacheAPISIX.jpg",
-    "title": "Apache APISIX||Apache APISIX",
-    "project_url": "",
-    "url": "https://apisix.apache.org/",
-    "description": "云原生、高性能、可扩展的微服务 API 网关||Cloud-native, high-performance, scalable microservices API gateway",
-    "full_des": "Apache APISIX 是云原生、高性能、可扩展的微服务 API 网关，它基于 Nginx 和 etcd 来实现，具备动态路由、插件热加载、 gRPC 代理、协议转换等功能，适合微服务体系下的 API 管理。||Apache APISIX is a cloud-native, high-performance, scalable microservices API gateway based on Nginx and etcd, with dynamic routing, plugin hot-loading, gRPC proxy, protocol conversion, and other features, suitable for API management under the microservices system.",
-    "tech_tag": [
-      "网关",
-      "Nginx",
-      "C",
-      "Lua",
-      "API",
-      "Golang",
-      "k8s",
-      "Helm Chart"
-    ],
-    "domain_tag": [
-      "中间件",
-      "微服务"
-    ],
-    "mail_list": "开发者邮箱列表：dev@apisix.apache.org 订阅指南：https://apisix.apache.org/subscribe-guide",
-    "email": "wenming@apache.org",
-    "project_list": []
-  },
-  {
     "anchor": "dolphinscheduler",
     "slide": "",
     "video": "",
@@ -55,31 +27,101 @@
     "project_list": []
   },
   {
-    "anchor": "iotdb",
+    "anchor": "shardingsphere",
     "slide": "",
     "video": "",
-    "img": "iotdb.png",
-    "title": "Apache IoTDB 社区",
+    "img": "sharding.jpg",
+    "title": "Apache ShardingSphere||Apache ShardingSphere",
     "project_url": "",
-    "url": "http://iotdb.apache.org/",
-    "description": "工业物联网时序数据库管理系统",
-    "full_des": "IoTDB是支持物联网时序数据收集、存储、查询与分析一体化的数据管理引擎，支持“端-边-云”一体化部署，适用于高端装备管、工厂设备、高速网联设备等多种数据管理场景。开源版开发者百余人，社区成员来自中国高校、东方国信、阿里、云智慧、用友、联想、华为、四维图新、网易等头部公司。",
+    "url": "http://shardingsphere.apache.org/index_zh.html",
+    "description": "Apache ShardingSphere是一个开源的分布式数据库解决方案组成的生态圈||Apache ShardingSphere is an open-source ecosystem consisting of a set of distributed database solutions.",
+    "full_des": "Apache ShardingSphere是一个开源的分布式数据库解决方案组成的生态圈，提供标准化的数据水平扩展、分布式事务和分布式治理等功能。||Apache ShardingSphere is an open-source ecosystem consisting of distributed database solutions, which provide functions of data scale-out, distributed transaction and distributed governance. As a TLP of Apache, its community is active, diverse, open and technique-geeky.",
     "tech_tag": [
-      "Java",
-      "Git",
-      "Maven",
-      "LSM",
-      "Timeseries",
-      "Raft"
+      "分布式",
+      "数据库",
+      "微服务治理",
+      "Java"
     ],
     "domain_tag": [
-      "存储引擎",
-      "查询优化",
-      "压缩算法",
-      "分布式协议"
+      "分布式数据库",
+      "分布式数据库中间件",
+      "微服务治理"
     ],
-    "mail_list": "dev@iotdb.apache.org（订阅 dev-subscribe@iotdb.apache.org)",
-    "email": "dev@iotdb.apache.org",
+    "mail_list": "dev@shardingsphere.apache.org",
+    "email": "dev@shardingsphere.apache.org",
+    "project_list": []
+  },
+  {
+    "anchor": "chubaofs",
+    "slide": "",
+    "video": "",
+    "img": "chubao.png",
+    "title": "ChubaoFS||ChubaoFS",
+    "project_url": "",
+    "url": "github.com/chubaofs/chubaofs",
+    "description": "云原生分布式存储平台。||ChubaoFS is a cloud-native storage platform that provides both POSIX filesystem and S3 compatible interfaces.",
+    "full_des": "解决了大规模容器平台环境统一存储资源，从而大幅度降低企业在线和离线业务的存储使用和管理成本，并支撑业务存储计算分离架构的实现；融合存储接口: S3接口和posix无缝兼容，使得业务更加方便；多租户: 通过技术创新，使得业务逻辑隔离，但是存储资源聚合在一起，更进一步节约资源；弹性可扩展: 实现一键扩容；小文件优化：针对小文件，在capacity和performance方面都有很好的可扩展性；支撑高并发元数据操作：元数据分片策略没有采用很多业界分布式文件系统采用的Locality策略，而是完全分散，最大限度降低了热点问题概率，高并发的元数据操作性能有保障。||ChubaoFS has been commonly used as the underlying storage infrastructure for online applications, database or data processing services and machine learning jobs orchestrated by Kubernetes. An advantage of doing so is to separate storage from compute with the ability of scaling up and down based on workloads, providing total flexibility in matching resources to the actual storage and compute needs at any given time.Some of the key features include: scaled metadata management and performance; friendly to diverse file sizes and read/write patterns; easy to scale up; multi-tenancy; strong replication consistency.",
+    "tech_tag": [
+      "云原生分布式存储"
+    ],
+    "domain_tag": [
+      "云原生分布式存储"
+    ],
+    "mail_list": "chubaofs-users@groups.io",
+    "email": "chubaofs-users@groups.io",
+    "project_list": []
+  },
+  {
+    "anchor": "megengine",
+    "slide": "",
+    "video": "",
+    "img": "megEngine.jpg",
+    "title": "MegEngine 社区",
+    "project_url": "",
+    "url": "https://megengine.org.cn/",
+    "description": "适合工业级研发的开源深度学习框架",
+    "full_des": "MegEngine 是一个快速、可拓展、易于使用且支持自动求导的开源深度学习框架。拥有三大核心优势：训练推理一体、全平台高效支持、动静结合的训练能力。",
+    "tech_tag": [
+      "Python",
+      "深度学习",
+      "卷积神经网络",
+      "视觉算法"
+    ],
+    "domain_tag": [
+      "人工智能",
+      "机器学习"
+    ],
+    "mail_list": "megengine-support@megvii.com",
+    "email": "megengine@megvii.com",
+    "project_list": []
+  },
+  {
+    "anchor": "rt",
+    "slide": "",
+    "video": "",
+    "img": "RT-Thread.jpg",
+    "title": "RT||RT",
+    "project_url": "",
+    "url": "https://www.rt",
+    "description": "RT-Thread 是一个组件完整丰富、高度可伸缩、简易开发、超低功耗、高安全性的物联网操作系统。||RT-Thread is an open-source Internet of Things Operating System built with rich components, ultra low power design, high scalability and security, making IoT development easier to start!",
+    "full_des": "RT-Thread 是一个集实时操作系统（RTOS）内核、中间件组件和开发者社区于一体的技术平台，由熊谱翔先生带领并集合开源社区力量开发而成，RT-Thread  也是一个组件完整丰富、高度可伸缩、简易开发、超低功耗、高安全性的物联网操作系统。RT-Thread 具备一个 IoT OS  平台所需的所有关键组件，例如GUI、网络协议栈、安全传输、低功耗组件等等。经过15年的累积发展，RT-Thread  已经拥有一个国内最大的嵌入式开源社区，同时被广泛应用于能源、车载、医疗、消费电子等多个行业，累积装机量超过8亿台，成为国人自主开发、国内最成熟稳定和装机量最大的开源 RTOS。||RT-Thread is a technology platform that combines real-time operating system (RTOS) kernel, middleware components, and brings the technology advocates together. RT-Thread is leading by Bernard Xiong and community powered. RT-Thread Internet of Things Operating System built with rich components, ultra-low power design, high scalability and security, with almost every key basic component required for IoT devices, such as network protocols, file systems, low-power management, and so on.     We’ve been here for more than 15 years, and we’re not doing it alone. RT-Thread grows one of the largest open-source embedded communities in China. RT-Thread has now achieved the installation of over 800 million devices, is widely being applied in Wearable Devices, Smart Home Appliances, Energy, Automotive Electronics, Medical Electronics, Consumer Electronics, and many other industries.     RT-Thread strives to create a New Class of IoT operating system with great hardware and software ecosystem, get everything connected, keep information flowing!",
+    "tech_tag": [
+      "RTOS",
+      "IoT",
+      "embedded-systems",
+      "Cortex-M",
+      "Cortex-A",
+      "RISC-V",
+      "ARM"
+    ],
+    "domain_tag": [
+      "物联网操作系统",
+      "软件包",
+      "GUI",
+      "IDE"
+    ],
+    "mail_list": "Github Issue https://github.com/RT-Thread/rt-thread/issues",
+    "email": "support@rt-thread.com",
     "project_list": []
   },
   {
@@ -108,30 +150,53 @@
     "project_list": []
   },
   {
-    "anchor": "shardingsphere",
+    "anchor": "emacs",
     "slide": "",
     "video": "",
-    "img": "sharding.jpg",
-    "title": "Apache ShardingSphere||Apache ShardingSphere",
+    "img": "emacs.jpg",
+    "title": "Emacs China",
     "project_url": "",
-    "url": "http://shardingsphere.apache.org/index_zh.html",
-    "description": "Apache ShardingSphere是一个开源的分布式数据库解决方案组成的生态圈||Apache ShardingSphere is an open-source ecosystem consisting of a set of distributed database solutions.",
-    "full_des": "Apache ShardingSphere是一个开源的分布式数据库解决方案组成的生态圈，提供标准化的数据水平扩展、分布式事务和分布式治理等功能。||Apache ShardingSphere is an open-source ecosystem consisting of distributed database solutions, which provide functions of data scale-out, distributed transaction and distributed governance. As a TLP of Apache, its community is active, diverse, open and technique-geeky.",
+    "url": "https://emacs",
+    "description": "Emacs China是由国内的Emacs爱好者成立的Emacs社区，致力于Emacs相关的技术讨论。",
+    "full_des": "Emacs China是由国内的Emacs爱好者成立的Emacs社区，致力于Emacs相关的技术讨论。",
     "tech_tag": [
-      "分布式",
-      "数据库",
-      "微服务治理",
-      "Java"
+      "Emacs",
+      "Python",
+      "Lisp"
     ],
     "domain_tag": [
-      "分布式数据库",
-      "分布式数据库中间件",
-      "微服务治理"
+      "Emacs"
     ],
-    "mail_list": "dev@shardingsphere.apache.org",
-    "email": "dev@shardingsphere.apache.org",
+    "mail_list": "无。可以在Emacs China发帖联系",
+    "email": "无。可以在Emacs China发帖联系",
     "project_list": []
   },
+  {
+    "anchor": "casbin",
+    "slide": "",
+    "video": "",
+    "img": "casbin.jpg",
+    "title": "Casbin||Casbin",
+    "project_url": "",
+    "url": "https://casbin.org/",
+    "description": "一个强大的、高效的开源访问控制框架||Authorization library that supports access control models like ACL, RBAC, ABAC",
+    "full_des": "Casbin是一个强大的、高效的开源访问控制框架。涉及到Go, Java, Node.js, Javascript (React), Python, PHP, .NET, C++, Rust等多种语言。Casbin由北京大学罗杨博士创立于2017年，核心维护团队有数十人。Casbin在业界具有广泛影响力。目前已经被Intel、VMware、Orange、RedHat、T-Mobile等公司开源使用，被腾讯云、Cisco、Verizon等公司闭源使用。具体详见Casbin主页。Casbin Go主项目目前GitHub 8600+ stars，加上所有语言的实现、插件等可达到10000+ stars。||Casbin is a powerful and efficient open-source access control library. It provides support for enforcing authorization based on various access control models like ACL, RBAC, ABAC for Golang, Java, Node.js, PHP, Python, .NET (C#), Delphi and Rust.What Casbin does:- Enforce the policy in the classic {subject, object, action} form or a customized form as you defined, both allow and deny authorizations are supported.- Handle the storage of the access control model and its policy.- Manage the role-user mappings and role-role mappings (aka role hierarchy in RBAC).- Support built-in superuser like root or administrator. A superuser can do anything without explict permissions.- Multiple built-in operators to support the rule matching. For example, keyMatch can map a resource key /foo/bar to the pattern /foo*.What Casbin does NOT do:- Authentication (aka verify username and password when a user logs in)- Manage the list of users or roles.I believe it's more convenient for the project itself to manage these entities. Users usually have their passwords, and Casbin is not designed as a password container. However, Casbin stores the user-role mapping for the RBAC scenario. For more details, see: https://casbin.org/",
+    "tech_tag": [
+      "security",
+      "auth",
+      "authorization",
+      "acl",
+      "rbac",
+      "abac"
+    ],
+    "domain_tag": [
+      "访问控制"
+    ],
+    "mail_list": "https://forum.casbin.com/",
+    "email": "admin@casbin.org",
+    "project_list": []
+  },
+  
   {
     "anchor": "skywalking",
     "slide": "",
@@ -163,190 +228,115 @@
     "project_list": []
   },
   {
-    "anchor": "bookos",
+    "anchor": "ApacheAPISIX",
     "slide": "",
     "video": "",
-    "img": "bookos.png",
-    "title": "Bookos",
+    "img": "ApacheAPISIX.jpg",
+    "title": "Apache APISIX||Apache APISIX",
     "project_url": "",
-    "url": "https://www.book",
-    "description": "一个开源、免费的在大学校园里很活跃的操作系统，有操作系统内核，也有图形化的界面。",
-    "full_des": "Bookos是一个培养中国青少年操作系统人才的社区，社区是有组织的运营的。主要是引导对操作系统感兴趣的高中生和大学生系统的学习的操作系统，从感兴趣难入门，到能在大学实现一个简单的操作系统，社区由胡自成负责bookos的技术和代码开发，李石亮负责引导喜爱底层的大学生做系统性的学习引导从算法，简单的程序结构，到简单的操作系统实现。万晓兰老师负责经济上的支持。到目前为止，有核心的社区人员30-40人，比较松散的成员有80人左右，更松散的qq群有700人。核心的社区人员其中8人都实现过简单的操作系统。开发的主要工作是由胡自成等5人完成，其他核心成员一起讨论技术问题，提供企业的信息，给出实现的建议。李石亮和万晓兰负责解决学生中的困难和就业上的困难，让他们安心的学习底层的技术，做到学习底层和就业两方面不耽误。",
+    "url": "https://apisix.apache.org/",
+    "description": "云原生、高性能、可扩展的微服务 API 网关||Cloud-native, high-performance, scalable microservices API gateway",
+    "full_des": "Apache APISIX 是云原生、高性能、可扩展的微服务 API 网关，它基于 Nginx 和 etcd 来实现，具备动态路由、插件热加载、 gRPC 代理、协议转换等功能，适合微服务体系下的 API 管理。||Apache APISIX is a cloud-native, high-performance, scalable microservices API gateway based on Nginx and etcd, with dynamic routing, plugin hot-loading, gRPC proxy, protocol conversion, and other features, suitable for API management under the microservices system.",
     "tech_tag": [
-      "操作系统",
+      "网关",
+      "Nginx",
+      "C",
+      "Lua",
+      "API",
+      "Golang",
+      "k8s",
+      "Helm Chart"
+    ],
+    "domain_tag": [
+      "中间件",
+      "微服务"
+    ],
+    "mail_list": "开发者邮箱列表：dev@apisix.apache.org 订阅指南：https://apisix.apache.org/subscribe-guide",
+    "email": "wenming@apache.org",
+    "project_list": []
+  },
+  {
+    "anchor": "iotdb",
+    "slide": "",
+    "video": "",
+    "img": "iotdb.png",
+    "title": "Apache IoTDB 社区",
+    "project_url": "",
+    "url": "http://iotdb.apache.org/",
+    "description": "工业物联网时序数据库管理系统",
+    "full_des": "IoTDB是支持物联网时序数据收集、存储、查询与分析一体化的数据管理引擎，支持“端-边-云”一体化部署，适用于高端装备管、工厂设备、高速网联设备等多种数据管理场景。开源版开发者百余人，社区成员来自中国高校、东方国信、阿里、云智慧、用友、联想、华为、四维图新、网易等头部公司。",
+    "tech_tag": [
+      "Java",
       "Git",
-      "GCC",
-      "内核"
+      "Maven",
+      "LSM",
+      "Timeseries",
+      "Raft"
     ],
     "domain_tag": [
-      "操作系统",
+      "存储引擎",
+      "查询优化",
+      "压缩算法",
+      "分布式协议"
+    ],
+    "mail_list": "dev@iotdb.apache.org（订阅 dev-subscribe@iotdb.apache.org)",
+    "email": "dev@iotdb.apache.org",
+    "project_list": []
+  },
+  {
+    "anchor": "Simple",
+    "slide": "",
+    "video": "",
+    "img": "simpleX.jpg",
+    "title": "Simple||Simple",
+    "project_url": "",
+    "url": "https://github.com/Simple",
+    "description": "帮助初学者实现复杂系统。||To help beginners implement complex systems.",
+    "full_des": "在学习操作系统、编译原理时觉得难学难懂？你需要自己动手实现它！我们社区使用基于 Git 分支的增量式方案，向初学者提供简单的代码实现，帮助你快速成长。社区贡献者由在校学生组成，欢迎加入我们。||Do you find it difficult to understand when learning operating systems and compilingprinciples? You need to do it yourself! Our community uses an incremental scheme based onGit branch to provide simple code implementation for beginners and help you acquiremaster quickly. Community contributors are made up of on-campus students. Welcome tojoin us.",
+    "tech_tag": [
+      "C/C++",
+      "Scala",
+      "CI"
+    ],
+    "domain_tag": [
+      "CPU",
       "内核",
-      "人才的培养"
+      "编译器",
+      "图形学"
     ],
-    "mail_list": "公共邮箱）：",
-    "email": "2323168280@qq.com 胡自成",
+    "mail_list": "https://github.com/Simple-XX/Summer202X",
+    "email": "https://github.com/Simple-XX/Summer202X",
     "project_list": []
   },
   {
-    "anchor": "casbin",
+    "anchor": "tuna",
     "slide": "",
     "video": "",
-    "img": "casbin.jpg",
-    "title": "Casbin||Casbin",
+    "img": "tuna.jpg",
+    "title": "清华大学学生网络与开源软件协会",
     "project_url": "",
-    "url": "https://casbin.org/",
-    "description": "一个强大的、高效的开源访问控制框架||Authorization library that supports access control models like ACL, RBAC, ABAC",
-    "full_des": "Casbin是一个强大的、高效的开源访问控制框架。涉及到Go, Java, Node.js, Javascript (React), Python, PHP, .NET, C++, Rust等多种语言。Casbin由北京大学罗杨博士创立于2017年，核心维护团队有数十人。Casbin在业界具有广泛影响力。目前已经被Intel、VMware、Orange、RedHat、T-Mobile等公司开源使用，被腾讯云、Cisco、Verizon等公司闭源使用。具体详见Casbin主页。Casbin Go主项目目前GitHub 8600+ stars，加上所有语言的实现、插件等可达到10000+ stars。||Casbin is a powerful and efficient open-source access control library. It provides support for enforcing authorization based on various access control models like ACL, RBAC, ABAC for Golang, Java, Node.js, PHP, Python, .NET (C#), Delphi and Rust.What Casbin does:- Enforce the policy in the classic {subject, object, action} form or a customized form as you defined, both allow and deny authorizations are supported.- Handle the storage of the access control model and its policy.- Manage the role-user mappings and role-role mappings (aka role hierarchy in RBAC).- Support built-in superuser like root or administrator. A superuser can do anything without explict permissions.- Multiple built-in operators to support the rule matching. For example, keyMatch can map a resource key /foo/bar to the pattern /foo*.What Casbin does NOT do:- Authentication (aka verify username and password when a user logs in)- Manage the list of users or roles.I believe it's more convenient for the project itself to manage these entities. Users usually have their passwords, and Casbin is not designed as a password container. However, Casbin stores the user-role mapping for the RBAC scenario. For more details, see: https://casbin.org/",
+    "url": "https://tuna.moe/",
+    "description": "清华大学网络技术与开源软件爱好者团体，有较大影响力的高校开源社区。",
+    "full_des": "清华大学 TUNA 协会全名清华大学学生网络与开源软件协会（Tsinghua University TUNA Association），是由清华大学网络技术和开源软件爱好者、技术宅组成的团体。社团成立于2011年，目前校内外成员超过500人，校内注册人数接近300人，校内核心（活跃）成员超过50人。 TUNA 协会维护的清华大学开源软件镜像站，包括数百个开源软件。是中国高校目前规模最大的开源镜像站。TUNA 协会为这些业务开发的许多开源软件，包括镜像管理同步套件 tunasync、直播弹幕套件 danmaQ 等，都被国内外同行采用并广受好评。 TUNA 协会也与其他开源社区进行广泛联络，与多个高校开源学生组织、国内开源社区、企业等开展合作，共同举办软硬件件自由日、Release Party 等公众活动，推广开源理念，普及基础知识，为中国开源事业贡献力量，起到了较好的宣传引导作用。",
     "tech_tag": [
-      "security",
-      "auth",
-      "authorization",
-      "acl",
-      "rbac",
-      "abac"
-    ],
-    "domain_tag": [
-      "访问控制"
-    ],
-    "mail_list": "https://forum.casbin.com/",
-    "email": "admin@casbin.org",
-    "project_list": []
-  },
-  {
-    "anchor": "chubaofs",
-    "slide": "",
-    "video": "",
-    "img": "chubao.png",
-    "title": "ChubaoFS||ChubaoFS",
-    "project_url": "",
-    "url": "github.com/chubaofs/chubaofs",
-    "description": "云原生分布式存储平台。||ChubaoFS is a cloud-native storage platform that provides both POSIX filesystem and S3 compatible interfaces.",
-    "full_des": "解决了大规模容器平台环境统一存储资源，从而大幅度降低企业在线和离线业务的存储使用和管理成本，并支撑业务存储计算分离架构的实现；融合存储接口: S3接口和posix无缝兼容，使得业务更加方便；多租户: 通过技术创新，使得业务逻辑隔离，但是存储资源聚合在一起，更进一步节约资源；弹性可扩展: 实现一键扩容；小文件优化：针对小文件，在capacity和performance方面都有很好的可扩展性；支撑高并发元数据操作：元数据分片策略没有采用很多业界分布式文件系统采用的Locality策略，而是完全分散，最大限度降低了热点问题概率，高并发的元数据操作性能有保障。||ChubaoFS has been commonly used as the underlying storage infrastructure for online applications, database or data processing services and machine learning jobs orchestrated by Kubernetes. An advantage of doing so is to separate storage from compute with the ability of scaling up and down based on workloads, providing total flexibility in matching resources to the actual storage and compute needs at any given time.Some of the key features include: scaled metadata management and performance; friendly to diverse file sizes and read/write patterns; easy to scale up; multi-tenancy; strong replication consistency.",
-    "tech_tag": [
-      "云原生分布式存储"
-    ],
-    "domain_tag": [
-      "云原生分布式存储"
-    ],
-    "mail_list": "chubaofs-users@groups.io",
-    "email": "chubaofs-users@groups.io",
-    "project_list": []
-  },
-  {
-    "anchor": "opencurve",
-    "slide": "",
-    "video": "",
-    "img": "curve.png",
-    "title": "Curve社区||Curve社区",
-    "project_url": "",
-    "url": "https://www.opencurve.io/",
-    "description": "高性能、高可用、高可靠分布式存储系统||A  High-performance, high-availability, and high-reliability distributed storage system",
-    "full_des": "CURVE是网易自主设计研发的高性能、高可用、高可靠分布式存储系统，具有非常良好的扩展性。基于该存储底座可以打造适用于不同应用场景的存储系统，如块存储、对象存储、云原生数据库等。当前我们基于CURVE已经实现了高性能块存储系统，支持快照克隆和恢复 ,支持QEMU虚拟机和物理机NBD设备两种挂载方式, 在网易内部作为高性能云盘使用。||CURVE is a distributed storage system designed and developed independently by NetEase, featured with high performance, high availability, high reliability and well expansibility, and it can serve as the basis for storage systems designed for different scenario (e.g. block storage, object storage and cloud database).    So far, we have implemented a high performance block storage system, which supports snapshot, clone and recovery, and it can be attached to QEMU virtual machine or physical machine (by curve-nbd). CURVE has been served as an elastic block storage service inside NetEase for a certain time, during which high performance and reliability have shown.",
-    "tech_tag": [
-      "distributed",
-      "block storage",
-      "high performance"
-    ],
-    "domain_tag": [
-      "高性能分布式存储"
-    ],
-    "mail_list": "Wang Pan, <hzwangpan@corp.netease.com>, @aspirer",
-    "email": "storage_mgm@163.com](mailto:storage_mgm@163.com)",
-    "project_list": []
-  },
-  {
-    "anchor": "emacs",
-    "slide": "",
-    "video": "",
-    "img": "emacs.jpg",
-    "title": "Emacs China",
-    "project_url": "",
-    "url": "https://emacs",
-    "description": "Emacs China是由国内的Emacs爱好者成立的Emacs社区，致力于Emacs相关的技术讨论。",
-    "full_des": "Emacs China是由国内的Emacs爱好者成立的Emacs社区，致力于Emacs相关的技术讨论。",
-    "tech_tag": [
-      "Emacs",
+      "Linux",
+      "Mirrors",
+      "Qt",
       "Python",
-      "Lisp"
+      "Node.js",
+      "Go",
+      "Rust"
     ],
     "domain_tag": [
-      "Emacs"
+      "服务器运维",
+      "网络编程",
+      "系统工具"
     ],
-    "mail_list": "无。可以在Emacs China发帖联系",
-    "email": "无。可以在Emacs China发帖联系",
+    "mail_list": "tuna-general@googlegroups.com",
+    "email": "staff@tuna.tsinghua.edu.cn",
     "project_list": []
   },
-  {
-    "anchor": "jenkins",
-    "slide": "",
-    "video": "",
-    "img": "Jenkins.png",
-    "title": "Jenkins 中文社区||Jenkins Chinese community",
-    "project_url": "",
-    "url": "https://jenkins",
-    "description": "共建开放、包容、活跃的 Jenkins 社区||Build an open, inclusive, active Jenkins community",
-    "full_des": "Jenkins 中文社区是由 Jenkins 国内的爱好者、贡献者组成，共同推广以及完善 CI/CD 技术的学习试用和落地。我们秉承开源的精神，在社区治理上高度开放，代码、文档以及设计等开源免费，致力于为我们的用户带来更好的体验。||Jenkins Chinese community is composed of Jenkins domestic fans and contributors to jointly promote and improve the learning, trial, and implementation of CI/CD technology. We uphold the spirit of open source and are highly open in community governance. Open source code, documentation, and design are free, and we are committed to bringing a better experience to our users.",
-    "tech_tag": [
-      "jenkins"
-    ],
-    "domain_tag": [
-      "CI/CD",
-      "jenkins",
-      "DevOps",
-      "OpenSource"
-    ],
-    "mail_list": "developer@jenkins-zh.cn",
-    "email": "admins@jenkins-zh.cn",
-    "project_list": []
-  },
-  {
-    "anchor": "kubesphere",
-    "slide": "",
-    "video": "",
-    "img": "kubesphere.png",
-    "title": "KubeSphere 开源社区||KubeSphere Community",
-    "project_url": "",
-    "url": "https://kubesphere.io/",
-    "description": "一款开源的 Kubernetes 发行版容器平台||Enterprise-grade container platform tailored for multicloud and multi-cluster management",
-    "full_des": "KubeSphere](https://kubesphere.io/) 是在 [Kubernetes](https://kubernetes.io/) 之上构建的面向云原生应用的**分布式操作系统**，完全开源，支持多云与多集群管理，提供全栈的 IT 自动化运维能力，简化企业的 DevOps 工作流。它的架构可以非常方便地使第三方应用与云原生生态组件进行即插即用 (plug-and-play) 的集成。||KubeSphere](https://kubesphere.io/) is a **distributed operating system providing cloud native stack** with [Kubernetes](https://kubernetes.io/) as its kernel, and aims to be plug-and-play architecture for third-party applications seamless integration to boost its ecosystem. KubeSphere is also a multi-tenant enterprise-grade container platform with full-stack automated IT operation and streamlined DevOps workflows.",
-    "tech_tag": [
-      "Kubernetes, DevOps, ServiceMesh, Golang, Prometheus, Docker"
-    ],
-    "domain_tag": [
-      "云原生",
-      "可观察性",
-      "容器云",
-      "微服务",
-      "多云管理"
-    ],
-    "mail_list": "kubesphere@googlegroups.com",
-    "email": "kubesphere@gmail.com",
-    "project_list": []
-  },
-  {
-    "anchor": "megengine",
-    "slide": "",
-    "video": "",
-    "img": "megEngine.jpg",
-    "title": "MegEngine 社区",
-    "project_url": "",
-    "url": "https://megengine.org.cn/",
-    "description": "适合工业级研发的开源深度学习框架",
-    "full_des": "MegEngine 是一个快速、可拓展、易于使用且支持自动求导的开源深度学习框架。拥有三大核心优势：训练推理一体、全平台高效支持、动静结合的训练能力。",
-    "tech_tag": [
-      "Python",
-      "深度学习",
-      "卷积神经网络",
-      "视觉算法"
-    ],
-    "domain_tag": [
-      "人工智能",
-      "机器学习"
-    ],
-    "mail_list": "megengine-support@megvii.com",
-    "email": "megengine@megvii.com",
-    "project_list": []
-  },
+   
   {
     "anchor": "oi",
     "slide": "",
@@ -373,6 +363,96 @@
     ],
     "mail_list": "https://t.me/oiwiki> 以及 QQ 群 588793226",
     "email": "hi@oi-wiki.org",
+    "project_list": []
+  },
+  {
+    "anchor": "openlookeng",
+    "slide": "",
+    "video": "",
+    "img": "openLooKeng.png",
+    "title": "openLooKeng社区||openLooKeng Community",
+    "project_url": "",
+    "url": "https://openlookeng.io/",
+    "description": "openLooKeng是一款开源的数据虚拟化引擎，像使用数据库一样使用大数据。||openLooKeng is a distributed, low latency, reliable data engine for all data, big or small, local or remote. It help big data users to use big data like database.",
+    "full_des": "openLooKeng是一款开源的高性能数据虚拟化引擎，提供统一SQL接口，具备跨数据源/数据中心分析能力以及面向交互式、批、流等融合查询场景。openLooKeng致力于为大数据用户提供极简的数据分析体验，让用户像使用“数据库”一样使用“大数据”。||openLooKeng is a drop in engine which enables in-situ analytics on any data, anywhere, including geographically remote data sources. It provides a global view of all of your data via its SQL 2003 interface. With high availability, auto-scaling, built-in caching and indexing support, openLooKeng is ready for enterprise workload with required reliability.The goal of openLooKeng is to support data exploration, ad hoc queries, and batch processing with near real time latency ranging from 100+ms to minutes, without moving your data around. openLooKeng also supports hierarchical deployment enabling geographically remote openLooKeng clusters to participate in the same query. With its cross region query plan optimization capability, queries involving remote data can achieve close to “local” performance.",
+    "tech_tag": [
+      "大数据",
+      "数据虚拟化引擎"
+    ],
+    "domain_tag": [
+      "大数据"
+    ],
+    "mail_list": "dev@openlookeng.io",
+    "email": "contact@openlookeng.io",
+    "project_list": []
+  },
+  {
+    "anchor": "opengauss",
+    "slide": "",
+    "video": "",
+    "img": "openGauss.png",
+    "title": "openGauss社区||openGauss社区",
+    "project_url": "",
+    "url": "https://opengauss.org",
+    "description": "openGauss是一款高性能、高安全、高可靠的企业级开源关系型数据库。||openGauss is an enterprise-grade open source relational database with high-performance, high-security, high-reliability.",
+    "full_des": "openGauss是一款开源关系型数据库管理系统，采用木兰宽松许可证V2发行。openGauss内核源自PostgreSQL, 深度融合华为在数据库领域多年的经验，结合企业级场景需求，持续构建竞争力特性。同时openGauss也是一个开源的数据库平台，鼓励社区贡献、合作。||openGauss is an open source relational database management system that is released with the Mulan PSL v2. with the kernel derived from PostgreSQL, openGauss is built on Huawei's years of experience in the database field and continuously provides competitive features tailored to enterprise-grade scenarios. At the same time, openGauss is also an open source database platform, encouraging community contributions and cooperation.",
+    "tech_tag": [
+      "数据库"
+    ],
+    "domain_tag": [
+      "数据库"
+    ],
+    "mail_list": "community@opengauss.org",
+    "email": "contact@opengauss.org",
+    "project_list": []
+  },
+  {
+    "anchor": "zstack",
+    "slide": "",
+    "video": "",
+    "img": "Zstack.png",
+    "title": "ZStack Cloud 平台||ZStack Cloud",
+    "project_url": "",
+    "url": "https://www.zstack.io/",
+    "description": "ZStack 是一款具备简单、健壮、弹性、智能等特性的 IaaS 产品。||ZStack is open source IaaS(infrastructure as a service) software aiming to automate datacenters, managing resources of compute, storage, and networking all by APIs.",
+    "full_des": "ZStack 云平台具备自主知识产权、自主开源云代码、自主云平台三大优势，凭借云计算的 4S 特性，践行产品化，普惠云计算。其中，ZStack 开源代码提供了整个产品的框架、底座和基础的计算，网络，存储等 IaaS 软件的功能。||ZStack is open source IaaS(infrastructure as a service) software aiming to automate datacenters, managing resources of compute, storage, and networking all by APIs. Users can setup ZStack environments in a download-and-run manner, spending 5 minutes building a POC environment all on a single Linux machine, or 30 minutes building a multi-node production environment that can scale to hundreds of thousands of physical servers.ZStack provides the capability of managing everything in a datacenter by APIs, fulfilling the goal of software-defined datacenter. Users control their clouds using either web UI or command line tool both of which interact with ZStack management nodes; NO scattered configurations, dependent software installation, services HA, and thirdparty monitoring are needed, all of them are taken care of by ZStack itself, which provides a great simplicity for stable long-term operation.",
+    "tech_tag": [
+      "Linux",
+      "Git",
+      "GCC",
+      "RPM"
+    ],
+    "domain_tag": [
+      "操作系统",
+      "内核",
+      "包管理"
+    ],
+    "mail_list": "公共邮箱）：community@openEuler.org",
+    "email": "contact@openeuler.org",
+    "project_list": []
+  },
+  
+  {
+    "anchor": "jenkins",
+    "slide": "",
+    "video": "",
+    "img": "Jenkins.png",
+    "title": "Jenkins 中文社区||Jenkins Chinese community",
+    "project_url": "",
+    "url": "https://jenkins",
+    "description": "共建开放、包容、活跃的 Jenkins 社区||Build an open, inclusive, active Jenkins community",
+    "full_des": "Jenkins 中文社区是由 Jenkins 国内的爱好者、贡献者组成，共同推广以及完善 CI/CD 技术的学习试用和落地。我们秉承开源的精神，在社区治理上高度开放，代码、文档以及设计等开源免费，致力于为我们的用户带来更好的体验。||Jenkins Chinese community is composed of Jenkins domestic fans and contributors to jointly promote and improve the learning, trial, and implementation of CI/CD technology. We uphold the spirit of open source and are highly open in community governance. Open source code, documentation, and design are free, and we are committed to bringing a better experience to our users.",
+    "tech_tag": [
+      "jenkins"
+    ],
+    "domain_tag": [
+      "CI/CD",
+      "jenkins",
+      "DevOps",
+      "OpenSource"
+    ],
+    "mail_list": "developer@jenkins-zh.cn",
+    "email": "admins@jenkins-zh.cn",
     "project_list": []
   },
   {
@@ -655,101 +735,6 @@
     ]
   },
   {
-    "anchor": "opengauss",
-    "slide": "",
-    "video": "",
-    "img": "openGauss.png",
-    "title": "openGauss社区||openGauss社区",
-    "project_url": "",
-    "url": "https://opengauss.org",
-    "description": "openGauss是一款高性能、高安全、高可靠的企业级开源关系型数据库。||openGauss is an enterprise-grade open source relational database with high-performance, high-security, high-reliability.",
-    "full_des": "openGauss是一款开源关系型数据库管理系统，采用木兰宽松许可证V2发行。openGauss内核源自PostgreSQL, 深度融合华为在数据库领域多年的经验，结合企业级场景需求，持续构建竞争力特性。同时openGauss也是一个开源的数据库平台，鼓励社区贡献、合作。||openGauss is an open source relational database management system that is released with the Mulan PSL v2. with the kernel derived from PostgreSQL, openGauss is built on Huawei's years of experience in the database field and continuously provides competitive features tailored to enterprise-grade scenarios. At the same time, openGauss is also an open source database platform, encouraging community contributions and cooperation.",
-    "tech_tag": [
-      "数据库"
-    ],
-    "domain_tag": [
-      "数据库"
-    ],
-    "mail_list": "community@opengauss.org",
-    "email": "contact@opengauss.org",
-    "project_list": []
-  },
-  {
-    "anchor": "openlookeng",
-    "slide": "",
-    "video": "",
-    "img": "openLooKeng.png",
-    "title": "openLooKeng社区||openLooKeng Community",
-    "project_url": "",
-    "url": "https://openlookeng.io/",
-    "description": "openLooKeng是一款开源的数据虚拟化引擎，像使用数据库一样使用大数据。||openLooKeng is a distributed, low latency, reliable data engine for all data, big or small, local or remote. It help big data users to use big data like database.",
-    "full_des": "openLooKeng是一款开源的高性能数据虚拟化引擎，提供统一SQL接口，具备跨数据源/数据中心分析能力以及面向交互式、批、流等融合查询场景。openLooKeng致力于为大数据用户提供极简的数据分析体验，让用户像使用“数据库”一样使用“大数据”。||openLooKeng is a drop in engine which enables in-situ analytics on any data, anywhere, including geographically remote data sources. It provides a global view of all of your data via its SQL 2003 interface. With high availability, auto-scaling, built-in caching and indexing support, openLooKeng is ready for enterprise workload with required reliability.The goal of openLooKeng is to support data exploration, ad hoc queries, and batch processing with near real time latency ranging from 100+ms to minutes, without moving your data around. openLooKeng also supports hierarchical deployment enabling geographically remote openLooKeng clusters to participate in the same query. With its cross region query plan optimization capability, queries involving remote data can achieve close to “local” performance.",
-    "tech_tag": [
-      "大数据",
-      "数据虚拟化引擎"
-    ],
-    "domain_tag": [
-      "大数据"
-    ],
-    "mail_list": "dev@openlookeng.io",
-    "email": "contact@openlookeng.io",
-    "project_list": []
-  },
-  {
-    "anchor": "rt",
-    "slide": "",
-    "video": "",
-    "img": "RT-Thread.jpg",
-    "title": "RT||RT",
-    "project_url": "",
-    "url": "https://www.rt",
-    "description": "RT-Thread 是一个组件完整丰富、高度可伸缩、简易开发、超低功耗、高安全性的物联网操作系统。||RT-Thread is an open-source Internet of Things Operating System built with rich components, ultra low power design, high scalability and security, making IoT development easier to start!",
-    "full_des": "RT-Thread 是一个集实时操作系统（RTOS）内核、中间件组件和开发者社区于一体的技术平台，由熊谱翔先生带领并集合开源社区力量开发而成，RT-Thread  也是一个组件完整丰富、高度可伸缩、简易开发、超低功耗、高安全性的物联网操作系统。RT-Thread 具备一个 IoT OS  平台所需的所有关键组件，例如GUI、网络协议栈、安全传输、低功耗组件等等。经过15年的累积发展，RT-Thread  已经拥有一个国内最大的嵌入式开源社区，同时被广泛应用于能源、车载、医疗、消费电子等多个行业，累积装机量超过8亿台，成为国人自主开发、国内最成熟稳定和装机量最大的开源 RTOS。||RT-Thread is a technology platform that combines real-time operating system (RTOS) kernel, middleware components, and brings the technology advocates together. RT-Thread is leading by Bernard Xiong and community powered. RT-Thread Internet of Things Operating System built with rich components, ultra-low power design, high scalability and security, with almost every key basic component required for IoT devices, such as network protocols, file systems, low-power management, and so on.     We’ve been here for more than 15 years, and we’re not doing it alone. RT-Thread grows one of the largest open-source embedded communities in China. RT-Thread has now achieved the installation of over 800 million devices, is widely being applied in Wearable Devices, Smart Home Appliances, Energy, Automotive Electronics, Medical Electronics, Consumer Electronics, and many other industries.     RT-Thread strives to create a New Class of IoT operating system with great hardware and software ecosystem, get everything connected, keep information flowing!",
-    "tech_tag": [
-      "RTOS",
-      "IoT",
-      "embedded-systems",
-      "Cortex-M",
-      "Cortex-A",
-      "RISC-V",
-      "ARM"
-    ],
-    "domain_tag": [
-      "物联网操作系统",
-      "软件包",
-      "GUI",
-      "IDE"
-    ],
-    "mail_list": "Github Issue https://github.com/RT-Thread/rt-thread/issues",
-    "email": "support@rt-thread.com",
-    "project_list": []
-  },
-  {
-    "anchor": "Simple",
-    "slide": "",
-    "video": "",
-    "img": "simpleX.jpg",
-    "title": "Simple||Simple",
-    "project_url": "",
-    "url": "https://github.com/Simple",
-    "description": "帮助初学者实现复杂系统。||To help beginners implement complex systems.",
-    "full_des": "在学习操作系统、编译原理时觉得难学难懂？你需要自己动手实现它！我们社区使用基于 Git 分支的增量式方案，向初学者提供简单的代码实现，帮助你快速成长。社区贡献者由在校学生组成，欢迎加入我们。||Do you find it difficult to understand when learning operating systems and compilingprinciples? You need to do it yourself! Our community uses an incremental scheme based onGit branch to provide simple code implementation for beginners and help you acquiremaster quickly. Community contributors are made up of on-campus students. Welcome tojoin us.",
-    "tech_tag": [
-      "C/C++",
-      "Scala",
-      "CI"
-    ],
-    "domain_tag": [
-      "CPU",
-      "内核",
-      "编译器",
-      "图形学"
-    ],
-    "mail_list": "https://github.com/Simple-XX/Summer202X",
-    "email": "https://github.com/Simple-XX/Summer202X",
-    "project_list": []
-  },
-  {
     "anchor": "debian",
     "slide": "",
     "video": "",
@@ -771,33 +756,78 @@
     "project_list": []
   },
   {
-    "anchor": "tuna",
+    "anchor": "kubesphere",
     "slide": "",
     "video": "",
-    "img": "tuna.jpg",
-    "title": "清华大学学生网络与开源软件协会",
+    "img": "kubesphere.png",
+    "title": "KubeSphere 开源社区||KubeSphere Community",
     "project_url": "",
-    "url": "https://tuna.moe/",
-    "description": "清华大学网络技术与开源软件爱好者团体，有较大影响力的高校开源社区。",
-    "full_des": "清华大学 TUNA 协会全名清华大学学生网络与开源软件协会（Tsinghua University TUNA Association），是由清华大学网络技术和开源软件爱好者、技术宅组成的团体。社团成立于2011年，目前校内外成员超过500人，校内注册人数接近300人，校内核心（活跃）成员超过50人。 TUNA 协会维护的清华大学开源软件镜像站，包括数百个开源软件。是中国高校目前规模最大的开源镜像站。TUNA 协会为这些业务开发的许多开源软件，包括镜像管理同步套件 tunasync、直播弹幕套件 danmaQ 等，都被国内外同行采用并广受好评。 TUNA 协会也与其他开源社区进行广泛联络，与多个高校开源学生组织、国内开源社区、企业等开展合作，共同举办软硬件件自由日、Release Party 等公众活动，推广开源理念，普及基础知识，为中国开源事业贡献力量，起到了较好的宣传引导作用。",
+    "url": "https://kubesphere.io/",
+    "description": "一款开源的 Kubernetes 发行版容器平台||Enterprise-grade container platform tailored for multicloud and multi-cluster management",
+    "full_des": "KubeSphere](https://kubesphere.io/) 是在 [Kubernetes](https://kubernetes.io/) 之上构建的面向云原生应用的**分布式操作系统**，完全开源，支持多云与多集群管理，提供全栈的 IT 自动化运维能力，简化企业的 DevOps 工作流。它的架构可以非常方便地使第三方应用与云原生生态组件进行即插即用 (plug-and-play) 的集成。||KubeSphere](https://kubesphere.io/) is a **distributed operating system providing cloud native stack** with [Kubernetes](https://kubernetes.io/) as its kernel, and aims to be plug-and-play architecture for third-party applications seamless integration to boost its ecosystem. KubeSphere is also a multi-tenant enterprise-grade container platform with full-stack automated IT operation and streamlined DevOps workflows.",
     "tech_tag": [
-      "Linux",
-      "Mirrors",
-      "Qt",
-      "Python",
-      "Node.js",
-      "Go",
-      "Rust"
+      "Kubernetes, DevOps, ServiceMesh, Golang, Prometheus, Docker"
     ],
     "domain_tag": [
-      "服务器运维",
-      "网络编程",
-      "系统工具"
+      "云原生",
+      "可观察性",
+      "容器云",
+      "微服务",
+      "多云管理"
     ],
-    "mail_list": "tuna-general@googlegroups.com",
-    "email": "staff@tuna.tsinghua.edu.cn",
+    "mail_list": "kubesphere@googlegroups.com",
+    "email": "kubesphere@gmail.com",
     "project_list": []
   },
+  {
+    "anchor": "opencurve",
+    "slide": "",
+    "video": "",
+    "img": "curve.png",
+    "title": "Curve社区||Curve社区",
+    "project_url": "",
+    "url": "https://www.opencurve.io/",
+    "description": "高性能、高可用、高可靠分布式存储系统||A  High-performance, high-availability, and high-reliability distributed storage system",
+    "full_des": "CURVE是网易自主设计研发的高性能、高可用、高可靠分布式存储系统，具有非常良好的扩展性。基于该存储底座可以打造适用于不同应用场景的存储系统，如块存储、对象存储、云原生数据库等。当前我们基于CURVE已经实现了高性能块存储系统，支持快照克隆和恢复 ,支持QEMU虚拟机和物理机NBD设备两种挂载方式, 在网易内部作为高性能云盘使用。||CURVE is a distributed storage system designed and developed independently by NetEase, featured with high performance, high availability, high reliability and well expansibility, and it can serve as the basis for storage systems designed for different scenario (e.g. block storage, object storage and cloud database).    So far, we have implemented a high performance block storage system, which supports snapshot, clone and recovery, and it can be attached to QEMU virtual machine or physical machine (by curve-nbd). CURVE has been served as an elastic block storage service inside NetEase for a certain time, during which high performance and reliability have shown.",
+    "tech_tag": [
+      "distributed",
+      "block storage",
+      "high performance"
+    ],
+    "domain_tag": [
+      "高性能分布式存储"
+    ],
+    "mail_list": "Wang Pan, <hzwangpan@corp.netease.com>, @aspirer",
+    "email": "storage_mgm@163.com](mailto:storage_mgm@163.com)",
+    "project_list": []
+  },
+  {
+    "anchor": "bookos",
+    "slide": "",
+    "video": "",
+    "img": "bookos.png",
+    "title": "Bookos",
+    "project_url": "",
+    "url": "https://www.book",
+    "description": "一个开源、免费的在大学校园里很活跃的操作系统，有操作系统内核，也有图形化的界面。",
+    "full_des": "Bookos是一个培养中国青少年操作系统人才的社区，社区是有组织的运营的。主要是引导对操作系统感兴趣的高中生和大学生系统的学习的操作系统，从感兴趣难入门，到能在大学实现一个简单的操作系统，社区由胡自成负责bookos的技术和代码开发，李石亮负责引导喜爱底层的大学生做系统性的学习引导从算法，简单的程序结构，到简单的操作系统实现。万晓兰老师负责经济上的支持。到目前为止，有核心的社区人员30-40人，比较松散的成员有80人左右，更松散的qq群有700人。核心的社区人员其中8人都实现过简单的操作系统。开发的主要工作是由胡自成等5人完成，其他核心成员一起讨论技术问题，提供企业的信息，给出实现的建议。李石亮和万晓兰负责解决学生中的困难和就业上的困难，让他们安心的学习底层的技术，做到学习底层和就业两方面不耽误。",
+    "tech_tag": [
+      "操作系统",
+      "Git",
+      "GCC",
+      "内核"
+    ],
+    "domain_tag": [
+      "操作系统",
+      "内核",
+      "人才的培养"
+    ],
+    "mail_list": "公共邮箱）：",
+    "email": "2323168280@qq.com 胡自成",
+    "project_list": []
+  },
+
+
   {
     "anchor": "webcell",
     "slide": "",
@@ -822,30 +852,6 @@
     "mail_list": "无）",
     "email": "无）",
     "project_list": []
-  },
-  {
-    "anchor": "zstack",
-    "slide": "",
-    "video": "",
-    "img": "Zstack.png",
-    "title": "ZStack Cloud 平台||ZStack Cloud",
-    "project_url": "",
-    "url": "https://www.zstack.io/",
-    "description": "ZStack 是一款具备简单、健壮、弹性、智能等特性的 IaaS 产品。||ZStack is open source IaaS(infrastructure as a service) software aiming to automate datacenters, managing resources of compute, storage, and networking all by APIs.",
-    "full_des": "ZStack 云平台具备自主知识产权、自主开源云代码、自主云平台三大优势，凭借云计算的 4S 特性，践行产品化，普惠云计算。其中，ZStack 开源代码提供了整个产品的框架、底座和基础的计算，网络，存储等 IaaS 软件的功能。||ZStack is open source IaaS(infrastructure as a service) software aiming to automate datacenters, managing resources of compute, storage, and networking all by APIs. Users can setup ZStack environments in a download-and-run manner, spending 5 minutes building a POC environment all on a single Linux machine, or 30 minutes building a multi-node production environment that can scale to hundreds of thousands of physical servers.ZStack provides the capability of managing everything in a datacenter by APIs, fulfilling the goal of software-defined datacenter. Users control their clouds using either web UI or command line tool both of which interact with ZStack management nodes; NO scattered configurations, dependent software installation, services HA, and thirdparty monitoring are needed, all of them are taken care of by ZStack itself, which provides a great simplicity for stable long-term operation.",
-    "tech_tag": [
-      "Linux",
-      "Git",
-      "GCC",
-      "RPM"
-    ],
-    "domain_tag": [
-      "操作系统",
-      "内核",
-      "包管理"
-    ],
-    "mail_list": "公共邮箱）：community@openEuler.org",
-    "email": "contact@openeuler.org",
-    "project_list": []
   }
+
 ]
