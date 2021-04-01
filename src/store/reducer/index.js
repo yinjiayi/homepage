@@ -4,19 +4,19 @@ const initState = {
     orgTabFlag:"orglist" // orglist|projectlist
 }
 
-exports.reducer = (state = initState,action)=>{
+export const reducer = (state = initState,action)=>{
     console.log(action)
     switch (action.type){
         case "chiFlag_chi":
             return {
                 ...state,
                 chiFlag:"chi"
-            };
+            }
         case "chiFlag_en":
             return {
                 ...state,
                 chiFlag:"en"
-            };
+            }
         case "setOrgDetail":
             return{
                 ...state,
