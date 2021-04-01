@@ -103,11 +103,6 @@
             "name":"The Debian Project",
             "img":"debian.png",
             "url":"https://www.debian.org/"
-        },
-        {
-            "name":"春松客服",
-            "img":"cskf.png",
-            "url":"https://github.com/chatopera/cosin"
         }, 
         {
             "name":"kubesphere",

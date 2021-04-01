@@ -13,15 +13,15 @@
 import React from 'react'
 import './index.less';
 import data from '../../data/org.json';
-import orglist from '../../data/orglist.json';
+import orglist from '../../data/orglist2021.json';
 import { connect } from 'react-redux';
-import OrgTip from '../../components/OrgTip/index.js'
+import OrgTip from '../../components/OrgTip/index.js';
+import {getSplit} from "../../util/url.js";
 class Orglist extends React.Component{
     constructor(props){
        super(props)
        this.state ={
            data,
-           orglist,
            orgflag:"",
            
        }
@@ -32,7 +32,6 @@ class Orglist extends React.Component{
     }
 
     openOrgModal(anchor){
-        console.log(anchor)
         let flag = anchor;
         if(anchor === this.state.orgflag){
             flag=""
@@ -49,12 +48,15 @@ class Orglist extends React.Component{
         })
     }
 
+
+
+   
+
  
 
 
     render(){
         let showdata = this.state.data[this.props.chiFlag]
-    
         return(         
             <div className="Orglist">         
                 <div className="OrglistBanner">
@@ -62,14 +64,20 @@ class Orglist extends React.Component{
                 </div>
                 <div className="OrgListWrapper">
                     {
-                        this.state.orglist.orgList.map((item,index)=>{
+                        orglist.map((item,index)=>{
                             const iconUrl = require('./../../img/organisation/'+item.img).default;
                             return(
                                 <div className="OrgListItem" key={index} >
                                     <div className="OrgListItemModal" onClick={()=>{this.openOrgModal(item.anchor)}}>
                                         <div className="OrgListItemModalImage" style={{backgroundImage:"url("+iconUrl + ")"}}></div>
-                                        <div className="OrgListItemModalTitle">{item.title}</div>
-                                        <div className="OrgListItemModalDesc">{item.description}</div>
+                                        <div className="OrgListItemModalTitle">
+                                            {
+                                                getSplit(item.title,this.props.chiFlag)
+                                            }
+                                        </div>
+                                        <div className="OrgListItemModalDesc">
+                                            {  getSplit(item.description,this.props.chiFlag)}
+                                        </div>
                                     </div>
                                     <OrgTip 
                                         item={item} 

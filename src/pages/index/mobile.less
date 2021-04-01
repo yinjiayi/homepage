@@ -471,10 +471,38 @@
     }
 
     .Org{
-       
+        .ProjectListLC{
+            font-size: 12px;        
+            min-width:900px;    
+           
+            
+        }
+
+        .ProjectListLCWrapper{
+            width: 100%;
+            overflow-x: scroll;
+        }
+        .ProjectListSelectItem{
+            font-size: 13px;
+        }
+
+        
+
+        .ProjectListLCOperation{
+            width: 36%;
+        }
+
+     
+
+        .ProjectListLCLine.Header .ProjectListLCName, .ProjectListLCLine.Header .ProjectListLCCommunity{
+            text-align: left;
+        }
 
         .ProjectListPageState{
             flex-direction: column;
+            font-size: 14px;
+            padding-bottom: 7px;
+            margin-top: 10px;
         }
         .ProjectListBanner{
             flex-direction: column;
@@ -528,6 +556,7 @@
         }
 
         .ant-pagination{
+            .ant-pagination-next,
             .ant-pagination-prev {
                 width: 64px;
                 height: 32px;

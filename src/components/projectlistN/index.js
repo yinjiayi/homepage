@@ -14,10 +14,10 @@ import React from 'react'
 import './index.less';
 import { connect } from 'react-redux';
 import { Input, Space } from 'antd';
-import data from '../../data/orglist.json';
+import data from '../../data/orglist2021.json';
 import projectlist from '../../data/projectlist.json';
 import { Pagination } from 'antd';
-import org from '../../pages/org';
+import {getSplit} from "../../util/url.js";
 const { Search } = Input;
 
 class ProjectlistN extends React.Component{
@@ -31,10 +31,9 @@ class ProjectlistN extends React.Component{
            datastock:[],      // project 所有数据
            projectlistdata:[],// 显示的project数据
            degreeselect:"all",
-           
-            
-        
+        //    orderSelect:"community" // community proid    
        }
+       this.itemRender = this.itemRender.bind(this)
     }
 
    
@@ -57,7 +56,7 @@ class ProjectlistN extends React.Component{
     }
 
     filterItem(value){
-        console.log(value)
+      
         this.setState({ 
             degreeselect:"all"           
         })
@@ -79,7 +78,7 @@ class ProjectlistN extends React.Component{
                 
             })
         }else{
-            console.log(this.state.datastock)
+           
             this.setState({
                 datall:this.state.datastock,  
                 searchdatastock:[], 
@@ -100,7 +99,7 @@ class ProjectlistN extends React.Component{
         var prodata = []
         var domain_tag = []
         var tech_tag = []
-        data.orgList.map((item)=>{
+        data.map((item)=>{
             let _arr = []    
             domain_tag = domain_tag.concat(item.domain_tag)  
             tech_tag = tech_tag.concat(item.tech_tag)   
@@ -121,22 +120,33 @@ class ProjectlistN extends React.Component{
     }
 
     itemRender(current, type, originalElement) {
-        if (type === 'prev') {
-          return <a>上一页</a>;
+        if(this.props.chiFlag === "chi"){
+            if (type === 'prev') {
+                return <a>上一页</a>;
+            }
+            if (type === 'next') {
+            return <a>下一页</a>;
+            }
+
+        }else{
+            if (type === 'prev') {
+                return <a>Previous</a>;
+              }
+              if (type === 'next') {
+                return <a>Next</a>;
+              }
         }
-        if (type === 'next') {
-          return <a>下一页</a>;
-        }
+        
         return originalElement;
       }
 
     onChange = page => {
-        console.log(page);
         this.getPageData(page)
     };
 
     gohashlink(orgtitle){
         window.location.hash="/org/orgdetail/"+orgtitle
+        this.props.setOrgTabFlag("orglist")
     }
 
     goLink(link){
@@ -197,6 +207,17 @@ class ProjectlistN extends React.Component{
         }[item]||"all"
     }
 
+    getDegreeBy(degree){
+        if(this.props.chiFlag === "chi"){
+            return degree
+        }
+        return {
+            "高":"High",
+            "中":"Medium",
+            "低":"Low"
+        }[degree]||"Low"
+    }
+
     getSelectDToChi(tagen){
         return {
             "low":"低",
@@ -206,7 +227,11 @@ class ProjectlistN extends React.Component{
 
     }
 
-   
+    // TabSelectOrder(flag){
+    //     this.setState({
+    //         orderSelect:flag
+    //     })
+    // }
 
 
 
@@ -217,7 +242,8 @@ class ProjectlistN extends React.Component{
 
     render(){
         let showdata = projectlist[this.props.chiFlag]
-        let {projectlistdata,degreeselect} = this.state
+        let {projectlistdata,degreeselect,datall} = this.state
+        let datalllength = datall.length
         return(         
             <div className="Projectlist">
                <div className="ProjectListBanner">
@@ -227,22 +253,29 @@ class ProjectlistN extends React.Component{
                         size="large"
                         onSearch={value => this.filterItem(value)}
                     />
+                    {/* 功能未上线 */}
                     {/* <div className="ProjectListRank">
-                        <span className="ProjectListRankItem ">{showdata.order[0]}</span>
-                        <span className="ProjectListRankItem">{showdata.order[1]}</span>
-                    </div>            */}
+                        <span 
+                            onClick={()=>{this.TabSelectOrder("community")}}
+                            className={["ProjectListRankItem",this.state.orderSelect === "community"?"selectOrder":""].join(" ")}>
+                                {showdata.order[0]}</span>
+                        <span 
+                            onClick={()=>{this.TabSelectOrder("proid")}}
+                            className={["ProjectListRankItem",this.state.orderSelect === "proid"?"selectOrder":""].join(" ")}>
+                                {showdata.order[1]}</span>
+                    </div>            
+                    */}
                </div> 
                <div className="projectListWrapper content1200">
                     <div className="ProjectListPageState">
                         <div className="ProjectListPage">
-                            <span className="ProjectListPageItemOne">{showdata.pronum[0]} {this.state.datall.length} {showdata.pronum[1]}</span>
+                            <span className="ProjectListPageItemOne">{showdata.pronum[0]} {datalllength} {showdata.pronum[1]}</span>
                             <span className="ProjectListPageItem">
                                 {showdata.pagenum[0]}{this.state.page} {showdata.pagenum[1]} 
-                                <span className="ProjectListPageItemGap">/ </span>
-                                <span className="ProjectListPageItemSum">{showdata.pagesum[0]} {Math.ceil(this.state.datall.length/this.state.pagesize)} {showdata.pagesum[1]}</span>
+                                <span className="ProjectListPageItemSum">{showdata.pagesum[0]} {Math.ceil(datalllength/this.state.pagesize)} {showdata.pagesum[1]}</span>
                             </span>
                         </div>
-                        <div className="ProjectListApplyState">{showdata.applyState[0]}</div>
+                        {/* <div className="ProjectListApplyState">{showdata.applyState[2]}</div> */}
                     </div>
                     <div className="ProjectListSelect">
                         <div className="ProjectListSelectItem Degree">
@@ -261,6 +294,7 @@ class ProjectlistN extends React.Component{
                             }
                         </div>
                     </div>
+                    <div className="ProjectListLCWrapper">
                     <div className="ProjectListLC">
                         <div className="ProjectListLCLine Header">
                             <span className="ProjectListLCID ">{showdata.projectNumber}</span>
@@ -269,6 +303,8 @@ class ProjectlistN extends React.Component{
                             <span className="ProjectListLCDegree">{showdata.proDegree}</span>
                             <span className="ProjectListLCOperation">{showdata.operation}</span>
                         </div>
+                       
+
                         {
                           
                                          
@@ -276,12 +312,13 @@ class ProjectlistN extends React.Component{
                                     return(
                                         <div className="ProjectListLCLine Item" key={index}>
                                             <span className="ProjectListLCID ">{item.label}</span>
-                                            <span className="ProjectListLCName" onClick={()=>{this.goLink(item.prourl)}}>{item.name}</span>
-                                            <span className="ProjectListLCCommunity" onClick={()=>{this.gohashlink(item.anchor)}}>{item.orgtitle}</span>
-                                            <span className="ProjectListLCDegree">{item.difficulty}</span>
+                                            <span className="ProjectListLCName" onClick={()=>{this.gohashlink(item.anchor)}}>{item.name}</span>
+                                            <span className="ProjectListLCCommunity" onClick={()=>{this.gohashlink(item.anchor)}}>
+                                                {getSplit( item.orgtitle,this.props.chiFlag)}</span>
+                                            <span className="ProjectListLCDegree">{this.getDegreeBy(item.difficulty)}</span>
                                             <span className="ProjectListLCOperation Item">
-                                                <span className="PLOperationButton">{showdata.operationbutton[0]}</span>
-                                                <span className="PLOperationButton">{showdata.operationbutton[1]}</span>
+                                                <span className="PLOperationButton prodetail" onClick={()=>{this.goLink(item.prourl)}}>{showdata.operationbutton[0]}</span>
+                                                <span className="PLOperationButton proapply">{showdata.operationbutton[1]}</span>
                                             </span>
                                         </div>
                                     )
@@ -290,17 +327,19 @@ class ProjectlistN extends React.Component{
                           
                             
                         }
+                        
+                      
 
                     </div>
-
+                    </div>
                     <Pagination 
                     current={this.state.page}
                     defaultPageSize ={this.state.pagesize} 
-                    total={this.state.datall.length} 
+                    total={datalllength} 
                     itemRender={this.itemRender}
                     onChange={this.onChange}
                     showSizeChanger={false}
-                    />
+                    /> 
 
                </div>
                
@@ -323,4 +362,15 @@ const mapStateToProps = (state)=>{
    }
  }
 
-export default connect(mapStateToProps)(ProjectlistN)
+ const mapDispatchToProps = dispatch => {
+    return {
+        setOrgTabFlag:(data)=>{
+            dispatch({
+                type:'setOrgTabFlag',
+                payload:data
+            })
+        },
+    }
+}
+
+export default connect(mapStateToProps,mapDispatchToProps)(ProjectlistN)

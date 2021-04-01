@@ -14,7 +14,7 @@ import React from 'react'
 import './index.less';
 import data from '../../data/org.json';
 import { connect } from 'react-redux';
-import orglist from '../../data/orglist.json';
+import orglist from '../../data/orglist2021.json';
 import {withRouter} from 'react-router-dom';
 import OrgTip from '../OrgTip/index.js';
 import prolistjson from '../../data/projectlist.json';
@@ -25,7 +25,7 @@ class OrgDetail extends React.Component{
     constructor(props){
        super(props)
        this.state ={
-           showdata:orglist.orgList[0],
+           showdata:orglist[0],
            page:1, // 当前页
            pagesize:10, // 每页显示的个数
            showprojectlist:[]
@@ -35,15 +35,12 @@ class OrgDetail extends React.Component{
     componentDidMount(){
         let showorg = this.props.orgdetail
         // 1.0 判断redux里是否有数据
-        console.log(Object.keys(showorg).length === 0)
         if(Object.keys(showorg).length === 0){
              // 2.0 若无，则从orglist里搜索
              var hashurl = this.props.history.location.pathname.split("/")[3].toString();  
 
-             for(let i=0,len=orglist.orgList.length;i<len;i++){
-               
-                 let item = orglist.orgList[i]
-                 console.log(item)
+             for(let i=0,len=orglist.length;i<len;i++){             
+                 let item = orglist[i]            
                 if(item.anchor === hashurl){
                     showorg = item
                     break       
@@ -57,8 +54,7 @@ class OrgDetail extends React.Component{
         this.setState({
             showdata:showorg,
             showprojectlist:showorg.project_list.slice(0,this.state.pagesize)
-        })
-        console.log(this.state.showdata)   
+        })   
     }
 
     goOrgList(){
@@ -77,8 +73,6 @@ class OrgDetail extends React.Component{
       }
 
     onChange = page => {
-        console.log(page);
-        console.log(this.state.showdata);
         this.setState({
             page: page,
             showprojectlist:this.state.showdata.project_list.slice(this.state.pagesize*(page-1),this.state.pagesize*page)
@@ -108,10 +102,15 @@ class OrgDetail extends React.Component{
                         orgDetailflag="orgdetail" 
                     />
                     <div className="OrgDetailState">
-                        <div className="ProjectListPage">
-                            <span className="ProjectListPageItemOne">{protext.pronum[0]} {projectlistlen} {protext.pronum[1]}</span>           
-                        </div>
-                        <div className="ProjectListApplyState">{protext.applyState[0]}</div>
+                        {
+                            projectlistlen === 0 ?
+                            "":
+                            <div className="ProjectListPage">
+                                <span className="ProjectListPageItemOne">{protext.pronum[0]} {projectlistlen} {protext.pronum[1]}</span>           
+                            </div>
+
+                        }                      
+                        <div className="ProjectListApplyState">{protext.applyState[2]}</div>
                     </div>
                     <div className="projectListWrapper">
                         {
@@ -124,7 +123,7 @@ class OrgDetail extends React.Component{
                     </div>
 
                     {
-                        projectlistlen>10?
+                        projectlistlen>this.state.pagesize?
                         <Pagination 
                         defaultCurrent={this.state.page} 
                         defaultPageSize ={this.state.pagesize} 

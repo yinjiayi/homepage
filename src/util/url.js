@@ -53,8 +53,21 @@ var titleChange = function(){
 
 }
 
+var getSplit = function(item,flag){
+    const iteml = item.split("||")
+    if(iteml.length === 1){
+        return item
+    }
+    if(flag === "chi"){
+        return iteml[0]
+    }else{
+        return iteml[1]
+    }
+}
+
 
 export {
     gourl,
-    titleChange
+    titleChange,
+    getSplit
 }

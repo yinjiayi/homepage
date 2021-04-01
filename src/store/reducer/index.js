@@ -1,6 +1,7 @@
 const initState = {
     chiFlag:"chi", // chi|en
     orgdetail:{},  // 显示orgDetail数据
+    orgTabFlag:"orglist" // orglist|projectlist
 }
 
 exports.reducer = (state = initState,action)=>{
@@ -20,6 +21,11 @@ exports.reducer = (state = initState,action)=>{
             return{
                 ...state,
                 orgdetail:action.payload
+            }
+        case "setOrgTabFlag":
+            return{
+                ...state,
+                orgTabFlag:action.payload
             }
         default:
             return state

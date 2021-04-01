@@ -20,26 +20,22 @@ class Org extends React.Component{
        super(props)
        this.state ={
             data,
-            tabflag:"orglist"
        }
     }
 
     componentDidMount(){    
         var hashurl = this.props.history.location.pathname.split("/");
         let orgflag = "orglist"
-        console.log(hashurl)
+        
         if(hashurl[2] === "projectlist"){
             orgflag = "projectlist"
         }
-        this.setState({
-            tabflag:orgflag
-        })
+
+        this.props.setOrgTabFlag(orgflag)
     }
 
     handleClick(hashurl){
-        this.setState({
-            tabflag:hashurl
-        })
+        this.props.setOrgTabFlag(hashurl)
         console.log(this.props)
         this.props.history.push('/org/'+hashurl)
         
@@ -50,6 +46,7 @@ class Org extends React.Component{
 
     render(){
        const showdata = this.state.data[this.props.chiFlag]
+       const tabflag = this.props.orgTabFlag
         return(         
             <div className="Org">
                 <div className="OrgBanner"></div>
@@ -60,7 +57,7 @@ class Org extends React.Component{
                                 <div  
                                     key={index} 
                                     onClick={()=>this.handleClick(item.hash)} 
-                                    className={["OrgTabItem",this.state.tabflag === item.hash ? "activeTab":""].join(" ")}> {item.name}</div>
+                                    className={["OrgTabItem",tabflag === item.hash ? "activeTab":""].join(" ")}> {item.name}</div>
                             )
                         })
                     }
@@ -81,11 +78,21 @@ class Org extends React.Component{
 
 
 const mapStateToProps = (state)=>{
-    
     return {
-        chiFlag:state.chiFlag
+        chiFlag:state.chiFlag,
+        orgTabFlag:state.orgTabFlag
     }
  }
+const mapDispatchToProps = dispatch => {
+    return {
+        setOrgTabFlag:(data)=>{
+            dispatch({
+                type:'setOrgTabFlag',
+                payload:data
+            })
+        },
+    }
+}
 
 
-export default connect(mapStateToProps)(withRouter(Org))
+export default connect(mapStateToProps,mapDispatchToProps)(withRouter(Org))

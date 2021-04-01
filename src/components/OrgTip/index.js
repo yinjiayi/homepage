@@ -12,7 +12,8 @@
 
 import React from 'react'
 import './index.less';
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
+import {getSplit} from "../../util/url.js";
 
 
 class OrgTip extends React.Component{
@@ -36,8 +37,8 @@ class OrgTip extends React.Component{
                 <div className="triangle"></div>
                 <div className="OrgTipItemContent">
                     <div className="OrgTipClose" onClick={closeModal}></div>
-                    <div className="OrgTipTitle">{this.props.item.title}</div>
-                    <div className="OrgTipFullDesc">{this.props.item.full_des}</div>
+                    <div className="OrgTipTitle">{getSplit(this.props.item.title,this.props.chiFlag)}</div>
+                    <div className="OrgTipFullDesc">{getSplit(this.props.item.full_des,this.props.chiFlag)}</div>
                     <div className="Orgdivider"></div>
                     <div className="OrgTipWebSiteUrl OrgTipArr">
                         {this.props.showdata.websiteurl}
@@ -57,12 +58,17 @@ class OrgTip extends React.Component{
                             {this.props.item.email}
                         </a>
                     </div>
-                    <div className="OrgTipsummer2020pro OrgTipArr">
-                        {this.props.showdata.summer2020pro}
-                        <a href={this.props.item.project_url}  target="_blank" rel="noopener noreferrer">
-                            {this.props.item.project_url}
-                        </a>
-                    </div>
+                    {
+                        this.props.item.project_url ?
+                        <div className="OrgTipsummer2021pro OrgTipArr">
+                            {this.props.showdata.summer2021pro}
+                            <a href={this.props.item.project_url}  target="_blank" rel="noopener noreferrer">
+                                {this.props.item.project_url}
+                            </a>
+                        </div>:""
+
+                    }
+                    
                     <div className="OrgTipDomain OrgTipArr">{this.props.showdata.domain}</div>
                     <div className="OrgTipDomainTag">
                         {

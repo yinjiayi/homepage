@@ -2,7 +2,8 @@
 
 .ProjectListBanner{
     margin:36px 0 20px;
-   text-align: center;
+    display: flex;
+    justify-content: space-between;
     .ant-input-search{
         width: 600px;
         height: 60px;
@@ -73,8 +74,23 @@
     position: relative;
     display: inline-block;
     margin: auto 0 auto 20px;
-    color: #1d8eff;
+    color: #666;
+    line-height: 20px;
+    cursor:pointer;
+    transition: all 0.3s;
     
+}
+
+.ProjectListRankItem:first-child::after{
+    content: "";
+    position: relative;
+    border-left: 2px solid #b0b2b9;
+    right: -10px;
+    height: 40px;
+}
+
+.ProjectListRankItem.selectOrder{
+    color: #1d8eff;
 }
 
 
@@ -100,6 +116,10 @@
         }
 
     }
+
+    .ProjectListLCOperation{
+        font-size: 12px;
+    }
     
 
     .ProjectListSelectItem.Degree .ProjectListSelectItemTitle{
@@ -111,14 +131,14 @@
 
 .ProjectListApplyState{
     padding:2px 10px;
-	height: 24px;
+	height: auto;
 	background-color: #13e493;
 	border-radius: 10px;
     font-family: MicrosoftYaHei;
 	font-size: 16px;
 	font-weight: normal;
 	font-stretch: normal;
-	line-height: 22px;
+	line-height: 20px;
 	letter-spacing: 0px;
 	color: #ffffff;
     text-align: center;
@@ -167,6 +187,11 @@
     text-align: center;
     line-height: 24px;
     cursor:pointer
+}
+
+.PLOperationButton.proapply{
+    background-color: #7485a7;
+    cursor: default;
 }
 
 .ProjectListSelectTagDe{

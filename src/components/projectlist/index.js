@@ -14,7 +14,7 @@ import React from 'react'
 import './index.less';
 import { connect } from 'react-redux';
 import { Input, Space } from 'antd';
-import data from '../../data/orglist.json';
+import data from '../../data/orglist2021.json';
 import projectlist from '../../data/projectlist.json';
 import ProjectModal from '../projectModal/index.js';
 import { Pagination } from 'antd';
@@ -36,7 +36,7 @@ class Projectlist extends React.Component{
    
 
     filterItem(value){
-        console.log(value)
+       
         if(value){
             var showdataTemp = []
             this.state.datall.map((item)=>{
@@ -54,7 +54,7 @@ class Projectlist extends React.Component{
                 
             })
         }else{
-            console.log(this.state.datastock)
+           
             this.setState({
                 datall:this.state.datastock,
                 pagenow:1,
@@ -87,7 +87,7 @@ class Projectlist extends React.Component{
 
     getData(){
         var prodata = []
-        data.orgList.map((item)=>{
+        data.map((item)=>{
             let _arr = []         
             item.project_list.map((items) => {           
                 _arr.push(Object.assign({},items,{orgtitle: item.title}))            
@@ -109,7 +109,6 @@ class Projectlist extends React.Component{
       }
 
     onChange = page => {
-        console.log(page);
         this.setState({
             page: page,
             showdata:this.state.datall.slice(this.state.pagesize*(page-1),this.state.pagesize*page)

@@ -31,6 +31,17 @@ class ProjectModal extends React.Component{
         }[degree]||'org0'
     }
 
+    getDegreeBy(degree){
+        if(this.props.chiFlag === "chi"){
+            return degree
+        }
+        return {
+            "高":"High",
+            "中":"Medium",
+            "低":"Low"
+        }[degree]||"Low"
+    }
+
   
 
  
@@ -56,9 +67,10 @@ class ProjectModal extends React.Component{
                         </div>
                                                 
                         <div className="orgProjectBottomLeft">
-                            <div>{showdata.proDi}{item.difficulty}</div>
-                            <div>{showdata.proSelectStu}{item.student_name}</div>
-                            <div className="orgProjectName">{item.orgtitle}</div>
+                            <div>{showdata.proDi}{this.getDegreeBy(item.difficulty)}</div>
+                            {/* 功能暂未上线 */}
+                            {/* <div>{showdata.proSelectStu}{item.student_name}</div> */}
+                            {/* <div className="orgProjectName">{item.orgtitle}</div> */}
                         </div>
                     </div>
 
