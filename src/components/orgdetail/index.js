@@ -116,7 +116,7 @@ class OrgDetail extends React.Component{
                         {
                             this.state.showprojectlist.map((item,index)=>{
                                 return (
-                                        <ProjectModal showdata={protext} item={item} key={index}/>
+                                        <ProjectModal showdata={protext} item={item} key={index} prourl={showorgdata.project_url}/>
                                 )
                             })
                         }

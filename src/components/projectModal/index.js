@@ -42,6 +42,10 @@ class ProjectModal extends React.Component{
         }[degree]||"Low"
     }
 
+    goLink(link){
+        window.open(link)
+    }
+
   
 
  
@@ -82,7 +86,7 @@ class ProjectModal extends React.Component{
                             <li>{showdata.proMentor}{item.mentor}</li>
                             <li>{showdata.proMentorContact}<a href={"mailto:"+item.contact}>{item.contact}</a></li>
                         </ul>
-                        <div className=" orgProjectButton">{showdata.proDetail}</div></div>
+                        <div className=" orgProjectButton" onClick={()=>{this.goLink(this.props.prourl)}}>{showdata.proDetail}</div></div>
                 </div>
 
             </div>
