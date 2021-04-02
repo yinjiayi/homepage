@@ -50,11 +50,74 @@
 
     }
 
+
+    .Org{
+        .ProjectListLC{
+            font-size: 12px;        
+            min-width:900px;      
+        }
+
+        .ProjectListLCWrapper{
+            width: 100%;
+            overflow-x: scroll;
+        }
+        .OrgTipItemContent{
+            width: 97vw;
+        }
+        .OrgListItem:nth-child(3n+2) .OrgTipItemContent {
+            left: auto;
+        }
+        
+        .OrgListItem:nth-child(3n+3) .OrgTipItemContent {
+            left: auto;
+        }
+
+        .OrgListItem:nth-child(odd) .OrgTipItemContent {
+            left: 0;
+        }
+
+        .OrgListItem:nth-child(even) .OrgTipItemContent{
+            left: calc(~'-97vw + 386px')
+        }
+    }
+
+    .Projectlist{
+        .projectListItemLeft{
+            width: 35vw;
+        }
+        .projectListItemRight{
+            width: 60vw;
+        }
+
+        .orgProjectWiki{
+            width: 95px;
+            a{
+                font-size: 14px;
+            }
+        }
+
+        .orgProjectButton{
+            padding-left: 18px;
+            width: 122px;
+
+        }
+
+    }
+   
+
     html{
         font-size: 10px;
     }
 
+
     
     
   
+}
+
+@media screen and (min-width: 750px)and (max-width: 796px){
+    .OrgListItem .OrgTipItemContent {
+        left: 0 !important;
+    }
+
 }

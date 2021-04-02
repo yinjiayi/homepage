@@ -1,0 +1,857 @@
+[
+  {
+    "anchor": "dolphinscheduler",
+    "slide": "",
+    "video": "",
+    "img": "dolphin.jpg",
+    "title": "Apache DolphinScheduler||Apache DolphinScheduler Community",
+    "project_url": "",
+    "url": "https://dolphinscheduler.apache.org/",
+    "description": "一个分布式、易扩展的可视化工作流调度平台，致力于解决大数据任务间复杂的依赖关系，使各种任务(Spark/Shell/Python等)开箱即用||Apache DolphinScheduler is a distributed, extensible visual Big Data workflow scheduler system.",
+    "full_des": "Apache DolphinScheduler 于 19 年 3 月开源，8 月进入 Apache 孵化器， 已累计有 IBM、腾讯、美团、360、顺丰、京东物流、科大讯飞、联通、猿辅导等 400+ 公司在生产环境上使用。DolphinScheduler 致力于“可视化操作任务、工作流之间复杂的依赖关系，并可视化监控整个数据处理过程”。DolphinScheduler 以 DAG(有向无环图) 的方式将任务连接起来，可实时监控任务的运行状态，同时支持重试、从指定节点恢复失败、暂停及 Kill任务等操作||Apache DolphinScheduler is a distributed, extensible visual Big Data workflow scheduler system. The project was first created at Analysys in December 2017, and entered the Apache Incubator in August 2019.        As a powerful extract-transform-load (ETL) workflow scheduler platform with rich directed acyclic graph (DAG) visual interfaces, Dolphin Scheduler solves complex task dependencies and triggers in the data pipeline. Out-of-the-box, its easy-to-extend processing connects numerous systems to 100,000-level data task scheduling. Apache Dolphin Scheduler is:                ● Highly Reliable —decentralized multi-master and multi-worker, high availability, supported by itself, overload processing        ● User-Friendly —all process definition operations are visualized, defines key information at a glance, one-click deployment        ● Supports Rich Scenarios —includes pause, recover operation, multi-tenant, and additional task types such as Spark, Hive, mr, shell, python, sub_process, and more        ● Cloud Native - supports K8s, Docker deployment and custom task types, distributed scheduling, with overall scheduling capability increased linearly with the scale of the cluster        Apache DolphinScheduler is in use at Budweiser, China Unicom, IDG Capital, IBM China, JD.com, Lenovo, New Oriental, Nokia China, Qihoo 360, SF Express, and Tencent, among others.",
+    "tech_tag": [
+      "workflow",
+      "scheduler",
+      "task scheduler",
+      "ETL",
+      "bigdata",
+      "AI"
+    ],
+    "domain_tag": [
+      "用到大数据的各个领域，包含但不限于互联网",
+      "IOT",
+      "人工智能等"
+    ],
+    "mail_list": "dev@dolphinscheduler.apache.org",
+    "email": "dev@dolphinscheduler.apache.org",
+    "project_list": []
+  },
+  {
+    "anchor": "shardingsphere",
+    "slide": "",
+    "video": "",
+    "img": "sharding.jpg",
+    "title": "Apache ShardingSphere||Apache ShardingSphere",
+    "project_url": "",
+    "url": "http://shardingsphere.apache.org/index_zh.html",
+    "description": "Apache ShardingSphere是一个开源的分布式数据库解决方案组成的生态圈||Apache ShardingSphere is an open-source ecosystem consisting of a set of distributed database solutions.",
+    "full_des": "Apache ShardingSphere是一个开源的分布式数据库解决方案组成的生态圈，提供标准化的数据水平扩展、分布式事务和分布式治理等功能。||Apache ShardingSphere is an open-source ecosystem consisting of distributed database solutions, which provide functions of data scale-out, distributed transaction and distributed governance. As a TLP of Apache, its community is active, diverse, open and technique-geeky.",
+    "tech_tag": [
+      "分布式",
+      "数据库",
+      "微服务治理",
+      "Java"
+    ],
+    "domain_tag": [
+      "分布式数据库",
+      "分布式数据库中间件",
+      "微服务治理"
+    ],
+    "mail_list": "dev@shardingsphere.apache.org",
+    "email": "dev@shardingsphere.apache.org",
+    "project_list": []
+  },
+  {
+    "anchor": "chubaofs",
+    "slide": "",
+    "video": "",
+    "img": "chubao.png",
+    "title": "ChubaoFS||ChubaoFS",
+    "project_url": "",
+    "url": "github.com/chubaofs/chubaofs",
+    "description": "云原生分布式存储平台。||ChubaoFS is a cloud-native storage platform that provides both POSIX filesystem and S3 compatible interfaces.",
+    "full_des": "解决了大规模容器平台环境统一存储资源，从而大幅度降低企业在线和离线业务的存储使用和管理成本，并支撑业务存储计算分离架构的实现；融合存储接口: S3接口和posix无缝兼容，使得业务更加方便；多租户: 通过技术创新，使得业务逻辑隔离，但是存储资源聚合在一起，更进一步节约资源；弹性可扩展: 实现一键扩容；小文件优化：针对小文件，在capacity和performance方面都有很好的可扩展性；支撑高并发元数据操作：元数据分片策略没有采用很多业界分布式文件系统采用的Locality策略，而是完全分散，最大限度降低了热点问题概率，高并发的元数据操作性能有保障。||ChubaoFS has been commonly used as the underlying storage infrastructure for online applications, database or data processing services and machine learning jobs orchestrated by Kubernetes. An advantage of doing so is to separate storage from compute with the ability of scaling up and down based on workloads, providing total flexibility in matching resources to the actual storage and compute needs at any given time.Some of the key features include: scaled metadata management and performance; friendly to diverse file sizes and read/write patterns; easy to scale up; multi-tenancy; strong replication consistency.",
+    "tech_tag": [
+      "云原生分布式存储"
+    ],
+    "domain_tag": [
+      "云原生分布式存储"
+    ],
+    "mail_list": "chubaofs-users@groups.io",
+    "email": "chubaofs-users@groups.io",
+    "project_list": []
+  },
+  {
+    "anchor": "megengine",
+    "slide": "",
+    "video": "",
+    "img": "megEngine.jpg",
+    "title": "MegEngine 社区",
+    "project_url": "",
+    "url": "https://megengine.org.cn/",
+    "description": "适合工业级研发的开源深度学习框架",
+    "full_des": "MegEngine 是一个快速、可拓展、易于使用且支持自动求导的开源深度学习框架。拥有三大核心优势：训练推理一体、全平台高效支持、动静结合的训练能力。",
+    "tech_tag": [
+      "Python",
+      "深度学习",
+      "卷积神经网络",
+      "视觉算法"
+    ],
+    "domain_tag": [
+      "人工智能",
+      "机器学习"
+    ],
+    "mail_list": "megengine-support@megvii.com",
+    "email": "megengine@megvii.com",
+    "project_list": []
+  },
+  {
+    "anchor": "rt",
+    "slide": "",
+    "video": "",
+    "img": "RT-Thread.jpg",
+    "title": "RT||RT",
+    "project_url": "",
+    "url": "https://www.rt",
+    "description": "RT-Thread 是一个组件完整丰富、高度可伸缩、简易开发、超低功耗、高安全性的物联网操作系统。||RT-Thread is an open-source Internet of Things Operating System built with rich components, ultra low power design, high scalability and security, making IoT development easier to start!",
+    "full_des": "RT-Thread 是一个集实时操作系统（RTOS）内核、中间件组件和开发者社区于一体的技术平台，由熊谱翔先生带领并集合开源社区力量开发而成，RT-Thread  也是一个组件完整丰富、高度可伸缩、简易开发、超低功耗、高安全性的物联网操作系统。RT-Thread 具备一个 IoT OS  平台所需的所有关键组件，例如GUI、网络协议栈、安全传输、低功耗组件等等。经过15年的累积发展，RT-Thread  已经拥有一个国内最大的嵌入式开源社区，同时被广泛应用于能源、车载、医疗、消费电子等多个行业，累积装机量超过8亿台，成为国人自主开发、国内最成熟稳定和装机量最大的开源 RTOS。||RT-Thread is a technology platform that combines real-time operating system (RTOS) kernel, middleware components, and brings the technology advocates together. RT-Thread is leading by Bernard Xiong and community powered. RT-Thread Internet of Things Operating System built with rich components, ultra-low power design, high scalability and security, with almost every key basic component required for IoT devices, such as network protocols, file systems, low-power management, and so on.     We’ve been here for more than 15 years, and we’re not doing it alone. RT-Thread grows one of the largest open-source embedded communities in China. RT-Thread has now achieved the installation of over 800 million devices, is widely being applied in Wearable Devices, Smart Home Appliances, Energy, Automotive Electronics, Medical Electronics, Consumer Electronics, and many other industries.     RT-Thread strives to create a New Class of IoT operating system with great hardware and software ecosystem, get everything connected, keep information flowing!",
+    "tech_tag": [
+      "RTOS",
+      "IoT",
+      "embedded-systems",
+      "Cortex-M",
+      "Cortex-A",
+      "RISC-V",
+      "ARM"
+    ],
+    "domain_tag": [
+      "物联网操作系统",
+      "软件包",
+      "GUI",
+      "IDE"
+    ],
+    "mail_list": "Github Issue https://github.com/RT-Thread/rt-thread/issues",
+    "email": "support@rt-thread.com",
+    "project_list": []
+  },
+  {
+    "anchor": "pulsar",
+    "slide": "",
+    "video": "",
+    "img": "pulsar.jpg",
+    "title": "Apache Pulsar 社区",
+    "project_url": "",
+    "url": "https://pulsar.apache.org",
+    "description": "下一代云原生分布式消息流平台",
+    "full_des": "Apache Pulsar 是 Apache 软件基金会顶级项目，是下一代云原生分布式消息流平台，集消息、存储、轻量化函数式计算为一体，采用计算与存储分离架构设计，支持多租户、持久化存储、多机房跨区域数据复制，具有强一致性、高吞吐、低延时及高可扩展性等流数据存储特性。",
+    "tech_tag": [
+      "大数据",
+      "云原生",
+      "消息中间件",
+      "流处理",
+      "存储"
+    ],
+    "domain_tag": [
+      "消息中间件",
+      "流计算"
+    ],
+    "mail_list": "dev@pulsar.apache.org",
+    "email": "community@streamnative.io",
+    "project_list": []
+  },
+  {
+    "anchor": "emacs",
+    "slide": "",
+    "video": "",
+    "img": "emacs.jpg",
+    "title": "Emacs China",
+    "project_url": "",
+    "url": "https://emacs",
+    "description": "Emacs China是由国内的Emacs爱好者成立的Emacs社区，致力于Emacs相关的技术讨论。",
+    "full_des": "Emacs China是由国内的Emacs爱好者成立的Emacs社区，致力于Emacs相关的技术讨论。",
+    "tech_tag": [
+      "Emacs",
+      "Python",
+      "Lisp"
+    ],
+    "domain_tag": [
+      "Emacs"
+    ],
+    "mail_list": "无。可以在Emacs China发帖联系",
+    "email": "无。可以在Emacs China发帖联系",
+    "project_list": []
+  },
+  {
+    "anchor": "casbin",
+    "slide": "",
+    "video": "",
+    "img": "casbin.jpg",
+    "title": "Casbin||Casbin",
+    "project_url": "",
+    "url": "https://casbin.org/",
+    "description": "一个强大的、高效的开源访问控制框架||Authorization library that supports access control models like ACL, RBAC, ABAC",
+    "full_des": "Casbin是一个强大的、高效的开源访问控制框架。涉及到Go, Java, Node.js, Javascript (React), Python, PHP, .NET, C++, Rust等多种语言。Casbin由北京大学罗杨博士创立于2017年，核心维护团队有数十人。Casbin在业界具有广泛影响力。目前已经被Intel、VMware、Orange、RedHat、T-Mobile等公司开源使用，被腾讯云、Cisco、Verizon等公司闭源使用。具体详见Casbin主页。Casbin Go主项目目前GitHub 8600+ stars，加上所有语言的实现、插件等可达到10000+ stars。||Casbin is a powerful and efficient open-source access control library. It provides support for enforcing authorization based on various access control models like ACL, RBAC, ABAC for Golang, Java, Node.js, PHP, Python, .NET (C#), Delphi and Rust.What Casbin does:- Enforce the policy in the classic {subject, object, action} form or a customized form as you defined, both allow and deny authorizations are supported.- Handle the storage of the access control model and its policy.- Manage the role-user mappings and role-role mappings (aka role hierarchy in RBAC).- Support built-in superuser like root or administrator. A superuser can do anything without explict permissions.- Multiple built-in operators to support the rule matching. For example, keyMatch can map a resource key /foo/bar to the pattern /foo*.What Casbin does NOT do:- Authentication (aka verify username and password when a user logs in)- Manage the list of users or roles.I believe it's more convenient for the project itself to manage these entities. Users usually have their passwords, and Casbin is not designed as a password container. However, Casbin stores the user-role mapping for the RBAC scenario. For more details, see: https://casbin.org/",
+    "tech_tag": [
+      "security",
+      "auth",
+      "authorization",
+      "acl",
+      "rbac",
+      "abac"
+    ],
+    "domain_tag": [
+      "访问控制"
+    ],
+    "mail_list": "https://forum.casbin.com/",
+    "email": "admin@casbin.org",
+    "project_list": []
+  },
+  
+  {
+    "anchor": "skywalking",
+    "slide": "",
+    "video": "",
+    "img": "ApacheSkyWalking.jpg",
+    "title": "Apache SkyWalking",
+    "project_url": "",
+    "url": "https://skywalking.apache.org/",
+    "description": "SkyWalking is an open source APM for distributed system. Tracing, Metrics and Logging all-in-one solution. Make your services reliable.",
+    "full_des": "Apache SkyWalking is a highly diverse community. We as a top-level project of Apache Software Foundation, have 400+ developers all over the world.",
+    "tech_tag": [
+      "APM",
+      "Tracing",
+      "Metrics",
+      "Logging",
+      "Event",
+      "Performance"
+    ],
+    "domain_tag": [
+      "Observability",
+      "Micro service",
+      "Service Mesh",
+      "应用性能监控",
+      "分布式追踪",
+      "分布式系统性能"
+    ],
+    "mail_list": "dev@skywalking.apache.org (Mail to dev-subscribe@skywalking.apache.org to subscribe)",
+    "email": "dev@skywalking.apache.org",
+    "project_list": []
+  },
+  {
+    "anchor": "ApacheAPISIX",
+    "slide": "",
+    "video": "",
+    "img": "ApacheAPISIX.jpg",
+    "title": "Apache APISIX||Apache APISIX",
+    "project_url": "",
+    "url": "https://apisix.apache.org/",
+    "description": "云原生、高性能、可扩展的微服务 API 网关||Cloud-native, high-performance, scalable microservices API gateway",
+    "full_des": "Apache APISIX 是云原生、高性能、可扩展的微服务 API 网关，它基于 Nginx 和 etcd 来实现，具备动态路由、插件热加载、 gRPC 代理、协议转换等功能，适合微服务体系下的 API 管理。||Apache APISIX is a cloud-native, high-performance, scalable microservices API gateway based on Nginx and etcd, with dynamic routing, plugin hot-loading, gRPC proxy, protocol conversion, and other features, suitable for API management under the microservices system.",
+    "tech_tag": [
+      "网关",
+      "Nginx",
+      "C",
+      "Lua",
+      "API",
+      "Golang",
+      "k8s",
+      "Helm Chart"
+    ],
+    "domain_tag": [
+      "中间件",
+      "微服务"
+    ],
+    "mail_list": "开发者邮箱列表：dev@apisix.apache.org 订阅指南：https://apisix.apache.org/subscribe-guide",
+    "email": "wenming@apache.org",
+    "project_list": []
+  },
+  {
+    "anchor": "iotdb",
+    "slide": "",
+    "video": "",
+    "img": "iotdb.png",
+    "title": "Apache IoTDB 社区",
+    "project_url": "",
+    "url": "http://iotdb.apache.org/",
+    "description": "工业物联网时序数据库管理系统",
+    "full_des": "IoTDB是支持物联网时序数据收集、存储、查询与分析一体化的数据管理引擎，支持“端-边-云”一体化部署，适用于高端装备管、工厂设备、高速网联设备等多种数据管理场景。开源版开发者百余人，社区成员来自中国高校、东方国信、阿里、云智慧、用友、联想、华为、四维图新、网易等头部公司。",
+    "tech_tag": [
+      "Java",
+      "Git",
+      "Maven",
+      "LSM",
+      "Timeseries",
+      "Raft"
+    ],
+    "domain_tag": [
+      "存储引擎",
+      "查询优化",
+      "压缩算法",
+      "分布式协议"
+    ],
+    "mail_list": "dev@iotdb.apache.org（订阅 dev-subscribe@iotdb.apache.org)",
+    "email": "dev@iotdb.apache.org",
+    "project_list": []
+  },
+  {
+    "anchor": "Simple",
+    "slide": "",
+    "video": "",
+    "img": "simpleX.jpg",
+    "title": "Simple||Simple",
+    "project_url": "",
+    "url": "https://github.com/Simple",
+    "description": "帮助初学者实现复杂系统。||To help beginners implement complex systems.",
+    "full_des": "在学习操作系统、编译原理时觉得难学难懂？你需要自己动手实现它！我们社区使用基于 Git 分支的增量式方案，向初学者提供简单的代码实现，帮助你快速成长。社区贡献者由在校学生组成，欢迎加入我们。||Do you find it difficult to understand when learning operating systems and compilingprinciples? You need to do it yourself! Our community uses an incremental scheme based onGit branch to provide simple code implementation for beginners and help you acquiremaster quickly. Community contributors are made up of on-campus students. Welcome tojoin us.",
+    "tech_tag": [
+      "C/C++",
+      "Scala",
+      "CI"
+    ],
+    "domain_tag": [
+      "CPU",
+      "内核",
+      "编译器",
+      "图形学"
+    ],
+    "mail_list": "https://github.com/Simple-XX/Summer202X",
+    "email": "https://github.com/Simple-XX/Summer202X",
+    "project_list": []
+  },
+  {
+    "anchor": "tuna",
+    "slide": "",
+    "video": "",
+    "img": "tuna.jpg",
+    "title": "清华大学学生网络与开源软件协会",
+    "project_url": "",
+    "url": "https://tuna.moe/",
+    "description": "清华大学网络技术与开源软件爱好者团体，有较大影响力的高校开源社区。",
+    "full_des": "清华大学 TUNA 协会全名清华大学学生网络与开源软件协会（Tsinghua University TUNA Association），是由清华大学网络技术和开源软件爱好者、技术宅组成的团体。社团成立于2011年，目前校内外成员超过500人，校内注册人数接近300人，校内核心（活跃）成员超过50人。 TUNA 协会维护的清华大学开源软件镜像站，包括数百个开源软件。是中国高校目前规模最大的开源镜像站。TUNA 协会为这些业务开发的许多开源软件，包括镜像管理同步套件 tunasync、直播弹幕套件 danmaQ 等，都被国内外同行采用并广受好评。 TUNA 协会也与其他开源社区进行广泛联络，与多个高校开源学生组织、国内开源社区、企业等开展合作，共同举办软硬件件自由日、Release Party 等公众活动，推广开源理念，普及基础知识，为中国开源事业贡献力量，起到了较好的宣传引导作用。",
+    "tech_tag": [
+      "Linux",
+      "Mirrors",
+      "Qt",
+      "Python",
+      "Node.js",
+      "Go",
+      "Rust"
+    ],
+    "domain_tag": [
+      "服务器运维",
+      "网络编程",
+      "系统工具"
+    ],
+    "mail_list": "tuna-general@googlegroups.com",
+    "email": "staff@tuna.tsinghua.edu.cn",
+    "project_list": []
+  },
+   
+  {
+    "anchor": "oi",
+    "slide": "",
+    "video": "",
+    "img": "oi.jpg",
+    "title": "OI Wiki||OI Wiki",
+    "project_url": "",
+    "url": "https://oi",
+    "description": "给所有人的编程竞赛知识整合站点，内含炫酷算术魔法！||Wiki of OI / ICPC for everyone.",
+    "full_des": "OI Wiki 是一个编程竞赛知识整合站点，提供有趣又实用的编程竞赛知识以及其他有帮助的内容，帮助广大编程竞赛爱好者更快更深入地学习编程竞赛。同时我们围绕 OI Wiki 主站开展一些相关的基础设施建设，包括 markdown 渲染工具以及周边诸多开发工具。详情可以访问 <https://github.com/OI-wiki>||OI Wiki aims to share knowledge on competitive programming, and we also maintain some related infrastructures, including markdown rendering tools and exporting tools.",
+    "tech_tag": [
+      "typescript",
+      "react",
+      "remark",
+      "unified",
+      "algorithm",
+      "data-structure",
+      "competitive-programming"
+    ],
+    "domain_tag": [
+      "算法与数据结构教育",
+      "开发工具",
+      "web"
+    ],
+    "mail_list": "https://t.me/oiwiki> 以及 QQ 群 588793226",
+    "email": "hi@oi-wiki.org",
+    "project_list": []
+  },
+  {
+    "anchor": "openlookeng",
+    "slide": "",
+    "video": "",
+    "img": "openLooKeng.png",
+    "title": "openLooKeng社区||openLooKeng Community",
+    "project_url": "",
+    "url": "https://openlookeng.io/",
+    "description": "openLooKeng是一款开源的数据虚拟化引擎，像使用数据库一样使用大数据。||openLooKeng is a distributed, low latency, reliable data engine for all data, big or small, local or remote. It help big data users to use big data like database.",
+    "full_des": "openLooKeng是一款开源的高性能数据虚拟化引擎，提供统一SQL接口，具备跨数据源/数据中心分析能力以及面向交互式、批、流等融合查询场景。openLooKeng致力于为大数据用户提供极简的数据分析体验，让用户像使用“数据库”一样使用“大数据”。||openLooKeng is a drop in engine which enables in-situ analytics on any data, anywhere, including geographically remote data sources. It provides a global view of all of your data via its SQL 2003 interface. With high availability, auto-scaling, built-in caching and indexing support, openLooKeng is ready for enterprise workload with required reliability.The goal of openLooKeng is to support data exploration, ad hoc queries, and batch processing with near real time latency ranging from 100+ms to minutes, without moving your data around. openLooKeng also supports hierarchical deployment enabling geographically remote openLooKeng clusters to participate in the same query. With its cross region query plan optimization capability, queries involving remote data can achieve close to “local” performance.",
+    "tech_tag": [
+      "大数据",
+      "数据虚拟化引擎"
+    ],
+    "domain_tag": [
+      "大数据"
+    ],
+    "mail_list": "dev@openlookeng.io",
+    "email": "contact@openlookeng.io",
+    "project_list": []
+  },
+  {
+    "anchor": "opengauss",
+    "slide": "",
+    "video": "",
+    "img": "openGauss.png",
+    "title": "openGauss社区||openGauss社区",
+    "project_url": "",
+    "url": "https://opengauss.org",
+    "description": "openGauss是一款高性能、高安全、高可靠的企业级开源关系型数据库。||openGauss is an enterprise-grade open source relational database with high-performance, high-security, high-reliability.",
+    "full_des": "openGauss是一款开源关系型数据库管理系统，采用木兰宽松许可证V2发行。openGauss内核源自PostgreSQL, 深度融合华为在数据库领域多年的经验，结合企业级场景需求，持续构建竞争力特性。同时openGauss也是一个开源的数据库平台，鼓励社区贡献、合作。||openGauss is an open source relational database management system that is released with the Mulan PSL v2. with the kernel derived from PostgreSQL, openGauss is built on Huawei's years of experience in the database field and continuously provides competitive features tailored to enterprise-grade scenarios. At the same time, openGauss is also an open source database platform, encouraging community contributions and cooperation.",
+    "tech_tag": [
+      "数据库"
+    ],
+    "domain_tag": [
+      "数据库"
+    ],
+    "mail_list": "community@opengauss.org",
+    "email": "contact@opengauss.org",
+    "project_list": []
+  },
+  {
+    "anchor": "zstack",
+    "slide": "",
+    "video": "",
+    "img": "Zstack.png",
+    "title": "ZStack Cloud 平台||ZStack Cloud",
+    "project_url": "",
+    "url": "https://www.zstack.io/",
+    "description": "ZStack 是一款具备简单、健壮、弹性、智能等特性的 IaaS 产品。||ZStack is open source IaaS(infrastructure as a service) software aiming to automate datacenters, managing resources of compute, storage, and networking all by APIs.",
+    "full_des": "ZStack 云平台具备自主知识产权、自主开源云代码、自主云平台三大优势，凭借云计算的 4S 特性，践行产品化，普惠云计算。其中，ZStack 开源代码提供了整个产品的框架、底座和基础的计算，网络，存储等 IaaS 软件的功能。||ZStack is open source IaaS(infrastructure as a service) software aiming to automate datacenters, managing resources of compute, storage, and networking all by APIs. Users can setup ZStack environments in a download-and-run manner, spending 5 minutes building a POC environment all on a single Linux machine, or 30 minutes building a multi-node production environment that can scale to hundreds of thousands of physical servers.ZStack provides the capability of managing everything in a datacenter by APIs, fulfilling the goal of software-defined datacenter. Users control their clouds using either web UI or command line tool both of which interact with ZStack management nodes; NO scattered configurations, dependent software installation, services HA, and thirdparty monitoring are needed, all of them are taken care of by ZStack itself, which provides a great simplicity for stable long-term operation.",
+    "tech_tag": [
+      "Linux",
+      "Git",
+      "GCC",
+      "RPM"
+    ],
+    "domain_tag": [
+      "操作系统",
+      "内核",
+      "包管理"
+    ],
+    "mail_list": "公共邮箱）：community@openEuler.org",
+    "email": "contact@openeuler.org",
+    "project_list": []
+  },
+  
+  {
+    "anchor": "jenkins",
+    "slide": "",
+    "video": "",
+    "img": "Jenkins.png",
+    "title": "Jenkins 中文社区||Jenkins Chinese community",
+    "project_url": "",
+    "url": "https://jenkins",
+    "description": "共建开放、包容、活跃的 Jenkins 社区||Build an open, inclusive, active Jenkins community",
+    "full_des": "Jenkins 中文社区是由 Jenkins 国内的爱好者、贡献者组成，共同推广以及完善 CI/CD 技术的学习试用和落地。我们秉承开源的精神，在社区治理上高度开放，代码、文档以及设计等开源免费，致力于为我们的用户带来更好的体验。||Jenkins Chinese community is composed of Jenkins domestic fans and contributors to jointly promote and improve the learning, trial, and implementation of CI/CD technology. We uphold the spirit of open source and are highly open in community governance. Open source code, documentation, and design are free, and we are committed to bringing a better experience to our users.",
+    "tech_tag": [
+      "jenkins"
+    ],
+    "domain_tag": [
+      "CI/CD",
+      "jenkins",
+      "DevOps",
+      "OpenSource"
+    ],
+    "mail_list": "developer@jenkins-zh.cn",
+    "email": "admins@jenkins-zh.cn",
+    "project_list": []
+  },
+  {
+    "anchor": "openeuler",
+    "slide": "",
+    "video": "",
+    "img": "openeuler.jpg",
+    "title": "openEuler社区||openEuler Community",
+    "project_url": "https://gitee.com/openeuler-competition/summer-2021/issues",
+    "url": "https://openeuler.org/",
+    "description": "一个开源、免费的 Linux 发行版平台。||An open source and a free platform for Linux released edition.",
+    "full_des": "openEuler 是一个开源、免费的 Linux 发行版平台，将通过开放的社区形式与全球的开发者共同构建一个开放、多元和架构包容的软件生态体系。同时，openEuler 也是一个创新的平台，鼓励任何人在该平台上提出新想法、开拓新思路、实践新方案。||An open source and a free platform for Linux released edition, which aims to build an open, diversified and architecture inclusive software ecosystem with global developers through openEuler community. At the same time, it is also an innovative platform, which encourages anyone to put forward new ideas, develop new ideas and practice new schemes.",
+    "tech_tag": [
+      "Linux",
+      "操作系统",
+      "虚拟化",
+      "容器"
+    ],
+    "domain_tag": [
+      "操作系统"
+    ],
+    "mail_list": "community@openeuler.org",
+    "email": "contact@openeuler.io",
+    "project_list": [
+      {
+        "name": "使用 ARM SVE 向量指令实现 BLAS Level-3 高性能计算",
+        "difficulty": "高",
+        "mentor": "徐国栋",
+        "contact": "guodong.xu@linaro.org",
+        "student_count": 0,
+        "description": "Scalable Vector Extension, or SVE，是 ARM 公司在 Armv8 架构上推出的新一代向量指令集，拥有业界领先的可变向量宽度支持（从 128bit 到 2048bit ）。BLIS 是线性代数库 BLAS APIs 的一个开源高性能实现。其模块化，高性能，易移植，并行性，有相应论文支撑，并在生产中有具体实践。BLAS level-3 APIs 定义的是 矩阵 - 矩阵 计算.\n本项目要求使用 ARM SVE 向量指令为 BLIS 编写 BLAS level-3 kernel，并且提交到 BLIS 上游社区。\n项目调试，需要在 ARM64 鲲鹏服务器上，使用 QEMU， Docker，Arm IE （Instruction Emulator）搭建调试环境，进行 编码，测试。",
+        "update_time": "2021-04-01",
+        "label": "1",
+        "student_name": "",
+        "wiki": "",
+        "link": "https://gitee.com/openeuler-competition/summer-2021/issues/I3D35W?from=project-issue",
+        "tech_tag": [],
+        "domain_tag": []
+      },
+      {
+        "name": "为 openeuler 桌面添加系统资源监控报警应用",
+        "difficulty": "高",
+        "mentor": "魏东",
+        "contact": "weidong@uniontech.com",
+        "student_count": 0,
+        "description": "当前 openeuler 的桌面系统虽然有类似系统监视器的应用，但是它不会发出告警信息。部分使用情况下，桌面会卡死，导致用户无法操作。需要有一个桌面应用，它会监控系统的资源使用情况(cpu/mem/disk等)。并在系统资源持续高于用户设定的数值或默认数值时，桌面会发出告警信息。",
+        "update_time": "2021-04-01",
+        "label": "2",
+        "student_name": "",
+        "wiki": "",
+        "link": "https://gitee.com/openeuler-competition/summer-2021/issues/I3DHL8?from=project-issue",
+        "tech_tag": [],
+        "domain_tag": []
+      },
+      {
+        "name": "openEuler 开发者流失预测分析",
+        "difficulty": "高",
+        "mentor": "钟君",
+        "contact": "jun.zhongjun@huawei.com",
+        "student_count": 0,
+        "description": "有研究表明获取新用户的成本是留住已有用户成本的五倍。openEuler想要成为更活跃的开源社区，用户的留存就显得更为重要，因此，识别开发者的流失情况，及时预测及发现，及时阻止，能有效提高社区活跃度。",
+        "update_time": "2021-04-01",
+        "label": "3",
+        "student_name": "",
+        "wiki": "",
+        "link": "https://gitee.com/openeuler-competition/summer-2021/issues/I3DO3J?from=project-issue",
+        "tech_tag": [],
+        "domain_tag": []
+      },
+      {
+        "name": "LOOP设备（所在文件系统不支持AIO）支持IO并行化",
+        "difficulty": "低",
+        "mentor": "张奇龙",
+        "contact": "zhangqilong3@huawei.com",
+        "student_count": 0,
+        "description": "当前OpenEuler版本中的loop设备IO会顺序提交到相应kwoker的链表并依次被内核处理。当某个IO被阻塞时，后续该loop设备的IO都会得不到处理，此时极容易导致使用该loop设备的上层应用卡顿。",
+        "update_time": "2021-04-01",
+        "label": "4",
+        "student_name": "",
+        "wiki": "",
+        "link": "https://gitee.com/openeuler-competition/summer-2021/issues/I3DUOS?from=project-issue",
+        "tech_tag": [],
+        "domain_tag": []
+      },
+      {
+        "name": "为 openEuler提供OpenStack Swift软件包",
+        "difficulty": "低",
+        "mentor": "王玺源",
+        "contact": "wangixyuan@huawei.com",
+        "student_count": 0,
+        "description": "当前 openeuler 的OpenStack云计算服务缺少对象存储功能，该功能由OpenStack Swift服务提供。需要以源码+RPM的方式，在openEuler中提供OpenStack Swift的支持。",
+        "update_time": "2021-04-01",
+        "label": "5",
+        "student_name": "",
+        "wiki": "",
+        "link": "https://gitee.com/openeuler-competition/summer-2021/issues/I3DUTE?from=project-issue",
+        "tech_tag": [],
+        "domain_tag": []
+      },
+      {
+        "name": "为 openEuler提供OpenStack容器化部署能力",
+        "difficulty": "中",
+        "mentor": "王玺源",
+        "contact": "wangixyuan@huawei.com",
+        "student_count": 0,
+        "description": "OpenStack是云计算领域的主流平台，被各大公有云、私有云广泛使用。但OpenStack包含组件繁多，其安装部署是非常令人头疼的问题。使用容器化技术，可以显著降低OpenStack的部署难度。本题目使用OpenStack+Kubernetes+Isula技术栈，实现OpenStack在openEuler上的容器化快速部署能力。",
+        "update_time": "2021-04-01",
+        "label": "6",
+        "student_name": "",
+        "wiki": "",
+        "link": "https://gitee.com/openeuler-competition/summer-2021/issues/I3DV1S?from=project-issue",
+        "tech_tag": [],
+        "domain_tag": []
+      },
+      {
+        "name": "为openEuler提供ClickHouse rpm包",
+        "difficulty": "低",
+        "mentor": "赵波",
+        "contact": "zhaobo6@huawei.com",
+        "student_count": 0,
+        "description": "当前 openeuler 的数据库领域对于AP领域的数据库软件仍然比较少，但是有越来越多的客户聚焦AP场景，需要丰富客户选择的数据库软件，不能仅仅提供TP场景数据库。AP对于大数据解决方案有重要意义，所以引入新的AP数据库以及新的技术是十分必要的。",
+        "update_time": "2021-04-01",
+        "label": "7",
+        "student_name": "",
+        "wiki": "",
+        "link": "https://gitee.com/openeuler-competition/summer-2021/issues/I3DV25?from=project-issue",
+        "tech_tag": [],
+        "domain_tag": []
+      },
+      {
+        "name": "将MindSpore 1.1.1版本引入openEuler",
+        "difficulty": "中",
+        "mentor": "郑振宇",
+        "contact": "zheng.zhenyu@outlook.com",
+        "student_count": 0,
+        "description": "MindSpore是由华为开源的端边云全场景按需协同的华为自研AI计算框架，提供全场景统一API，为全场景AI的模型开发、模型运行、模型部署提供端到端能力。MindSpore社区目前已经成为了国内最活跃的AI开源社区，将MindSpore引入到openEuler可以极大的丰富openEuler在AI领域的生态。",
+        "update_time": "2021-04-01",
+        "label": "8",
+        "student_name": "",
+        "wiki": "",
+        "link": "https://gitee.com/openeuler-competition/summer-2021/issues/I3DUTG?from=project-issue",
+        "tech_tag": [],
+        "domain_tag": []
+      },
+      {
+        "name": "将Hadoop 3.3.0版本引入openEuler",
+        "difficulty": "中",
+        "mentor": "郑振宇",
+        "contact": "zheng.zhenyu@outlook.com",
+        "student_count": 0,
+        "description": "Hadoop是一个由Apache基金会所开发的分布式系统基础架构。用户可以在不了解分布式底层细节的情况下，开发分布式程序。充分利用集群的威力进行高速运算和存储。Hadoop 3.3.0版本于2020年7月14日发布，是首个源生支持Arm平台的Hadoop版本，将其引入openEuler可以减少用户在Arm平台使用Hadoop的适配难度。",
+        "update_time": "2021-04-01",
+        "label": "9",
+        "student_name": "",
+        "wiki": "",
+        "link": "https://gitee.com/openeuler-competition/summer-2021/issues/I3DUUJ?from=project-issue",
+        "tech_tag": [],
+        "domain_tag": []
+      },
+      {
+        "name": "MariaDB上游ARM64优化patch回合老版本",
+        "difficulty": "高",
+        "mentor": "赵波",
+        "contact": "zhaobo6@huawei.com",
+        "student_count": 0,
+        "description": "这几年随着ARM平台生态的不断完善，越来越多的软件都可以运行在ARM平台上。但是对于近几年的更新，大多数ARM优化都是做在软件的最新版本，那么对于老牌的开源数据库，用户群体比较分散，大多数用户都会选用稳定运行的版本，而不是最新版本，所以为了客户，我们将现有最新版的优化返合回老的社区版，并经过打包，基准测试，性能测试等等。让用户同样能够体验老版本软件在ARM平台上的性能提升是十分必要的。特性优化列表由导师提供。\n\nMariaDB数据库管理系统是MySQL的一个分支，主要由开源社区在维护，采用GPL授权许可 MariaDB的目的是完全兼容MySQL，包括API和命令行，使之能轻松成为MySQL的代替品。",
+        "update_time": "2021-04-01",
+        "label": "10",
+        "student_name": "",
+        "wiki": "",
+        "link": "https://gitee.com/openeuler-competition/summer-2021/issues/I3DUXZ?from=project-issue",
+        "tech_tag": [],
+        "domain_tag": []
+      },
+      {
+        "name": "openEuler 开发者用户画像",
+        "difficulty": "高",
+        "mentor": "钟君",
+        "contact": "jun.zhongjun@huawei.com",
+        "student_count": 0,
+        "description": "构建开发者用户画像，通过开发者特性模型建立，识别开发者特征，识别潜在个人及团队明星开发者。分析开发者行为，实现精细化运营",
+        "update_time": "2021-04-01",
+        "label": "11",
+        "student_name": "",
+        "wiki": "",
+        "link": "https://gitee.com/openeuler-competition/summer-2021/issues/I3DV26?from=project-issue",
+        "tech_tag": [],
+        "domain_tag": []
+      },
+      {
+        "name": "为openEuler社区提供一个FAQ服务",
+        "difficulty": "中",
+        "mentor": "曹志",
+        "contact": "george.cao@huawei.com",
+        "student_count": 0,
+        "description": "使用python进行web编程，实现一个FAQ的服务，后期可集成到openEuler主页。",
+        "update_time": "2021-04-01",
+        "label": "12",
+        "student_name": "",
+        "wiki": "",
+        "link": "https://gitee.com/openeuler-competition/summer-2021/issues/I3DV2B?from=project-issue",
+        "tech_tag": [],
+        "domain_tag": []
+      },
+      {
+        "name": "开源软件版本演进中的License冲突检测",
+        "difficulty": "中",
+        "mentor": "李自",
+        "contact": "lizi4@huawei.com",
+        "student_count": 0,
+        "description": "开源软件虽然可以在网络上公开免费下载，但使用开源软件必须遵循开源License的要求，例如开发者静态链接了GPL类License的开源软件，按照License条款的要求，作者自研的代码也要对外开源，对于那些希望闭源代码构建产品的开发者来说，这显然是有风险的。我们希望通过工具自动化检测不同开源软件版本中License条款的变化，并将诸如“不允许商用”、“必须开源”、“不允许在云服务中使用”等风险进行标识并形成报告。",
+        "update_time": "2021-04-01",
+        "label": "13",
+        "student_name": "",
+        "wiki": "",
+        "link": "https://gitee.com/openeuler-competition/summer-2021/issues/I3E2PG?from=project-issue",
+        "tech_tag": [],
+        "domain_tag": []
+      },
+      {
+        "name": "开发基于freerdp 的 openeuler rdp 连接桌面应用",
+        "difficulty": "中",
+        "mentor": "叶青龙",
+        "contact": "yeqinglong@uniontech.com",
+        "student_count": 0,
+        "description": "目前大家的工作生活中，依旧有大量的Windows主机。当切换至国产操作系统后，需要提供一种工具来连接Windows主机。本题的要求是基于freerdp开发Windows连接桌面应用。",
+        "update_time": "2021-04-01",
+        "label": "14",
+        "student_name": "",
+        "wiki": "",
+        "link": "https://gitee.com/openeuler-competition/summer-2021/issues/I3E9AZ?from=project-issue",
+        "tech_tag": [],
+        "domain_tag": []
+      },
+      {
+        "name": "开发iso刻录桌面应用",
+        "difficulty": "中",
+        "mentor": "叶青龙",
+        "contact": "yeqinglong@uniontech.com",
+        "student_count": 0,
+        "description": "日常工作中，需要把iso镜像刻录至u盘或光盘上。要求编写一个类似UltraISO软碟通的openeuler桌面应用。可以完成iso刻录至u盘",
+        "update_time": "2021-04-01",
+        "label": "15",
+        "student_name": "",
+        "wiki": "",
+        "link": "https://gitee.com/openeuler-competition/summer-2021/issues/I3E9CG?from=project-issue",
+        "tech_tag": [],
+        "domain_tag": []
+      },
+      {
+        "name": "开发基于rpm的软件包安装器",
+        "difficulty": "高",
+        "mentor": "叶青龙",
+        "contact": "yeqinglong@uniontech.com",
+        "student_count": 0,
+        "description": "开发一个软件包安装器，用户在桌面上点一下rpm包，就可以完成rpm包安装。不需要再使用命令去安装rpm包。",
+        "update_time": "2021-04-01",
+        "label": "16",
+        "student_name": "",
+        "wiki": "",
+        "link": "https://gitee.com/openeuler-competition/summer-2021/issues/I3E9DN?from=project-issue",
+        "tech_tag": [],
+        "domain_tag": []
+      },
+      {
+        "name": "为openEuler社区适配开源的学习考试系统",
+        "difficulty": "中",
+        "mentor": "魏东",
+        "contact": "weidong@uniontech.com",
+        "student_count": 0,
+        "description": "学习考试系统可以录入openeuler的教学课程。方便初学者了解安装使用openeuler操作系统。也方便初学者验证自己对openeuler的掌握情况。\n要求迁移一款好用的开源学习考试系统到openeuler操作系统",
+        "update_time": "2021-04-01",
+        "label": "17",
+        "student_name": "",
+        "wiki": "",
+        "link": "https://gitee.com/openeuler-competition/summer-2021/issues/I3E9IY?from=project-issue",
+        "tech_tag": [],
+        "domain_tag": []
+      }
+    ]
+  },
+  {
+    "anchor": "debian",
+    "slide": "",
+    "video": "",
+    "img": "debian.png",
+    "title": "The Debian Project||The Debian Project",
+    "project_url": "",
+    "url": "https://www.debian.org",
+    "description": "通用操作系统社区||The Universal Operating System",
+    "full_des": "由 Ian Murdock 创立于1993年，Debian致力于成为一个真正的自由软件社区项目。在随后的近30年中，Debian成为了全球最大也最具影响力的开源项目之一。来自全世界的数以万计的开发者汇聚于此，开发了支持 70 余种语言、支持海量计算设备的“通用操作系统”。||The Debian Project was founded in 1993 by Ian Murdock to be a truly free community project. Since then the project has grown to be one of the largest and most influential open source projects.  Thousands of volunteers from all over the world work together to create and maintain Debian software. Available in 70 languages, and supporting a huge range of computer types, Debian calls itself the universal operating system.",
+    "tech_tag": [
+      "OS Linux"
+    ],
+    "domain_tag": [
+      "操作系统",
+      "软件集成"
+    ],
+    "mail_list": "1) 全球社区开发人员邮件列表 https://lists.debian.org/debian-devel/",
+    "email": "debian-outreach@lists.debian.org",
+    "project_list": []
+  },
+  {
+    "anchor": "kubesphere",
+    "slide": "",
+    "video": "",
+    "img": "kubesphere.png",
+    "title": "KubeSphere 开源社区||KubeSphere Community",
+    "project_url": "",
+    "url": "https://kubesphere.io/",
+    "description": "一款开源的 Kubernetes 发行版容器平台||Enterprise-grade container platform tailored for multicloud and multi-cluster management",
+    "full_des": "KubeSphere](https://kubesphere.io/) 是在 [Kubernetes](https://kubernetes.io/) 之上构建的面向云原生应用的**分布式操作系统**，完全开源，支持多云与多集群管理，提供全栈的 IT 自动化运维能力，简化企业的 DevOps 工作流。它的架构可以非常方便地使第三方应用与云原生生态组件进行即插即用 (plug-and-play) 的集成。||KubeSphere](https://kubesphere.io/) is a **distributed operating system providing cloud native stack** with [Kubernetes](https://kubernetes.io/) as its kernel, and aims to be plug-and-play architecture for third-party applications seamless integration to boost its ecosystem. KubeSphere is also a multi-tenant enterprise-grade container platform with full-stack automated IT operation and streamlined DevOps workflows.",
+    "tech_tag": [
+      "Kubernetes, DevOps, ServiceMesh, Golang, Prometheus, Docker"
+    ],
+    "domain_tag": [
+      "云原生",
+      "可观察性",
+      "容器云",
+      "微服务",
+      "多云管理"
+    ],
+    "mail_list": "kubesphere@googlegroups.com",
+    "email": "kubesphere@gmail.com",
+    "project_list": []
+  },
+  {
+    "anchor": "opencurve",
+    "slide": "",
+    "video": "",
+    "img": "curve.png",
+    "title": "Curve社区||Curve社区",
+    "project_url": "",
+    "url": "https://www.opencurve.io/",
+    "description": "高性能、高可用、高可靠分布式存储系统||A  High-performance, high-availability, and high-reliability distributed storage system",
+    "full_des": "CURVE是网易自主设计研发的高性能、高可用、高可靠分布式存储系统，具有非常良好的扩展性。基于该存储底座可以打造适用于不同应用场景的存储系统，如块存储、对象存储、云原生数据库等。当前我们基于CURVE已经实现了高性能块存储系统，支持快照克隆和恢复 ,支持QEMU虚拟机和物理机NBD设备两种挂载方式, 在网易内部作为高性能云盘使用。||CURVE is a distributed storage system designed and developed independently by NetEase, featured with high performance, high availability, high reliability and well expansibility, and it can serve as the basis for storage systems designed for different scenario (e.g. block storage, object storage and cloud database).    So far, we have implemented a high performance block storage system, which supports snapshot, clone and recovery, and it can be attached to QEMU virtual machine or physical machine (by curve-nbd). CURVE has been served as an elastic block storage service inside NetEase for a certain time, during which high performance and reliability have shown.",
+    "tech_tag": [
+      "distributed",
+      "block storage",
+      "high performance"
+    ],
+    "domain_tag": [
+      "高性能分布式存储"
+    ],
+    "mail_list": "Wang Pan, <hzwangpan@corp.netease.com>, @aspirer",
+    "email": "storage_mgm@163.com](mailto:storage_mgm@163.com)",
+    "project_list": []
+  },
+  {
+    "anchor": "bookos",
+    "slide": "",
+    "video": "",
+    "img": "bookos.png",
+    "title": "Bookos",
+    "project_url": "",
+    "url": "https://www.book",
+    "description": "一个开源、免费的在大学校园里很活跃的操作系统，有操作系统内核，也有图形化的界面。",
+    "full_des": "Bookos是一个培养中国青少年操作系统人才的社区，社区是有组织的运营的。主要是引导对操作系统感兴趣的高中生和大学生系统的学习的操作系统，从感兴趣难入门，到能在大学实现一个简单的操作系统，社区由胡自成负责bookos的技术和代码开发，李石亮负责引导喜爱底层的大学生做系统性的学习引导从算法，简单的程序结构，到简单的操作系统实现。万晓兰老师负责经济上的支持。到目前为止，有核心的社区人员30-40人，比较松散的成员有80人左右，更松散的qq群有700人。核心的社区人员其中8人都实现过简单的操作系统。开发的主要工作是由胡自成等5人完成，其他核心成员一起讨论技术问题，提供企业的信息，给出实现的建议。李石亮和万晓兰负责解决学生中的困难和就业上的困难，让他们安心的学习底层的技术，做到学习底层和就业两方面不耽误。",
+    "tech_tag": [
+      "操作系统",
+      "Git",
+      "GCC",
+      "内核"
+    ],
+    "domain_tag": [
+      "操作系统",
+      "内核",
+      "人才的培养"
+    ],
+    "mail_list": "公共邮箱）：",
+    "email": "2323168280@qq.com 胡自成",
+    "project_list": []
+  },
+
+
+  {
+    "anchor": "webcell",
+    "slide": "",
+    "video": "",
+    "img": "webcell.png",
+    "title": "WebCell||WebCell",
+    "project_url": "",
+    "url": "https://web",
+    "description": "基于 TypeScript 和 JSX 的轻量级 Web 标准组件框架||Lightweight Web standard component framework based on TypeScript and JSX",
+    "full_des": "关注、研究、推广原生的 Web 标准技术，让互联网应用的开发、使用更简洁、普适~||Lightweight Web standard component framework based on TypeScript and JSX",
+    "tech_tag": [
+      "Web",
+      "HTTP",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript"
+    ],
+    "domain_tag": [
+      "Web 前后端开发"
+    ],
+    "mail_list": "无）",
+    "email": "无）",
+    "project_list": []
+  }
+
+]

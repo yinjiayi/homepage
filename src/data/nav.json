@@ -1,11 +1,15 @@
 {
     "link":[
-        "homepage"  ,"howitworks" ,"apply","help" 
+        "homepage"  ,"org" ,"howitworks" ,"apply","help" 
     ],
     "chi":{
         "linkdata":[
             {
                 "name":"首页"
+                  
+            },
+            {
+                "name":"开源社区"
                   
             },
             {
@@ -26,6 +30,9 @@
         "linkdata":[
             {
                 "name":"ABOUT"    
+            },
+            {
+                "name":"Open Source Community"    
             },
             {
                 "name":"HOW IT WORKS" 

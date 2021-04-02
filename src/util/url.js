@@ -32,12 +32,15 @@ var gettitle = function(){
         document.title = `${linkDataMap[location[1]]||'首页'}${titleContent}`;
         document.getElementsByTagName("meta")[2].content = "关注开源软件和开源社区，培养和发掘更多优秀的开发者。";
     }
+
+  
     
     
 }
 
 
 var titleChange = function(){
+    
     gettitle();
    
     window.addEventListener('hashchange',()=>{
@@ -53,8 +56,21 @@ var titleChange = function(){
 
 }
 
+var getSplit = function(item,flag){
+    const iteml = item.split("||")
+    if(iteml.length === 1){
+        return item
+    }
+    if(flag === "chi"){
+        return iteml[0]
+    }else{
+        return iteml[1]
+    }
+}
+
 
 export {
     gourl,
-    titleChange
+    titleChange,
+    getSplit
 }

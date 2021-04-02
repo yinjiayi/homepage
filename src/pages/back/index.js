@@ -12,9 +12,9 @@
 
 import React from 'react'
 import './index.less';
+import { connect } from 'react-redux';
 
-
-export default class Contactus extends React.Component{
+class Contactus extends React.Component{
     constructor(props){
        super(props)
        this.state ={
@@ -40,3 +40,13 @@ export default class Contactus extends React.Component{
         
     }
 }
+
+const mapStateToProps = (state)=>{
+    
+    return {
+        chiFlag:state.chiFlag
+    }
+ }
+
+
+export default connect(mapStateToProps)(Contactus)
