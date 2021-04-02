@@ -7,7 +7,7 @@
         ],
         "bannerone":[
             "社区报名正在进行中, <span class=\"homepageTime\">4 月 30 日</span> 报名截止。详情请查看 <a target=\"_blank\" class=\"homepageLinkguide\" href=\"https://summer.iscas.ac.cn/help/community/\">社区指南<span  class=\"fire\"></span></a>",
-            "第一批社区名单于 4 月 2 日公示， <a target=\"_blank\" class=\"homepageLinkguide\" href=\"https://summer.iscas.ac.cn/help/communities-list/\">查看详情</a>",
+            "第一批社区名单于 4 月 2 日公示， <a  class=\"homepageLinkguide\" href=\"#/org\">查看详情</a>",
             "4 月中下旬开始启动“大咖说开源”系列讲座活动， 敬请期待",
             "5 月 24 日- 6 月 13 日是学生提交项目申请阶段，详情请查看 <a target=\"_blank\" class=\"homepageLinkguide\" href=\"https://summer.iscas.ac.cn/help/student/\">学生指南</a>"
         ],
@@ -33,7 +33,7 @@
         ],
         "bannerone":[
             "Community applications will close on April 30, 2021. <a target=\"_blank\" class=\"homepageLinkguide\" href=\"https://summer.iscas.ac.cn/help/community/\">[Community Guide]<span  class=\"fire\"></span></a>",
-            "The first list of accpeted community has been announced on April 2.  <a target=\"_blank\" class=\"homepageLinkguide\" href=\"https://summer.iscas.ac.cn/help/communities-list/\">[More Details]</a>",
+            "The first list of accpeted community has been announced on April 2.  <a  class=\"homepageLinkguide\" href=\"#/org\">[More Details]</a>",
             "The sharing activity <span class=\" italic\">Celebrities with Open Source</span> will start in late April !",
             "Students  application will start from May 24 to June 13. <a target=\"_blank\" class=\"linkguide\" href=\"https://summer.iscas.ac.cn/help/student/\">[Student Guide]</a>"
         ],
