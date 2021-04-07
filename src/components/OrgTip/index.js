@@ -38,7 +38,10 @@ class OrgTip extends React.Component{
                 <div className="OrgTipItemContent">
                     <div className="OrgTipClose" onClick={closeModal}></div>
                     <div className="OrgTipTitle">{getSplit(this.props.item.title,this.props.chiFlag)}</div>
-                    <div className="OrgTipFullDesc">{getSplit(this.props.item.full_des,this.props.chiFlag)}</div>
+                    <div className="OrgTipFullDesc"
+                    dangerouslySetInnerHTML={{ __html: getSplit(this.props.item.full_des,this.props.chiFlag) }}
+                    >
+                    </div>
                     <div className="Orgdivider"></div>
                     <div className="OrgTipWebSiteUrl OrgTipArr">
                         {this.props.showdata.websiteurl}
