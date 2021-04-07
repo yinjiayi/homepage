@@ -317,7 +317,7 @@ class ProjectlistN extends React.Component{
                                                 {getSplit( item.orgtitle,this.props.chiFlag)}</span>
                                             <span className="ProjectListLCDegree">{this.getDegreeBy(item.difficulty)}</span>
                                             <span className="ProjectListLCOperation Item">
-                                                <span className="PLOperationButton prodetail" onClick={()=>{this.goLink(item.prourl)}}>{showdata.operationbutton[0]}</span>
+                                                <span className="PLOperationButton prodetail" onClick={()=>{this.goLink(item.link?item.link:item.prourl)}}>{showdata.operationbutton[0]}</span>
                                                 <span className="PLOperationButton proapply">{showdata.operationbutton[1]}</span>
                                             </span>
                                         </div>
