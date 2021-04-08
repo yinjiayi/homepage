@@ -124,6 +124,40 @@
             "name":"WebCell",
             "img":"webcell.png",
             "url":"https://web-cell.dev/"
-        } 
+        }, 
+        {
+            "name":"piflow",
+            "img":"piflow.png",
+            "url":"https://github.com/cas-bigdatalab/piflow"
+        }
+        , 
+        {
+            "name":"wechaty",
+            "img":"wechaty.png",
+            "url":"https://wechaty.js.org/"
+        }
+        , 
+        {
+            "name":"Nebula Graph",
+            "img":"NebulaGraph.png",
+            "url":"https://nebula-graph.io/"
+        }
+        , 
+        {
+            "name":"泰晓科技",
+            "img":"taixiao.png",
+            "url":"http://tinylab.org/"
+        }
+        , 
+        {
+            "name":"安同",
+            "img":"antong.png",
+            "url":"https://aosc.io/"
+        } , 
+        {
+            "name":"GoodERP",
+            "img":"GoodERP.png",
+            "url":"https://gooderp.org/"
+        }
     ]
 }

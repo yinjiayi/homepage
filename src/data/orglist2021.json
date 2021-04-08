@@ -907,12 +907,10 @@
       "内核",
       "人才的培养"
     ],
-    "mail_list": "公共邮箱）：",
+    "mail_list": "公共邮箱",
     "email": "2323168280@qq.com 胡自成",
     "project_list": []
   },
-
-
   {
     "anchor": "webcell",
     "slide": "",
@@ -934,9 +932,204 @@
     "domain_tag": [
       "Web 前后端开发"
     ],
-    "mail_list": "无）",
-    "email": "无）",
+    "mail_list": "",
+    "email": "",
     "project_list": []
-  }
+  },
+  {
+    "anchor": "piflow",
+    "slide": "",
+    "video": "",
+    "img": "piflow.png",
+    "title": "大数据流水线系统PiFlow",
+    "project_url": "",
+    "url": "https://github.com/cas-bigdatalab/piflow",
+    "description": "大数据流水线管理与调度系统",
+    "full_des": "PiFlow是一款基于分布式计算Spark开发的大数据流水线系统，以所见即所得的简洁方式，实现大数据采集、处理、存储与分析流程化配置、运行与智能监控，提供了100+的标准化数据处理组件， 包括Hadoop 、Spark、MLlib、Hive、Solr、Redis等。支持面向领域、灵活的二次组件开发。具备亿级数据的ETL处理能力，性能优越，支持数据溯源。同步开源在github/gitee社区。获GVP-码云最有价值开源项目奖、首届\"中国开源软件创意大赛\"二等奖。目前已应用至6家企业中，场景包括大数据处理框架、数据资产管理、医疗健康大数据、机器学习、知识图谱构建等。",
+    "tech_tag": [
+      "Scala",
+      "Java",
+      "Python",
+      "Maven",
+      "Git"
+    ],
+    "domain_tag": [
+      "大数据处理",
+      "流水线",
+      "调度",
+      "机器学习"
+    ],
+    "mail_list": "",
+    "email": "",
+    "project_list": []
+  } ,{
+    "anchor": "wechaty",
+    "slide": "",
+    "video": "",
+    "img": "wechaty.png",
+    "title": "Wechaty 社区||Wechaty",
+    "project_url": "",
+    "url": "https://wechaty.js.org/",
+    "description": "Wechaty is a Conversational RPA SDK for Chatbot Makers to build WeChat and Whatsapp bots with ease.",
+    "full_des": "Conversational RPA SDK Wechaty 是一个开源聊天机器人框架SDK，于 2016 年发布于 GitHub，是一个基于 Apache-2.0 许可证的开源项目，具有高度封装、高可用的特性，支持 NodeJs,  Python,  Go 和 Java 等多语言版本。\n 经过4年多的发展，现在 Wechaty 开源社区已经拥有数十位 Committers，百余位 Contributors ，并被近万名 GitHub 开发者 Star 。使用 Wechaty 的开发者已覆盖数万人，并拥有基于微信群的数千人活跃开发者群。Wechaty 社区的 Contributors 遍布全球多个国家地区，和各大互联网公司，职业背景从程序员到设计师，从大学教授到创业者，非常多样化。GitHub 上有千余个开源项目基于 Wechaty 构建了聊天机器人，这些开发者用户也极大地促进了社区的活跃和发展。\nWechaty自身对代码质量的管理，使用了 GitHub Actions 的 DevOps 工具完成了 CI/CD 工作流，从自动化单元测试到自动打包集成测试，从自动发布 NPM 包到自动构建和发布对应版本的 Docker Image ，实现了全自动的社区代码发布，极大的提高了社区的协同效率。在开源社区管理上，Wechaty 遵循 The Apache Way ，拥有 PMC / Committer 管理制度，和完善的 Issue / PR / Release 等管理制度。\n截止2020年，Wechaty 已经有超百万次 NPM 安装下载，并由社区自发推动了 Python, Go, Java, Scala, CSharp, PHP 等语言的适配和发布，是国内最活跃的 Conversational AI Chatbot 开发者社区。Wechaty 支持的功能包括：接收消息，发送消息、添加好友、为好友备注、接受好友请求、发起群聊、加人入群等功能。只需要6行代码，你就可以 通过个人号 搭建一个 微信机器人功能 ，用来自动管理微信消息。\n更多功能包括：\n消息处理：关键词回复\n群管理：自动入群，拉人，踢人\n自动处理好友请求\n智能对话：通过简单配置，即可加入智能对话系统，完成指定任务||Wechaty is a Conversational RPA SDK for chatbot makers that can create a bot in 6 lines of code with the most popular IMs like WeChat, Whatsapp, WeCom, Gitter, etc.\nLong Description (may include limited Markdown up to 2000 characters):Wechaty is a Conversational RPA (Robotic Process Automation) SDK for Chatbot Makers which can create a bot in 6 lines of JavaScript, Python, Go, Java, .NET, PHP, and Scala, with cross-platform support including Linux, Windows, macOS, and Docker, on top of the most popular IMs like WeChat, Whatsapp, WeCom, Gitter, etc.",
+    "tech_tag": [
+      "Conversational",
+      "AI",
+      "RPA",
+      "NLP",
+      "TypeScript",
+      "Python",
+      "MachineLearning",
+      "DeepLearning",
+      "Docker",
+      "DevOps",
+      "Node.js"
+    ],
+    "domain_tag": [
+      "Chatbot",
+      "Conversational AI",
+      "NLP"
+    ],
+    "mail_list": "wechaty@googlegroups.com,Gitter: https://gitter.im/wechaty/wechaty",
+    "email": "wechaty@chatie.io",
+    "project_list": []
+  },
+  {
+    "anchor": "kaiyuanshe",
+    "slide": "",
+    "video": "",
+    "img": "kaiyuanshe.jpg",
+    "title": "开源社||Kaiyuanshe",
+    "project_url": "",
+    "url": "https://kaiyuanshe.cn/",
+    "description": "开源社是由国内外支持开源的社区、个人及企业，依“贡献，共识，共治”原则，所组织的厂商中立、纯志愿者、非营利的开源联盟，旨在共创健康可持续发展的开源生态体系，并推动中国开源社区成为全球开源软件的积极参与及贡献者。我们专注于开源治理、国际接轨、社区发展和开源项目。|| Kaiyuanshe is a vendor-neutral, volunteer-only, non-profit alliance of domestic and international open source communities, individuals and enterprises, based on the principle of \"Contribute, Consensus, Govern\", to create a healthy and sustainable Open-source ecosystem and promote the Chinese Open-source community as an active participant and contributor to global open-source software. We focus on Open-source governance, international alignment, community development and Open-source projects. These descriptions will be displayed on the organization list page (Short Description) and on your organization's page.",
+    "full_des": "开源社是由国内外支持开源的社区、个人及企业，依“贡献，共识，共治”原则，所组织的厂商中立、纯志愿者、非营利的开源联盟，旨在共创健康可持续发展的开源生态体系，并推动中国开源社区成为全球开源软件的积极参与及贡献者。我们专注于开源治理、国际接轨、社区发展和开源项目。https://kaiyuanshe.cn/profile/about/|| Kaiyuanshe is a vendor-neutral, volunteer-only, non-profit alliance of domestic and international open source communities, individuals and enterprises, based on the principle of \"Contribute, Consensus, Govern\", to create a healthy and sustainable Open-source ecosystem and promote the Chinese Open-source community as an active participant and contributor to global open-source software. We focus on Open-source governance, international alignment, community development and Open-source projects. These descriptions will be displayed on the organization list page (Short Description) and on your organization's page.\nhttps://kaiyuanshe.cn/profile/about/",
+    "tech_tag": [
+      "开源社区",
+      "公益组织",
+      "Open-source community",
+      "Public interest organization"
+    ],
+    "domain_tag": [
+      "开源治理",
+      "社区发展",
+      "国际接轨",
+      "开源项目",
+      "Open Source Governance",
+      "Community Development",
+      "International Connections",
+      "Open Source Projects"
+    ],
+    "mail_list": "",
+    "email": "admin@kaiyuanshe.org",
+    "project_list": []
+  } ,
+  {
+    "anchor": "NebulaGraph",
+    "slide": "",
+    "video": "",
+    "img": "NebulaGraph.png",
+    "title": "Nebula Graph||Nebula Graph",
+    "project_url": "",
+    "url": "https://nebula-graph.com.cn",
+    "description": "开源分布式图数据库||An open-source distributed graph database. High throughput with low latency.",
+    "full_des": "Nebula Graph 是一款开源的图数据库，擅长处理千亿顶点和万亿条边的超大规模数据集，同时保持毫秒级延时。Nebula Graph 于 2019 年 5 月开源，目前迭代至 2.0 版本，已经有多家互联网头部企业用于实时推荐、风险控制、机器学习等场景。||Nebula Graph is an open-source distributed graph database capable of hosting super large scale graphs with dozens of billions of vertices (nodes) and trillions of edges, with milliseconds of latency. It was open sourced in May 2019 and the most recent version is v2.0. Nebula Graph has been adopted by dozens of huge Internet companies for various scenarios such as real-time recommendations, fraud detection, and machine learning.",
+    "tech_tag": [
+      "分布式",
+      "数据库",
+      "图数据库",
+      "C++",
+      "图计算",
+      "Linux"
+    ],
+    "domain_tag": [
+      "图数据库",
+      "分布式系统"
+    ],
+    "mail_list": "暂无，可以通过 GitHub Issues 跟社区沟通",
+    "email": "info@vesoft.com",
+    "project_list": []
+  } ,
+  {
+    "anchor": "tinylab",
+    "slide": "",
+    "video": "",
+    "img": "tinylab.jpg",
+    "title": "泰晓科技||Tiny Lab",
+    "project_url": "",
+    "url": "http://tinylab.org",
+    "description": "泰晓科技是一个知名公益性 Linux 技术社区 —— 聚焦 Linux，追本溯源，见微知著！|| Tiny Lab is a public Chinese Linux community, focus on Linux kernel and embedded Linux system!",
+    "full_des": "泰晓科技是一个知名公益性 Linux 技术社区，创立于 2010 年，长期聚焦 Linux 系统技术交流和产品实践，追本溯源，见微知著，致力于推动业界创造更极致的 Linux 产品。|| Tiny Lab is a public Chinese Linux community, founded in 2010, focus on Linux kernel and embedded Linux system, especially about product practice, committed to promote the industry to develop better Linux products.",
+    "tech_tag": [
+      "Linux Lab",
+      "技术交流",
+      "产品实践",
+      "Linux"
+    ],
+    "domain_tag": [
+      "Linux 内核",
+      "Linux 实验环境",
+      "实时系统",
+      "系统优化"
+    ],
+    "mail_list": "http://tinylab.org/about    ",
+    "email": "contact@tinylab.org",
+    "project_list": []
+  } ,
+  {
+    "anchor": "aosc",
+    "slide": "",
+    "video": "",
+    "img": "aosc.jpg",
+    "title": "安同开源社区||Anthon Open Source Community",
+    "project_url": "",
+    "url": " https://aosc.io/",
+    "description": "AOSC 是围绕 Linux 发行版 AOSC OS 形成的开源社区。",
+    "full_des": "安同开源社区（Anthon Open Source Community, 简称 AOSC）是围绕社区项目 AOSC OS 形成的开源社区。AOSC OS 是一款遵循简约、本地化、包容、可持续及精制原则独立开发的通用 Linux 发行版，致力于改善开源软件的使用体验。",
+    "tech_tag": [
+      "内核",
+      "RISC-V",
+      "嵌入式",
+      "Linux",
+      "阿里平头哥 (T-Head)",
+      "Rust",
+      "C",
+      "Python",
+      "Bash",
+      "GTK",
+      "本地化 (L10n)",
+      "Dpkg 包管理"
+    ],
+    "domain_tag": [
+      "Linux 发行版",
+      "中文本地化"
+    ],
+    "mail_list": " discussions@lists.aosc.io ",
+    "email": " discussions@lists.aosc.io",
+    "project_list": []
+  } ,
+  {
+    "anchor": "gooderp",
+    "slide": "",
+    "video": "",
+    "img": "GoodERP.png",
+    "title": "GoodERP开源俱乐部",
+    "project_url": "",
+    "url": "http://www.gooderp.org/",
+    "description": "俱乐部会员以众筹和众包的开源协作形式完善和推广GoodERP产品并提供相关服务",
+    "full_des": "面向年营业额在2千万到2亿元的增长型企业，需要按需定制的信息化系统支撑业务稳步增长，GoodERP是一款开源ERP软件，具备财务、人事、项目、采购、销售、库存等核心功能。不同于现有市场的套装软件或云软件，GoodERP不限用户数，模块化二次开发，源码和数据自主掌控，是开源专业化IT服务的载体。",
+    "tech_tag": [
+      "Python3",
+      "Postgresql",
+      "xml",
+      "jquery"
+    ],
+    "domain_tag": [
+      "ERP 企业管理软件"
+    ],
+    "mail_list": "",
+    "email": "jeff@osbzr.com",
+    "project_list": []
+  }  
 
 ]
