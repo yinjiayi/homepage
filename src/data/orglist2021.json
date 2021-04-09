@@ -58,7 +58,7 @@
     "img": "chubao.png",
     "title": "ChubaoFS||ChubaoFS",
     "project_url": "",
-    "url": "github.com/chubaofs/chubaofs",
+    "url": "https://github.com/chubaofs/chubaofs",
     "description": "云原生分布式存储平台。||ChubaoFS is a cloud-native storage platform that provides both POSIX filesystem and S3 compatible interfaces.",
     "full_des": "解决了大规模容器平台环境统一存储资源，从而大幅度降低企业在线和离线业务的存储使用和管理成本，并支撑业务存储计算分离架构的实现；融合存储接口: S3接口和posix无缝兼容，使得业务更加方便；多租户: 通过技术创新，使得业务逻辑隔离，但是存储资源聚合在一起，更进一步节约资源；弹性可扩展: 实现一键扩容；小文件优化：针对小文件，在capacity和performance方面都有很好的可扩展性；支撑高并发元数据操作：元数据分片策略没有采用很多业界分布式文件系统采用的Locality策略，而是完全分散，最大限度降低了热点问题概率，高并发的元数据操作性能有保障。||ChubaoFS has been commonly used as the underlying storage infrastructure for online applications, database or data processing services and machine learning jobs orchestrated by Kubernetes. An advantage of doing so is to separate storage from compute with the ability of scaling up and down based on workloads, providing total flexibility in matching resources to the actual storage and compute needs at any given time.Some of the key features include: scaled metadata management and performance; friendly to diverse file sizes and read/write patterns; easy to scale up; multi-tenancy; strong replication consistency.",
     "tech_tag": [
