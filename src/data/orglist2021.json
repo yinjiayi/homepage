@@ -1130,6 +1130,171 @@
     "mail_list": "",
     "email": "jeff@osbzr.com",
     "project_list": []
-  }  
+  }  ,
+  {
+    "anchor": "eduoj",
+    "slide": "",
+    "video": "",
+    "img": "EduOJ.png",
+    "title": "EduOJ",
+    "project_url": "",
+    "url": "https://github.com/EduOJ",
+    "description": "一个面向程序设计和算法教学的在线评测系统。",
+    "full_des": "EduOJ 是一个面向高中、大学的程序设计课程和数据结构与算法课程的在线评测系统。和其他开源 OJ 相比，提供了更为灵活的作业设置、分数统计等面向教学而非竞赛练习的功能。拓展性强，可支持Special Judge、多文件评测等拓展功能。",
+    "tech_tag": [
+      "Golang ",
+      "Vue",
+      "Js",
+      "PostgreSQL"
+    ],
+    "domain_tag": [
+      "前端"," 后端"
+    ],
+    "mail_list": "  eduoj@googlegroups.com",
+    "email": "i@leoleoasd.me",
+    "project_list": []
+  }   ,
+  {
+    "anchor": "oneflow",
+    "slide": "",
+    "video": "",
+    "img": "OneFlow.png",
+    "title": "OneFlow",
+    "project_url": "",
+    "url": "https://github.com/Oneflow-Inc",
+    "description": "OneFlow 是一个专注性能的深度学习框架",
+    "full_des": "OneFlow 是一个专注性能的深度学习框架，期待对分布式机器学习有兴趣的开发者加入，共同将 OneFlow 打造成世界一流的 AI 基础设施。",
+    "tech_tag": [
+      "ML",
+      "distributed"
+    ],
+    "domain_tag": [
+      "深度学习"
+    ],
+    "mail_list": "https://github.com/Oneflow-Inc/oneflow/issues",
+    "email": "contact@oneflow.org",
+    "project_list": []
+  }   ,
+  {
+    "anchor": "postgresql",
+    "slide": "",
+    "video": "",
+    "img": "postgresql.png",
+    "title": "中国开源软件推进联盟PostgreSQL分会",
+    "project_url": "",
+    "url": "https://www.postgresqlchina.com/",
+    "description": "构建PostgreSQL技术生态，推动PostgreSQL产学研用发展",
+    "full_des": "PostgreSQL是世界排名第一的的开源关系型数据库，采用BSD开源协议。PostgreSQL是学术性开源技术，上世纪80年代由加州大学伯克利分校Michael Stonebraker（图灵奖获得者）创造的Postgres软件包发展而来，多年来保持稳定迭代。PostgreSQL主体不受任何国家、机构、企业及商业组织控制与主导，发展与管理全部由PostgreSQL国际开源社区掌握。中国开源软件推进联盟PostgreSQL分会作为国内唯一的具有独立法人主体的PostgreSQL行业协会组织，承担着构建PostgreSQL产业生态，推动PostgreSQL产学研用发展的责任。",
+    "tech_tag": [
+      "c语言",
+      "开源数据库",
+      "bsd"
+    ],
+    "domain_tag": [
+      "数据库"
+    ],
+    "mail_list": "partner@postgresqlchina.com",
+    "email": "partner@postgresqlchina.com",
+    "project_list": []
+  } ,
+  {
+    "anchor": "milvus",
+    "slide": "",
+    "video": "",
+    "img": "milvus.png",
+    "title": "Milvus",
+    "project_url": "",
+    "url": "https://www.milvus.io/",
+    "description": "Milvus 是一款开源的特征向量相似度搜索引擎",
+    "full_des": "Milvus 是一款开源的特征向量相似度搜索引擎，具有使用方便、实用可靠、易于扩展、稳定高效和搜索迅速等特点。Milvus 已经被广泛应用于多个领域，其中包括图像处理、机器视觉、自然语言处理、语音识别、推荐系统以及新药发现等。",
+    "tech_tag": [
+      "深度学习 ",
+      "计算机视觉",
+      "NLP",
+      "语音识别",
+      "向量数据库"
+    ],
+    "domain_tag": [
+      "非结构化数据处理"
+    ],
+    "mail_list": "https://lists.lfaidata.foundation/g/milvus-technical-discuss",
+    "email": "community@zilliz.com",
+    "project_list": []
+  }   ,
+  {
+    "anchor": "volcano",
+    "slide": "",
+    "video": "",
+    "img": "volcano.png",
+    "title": "Volcano",
+    "project_url": "",
+    "url": "https://volcano.sh/zh/",
+    "description": "Volcano是业界首个云原生高性能批量计算项目，旨在面向AI、大数据、科学计算、渲染等高性能计算场景提供丰富的调度策略、主流北向计算框架和多元南向算力支持。",
+    "full_des": "Volcano是基于Kubernetes的云原生批量计算引擎，它补齐了Kubernetes在面向AI、大数据、高性能计算等批量计算任务调度、编排等场景下的短板，向下支持鲲鹏、昇腾、X86等多元算力，向上使能TensorFlow、Spark、华为MindSpore等主流行业计算框架，让数据科学家和算法工程师充分享受到云原生技术所带来的高效计算与极致体验。Volcano于2019年6月开源，2020年4月正式成为CNCF首个高性能批量计算项目。截止目前，Volcano社区已聚集了开发者180+、收获star 1.6K+，已知用户30+，生态伙伴来自华为、百度、腾讯、滴滴、京东、AWS、爱奇艺、小红书、建信金融科技、BOSS直聘、趣头条、中科类脑、锐天投资等多家行业TOP企业。",
+    "tech_tag": [
+      "云原生",
+      "批量计算",
+      "调度 "
+    ],
+    "domain_tag": [
+      "面向高性能计算场景的云原生批量调度"
+    ],
+    "mail_list": "https://groups.google.com/forum/#!forum/volcano-sh",
+    "email": "",
+    "project_list": []
+  }   ,
+
+  {
+    "anchor": "apacheecharts",
+    "slide": "",
+    "video": "",
+    "img": "echarts.png",
+    "title": "Apache ECharts",
+    "project_url": "",
+    "url": "https://echarts.apache.org/",
+    "description": "Apache ECharts 是一个使用 JavaScript 实现的开源可视化库。",
+    "full_des": "Apache ECharts 是一个使用 JavaScript 实现的开源可视化库，可以流畅的运行在 PC 和移动设备上，兼容当前绝大部分浏览器，提供直观，交互丰富，可高度个性化定制的数据可视化图表。",
+    "tech_tag": [
+      "Dataviz",
+      "Canvas",
+      "SVG",
+      "TypeScript"
+    ],
+    "domain_tag": [
+      "可视化"
+    ],
+    "mail_list": "dev@echarts.apache.org",
+    "email": "dev@echarts.apache.org",
+    "project_list": []
+  }   ,
+  {
+    "anchor": "carbonData",
+    "slide": "",
+    "video": "",
+    "img": "ApacheCarbonData.png",
+    "title": "Apache CarbonData",
+    "project_url": "",
+    "url": "http://carbondata.apache.org/",
+    "description": "CarbonData是一个大数据开源项目，2017年正式成为ASF开源顶级项目。",
+    "full_des": "CarbonData是一种新的高性能数据存储格式，已在20+企业生产环境上部署和使应用，企业数据规模达到万亿。针对当前大数据领域分析场景需求各异而导致的存储冗余问题，业务驱动下的数据分析灵活性要求越来越高，CarbonData提供了一种新的融合数据存储方案，以一份数据同时支持多种应用场景，并通过多级索引、字典编码、预聚合、动态Partition、准实时数据查询、列存等特性提升了IO扫描和计算性能，实现百亿数据级秒级响应。",
+    "tech_tag": [
+      "big-data",
+      "data-store"
+    ],
+    "domain_tag": [
+      "大数据",
+      "数据存储",
+      "数据格式"
+    ],
+    "mail_list": "dev@carbondata.apache.org",
+    "email": "chenliang613@apache.org (PMC Chair's mail) 或者发邮件给dev@carbondata.apache.org",
+    "project_list": []
+  }
+  
+  
+  
+
+
+  
 
 ]

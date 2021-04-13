@@ -158,6 +158,41 @@
             "name":"GoodERP",
             "img":"GoodERP.png",
             "url":"https://gooderp.org/"
+        },
+        {
+            "name":"EduOJ",
+            "img":"EduOJ.png",
+            "url":"https://github.com/EduOJ"
+        } , 
+        {
+            "name":"OneFlow",
+            "img":"OneFlow.png",
+            "url":"https://github.com/Oneflow-Inc"
+        } , 
+        {
+            "name":"中国开源软件推进联盟PostgreSQL分会",
+            "img":"postgresql.png",
+            "url":"https://www.postgresqlchina.com/"
+        } , 
+        {
+            "name":"milvus",
+            "img":"milvus.png",
+            "url":"https://www.milvus.io/"
+        } , 
+        {
+            "name":"volcano",
+            "img":"volcano.png",
+            "url":"https://volcano.sh/zh/"
+        } , 
+        {
+            "name":"Apache ECharts",
+            "img":"echarts.png",
+            "url":"https://echarts.apache.org/"
+        }, 
+        {
+            "name":"carbonData",
+            "img":"ApacheCarbonData.png",
+            "url":"http://carbondata.apache.org/"
         }
     ]
 }
