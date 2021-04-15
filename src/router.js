@@ -23,6 +23,7 @@ import Org from './pages/org/index.js';
 import Orglist from './components/orglist/index.js';
 import ProjectlistN from './components/projectlistN/index.js';
 import OrgDetail from './components/orgdetail/index.js';
+import Liveshow from './pages/liveshow/index.js';
 export default class IRouter extends React.Component{
     constructor(props){
         super(props);
@@ -54,7 +55,9 @@ export default class IRouter extends React.Component{
                                 </Route>
                                 <Route path="/howitworks"component={Howitworks} ></Route> 
                                 <Route path="/apply"component={Apply} ></Route>
-                                <Route path="/index"component={Index} ></Route>                                                                                     
+                                <Route path="/liveshow"component={Liveshow} ></Route>   
+                                <Route path="/index"component={Index} ></Route>   
+                                                                                                                 
                                 <Route path="/" component={HomePage} /> 
                             </Switch>
                         </Wrapper>
