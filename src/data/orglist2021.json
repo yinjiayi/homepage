@@ -1289,7 +1289,135 @@
     "mail_list": "dev@carbondata.apache.org",
     "email": "chenliang613@apache.org (PMC Chair's mail) 或者发邮件给dev@carbondata.apache.org",
     "project_list": []
-  }
+  }   ,
+  {
+    "anchor": "codenameone",
+    "slide": "",
+    "video": "",
+    "img": "ApacheCarbonData.png",
+    "title": "Codename One",
+    "project_url": "",
+    "url": "https://github.com/codenameone/CodenameOne",
+    "description": "Codename One is a mobile first cross platform environment for Java and Kotlin developers. It can compile Java bytecode to native OS executables (iOS, Android, UWP etc.). It's a complete mobile platform featuring virtual machines, simulator, design tools (visual theme/builder/css), IDE integrations, ports to multiple OS's and much more. It provides full access to the underlying native OS code (e.g. Objective-C, C#, Dalvik/ART) through a portable abstraction which enables 100% code reuse.",
+    "full_des": "Codename One is the only platform that... Has Write Once Run Anywhere support with no special hardware requirements and 100% code reuse Compiles Java or Kotlin into native code for iOS, UWP (Universal Windows Platform), Android and even JavaScript (with seamless PWA and Thread support) Is Easy to use with 100% portable Drag and Drop GUI builder Has Full access to underlying native OS capabilities using the native OS programming language (e.g. Objective-C) without compromising portability Has full control over every pixel on the screen! Just override paint and draw or use a glass pane to draw anywhere... Lets you use native widgets (views) and mix them with Codename One components within the same hierarchy (heavyweight/lightweight mixing) Supports seamless Continuous Integration out of the box",
+    "tech_tag": [
+      "JVM",
+      "Java",
+      "Cross Platform",
+      "Mobile",
+      "JDWP",
+      "Accessibility"
+    ],
+    "domain_tag": [
+      "Mobile",
+      "Java",
+      "Kotlin",
+      "iOS",
+      "Android",
+      "UWP",
+      "WORA",
+      "JVM"
+    ],
+    "mail_list": "https://groups.google.com/g/codenameone-discussions We plan to launch a slack group for developers as well",
+    "email": "",
+    "project_list": []
+  }  ,
+  {
+    "anchor": "sofastack",
+    "slide": "",
+    "video": "",
+    "img": "ApacheCarbonData.png",
+    "title": "SOFAStack 社区||SOFAStack Community",
+    "project_url": "",
+    "url": "https://sofastack.tech/",
+    "description": "一套用于快速构建金融级云原生架构的中间件||A collection of middleware components designed to build financial-level distributed architecture",
+    "full_des": "SOFAStack™（Scalable Open Financial Architecture Stack）是一套用于快速构建金融级云原生架构的中间件，也是在金融场景里锤炼出来的最佳实践，并且具备以下特点：开放：技术栈全面开源共建、 保持社区中立、兼容社区 兼容开源生态，组件可插拔， SOFAStack 组件与其它开源组件可相互集成或替换;金融级：包含构建金融级云原生架构所需的各个组件，让用户更加专注于业务开发，满足用户场景的现状和未来需求，经历过大规模场景的锤炼，特别是严苛的金融场景;云原生：基于 SOFAStack 可快速搭建云原生微服务体系，快速开发更具可靠性和扩展性、更加易于维护的云原生应用||SOFAStack™（Scalable Open Financial Architecture Stack）is a collection of middleware components designed to build financial-level distributed architecture and is also the best practice fully validated in financial scenarios. It has several features:Open: Buildpack is fully open-source, keeps community neutral and is compatible with community. SOFAStack components are pluggable and compatible with the open-source ecosystem, so they can be integrated or replaced with other open-source components.Financial-grade: Contains the components needed to build a financial-level cloud native architecture, which have been fully tempered in large-scale scenarios, especially harsh financial scenarios, thus enabling developers to focus more on service development and meeting the current and future needs of user scenarios.Cloud Native: Based on SOFAStack, you can quickly build a cloud-native microservice system and develop cloud-native applications that are more reliable, scalable, and easier to maintain.",
+    "tech_tag": [
+      "Golang",
+      "Java",
+      "云原生"
+    ],
+    "domain_tag": [
+      "微服务",
+      "中间件"
+    ],
+    "mail_list": "sofa@alipay.cloud.com",
+    "email": "sofa@alipay.cloud.com",
+    "project_list": []
+  }  ,
+  {
+    "anchor": "tdengine",
+    "slide": "",
+    "video": "",
+    "img": "ApacheCarbonData.png",
+    "title": "TDengine",
+    "project_url": "",
+    "url": "https://www.taosdata.com/",
+    "description": "TDengine是涛思数据专为物联网、车联网、工业互联网、IT运维等设计和优化的大数据平台。||TDengine is an open-source big data platform designed and optimized for Internet of Things (IoT), Connected Vehicles, and Industrial IoT.",
+    "full_des": "北京涛思数据科技有限公司(TAOS Data) 瞄准日益增长的物联网数据市场，专注时序空间大数据的存储、查询、分析和计算。不依赖任何开源或第三方软件，开发了拥有自主知识产权、自主可控的高性能、可伸缩、高可靠、零管理的物联网大数据平台TDengine，可广泛运用于物联网、车联网、工业互联网、IT运维等领域。公司已经申请多项技术发明专利，且全部提交PCT专利申请。涛思数据采用AGPL许可证，已经将TDengine的内核(存储和计算引擎)以及社区版100%开源。涛思数据将尽最大努力打造开发者社区，维护这个开源的商业模式，相信不将最核心的代码开源，任何软件都将无法赢得市场。涛思数据希望通过开源，快速获得市场反馈，完善产品，完善生态，而且吸引更多的开发者加入到这个项目中。||To address the technology challenges in the exponential growth of connected devices, TAOS Data is aimed at building a big data platform for Internet of Things (IoT). With a deep understanding of data characteristics of the IoT, TAOS Data has designed an innovative way to collect, store, compute, and analyze time-series data. Its flagship product, TDengine, outperforms other time-series databases by at least 10 times in terms of insert/query performance.TDengine’s kernel (storage and computing engine) and community edition are 100% open-sourced under the AGPL license. TAOS Data is fully committed to maintaining this open development model and believes that no software will win the market unless its core functionalities are fully open.",
+    "tech_tag": [
+      "分布式计算",
+      "大数据处理",
+      "高性能存储",
+      "流式计算"
+    ],
+    "domain_tag": [
+      "物联网",
+      "大数据",
+      "IT运维",
+      "工业互联网",
+      "车联网"
+    ],
+    "mail_list": "tdengine@taosdata.com; support@taosdata.com; xtzang@taosdata.com; sdsang@taosdata.com",
+    "email": "tdengine@taosdata.com",
+    "project_list": []
+  }  ,
+  {
+    "anchor": "dubbogo",
+    "slide": "",
+    "video": "",
+    "img": "ApacheCarbonData.png",
+    "title": "dubbo-go 社区",
+    "project_url": "",
+    "url": "https://github.com/apache/dubbo-go",
+    "description": "Dubbo-go 架起 Dubbo 和 go 之间的桥梁，带领Java生态享受云原生时代的技术红利。 ",
+    "full_des": "Apache Dubbo Go 语言实现，架起java和go之间的桥梁，与 gRPC/Spring Cloud 生态互联互通，带领Java生态享受云原生时代的技术红利。",
+    "tech_tag": [
+      "分布式",
+      "Go",
+      "微服务"
+    ],
+    "domain_tag": [
+      "微服务治理",
+      "云原生"
+    ],
+    "mail_list": "dev@dubbo.apache.org",
+    "email": "dev@dubbo.apache.org",
+    "project_list": []
+  }   ,
+  {
+    "anchor": "youqilin",
+    "slide": "",
+    "video": "",
+    "img": "ApacheCarbonData.png",
+    "title": "优麒麟社区",
+    "project_url": "",
+    "url": "https://www.ubuntukylin.com",
+    "description": "优麒麟是 Ubuntu 的官方衍生发行版本之一。 ",
+    "full_des": "优麒麟（Ubuntu Kylin）是由中国 CCN（由CSIP、Canonical、NUDT三方联合组建）开源创新联合实验室与麒麟软件有限公司主导开发的全球开源项目，其宗旨是通过研发用户友好的桌面环境以及特定需求的应用软件，为全球 Linux 桌面用户带来非凡的全新体验！优麒麟开源操作系统自2013年创建至今，已累计发行16个版本，下载量超过3200万次，向开源社区贡献代码数百万行，被 Linux、Debian、Ubuntu、OpenStack、Ceph等国际开源社区接收的 patch 超过 7000 个，在全球范围内拥有数十万活跃用户。",
+    "tech_tag": [
+      "Linux",
+      "Desktop Environment",
+      "桌面环境"
+    ],
+    "domain_tag": [
+      "Linux Native 应用",
+      "Linux 桌面环境"
+    ],
+    "mail_list": "ubuntukylin-members@lists.launchpad.net",
+    "email": "contact@ubuntukylin.com",
+    "project_list": []
+  } 
   
   
   
