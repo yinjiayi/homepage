@@ -193,6 +193,31 @@
             "name":"carbonData",
             "img":"ApacheCarbonData.png",
             "url":"http://carbondata.apache.org/"
+        }, 
+        {
+            "name":"dubbo-go 社区",
+            "img":"dubbo.png",
+            "url":"https://github.com/apache/dubbo-go"
+        }, 
+        {
+            "name":"TDengine",
+            "img":"tdengine.png",
+            "url":"https://www.taosdata.com/"
+        }, 
+        {
+            "name":"优麒麟",
+            "img":"youqilin.png",
+            "url":"https://www.ubuntukylin.com/"
+        }, 
+        {
+            "name":"Codename One",
+            "img":"codenameone.png",
+            "url":"https://github.com/codenameone/CodenameOne"
+        }, 
+        {
+            "name":"SOFAStack 社区",
+            "img":"sofastack.png",
+            "url":"https://sofastack.tech/"
         }
     ]
 }
