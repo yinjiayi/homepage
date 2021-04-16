@@ -83,9 +83,11 @@ class HomePage extends React.Component{
 
     render(){
         let showdata = this.state.data[this.props.chiFlag]
-        let cohost = this.state.data.cohost
+        
+        let {cohost,applyurl} = this.state.data
         return(         
             <div className="homepage">
+            <div className="GoApply" onClick={()=>{this.goLogoLink(applyurl)}}>{showdata.goapply}</div>
             <Carousel autoplay>
                 <div className="homepageBanner One">
                     <div className="homepageBannerTitle">{showdata.title}</div>

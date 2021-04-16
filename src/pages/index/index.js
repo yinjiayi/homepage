@@ -53,6 +53,7 @@ class Index extends React.Component{
                             <span className="indexButtonText" onClick={()=>{this.gourl(this.state.url)}}>{showdata.banner.textone}</span>
                         </div>
                    </div>
+                   
                 </div>
                 <div className="indexOne">
                     <div className="content1200">
