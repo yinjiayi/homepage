@@ -84,10 +84,11 @@ class Header extends React.Component{
                         
                         {
                             showdata.linkdata.map((ele,index)=>{
+                                const linkurl = link[index]
                                 return (
                                    
-                                    <NavLink key={index} to={'/'+link[index]} >
-                                        <div className={["headerTabItem","headerNav"].join(" ")}>
+                                    <NavLink key={index} to={'/'+ linkurl} >
+                                        <div className={["headerTabItem","headerNav", linkurl].join(" ")}>
                                             <span>{ele.name}</span>
                                         </div>                                
                                     </NavLink>
@@ -118,10 +119,11 @@ class Header extends React.Component{
                         <div className="headerClose" onClick={()=>this.headerlist(false)}></div>
                         {
                             showdata.linkdata.map((item,index)=>{
+                            const linkurl = link[index]
                             return (                            
                                 <div key={index}
-                                    onClick={()=>this.getLink(link[index])}
-                                    className={["osscListItem"].join(" ")}>                                
+                                    onClick={()=>this.getLink(linkurl)}
+                                    className={["osscListItem",linkurl].join(" ")}>                                
                                     <span> {item.name}</span>                
                                 </div>
                               
