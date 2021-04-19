@@ -645,7 +645,7 @@
       "tech_tag": "nan",
       "domain_tag": "开源基础设施"
     }, {
-      "name": "openEuler版本演进中的License冲突检测",
+      "name": "开源软件版本演进中的License冲突检测",
       "difficulty": "中",
       "mentor": "李自",
       "contact": "lizi4@huawei.com",
@@ -715,7 +715,7 @@
       "tech_tag": "桌面环境",
       "domain_tag": "操作系统"
     }, {
-      "name": "内存维测page owner增强",
+      "name": "linux内核的维测工具page owner增强",
       "difficulty": "低",
       "mentor": "刘勇强",
       "contact": "liuyongqiang13@huwei.com",
@@ -757,7 +757,7 @@
       "tech_tag": "RISC-V",
       "domain_tag": "操作系统"
     }, {
-      "name": "riscv栈回溯增强",
+      "name": "RISC-V栈回溯增强",
       "difficulty": "中",
       "mentor": "陈煌",
       "contact": "chenhuang5@huawei.com",
@@ -785,7 +785,7 @@
       "tech_tag": "RISC-V",
       "domain_tag": "操作系统"
     }, {
-      "name": "RISCV架构下qspinlock支持",
+      "name": "实现RISCV架构下支持qspinlock",
       "difficulty": "高",
       "mentor": "童甜根",
       "contact": "tongtiangen@huawei.com",
