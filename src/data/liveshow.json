@@ -1,79 +1,56 @@
 {
     "liveurl":"https://live.bilibili.com/22221041",
     "spaceurl":"https://space.bilibili.com/578074510",
-    "livedata":"2020.7.18 20:00 开源大咖 吴雪老师直播  开源的商业创新",
+    "livedata":"",
     "speechlist":[
-        {
-            "title":"邀您一起玩openEuler",
-            "time":"2020.05.16",        
+        {         
+            "title":"开源社区运营的道、法、术、器",
+            "time":"2021.04.24",         
             "profilelist":[
                 {
-                    "name":"李永乐",
-                    "profile":"openEuler社区秘书处秘书长、OpenStack基金会董事。",
-                    "imgurl":"liyongle.jpg"
+                    "name":"刘天栋",
+                    "profile":"开源社理事暨联合创始人 | Apache 软件基金会正式会员，ASF孵化器项目委员会成员，ASF筹款委员会成员/赞助伙伴大使；腾讯云 TVP。于2014年10月联合创始开源社。于2018年当选 ASF 正式成员，随后加入 ASF 筹款委员会并成为赞助伙伴大使，2019年成为 ASF 孵化器项目委员会成员。 曾历任微软中国战略业务总监、微软开放技术公司及微软亚太研发集团负责开源技术布道及开源社区发展工作；甲骨文(中国)渠道及联盟总监、甲骨文(中国) Linux战略总监、甲骨文大中华区中间件事业部总经理；Turbolinux亚太区副总裁等。",
+                    "imgurl":"liutiandong.jpg"
+                }
+            ],  
+            "speechcontent":"这次的介绍将涵盖如何从零开始建设以及发展一个开源社区",
+            "ppt":"",
+            "url":""
+        },
+        {
+            "title":"如何将社区贡献和私人生活融合在一起?",
+            "time":"2021.04.25",        
+            "profilelist":[
+                {
+                    "name":"周琦",
+                    "profile":"是中国Python社区中最长情的贡献者, 从04年共同创建 CPyUG(中国Python用户组)以来,长年为 Pythonic 在中国的推广/实践进行各种尝试, 连续四届主持PyCon中国大会筹办,是大家公认的\"大妈\"(Zoom.Quiet)",
+                    "imgurl":"zhouqi.jpg"
                     
                 }
             ],       
-            "speechcontent":"",
+            "speechcontent":"开源社区基本结构~文化~原则~礼仪…以及自然参与的简洁姿态…",
             "ppt":"",
-            "pptname":"李永乐老师“邀您一起玩openEuler”.pptx",
+            "pptname":"",
             "url":""
         },
-        {
-            
-            "title":"高校开源创新的故事：以X-lab开放实验室为例",
-            "time":"2020.05.23 ",                    
-            "profilelist":[
-                {
-                    "name":"王伟",
-                    "profile":"华东师范大学数据科学与工程学院研究员，美国Wisconsin大学Madison分校和美国Florida大学访问学者，中国计算机学会高级会员、中国计算机学会教育工作委员会委员、中国计算机学会大数据专委会通讯委员、开源社理事会成员。研究方向为教育云、智能教育技术和大规模在线学习系统。",
-                    "imgurl":"wangwei.jpg"
-                }
-            ],  
-            "speechcontent":"",
-            "ppt":"",
-            "pptname":"王伟老师高校开源创新的故事：以X-lab开放实验室为例.pdf",
-            "url":""
-        },
-        {
-            
-            "title":"开源世界中的“隐规则”",
-            "time":"2020.05.30 20:00-21:00",
-               
-            "profilelist":[
-                {
-                    "name":"李建盛（适兕）",
-                    "profile":"opensourceway.community 创始人，开源思考者、作家、译者、开源社成员。",
-                    "imgurl":"lijiansheng.jpg"
-                }
-            ],  
-            "speechcontent":"尽管如今的开源，已经不是多年以前的边缘人群，而是进入了软件产业的主流，各大企业公司、非营利组织、个人、政府机构等等都在争相进入这个世界，那么除了大家公认的免费、再分发、修改、“社区”、基金会、行为准则、许可证等等这些几乎每个开源项目都会明文规定的内容，还有大家可能会忽略掉的潜在的内容，如技术大于业务、No Crying in Open Source .....适兕将会和大家分享关于开源世界中那些没有被大家说出，但是都在遵行的规则。",
-            "ppt":"",
-            "url":""
-        },
-        {
-            "title":"在你的人生经历中，有哪些开源故事？",
-            "time":"2020.06.06",
+        {         
+            "title":"那些年我们一起申请和参与的开源programs",
+            "time":"2021.05.08",
             
             "profilelist":[
                 {
-                    "name":"庄表伟",
-                    "profile":"开源社2020年度理事长，开源社核心成员，开源社区的长期参与者。1997年大学毕业之后，常年奋斗在编程的第一线，最近3年开始转行做产品经理，目前就职于华为云。",
-                    "imgurl":"zhuanglin.jpg"
-                },
-                {
-                    "name":"林旅强",
-                    "profile":"林旅强 (Richard Lin)，华为云AI开发者生态专家、开源社理事会成员，投身开源事业近 10 年。专注于开源/开发者生态、社区治理及商业模式；以开源传道为志业，以开放、自由、共享、创新为信仰。",
-                    "imgurl":"zhuanglin.jpg"
+                    "name":"夏小雅",
+                    "profile":"X-lab、CHAOSS社区、开源社 2020-2021、Google Summer of Docs参与者",
+                    "imgurl":"xiaxiaoya.jpg"
                 }
             ],  
-            "speechcontent":"",
+            "speechcontent":"根据自身参与GSoD和参与进开源社区的经历，帮助高校同学们融入开源中去",
             "ppt":"",
             "url":""
         },
         {         
             "title":"从个人项目开源到Apache Member的5年 -- 如何做一个专业的开源玩家",
-            "time":"2020.06.13",
+            "time":"2021.05.09",
             
             "profilelist":[
                 {
@@ -86,66 +63,129 @@
             "ppt":"",
             "url":""
         },
+        {
+            "title":"开源治理的相关知识域",
+            "time":"2021.05.15",
+            
+            "profilelist":[
+                {
+                    "name":"庄表伟",
+                    "profile":"开源社理事，2020-2021年度理事长，长年参与开源社区，热爱技术，热衷分享。",
+                    "imgurl":"zhuanglin.jpg"
+                }
+            ],  
+            "speechcontent":"企业内外，都有开源治理的诉求，各有区别。希望对此有所了解的朋友，可以通过此次演讲，了解相关知识域与能力项。包括这个领域的当前发展与主要探索。",
+            "ppt":"",
+            "url":""
+        },
+        {
+            "title":"通过开源手段巩固基础软件供应链",
+            "time":"2021.05.16",
+            
+            "profilelist":[
+                {
+                    "name":"郑振宇",
+                    "profile":"重症开源爱好者，专注于大数据调度、微服务基础设施构建。",
+                    "imgurl":"zhuanglin.jpg"
+                }
+            ],  
+            "speechcontent":"软件供应链的可靠性和连续性是近年来国内关注度很高的话题之一，使用开源软件是解决供应链问题的重要手段之一。充分运用开源手段可以高效、可持续的推动开源软件供应链成熟。本分享将结合推动国产化硬件接入主流开源社区集成验证平台的实际经验，从贡献、使能、掌握、影响等角度为听众分享通过开源手段巩固基础软件供应链的最佳实践。",
+            "ppt":"",
+            "url":""
+        },
         {         
-            "title":"Linux从入门到深入内核有多远",
-            "time":"2020.06.20",
+            "title":"系统性能优化的路有多长？",
+            "time":"2021.05.23",
             
             "profilelist":[
                 {
                     "name":"陈莉君",
-                    "profile":"西安邮电大学教授，教育部高等学校计算机类专业教学指导委员会委员，陕西省教学名师，中国开源联盟专家组成员。20多年来致力于推动Linux在中国的发展，深入研究Linux内核相关理论以及技术，跟踪Linux内核发展动向，针对Linux内核版本的不断演化，连续编写和翻译了十多部相关专著、译著及教材，两次获得中国开源联盟授予的“开源杰出贡献奖”。",
+                    "profile":"陈莉君，教授，20多年驰骋于Linux内核的世界，翻译、撰写Linux内核书籍十多本，开设了《Linux内核分析与应用》、《操作系统及Linux内核》和《Linux编程技术》慕课，发起Linux内核之旅开源社区，相关网站、公众号、B站、GitHub等得到3万多Linux内核爱好者的关注，社区的Linux显微镜开源项目正如火如荼的进行。",
                     "imgurl":"chenlijun.jpg"
                 }
             ],  
-            "speechcontent":"",
+            "speechcontent":"随着云计算、大数据以及AI广泛应用，业务的压力也越来越大，性能优化成为每一位技术人的必修课。从产品角度来看，性能就是“攻城略地”的最佳武器，我们期待能更苛刻地使用计算机和网络设备，去做性价比更高的事；而对程序员个人而言，具备系统的性能优化方法论，无论在架构设计还是应用模块开发上都能得心应手，还能轻松应对大厂面试、技术等级晋升考核等等。Linux内核开源社区试图借助于BPF技术和开源项目Linux显微镜（LMP），架起用户态和内核态性能优化的桥梁。",
             "ppt":"",
             "url":""
         },
-      
         {         
-            "title":"开源软件的历史和法律风险",
-            "time":"2020.06.27",
+            "title":"从 SegmentFault 的起源谈大学生参与开源项目",
+            "time":"2021.05.30",
             
             "profilelist":[
                 {
-                    "name":"邓超",
-                    "profile":"律师，理学学士、法学博士。邓超律师的专业领域为知识产权，行业领域专注于TMT（科技、传媒和电信）。为TMT领域的客户提供全方位的诉讼以及非诉法律服务，曾代表客户在最高法院、多地高院等法院出庭应诉，并处理诸多非诉法律事务。",
-                    "imgurl":"dengchao.jpg"
+                    "name":"祁宁 ",
+                    "profile":"祁宁，SegmentFault 思否创始人、CTO；",
+                    "imgurl":"chenlijun.jpg"
                 }
             ],  
-            "speechcontent":"",
+            "speechcontent":"SegmentFault 的 3 位创始人最早都是开源项目 Typecho 的贡献者，大学时期做开源项目让他们成为了好朋友和工作伙伴，然后从不同地方来到杭州共同创业创办了 SegmentFault。从 SegmentFault 的起源，我们可以和广大大学生分享一下参与开源项目的正确姿势和获益，号召更多大学生参与到开源贡献中。",
             "ppt":"",
             "url":""
         },
-        {         
-            "title":"参与ASF开源贡献的正确姿势 - 如何成为一名合格的ASF Committer",
-            "time":"2020.07.04",
+        
+        
+        
+        {
+            
+            "title":"Apache本土社区 -- 源自中国的Apache项目介绍",
+            "time":"2020.06.05",
+               
+            "profilelist":[
+                {
+                    "name":"姜宁",
+                    "profile":"opensourceway.community 创始人，开源思考者、作家、译者、开源社成员。",
+                    "imgurl":"jiangning.jpg"
+                }
+            ],  
+            "speechcontent":"大家对于Apache软件基金会（ASF）的项目并不陌生，但是大家很少有机会能和项目核心开发面对面的交流。 随着越来越多的源自中国的Apache项目出现，我们有很更多能够这些Apache项目接触的机会。创立于 2020年的ALCBeijing就是这样一个家门口的Apache社区，在这里你不但可以接触到最新的ASF动态，了解项目的最新进展，以及Apache的开源治理之道，而且可以与众多源于中国的Apache项目进行近距离接触，深度体验开源的独特魅力，结交志同道合的小伙伴。",
+            "ppt":"",
+            "url":""
+        },
+        {
+            "title":"Wechaty的开源之路",
+            "time":"2021.06.06",
             
             "profilelist":[
                 {
-                    "name":"孙金城",
-                    "profile":"孙金城（金竹），2011年加入阿里，9年的阿里工作中，主导过很多内部核心系统，如：阿里集团行为日志，阿里郎，云转码，文档转换等云服务。在2016年初开始了解Apache Flink社区，由初期的参与社区开发到后来逐渐主导具体模块的开发，到负责Apache Flink Python API(PyFlink) 的建设。 目前是 阿里巴巴 Tech Lead，ASF Member，PMC Member of Apache Flink and Apache IoTDB 以及 Committer for Apache Flink, Apache Beam and Apache IoTDB 。",
-                    "imgurl":"sunjincheng.jpg"
+                    "name":"高原",
+                    "profile":"句子互动联合创始人 & CTO，联合创立的句子互动专注于将聊天机器人技术落地到企业的真实场景中，以提升企业与客户沟通的效率，推动聊天机器人行业的发展，是 Bot FridayClub 活动发起者之一。活跃于开源社区，是拥有近万 Star 数的 Chatbot SDK 开源项目 Wechaty 的核心Contributor，wechaty-puppet-padpro 的作者，wechaty-puppet-padplus 的核心贡献者。",
+                    "imgurl":"gaoyuan.jpg"
                 }
             ],  
-            "speechcontent":"国内大多数人都听说过Apache Software Foundation(ASF), 同时我们国家也是世界上使用开源最多的国家之一，目前国内各个大厂也纷纷投入开源建设，但仍然有很多想参与开源建设或者是刚刚参与开源建设的同学，感觉开始开源贡献十分困难，无从下手，不知道该做什么？遇到问题如何处理？如何与人沟通等等问题的存在，因而也导致目前国内成为ASF 项目的Committer，PMC和ASF Member的人并不多，这个现象并非我们没有能力参与ASF贡献，更不是没有能力成为开源项目的Committer/PMC和ASF Member，而是对ASF了解的渠道比较少，对参与社区的原则和技巧了解匮乏，所以本次分享将和大家交流我参与社区过程中的切身的经验，并给到大家参与开源社区的基本原则和方式方法，期望能通过本次分享带你踏上ASF开源之路。",
+            "speechcontent":"主要介绍Wechaty开源项目的历程以及开源过程中的故事",
             "ppt":"",
             "url":""
         },
         {         
-            "title":"开源的商业创新",
-            "time":"2020.07.18",
-            
+            "title":"开源商业化——从0到1、网络效应和增长飞轮",
+            "time":"2021.06.20",         
             "profilelist":[
                 {
                     "name":"吴雪",
-                    "profile":"吴雪（雪哥），Wuhan2020开源社区副理事长，硅谷Plug and Play创业孵化器导师，斯坦福商学院Sloan Fellow，专注于SaaS及开源软件商业模式的演进及创新。4G领域商业拓展领军人物，带领公司取得并长期保持全球市场份额第一；创造多项5G虚拟化、软件化行业纪录。",
+                    "profile":"吴雪(雪哥)，Wuhan2020开源社区副理事长，硅谷Plug and Play孵化器导师，5GORAN创业公司顾问，斯坦福商学院校友。专注于SaaS和云服务的全球加速及开源软件商业模式的演进及创新。5G无线虚拟化技术商业化领军人物，曾带领公司取得并长期保持全球市场份额第一。",
                     "imgurl":"wuxue.jpg"
                 }
             ],  
-            "speechcontent":"",
+            "speechcontent":"我在2020分享的《开源的商业创新》，主要是分享开源软件的多种商业化模式以及开源项目在中国商业化落地的观点。本次拟在上期分享的基础上，对开源项目和创业企业的生命周期进行透视分析，并分享与从0到1、网络效应、增长飞轮相关的创业公司的例子，希望对开源领域创业者带来接地气的思考。",
+            "ppt":"",
+            "url":""
+        },    
+        {         
+            "title":"《开源教育宣言》的理解与实践",
+            "time":"2021.06.27",
+            
+            "profilelist":[
+                {
+                    "name":"王伟",
+                    "profile":"华东师范大学，研究员，开源社理事",
+                    "imgurl":"wangwei.jpg"
+                }
+            ],  
+            "speechcontent":"近期，我们公开发布了《开源教育宣言》，产生了积极的反响，本报告深度解此宣言，并介绍我们在该指导思想下的开源教育实践，希望能够推动中国的开源教育。",
             "ppt":"",
             "url":""
         }
+        
     ]
 }
