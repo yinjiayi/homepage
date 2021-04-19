@@ -34,10 +34,11 @@ class OrgDetail extends React.Component{
 
     componentDidMount(){
         let showorg = this.props.orgdetail
+        var hashurl = this.props.history.location.pathname.split("/")[3].toString();  
         // 1.0 判断redux里是否有数据
-        if(Object.keys(showorg).length === 0){
+        if(hashurl!==showorg.anchor || Object.keys(showorg).length === 0){
              // 2.0 若无，则从orglist里搜索
-             var hashurl = this.props.history.location.pathname.split("/")[3].toString();  
+          
 
              for(let i=0,len=orglist.length;i<len;i++){             
                  let item = orglist[i]            
