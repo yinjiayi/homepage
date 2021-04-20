@@ -86,7 +86,10 @@ class ProjectModal extends React.Component{
                             <li>{showdata.proMentor}{item.mentor}</li>
                             <li>{showdata.proMentorContact}<a href={"mailto:"+item.contact}>{item.contact}</a></li>
                         </ul>
-                        <div className=" orgProjectButton" onClick={()=>{this.goLink(this.props.prourl)}}>{showdata.proDetail}</div></div>
+                        {
+                            this.props.prourl?<div className=" orgProjectButton" onClick={()=>{this.goLink(this.props.prourl)}}>{showdata.proDetail}</div>:""
+                        }
+                        </div>
                 </div>
 
             </div>
