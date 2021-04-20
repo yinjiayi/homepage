@@ -28,18 +28,48 @@ class OrgDetail extends React.Component{
            showdata:orglist[0],
            page:1, // 当前页
            pagesize:10, // 每页显示的个数
-           showprojectlist:[]
+           showprojectlist:[],
+           flagProid:"",
        }
     }
 
+    scrollToAnchor(anchorName){
+        if (anchorName) {
+            // 找到锚点
+            let anchorElement = document.getElementById(anchorName);
+            
+            // 如果对应id的锚点存在，就跳转到锚点
+            if(anchorElement) { 
+                // anchorElement.scrollIntoView({block: 'start', behavior: 'smooth'});
+                var elementPosition =anchorElement.getBoundingClientRect().top -  100;
+                
+                window.scrollTo({
+                    top: elementPosition,
+                    behavior: "smooth"
+                });
+         }
+        }
+    }
+
     componentDidMount(){
+        
+        if(this.state.flagProid){
+            this.scrollToAnchor(this.state.flagProid)
+        }
+        
+    }
+
+    componentWillMount(){
+        window.scrollTo({
+            top: 0
+        });
+        console.log("orgdeail")
         let showorg = this.props.orgdetail
+        
         var hashurl = this.props.history.location.pathname.split("/")[3].toString();  
         // 1.0 判断redux里是否有数据
         if(hashurl!==showorg.anchor || Object.keys(showorg).length === 0){
              // 2.0 若无，则从orglist里搜索
-          
-
              for(let i=0,len=orglist.length;i<len;i++){             
                  let item = orglist[i]            
                 if(item.anchor === hashurl){
@@ -48,14 +78,44 @@ class OrgDetail extends React.Component{
                  }
              }
         }
+        //3.0 若无，返回首页
         if(!showorg){
             this.props.history.push("/")
             return false
         }
+        //4.0 判断projectid的位置
+        const prolist = showorg.project_list
+        const prolabel = this.props.history.location.search.split("?proid=")
+        let proindex = -1
+        let pagepro  = 1
+        
+        if(prolabel[1]){
+            this.setState({
+                flagProid:prolabel[1]
+            })
+            for(var i = 0; i < prolist.length; i++) {          
+                if(prolist[i].label === prolabel[1]) {
+                    
+                    proindex = i+1
+                    break;
+                }
+            }
+        }
+       
+        if(proindex>=0){
+            pagepro = Math.ceil(proindex/this.state.pagesize)
+            
+        }
+        
+
         this.setState({
             showdata:showorg,
-            showprojectlist:showorg.project_list.slice(0,this.state.pagesize)
-        })   
+            showprojectlist:showorg.project_list.slice(this.state.pagesize*(pagepro-1),this.state.pagesize*pagepro),
+            page:pagepro,
+            
+        }) 
+        
+        
     }
 
     goOrgList(){

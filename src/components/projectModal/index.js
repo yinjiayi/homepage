@@ -22,6 +22,7 @@ class ProjectModal extends React.Component{
            
        }
     }
+ 
 
     getDegree(degree){
         return {
@@ -55,7 +56,7 @@ class ProjectModal extends React.Component{
         let showdata = this.props.showdata
         let item = this.props.item
         return(         
-            <div className={["projectListItem",this.getDegree(item.difficulty)].join(" ")} >
+            <div id={item.label} className={["projectListItem",this.getDegree(item.difficulty)].join(" ")} >
                 <div className="projectListItemLeft">
                     <div className="orgProjectTitleBar">
                         
