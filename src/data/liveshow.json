@@ -71,7 +71,7 @@
                 {
                     "name":"庄表伟",
                     "profile":"开源社理事，2020-2021年度理事长，长年参与开源社区，热爱技术，热衷分享。",
-                    "imgurl":"zhuanglin.jpg"
+                    "imgurl":"zhuangbiaowei.jpg"
                 }
             ],  
             "speechcontent":"企业内外，都有开源治理的诉求，各有区别。希望对此有所了解的朋友，可以通过此次演讲，了解相关知识域与能力项。包括这个领域的当前发展与主要探索。",
@@ -86,7 +86,7 @@
                 {
                     "name":"郑振宇",
                     "profile":"重症开源爱好者，专注于大数据调度、微服务基础设施构建。",
-                    "imgurl":"zhuanglin.jpg"
+                    "imgurl":"zhengzhenyu.jpg"
                 }
             ],  
             "speechcontent":"软件供应链的可靠性和连续性是近年来国内关注度很高的话题之一，使用开源软件是解决供应链问题的重要手段之一。充分运用开源手段可以高效、可持续的推动开源软件供应链成熟。本分享将结合推动国产化硬件接入主流开源社区集成验证平台的实际经验，从贡献、使能、掌握、影响等角度为听众分享通过开源手段巩固基础软件供应链的最佳实践。",
@@ -116,73 +116,10 @@
                 {
                     "name":"祁宁 ",
                     "profile":"祁宁，SegmentFault 思否创始人、CTO；",
-                    "imgurl":"chenlijun.jpg"
+                    "imgurl":"qining.jpg"
                 }
             ],  
             "speechcontent":"SegmentFault 的 3 位创始人最早都是开源项目 Typecho 的贡献者，大学时期做开源项目让他们成为了好朋友和工作伙伴，然后从不同地方来到杭州共同创业创办了 SegmentFault。从 SegmentFault 的起源，我们可以和广大大学生分享一下参与开源项目的正确姿势和获益，号召更多大学生参与到开源贡献中。",
-            "ppt":"",
-            "url":""
-        },
-        
-        
-        
-        {
-            
-            "title":"Apache本土社区 -- 源自中国的Apache项目介绍",
-            "time":"2020.06.05",
-               
-            "profilelist":[
-                {
-                    "name":"姜宁",
-                    "profile":"opensourceway.community 创始人，开源思考者、作家、译者、开源社成员。",
-                    "imgurl":"jiangning.jpg"
-                }
-            ],  
-            "speechcontent":"大家对于Apache软件基金会（ASF）的项目并不陌生，但是大家很少有机会能和项目核心开发面对面的交流。 随着越来越多的源自中国的Apache项目出现，我们有很更多能够这些Apache项目接触的机会。创立于 2020年的ALCBeijing就是这样一个家门口的Apache社区，在这里你不但可以接触到最新的ASF动态，了解项目的最新进展，以及Apache的开源治理之道，而且可以与众多源于中国的Apache项目进行近距离接触，深度体验开源的独特魅力，结交志同道合的小伙伴。",
-            "ppt":"",
-            "url":""
-        },
-        {
-            "title":"Wechaty的开源之路",
-            "time":"2021.06.06",
-            
-            "profilelist":[
-                {
-                    "name":"高原",
-                    "profile":"句子互动联合创始人 & CTO，联合创立的句子互动专注于将聊天机器人技术落地到企业的真实场景中，以提升企业与客户沟通的效率，推动聊天机器人行业的发展，是 Bot FridayClub 活动发起者之一。活跃于开源社区，是拥有近万 Star 数的 Chatbot SDK 开源项目 Wechaty 的核心Contributor，wechaty-puppet-padpro 的作者，wechaty-puppet-padplus 的核心贡献者。",
-                    "imgurl":"gaoyuan.jpg"
-                }
-            ],  
-            "speechcontent":"主要介绍Wechaty开源项目的历程以及开源过程中的故事",
-            "ppt":"",
-            "url":""
-        },
-        {         
-            "title":"开源商业化——从0到1、网络效应和增长飞轮",
-            "time":"2021.06.20",         
-            "profilelist":[
-                {
-                    "name":"吴雪",
-                    "profile":"吴雪(雪哥)，Wuhan2020开源社区副理事长，硅谷Plug and Play孵化器导师，5GORAN创业公司顾问，斯坦福商学院校友。专注于SaaS和云服务的全球加速及开源软件商业模式的演进及创新。5G无线虚拟化技术商业化领军人物，曾带领公司取得并长期保持全球市场份额第一。",
-                    "imgurl":"wuxue.jpg"
-                }
-            ],  
-            "speechcontent":"我在2020分享的《开源的商业创新》，主要是分享开源软件的多种商业化模式以及开源项目在中国商业化落地的观点。本次拟在上期分享的基础上，对开源项目和创业企业的生命周期进行透视分析，并分享与从0到1、网络效应、增长飞轮相关的创业公司的例子，希望对开源领域创业者带来接地气的思考。",
-            "ppt":"",
-            "url":""
-        },    
-        {         
-            "title":"《开源教育宣言》的理解与实践",
-            "time":"2021.06.27",
-            
-            "profilelist":[
-                {
-                    "name":"王伟",
-                    "profile":"华东师范大学，研究员，开源社理事",
-                    "imgurl":"wangwei.jpg"
-                }
-            ],  
-            "speechcontent":"近期，我们公开发布了《开源教育宣言》，产生了积极的反响，本报告深度解此宣言，并介绍我们在该指导思想下的开源教育实践，希望能够推动中国的开源教育。",
             "ppt":"",
             "url":""
         }

@@ -28,13 +28,14 @@ export default class LiveModal extends React.Component{
 
 
     render(){
+    const item = this.props.item
     
         return( 
             <div className="LiveShowItem" >
             <div className="LiveShowItemHeader">
                 <div 
                     
-                    style={{backgroundImage:"url("+require("./../../img/organisation/0.jpg").default + ")"}}
+                    style={{backgroundImage:"url("+require("./../../img/liveshow/"+item.profilelist[0].imgurl).default + ")"}}
                     className="LiveShowItemHeaderImage"></div>
                 <div className="LiveShowItemHeaderTitle">
                     <div className="LiveShowItemHeaderTitleOne">{this.props.item.title}</div>
