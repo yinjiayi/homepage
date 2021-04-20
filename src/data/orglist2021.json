@@ -2353,7 +2353,77 @@
     "mail_list": "sofa@alipay.cloud.com",
     "email": "sofa@alipay.cloud.com",
     "project_list": []
-  } 
+  } , {
+    "orgId": 25,
+    "anchor": "dokit",
+    "slide": "",
+    "video": "",
+    "img": "dokit.jpg",
+    "title": "DoKit",
+    "orgTypeDesc": "开源社区",
+    "orgType": 1,
+    "project_url": "",
+    "url": "https://www.dokit.cn",
+    "description": "一款面向泛前端产品研发全生命周期的效率平台。",
+    "full_des": "DoKit诞生于滴滴城运服泛前端终端技术部，是一款面向泛前端产品研发全生命周期的效率平台。经过两年的发展，当前DoKit已经发展成了一个相对完整的生态，比如DoKit For Android、DoKit For iOS、DoKit For 小程序、DoKit For Flutter、DoKit For Web。同时我们的项目被BAT以及滴滴、字节、快手、京东等等头部独角兽企业广泛使用并获得良好的口碑。随着dokit.cn平台端的推出，标志着DoKit已经从单纯的效率工具正式进入了效率工具平台的阶段。与此同时我们一直都未停下持续探索的精神，积极地在更多平台领域进行尝试，不给自己设限。我们相信DoKit的未来充满无限可能。",
+    "tech_tag": ["Java", "JavaScript", "OC", "Kotlin", "Swift"],
+    "domain_tag": ["Dev Tools", "Web", "终端"],
+    "mail_list": "暂无",
+    "email": "dokit@didiglobal.com",
+    "project_list": []
+  }, {
+    "orgId": 37,
+    "anchor": "julia",
+    "slide": "",
+    "video": "",
+    "img": "julia.jpg",
+    "title": "Julia中文社区",
+    "orgTypeDesc": "开源社区",
+    "orgType": 1,
+    "project_url": "",
+    "url": "https://discourse.juliacn.com/",
+    "description": "致力于为 Julia 编程语言提供中文支持的开源组织。",
+    "full_des": "Julia中文社区致力于为Julia编程语言提供更好的中文支持，帮助中文用户学习、交流和分享Julia的使用经验，促进Julia编程语言在科学计算等领域的广泛应用。",
+    "tech_tag": ["AI", "Deep Learning Framework", "Julia"],
+    "domain_tag": ["AI", "Big Data", "Dev Tools", "Vitualization", "Distributed System", "Programming Language"],
+    "mail_list": "",
+    "email": "juliacn@googlegroups.com",
+    "project_list": []
+  }, {
+    "anchor": "hyportrons",
+    "slide": "",
+    "video": "",
+    "img": "hyportrons.jpg",
+    "title": "Hypertrons",
+    "orgTypeDesc": "开源社区",
+    "orgType": 1,
+    "project_url": "",
+    "url": "https://hypertrons.io",
+    "description": "面向开放组织的开源 RPA 平台",
+    "full_des": "Hypertrons 为一个面向开放组织的开源 RPA 平台，在多种平台的连通下，通过可定制化脚本为开放组织提供组织架构管理、自动化流程管理等。目前已经支持 GitHub、GitLab、Gitee、Jenkins、Slack、email 等多种平台的交互。",
+    "tech_tag": ["NodeJS","Automation","RPA"],
+    "domain_tag": ["开源治理","跨平台自动化"],
+    "mail_list": "frank_zsy@hypertrons.io wsl@hypertrons.io lhming23@outlook.com",
+    "email": "dev@hypertrons.io",
+    "project_list": []
+  }, {
+    "anchor": "masknetwork",
+    "slide": "",
+    "video": "",
+    "img": "mask.jpg",
+    "title": "Mask Network",
+    "orgTypeDesc": "开源社区",
+    "orgType": 1,
+    "project_url": "",
+    "url": "https://mask.io",
+    "description": "Mask Network 致力于以开源与去中心化的方式夺回用户自身数据的所有权。",
+    "full_des": "Mask Network 是一个帮助用户从 Web 2.0 无缝过渡到 Web 3.0 的门户。其提供的主要功能是对信息传输进行加解密，并围绕着这一功能不断发展。Mask Network 倡导用户珍视自己的隐私数据，个人资产并拥有主权。Mask Network 集去隐私社交，无国界支付网络，去中心化文件存储与分享，去中心化金融，治理（DAO）、NFT 于一体，帮助用户在 Twitter、Facebook 等传统社交网络上保护自身的隐私，数据，资产和权利。Mask Network 创建了一个去中心化的应用程序生态系统，为数以万计的用户搭建了一个连接 Web 2.0（现有互联网）和 Web 3.0（新型开放的互联网）的桥梁。",
+    "tech_tag": ["前端", "iOS", "Android", "区块链"],
+    "domain_tag": ["浏览器插件", "React", "Web App", "推特客户端", "移动输入法", "智能合约"],
+    "mail_list": "",
+    "email": "info@mask.io",
+    "project_list": []
+  }
   
   
   
