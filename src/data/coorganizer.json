@@ -218,6 +218,26 @@
             "name":"SOFAStack 社区",
             "img":"sofastack.png",
             "url":"https://sofastack.tech/"
+        }, 
+        {
+            "name":"Dokit",
+            "img":"dokit.png",
+            "url":"https://www.dokit.cn"
+        }, 
+        {
+            "name":"Julia",
+            "img":"julia.png",
+            "url":"https://discourse.juliacn.com/"
+        }, 
+        {
+            "name":"Hypertrons",
+            "img":"hyportrons.png",
+            "url":"https://hypertrons.io"
+        }, 
+        {
+            "name":"Mask Network",
+            "img":"mask.png",
+            "url":"https://mask.io"
         }
     ]
 }
