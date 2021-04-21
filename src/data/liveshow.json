@@ -1,0 +1,128 @@
+{
+    "liveurl":"https://live.bilibili.com/22221041",
+    "spaceurl":"https://space.bilibili.com/578074510",
+    "livedata":"",
+    "speechlist":[
+        {         
+            "title":"开源社区运营的道、法、术、器",
+            "time":"2021.04.24",         
+            "profilelist":[
+                {
+                    "name":"刘天栋",
+                    "profile":"开源社理事暨联合创始人 | Apache 软件基金会正式会员，ASF孵化器项目委员会成员，ASF筹款委员会成员/赞助伙伴大使；腾讯云 TVP。于2014年10月联合创始开源社。于2018年当选 ASF 正式成员，随后加入 ASF 筹款委员会并成为赞助伙伴大使，2019年成为 ASF 孵化器项目委员会成员。 曾历任微软中国战略业务总监、微软开放技术公司及微软亚太研发集团负责开源技术布道及开源社区发展工作；甲骨文(中国)渠道及联盟总监、甲骨文(中国) Linux战略总监、甲骨文大中华区中间件事业部总经理；Turbolinux亚太区副总裁等。",
+                    "imgurl":"liutiandong.jpg"
+                }
+            ],  
+            "speechcontent":"这次的介绍将涵盖如何从零开始建设以及发展一个开源社区",
+            "ppt":"",
+            "url":""
+        },
+        {
+            "title":"如何将社区贡献和私人生活融合在一起?",
+            "time":"2021.04.25",        
+            "profilelist":[
+                {
+                    "name":"周琦",
+                    "profile":"是中国Python社区中最长情的贡献者, 从04年共同创建 CPyUG(中国Python用户组)以来,长年为 Pythonic 在中国的推广/实践进行各种尝试, 连续四届主持PyCon中国大会筹办,是大家公认的\"大妈\"(Zoom.Quiet)",
+                    "imgurl":"zhouqi.jpg"
+                    
+                }
+            ],       
+            "speechcontent":"开源社区基本结构~文化~原则~礼仪…以及自然参与的简洁姿态…",
+            "ppt":"",
+            "pptname":"",
+            "url":""
+        },
+        {         
+            "title":"那些年我们一起申请和参与的开源programs",
+            "time":"2021.05.08",
+            
+            "profilelist":[
+                {
+                    "name":"夏小雅",
+                    "profile":"X-lab、CHAOSS社区、开源社 2020-2021、Google Summer of Docs参与者",
+                    "imgurl":"xiaxiaoya.jpg"
+                }
+            ],  
+            "speechcontent":"根据自身参与GSoD和参与进开源社区的经历，帮助高校同学们融入开源中去",
+            "ppt":"",
+            "url":""
+        },
+        {         
+            "title":"从个人项目开源到Apache Member的5年 -- 如何做一个专业的开源玩家",
+            "time":"2021.05.09",
+            
+            "profilelist":[
+                {
+                    "name":"吴晟",
+                    "profile":"tetrate.io创始工程师，开源爱好者。 Apache Member、Apache SkyWalking Founder、VP和PMC成员，Apache ShardingSphere 原型作者和PMC成员，Apache孵化器PMC成员， Apache APISIX PPMC成员， Apache ECharts、 Apache DolphinScheduler孵化器导师， Zipkin成员与贡献者， CNCF OpenTracing核心贡献者。",
+                    "imgurl":"wusheng.jpg"
+                }
+            ],  
+            "speechcontent":"",
+            "ppt":"",
+            "url":""
+        },
+        {
+            "title":"开源治理的相关知识域",
+            "time":"2021.05.15",
+            
+            "profilelist":[
+                {
+                    "name":"庄表伟",
+                    "profile":"开源社理事，2020-2021年度理事长，长年参与开源社区，热爱技术，热衷分享。",
+                    "imgurl":"zhuangbiaowei.jpg"
+                }
+            ],  
+            "speechcontent":"企业内外，都有开源治理的诉求，各有区别。希望对此有所了解的朋友，可以通过此次演讲，了解相关知识域与能力项。包括这个领域的当前发展与主要探索。",
+            "ppt":"",
+            "url":""
+        },
+        {
+            "title":"通过开源手段巩固基础软件供应链",
+            "time":"2021.05.16",
+            
+            "profilelist":[
+                {
+                    "name":"郑振宇",
+                    "profile":"重症开源爱好者，专注于大数据调度、微服务基础设施构建。",
+                    "imgurl":"zhengzhenyu.jpg"
+                }
+            ],  
+            "speechcontent":"软件供应链的可靠性和连续性是近年来国内关注度很高的话题之一，使用开源软件是解决供应链问题的重要手段之一。充分运用开源手段可以高效、可持续的推动开源软件供应链成熟。本分享将结合推动国产化硬件接入主流开源社区集成验证平台的实际经验，从贡献、使能、掌握、影响等角度为听众分享通过开源手段巩固基础软件供应链的最佳实践。",
+            "ppt":"",
+            "url":""
+        },
+        {         
+            "title":"系统性能优化的路有多长？",
+            "time":"2021.05.23",
+            
+            "profilelist":[
+                {
+                    "name":"陈莉君",
+                    "profile":"陈莉君，教授，20多年驰骋于Linux内核的世界，翻译、撰写Linux内核书籍十多本，开设了《Linux内核分析与应用》、《操作系统及Linux内核》和《Linux编程技术》慕课，发起Linux内核之旅开源社区，相关网站、公众号、B站、GitHub等得到3万多Linux内核爱好者的关注，社区的Linux显微镜开源项目正如火如荼的进行。",
+                    "imgurl":"chenlijun.jpg"
+                }
+            ],  
+            "speechcontent":"随着云计算、大数据以及AI广泛应用，业务的压力也越来越大，性能优化成为每一位技术人的必修课。从产品角度来看，性能就是“攻城略地”的最佳武器，我们期待能更苛刻地使用计算机和网络设备，去做性价比更高的事；而对程序员个人而言，具备系统的性能优化方法论，无论在架构设计还是应用模块开发上都能得心应手，还能轻松应对大厂面试、技术等级晋升考核等等。Linux内核开源社区试图借助于BPF技术和开源项目Linux显微镜（LMP），架起用户态和内核态性能优化的桥梁。",
+            "ppt":"",
+            "url":""
+        },
+        {         
+            "title":"从 SegmentFault 的起源谈大学生参与开源项目",
+            "time":"2021.05.30",
+            
+            "profilelist":[
+                {
+                    "name":"祁宁 ",
+                    "profile":"祁宁，SegmentFault 思否创始人、CTO；",
+                    "imgurl":"qining.jpg"
+                }
+            ],  
+            "speechcontent":"SegmentFault 的 3 位创始人最早都是开源项目 Typecho 的贡献者，大学时期做开源项目让他们成为了好朋友和工作伙伴，然后从不同地方来到杭州共同创业创办了 SegmentFault。从 SegmentFault 的起源，我们可以和广大大学生分享一下参与开源项目的正确姿势和获益，号召更多大学生参与到开源贡献中。",
+            "ppt":"",
+            "url":""
+        }
+        
+    ]
+}

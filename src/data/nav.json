@@ -1,6 +1,6 @@
 {
     "link":[
-        "homepage"  ,"org" ,"howitworks" ,"apply","help" 
+        "homepage"  ,"org" ,"liveshow","howitworks" ,"apply","help" 
     ],
     "chi":{
         "linkdata":[
@@ -10,6 +10,10 @@
             },
             {
                 "name":"查看项目"
+                  
+            },
+            {
+                "name":"大咖说开源"
                   
             },
             {
@@ -33,6 +37,10 @@
             },
             {
                 "name":"PROJECT LIST"    
+            },
+            {
+                "name":"MASTER CLASS"
+                  
             },
             {
                 "name":"HOW IT WORKS" 
