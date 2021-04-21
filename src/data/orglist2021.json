@@ -1132,6 +1132,7 @@
 },
 
 {
+  "userId":297,
   "anchor": "jenkins",
   "slide": "",
   "video": "",
@@ -1155,7 +1156,7 @@
   "project_list": []
 },
 {
-  "orgId": 1,
+  "userId": 132,
   "anchor": "openeuler",
   "slide": "",
   "video": "",
@@ -1686,6 +1687,7 @@
   "project_list": []
 },
 {
+  "userId":357,
   "anchor": "opencurve",
   "slide": "",
   "video": "",
@@ -2459,6 +2461,96 @@
   "mail_list": "",
   "email": "info@mask.io",
   "project_list": []
+}, {
+	"userId": 269,
+	"anchor": "universaloj",
+	"slide": "",
+	"video": "",
+	"img": "uoj.png",
+	"title": "Universal OJ 开源社区",
+	"orgTypeDesc": "开源社区",
+	"orgType": 1,
+	"project_url": "",
+	"url": "https://github.com/UniversalOJ",
+	"description": "一款通用的在线评测系统。",
+	"full_des": "Universal OJ 开源社区是以吕凯风 vfleaking 开发的 UOJ 为基础的二次开发社群；Universal OJ 开源社区专注于对算法题目的评测，为学习算法提供便利。",
+	"tech_tag": ["Linux", "Python", "C", "PHP", "C++", "Git", "Docker"],
+	"domain_tag": ["Web"],
+	"mail_list": "billchenchina2001@gmail.com",
+	"email": "QQ 群 560621197 / Telegram @uojos",
+	"project_list": []
+}, {
+	"userId": 283,
+	"anchor": "datenlord",
+	"slide": "",
+	"video": "",
+	"img": "datenlord.png",
+	"title": "DatenLord",
+	"orgTypeDesc": "开源社区",
+	"orgType": 1,
+	"project_url": "",
+	"url": "https://datenlord.io",
+	"description": "DatenLord是新一代云原生分布式存储，专门解决异构、多云场景下数据统一存储管理的问题。 DatenLord由来自多名Google、华为的资深工程师发起，采用软硬结合的方式实现高性能存储。目前，DatenLord大量采用内核旁路、硬件加速等底层技术，诸如io_uring、RDMA、SerDes等软硬件技术手段，实现存储性能的十倍以上提升。",
+	"full_des": "存储是非常有技术挑战的领域，非常典型的软硬结合的技术领域，其难度堪比操作系统内核，不亚于芯片的研发难度。DatenLordd的主要技术亮点如下： 1、DatenLord采用全新自研架构，绕过操作系统内核，自主控制存储IO，极大地发挥出新一代存储硬件的高性能。目前存储硬件的革新正在驱动存储软件架构升级。闪存硬盘日趋流行，非易失内存的出现，使得现有操作系统内核里对存储的管理变成存储性能瓶颈。DatenLord采用异步编程架构并绕过操作系统内核，实现完全不依赖内核，自主调度管理存储IO，极大地提升了存储的性能。 2、DatenLord提供统一的存储接口，满足不同场景需求。目前存储领域存在多种异构存储接口，包括文件存储、对象存储、块存储等，分别满足不同场景存储需求。但是不同的存储接口需要应用来适配，对应用最友好的是文件存储，但是文件存储的容量有限，无法线性扩展，迁移困难。对海量数据管理最友好的是对象存储，但是应用需要适配对象存储的接口。块存储是为虚拟化场景提供存储支持，应用不能直接访问。DatenLord整合多种存储接口，在面向应用时提供文件存储，在面向跨云数据管理时提供对象存储，在对接虚拟化场景时提供块存储，并实现数据对多个存储接口的互通。 3、DatenLord利用片上系统提升存储性能。片上系统是目前硬件和云计算领域最热门的技术之一，采用硬件芯片来完成特定场景的计算任务。DatenLord采用FPGA可编程芯片和ASIC专用芯片实现存储场景的相关计算功能，诸如数据加密解密、数据压缩解压缩、音视频编解码、模式识别等场景，有力提升数据存储和处理的性能。",
+	"tech_tag": ["Linux Kernel","Cloud Native","Distributed System","Storage"],
+	"domain_tag": ["Linux","Distributed System","Rust","Kubernetes","RDMA","FPGA"],
+	"mail_list": "",
+	"email": "dev@datenlord.io",
+	"project_list": []
+}, {
+	"userId": 256,
+	"anchor": "hgbczxjt",
+	"slide": "",
+	"video": "",
+	"img": "hebi.png",
+	"title": "合璧操作系统",
+	"orgTypeDesc": "公司",
+	"orgType": 3,
+	"project_url": "",
+	"url": "https://hybridos.fmsoft.cn/",
+	"description": "合璧操作系统 HybridOS 是一个为智能物联网设备和云计算环境设计的全新开源操作系统。",
+	"full_des": "相较于运行在单机硬件环境中的传统操作系统，合璧操作系统 HybridOS 尝试为开发者提供更多可能。HybridOS 不仅仅为支持物联网应用的开发而运行在设备侧，同时也为客户端和云计算提供了编程接口。HybridOS 尝试为开发者提供一个从设备到云端再到客户端的全新软件栈和协议栈。",
+	"tech_tag": ["Linux", "C", "RTOS", "C++", "IoT"],
+	"domain_tag": ["OS", "嵌入式软件开发，开源社区"],
+	"mail_list": "",
+	"email": "summer2021@minigui.com",
+	"project_list": []
+}, {
+	"userId": 270,
+	"anchor": "linux",
+	"slide": "",
+	"video": "",
+	"img": "lug@ustc.png",
+	"title": "中科大学生 Linux 用户协会",
+	"orgTypeDesc": "开源社区",
+	"orgType": 1,
+	"project_url": "",
+	"url": "https://lug.ustc.edu.cn/",
+	"description": "科⼤的⼀个技术类、Linux/⾃由软件社团",
+	"full_des": "中国科学技术大学学生 Linux 用户协会（科大 LUG）是由在校的 GNU/Linux 爱好者发起并组成的全校性群众团体，是一个以推广自由软件文化、宣传自由软件价值为目的的协会组织",
+	"tech_tag": ["Go", "Linux", "Python", "JavaScript", "Container", "NodeJS", "React", "Rust", "TypeScript", "Stroage", "Git", "Docker"],
+	"domain_tag": ["Linux Kernel", "OS", "Container", "Web", "Mirrors"],
+	"mail_list": "ustc_lug@googlegroups.com",
+	"email": "lug@ustc.edu.cn",
+	"project_list": []
+}, {
+	"userId": 279,
+	"anchor": "longgui",
+	"slide": "",
+	"video": "",
+	"img": "longgui.png",
+	"title": "龙归科技",
+	"orgTypeDesc": "开源社区",
+	"orgType": 1,
+	"project_url": "",
+	"url": "https://www.longguikeji.com/home",
+	"description": "北京「龙归科技」是一个专注于低代码赋能企业级信息化服务提供商。核心创始人团队来自绿盟安全、红帽开源操作系统、知名游戏玩蟹科技、知名开源社区等专家共同创立。 ArkID 方舟一账通：是一个开源 IDaaS 框架，基于 Vue + Django 框架，插件化、多租户、支持多种认证协议",
+	"full_des": "「龙归科技」致力于让中国每一个企业拥有专属的自动化办公操作系统，助力企业或政府拥抱（Cloud Native First）云原生优先战略，帮助客户构筑以「身份与应用」为中心的现代化 IT 基础设施！从而实现「企业数字化转型」及「软件行业工业化生产」 ！ 主打产品：ArkID 方舟一帐通，统一身份认证平台；ArkOS 方舟操作系统：一个企业级办公自动化操作系统，结合自研低代码应用开发平台，构建产业生态，专注为各类企业与组织机构打造一体化全栈云原生平台。系统自带应用包括：ArkID，ArkIDE，ArkPlatform，App Store 等产品。截至目前，公司已经获得 15个 软件著作权、2个 发明专利，并与2020年11月份，获得 北京海淀区中关村国家高新技术企业认定。 ArkID 方舟一账通：是一个开源 IDaaS 框架，基于 Vue + Django 框架，插件化、多租户、支持多种认证协议，如：OAuth 2.0、LDAP、SAML 2.0、OIDC 等。既可作为企业终端客户统一管理 CIAM，也可作为企业内部雇员、外部伙伴统一身份管理IAM。彻底告别企业内多系统、多账号的治理烦恼, 保障企业信息安全！ 聚焦在在数字政府一网通办、智慧教育、智慧医疗、智慧交通、金融科技、工业互联网-数字化转型等多系统账号体系打通场景！",
+	"tech_tag": ["OS","Cloud Native","Container","Programming Language"],
+	"domain_tag": ["Python","JavaScript","NodeJS","TypeScript","Automation","Git","Docker"],
+	"mail_list": "",
+	"email": "bd@longguikeji.com",
+	"project_list": []
 }
 
 
