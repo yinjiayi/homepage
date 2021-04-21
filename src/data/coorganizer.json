@@ -220,6 +220,11 @@
             "url":"https://sofastack.tech/"
         }, 
         {
+            "name":"Chaoss",
+            "img":"chaoss.png",
+            "url":"https://chaoss.community/"
+        },
+        {
             "name":"Dokit",
             "img":"dokit.png",
             "url":"https://www.dokit.cn"
