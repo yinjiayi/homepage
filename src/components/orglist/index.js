@@ -17,18 +17,19 @@ import orglist from '../../data/orglist2021.json';
 import { connect } from 'react-redux';
 import OrgTip from '../../components/OrgTip/index.js';
 import {getSplit} from "../../util/url.js";
+import { Input } from 'antd';
+const { Search } = Input;
 class Orglist extends React.Component{
     constructor(props){
        super(props)
        this.state ={
            data,
            orgflag:"",
+           showorglist:orglist,
            
        }
 
-       this.closeModall  = this.closeModall.bind(this);
-
-       
+       this.closeModall  = this.closeModall.bind(this);    
     }
 
     openOrgModal(anchor){
@@ -48,6 +49,32 @@ class Orglist extends React.Component{
         })
     }
 
+    filterItem(value){
+      
+        if(value){
+            var showdataTemp = []
+            orglist.map((item)=>{
+                if(item.title.toString().includes(value)||
+                item.description.toLocaleLowerCase().includes(value)){
+                    showdataTemp.push(item)
+                }
+                return 0;
+            })
+            
+            this.setState({
+                showorglist:showdataTemp
+                
+            })
+        }else{
+           
+            this.setState({
+                showorglist:orglist          
+            })
+
+        }            
+        return 0;
+    }
+
 
 
    
@@ -57,14 +84,25 @@ class Orglist extends React.Component{
 
     render(){
         let showdata = this.state.data[this.props.chiFlag]
+        let showorglist = this.state.showorglist
+        const lenorg = showorglist.length
         return(         
-            <div className="Orglist">         
+            <div className="Orglist">  
+                <div className="OrglistSearch">  
+                 <Search                      
+                        placeholder={showdata.searchPlaceholder}
+                        allowClear
+                        size="large"
+                        onSearch={value => this.filterItem(value)}
+                    /></div>
                 <div className="OrglistBanner">
-                    {showdata.rank}
+                    <span className="OrglistBannerTotal">{showdata.total[0]}{lenorg}{showdata.total[1]}</span>
+                    <span className="italic">{showdata.rank}</span>
+                    
                 </div>
                 <div className="OrgListWrapper">
                     {
-                        orglist.map((item,index)=>{
+                        showorglist.map((item,index)=>{
                             const iconUrl = require('./../../img/organisation/'+item.img).default;
                             return(
                                 <div className="OrgListItem" key={index} >
