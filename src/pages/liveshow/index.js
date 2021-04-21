@@ -14,6 +14,7 @@ import React from 'react'
 import './index.less';
 import LiveModal from '../../components/livemodal/index.js'
 import data from '../../data/liveshow.json';
+import showdata from '../../data/liveshowdata.json';
 export default class Liveshow extends React.Component{
     constructor(props){
        super(props)
@@ -30,6 +31,13 @@ export default class Liveshow extends React.Component{
         return(         
             <div className="Liveshow">
                 <div className="LiveshowBanner">
+                    <div className="LiveshowBannerTitle">{showdata.bannertitle}</div>
+                    <div className="LiveshowBannerorg">{showdata.org}</div>
+                    <div className="LiveshowBannerText">
+                         {showdata.text}
+                         <br className="mobiledisplaynone"/>
+                         {showdata.text2}
+                    </div>
 
                 </div>
                 <div className="LiveShowWrapper">
