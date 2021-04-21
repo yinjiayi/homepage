@@ -4,6 +4,11 @@
             "name":"芽木科技",
             "img":"yamu.png",
             "url":"https://www.debian.org/"
+        },
+        {
+            "name":"oschina",
+            "img":"oschina.png",
+            "url":"https://www.oschina.net/"
         }
     ],
     
@@ -243,6 +248,33 @@
             "name":"Mask Network",
             "img":"mask.png",
             "url":"https://mask.io"
+        }, 
+        {
+            "name":"uoj",
+            "img":"uoj.png",
+            "url":"https://github.com/UniversalOJ"
+        }, 
+       
+        {
+            "name":"datenlord",
+            "img":"datenlord.png",
+            "url":"https://datenlord.io"
+        }, 
+        
+        {
+            "name":"合璧",
+            "img":"hebi.png",
+            "url":"https://hybridos.fmsoft.cn/"
+        }, 
+        {
+            "name":"中科大学生 Linux 用户协会",
+            "img":"lug@ustc.png",
+            "url":"https://lug.ustc.edu.cn/"
+        }, 
+        {
+            "name":"龙归科技",
+            "img":"longgui.png",
+            "url":"https://www.longguikeji.com/home"
         }
     ]
 }
