@@ -40,12 +40,8 @@ class ProjectlistN extends React.Component{
 
 
 
-    componentDidMount(){ 
-           
-      
-        this.getData()
-        
-        
+    componentDidMount(){         
+        this.getData()   
     }
 
     getPageData(page){
@@ -144,8 +140,12 @@ class ProjectlistN extends React.Component{
         this.getPageData(page)
     };
 
-    gohashlink(orgtitle){
-        window.location.hash="/org/orgdetail/"+orgtitle
+    gohashlink(orgtitle,proid){
+        let url = "/org/orgdetail/"+orgtitle
+        if(proid){
+            url += "?proid="+proid
+        }
+        window.location.hash=url
         this.props.setOrgTabFlag("orglist")
     }
 
@@ -312,12 +312,13 @@ class ProjectlistN extends React.Component{
                                     return(
                                         <div className="ProjectListLCLine Item" key={index}>
                                             <span className="ProjectListLCID ">{item.label}</span>
-                                            <span className="ProjectListLCName" onClick={()=>{this.gohashlink(item.anchor)}}>{item.name}</span>
+                                            <span className="ProjectListLCName" onClick={()=>{this.gohashlink(item.anchor,item.label)}}>{item.name}</span>
                                             <span className="ProjectListLCCommunity" onClick={()=>{this.gohashlink(item.anchor)}}>
                                                 {getSplit( item.orgtitle,this.props.chiFlag)}</span>
                                             <span className="ProjectListLCDegree">{this.getDegreeBy(item.difficulty)}</span>
                                             <span className="ProjectListLCOperation Item">
-                                                <span className="PLOperationButton prodetail" onClick={()=>{this.goLink(item.link?item.link:item.prourl)}}>{showdata.operationbutton[0]}</span>
+                                                
+                                                <span className="PLOperationButton prodetail" onClick={()=>{this.gohashlink(item.anchor,item.label)}}>{showdata.operationbutton[0]}</span>
                                                 <span className="PLOperationButton proapply">{showdata.operationbutton[1]}</span>
                                             </span>
                                         </div>

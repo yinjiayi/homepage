@@ -22,6 +22,7 @@ class ProjectModal extends React.Component{
            
        }
     }
+ 
 
     getDegree(degree){
         return {
@@ -55,7 +56,7 @@ class ProjectModal extends React.Component{
         let showdata = this.props.showdata
         let item = this.props.item
         return(         
-            <div className={["projectListItem",this.getDegree(item.difficulty)].join(" ")} >
+            <div id={item.label} className={["projectListItem",this.getDegree(item.difficulty)].join(" ")} >
                 <div className="projectListItemLeft">
                     <div className="orgProjectTitleBar">
                         
@@ -86,7 +87,10 @@ class ProjectModal extends React.Component{
                             <li>{showdata.proMentor}{item.mentor}</li>
                             <li>{showdata.proMentorContact}<a href={"mailto:"+item.contact}>{item.contact}</a></li>
                         </ul>
-                        <div className=" orgProjectButton" onClick={()=>{this.goLink(this.props.prourl)}}>{showdata.proDetail}</div></div>
+                        {
+                            item.link?<div className=" orgProjectButton" onClick={()=>{this.goLink(item.link)}}>{showdata.proDetail}</div>:""
+                        }
+                        </div>
                 </div>
 
             </div>
