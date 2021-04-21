@@ -13,7 +13,7 @@
 import React from 'react'
 import './index.less';
 import { connect } from 'react-redux';
-import { Input, Space } from 'antd';
+import { Input } from 'antd';
 import data from '../../data/orglist2021.json';
 import projectlist from '../../data/projectlist.json';
 import { Pagination } from 'antd';
