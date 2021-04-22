@@ -17,10 +17,6 @@ import {getSplit} from "../../util/url.js";
 class ProjectModal extends React.Component{
     constructor(props){
        super(props)
-       this.state ={
-          
-           
-       }
     }
  
 
