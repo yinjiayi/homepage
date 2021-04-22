@@ -48,8 +48,15 @@ class Header extends React.Component{
 
     
     componentDidMount(){
+
+        //1.0 浏览器语言不是中文的切换到英文版本展示
+        if(window.navigator && window.navigator.language){
+            if(window.navigator.language !== "zh-CN"){
+                this.switchFlag('en')
+            }
+        }
        
-        titleChange();
+       titleChange();
        setTimeout(()=>{
            let hashopl = window.location.hash.split("#/");         
            if(hashopl[1] === ""){

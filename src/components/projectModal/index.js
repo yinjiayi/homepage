@@ -13,7 +13,7 @@
 import React from 'react'
 import './index.less';
 import { connect } from 'react-redux'
-
+import {getSplit} from "../../util/url.js";
 class ProjectModal extends React.Component{
     constructor(props){
        super(props)
@@ -60,7 +60,10 @@ class ProjectModal extends React.Component{
                 <div className="projectListItemLeft">
                     <div className="orgProjectTitleBar">
                         
-                        <div className="orgProjectTitle">{item.name}</div>
+                        <div className="orgProjectTitle">
+                            {getSplit(item.name,this.props.chiFlag)}
+                            
+                        </div>
                         <div className="orgProjectLine">
                             <div className="orgProjectId">{showdata.projectID} {item.label}</div>
                             {
@@ -81,7 +84,9 @@ class ProjectModal extends React.Component{
 
                 </div>
                 <div className="projectListItemRight">
-                    <div className="orgProjectDes">{item.description}</div>
+                    <div className="orgProjectDes">
+                        {getSplit(item.description,this.props.chiFlag)}
+                        </div>
                     <div>
                         <ul className="projectListItemRightUl">
                             <li>{showdata.proMentor}{item.mentor}</li>
