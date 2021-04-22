@@ -312,7 +312,10 @@ class ProjectlistN extends React.Component{
                                     return(
                                         <div className="ProjectListLCLine Item" key={index}>
                                             <span className="ProjectListLCID ">{item.label}</span>
-                                            <span className="ProjectListLCName" onClick={()=>{this.gohashlink(item.anchor,item.label)}}>{item.name}</span>
+                                            <span className="ProjectListLCName" onClick={()=>{this.gohashlink(item.anchor,item.label)}}>
+                                                
+                                                {getSplit( item.name,this.props.chiFlag)}
+                                            </span>
                                             <span className="ProjectListLCCommunity" onClick={()=>{this.gohashlink(item.anchor)}}>
                                                 {getSplit( item.orgtitle,this.props.chiFlag)}</span>
                                             <span className="ProjectListLCDegree">{this.getDegreeBy(item.difficulty)}</span>
