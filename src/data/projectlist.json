@@ -20,10 +20,12 @@
         "proMentorContact":"导师联系方式：",
         "proDetail":"项目详情",
         "prodegree":["全部","低","中","高"],
-        "itemRender":["上一页","下一页"]
+        "itemRender":["上一页","下一页"],
+        "lang":"支持语言: "
 
     },
     "en":{
+        "lang":"Language: ",
         "searchPlaceholder":"Please enter key words/project id",
         "order":["By Community","By ProjectID"],
         "applyState":["Application is open","Close application","The projects will be uploaded one after another, so stay tuned!"],
@@ -45,5 +47,6 @@
         "proDetail":"Project Details",
         "prodegree":["All","Low","Medium","High"],
         "itemRender":["previous","Next"]
+        
     }
 }

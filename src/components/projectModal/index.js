@@ -39,6 +39,14 @@ class ProjectModal extends React.Component{
         }[degree]||"Low"
     }
 
+    getSupportLanguage(num){
+        return {
+            0:"中文/English",
+            1:"中文",
+            2:"English"
+        }[num]||"中文"
+    }
+
     goLink(link){
         window.open(link)
     }
@@ -54,11 +62,9 @@ class ProjectModal extends React.Component{
         return(         
             <div id={item.label} className={["projectListItem",this.getDegree(item.difficulty)].join(" ")} >
                 <div className="projectListItemLeft">
-                    <div className="orgProjectTitleBar">
-                        
+                    <div className="orgProjectTitleBar">                
                         <div className="orgProjectTitle">
-                            {getSplit(item.name,this.props.chiFlag)}
-                            
+                            {getSplit(item.name,this.props.chiFlag)}                      
                         </div>
                         <div className="orgProjectLine">
                             <div className="orgProjectId">{showdata.projectID} {item.label}</div>
@@ -72,6 +78,7 @@ class ProjectModal extends React.Component{
                                                 
                         <div className="orgProjectBottomLeft">
                             <div>{showdata.proDi}{this.getDegreeBy(item.difficulty)}</div>
+                            <div>{showdata.lang}{this.getSupportLanguage(item.spl)}</div>
                             {/* 功能暂未上线 */}
                             {/* <div>{showdata.proSelectStu}{item.student_name}</div> */}
                             {/* <div className="orgProjectName">{item.orgtitle}</div> */}
