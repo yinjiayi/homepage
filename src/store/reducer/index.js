@@ -1,7 +1,9 @@
 const initState = {
     chiFlag:"chi", // chi|en
     orgdetail:{},  // 显示orgDetail数据
-    orgTabFlag:"orglist" // orglist|projectlist
+    prodetail:{},   // 显示ProjectDetail数据
+    orgTabFlag:"orglist",  // orglist|projectlist
+    proalldata:[]
 }
 
 export const reducer = (state = initState,action)=>{
@@ -21,6 +23,16 @@ export const reducer = (state = initState,action)=>{
             return{
                 ...state,
                 orgdetail:action.payload
+            }
+        case "setProDetail":
+            return{
+                ...state,
+                prodetail:action.payload
+            }
+        case "setProAllData":
+            return{
+                ...state,
+                proalldata:action.payload
             }
         case "setOrgTabFlag":
             return{

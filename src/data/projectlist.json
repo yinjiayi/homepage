@@ -14,14 +14,24 @@
         "operationbutton":["项目详情","我要报名"],
         "proDi":"难   度：",
         "proDegree":"难度",
+        "proD":"难度：",
         "proSelectStu":"中选学生：",
         "proStore":"项目公示",
         "proMentor":"项目社区导师：",
+        "proM":"项目主导师：",
+        "proU":"项目联合导师：",
         "proMentorContact":"导师联系方式：",
         "proDetail":"项目详情",
+        "proCommuDe":"转至社区",
         "prodegree":["全部","低","中","高"],
         "itemRender":["上一页","下一页"],
-        "lang":"支持语言: "
+        "lang":"支持语言: ",
+        "domain":"专注领域:",
+        "tech":"技术标签:",
+        "desc":"项目描述:",
+        "remark":"项目备注:",
+        "outre":"项目产出要求",
+        "techre":"项目技术要求"
 
     },
     "en":{
@@ -40,13 +50,23 @@
         "operationbutton":["Detailed Info","Apply"],
         "proDi":"Degree of Difficulty: ",
         "proDegree":"Degree of Difficulty",
+        "proD":"Degree of Difficulty: ",
         "proSelectStu":"Selected Student:",
         "proStore":"Repository of Project ",
         "proMentor":"Mentor of Project: ",
+        "proM":"Mentor of Project: ",
+        "proU":"Project Co-Instructor:",
         "proMentorContact":"Contact Information: ",
         "proDetail":"Project Details",
         "prodegree":["All","Low","Medium","High"],
-        "itemRender":["previous","Next"]
+        "proCommuDe":"Go Community",
+        "itemRender":["previous","Next"],
+        "domain":"Labels of Focus Field:",
+        "tech":"Labels of Technical Field:",
+        "desc":"Description:",
+        "remark":"Remark:",
+        "outre":"Output requirements",
+        "techre":"Technique requirements"
         
     }
 }

@@ -2,6 +2,10 @@ var gourl = (url)=>{
     window.open(url)
 }
 
+var gohash = (hash)=>{
+    window.location.hash = hash
+}
+
 /**
  * Copyright (c) 2020 Intelligent Software Research Center of ISCAS
  * Summer 2020 Homepage is licensed under Mulan PSL v2.
@@ -68,9 +72,19 @@ var getSplit = function(item,flag){
     }
 }
 
+var getSupportLanguage = function(num){
+    return {
+        0:"中文/English",
+        1:"中文",
+        2:"English"
+    }[num]||"中文"
+}
+
 
 export {
     gourl,
+    gohash,
     titleChange,
-    getSplit
+    getSplit,
+    getSupportLanguage
 }

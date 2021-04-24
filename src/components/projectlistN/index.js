@@ -26,11 +26,14 @@ class ProjectlistN extends React.Component{
        this.state ={   
            page:1,
            pagesize:40,
-           datall: [],  
+           datall: [],  // 显示的project所有数据
            searchdatastock:[],      
            datastock:[],      // project 所有数据
            projectlistdata:[],// 显示的project数据
            degreeselect:"all",
+           langSelect:"all",
+           techSelect:"all",
+           areaSelect:"all"
         //    orderSelect:"community" // community proid    
        }
        this.itemRender = this.itemRender.bind(this)
@@ -113,6 +116,7 @@ class ProjectlistN extends React.Component{
             datastock:prodata,
             projectlistdata:prodata.slice(0,this.state.pagesize),
         })
+        
     }
 
     itemRender(current, type, originalElement) {
@@ -373,8 +377,10 @@ const mapStateToProps = (state)=>{
                 type:'setOrgTabFlag',
                 payload:data
             })
-        },
+        }
     }
 }
+
+
 
 export default connect(mapStateToProps,mapDispatchToProps)(ProjectlistN)
