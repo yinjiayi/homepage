@@ -56,7 +56,9 @@ class ProjectDetail extends React.Component{
             if(proid[1]){
                 //3.0 从数据中查找projectid
                 for(let orgitem of data ){
-                    const prolablelist = orgitem.project_list.map((pro)=>{return pro.label})               
+                    const prolablelist = orgitem.project_list.map((pro)=>{return pro.label})
+                    console.log(prolablelist)
+                   
                     const indexp = prolablelist.indexOf(proid[1])
                     if( indexp > -1 ){
                         showprodata = orgitem.project_list[indexp]
@@ -168,7 +170,7 @@ class ProjectDetail extends React.Component{
 
                         </div>
                         <div className="ProDeTaLine ">
-                            <div className="ProDeTagItem desc">
+                            <div className="ProDeTagItem ">
                                 <span>{showdata.desc}</span>
                             </div>
                             <div  className="ProDeTag ">
@@ -179,7 +181,7 @@ class ProjectDetail extends React.Component{
                         {
                             prodetail.remark?
                             <div className="ProDeTaLine ">
-                                <div className="ProDeTagItem desc">
+                                <div className="ProDeTagItem ">
                                     <span>{showdata.remark}</span>
                                 </div>
                                 <div  className="ProDeTag ">
@@ -201,9 +203,7 @@ class ProjectDetail extends React.Component{
                             {
                                 prodetail.oR.map((item,index)=>{
                                     return(
-                                        <div className="ProDeReItem" key={index}>
-                                            {getSplit(item,this.props.chiFlag)}
-                                        </div>
+                                        <div className="ProDeReItem" key={index}>{item}</div>
                                     )
                                 })
 
