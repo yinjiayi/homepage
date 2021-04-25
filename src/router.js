@@ -50,7 +50,8 @@ export default class IRouter extends React.Component{
                                         <Switch>
                                             <Route path = {["/org", "/org/orglist"]}  component={Orglist} exact ></Route>                      
                                             <Route path="/org/projectlist" component={ProjectlistN} exact></Route>  
-                                            <Route path="/org/orgdetail/:orgname" component={OrgDetail} ></Route>  
+                                            <Route path="/org/orgdetail/:orgname" component={OrgDetail} ></Route>
+                                            <Route path="/org/orgdetail/:orgname/proid*" component={OrgDetail} ></Route>  
                                             <Route path="/org/prodetail/:projectid" component={ProjectDetail} ></Route>     
                                         </Switch>                                     
                                     </Org>   
