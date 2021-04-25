@@ -13,7 +13,7 @@
 import React from 'react'
 import './index.less';
 import { connect } from 'react-redux'
-import {getSplit} from "../../util/url.js";
+import {getSplit,getSupportLanguage} from "../../util/url.js";
 class ProjectModal extends React.Component{
     constructor(props){
        super(props)
@@ -39,16 +39,15 @@ class ProjectModal extends React.Component{
         }[degree]||"Low"
     }
 
-    getSupportLanguage(num){
-        return {
-            0:"中文/English",
-            1:"中文",
-            2:"English"
-        }[num]||"中文"
-    }
+
 
     goLink(link){
         window.open(link)
+    }
+
+    goHash(){
+        this.props.setProDetail(this.props.item)
+        window.location.hash = "/org/prodetail/"+this.props.item.label
     }
 
   
@@ -78,7 +77,7 @@ class ProjectModal extends React.Component{
                                                 
                         <div className="orgProjectBottomLeft">
                             <div>{showdata.proDi}{this.getDegreeBy(item.difficulty)}</div>
-                            <div>{showdata.lang}{this.getSupportLanguage(item.spl)}</div>
+                            <div>{showdata.lang}{getSupportLanguage(item.spl)}</div>
                             {/* 功能暂未上线 */}
                             {/* <div>{showdata.proSelectStu}{item.student_name}</div> */}
                             {/* <div className="orgProjectName">{item.orgtitle}</div> */}
@@ -90,15 +89,20 @@ class ProjectModal extends React.Component{
                     <div className="orgProjectDes">
                         {getSplit(item.description,this.props.chiFlag)}
                         </div>
-                    <div>
+                    <div className="proCardUL">
                         <ul className="projectListItemRightUl">
                             <li>{showdata.proMentor}{item.mentor}</li>
                             <li>{showdata.proMentorContact}<a href={"mailto:"+item.contact}>{item.contact}</a></li>
                         </ul>
-                        {
-                            item.link?<div className=" orgProjectButton" onClick={()=>{this.goLink(item.link)}}>{showdata.proDetail}</div>:""
-                        }
+                        <div className="proCardULButton">
+                            <div className="orgProjectButton" onClick={()=>{this.goHash()}}>{showdata.proDetail}</div>                        
+                            {
+                                item.link?<div className=" orgProjectButton" onClick={()=>{this.goLink(item.link)}}>{showdata.proCommuDe}</div>:""
+                            }
+
                         </div>
+                        
+                    </div>
                 </div>
 
             </div>
@@ -115,5 +119,17 @@ const mapStateToProps = (state)=>{
        chiFlag:state.chiFlag
    }
  }
+
+ const mapDispatchToProps = dispatch => {
+    return {
+        setProDetail:(data)=>{
+            dispatch({
+                type:'setProDetail',
+                payload:data
+            })
+        }
+    }
+}
  
- export default connect(mapStateToProps)(ProjectModal)
+ export default connect(mapStateToProps,mapDispatchToProps)(ProjectModal)
+ 
