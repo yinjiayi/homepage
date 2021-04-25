@@ -63,7 +63,7 @@ class OrgDetail extends React.Component{
         window.scrollTo({
             top: 0
         });
-        console.log("orgdeail")
+       
         let showorg = this.props.orgdetail
         
         var hashurl = this.props.history.location.pathname.split("/")[3].toString();  
