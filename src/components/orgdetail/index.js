@@ -20,7 +20,7 @@ import OrgTip from '../OrgTip/index.js';
 import prolistjson from '../../data/projectlist.json';
 import ProjectModal from '../projectModal/index.js';
 import { Pagination } from 'antd';
-
+import {gohash} from "../../util/url.js";
 class OrgDetail extends React.Component{
     constructor(props){
        super(props)
@@ -118,11 +118,6 @@ class OrgDetail extends React.Component{
         
     }
 
-    goOrgList(){
-        window.location.hash = "/org/orglist"
-    }
-
-
     itemRender(current, type, originalElement) {
         if (type === 'prev') {
           return <a>上一页</a>;
@@ -153,7 +148,7 @@ class OrgDetail extends React.Component{
         return(         
             <div className="OrgDetail">   
                 <div className="OrgDetailNavLink content1200">   
-                    <span className="orgListNavBarItem orgClick" onClick={()=>{this.goOrgList()}}>社区列表</span>
+                    <span className="orgListNavBarItem orgClick" onClick={()=>{gohash("/org/orglist")}}>社区列表</span>
                     <span className="orgListNavBarItem orgGrey"> &gt; 社区详情</span>              
                 </div>
                 <div className="OrgDetailWrapper">

@@ -15,6 +15,7 @@ import './index.less';
 import {withRouter} from 'react-router-dom';
 import data from './../../data/org.json';
 import { connect } from 'react-redux';
+import { gohash } from '../../util/url';
 class Org extends React.Component{
     constructor(props){
        super(props)
@@ -36,9 +37,7 @@ class Org extends React.Component{
 
     handleClick(hashurl){
         this.props.setOrgTabFlag(hashurl)
-        console.log(this.props)
-        this.props.history.push('/org/'+hashurl)
-        
+        gohash('/org/'+hashurl)    
     }
 
  

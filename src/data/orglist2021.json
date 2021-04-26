@@ -4625,4 +4625,22 @@
 	"mail_list": "",
 	"email": "bd@longguikeji.com",
 	"project_list": []
+}, {
+	"userId": 377,
+	"anchor": "gitcourse",
+	"slide": "",
+	"video": "",
+	"img": "gitcourse.jpg",
+	"title": "gitcourse",
+	"orgTypeDesc": "开源社区",
+	"orgType": 1,
+	"project_url": "",
+	"url": "http://gitcourse-io.kfcoding.com/",
+	"description": "在线编程实训平台",
+	"full_des": "GitCourse 是一款强大的在线实训工具，其基于 Markdown 进行内容渲染，基于 Git 进行分布式内容创作协作，使用 Docker 作为实训环境，覆盖在线实训的各个场景。",
+	"tech_tag": ["Go", "Linux", "Cloud Native", "Container", "JavaScript","React","TypeScript","Git","Docker"],
+	"domain_tag": ["Cloud Native","Container","Distributed System","Web"],
+	"mail_list": "wsl@hypertrons.io liuchangfreeman@live.com",
+	"email": "dev@hypertrons.io",
+	"project_list": []
 }]

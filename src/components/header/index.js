@@ -15,7 +15,7 @@ import './index.less';
 import {NavLink} from 'react-router-dom';
 import { connect } from 'react-redux';
 import data from './../../data/nav.json';
-import {titleChange} from './../../util/url.js';
+import {titleChange,gohash} from './../../util/url.js';
 class Header extends React.Component{
     constructor(props){
        super(props)
@@ -32,8 +32,11 @@ class Header extends React.Component{
         msg === 'chi'?this.props.chiFlag_chi():this.props.chiFlag_en();
         this.setState({
             chiFlag:msg
-        })
+        })     
     }
+
+   
+
 
     headerlist(flag){
         this.setState({
@@ -42,7 +45,7 @@ class Header extends React.Component{
     }
 
     getLink(title){
-        window.location.hash = "/"+title
+        gohash("/"+title)
         this.headerlist(false)
     }
 
@@ -55,8 +58,10 @@ class Header extends React.Component{
                 this.switchFlag('en')
             }
         }
+
        
        titleChange();
+
        setTimeout(()=>{
            let hashopl = window.location.hash.split("#/");         
            if(hashopl[1] === ""){
