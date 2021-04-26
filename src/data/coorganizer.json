@@ -275,11 +275,6 @@
             "name":"龙归科技",
             "img":"longgui.png",
             "url":"https://www.longguikeji.com/home"
-        }, 
-        {
-            "name":"gitcourse",
-            "img":"GitCourse.png",
-            "url":"http://gitcourse-io.kfcoding.com/"
         }
     ]
 }

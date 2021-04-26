@@ -34,7 +34,6 @@ class OrgDetail extends React.Component{
     }
 
     scrollToAnchor(anchorName){
-
         if (anchorName) {
             // 找到锚点
             let anchorElement = document.getElementById(anchorName);
@@ -42,8 +41,8 @@ class OrgDetail extends React.Component{
             // 如果对应id的锚点存在，就跳转到锚点
             if(anchorElement) { 
                 // anchorElement.scrollIntoView({block: 'start', behavior: 'smooth'});
-                var elementPosition =anchorElement.getBoundingClientRect().top+window.scrollY -  100;
-                console.log(anchorElement.getBoundingClientRect().top)
+                var elementPosition =anchorElement.getBoundingClientRect().top -  100;
+                
                 window.scrollTo({
                     top: elementPosition,
                     behavior: "smooth"
@@ -52,12 +51,18 @@ class OrgDetail extends React.Component{
         }
     }
 
-   
     componentDidMount(){
+        
+        if(this.state.flagProid){
+            this.scrollToAnchor(this.state.flagProid)
+        }
+        
+    }
+
+    componentWillMount(){
         window.scrollTo({
             top: 0
         });
-        console.log("000")
        
         let showorg = this.props.orgdetail
         
@@ -78,24 +83,18 @@ class OrgDetail extends React.Component{
             this.props.history.push("/")
             return false
         }
-        //4.0 判断projectid
+        //4.0 判断projectid的位置
         const prolist = showorg.project_list
-        const hash = window.location.hash.split("/")
-        let prolabel = null
-        if(hash.length === 5 && hash[4].slice(0,5) === "proid"){
-            prolabel = hash[4].slice(5,hash[4].length)
-        }
-       
-         //5.0 判断当前的project在哪一页
+        const prolabel = this.props.history.location.search.split("?proid=")
         let proindex = -1
         let pagepro  = 1
         
-        if(prolabel){
+        if(prolabel[1]){
             this.setState({
-                flagProid:prolabel
+                flagProid:prolabel[1]
             })
             for(var i = 0; i < prolist.length; i++) {          
-                if(prolist[i].label === prolabel) {
+                if(prolist[i].label === prolabel[1]) {
                     
                     proindex = i+1
                     break;
@@ -115,14 +114,6 @@ class OrgDetail extends React.Component{
             page:pagepro,
             
         }) 
-
-        setTimeout(()=>{
-            if(prolabel){
-                this.scrollToAnchor(this.state.flagProid)
-               
-            }
-    
-           },500)
         
         
     }
