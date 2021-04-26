@@ -203,7 +203,9 @@ class ProjectDetail extends React.Component{
                             {
                                 prodetail.oR.map((item,index)=>{
                                     return(
-                                        <div className="ProDeReItem" key={index}>{item}</div>
+                                        <div className="ProDeReItem" key={index}>
+                                            {getSplit(item,this.props.chiFlag)}
+                                        </div>
                                     )
                                 })
 
@@ -219,7 +221,9 @@ class ProjectDetail extends React.Component{
                             {
                                 prodetail.tR.map((item,index)=>{
                                     return(
-                                        <div className="ProDeReItem" key={index}>{item}</div>
+                                        <div className="ProDeReItem" key={index}>
+                                            {getSplit(item,this.props.chiFlag)}
+                                        </div>
                                     )
                                 })
 
