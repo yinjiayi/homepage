@@ -13,9 +13,9 @@
 import React from 'react'
 import './index.less';
 import { connect } from 'react-redux';
-import {gohash} from '../../util/url.js'
+
 import projectlist from '../../data/projectlist.json';
-import {getSplit,getSupportLanguage} from "../../util/url.js";
+import {getSplit,getSupportLanguage,gohash} from "../../util/url.js";
 import data from '../../data/orglist2021.json';
 class ProjectDetail extends React.Component{
     constructor(props){

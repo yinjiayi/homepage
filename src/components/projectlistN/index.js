@@ -17,7 +17,7 @@ import { Input } from 'antd';
 import data from '../../data/orglist2021.json';
 import projectlist from '../../data/projectlist.json';
 import { Pagination } from 'antd';
-import {getSplit} from "../../util/url.js";
+import {getSplit,gohash} from "../../util/url.js";
 const { Search } = Input;
 
 class ProjectlistN extends React.Component{
@@ -55,6 +55,7 @@ class ProjectlistN extends React.Component{
     }
 
     filterItem(value){
+        console.log(value)
       
         this.setState({ 
             degreeselect:"all"           
@@ -63,7 +64,7 @@ class ProjectlistN extends React.Component{
             var showdataTemp = []
             this.state.datall.map((item)=>{
                 if(item.name.toString().includes(value)||
-                item.orgtitle.toLocaleLowerCase().includes(value)||
+                item.label.includes(value)||
                 item.description.toLocaleLowerCase().includes(value)){
                     showdataTemp.push(item)
                 }
@@ -149,7 +150,7 @@ class ProjectlistN extends React.Component{
         if(proid){
             url += "/proid"+proid
         }
-        window.location.hash=url
+        gohash(url)
         this.props.setOrgTabFlag("orglist")
     }
 

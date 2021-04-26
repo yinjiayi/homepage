@@ -15,7 +15,7 @@ import './index.less';
 import {NavLink} from 'react-router-dom';
 import { connect } from 'react-redux';
 import data from './../../data/nav.json';
-import {titleChange} from './../../util/url.js';
+import {titleChange,gohash} from './../../util/url.js';
 class Header extends React.Component{
     constructor(props){
        super(props)
@@ -34,15 +34,11 @@ class Header extends React.Component{
         this.setState({
             chiFlag:msg
         })
-        this.addLangFlag(msg)
+       
         
     }
 
-    addLangFlag(chiFlag){
-        
-        window.location.search = `lang=${chiFlag}`
-
-    }
+   
 
     headerlist(flag){
         this.setState({
@@ -51,7 +47,7 @@ class Header extends React.Component{
     }
 
     getLink(title){
-        window.location.hash = "/"+title
+        gohash("/"+title)
         this.headerlist(false)
     }
 
@@ -80,20 +76,16 @@ class Header extends React.Component{
             }
         }
 
-        //2.0 判断url参数中是否有lang
-        let hash = this.parseQueryString(window.location.search)
-        if(Object.keys(hash) && hash["lang"]){
-            this.switchFlag(hash["lang"])
-        }
+        
        
        titleChange();
-    // 功能暂时隐藏
-    //    setTimeout(()=>{
-    //        let hashopl = window.location.hash.split("#/");         
-    //        if(hashopl[1] === ""){
-    //            window.history.replaceState('','',window.location.pathname)
-    //        }
-    //    },5) 
+    
+       setTimeout(()=>{
+           let hashopl = window.location.hash.split("#/");         
+           if(hashopl[1] === ""){
+               window.history.replaceState('','',window.location.pathname)
+           }
+       },5) 
 
    }
 
