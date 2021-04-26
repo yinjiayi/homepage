@@ -29,16 +29,14 @@ class Header extends React.Component{
 
    
     switchFlag(msg){
-        // 1.0 redux 设置中英文标志
         msg === 'chi'?this.props.chiFlag_chi():this.props.chiFlag_en();
         this.setState({
             chiFlag:msg
-        })
-       
-        
+        })     
     }
 
    
+
 
     headerlist(flag){
         this.setState({
@@ -51,24 +49,9 @@ class Header extends React.Component{
         this.headerlist(false)
     }
 
-    parseQueryString(url) {
-        var obj = {};
-        var keyvalue = [];
-        var key = "",
-            value = "";
-        var paraString = url.substring(url.indexOf("?") + 1, url.length).split("&");
-        for (var i in paraString) {
-            keyvalue = paraString[i].split("=");
-            key = keyvalue[0];
-            value = keyvalue[1];
-            obj[key] = value;
-        }
-        return obj;
-    }
-
     
     componentDidMount(){
-        
+
         //1.0 浏览器语言不是中文的切换到英文版本展示
         if(window.navigator && window.navigator.language){
             if(window.navigator.language !== "zh-CN"){
@@ -76,10 +59,9 @@ class Header extends React.Component{
             }
         }
 
-        
        
        titleChange();
-    
+
        setTimeout(()=>{
            let hashopl = window.location.hash.split("#/");         
            if(hashopl[1] === ""){
