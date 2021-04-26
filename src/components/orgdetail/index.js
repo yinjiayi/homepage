@@ -83,7 +83,7 @@ class OrgDetail extends React.Component{
         const hash = window.location.hash.split("/")
         let prolabel = null
         if(hash.length === 5 && hash[4].slice(0,5) === "proid"){
-            prolabel = hash[4].slice(5,hash[4].length)
+            prolabel = hash[4].slice(5,hash[4].split("?")[0].length)
         }
        
          //5.0 判断当前的project在哪一页

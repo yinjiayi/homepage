@@ -1,11 +1,3 @@
-var gourl = (url)=>{
-    window.open(url)
-}
-
-var gohash = (hash)=>{
-    window.location.hash = hash
-}
-
 /**
  * Copyright (c) 2020 Intelligent Software Research Center of ISCAS
  * Summer 2020 Homepage is licensed under Mulan PSL v2.
@@ -17,6 +9,23 @@ var gohash = (hash)=>{
  * MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
  * See the Mulan PSL v2 for more details.
  */
+
+
+
+var gourl = (url)=>{
+    window.open(url)
+}
+
+var gohash = (hash)=>{
+    let lang = ""
+    const langflag = window.location.hash.split("?")
+    if(langflag.length === 2){
+        lang = "?"+langflag[1]
+    }
+    window.location.hash = hash + lang
+}
+
+
 
 const linkDataMap = {
     homepage:'首页',
@@ -35,11 +44,7 @@ var gettitle = function(){
     if(location.length === 2){
         document.title = `${linkDataMap[location[1]]||'首页'}${titleContent}`;
         document.getElementsByTagName("meta")[2].content = "关注开源软件和开源社区，培养和发掘更多优秀的开发者。";
-    }
-
-  
-    
-    
+    }    
 }
 
 
@@ -79,6 +84,8 @@ var getSupportLanguage = function(num){
         2:"English"
     }[num]||"中文"
 }
+
+
 
 
 export {

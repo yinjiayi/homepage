@@ -3,11 +3,16 @@ const initState = {
     orgdetail:{},  // 显示orgDetail数据
     prodetail:{},   // 显示ProjectDetail数据
     orgTabFlag:"orglist",  // orglist|projectlist
-    proalldata:[]
 }
 
 export const reducer = (state = initState,action)=>{
     console.log(action)
+    if(action.type === "chiFlag_chi"){
+        window.location.hash = window.location.hash.split("?")[0] + "?lang=chi"
+    }
+    if(action.type === "chiFlag_en"){
+        window.location.hash = window.location.hash.split("?")[0] + "?lang=en"
+    }
     switch (action.type){
         case "chiFlag_chi":
             return {
@@ -28,11 +33,6 @@ export const reducer = (state = initState,action)=>{
             return{
                 ...state,
                 prodetail:action.payload
-            }
-        case "setProAllData":
-            return{
-                ...state,
-                proalldata:action.payload
             }
         case "setOrgTabFlag":
             return{

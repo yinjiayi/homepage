@@ -49,6 +49,29 @@ class Header extends React.Component{
         this.headerlist(false)
     }
 
+    goPage(linkurl){
+
+        this.setState({
+            pageflag:linkurl
+        })
+        gohash("/"+linkurl)
+
+    }
+
+    parseQueryString(url) {
+        var obj = {};
+        var keyvalue = [];
+        var key = "",
+            value = "";
+        var paraString = url.substring(url.indexOf("?") + 1, url.length).split("&");
+        for (var i in paraString) {
+            keyvalue = paraString[i].split("=");
+            key = keyvalue[0];
+            value = keyvalue[1];
+            obj[key] = value;
+        }
+        return obj;
+    }
     
     componentDidMount(){
 
@@ -61,6 +84,12 @@ class Header extends React.Component{
 
        
        titleChange();
+
+       //2.0 查看有无语言标志位
+       const langc = this.parseQueryString(window.location.hash)
+       if(langc.hasOwnProperty("lang")){
+            this.switchFlag(langc["lang"])
+       }
 
        setTimeout(()=>{
            let hashopl = window.location.hash.split("#/");         
@@ -99,11 +128,13 @@ class Header extends React.Component{
                                 const linkurl = link[index]
                                 return (
                                    
-                                    <NavLink key={index} to={'/'+ linkurl} >
-                                    <div className={["headerTabItem","headerNav", linkurl].join(" ")}>
+                                    <div key={index} className={[this.state.pageflag ===linkurl?"active":"" ,"headerWrapItem"].join(" ")}>
+                                    <div 
+                                        onClick={()=>{this.goPage(linkurl)}}
+                                        className={["headerTabItem","headerNav", linkurl].join(" ")}>
                                         <span>{ele.name}</span>
                                     </div>                                
-                                     </NavLink>
+                                    </div>
                                   
                                  
                                     
