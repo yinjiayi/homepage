@@ -15,7 +15,7 @@ import './index.less';
 import { connect } from 'react-redux';
 import data from "./../../data/homepage.json";
 import { Carousel } from 'antd';
-import {gourl} from "./../../util/url.js";
+import {gohash, gourl} from "./../../util/url.js";
 import logocoopdata from "./../../data/coorganizer.json"
 class HomePage extends React.Component{
     constructor(props){
@@ -29,6 +29,11 @@ class HomePage extends React.Component{
             gourl(url)
         }
         
+    }
+
+    goLiveshow(){
+        this.props.setPageFlag("liveshow")
+        gohash("/liveshow")
     }
 
     createLogo(logoclassname,data){
@@ -97,7 +102,13 @@ class HomePage extends React.Component{
                             return(
                                 <div className="homepageBannerFline" key={index} >
                                     <span className="homepageBannerFlineIcon"></span>
-                                    <span  className="homepageBannerFlineText" dangerouslySetInnerHTML={{ __html: item }}></span>
+                                    <span className="homepageBannerFlineText">
+                                    <span   dangerouslySetInnerHTML={{ __html: item }}></span>
+                                    {
+                                        index === 2?
+                                        <span onClick={()=>{this.goLiveshow()}} className="homepageLinkguide">{showdata.detail}</span>:""
+                                    }
+                                    </span>
                                 </div>
                             )
 
@@ -197,5 +208,15 @@ const mapStateToProps = (state)=>{
      }
   }
 
+  const mapDispatchToProps = dispatch => {
+    return {
+        setPageFlag:(data)=>{
+            dispatch({
+                type:'setPageFlag',
+                payload:data
+            })
+        }
+    }
+}
  
- export default connect(mapStateToProps)(HomePage)
+ export default connect(mapStateToProps,mapDispatchToProps)(HomePage)
