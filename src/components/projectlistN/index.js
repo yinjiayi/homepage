@@ -146,7 +146,7 @@ class ProjectlistN extends React.Component{
     gohashlink(orgtitle,proid){
         let url = "/org/orgdetail/"+orgtitle
         if(proid){
-            url += "?proid="+proid
+            url += "/proid"+proid
         }
         gohash(url)
         this.props.setOrgTabFlag("orglist")

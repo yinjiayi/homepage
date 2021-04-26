@@ -87,9 +87,9 @@ class Header extends React.Component{
         return(         
             <div className={["header", this.state.chiFlag].join(" ")}>
                 <div className="content1200 headerContent">
-                     <NavLink to="/homepage">
-                        <div className="osscHeaderLogo"></div>
-                    </NavLink>
+                    
+                    <div className="osscHeaderLogo" onClick={()=>{gohash("/homepage")}}></div>
+                   
                     
                     <div className="headerList">
                     <div className="headerTabWrapper">
@@ -100,10 +100,10 @@ class Header extends React.Component{
                                 return (
                                    
                                     <NavLink key={index} to={'/'+ linkurl} >
-                                        <div className={["headerTabItem","headerNav", linkurl].join(" ")}>
-                                            <span>{ele.name}</span>
-                                        </div>                                
-                                    </NavLink>
+                                    <div className={["headerTabItem","headerNav", linkurl].join(" ")}>
+                                        <span>{ele.name}</span>
+                                    </div>                                
+                                     </NavLink>
                                   
                                  
                                     
