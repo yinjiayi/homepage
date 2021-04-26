@@ -54,9 +54,7 @@ class ProjectlistN extends React.Component{
         })  
     }
 
-    filterItem(value){
-        console.log(value)
-      
+    filterItem(value){  
         this.setState({ 
             degreeselect:"all"           
         })
