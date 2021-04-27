@@ -88,7 +88,7 @@ class HomePage extends React.Component{
         return(         
             <div className="homepage">
             <div className="GoApply" onClick={()=>{this.goLogoLink(applyurl)}}>{showdata.goapply}</div>
-            <Carousel autoplay>
+            <Carousel>
                 <div className="homepageBanner One">
                     <div className="homepageBannerTitle">{showdata.title}</div>
                     <div className="homepageTextOne">
@@ -96,7 +96,6 @@ class HomePage extends React.Component{
                         showdata.bannerone.map((item,index)=>{
                             return(
                                 <div className="homepageBannerFline" key={index} >
-                                    <span className="homepageBannerFlineIcon"></span>
                                     <span  className="homepageBannerFlineText" dangerouslySetInnerHTML={{ __html: item }}></span>
                                 </div>
                             )
@@ -136,7 +135,13 @@ class HomePage extends React.Component{
                             }
                         </div>
                         <div className="homepageLogo">
-                            <div className="homepageLogoTitle">{showdata.logotitle[0]}</div>
+                            <div className="homepageLogoTitle">
+                                <span className="title-wrapper">
+                                    <span className="title-left-icon"></span>
+                                    <span className="title-text">{showdata.logotitle[0]}</span>
+                                    <span className="title-right-icon"></span>
+                                    </span>
+                            </div>
                            
                             <div className="homepageLogoItemTitle">
                                 {showdata.logotitle[1]}
