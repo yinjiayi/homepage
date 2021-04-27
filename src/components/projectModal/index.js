@@ -56,8 +56,9 @@ class ProjectModal extends React.Component{
 
 
     render(){
-        let showdata = this.props.showdata
-        let item = this.props.item
+        // let showdata = this.props.showdata
+        // let item = this.props.item
+        const {showdata,item,prourl} = this.props
         return(         
             <div id={item.label} className={["projectListItem",this.getDegree(item.difficulty)].join(" ")} >
                 <div className="projectListItemLeft">
@@ -97,7 +98,11 @@ class ProjectModal extends React.Component{
                         <div className="proCardULButton">
                             <div className="orgProjectButton" onClick={()=>{this.goHash()}}>{showdata.proDetail}</div>                        
                             {
-                                item.link?<div className=" orgProjectButton" onClick={()=>{this.goLink(item.link)}}>{showdata.proCommuDe}</div>:""
+                                item.link?
+                                <div className=" orgProjectButton" onClick={()=>{this.goLink(item.link)}}>{showdata.proCommuDe}</div>:
+                                prourl?
+                                <div className=" orgProjectButton" onClick={()=>{this.goLink(prourl)}}>{showdata.proCommuDe}</div>:""
+
                             }
 
                         </div>
