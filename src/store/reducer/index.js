@@ -3,6 +3,7 @@ const initState = {
     orgdetail:{},  // 显示orgDetail数据
     prodetail:{},   // 显示ProjectDetail数据
     orgTabFlag:"orglist",  // orglist|projectlist
+    pageflag:"index",
 }
 
 export const reducer = (state = initState,action)=>{
@@ -38,6 +39,11 @@ export const reducer = (state = initState,action)=>{
             return{
                 ...state,
                 orgTabFlag:action.payload
+            }
+        case "setPageFlag":
+            return{
+                ...state,
+                pageflag:action.payload
             }
         default:
             return state

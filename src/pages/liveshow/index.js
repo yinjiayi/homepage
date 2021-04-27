@@ -60,6 +60,7 @@ export default class Liveshow extends React.Component{
                                 return (
                                     item.flag === "over"?
                                     <LiveModal 
+                                    flag="over"
                                     key = {index}
                                     item ={item}/>:""
 

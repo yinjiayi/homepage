@@ -22,7 +22,7 @@ class Header extends React.Component{
        this.state ={         
             chiFlag:"chi",
             data,
-            pageflag:"index",
+            // pageflag:"index",
             moblieListFlag:false,
        }
     }
@@ -51,9 +51,7 @@ class Header extends React.Component{
 
     goPage(linkurl){
 
-        this.setState({
-            pageflag:linkurl
-        })
+        this.props.setPageFlag(linkurl)
         gohash("/"+linkurl)
 
     }
@@ -112,7 +110,7 @@ class Header extends React.Component{
     render(){
         let showdata = this.state.data[this.state.chiFlag]
         let link = this.state.data.link
-        
+        let pageflagredux = this.props.pageflag
         return(         
             <div className={["header", this.state.chiFlag].join(" ")}>
                 <div className="content1200 headerContent">
@@ -128,7 +126,7 @@ class Header extends React.Component{
                                 const linkurl = link[index]
                                 return (
                                    
-                                    <div key={index} className={[this.state.pageflag ===linkurl?"active":"" ,"headerWrapItem"].join(" ")}>
+                                    <div key={index} className={[pageflagredux ===linkurl?"active":"" ,"headerWrapItem"].join(" ")}>
                                     <div 
                                         onClick={()=>{this.goPage(linkurl)}}
                                         className={["headerTabItem","headerNav", linkurl].join(" ")}>
@@ -203,8 +201,22 @@ const mapDispatchToProps = dispatch => {
             dispatch({
                 type:'chiFlag_en'
             })
+        },
+        setPageFlag:(data)=>{
+            dispatch({
+                type:'setPageFlag',
+                payload:data
+            })
         }
     }
 }
 
-export default connect(null,mapDispatchToProps)(Header)
+const mapStateToProps = (state)=>{
+    
+    return {
+        pageflag:state.pageflag,
+       
+    }
+ }
+
+export default connect(mapStateToProps,mapDispatchToProps)(Header)

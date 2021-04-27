@@ -54,9 +54,7 @@ class OrgDetail extends React.Component{
 
    
     componentDidMount(){
-        window.scrollTo({
-            top: 0
-        });
+
         console.log("000")
        
         let showorg = this.props.orgdetail

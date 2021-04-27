@@ -53,13 +53,9 @@ var titleChange = function(){
     gettitle();
    
     window.addEventListener('hashchange',()=>{
-        var hashname = decodeURIComponent(window.location.hash)
-        window.location.hash=hashname
-        var anounceflag =decodeURIComponent(window.location.hash).split("announcement#").length === 1;
-        
-        if(anounceflag && !window.location.hash.includes('?') ) {
-            window.scrollTo(0,0);
-        }
+        window.scrollTo({
+            top: 0
+        });
         gettitle();
     })
 
