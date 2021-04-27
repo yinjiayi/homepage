@@ -2031,9 +2031,9 @@
 	"domain_tag": ["操作系统"],
 	"mail_list": "community@openeuler.org",
 	"email": "contact@openeuler.io",
-	"project_list": [ {
+	"project_list": [{
 		"name": "为 openEuler DDE 桌面添加系统资源监控报警应用",
-		"remark": "||项目链接：https://gitee.com/openeuler-competition/summer-2021/issues/I3DHL8?from=project-issue||",
+		"remark": "",
 		"difficulty": "高",
 		"mentor": "魏东",
 		"contact": "<weidong@uniontech.com>",
@@ -2052,7 +2052,7 @@
 		"orgname": "openEuler社区||openEuler Community"
 	}, {
 		"name": "开源项目开发者流失预测分析",
-		"remark": "||项目链接：https://gitee.com/openeuler-competition/summer-2021/issues/I3DO3J?from=project-issue||",
+		"remark": "",
 		"difficulty": "高",
 		"mentor": "钟君",
 		"contact": "<jun.zhongjun@huawei.com>",
@@ -2071,7 +2071,7 @@
 		"orgname": "openEuler社区||openEuler Community"
 	}, {
 		"name": "LOOP设备支持IO并行化",
-		"remark": "||项目链接：https://gitee.com/openeuler-competition/summer-2021/issues/I3DUOS?from=project-issue||",
+		"remark": "",
 		"difficulty": "低",
 		"mentor": "张奇龙",
 		"contact": "<zhangqilong3@huawei.com>",
@@ -2090,7 +2090,7 @@
 		"orgname": "openEuler社区||openEuler Community"
 	}, {
 		"name": "为 openEuler提供OpenStack Swift软件包",
-		"remark": "||项目链接：https://gitee.com/openeuler-competition/summer-2021/issues/I3DUTE?from=project-issue||",
+		"remark": "",
 		"difficulty": "低",
 		"mentor": "王玺源",
 		"contact": "<wangxiyuan@huawei.com>",
@@ -2109,7 +2109,7 @@
 		"orgname": "openEuler社区||openEuler Community"
 	}, {
 		"name": "将MindSpore 1.1.1版本引入openEuler",
-		"remark": "||项目链接：https://gitee.com/openeuler-competition/summer-2021/issues/I3DUTG?from=project-issue||",
+		"remark": "",
 		"difficulty": "低",
 		"mentor": "郑振宇",
 		"contact": "<zheng.zhenyu@outlook.com>",
@@ -2128,7 +2128,7 @@
 		"orgname": "openEuler社区||openEuler Community"
 	}, {
 		"name": "将Hadoop 3.3.0版本引入openEuler",
-		"remark": "项目相关链接\r\n\r\nHadoop项目主页：https://hadoop.apache.org\r\nopenEuler软件代码仓库：https://gitee.com/src-openeuler\r\nopenEuler软件包制作指南：https://gitee.com/openeuler/community/blob/master/zh/contributors/packaging.md||项目链接：https://gitee.com/openeuler-competition/summer-2021/issues/I3DUUJ?from=project-issue||",
+		"remark": "项目相关链接\r\n\r\nHadoop项目主页：https://hadoop.apache.org\r\nopenEuler软件代码仓库：https://gitee.com/src-openeuler\r\nopenEuler软件包制作指南：https://gitee.com/openeuler/community/blob/master/zh/contributors/packaging.md",
 		"difficulty": "低",
 		"mentor": "郑振宇",
 		"contact": "<zheng.zhenyu@outlook.com>",
@@ -2147,7 +2147,7 @@
 		"orgname": "openEuler社区||openEuler Community"
 	}, {
 		"name": "MariaDB上游ARM64优化patch回合老版本",
-		"remark": "项目相关链接：\r\n\r\nMariaDB项目主页：https://mariadb.org/\r\nopenEuler软件代码仓库：https://gitee.com/src-openeuler\r\nopenEuler软件包制作指南：https://gitee.com/openeuler/community/blob/master/zh/contributors/packaging.md||项目链接：https://gitee.com/openeuler-competition/summer-2021/issues/I3DUXZ?from=project-issue||",
+		"remark": "项目相关链接：\r\n\r\nMariaDB项目主页：https://mariadb.org/\r\nopenEuler软件代码仓库：https://gitee.com/src-openeuler\r\nopenEuler软件包制作指南：https://gitee.com/openeuler/community/blob/master/zh/contributors/packaging.md",
 		"difficulty": "高",
 		"mentor": "赵波",
 		"contact": "<zhaobo6@huawei.com>",
@@ -2166,7 +2166,7 @@
 		"orgname": "openEuler社区||openEuler Community"
 	}, {
 		"name": "为 openEuler提供OpenStack容器化部署能力",
-		"remark": "项目相关链接\r\n\r\nOpenStack项目主页：https://www.openstack.org/software/\r\nKubernetes项目主页：https://kubernetes.io/\r\niSula项目主页：https://openeuler.org/zh/docs/20.09/docs/Container/iSula%E5%AE%B9%E5%99%A8%E5%BC%95%E6%93%8E.html||项目链接：https://gitee.com/openeuler-competition/summer-2021/issues/I3DV1S?from=project-issue||",
+		"remark": "项目相关链接\r\n\r\nOpenStack项目主页：https://www.openstack.org/software/\r\nKubernetes项目主页：https://kubernetes.io/\r\niSula项目主页：https://openeuler.org/zh/docs/20.09/docs/Container/iSula%E5%AE%B9%E5%99%A8%E5%BC%95%E6%93%8E.html",
 		"difficulty": "高",
 		"mentor": "王玺源",
 		"contact": "<wangxiyuan@huawei.com>",
@@ -2185,7 +2185,7 @@
 		"orgname": "openEuler社区||openEuler Community"
 	}, {
 		"name": "为openEuler提供ClickHouse rpm包",
-		"remark": "项目相关链接：\r\n\r\nClickHouse项目主页：https://clickhouse.tech/\r\nopenEuler软件代码仓库：https://gitee.com/src-openeuler\r\nopenEuler软件包制作指南：https://gitee.com/openeuler/community/blob/master/zh/contributors/packaging.md||项目链接：https://gitee.com/openeuler-competition/summer-2021/issues/I3DV25?from=project-issue||",
+		"remark": "项目相关链接：\r\n\r\nClickHouse项目主页：https://clickhouse.tech/\r\nopenEuler软件代码仓库：https://gitee.com/src-openeuler\r\nopenEuler软件包制作指南：https://gitee.com/openeuler/community/blob/master/zh/contributors/packaging.md",
 		"difficulty": "低",
 		"mentor": "赵波",
 		"contact": "<zhaobo6@huawei.com>",
@@ -2204,7 +2204,7 @@
 		"orgname": "openEuler社区||openEuler Community"
 	}, {
 		"name": "构建openEuler开发者用户画像",
-		"remark": "项目相关链接：\r\n\r\n软件代码仓库：https://gitee.com/opensourceway/||项目链接：https://gitee.com/openeuler-competition/summer-2021/issues/I3DV26?from=project-issue||",
+		"remark": "项目相关链接：\r\n\r\n软件代码仓库：https://gitee.com/opensourceway/",
 		"difficulty": "高",
 		"mentor": "钟君",
 		"contact": "<jun.zhongjun@huawei.com>",
@@ -2223,7 +2223,7 @@
 		"orgname": "openEuler社区||openEuler Community"
 	}, {
 		"name": "为openEuler社区提供一个FAQ的web服务",
-		"remark": "||项目链接：https://gitee.com/openeuler-competition/summer-2021/issues/I3DV2B?from=project-issue||",
+		"remark": "",
 		"difficulty": "中",
 		"mentor": "曹志",
 		"contact": "<george.cao@huawei.com>",
@@ -2242,7 +2242,7 @@
 		"orgname": "openEuler社区||openEuler Community"
 	}, {
 		"name": "开源软件版本演进中的License冲突检测",
-		"remark": "||项目链接：https://gitee.com/openeuler-competition/summer-2021/issues/I3E2PG?from=project-issue||",
+		"remark": "",
 		"difficulty": "中",
 		"mentor": "李自",
 		"contact": "<lizi4@huawei.com>",
@@ -2411,7 +2411,7 @@
 		"spl": 1,
 		"organchor": "openeuler",
 		"orgname": "openEuler社区||openEuler Community"
-	},  {
+	},{
 		"name": "实现RISCV架构下支持qspinlock",
 		"remark": "",
 		"difficulty": "高",
