@@ -28,7 +28,6 @@ class Howitworks extends React.Component{
 
     render(){
         let showdata = this.state.data[this.props.chiFlag]
-        let bannerclass = this.state.data.bannerclass
         
         return(         
             <div className="Howitworks">
@@ -40,9 +39,9 @@ class Howitworks extends React.Component{
                                showdata.banner.map((item,index)=>{
                                    return (
                                     <div className="HowitworksListItem" key={index}>
-                                            <div className={["HowitworksListItemImage",bannerclass[index]].join(" ")}></div>
                                             <div className="HowitworksListItemTitle">{item.title}</div>
-                                            <div className="HowitworksListItemContent">{item.text}</div>
+                                            <div className="HowitworksListItemContent isPc">{item.text[0]}<br></br>{item.text[1]}</div>
+                                            <div className="HowitworksListItemContent isMobile">{item.text[0]}{item.text[1]}</div>
                                     </div>
                                    )
                                })
@@ -72,8 +71,10 @@ class Howitworks extends React.Component{
                <div className="indexOne">
                <div className="content1200">
                     <div className="indexOneTitle">
-                    <span className="indexOneTitleText">{showdata.ttile}</span>
-                    <span className="indexOneTitletip">{showdata.tip}</span>
+                        <span className="indexOneTitleText">{showdata.ttile}</span>
+                        <span className="indexOneTitletip">{showdata.tip}</span>
+                        <div className="yellowRoll"></div>
+                        <div className="pinkRoll"></div>
                     </div>
                     <div className="indexOneList">
                         {
