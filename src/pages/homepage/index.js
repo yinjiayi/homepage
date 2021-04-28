@@ -101,7 +101,6 @@ class HomePage extends React.Component{
                         showdata.bannerone.map((item,index)=>{
                             return(
                                 <div className="homepageBannerFline" key={index} >
-                                    <span className="homepageBannerFlineIcon"></span>
                                     <span className="homepageBannerFlineText">
                                     <span   dangerouslySetInnerHTML={{ __html: item }}></span>
                                     {
