@@ -59,13 +59,15 @@ class ProjectlistN extends React.Component{
         })
         if(value){
             var showdataTemp = []
-            this.state.datall.map((item)=>{
-                if(item.name.toString().includes(value)||
-                item.label.includes(value)){
+            const valuel = value.toLowerCase()
+            this.state.datall.map((item)=>{           
+                if(item.name.toLowerCase().includes(valuel)||
+                item.label.includes(valuel)){
                     showdataTemp.push(item)
                 }
                 return 0;
             })
+            console.log(showdataTemp)
             
             this.setState({
                 datall:showdataTemp,
