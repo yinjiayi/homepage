@@ -14,10 +14,10 @@ import React from 'react'
 import './index.less';
 import { connect } from 'react-redux';
 import { Input } from 'antd';
-import data from '../../data/orglist2021.json';
+import proData from '../../data/proList.json';
 import projectlist from '../../data/projectlist.json';
 import { Pagination } from 'antd';
-import {getSplit,gohash} from "../../util/url.js";
+import {getSplit,gohash,getSupportLanguage} from "../../util/url.js";
 const { Search } = Input;
 
 class ProjectlistN extends React.Component{
@@ -26,10 +26,10 @@ class ProjectlistN extends React.Component{
        this.state ={   
            page:1,
            pagesize:40,
-           datall: [],  // 显示的project所有数据
+           datall: proData,        // 显示的project所有数据
            searchdatastock:[],      
-           datastock:[],      // project 所有数据
-           projectlistdata:[],// 显示的project数据
+           datastock:proData,      // project 所有数据
+           projectlistdata:[],     // 单页显示的project数据
            degreeselect:"all",
            langSelect:"all",
            techSelect:"all",
@@ -61,8 +61,7 @@ class ProjectlistN extends React.Component{
             var showdataTemp = []
             this.state.datall.map((item)=>{
                 if(item.name.toString().includes(value)||
-                item.label.includes(value)||
-                item.description.toLocaleLowerCase().includes(value)){
+                item.label.includes(value)){
                     showdataTemp.push(item)
                 }
                 return 0;
@@ -93,25 +92,24 @@ class ProjectlistN extends React.Component{
 
 
     getData(){
-        var prodata = []
-        var domain_tag = []
-        var tech_tag = []
-        data.map((item)=>{
-            let _arr = []    
-            domain_tag = domain_tag.concat(item.domain_tag)  
-            tech_tag = tech_tag.concat(item.tech_tag)   
-            item.project_list.map((items) => {           
-                _arr.push(Object.assign({},items,
-                    {orgtitle: item.title,
-                    anchor:item.anchor,
-                    prourl:item.project_url}))            
-            })
-            prodata = prodata.concat(_arr)         
-        })
+        // 功能暂时隐藏
+        // var prodata = []
+        // var domain_tag = []
+        // var tech_tag = []
+        // data.map((item)=>{
+        //     let _arr = []    
+        //     domain_tag = domain_tag.concat(item.domain_tag)  
+        //     tech_tag = tech_tag.concat(item.tech_tag)   
+        //     item.project_list.map((items) => {           
+        //         _arr.push(Object.assign({},items,
+        //             {orgtitle: item.title,
+        //             anchor:item.anchor,
+        //             prourl:item.project_url}))            
+        //     })
+        //     prodata = prodata.concat(_arr)         
+        // })
         this.setState({
-            datall:prodata,
-            datastock:prodata,
-            projectlistdata:prodata.slice(0,this.state.pagesize),
+            projectlistdata:this.state.datall.slice(0,this.state.pagesize),
         })
         
     }
@@ -301,6 +299,7 @@ class ProjectlistN extends React.Component{
                             <span className="ProjectListLCID ">{showdata.projectNumber}</span>
                             <span className="ProjectListLCName">{showdata.projectName}</span>
                             <span className="ProjectListLCCommunity">{showdata.projectCommunity}</span>
+                            <span className="ProjectListLCLang">{showdata.language}</span>
                             <span className="ProjectListLCDegree">{showdata.proDegree}</span>
                             <span className="ProjectListLCOperation">{showdata.operation}</span>
                         </div>
@@ -313,16 +312,17 @@ class ProjectlistN extends React.Component{
                                     return(
                                         <div className="ProjectListLCLine Item" key={index}>
                                             <span className="ProjectListLCID ">{item.label}</span>
-                                            <span className="ProjectListLCName" onClick={()=>{this.gohashlink(item.anchor,item.label)}}>
+                                            <span className="ProjectListLCName" onClick={()=>{this.gohashlink(item.organchor,item.label)}}>
                                                 
                                                 {getSplit( item.name,this.props.chiFlag)}
                                             </span>
-                                            <span className="ProjectListLCCommunity" onClick={()=>{this.gohashlink(item.anchor)}}>
-                                                {getSplit( item.orgtitle,this.props.chiFlag)}</span>
+                                            <span className="ProjectListLCCommunity" onClick={()=>{this.gohashlink(item.organchor)}}>
+                                                {getSplit( item.orgname,this.props.chiFlag)}</span>
+                                            <span className="ProjectListLCLang">{getSupportLanguage(item.spl)}</span>
                                             <span className="ProjectListLCDegree">{this.getDegreeBy(item.difficulty)}</span>
                                             <span className="ProjectListLCOperation Item">
                                                 
-                                                <span className="PLOperationButton prodetail" onClick={()=>{this.gohashlink(item.anchor,item.label)}}>{showdata.operationbutton[0]}</span>
+                                                <span className="PLOperationButton prodetail" onClick={()=>{this.gohashlink(item.organchor,item.label)}}>{showdata.operationbutton[0]}</span>
                                                 <span className="PLOperationButton proapply">{showdata.operationbutton[1]}</span>
                                             </span>
                                         </div>

@@ -2032,6 +2032,25 @@
 	"mail_list": "community@openeuler.org",
 	"email": "contact@openeuler.io",
 	"project_list": [{
+		"name": "使用 ARM SVE 向量指令在 BLIS 上实现 BLAS Level-3 高性能计算",
+		"remark": "",
+		"difficulty": "高",
+		"mentor": "徐国栋",
+		"contact": "<guodong.xu@linaro.org>",
+		"uniont": null,
+		"student_count": 0,
+		"description": "Scalable Vector Extension, or SVE，是 ARM 公司在 Armv8 架构上推出的新一代向量指令集，拥有业界领先的可变向量宽度支持（从 128bit 到 2048bit ）。BLIS 是线性代数库 BLAS APIs 的一个开源高性能实现。其模块化，高性能，易移植，并行性，有相应论文支撑，并在生产中有具体实践。BLAS level-3 APIs 定义的是 矩阵 - 矩阵 计算.  本项目要求使用 ARM SVE 向量指令为 BLIS 编写 BLAS level-3 kernel，并且提交到 BLIS 上游社区。  项目调试，需要在 ARM64 鲲鹏服务器上，使用 QEMU， Docker，Arm IE （Instruction Emulator）搭建调试环境，进行 编码，测试。",
+		"label": "210010001",
+		"link": "https://gitee.com/openeuler-competition/summer-2021/issues/I3D35W?from=project-issue",
+		"tech_tag": ["高性能计算"],
+		"domain_tag": ["操作系统"],
+		"oR": ["写出的代码要求符合 BLIS 代码规范，并且通过 BLAS level-3 的功能正确性测试。", "代码 patch 提交到 BLIS 社区，争取在本项目持续期内获得社区认可，patch 能合入到 BLIS 代码库中。"],
+		"tR": ["懂得基本的汇编语言编程常识。有 ARM 汇编的技术基础者更佳。", "对 BLAS 代数库有一定的使用经验。对高性能计算 HPC 有使用经验。"],
+		"orgID": 132,
+		"spl": 1,
+		"organchor": "openeuler",
+		"orgname": "openEuler社区||openEuler Community"
+	}, {
 		"name": "为 openEuler DDE 桌面添加系统资源监控报警应用",
 		"remark": "",
 		"difficulty": "高",
@@ -2411,7 +2430,26 @@
 		"spl": 1,
 		"organchor": "openeuler",
 		"orgname": "openEuler社区||openEuler Community"
-	},{
+	}, {
+		"name": "为risc-v架构添加透明大页THP特性支持",
+		"remark": "",
+		"difficulty": "高",
+		"mentor": "孙南勇",
+		"contact": "<sunnanyong@huawei.com>",
+		"uniont": null,
+		"student_count": 0,
+		"description": "当前内核中riscv架构尚未实现透明大页特性，根据RISC-V特权架构的定义，为Linux内核RISC-V架构添加透明大页THP的支持。    透明大页介绍：在Linux 操作系统上运行内存需求量较大的应用程序时，由于其采用的默认页面大小为4KB，因而将会产生较多TLB Miss 和缺页中断，从而大大影响应用程序的性能。 当操作系统以2MB 甚至更大作为分页的单位时，将会大大减少TLB Miss 和缺页中断的数量，显著提高应用程序的性能。传统大页很难手动管理, 而且通常需要对代码进行重大更改才能有效地使用。因此后来引入了透明大页(THP)。THP 是一个抽象层, 可以自动创建、管理和使用传统大页。标准大页管理是预分配的方式，而透明大页管理则是动态分配的方式，且不需要修改程序源码。",
+		"label": "210010044",
+		"link": "",
+		"tech_tag": ["RISC-V"],
+		"domain_tag": ["OS"],
+		"oR": ["基于openEuler 21.03 分支(内核版本5.10)生成内核补丁，完成对riscv架构的THP支持，基于X86平台，在riscv qemu虚拟机上调通THP相关功能，包括THP的申请、使用、释放"],
+		"tR": ["熟悉内核内存管理、RISCV页表机制"],
+		"orgID": 132,
+		"spl": 1,
+		"organchor": "openeuler",
+		"orgname": "openEuler社区||openEuler Community"
+	}, {
 		"name": "实现RISCV架构下支持qspinlock",
 		"remark": "",
 		"difficulty": "高",
@@ -3511,8 +3549,8 @@
 		"orgname": "Wechaty 社区||Wechaty"
 	}, {
 		"name": "基于 WeChatExtension-ForMac 为 Wechaty 实现Mac版本Puppet",
-		"remark": null,
-		"difficulty": "中",
+		"remark": "",
+		"difficulty": "高",
 		"mentor": "晏茂",
 		"contact": "<MustangYM@yeah.net>",
 		"uniont": "吴京京<wjmcater@gmail.com>",
@@ -3549,8 +3587,8 @@
 		"orgname": "Wechaty 社区||Wechaty"
 	}, {
 		"name": "基于 Matrix AppService Wechaty 项目的用户、群与消息等基础功能的完善",
-		"remark": null,
-		"difficulty": "中",
+		"remark": "",
+		"difficulty": "高",
 		"mentor": "李卓桓",
 		"contact": "<huan@chatie.io>",
 		"uniont": "yswtrue<yswtrue@gmail.com>",
@@ -5123,6 +5161,42 @@
 	"mail_list": null,
 	"email": "kerneltravel@groups.163.com",
 	"project_list": []
+},{
+	"userId": 55,
+	"anchor": "yunionio",
+	"slide": "",
+	"video": "",
+	"img": "yunionio.jpg",
+	"title": "yunionio",
+	"orgTypeDesc": "开源社区",
+	"orgType": 1,
+	"project_url": "",
+	"url": "https://github.com/yunionio",
+	"description": "云联融合云（Yunion Cloud）是一个开源的多云平台。",
+	"full_des": "云联融合云（Yunion Cloud）是一个开源的多云平台。融合云构建在用户分布于多云基础设施之上，通过技术手段将分布于多云的异构IT资源统一管理，将多底层多云的差异向用户屏蔽，并通过网络和调度实现资源的融合与打通，在多云之上进行抽象，向用户呈现统一的使用界面和API接口，让用户就像使用一个云平台一样使用分布于多云的资源，实现一个统一的“云上之云”的云平台。",
+	"tech_tag": ["Cloud Native", "Container", "Virtualization"],
+	"domain_tag": ["Cloud Native", "Go", "Linux", "Container","Kubernetes","Automation","Git","Docker"],
+	"mail_list": "",
+	"email": "operation@yunion.cn",
+	"project_list": []
+}, {
+	"userId": 474,
+	"anchor": "aos",
+	"slide": "",
+	"video": "",
+	"img": "aos.jpg",
+	"title": "AOS",
+	"orgTypeDesc": "开源社区",
+	"orgType": 1,
+	"project_url": "",
+	"url": "https://aos.dev/docs",
+	"description": "AOS 致力于构建一个面向应用的抽象存储层，目前主要专注于该存储层的 Golang 实现。",
+	"full_des": "AOS 基于一个抽象的存储层构建，它向下能够对接各种各样的存储服务（比如本地文件系统，s3, gcs, oss 等对象存储服务，dropbox, google drive 等网盘服务），向上能够提供统一的存储接口给应用，比如数据备份，迁移，管理等应用。目前社区专注于 aos for golang，也就是 go-storage ( https://github.com/aos-dev/go-storage ) 的实现。截止目前，go-storage 已经支持了 10 个服务，包括文件存储，国内外主流对象存储服务和 Dropbox，我们期望能够支持更多的服务。",
+	"tech_tag": ["Go", "Storage", "Git"],
+	"domain_tag": ["Cloud Native", "Dev Tools", "Programming Language", "Storage"],
+	"mail_list": "github@xuanwo.io",
+	"email": "github@xuanwo.io",
+	"project_list": []
 }, {
 	"userId": 538,
 	"anchor": "xmake",
@@ -5176,5 +5250,24 @@
 	"domain_tag": ["AI", "Cloud Native", "Big Data", "Distributed System", "graph computing"],
 	"mail_list": "",
 	"email": "graphscope@alibaba-inc.com",
+	"project_list": []
+},
+{
+	"userId": 557,
+	"anchor": "chshdxmglrj",
+	"slide": "",
+	"video": "",
+	"img": "zentao.jpg",
+	"title": "禅道项目管理软件",
+	"orgTypeDesc": "开源社区",
+	"orgType": 1,
+	"project_url": "",
+	"url": "https://www.zentao.net",
+	"description": "禅道是一款覆盖全生命周期的开源项目管理软件。",
+	"full_des": "禅道是一款覆盖全生命周期的开源项目管理软件。它集产品管理、项目管理、质量管理、文档管理、组织管理和事务管理于一体，完整覆盖研发项目管理的核心流程。禅道管理思想注重实效，功能完备丰富，操作简洁高效，搜索功能强大，统计报表丰富多样，软件架构合理，扩展灵活。旗舰版全面升级为通用的项目管理平台，不仅限于研发过程的管理。一方面将管理过程往前做了延展，延伸到公司的战略管理层面；另一方面完善管理模型，在敏捷模型的基础上增加了瀑布模型，支持多种开发模式。禅道项目管理软件目前国内市场占有率第一，已拥有上万家企业级用户，数十万用户群体，覆盖社会各行各业。",
+	"tech_tag": ["Linux", "JavaScript", "PHP", "Git", "Docker"],
+	"domain_tag": ["Dev Tools"],
+	"mail_list": "chenqi@cnezsoft.com",
+	"email": "co@zentao.net",
 	"project_list": []
 }]

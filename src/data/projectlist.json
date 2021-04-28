@@ -31,7 +31,8 @@
         "desc":"项目描述:",
         "remark":"项目备注:",
         "outre":"项目产出要求",
-        "techre":"项目技术要求"
+        "techre":"项目技术要求",
+        "language":"支持语言"
 
     },
     "en":{
@@ -66,7 +67,8 @@
         "desc":"Description:",
         "remark":"Remark:",
         "outre":"Output requirements",
-        "techre":"Technique requirements"
+        "techre":"Technique requirements",
+        "language":"Language"
         
     }
 }

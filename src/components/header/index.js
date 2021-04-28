@@ -54,6 +54,10 @@ class Header extends React.Component{
         this.props.setPageFlag(linkurl)
         gohash("/"+linkurl)
 
+        if(linkurl === "org"){
+            this.props.setOrgTabFlag("orglist")
+        }
+
     }
 
     parseQueryString(url) {
@@ -88,6 +92,11 @@ class Header extends React.Component{
        if(langc.hasOwnProperty("lang")){
             this.switchFlag(langc["lang"])
        }
+
+       //3.0 查看当前hash
+       let hashu = window.location.hash.split("?")[0].split("#/")[1].split("/")[0]
+       
+       this.props.setPageFlag(hashu||'homepage')
 
        setTimeout(()=>{
            let hashopl = window.location.hash.split("#/");         
@@ -202,6 +211,12 @@ const mapDispatchToProps = dispatch => {
                 type:'chiFlag_en'
             })
         },
+        setOrgTabFlag:(data)=>{
+            dispatch({
+                type:'setOrgTabFlag',
+                payload:data
+            })
+        },
         setPageFlag:(data)=>{
             dispatch({
                 type:'setPageFlag',
@@ -210,6 +225,8 @@ const mapDispatchToProps = dispatch => {
         }
     }
 }
+
+
 
 const mapStateToProps = (state)=>{
     

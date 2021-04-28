@@ -43,7 +43,7 @@ class OrgDetail extends React.Component{
             if(anchorElement) { 
                 // anchorElement.scrollIntoView({block: 'start', behavior: 'smooth'});
                 var elementPosition =anchorElement.getBoundingClientRect().top+window.scrollY -  100;
-                console.log(anchorElement.getBoundingClientRect().top)
+                
                 window.scrollTo({
                     top: elementPosition,
                     behavior: "smooth"
@@ -55,7 +55,7 @@ class OrgDetail extends React.Component{
    
     componentDidMount(){
 
-        console.log("000")
+     
        
         let showorg = this.props.orgdetail
         
@@ -77,7 +77,7 @@ class OrgDetail extends React.Component{
             return false
         }
         //4.0 判断projectid的位置
-        const prolist = showorg.project_list
+        const prolist = showorg.project_list     
         const hash = window.location.hash.split("/")
         let prolabel = null
         if(hash.length === 5 && hash[4].slice(0,5) === "proid"){
