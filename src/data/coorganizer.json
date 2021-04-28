@@ -275,6 +275,24 @@
             "name":"龙归科技",
             "img":"longgui.png",
             "url":"https://www.longguikeji.com/home"
-        }
+        },
+        {
+            
+            "img": "GitCourse.png",
+            "name": "gitcourse",
+            "url": "http://gitcourse-io.kfcoding.com/"
+        },
+         {
+            
+            "img": "senparc.png",
+            "name": "盛派开发者社区",
+            "url": "https://dev.senparc.com/"
+        },
+        {
+           
+           "img": "Linuxneihe.png",
+           "name": "Linux内核之旅开源社区",
+           "url": "http://kerneltravel.net/"
+       }
     ]
 }

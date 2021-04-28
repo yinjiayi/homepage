@@ -3,36 +3,7 @@
     "spaceurl":"https://space.bilibili.com/578074510",
     "livedata":"",
     "speechlist":[
-        {         
-            "title":"开源社区运营的道、法、术、器",
-            "time":"2021.04.24",         
-            "profilelist":[
-                {
-                    "name":"刘天栋",
-                    "profile":"开源社理事暨联合创始人 | Apache 软件基金会正式会员，ASF孵化器项目委员会成员，ASF筹款委员会成员/赞助伙伴大使；腾讯云 TVP。于2014年10月联合创始开源社。于2018年当选 ASF 正式成员，随后加入 ASF 筹款委员会并成为赞助伙伴大使，2019年成为 ASF 孵化器项目委员会成员。 曾历任微软中国战略业务总监、微软开放技术公司及微软亚太研发集团负责开源技术布道及开源社区发展工作；甲骨文(中国)渠道及联盟总监、甲骨文(中国) Linux战略总监、甲骨文大中华区中间件事业部总经理；Turbolinux亚太区副总裁等。",
-                    "imgurl":"liutiandong.jpg"
-                }
-            ],  
-            "speechcontent":"这次的介绍将涵盖如何从零开始建设以及发展一个开源社区",
-            "ppt":"",
-            "url":""
-        },
-        {
-            "title":"如何将社区贡献和私人生活融合在一起?",
-            "time":"2021.04.25",        
-            "profilelist":[
-                {
-                    "name":"周琦",
-                    "profile":"是中国Python社区中最长情的贡献者, 从04年共同创建 CPyUG(中国Python用户组)以来,长年为 Pythonic 在中国的推广/实践进行各种尝试, 连续四届主持PyCon中国大会筹办,是大家公认的\"大妈\"(Zoom.Quiet)",
-                    "imgurl":"zhouqi.jpg"
-                    
-                }
-            ],       
-            "speechcontent":"开源社区基本结构~文化~原则~礼仪…以及自然参与的简洁姿态…",
-            "ppt":"",
-            "pptname":"",
-            "url":""
-        },
+        
         {         
             "title":"那些年我们一起申请和参与的开源programs",
             "time":"2021.05.08",
@@ -122,6 +93,35 @@
             "speechcontent":"SegmentFault 的 3 位创始人最早都是开源项目 Typecho 的贡献者，大学时期做开源项目让他们成为了好朋友和工作伙伴，然后从不同地方来到杭州共同创业创办了 SegmentFault。从 SegmentFault 的起源，我们可以和广大大学生分享一下参与开源项目的正确姿势和获益，号召更多大学生参与到开源贡献中。",
             "ppt":"",
             "url":""
+        },
+        {         
+            "title":"开源社区运营的道、法、术、器",
+            "time":"2021.04.24",    
+            "flag":"over",     
+            "profilelist":[
+                {
+                    "name":"刘天栋",
+                    "profile":"开源社理事暨联合创始人 | Apache 软件基金会正式会员，ASF孵化器项目委员会成员，ASF筹款委员会成员/赞助伙伴大使；腾讯云 TVP。于2014年10月联合创始开源社。于2018年当选 ASF 正式成员，随后加入 ASF 筹款委员会并成为赞助伙伴大使，2019年成为 ASF 孵化器项目委员会成员。 曾历任微软中国战略业务总监、微软开放技术公司及微软亚太研发集团负责开源技术布道及开源社区发展工作；甲骨文(中国)渠道及联盟总监、甲骨文(中国) Linux战略总监、甲骨文大中华区中间件事业部总经理；Turbolinux亚太区副总裁等。",
+                    "imgurl":"liutiandong.jpg"
+                }
+            ],  
+            "speechcontent":"这次的介绍将涵盖如何从零开始建设以及发展一个开源社区",
+            "url":"https://www.bilibili.com/video/BV1TU4y187TV?pop_share=1"
+        },
+        {
+            "title":"如何将社区贡献和私人生活融合在一起?",
+            "time":"2021.04.25",        
+            "profilelist":[
+                {
+                    "name":"周琦",
+                    "profile":"是中国Python社区中最长情的贡献者, 从04年共同创建 CPyUG(中国Python用户组)以来,长年为 Pythonic 在中国的推广/实践进行各种尝试, 连续四届主持PyCon中国大会筹办,是大家公认的\"大妈\"(Zoom.Quiet)",
+                    "imgurl":"zhouqi.jpg"
+                    
+                }
+            ],       
+            "speechcontent":"开源社区基本结构~文化~原则~礼仪…以及自然参与的简洁姿态…",          
+            "flag":"over",          
+            "url":"https://www.bilibili.com/video/BV1AN411f7qk/"
         }
         
     ]
