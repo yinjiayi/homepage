@@ -13,7 +13,7 @@
 import React from 'react'
 import './index.less';
 import { connect } from 'react-redux';
-import {getSplit} from "../../util/url.js";
+import {getSplit,gohash} from "../../util/url.js";
 
 
 class OrgTip extends React.Component{
@@ -26,7 +26,7 @@ class OrgTip extends React.Component{
 
     goOrgDetail(){
         this.props.setOrgDetail(this.props.item)
-        window.location.hash = "/org/orgdetail/"+this.props.item.anchor
+        gohash("/org/orgdetail/"+this.props.item.anchor)
     }
 
    
