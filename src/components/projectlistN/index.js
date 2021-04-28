@@ -34,7 +34,6 @@ class ProjectlistN extends React.Component{
            langSelect:"all",
            techSelect:"all",
            areaSelect:"all"
-        //    orderSelect:"community" // community proid    
        }
        this.itemRender = this.itemRender.bind(this)
     }
@@ -109,7 +108,6 @@ class ProjectlistN extends React.Component{
             })
             prodata = prodata.concat(_arr)         
         })
-       
         this.setState({
             datall:prodata,
             datastock:prodata,
