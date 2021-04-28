@@ -1,109 +1,295 @@
 .HowitworksBanner{
     width: 100%;
-    height: 526px;
-    background-image: url(./../../img/howitworks/banner.jpg);
+    height: 400px;
+    background-image: url(./../../img/howitworks/pc-banner.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    overflow: hidden;
 }
 
 .Howitworks{
     position: relative;
-}
-
-.HowitworksList{
-    position: relative;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.HowitworksBannerTitle{
-    position: relative;
-    color: #fff;
-    font-size: 40px;
-    letter-spacing: 5px;
-    padding: 62px 0 80px;
-    margin: 0 auto;
-    width: 100%;
-    text-align: center;
-}
-
-.HowitworksListItem{
-    position: relative;
-    text-align: center;
-    width: 245px;
-    color:#fff
-}
-.HowitworksListItemImage{
-    background-size: contain;
-    width: 80px;
-    height: 70px;
-    background-position: center;
-    margin: 0 auto;
-    background-repeat: no-repeat;
-}
-.HowitworksListItemImage.apply{
-    background-image: url(./../../img/howitworks/1.png);
-}
-.HowitworksListItemImage.program{
-    background-image: url(./../../img/howitworks/2.png);
-}
-.HowitworksListItemImage.reward{
-    background-image: url(./../../img/howitworks/3.png);
-}
-
-.HowitworksListItemTitle{
-    font-size: 24px;
-    font-weight: 500;
-    letter-spacing: .005em;
-    margin: 22px 0 10px;
-}
-.HowitworksListItemContent{
-    font-weight: 400;
-    letter-spacing: .010em;
-    line-height: 30px;
-    font-size: 18px;
-}
-
-.HowitworksContent{
-    position: relative;
-    margin: 65px 0;
+    .HowitworksList{
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+    }
     
-}
-
-.HowitworksContentWrapper{
-    position: relative;
-}
-.HowitworksContentItem{
-    position: relative;
-    margin: 0 0 40px;
+    .HowitworksBannerTitle{
+        position: relative;
+        color: #000000;
+        font-size: 40px;
+        padding: 0;
+        margin: 46px 0 102px;
+        width: 100%;
+        text-align: center;
+    }
     
+    .HowitworksListItem{
+        position: relative;
+        text-align: center;
+        width: 245px;
+        color: #000000;
+    }
+    
+    .HowitworksListItemTitle{
+        font-size: 28px;
+        color: #FFFFFF;
+        line-height: 89px;
+        width: 89px;
+        height: 89px;
+        background: #006CC5;
+        border-radius: 50%;
+        margin: 0 auto 26px auto;
+    }
+    .HowitworksListItemContent{
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 21px;
+    }
+    
+    .HowitworksContent{
+        position: relative;
+        margin: 65px 0 54px 0;
+        
+    }
+    
+    .HowitworksContentWrapper{
+        position: relative;
+    }
+    .HowitworksContentItem{
+        position: relative;
+        margin: 0 0 40px;
+        
+    }
+    
+    .HowitworksContentTitle{
+        font-size: 20px;
+        font-weight: bold;
+        color: #000000;
+        line-height: 40px;
+        position: relative;
+    }
+    .HowitworksContentContent{
+        font-size: 18px;
+        line-height: 40px;
+        color: rgba(0,0,0,0.5);
+    }
+    .indexOne {
+        padding-top: 0;
+    }
+    .indexOneTitletip{
+        font-size: 18px;
+        display: block;
+    }
+    
+    .indexOne {
+        padding-bottom: 100px;
+    }
+    .indexOneTitleText {
+        font-size: 30px;
+        color: #000000;
+        line-height: 40px;
+    }
+    
+    .indexOneTitletip {
+        font-size: 20px;
+        color: rgba(0,0,0,0.5);
+        line-height: 40px;
+    }
+    
+    .indexOneListLine.left::after,
+    .indexOneListLine.right::before{
+        background: #E1E6F3;
+    }
+    
+    .indexOneListLine.left::before,
+    .indexOneListLine.right::after{
+        background: #006CC5;
+    }
+    
+    .indexOneListItemTitle {
+        font-size: 18px;
+        color: #000000;
+        line-height: 28px;
+    }
+    
+    .indexOneListItemTime {
+        font-size: 16px;
+        color: #4B9DFE;
+        line-height: 18px;
+    }
+    
+    .isMobile {
+        display: none;
+    }
+    
+    .indexOneTitle .yellowRoll {
+        width: 37px;
+        height: 37px;
+        background: #FFE400;
+        border-radius: 50%;
+        position: absolute;
+        top: 6px;
+        left: 24px;
+        z-index: -1;
+    }
+    
+    .indexOneTitle .pinkRoll {
+        width: 59px;
+        height: 29px;
+        background: #FFCFD5;
+        border-radius: 59px 59px 0 0;
+        position: absolute;
+        top: -3px;
+        right: 24px;
+        z-index: -1;
+    }
+    
+    .indexOneTitle::before,.indexOneTitle::after {
+        content: ""
+    }
 }
 
-.HowitworksContentTitle{
-    font-size: 24px;
-    margin-bottom: 5px;
-    font-weight: 500;
-    color: #1B1A2A;
-    position: relative;
-}
-.HowitworksContentContent{
-    font-size: 16px;
-    text-indent: 2em;
-    line-height: 30px;
-}
 
 .en{
-    .indexOneList{
-        width: 560px;
-    }
-
-    .indexOneListItemTitle{
-        font-size: 22px;
+    .Howitworks{
+        .HowitworksBannerTitle {
+            margin: 46px 0 50px;
+        }
+        .HowitworksListItemTitle {
+            width: 200px;
+            height: 80px;
+            line-height: 80px;
+            border-radius: 0;
+            margin-bottom: 20px;
+        }
+        .indexOneList{
+            width: 560px;
+        }
+    
+        .indexOneListItemTitle{
+            font-size: 22px;
+        }
     }
 }
 
-.indexOneTitletip{
-    font-size: 18px;
-    display: block;
+@media screen and (min-width: 100px)and (max-width: 750px){
+    .isMobile {
+        display: block;
+    }
+    .isPc {
+        display: none;
+    }
+    .en {
+        .Howitworks {
+            .HowitworksBannerTitle {
+                font-size: 14px;
+            }
+            .HowitworksList .HowitworksListItemTitle {
+                width: 80px;
+                left: -30px;
+            }
+            .indexOneList .indexOneListItemTitle {
+                font-size: 16px;
+            }
+            .indexOneList{
+                width: 100%;
+            }
+        }
+    }
+    .Howitworks {
+        .HowitworksBanner {
+            background-image: url(./../../img/howitworks/mobile-banner.png);
+            height: 350px !important;
+        }
+         .HowitworksBannerTitle {
+            font-size: 16px;
+            line-height: 40px;
+            background: #006CC5;
+            border-radius: 68px;
+            padding: 0;
+            margin: 58px 0 30px;
+            color: #FFFFFF;
+        }
+        .HowitworksList .HowitworksListItem {
+            max-width: 80%;
+            margin:  0 auto 20px auto;
+        }
+        .HowitworksList .HowitworksListItemTitle {
+            width: 32px;
+            height: 32px;
+            font-size: 10px;
+            line-height: 32px;
+            top: -7px;
+            left: 12px;
+        }
+        .HowitworksList .HowitworksListItemContent.isMobile {
+            width: auto;
+            display: inline-block;
+            font-size: 10px;
+            line-height: 12px;
+            margin: 0 0 0 60px;
+        }
+        .HowitworksContentItem {
+            margin-bottom: 20px;
+        }
+        .HowitworksContentTitle::before {
+            width: 0 !important;
+        }
+        .HowitworksContentTitle {
+            font-size: 16px;
+            line-height: 30px;
+        }
+        .HowitworksContentContent {
+            color: rgba(0,0,0,0.5);
+            font-size: 14px;
+            line-height: 30px;
+        }
+        .indexOneTitle .yellowRoll {
+            width: 24px;
+            height: 24px;
+            top: 10px;
+            left: 50px;
+        }
+        .indexOneTitle .pinkRoll {
+            width: 38px;
+            height: 19px;
+            right: 50px;
+        }
+        .indexOneTitleText {
+            font-size: 18px;
+            line-height: 34px;
+        }
+        .indexOneTitletip {
+            font-size: 14px;
+            line-height: 34px;
+        }
+        .indexOne .indexOneTitle {
+            width: 300px;
+            margin: 0 auto;
+        }
+        .indexOneTitletip {
+            color: rgba(0,0,0,0.5);
+        }
+        .indexOneListItemTitle {
+            font-size: 16px;
+        }
+        .indexOneListItemTime {
+            font-size: 14px;
+        }
+        .indexOneListLine.left,
+        .indexOneListLine.right {
+            width: 50%;
+            margin-left: 22%;
+        }
+        .indexOneListLine.left::after,
+        .indexOneListLine.left::before {
+            left: -12px;
+        }
+        .indexOne .indexOneListLine.left .indexOneListItem {
+            padding: 0 0 0 25px;
+        }
+    }
 }

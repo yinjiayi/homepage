@@ -28,7 +28,6 @@ class Apply extends React.Component{
 
     render(){
         let showdata = this.state.data[this.props.chiFlag]
-        let bannerclass = this.state.data.bannerclass
         return(         
             <div className="Apply">
                 <div className="ApplyBanner">
@@ -39,8 +38,7 @@ class Apply extends React.Component{
                                showdata.banner.map((item,index)=>{
                                    return (
                                     <div className="HowitworksListItem" key={index}>
-                                            <div className={["HowitworksListItemImage",bannerclass[index]].join(" ")}></div>
-                                            <div className="HowitworksListItemTitle">{item.title}</div>
+                                            <div className="ApplyBannerListItemTitle">{item.title}</div>
                                             <div className="HowitworksListItemContent" dangerouslySetInnerHTML={{ __html: item.text }}></div>
                                     </div>
                                    )

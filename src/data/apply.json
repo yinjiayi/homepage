@@ -1,20 +1,17 @@
 {
-    "bannerclass":["Cooperation","Community","Students"],
     "chi":{
         "banner":[
             {
                 "title":"合作单位",
-                "text":"和我们一起贡献开源</br><a target=\"_blank\" class=\"linkguide\" href=\"https://summer.iscas.ac.cn/help/cooperation/\">合作单位加入</a>详情"
+                "text":"<div>和我们一起贡献开源</div><span><a target=\"_blank\" class=\"linkguide\" href=\"https://summer.iscas.ac.cn/help/cooperation/\">合作单位加入</a>详情</span>"
             },
             {
                 "title":"社区",
-                "text":"让更多的学生和开发者们加入你的社区!</br><a target=\"_blank\" class=\"linkguide\" href=\"https://summer.iscas.ac.cn/help/community/\">社区加入</a>详情"
-               
-                
+                "text":"<div>让更多的学生和开发者们加入你的社区!</div><span><a target=\"_blank\" class=\"linkguide\" href=\"https://summer.iscas.ac.cn/help/community/\">社区加入</a>详情</span>"
             },
             {
                 "title":"学生",
-                "text":"利用暑期的时间，贡献你的代码吧！</br><a target=\"_blank\" class=\"linkguide\" href=\"https://summer.iscas.ac.cn/help/student/\">学生加入</a>详情"
+                "text":"<div>利用暑期的时间，贡献你的代码吧！</div><span><a target=\"_blank\" class=\"linkguide\" href=\"https://summer.iscas.ac.cn/help/student/\">学生加入</a>详情</span>"
             }
 
         ],
@@ -38,15 +35,15 @@
         "banner":[
             {
                 "title":"Cooperation Partner",
-                "text":"Contribute to open source with us!</br><a target=\"_blank\" class=\"linkguide\" href=\"https://summer.iscas.ac.cn/help/cooperation/\">cooperation</a>"
+                "text":"<div>Contribute to open source with us!</div><span><a target=\"_blank\" class=\"linkguide\" href=\"https://summer.iscas.ac.cn/help/cooperation/\">cooperation</a></span>"
             },
             {
                 "title":"Community",
-                "text":"Encourage more students and developers to join your community!</br><a class=\"linkguide\" href=\"https://summer.iscas.ac.cn/help/community/\">community participation </a> guide"
+                "text":"<div>Encourage more students and developers to join your community!</div><span><a class=\"linkguide\" href=\"https://summer.iscas.ac.cn/help/community/\">community participation guide</a></span>"
             },
             {
                 "title":"Students",
-                "text":"Contribute your code in this summer!</br><a target=\"_blank\" class=\"linkguide\" href=\"https://summer.iscas.ac.cn/help/student/\">student guide</a>"
+                "text":"<div>Contribute your code in this summer!</div><span><a target=\"_blank\" class=\"linkguide\" href=\"https://summer.iscas.ac.cn/help/student/\">student guide</a></span>"
             }
 
         ],
