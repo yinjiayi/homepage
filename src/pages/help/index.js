@@ -48,8 +48,8 @@ class Help extends React.Component{
                 </div>
                 <div className="HelpResourceLink content1200">
                         <div className="helptitle resourcelink">
-                            <div className="indexOneTitle">
-                                <span>{showdata.ressourcelink.name}</span>
+                            <div className="helpLinkBg">
+                                {/*<span>{showdata.ressourcelink.name}</span>*/}
                             </div>
                             <div className="helpBlueTextLine">
                             <div className="helpBlueText One" onClick={()=>this.goLink(showdata.kilink)}><span className="underline">{showdata.ressourcelink.keyissue}</span>{this.state.lf}</div>
@@ -61,8 +61,8 @@ class Help extends React.Component{
                             this.props.chiFlag === "chi"?
                             <>
                             <div className="helptitle">
-                                <div className="indexOneTitle">
-                                    <span>{showdata.contact.name}</span>
+                                <div className="helpContactBg">
+                                    {/*<span>{showdata.contact.name}</span>*/}
                                 </div>
                                 <div className="helpcontact">
                                     <div className="helpEmail mail">
