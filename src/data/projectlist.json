@@ -1,4 +1,5 @@
 {
+    
     "chi":{
         "searchPlaceholder":"请输入关键字/项目编号",
         "order":["依社区名称","依项目编号"],
@@ -12,7 +13,7 @@
         "projectCommunity":"社区名称",
         "operation":"操作",
         "operationbutton":["项目详情","我要报名"],
-        "proDi":"难   度：",
+        "proDi":"难  度：",
         "proDegree":"难度",
         "proD":"难度：",
         "proSelectStu":"中选学生：",
@@ -23,16 +24,17 @@
         "proMentorContact":"导师联系方式：",
         "proDetail":"项目详情",
         "proCommuDe":"转至社区",
-        "prodegree":["全部","低","中","高"],
+        "prodegree":["全部","低","中","高"],   
         "itemRender":["上一页","下一页"],
-        "lang":"支持语言: ",
-        "domain":"专注领域:",
-        "tech":"技术标签:",
-        "desc":"项目描述:",
-        "remark":"项目备注:",
+        "lang":"支持语言： ",
+        "domain":"专注领域：",
+        "tech":"技术标签：",
+        "desc":"项目描述：",
+        "remark":"项目备注：",
         "outre":"项目产出要求",
         "techre":"项目技术要求",
-        "language":"支持语言"
+        "language":"支持语言",
+        "langtag":["全部","中文","English","中文/English"]
 
     },
     "en":{
@@ -68,7 +70,8 @@
         "remark":"Remark:",
         "outre":"Output requirements",
         "techre":"Technique requirements",
-        "language":"Language"
+        "language":"Language",
+        "langtag":["All","中文","English","中文/English"]
         
     }
 }

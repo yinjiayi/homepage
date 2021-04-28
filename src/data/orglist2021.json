@@ -2031,26 +2031,7 @@
 	"domain_tag": ["操作系统"],
 	"mail_list": "community@openeuler.org",
 	"email": "contact@openeuler.io",
-	"project_list": [{
-		"name": "使用 ARM SVE 向量指令在 BLIS 上实现 BLAS Level-3 高性能计算",
-		"remark": "",
-		"difficulty": "高",
-		"mentor": "徐国栋",
-		"contact": "<guodong.xu@linaro.org>",
-		"uniont": null,
-		"student_count": 0,
-		"description": "Scalable Vector Extension, or SVE，是 ARM 公司在 Armv8 架构上推出的新一代向量指令集，拥有业界领先的可变向量宽度支持（从 128bit 到 2048bit ）。BLIS 是线性代数库 BLAS APIs 的一个开源高性能实现。其模块化，高性能，易移植，并行性，有相应论文支撑，并在生产中有具体实践。BLAS level-3 APIs 定义的是 矩阵 - 矩阵 计算.  本项目要求使用 ARM SVE 向量指令为 BLIS 编写 BLAS level-3 kernel，并且提交到 BLIS 上游社区。  项目调试，需要在 ARM64 鲲鹏服务器上，使用 QEMU， Docker，Arm IE （Instruction Emulator）搭建调试环境，进行 编码，测试。",
-		"label": "210010001",
-		"link": "https://gitee.com/openeuler-competition/summer-2021/issues/I3D35W?from=project-issue",
-		"tech_tag": ["高性能计算"],
-		"domain_tag": ["操作系统"],
-		"oR": ["写出的代码要求符合 BLIS 代码规范，并且通过 BLAS level-3 的功能正确性测试。", "代码 patch 提交到 BLIS 社区，争取在本项目持续期内获得社区认可，patch 能合入到 BLIS 代码库中。"],
-		"tR": ["懂得基本的汇编语言编程常识。有 ARM 汇编的技术基础者更佳。", "对 BLAS 代数库有一定的使用经验。对高性能计算 HPC 有使用经验。"],
-		"orgID": 132,
-		"spl": 1,
-		"organchor": "openeuler",
-		"orgname": "openEuler社区||openEuler Community"
-	}, {
+	"project_list": [ {
 		"name": "为 openEuler DDE 桌面添加系统资源监控报警应用",
 		"remark": "",
 		"difficulty": "高",
@@ -2430,26 +2411,7 @@
 		"spl": 1,
 		"organchor": "openeuler",
 		"orgname": "openEuler社区||openEuler Community"
-	}, {
-		"name": "为risc-v架构添加透明大页THP特性支持",
-		"remark": "",
-		"difficulty": "高",
-		"mentor": "孙南勇",
-		"contact": "<sunnanyong@huawei.com>",
-		"uniont": null,
-		"student_count": 0,
-		"description": "当前内核中riscv架构尚未实现透明大页特性，根据RISC-V特权架构的定义，为Linux内核RISC-V架构添加透明大页THP的支持。    透明大页介绍：在Linux 操作系统上运行内存需求量较大的应用程序时，由于其采用的默认页面大小为4KB，因而将会产生较多TLB Miss 和缺页中断，从而大大影响应用程序的性能。 当操作系统以2MB 甚至更大作为分页的单位时，将会大大减少TLB Miss 和缺页中断的数量，显著提高应用程序的性能。传统大页很难手动管理, 而且通常需要对代码进行重大更改才能有效地使用。因此后来引入了透明大页(THP)。THP 是一个抽象层, 可以自动创建、管理和使用传统大页。标准大页管理是预分配的方式，而透明大页管理则是动态分配的方式，且不需要修改程序源码。",
-		"label": "210010044",
-		"link": "",
-		"tech_tag": ["RISC-V"],
-		"domain_tag": ["OS"],
-		"oR": ["基于openEuler 21.03 分支(内核版本5.10)生成内核补丁，完成对riscv架构的THP支持，基于X86平台，在riscv qemu虚拟机上调通THP相关功能，包括THP的申请、使用、释放"],
-		"tR": ["熟悉内核内存管理、RISCV页表机制"],
-		"orgID": 132,
-		"spl": 1,
-		"organchor": "openeuler",
-		"orgname": "openEuler社区||openEuler Community"
-	}, {
+	},  {
 		"name": "实现RISCV架构下支持qspinlock",
 		"remark": "",
 		"difficulty": "高",

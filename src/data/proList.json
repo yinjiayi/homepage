@@ -362,15 +362,6 @@
 	"organchor": "openeuler",
 	"orgname": "openEuler社区||openEuler Community",
 	"difficulty": "高",
-	"name": "为risc-v架构添加透明大页THP特性支持",
-	"label": "210010044",
-	"spl": 1,
-	"tech_tag": "RISC-V",
-	"domain_tag": "OS"
-}, {
-	"organchor": "openeuler",
-	"orgname": "openEuler社区||openEuler Community",
-	"difficulty": "高",
 	"name": "基于 Linux Lab 搭建 openEuler 内核开发环境",
 	"label": "210010046",
 	"spl": 1,
@@ -664,15 +655,6 @@
 	"spl": 1,
 	"tech_tag": "GoC++DatabaseRustBackend，Network",
 	"domain_tag": "WebMirror"
-}, {
-	"organchor": "openeuler",
-	"orgname": "openEuler社区||openEuler Community",
-	"difficulty": "高",
-	"name": "使用 ARM SVE 向量指令在 BLIS 上实现 BLAS Level-3 高性能计算",
-	"label": "210010001",
-	"spl": 1,
-	"tech_tag": "高性能计算",
-	"domain_tag": "操作系统"
 }, {
 	"organchor": "apachedolphinscheduler",
 	"orgname": "Apache DolphinScheduler||Apache DolphinScheduler Community",
