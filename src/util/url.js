@@ -1,7 +1,3 @@
-var gourl = (url)=>{
-    window.open(url)
-}
-
 /**
  * Copyright (c) 2020 Intelligent Software Research Center of ISCAS
  * Summer 2020 Homepage is licensed under Mulan PSL v2.
@@ -13,6 +9,23 @@ var gourl = (url)=>{
  * MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
  * See the Mulan PSL v2 for more details.
  */
+
+
+
+var gourl = (url)=>{
+    window.open(url)
+}
+
+var gohash = (hash)=>{
+    let lang = ""
+    const langflag = window.location.hash.split("?")
+    if(langflag.length === 2){
+        lang = "?"+langflag[1]
+    }
+    window.location.hash = hash + lang
+}
+
+
 
 const linkDataMap = {
     homepage:'首页',
@@ -31,11 +44,7 @@ var gettitle = function(){
     if(location.length === 2){
         document.title = `${linkDataMap[location[1]]||'首页'}${titleContent}`;
         document.getElementsByTagName("meta")[2].content = "关注开源软件和开源社区，培养和发掘更多优秀的开发者。";
-    }
-
-  
-    
-    
+    }    
 }
 
 
@@ -44,13 +53,9 @@ var titleChange = function(){
     gettitle();
    
     window.addEventListener('hashchange',()=>{
-        var hashname = decodeURIComponent(window.location.hash)
-        window.location.hash=hashname
-        var anounceflag =decodeURIComponent(window.location.hash).split("announcement#").length === 1;
-        
-        if(anounceflag && !window.location.hash.includes('?') ) {
-            window.scrollTo(0,0);
-        }
+        window.scrollTo({
+            top: 0
+        });
         gettitle();
     })
 
@@ -68,9 +73,21 @@ var getSplit = function(item,flag){
     }
 }
 
+var getSupportLanguage = function(num){
+    return {
+        0:"中文/English",
+        1:"中文",
+        2:"English"
+    }[num]||"中文"
+}
+
+
+
 
 export {
     gourl,
+    gohash,
     titleChange,
-    getSplit
+    getSplit,
+    getSupportLanguage
 }

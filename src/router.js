@@ -24,6 +24,7 @@ import Orglist from './components/orglist/index.js';
 import ProjectlistN from './components/projectlistN/index.js';
 import OrgDetail from './components/orgdetail/index.js';
 import Liveshow from './pages/liveshow/index.js';
+import ProjectDetail from './components/projectDetail/index.js';
 export default class IRouter extends React.Component{
     constructor(props){
         super(props);
@@ -49,7 +50,8 @@ export default class IRouter extends React.Component{
                                         <Switch>
                                             <Route path = {["/org", "/org/orglist"]}  component={Orglist} exact ></Route>                      
                                             <Route path="/org/projectlist" component={ProjectlistN} exact></Route>  
-                                            <Route path="/org/orgdetail/:orgname" component={OrgDetail} ></Route>     
+                                            <Route path="/org/orgdetail/:orgname" component={OrgDetail} ></Route>  
+                                            <Route path="/org/prodetail/:projectid" component={ProjectDetail} ></Route>     
                                         </Switch>                                     
                                     </Org>   
                                 </Route>

@@ -20,7 +20,7 @@ import OrgTip from '../OrgTip/index.js';
 import prolistjson from '../../data/projectlist.json';
 import ProjectModal from '../projectModal/index.js';
 import { Pagination } from 'antd';
-
+import {gohash} from "../../util/url.js";
 class OrgDetail extends React.Component{
     constructor(props){
        super(props)
@@ -34,6 +34,7 @@ class OrgDetail extends React.Component{
     }
 
     scrollToAnchor(anchorName){
+
         if (anchorName) {
             // 找到锚点
             let anchorElement = document.getElementById(anchorName);
@@ -41,8 +42,8 @@ class OrgDetail extends React.Component{
             // 如果对应id的锚点存在，就跳转到锚点
             if(anchorElement) { 
                 // anchorElement.scrollIntoView({block: 'start', behavior: 'smooth'});
-                var elementPosition =anchorElement.getBoundingClientRect().top -  100;
-                
+                var elementPosition =anchorElement.getBoundingClientRect().top+window.scrollY -  100;
+                console.log(anchorElement.getBoundingClientRect().top)
                 window.scrollTo({
                     top: elementPosition,
                     behavior: "smooth"
@@ -51,19 +52,11 @@ class OrgDetail extends React.Component{
         }
     }
 
+   
     componentDidMount(){
-        
-        if(this.state.flagProid){
-            this.scrollToAnchor(this.state.flagProid)
-        }
-        
-    }
 
-    componentWillMount(){
-        window.scrollTo({
-            top: 0
-        });
-        console.log("orgdeail")
+        console.log("000")
+       
         let showorg = this.props.orgdetail
         
         var hashurl = this.props.history.location.pathname.split("/")[3].toString();  
@@ -80,21 +73,27 @@ class OrgDetail extends React.Component{
         }
         //3.0 若无，返回首页
         if(!showorg){
-            this.props.history.push("/")
+            gohash("/")
             return false
         }
         //4.0 判断projectid的位置
         const prolist = showorg.project_list
-        const prolabel = this.props.history.location.search.split("?proid=")
+        const hash = window.location.hash.split("/")
+        let prolabel = null
+        if(hash.length === 5 && hash[4].slice(0,5) === "proid"){
+            prolabel = hash[4].slice(5,hash[4].split("?")[0].length)
+        }
+       
+         //5.0 判断当前的project在哪一页
         let proindex = -1
         let pagepro  = 1
         
-        if(prolabel[1]){
+        if(prolabel){
             this.setState({
-                flagProid:prolabel[1]
+                flagProid:prolabel
             })
             for(var i = 0; i < prolist.length; i++) {          
-                if(prolist[i].label === prolabel[1]) {
+                if(prolist[i].label === prolabel) {
                     
                     proindex = i+1
                     break;
@@ -114,14 +113,17 @@ class OrgDetail extends React.Component{
             page:pagepro,
             
         }) 
+
+        setTimeout(()=>{
+            if(prolabel){
+                this.scrollToAnchor(this.state.flagProid)
+               
+            }
+    
+           },500)
         
         
     }
-
-    goOrgList(){
-        window.location.hash = "/org/orglist"
-    }
-
 
     itemRender(current, type, originalElement) {
         if (type === 'prev') {
@@ -153,7 +155,7 @@ class OrgDetail extends React.Component{
         return(         
             <div className="OrgDetail">   
                 <div className="OrgDetailNavLink content1200">   
-                    <span className="orgListNavBarItem orgClick" onClick={()=>{this.goOrgList()}}>社区列表</span>
+                    <span className="orgListNavBarItem orgClick" onClick={()=>{gohash("/org/orglist")}}>社区列表</span>
                     <span className="orgListNavBarItem orgGrey"> &gt; 社区详情</span>              
                 </div>
                 <div className="OrgDetailWrapper">
@@ -177,7 +179,11 @@ class OrgDetail extends React.Component{
                         {
                             this.state.showprojectlist.map((item,index)=>{
                                 return (
-                                        <ProjectModal showdata={protext} item={item} key={index} prourl={showorgdata.project_url}/>
+                                        <ProjectModal 
+                                        showdata={protext} 
+                                        item={item} 
+                                        key={index} 
+                                        prourl={showorgdata.project_url}/>
                                 )
                             })
                         }

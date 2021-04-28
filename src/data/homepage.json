@@ -2,6 +2,7 @@
     "communitylink":"https://summer.iscas.ac.cn/help/community/",
     "applyurl":"https://portal.summer-ospp.ac.cn/summer/",
     "chi":{
+        "detail":"查看详情",
         "goapply":"报名系统",
         "title":"开源软件供应链点亮计划 - 暑期2021",
         "bannertext":[
@@ -10,7 +11,7 @@
         "bannerone":[
             "社区报名正在进行中, <span class=\"homepageTime\">5 月 20 日</span> 报名截止。详情请查看 <a target=\"_blank\" class=\"homepageLinkguide\" href=\"https://summer.iscas.ac.cn/help/community/\">社区指南<span  class=\"fire\"></span></a>",
             "第一批社区名单于 4 月 2 日公示， <a  class=\"homepageLinkguide\" href=\"#/org\">查看详情</a>",
-            "4 月中下旬开始启动“大咖说开源”系列讲座活动， 敬请期待",
+            "大咖说开源第二季已启动，",
             "5 月 24 日- 6 月 13 日是学生提交项目申请阶段，详情请查看 <a target=\"_blank\" class=\"homepageLinkguide\" href=\"https://summer.iscas.ac.cn/help/student/\">学生指南</a>"
         ],
         "bannerTwo":[
@@ -29,6 +30,7 @@
         "logotitle":["组织方及合作伙伴","主办方","协办方","承办方","媒体合作方","合作单位"]
     },
     "en":{
+        "detail":"[More Details]",
         "goapply":"APPLY",
         "title":"Summer 2021 of Open Source Promotion Plan",
         "bannertext":[
@@ -37,7 +39,7 @@
         "bannerone":[
             "Community applications will close on May 20, 2021. <a target=\"_blank\" class=\"homepageLinkguide\" href=\"https://summer.iscas.ac.cn/help/en/community/\">[Community Guide]<span  class=\"fire\"></span></a>",
             "The first list of accpeted community has been announced on April 2.  <a  class=\"homepageLinkguide\" href=\"#/org\">[More Details]</a>",
-            "The sharing activity <span class=\" italic\">Celebrities with Open Source</span> will start in late April !",
+            "The sharing activity <span class=\" italic\">Celebrities with Open Source</span> is in progress !",
             "Students  application will start from May 24 to June 13. <a target=\"_blank\" class=\"linkguide\" href=\"https://summer.iscas.ac.cn/help/en/student/\">[Student Guide]</a>"
         ],
         "bannerTwo":[

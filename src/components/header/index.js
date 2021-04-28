@@ -15,14 +15,14 @@ import './index.less';
 import {NavLink} from 'react-router-dom';
 import { connect } from 'react-redux';
 import data from './../../data/nav.json';
-import {titleChange} from './../../util/url.js';
+import {titleChange,gohash} from './../../util/url.js';
 class Header extends React.Component{
     constructor(props){
        super(props)
        this.state ={         
             chiFlag:"chi",
             data,
-            pageflag:"index",
+            // pageflag:"index",
             moblieListFlag:false,
        }
     }
@@ -32,8 +32,11 @@ class Header extends React.Component{
         msg === 'chi'?this.props.chiFlag_chi():this.props.chiFlag_en();
         this.setState({
             chiFlag:msg
-        })
+        })     
     }
+
+   
+
 
     headerlist(flag){
         this.setState({
@@ -42,10 +45,31 @@ class Header extends React.Component{
     }
 
     getLink(title){
-        window.location.hash = "/"+title
+        gohash("/"+title)
         this.headerlist(false)
     }
 
+    goPage(linkurl){
+
+        this.props.setPageFlag(linkurl)
+        gohash("/"+linkurl)
+
+    }
+
+    parseQueryString(url) {
+        var obj = {};
+        var keyvalue = [];
+        var key = "",
+            value = "";
+        var paraString = url.substring(url.indexOf("?") + 1, url.length).split("&");
+        for (var i in paraString) {
+            keyvalue = paraString[i].split("=");
+            key = keyvalue[0];
+            value = keyvalue[1];
+            obj[key] = value;
+        }
+        return obj;
+    }
     
     componentDidMount(){
 
@@ -55,8 +79,16 @@ class Header extends React.Component{
                 this.switchFlag('en')
             }
         }
+
        
        titleChange();
+
+       //2.0 查看有无语言标志位
+       const langc = this.parseQueryString(window.location.hash)
+       if(langc.hasOwnProperty("lang")){
+            this.switchFlag(langc["lang"])
+       }
+
        setTimeout(()=>{
            let hashopl = window.location.hash.split("#/");         
            if(hashopl[1] === ""){
@@ -78,13 +110,13 @@ class Header extends React.Component{
     render(){
         let showdata = this.state.data[this.state.chiFlag]
         let link = this.state.data.link
-        
+        let pageflagredux = this.props.pageflag
         return(         
             <div className={["header", this.state.chiFlag].join(" ")}>
                 <div className="content1200 headerContent">
-                     <NavLink to="/homepage">
-                        <div className="osscHeaderLogo"></div>
-                    </NavLink>
+                    
+                    <div className="osscHeaderLogo" onClick={()=>{gohash("/homepage")}}></div>
+                   
                     
                     <div className="headerList">
                     <div className="headerTabWrapper">
@@ -94,11 +126,13 @@ class Header extends React.Component{
                                 const linkurl = link[index]
                                 return (
                                    
-                                    <NavLink key={index} to={'/'+ linkurl} >
-                                        <div className={["headerTabItem","headerNav", linkurl].join(" ")}>
-                                            <span>{ele.name}</span>
-                                        </div>                                
-                                    </NavLink>
+                                    <div key={index} className={[pageflagredux ===linkurl?"active":"" ,"headerWrapItem"].join(" ")}>
+                                    <div 
+                                        onClick={()=>{this.goPage(linkurl)}}
+                                        className={["headerTabItem","headerNav", linkurl].join(" ")}>
+                                        <span>{ele.name}</span>
+                                    </div>                                
+                                    </div>
                                   
                                  
                                     
@@ -167,8 +201,22 @@ const mapDispatchToProps = dispatch => {
             dispatch({
                 type:'chiFlag_en'
             })
+        },
+        setPageFlag:(data)=>{
+            dispatch({
+                type:'setPageFlag',
+                payload:data
+            })
         }
     }
 }
 
-export default connect(null,mapDispatchToProps)(Header)
+const mapStateToProps = (state)=>{
+    
+    return {
+        pageflag:state.pageflag,
+       
+    }
+ }
+
+export default connect(mapStateToProps,mapDispatchToProps)(Header)

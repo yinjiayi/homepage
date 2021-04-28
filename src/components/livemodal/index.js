@@ -13,12 +13,12 @@
 import React from 'react'
 import './index.less';
 import liveTwoCode from "../../img/liveshow/liveTwoCode.png";
-
+import {gourl} from "./../../util/url.js";
 export default class LiveModal extends React.Component{
     constructor(props){
        super(props)
        this.state ={
-          
+        liveurl:"https://live.bilibili.com/22221041",
            
        }
     }
@@ -44,9 +44,9 @@ export default class LiveModal extends React.Component{
                             <>
                              <div className="LiveShowItemHeaderTitleTwo LiveShowItemOver">{this.props.item.time}</div>
                                {
-                                   this.props.item.url !== "#"?
+                                   this.props.item.url?
                                    <div 
-                                    onClick={()=>{this.goLogoLink(this.props.item.url)}}
+                                    onClick={()=>{gourl(this.props.item.url)}}
                                     className="LiveShowItemHeaderButton" >观看回放</div>:""
                                }
                                 
@@ -62,7 +62,7 @@ export default class LiveModal extends React.Component{
                         <div>
                             <div className="LiveShowItemHeaderTitleTwo">{this.props.item.time}</div>
                         <div 
-                            onClick={()=>{this.goLogoLink(this.state.liveurl)}}
+                            onClick={()=>{gourl(this.state.liveurl)}}
                             className="LiveShowItemHeaderButton" >观看直播</div>
                         </div>
 
