@@ -13,7 +13,7 @@
 import React from 'react'
 import './index.less';
 import { connect } from 'react-redux';
-import {getSplit} from "../../util/url.js";
+import {getSplit,gohash} from "../../util/url.js";
 
 
 class OrgTip extends React.Component{
@@ -26,7 +26,7 @@ class OrgTip extends React.Component{
 
     goOrgDetail(){
         this.props.setOrgDetail(this.props.item)
-        window.location.hash = "/org/orgdetail/"+this.props.item.anchor
+        gohash("/org/orgdetail/"+this.props.item.anchor)
     }
 
    
@@ -49,12 +49,17 @@ class OrgTip extends React.Component{
                             {this.props.item.url}
                         </a>
                     </div>
-                    <div className="OrgTipMailList OrgTipArr">
-                        {this.props.showdata.maillist}
-                        <a href={"mailto:"+this.props.item.mail_list}  target="_blank" rel="noopener noreferrer">
-                            {this.props.item.mail_list}
-                        </a>
-                    </div>
+                    {
+                        this.props.item.mail_list?
+                        <div className="OrgTipMailList OrgTipArr">
+                            {this.props.showdata.maillist}
+                            <a href={"mailto:"+this.props.item.mail_list}  target="_blank" rel="noopener noreferrer">
+                                {this.props.item.mail_list}
+                            </a>
+                        </div>:""
+
+                    }
+                    
                     <div className="OrgTipMail OrgTipArr">
                         {this.props.showdata.email}
                         <a href={"mailto:"+this.props.item.email}  target="_blank" rel="noopener noreferrer">

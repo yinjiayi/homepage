@@ -9,6 +9,11 @@
             "name":"oschina",
             "img":"oschina.png",
             "url":"https://www.oschina.net/"
+        },
+        {
+            "name":"Linux 人",
+            "img":"linuxren.png",
+            "url":""
         }
     ],
     
@@ -275,6 +280,40 @@
             "name":"龙归科技",
             "img":"longgui.png",
             "url":"https://www.longguikeji.com/home"
-        }
+        },
+        {
+            
+            "img": "GitCourse.png",
+            "name": "gitcourse",
+            "url": "http://gitcourse-io.kfcoding.com/"
+        },
+         {
+            
+            "img": "senparc.png",
+            "name": "盛派开发者社区",
+            "url": "https://dev.senparc.com/"
+        },
+        {
+           
+           "img": "Linuxneihe.png",
+           "name": "Linux内核之旅开源社区",
+           "url": "http://kerneltravel.net/"
+       }, {
+        
+        "img": "xmake.png",
+        "name": "xmake",
+        "url": "https://xmake.io"
+       
+    }, {
+
+        "img": "testerhome.png",
+        "name": "TesterHome",
+        "url": "https://testerhome.com/"
+    }, {
+        "img": "graphscope.png",
+        "title": "GraphScope",
+        "url": "https://graphscope.io"
+    }
+    
     ]
 }

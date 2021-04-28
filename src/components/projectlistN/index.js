@@ -17,7 +17,7 @@ import { Input } from 'antd';
 import data from '../../data/orglist2021.json';
 import projectlist from '../../data/projectlist.json';
 import { Pagination } from 'antd';
-import {getSplit} from "../../util/url.js";
+import {getSplit,gohash} from "../../util/url.js";
 const { Search } = Input;
 
 class ProjectlistN extends React.Component{
@@ -26,12 +26,14 @@ class ProjectlistN extends React.Component{
        this.state ={   
            page:1,
            pagesize:40,
-           datall: [],  
+           datall: [],  // 显示的project所有数据
            searchdatastock:[],      
            datastock:[],      // project 所有数据
            projectlistdata:[],// 显示的project数据
            degreeselect:"all",
-        //    orderSelect:"community" // community proid    
+           langSelect:"all",
+           techSelect:"all",
+           areaSelect:"all"
        }
        this.itemRender = this.itemRender.bind(this)
     }
@@ -51,8 +53,7 @@ class ProjectlistN extends React.Component{
         })  
     }
 
-    filterItem(value){
-      
+    filterItem(value){  
         this.setState({ 
             degreeselect:"all"           
         })
@@ -60,7 +61,7 @@ class ProjectlistN extends React.Component{
             var showdataTemp = []
             this.state.datall.map((item)=>{
                 if(item.name.toString().includes(value)||
-                item.orgtitle.toLocaleLowerCase().includes(value)||
+                item.label.includes(value)||
                 item.description.toLocaleLowerCase().includes(value)){
                     showdataTemp.push(item)
                 }
@@ -107,12 +108,12 @@ class ProjectlistN extends React.Component{
             })
             prodata = prodata.concat(_arr)         
         })
-       
         this.setState({
             datall:prodata,
             datastock:prodata,
             projectlistdata:prodata.slice(0,this.state.pagesize),
         })
+        
     }
 
     itemRender(current, type, originalElement) {
@@ -143,9 +144,9 @@ class ProjectlistN extends React.Component{
     gohashlink(orgtitle,proid){
         let url = "/org/orgdetail/"+orgtitle
         if(proid){
-            url += "?proid="+proid
+            url += "/proid"+proid
         }
-        window.location.hash=url
+        gohash(url)
         this.props.setOrgTabFlag("orglist")
     }
 
@@ -373,8 +374,10 @@ const mapStateToProps = (state)=>{
                 type:'setOrgTabFlag',
                 payload:data
             })
-        },
+        }
     }
 }
+
+
 
 export default connect(mapStateToProps,mapDispatchToProps)(ProjectlistN)

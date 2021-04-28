@@ -15,7 +15,7 @@ import './index.less';
 import { connect } from 'react-redux';
 import data from "./../../data/homepage.json";
 import { Carousel } from 'antd';
-import {gourl} from "./../../util/url.js";
+import {gohash, gourl} from "./../../util/url.js";
 import logocoopdata from "./../../data/coorganizer.json"
 class HomePage extends React.Component{
     constructor(props){
@@ -29,6 +29,11 @@ class HomePage extends React.Component{
             gourl(url)
         }
         
+    }
+
+    goLiveshow(){
+        this.props.setPageFlag("liveshow")
+        gohash("/liveshow")
     }
 
     createLogo(logoclassname,data){
@@ -88,7 +93,7 @@ class HomePage extends React.Component{
         return(         
             <div className="homepage">
             <div className="GoApply" onClick={()=>{this.goLogoLink(applyurl)}}>{showdata.goapply}</div>
-            <Carousel autoplay>
+            <Carousel>
                 <div className="homepageBanner One">
                     <div className="homepageBannerTitle">{showdata.title}</div>
                     <div className="homepageTextOne">
@@ -96,8 +101,13 @@ class HomePage extends React.Component{
                         showdata.bannerone.map((item,index)=>{
                             return(
                                 <div className="homepageBannerFline" key={index} >
-                                    <span className="homepageBannerFlineIcon"></span>
-                                    <span  className="homepageBannerFlineText" dangerouslySetInnerHTML={{ __html: item }}></span>
+                                    <span className="homepageBannerFlineText">
+                                    <span   dangerouslySetInnerHTML={{ __html: item }}></span>
+                                    {
+                                        index === 2?
+                                        <span onClick={()=>{this.goLiveshow()}} className="homepageLinkguide">{showdata.detail}</span>:""
+                                    }
+                                    </span>
                                 </div>
                             )
 
@@ -136,7 +146,13 @@ class HomePage extends React.Component{
                             }
                         </div>
                         <div className="homepageLogo">
-                            <div className="homepageLogoTitle">{showdata.logotitle[0]}</div>
+                            <div className="homepageLogoTitle">
+                                <span className="title-wrapper">
+                                    <span className="title-left-icon"></span>
+                                    <span className="title-text">{showdata.logotitle[0]}</span>
+                                    <span className="title-right-icon"></span>
+                                    </span>
+                            </div>
                            
                             <div className="homepageLogoItemTitle">
                                 {showdata.logotitle[1]}
@@ -197,5 +213,15 @@ const mapStateToProps = (state)=>{
      }
   }
 
+  const mapDispatchToProps = dispatch => {
+    return {
+        setPageFlag:(data)=>{
+            dispatch({
+                type:'setPageFlag',
+                payload:data
+            })
+        }
+    }
+}
  
- export default connect(mapStateToProps)(HomePage)
+ export default connect(mapStateToProps,mapDispatchToProps)(HomePage)
