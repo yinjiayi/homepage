@@ -120,7 +120,6 @@ class Header extends React.Component{
         let showdata = this.state.data[this.state.chiFlag]
         let link = this.state.data.link
         let pageflagredux = this.props.pageflag
-        console.log("pageflagredux"+pageflagredux)
         return(         
             <div className={["header", this.state.chiFlag].join(" ")}>
                 <div className="content1200 headerContent">

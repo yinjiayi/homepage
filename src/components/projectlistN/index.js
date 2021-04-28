@@ -92,6 +92,7 @@ class ProjectlistN extends React.Component{
 
 
     getData(){
+        // 功能暂时隐藏
         // var prodata = []
         // var domain_tag = []
         // var tech_tag = []
