@@ -9,6 +9,11 @@
             "name":"oschina",
             "img":"oschina.png",
             "url":"https://www.oschina.net/"
+        },
+        {
+            "name":"Linux 人",
+            "img":"linuxren.png",
+            "url":""
         }
     ],
     
@@ -293,6 +298,22 @@
            "img": "Linuxneihe.png",
            "name": "Linux内核之旅开源社区",
            "url": "http://kerneltravel.net/"
-       }
+       }, {
+        
+        "img": "xmake.png",
+        "name": "xmake",
+        "url": "https://xmake.io"
+       
+    }, {
+
+        "img": "testerhome.png",
+        "name": "TesterHome",
+        "url": "https://testerhome.com/"
+    }, {
+        "img": "graphscope.png",
+        "title": "GraphScope",
+        "url": "https://graphscope.io"
+    }
+    
     ]
 }
