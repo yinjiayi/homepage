@@ -78,6 +78,7 @@ class OrgDetail extends React.Component{
         }
         //4.0 判断projectid的位置
         const prolist = showorg.project_list
+        console.log(showorg)
         const hash = window.location.hash.split("/")
         let prolabel = null
         if(hash.length === 5 && hash[4].slice(0,5) === "proid"){

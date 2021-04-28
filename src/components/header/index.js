@@ -54,6 +54,10 @@ class Header extends React.Component{
         this.props.setPageFlag(linkurl)
         gohash("/"+linkurl)
 
+        if(linkurl === "org"){
+            this.props.setOrgTabFlag("orglist")
+        }
+
     }
 
     parseQueryString(url) {
@@ -89,6 +93,11 @@ class Header extends React.Component{
             this.switchFlag(langc["lang"])
        }
 
+       //3.0 查看当前hash
+       let hashu = window.location.hash.split("?")[0].split("#/")[1].split("/")[0]
+       
+       this.props.setPageFlag(hashu||'homepage')
+
        setTimeout(()=>{
            let hashopl = window.location.hash.split("#/");         
            if(hashopl[1] === ""){
@@ -111,6 +120,7 @@ class Header extends React.Component{
         let showdata = this.state.data[this.state.chiFlag]
         let link = this.state.data.link
         let pageflagredux = this.props.pageflag
+        console.log("pageflagredux"+pageflagredux)
         return(         
             <div className={["header", this.state.chiFlag].join(" ")}>
                 <div className="content1200 headerContent">
@@ -202,6 +212,12 @@ const mapDispatchToProps = dispatch => {
                 type:'chiFlag_en'
             })
         },
+        setOrgTabFlag:(data)=>{
+            dispatch({
+                type:'setOrgTabFlag',
+                payload:data
+            })
+        },
         setPageFlag:(data)=>{
             dispatch({
                 type:'setPageFlag',
@@ -210,6 +226,8 @@ const mapDispatchToProps = dispatch => {
         }
     }
 }
+
+
 
 const mapStateToProps = (state)=>{
     

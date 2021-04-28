@@ -25,6 +25,7 @@ class Org extends React.Component{
     }
 
     componentDidMount(){    
+       
         var hashurl = this.props.history.location.pathname.split("/");
         let orgflag = "orglist"
         
@@ -56,7 +57,7 @@ class Org extends React.Component{
                                 <div  
                                     key={index} 
                                     onClick={()=>this.handleClick(item.hash)} 
-                                    className={["OrgTabItem",tabflag === item.hash ? "activeTab":""].join(" ")}> {item.name}</div>
+                                    className={["OrgTabItem",item.hash,tabflag === item.hash ? "activeTab":""].join(" ")}> {item.name}</div>
                             )
                         })
                     }
