@@ -25,6 +25,7 @@ class Org extends React.Component{
     }
 
     componentDidMount(){    
+       
         var hashurl = this.props.history.location.pathname.split("/");
         let orgflag = "orglist"
         

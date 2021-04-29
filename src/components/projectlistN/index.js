@@ -14,10 +14,11 @@ import React from 'react'
 import './index.less';
 import { connect } from 'react-redux';
 import { Input } from 'antd';
-import data from '../../data/orglist2021.json';
+import proData from '../../data/proList.json';
 import projectlist from '../../data/projectlist.json';
 import { Pagination } from 'antd';
-import {getSplit,gohash} from "../../util/url.js";
+import { getSelectM,getSelectLang,getSelectDToChi,getLangDToChi} from './util.js'
+import {getSplit,gohash,getSupportLanguage,gourl} from "../../util/url.js";
 const { Search } = Input;
 
 class ProjectlistN extends React.Component{
@@ -26,12 +27,12 @@ class ProjectlistN extends React.Component{
        this.state ={   
            page:1,
            pagesize:40,
-           datall: [],  // 显示的project所有数据
+           datall: proData,        // 显示的project所有数据
            searchdatastock:[],      
-           datastock:[],      // project 所有数据
-           projectlistdata:[],// 显示的project数据
+           datastock:proData,      // project 所有数据
+           projectlistdata:[],     // 单页显示的project数据
            degreeselect:"all",
-           langSelect:"all",
+           langSelect: "all",           //0,1,2
            techSelect:"all",
            areaSelect:"all"
        }
@@ -55,19 +56,19 @@ class ProjectlistN extends React.Component{
 
     filterItem(value){  
         this.setState({ 
-            degreeselect:"all"           
+            degreeselect:"all" ,
+            langSelect: "all"          
         })
         if(value){
             var showdataTemp = []
-            this.state.datall.map((item)=>{
-                if(item.name.toString().includes(value)||
-                item.label.includes(value)||
-                item.description.toLocaleLowerCase().includes(value)){
+            const valuel = value.toLowerCase()
+            this.state.datall.map((item)=>{           
+                if(item.name.toLowerCase().includes(valuel)||
+                item.label.includes(valuel)){
                     showdataTemp.push(item)
                 }
                 return 0;
-            })
-            
+            })           
             this.setState({
                 datall:showdataTemp,
                 searchdatastock:showdataTemp,
@@ -93,25 +94,8 @@ class ProjectlistN extends React.Component{
 
 
     getData(){
-        var prodata = []
-        var domain_tag = []
-        var tech_tag = []
-        data.map((item)=>{
-            let _arr = []    
-            domain_tag = domain_tag.concat(item.domain_tag)  
-            tech_tag = tech_tag.concat(item.tech_tag)   
-            item.project_list.map((items) => {           
-                _arr.push(Object.assign({},items,
-                    {orgtitle: item.title,
-                    anchor:item.anchor,
-                    prourl:item.project_url}))            
-            })
-            prodata = prodata.concat(_arr)         
-        })
         this.setState({
-            datall:prodata,
-            datastock:prodata,
-            projectlistdata:prodata.slice(0,this.state.pagesize),
+            projectlistdata:this.state.datall.slice(0,this.state.pagesize),
         })
         
     }
@@ -150,63 +134,71 @@ class ProjectlistN extends React.Component{
         this.props.setOrgTabFlag("orglist")
     }
 
-    goLink(link){
-        window.open(link)
-    }
 
-    filterTag(tag){ 
+    filterTag(tag,flag){ 
+        // 1.0 获取选择标签的值
+        let {degreeselect,langSelect} = this.state
+        degreeselect = flag === "degree" ? tag : degreeselect
+        langSelect = flag === "lang" ? tag : langSelect
+        // 2.0 定义筛选出的数据数组
         let filterdata = [] 
+        // 3.0 确定搜索的数组源
+        let showdatastock = "datastock"
         if(this.state.searchdatastock.length>0){
-            if(tag === "all"){
-                this.setState({
-                    datall:this.state.searchdatastock,              
-                })
-            }else{
-                const degree = this.getSelectDToChi(tag)
-                filterdata = this.state.searchdatastock.filter(item => item.difficulty === degree);
-                this.setState({
-                    datall:filterdata,              
-                })
-            }
-        } else{
-            if(tag === "all"){
-                this.setState({
-                    datall:this.state.datastock,              
-                })
-            }else{
-                const degree = this.getSelectDToChi(tag)
-                filterdata = this.state.datastock.filter(item => item.difficulty === degree);
-                this.setState({
-                    datall:filterdata,              
-                })
-            }
+            showdatastock = "searchdatastock"
         }
+            
+        // debugger
+        if( degreeselect=== "all" && langSelect === "all"){
+            this.setState({
+                datall:this.state[showdatastock],              
+            })
+        }else{
+            
+            const degree = getSelectDToChi(degreeselect)
+            const langnum = getLangDToChi(langSelect)
+
+            filterdata = this.state[showdatastock].filter(item => {
+                if(degreeselect=== "all"){
+                    return item.spl === langnum
+                }else if(langSelect=== "all"){
+                    return  item.difficulty === degree
+                }else{
+                    return item.spl === langnum && item.difficulty === degree
+                }
+                
+            });
+            
+        
+            this.setState({
+                datall:filterdata,              
+            })
+        }
+        
 
         setTimeout(()=>{
             this.getPageData(1)
         },100)
     }
     setDegree(tag){
-        const tagen = this.getSelectM(tag)
+        const tagen = getSelectM(tag)
         this.setState({
             degreeselect:tagen
         })
-        this.filterTag(tagen)
-
+        this.filterTag(tagen,"degree")
     }
 
-    getSelectM(item){
-        return {
-            "全部":"all",
-            "低":"low",
-            "中":"medium",
-            "高":"high",
-            "All":"all",
-            "Low":"low",
-            "Medium":"medium",
-            "High":"high"
-        }[item]||"all"
+    setLang(item){
+        
+        const langtag = getSelectLang(item)
+        this.setState({
+            langSelect:langtag
+        })
+        this.filterTag(langtag,"lang")
     }
+
+    
+
 
     getDegreeBy(degree){
         if(this.props.chiFlag === "chi"){
@@ -219,31 +211,13 @@ class ProjectlistN extends React.Component{
         }[degree]||"Low"
     }
 
-    getSelectDToChi(tagen){
-        return {
-            "low":"低",
-            "medium":"中",
-            "high":"高"
-        }[tagen]||"全部"
-
-    }
-
-    // TabSelectOrder(flag){
-    //     this.setState({
-    //         orderSelect:flag
-    //     })
-    // }
-
-
-
-
-
- 
+    
 
 
     render(){
+        
         let showdata = projectlist[this.props.chiFlag]
-        let {projectlistdata,degreeselect,datall} = this.state
+        let {projectlistdata,degreeselect,langSelect,datall} = this.state
         let datalllength = datall.length
         return(         
             <div className="Projectlist">
@@ -287,7 +261,22 @@ class ProjectlistN extends React.Component{
                                         <span 
                                         key={index} 
                                         onClick={()=>{this.setDegree(item)}}
-                                        className={["ProjectListSelectItemContent",this.getSelectM(item) === degreeselect ? "ProjectListSelectTagDe":""].join(" ")}>
+                                        className={["ProjectListSelectItemContent",getSelectM(item) === degreeselect ? "ProjectListSelectTagDe":""].join(" ")}>
+                                            {item}
+                                        </span>
+                                    )
+                                })
+                            }
+                        </div>
+                        <div className="ProjectListSelectItem Lang">
+                            <span className="ProjectListSelectItemTitle" >{showdata.lang}</span>
+                            {
+                                showdata.langtag.map((item,index)=>{
+                                    return (
+                                        <span 
+                                        key={index} 
+                                        onClick={()=>{this.setLang(item)}}
+                                        className={["ProjectListSelectItemContent",getSelectLang(item) === langSelect ? "ProjectListSelectTagDe":""].join(" ")}>
                                             {item}
                                         </span>
                                     )
@@ -301,6 +290,7 @@ class ProjectlistN extends React.Component{
                             <span className="ProjectListLCID ">{showdata.projectNumber}</span>
                             <span className="ProjectListLCName">{showdata.projectName}</span>
                             <span className="ProjectListLCCommunity">{showdata.projectCommunity}</span>
+                            <span className="ProjectListLCLang">{showdata.language}</span>
                             <span className="ProjectListLCDegree">{showdata.proDegree}</span>
                             <span className="ProjectListLCOperation">{showdata.operation}</span>
                         </div>
@@ -313,16 +303,17 @@ class ProjectlistN extends React.Component{
                                     return(
                                         <div className="ProjectListLCLine Item" key={index}>
                                             <span className="ProjectListLCID ">{item.label}</span>
-                                            <span className="ProjectListLCName" onClick={()=>{this.gohashlink(item.anchor,item.label)}}>
+                                            <span className="ProjectListLCName" onClick={()=>{this.gohashlink(item.organchor,item.label)}}>
                                                 
                                                 {getSplit( item.name,this.props.chiFlag)}
                                             </span>
-                                            <span className="ProjectListLCCommunity" onClick={()=>{this.gohashlink(item.anchor)}}>
-                                                {getSplit( item.orgtitle,this.props.chiFlag)}</span>
+                                            <span className="ProjectListLCCommunity" onClick={()=>{this.gohashlink(item.organchor)}}>
+                                                {getSplit( item.orgname,this.props.chiFlag)}</span>
+                                            <span className="ProjectListLCLang">{getSupportLanguage(item.spl)}</span>
                                             <span className="ProjectListLCDegree">{this.getDegreeBy(item.difficulty)}</span>
                                             <span className="ProjectListLCOperation Item">
                                                 
-                                                <span className="PLOperationButton prodetail" onClick={()=>{this.gohashlink(item.anchor,item.label)}}>{showdata.operationbutton[0]}</span>
+                                                <span className="PLOperationButton prodetail" onClick={()=>{this.gohashlink(item.organchor,item.label)}}>{showdata.operationbutton[0]}</span>
                                                 <span className="PLOperationButton proapply">{showdata.operationbutton[1]}</span>
                                             </span>
                                         </div>
