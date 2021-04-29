@@ -56,7 +56,7 @@ class Org extends React.Component{
                                 <div  
                                     key={index} 
                                     onClick={()=>this.handleClick(item.hash)} 
-                                    className={["OrgTabItem",tabflag === item.hash ? "activeTab":""].join(" ")}> {item.name}</div>
+                                    className={["OrgTabItem activeItem",tabflag === item.hash ? "activeTab":""].join(" ")}> {item.name}</div>
                             )
                         })
                     }
