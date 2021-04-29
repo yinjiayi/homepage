@@ -152,14 +152,6 @@
     background-color: #4c4cd9;
 }
 
-//.OrgTipButton::before{
-//    content:url(../../img/organisation/arrow.png);
-//    position: absolute;
-//    right: 10%;
-//
-//}
-
-
 .OrgListItem:nth-child(3n+2) .OrgTipItemContent {
     left: -409px;
 }
@@ -224,9 +216,26 @@
     padding: 10px 16px;
     line-height: 36px;
 }
+.OrgTipButton:hover {
+    background: #006bc5;
+}
+.OrgTipItemContent {
+    width: 1140px;
+}
+
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+    .OrgTipItemContent {
+        width: 97vw;
+    }
+    .Org .OrgTipItemContent {
+        width: 91vw;
+    }
+}
+
 @media screen and (min-width: 100px) and (max-width: 750px) {
     .Org .OrgTipItemContent {
         margin-top: 20px!important;
+        width: 92vw;
     }
     .OrgListItemTip .triangle {
         border: 20px solid transparent;
