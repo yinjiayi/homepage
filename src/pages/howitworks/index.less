@@ -8,6 +8,14 @@
     overflow: hidden;
 }
 
+.chi .Howitworks .HowitworksBannerContent {
+    height: auto;
+    padding: 56px 0;
+    .HowitworksBannerTitle {
+        line-height: 50px;
+    }
+}
+
 .Howitworks{
     position: relative;
     .HowitworksList{
@@ -21,7 +29,7 @@
         color: #000000;
         font-size: 40px;
         padding: 0;
-        margin: 46px 0 102px;
+        margin-bottom: 81px;
         width: 100%;
         text-align: center;
     }
@@ -182,10 +190,14 @@
     .isPc {
         display: none;
     }
+    .chi .Howitworks .HowitworksBannerContent {
+        padding: 0;
+    }
     .en {
         .Howitworks {
             .HowitworksBannerTitle {
                 font-size: 14px;
+                margin: 46px 0 40px;
             }
             .HowitworksList .HowitworksListItemTitle {
                 width: 80px;
@@ -197,6 +209,11 @@
             .indexOneList{
                 width: 100%;
             }
+            .HowitworksBanner .HowitworksList>div:nth-of-type(2) {
+                .HowitworksListItemTitle {
+                    top: 2px;
+                }
+            }
         }
     }
     .Howitworks {
@@ -205,6 +222,7 @@
             height: 350px !important;
         }
          .HowitworksBannerTitle {
+            letter-spacing: 0;
             font-size: 16px;
             line-height: 40px;
             background: #006CC5;
@@ -281,7 +299,7 @@
         }
         .indexOneListLine.left,
         .indexOneListLine.right {
-            width: 50%;
+            width: 60%;
             margin-left: 22%;
         }
         .indexOneListLine.left::after,
