@@ -327,6 +327,11 @@
         "img": "zentao.png",
         "name": "禅道项目管理软件",
         "url": "https://www.zentao.net"
+    }, {
+       
+        "img": "mindspore.png",
+        "name": "MindSpore",
+        "url": "https://www.mindspore.cn"
     }
     
     ]

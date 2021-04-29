@@ -14,7 +14,6 @@ import React from 'react'
 import './index.less';
 import { connect } from 'react-redux';
 import data from "./../../data/homepage.json";
-import { Carousel } from 'antd';
 import {gohash, gourl} from "./../../util/url.js";
 import logocoopdata from "./../../data/coorganizer.json"
 class HomePage extends React.Component{
@@ -93,7 +92,7 @@ class HomePage extends React.Component{
         return(         
             <div className="homepage">
             <div className="GoApply" onClick={()=>{this.goLogoLink(applyurl)}}>{showdata.goapply}</div>
-            <Carousel autoplay>
+           
                 <div className="homepageBanner One">
                     <div className="homepageBannerTitle">{showdata.title}</div>
                     <div className="homepageTextOne">
@@ -118,20 +117,9 @@ class HomePage extends React.Component{
                     
 
                 </div>
-                {/* 功能暂时不显示 */}
-                {/* <div className="homepageBanner Two">
-                    <div className="homepageText content1200">
-                        <div className="homepageTitle">{showdata.bannerTwo[0]}</div>
-                        <div className="homepageTitleTime">{showdata.bannerTwo[1]}</div>
-                        <div className="homepageTitleGuide">
-                            <span className="homepageTiO" onClick={()=>gourl(this.state.data.communitylink)}>{showdata.bannerTwo[2]} </span>
-                            <span className="homepageTiTw">{showdata.bannerTwo[3]}</span>
-                        </div>
-                    </div>
+                
 
-                </div> */}
-
-                </Carousel>
+                
                 
                 <div className="homepageWrapper">
                     <div className="content1200">
