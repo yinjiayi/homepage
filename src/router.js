@@ -26,15 +26,13 @@ import Liveshow from './pages/liveshow/index.js';
 import ProjectDetail from './components/projectDetail/index.js';
 
 
+
+
 export default class IRouter extends React.Component{
     constructor(props){
         super(props);
              
     }
-
-
-   
-
     render(){
         return(
             <Router >
