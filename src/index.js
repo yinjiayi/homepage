@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.less';
-import './pages/index/pad.less';
-import './pages/index/mobile.less';
-import './pages/index/common.less';
+import './pages/homepage/pad.less';
+import './pages/homepage/mobile.less';
+import './pages/homepage/common.less';
+import './pages/index/index.less';
 // import App from './App';
 import IRouter from './router.js';
 import reportWebVitals from './reportWebVitals';
