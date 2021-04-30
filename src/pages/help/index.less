@@ -77,12 +77,6 @@
     margin-right: 4px;
 }
 
-
-
-//.Help{
-//    background: #f5f6fa;
-//}
-
 .helpTwoCode{
     position: relative;
     display: flex;
@@ -207,17 +201,13 @@
 }
 
 .helpLinkBg{
-    background-image: url(./../../img/contact/linkBg.png);
-    height: 60px;
-    width: 168px;
     margin: 0 auto 30px;
+    font-size: 30px;
 }
 
 .helpContactBg{
-    background-image: url(./../../img/contact/contactBg.png);
-    height: 60px;
-    width: 228px;
     margin: 0 auto 30px;
+    font-size: 30px;
 }
 .HelpBannerText {
     width: 109px;
@@ -225,6 +215,28 @@
 .HelpBannerText div {
     width: 100%;
     text-align: center;
+}
+.helpBlueText {
+    color: #006efe;
+    font-size: 20px;
+}
+.helpLinkBg.indexOneTitle::before,
+.helpContactBg.indexOneTitle::before {
+    content: url(./../../img/contact/left.png);
+    bottom: -22px;
+    left: 36px;
+    z-index: -1;
+}
+.helpLinkBg.indexOneTitle::after,
+.helpContactBg.indexOneTitle::after {
+     content: url(./../../img/contact/right.png);
+     bottom: 12px;
+     right: 16px;
+     z-index: -1;
+ }
+.helpEmail .helpemailtext {
+    font-size: 20px;
+    color: #006efe;
 }
 @media screen and (min-width: 100px) and (max-width: 750px) {
     .helpEmail .helpemailtext a {
@@ -235,6 +247,7 @@
     }
     .Help .HelpBanner {
         background-image: url(./../../img/contact/bannerM.png);
+        height: 350px;
     }
     .HelpBannerText {
         display: none;
@@ -260,8 +273,25 @@
     }
     .helpLinkBg {
         height: 34px;
-        width: 108px;
+        width: unset;
+        font-size: 18px;
         background-size: cover;
         margin: 0 auto 20px;
+    }
+    .helpContactBg {
+        font-size: 18px;
+        width: unset;
+    }
+    .helpLinkBg.indexOneTitle::before,
+    .helpContactBg.indexOneTitle::before {
+        content: url(./../../img/contact/left_mo.png);
+        bottom: -6px;
+        left: 34px;
+    }
+    .helpLinkBg.indexOneTitle::after,
+    .helpContactBg.indexOneTitle::after {
+        content: url(./../../img/contact/right_mo.png);
+        bottom: 7px;
+        right: 28px;
     }
 }
