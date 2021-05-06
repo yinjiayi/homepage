@@ -13,12 +13,17 @@
 import React from 'react'
 import './index.less';
 import data from '../../data/org.json';
-import orglist from '../../data/orglist2021.json';
+// import orglist from '';
 import { connect } from 'react-redux';
 import OrgTip from '../../components/OrgTip/index.js';
 import {getSplit} from "../../util/url.js";
 import { Input } from 'antd';
 const { Search } = Input;
+let orglist = []
+import(/* webpackPrefetch: true */"../../data/orglist2021.json").then((module)=>{
+    orglist = module.default
+})
+
 class Orglist extends React.Component{
     constructor(props){
        super(props)
