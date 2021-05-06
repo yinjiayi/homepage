@@ -6424,7 +6424,8 @@
 	"domain_tag": ["AI", "Container"],
 	"mail_list": "mindspore-discuss@mindspore.cn",
 	"email": "contact@mindspore.cn",
-	"project_list": [{
+	"project_list": [
+		{
 		"name": "实现MindSpore分布式算子：Xdivy/Xlogy/TruncateDiv/TruncateMod/BitwiseAnd/BitwiseOr/BitwiseXor",
 		"remark": null,
 		"difficulty": "低",
@@ -6804,5 +6805,90 @@
 		"spl": 1,
 		"organchor": "mindspore",
 		"orgname": "MindSpore"
-	}]
-}]
+		}]
+	}, {
+		"userId":567,
+		"anchor":"rcoreos",
+		"slide":"",
+		"video":"",
+		"img":"rcoreos.png",
+		"title":"rCore OS",
+		"orgTypeDesc":"开源社区",
+		"orgType":1,
+		"project_url":"",
+		"url":"https://github.com/rcore-os/",
+		"description":"rCore OS 是探索用 Rust 语言开发系统软件的一个以学生为主的开源软件社区。rCore/zCore 是用 Rust 语言实现的小型操作系统内核，兼容 Linux 程序 / Fuchsia 程序。此项目起源于清华大学计算机系操作系统课的课程设计，目前已经发展出一整套 Rust 语言开发操作系统的解决方案和生态环境，相关成果正尝试用于操作系统课的教学实验与科研探索中。我们的使命是继续探索挖掘 Rust 语言开发底层系统的潜力，使之成为 C/C++ 之外开发 OS 的另一种选择。",
+		"full_des":"rCore OS 是探索用 Rust 语言开发系统软件的一个以学生为主的开源软件社区。rCore/zCore 是用 Rust 语言实现的小型操作系统内核，兼容 Linux 程序 / Fuchsia 程序。此项目起源于清华大学计算机系操作系统课的课程设计，目前已经发展出一整套 Rust 语言开发操作系统的解决方案和生态环境，相关成果正尝试用于操作系统课的教学实验与科研探索中。我们的使命是继续探索挖掘 Rust 语言开发底层系统的潜力，使之成为 C/C++ 之外开发 OS 的另一种选择。",
+		"tech_tag":["Rust","X86_64","ARM","RISCV","MIPS"],
+		"domain_tag":["RUST 语言","操作系统内核"],
+		"mail_list":"",
+		"email":"shzhxh@pku.edu.cn",
+		"project_list":[]
+	},{"userId":720,
+		"anchor":"riscvrioslab",
+		"slide":"",
+		"video":"",
+		"img":"rioslab.png",
+		"title":"RISC-V国际开源实验室（RIOS Lab）",
+		"orgTypeDesc":"学校",
+		"orgType":4,
+		"project_url":"",
+		"url":"https://rioslab.org",
+		"description":"专注开源架构RISC-V的高性能芯片设计和开源生开发的研究所",
+		"full_des":"RIOS在西班牙语中意为“河流”，象征着汇聚不同方面的资源，形成合力改变现有的风景线。 RISC-V国际开源实验室（RIOS Lab）是以2017年图灵奖得主大卫·帕特森教授（David A. Patterson）及其核心团队成员为基础，以清华-伯克利深圳研究院为依托单位，成立的世界领先的RISC-V开源指令集CPU及其软硬件生态体系的产业创新前沿研究机构。RIOS实验室也将以重塑第五代精简指令集（RISC-V）和信息技术发展的风景线为己任，着眼于开源芯片软硬件生态体系的充实完善，开发供全球使用的硬件设计，为定制芯片的研发节省时间与成本，提升产品制造效率，为全人类的科技发展贡献力量。",
+		"tech_tag":["Linux","C","RTOS","C++","Rust","Deep Learning Framework","Git","RTL"],
+		"domain_tag":["Linux Kernel","OS","Dev Tools","Web","RISC-V"," Computer Architecture"," CPU Microarchitecture"," High-Performance Computing"],
+		"mail_list":"",
+		"email":"info@rioslab.org",
+		"project_list":[]
+	}, {
+		"userId":625,
+		"anchor":"openmessaging",
+		"slide":"",
+		"video":"",
+		"img":"OpenMessaging.png",
+		"title":"OpenMessaging",
+		"project_url":"",
+		"url":"http://openmessaging.cloud/",
+		"description":"OpenMessaging 是由包括阿里巴巴，雅虎、滴滴出行、Splunk等国内外在内的多达40家企业共同发起的Linux基金会项目，旨在创立厂商无关、平台无关的分布式消息及流处理领域的应用开发标准。",
+		"full_des":"在云计算时代，消息通讯已经成为现代数据驱动架构的关键环节，消息中间件可以连接数据源、数据处理引擎和应用程序。然而，全球范围内，消息领域仍然存在两大问题：一是缺乏供应商中立的行业标准，导致各种消息中间件的高复杂性和不兼容性，相应地造成了公司的产品低效、混乱和供应商锁定等问题。二是目前已有的方案框架并不能很好地适配云架构，即非云原生架构，因此无法有效地对大数据、流计算和物联网等新兴业务需求提供技术支持。OpenMessaging 抛弃历史包袱，轻装上阵，期望能解决这些弊端。除了做到可以链接跨平台、跨语言、跨产品和跨云的标准之外，OpenMessaging 将提供 Cloud Native 的能力，面向云计算、混合云架构，实现多云平台无缝迁移，致力于提供金融、电子商务、IoT 及大数据等领域的一站式解决方案。 发展4年多，至今包含API Spec，OpenConnect，OpenChaos，OpenSchema，DLedger在内的众多流行开源项目。",
+		"tech_tag":["Go", "Linux", "Java", "C", "Cloud Native", "Container", "React", "AI", "C++", "Distributed System", "Database", "Rust", "Storage", "Docker", "IoT"],
+		"domain_tag":["AI","Cloud Native","Big Data","Distributed System"],
+		"mail_list":"openmessaging@googlegroups.com",
+		"email":"vongosling@apache.org",
+		"project_list":[]
+	}, {
+		"userId":626,
+		"anchor":"eventmesh",
+		"slide":"",
+		"video":"",
+		"img":"EventMesh.png",
+		"title":"Apache EventMesh(Incubating)社区",
+		"project_url":"",
+		"url":"https://eventmesh.apache.org",
+		"description":"Apache EventMesh(Incubating)社区",
+		"full_des":"EventMesh is a dynamic cloud-native eventing infrastruture used to decouple the application and backend middleware layer, which supports a wide range of use cases that encompass complex multi-cloud, widely distributed topologies using diverse technology stacks.",
+		"tech_tag":["Java", "Cloud Native", "Distributed System", "Micro Service", "EventMesh"],
+		"domain_tag":["Cloud Native", "Distributed System", "EDA","Event Driven"],
+		"mail_list":"dev@eventmesh.apache.org",
+		"email":"dev@eventmesh.apache.org",
+		"project_list":[]
+	}, {
+		"userId":627,
+		"anchor":"sentinel",
+		"slide":"",
+		"video":"",
+		"img":"Sentinel.png",
+		"title":"Sentinel",
+		"project_url":"",
+		"url":"https://sentinelguard.io",
+		"description":"Sentinel 是阿里巴巴开源的，面向云原生、分布式服务架构的高可用防护组件，主要以流量为切入点，从限流、流量整形、熔断降级、系统自适应保护、热点防护等多个维度来帮助开发者保障微服务的稳定性。",
+		"full_des":"Sentinel 是阿里巴巴开源的，面向云原生、分布式服务架构的高可用防护组件，主要以流量为切入点，从限流、流量整形、熔断降级、系统自适应保护、热点防护等多个维度来帮助开发者保障微服务的稳定性。Sentinel 承接了阿里巴巴近 10 年的双十一大促流量的核心场景，例如秒杀、冷启动、消息削峰填谷、集群流量控制、实时熔断下游不可用服务等，是保障微服务高可用的利器，原生支持 Java/Go/C++ 等多种语言，并且提供 Istio/Envoy 全局流控支持来为 Service Mesh 提供高可用防护的能力。 Sentinel: https://github.com/alibaba/Sentinel Sentinel Go: https://github.com/alibaba/sentinel-golang",
+		"tech_tag":["Go", "Java", "Cloud Native", "C++", "Distributed System", "Kubernetes", "Micro Service", "Reliability"],
+		"domain_tag":["Cloud Native", "Distributed System", "Reliability"],
+		"mail_list":"",
+		"email":"sentinel@linux.alibaba.com",
+		"project_list":[]
+	}
+
+]

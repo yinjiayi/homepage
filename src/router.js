@@ -23,22 +23,33 @@ import OrgDetail from './components/orgdetail/index.js';
 import Liveshow from './pages/liveshow/index.js';
 import ProjectDetail from './components/projectDetail/index.js';
 
-let Orglist=null
-let ProjectlistN=null
-import("./components/orglist/index.js").then((module)=>{
-    Orglist = module.default
-})
-import("./components/projectlistN/index.js").then((module)=>{
-    ProjectlistN = module.default
-})
+let Orglist
+let ProjectlistN
+
 
 
 export default class IRouter extends React.Component{
     constructor(props){
-        super(props);            
+        super(props);   
+        this.state={
+            Orglistflag:false,
+            ProjectlistNflag:false
+        }         
     }
 
     componentDidMount(){
+        import("./components/orglist/index.js").then((module)=>{
+            Orglist = module.default
+            this.setState({
+                Orglistflag:true
+            })
+        })
+        import("./components/projectlistN/index.js").then((module)=>{
+            ProjectlistN = module.default
+            this.setState({
+                ProjectlistNflag:true
+            })
+        })
         
     }
     render(){
@@ -56,8 +67,8 @@ export default class IRouter extends React.Component{
                                 <Route path="/org" component={Org}>
                                     <Org>                                  
                                         <Switch>
-                                            <Route path = {["/org", "/org/orglist"]}  component={Orglist?Orglist:""} exact ></Route>                      
-                                            <Route path="/org/projectlist" component={ProjectlistN? ProjectlistN:""} exact></Route>  
+                                            <Route path = {["/org", "/org/orglist"]}  component={this.state.Orglistflag?Orglist:""} exact ></Route>                      
+                                            <Route path="/org/projectlist" component={this.state.ProjectlistNflag? ProjectlistN:""} exact></Route>  
                                             <Route path="/org/orgdetail/:orgname" component={OrgDetail} ></Route>  
                                             <Route path="/org/prodetail/:projectid" component={ProjectDetail} ></Route>     
                                         </Switch>                                     
