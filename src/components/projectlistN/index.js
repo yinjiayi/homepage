@@ -16,17 +16,12 @@ import { connect } from 'react-redux';
 import { Input } from 'antd';
 import proData from '../../data/proList.json';
 import projectlist from '../../data/projectlist.json';
-import {  Popover,Pagination } from 'antd';
+import {  Pagination } from 'antd';
 import { getSelectM,getSelectLang,getSelectDToChi,getLangDToChi} from './util.js'
 import {getSplit,gohash,getSupportLanguage,gourl} from "../../util/url.js";
 const { Search } = Input;
 
-const content = (
-    <div className="font18">
-      <span >5月24日至6月13日开放申请，<br/>
-      此前可<a href="https://portal.summer-ospp.ac.cn/summer/">注册账号</a></span>
-    </div>
-  )
+
 class ProjectlistN extends React.Component{
     constructor(props){
        super(props)
