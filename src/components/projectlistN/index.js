@@ -16,11 +16,17 @@ import { connect } from 'react-redux';
 import { Input } from 'antd';
 import proData from '../../data/proList.json';
 import projectlist from '../../data/projectlist.json';
-import { Pagination } from 'antd';
+import {  Popover,Pagination } from 'antd';
 import { getSelectM,getSelectLang,getSelectDToChi,getLangDToChi} from './util.js'
 import {getSplit,gohash,getSupportLanguage,gourl} from "../../util/url.js";
 const { Search } = Input;
 
+const content = (
+    <div className="font18">
+      <span >5月24日至6月13日开放申请，<br/>
+      此前可<a href="https://portal.summer-ospp.ac.cn/summer/">注册账号</a></span>
+    </div>
+  )
 class ProjectlistN extends React.Component{
     constructor(props){
        super(props)
@@ -34,7 +40,8 @@ class ProjectlistN extends React.Component{
            degreeselect:"all",
            langSelect: "all",           //0,1,2
            techSelect:"all",
-           areaSelect:"all"
+           areaSelect:"all",
+           indexname:"",
        }
        this.itemRender = this.itemRender.bind(this)
     }
@@ -211,6 +218,16 @@ class ProjectlistN extends React.Component{
         }[degree]||"Low"
     }
 
+    setIndexPopOver(indexname){
+        let indexl = indexname
+        if(this.state.indexname === indexl){
+            indexl = ""
+        }
+        this.setState({
+            indexname:indexl
+        })
+    }
+
     
 
 
@@ -313,8 +330,23 @@ class ProjectlistN extends React.Component{
                                             <span className="ProjectListLCDegree">{this.getDegreeBy(item.difficulty)}</span>
                                             <span className="ProjectListLCOperation Item">
                                                 
-                                                <span className="PLOperationButton prodetail" onClick={()=>{this.gohashlink(item.anchor,item.label)}}>{showdata.operationbutton[0]}</span>
-                                                <span className="PLOperationButton proapply">{showdata.operationbutton[1]}</span>
+                                                <span className="PLOperationButton prodetail" onClick={()=>{this.gohashlink(item.anchor,item.label)}}>{showdata.operationbutton[0]}</span>                                           
+                                                <span 
+                                                onClick={()=>{this.setIndexPopOver(index)}}
+                                                className={["PLOperationButton","proapply",this.state.indexname === index?"show":""].join(" ")}>
+                                                    
+                                                    <span>{showdata.operationbutton[1]}</span>
+                                                    <span className="PLPopOver">
+                                                        {showdata.popover[0]}<br/> 
+                                                        {showdata.popover[1]}
+                                                        <a href="https://portal.summer-ospp.ac.cn/summer/" target="_blank">
+                                                           {showdata.popover[2]}
+                                                        </a>
+                                                    </span>
+                                                
+                                                </span>
+                                                
+                                               
                                             </span>
                                         </div>
                                     )
