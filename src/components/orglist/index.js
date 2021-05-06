@@ -13,7 +13,6 @@
 import React from 'react'
 import './index.less';
 import data from '../../data/org.json';
-// import orglist from '';
 import { connect } from 'react-redux';
 import OrgTip from '../../components/OrgTip/index.js';
 import {getSplit} from "../../util/url.js";
