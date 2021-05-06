@@ -102,7 +102,7 @@ class HomePage extends React.Component{
                             return(
                                 <div className="homepageBannerFline" key={index} >
                                     <span className="homepageBannerFlineText">
-                                    <span   dangerouslySetInnerHTML={{ __html: item }}></span>
+                                    <span   dangerouslySetInnerHTML={{ __html: index + 1 + '. ' + item }}></span>
                                     {
                                         index === 2?
                                         <span onClick={()=>{this.goLiveshow()}} className="homepageLinkguide">{showdata.detail}</span>:""
