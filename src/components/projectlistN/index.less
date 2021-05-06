@@ -162,7 +162,8 @@
 
 .PLOperationButton.show{
     .PLPopOver{
-        visibility: visible;
+        opacity: 1;
+        z-index: 1;
       
     }
 
@@ -173,7 +174,8 @@
     position: absolute;
     background-color: #fff;
     padding:10px;
-    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
     transition: all 0.3s;
     line-height: 31px;
     padding: 5px;
