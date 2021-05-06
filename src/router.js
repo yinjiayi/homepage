@@ -19,19 +19,27 @@ import Help from './pages/help/index.js';
 import Howitworks from './pages/howitworks/index.js';
 import Apply from './pages/apply/index.js';
 import Org from './pages/org/index.js';
-import Orglist from './components/orglist/index.js';
-import ProjectlistN from './components/projectlistN/index.js';
 import OrgDetail from './components/orgdetail/index.js';
 import Liveshow from './pages/liveshow/index.js';
 import ProjectDetail from './components/projectDetail/index.js';
 
-
+let Orglist=null
+let ProjectlistN=null
+import("./components/orglist/index.js").then((module)=>{
+    Orglist = module.default
+})
+import("./components/projectlistN/index.js").then((module)=>{
+    ProjectlistN = module.default
+})
 
 
 export default class IRouter extends React.Component{
     constructor(props){
-        super(props);
-             
+        super(props);            
+    }
+
+    componentDidMount(){
+        
     }
     render(){
         return(
@@ -48,8 +56,8 @@ export default class IRouter extends React.Component{
                                 <Route path="/org" component={Org}>
                                     <Org>                                  
                                         <Switch>
-                                            <Route path = {["/org", "/org/orglist"]}  component={Orglist} exact ></Route>                      
-                                            <Route path="/org/projectlist" component={ProjectlistN} exact></Route>  
+                                            <Route path = {["/org", "/org/orglist"]}  component={Orglist?Orglist:""} exact ></Route>                      
+                                            <Route path="/org/projectlist" component={ProjectlistN? ProjectlistN:""} exact></Route>  
                                             <Route path="/org/orgdetail/:orgname" component={OrgDetail} ></Route>  
                                             <Route path="/org/prodetail/:projectid" component={ProjectDetail} ></Route>     
                                         </Switch>                                     
@@ -57,9 +65,7 @@ export default class IRouter extends React.Component{
                                 </Route>
                                 <Route path="/howitworks"component={Howitworks} ></Route> 
                                 <Route path="/apply"component={Apply} ></Route>
-                                <Route path="/liveshow"component={Liveshow} ></Route>   
-                               
-                                                                                                                 
+                                <Route path="/liveshow"component={Liveshow} ></Route>                                                                                                                      
                                 <Route path="/" component={HomePage} /> 
                             </Switch>
                           
