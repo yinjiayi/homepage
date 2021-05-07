@@ -5,7 +5,6 @@ import './pages/homepage/pad.less';
 import './pages/homepage/mobile.less';
 import './pages/homepage/common.less';
 import './pages/index/index.less';
-// import App from './App';
 import IRouter from './router.js';
 import reportWebVitals from './reportWebVitals';
 

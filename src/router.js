@@ -38,13 +38,13 @@ export default class IRouter extends React.Component{
     }
 
     componentDidMount(){
-        import("./components/orglist/index.js").then((module)=>{
+        import(/* webpackPrefetch: 5 */"./components/orglist/index.js").then((module)=>{
             Orglist = module.default
             this.setState({
                 Orglistflag:true
             })
         })
-        import("./components/projectlistN/index.js").then((module)=>{
+        import(/* webpackPrefetch: 5 */"./components/projectlistN/index.js").then((module)=>{
             ProjectlistN = module.default
             this.setState({
                 ProjectlistNflag:true
