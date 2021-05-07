@@ -3,7 +3,7 @@
 
 .projectListWrapper{
     position: relative;
-    overflow: auto;
+     overflow: auto;
 }
 
 .ProjectListPageState{
@@ -160,9 +160,35 @@
     cursor:pointer
 }
 
+.PLOperationButton.show{
+    .PLPopOver{
+        opacity: 1;
+        z-index: 1;
+      
+    }
+
+}
+
+.PLPopOver{
+    font-size: 17px;
+    position: absolute;
+    background-color: #fff;
+    padding:10px;
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.3s;
+    line-height: 31px;
+    padding: 5px;
+    min-width: 245px;
+    color:#333;
+    bottom: 25px;
+    right: -12px;
+    text-align: left;
+}
+
 .PLOperationButton.proapply{
-    background-color: #7485a7;
-    cursor: default;
+  
+    cursor: pointer;
 }
 
 .ProjectListSelectTagDe{
@@ -296,6 +322,7 @@
 .ProjectListLCOperation.Item{
     display: flex;
     justify-content: flex-end;
+    position: relative;
 }
 
 .ProjectListLCLine.Header{
