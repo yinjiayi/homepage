@@ -16,7 +16,6 @@ import data from '../../data/org.json';
 import { connect } from 'react-redux';
 import OrgTip from '../../components/OrgTip/index.js';
 import {getSplit} from "../../util/url.js";
-import orglist from "../../data/orglist2021.json"
 import { Input } from 'antd';
 const { Search } = Input;
 
@@ -27,11 +26,20 @@ class Orglist extends React.Component{
        this.state ={
            data,
            orgflag:"",
-           showorglist:orglist,
+           showorglist:[],
            
        }
 
        this.closeModall  = this.closeModall.bind(this);    
+    }
+    componentDidMount(){
+        import("../../data/orglist2021.json").then((module)=>{
+            
+            let Orglist = module.default
+            this.setState({
+                showorglist:Orglist
+            })
+        })
     }
 
     openOrgModal(anchor){

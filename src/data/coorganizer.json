@@ -358,7 +358,19 @@
 		"img":"Sentinel.png",
 		"name":"Sentinel",
 		"url":"https://sentinelguard.io"
-	}
+	}, {
+        "img": "kubeedge.png",
+        "name": "KubeEdge",
+        "url": "kubeedge.io"
+    }, {
+        "img": "alcbeijing.png",
+        "name": "Apache Local community Beijing",
+        "url": "https://alc-beijing.github.io/alc-site/"
+    }, {
+        "img": "OpenDigger.png",
+        "name": "OpenDigger",
+        "url": "https://github.com/X-lab2017/open-digger"
+    }
     
     ]
 }
