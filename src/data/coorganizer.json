@@ -370,6 +370,34 @@
         "img": "OpenDigger.png",
         "name": "OpenDigger",
         "url": "https://github.com/X-lab2017/open-digger"
+    },{
+        "img": "LCUI.png",
+        "name": "LCUI",
+        "url": "lcui.lc-soft.io"
+    }, {
+        "img": "Dragonfly.png",
+        "name": "Dragonfly",
+        "url": "https://d7y.io/en-us/"
+    }, {
+        "img": "ApacheRocketMQ.png",
+        "name": "Apache RocketMQ 社区",
+        "url": "https://rocketmq.apache.org/"
+    }, {
+        "img": "SeverlessDevs.png",
+        "name": "Serverless Devs",
+        "url": "www.serverless-devs.com"
+    }, {
+        "img": "Arthas.png",
+        "name": "Arthas",
+        "url": "https://arthas.aliyun.com/"
+    }, {
+        "img": "OpenKruise.png",
+        "name": "OpenKruise",
+        "url": "https://github.com/openkruise/kruise"
+    }, {
+        "img": "ApacheDubbo.png",
+        "name": "Apache Dubbo",
+        "url": "https://dubbo.apache.org/"
     }
     
     ]
