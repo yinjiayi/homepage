@@ -40,10 +40,18 @@ const getLangDToChi = function(tagen){
     }[tagen]||0
 }
 
+const getTagSelect = function(tag){
+    return {
+        "全部":"all",
+        "All":"all"
+    }[tag]||tag
+}
+
 export {
     getSelectM,
     getSelectLang,
     getSelectDToChi,
-    getLangDToChi
+    getLangDToChi,
+    getTagSelect
 
 }
