@@ -19,7 +19,7 @@ import {getSplit} from "../../util/url.js";
 import { Input } from 'antd';
 const { Search } = Input;
 
-
+let orglist = []
 class Orglist extends React.Component{
     constructor(props){
        super(props)
@@ -35,9 +35,9 @@ class Orglist extends React.Component{
     componentDidMount(){
         import("../../data/orglist2021.json").then((module)=>{
             
-            let Orglist = module.default
+            orglist = module.default
             this.setState({
-                showorglist:Orglist
+                showorglist:orglist
             })
         })
     }
