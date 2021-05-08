@@ -53,7 +53,7 @@
         "operation":"Operation",
         "operationbutton":["Detailed Info","Apply"],
         "proDi":"Degree of Difficulty: ",
-        "proDegree":"Degree of Difficulty",
+        "proDegree":"Difficulty",
         "proD":"Degree of Difficulty: ",
         "proSelectStu":"Selected Student:",
         "proStore":"Repository of Project ",
