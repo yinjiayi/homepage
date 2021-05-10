@@ -168,7 +168,7 @@ class ProjectlistN extends React.Component{
                 tiaojian.push("item.difficulty === degree")
             }
             if(langSelect!== "all"){
-                tiaojian.push("item.spl === langnum")
+                tiaojian.push("[langnum,0].indexOf(item.spl)>-1")
             }
          
             if(tagSelect!=="all"){
