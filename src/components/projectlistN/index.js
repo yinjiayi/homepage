@@ -170,9 +170,11 @@ class ProjectlistN extends React.Component{
             if(langSelect!== "all"){
                 tiaojian.push("item.spl === langnum")
             }
+         
             if(tagSelect!=="all"){
-                tagSelect = tagSelect.toLocaleLowerCase()
-                tiaojian.push("(item.tech_tag.toLocaleLowerCase()+item.domain_tag.toLocaleLowerCase()).includes(tagSelect)")
+               
+                tagSelect = tagSelect.toLocaleLowerCase()+" "
+                tiaojian.push("(item.tech_tag.toLocaleLowerCase()+' '+item.domain_tag.toLocaleLowerCase()).includes(tagSelect)")
             }
            
 
