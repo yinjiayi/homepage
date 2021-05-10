@@ -196,7 +196,7 @@
 }
 
 .PLOperationButton.proapply{
-    background-color: #7485a7;
+    background-color: #98a0af;
     cursor: default;
 }
 
@@ -272,7 +272,7 @@
 }
 
 .ProjectListLCLine.Item:nth-child(2n+1){
-    background-color: #f4f7f9;
+    background-color: #f3f5f6;
 }
 
 
@@ -367,7 +367,7 @@
 }
 .ProjectListSelect {
     border: none;
-    background: #F9FBFF;
+    background: #f1f1f3;
     padding: 0;
     margin: 20px 0 30px;
 }
@@ -388,7 +388,7 @@
 }
 
 .ProjectListSelectTagDe {
-    background: #4B9DFE;
+    background: #396cc8;
     color: #fff;
 }
 .ProjectListSelectItemContent:nth-child(2) {
@@ -419,9 +419,6 @@
 .ProjectListLCLine.Item:nth-child(2n) {
     background: #FFFFFF;
 }
-.ProjectListLCLine.Item:nth-child(2n+1) {
-    background: rgba(237, 240, 248, 0.4);
-}
 .ProjectListLCLine.Header .ProjectListLCName, .ProjectListLCLine.Header .ProjectListLCCommunity {
     text-align: left;
 }
@@ -430,7 +427,7 @@
 }
 .ProjectListLCName {
     width: 412px;
-    color: #4B9DFE;
+    color: #396cc8;
 }
 *, *::before, *::after {
     box-sizing: unset;
@@ -444,7 +441,7 @@
 .PLOperationButton {
     width: 84px;
     height: 36px;
-    background: #4B9DFE;
+    background: #396cc8;
     line-height: 36px;
     font-size: 14px;
 }
@@ -460,9 +457,19 @@
 .ProjectListLCLine.Item {
     font-size: 14px !important;
 }
-
+.Projectlist .ant-pagination-next,
+.Projectlist .ant-pagination-prev {
+    background-color: #396cc8!important;
+}
+.Projectlist .ant-pagination-item a {
+    color: #396cc8;
+}
 @media screen and (min-width: 100px) and (max-width: 750px) {
     .ProjectListSelectItemContent {
         padding: 6px 10px;
+    }
+    .Org .ant-pagination .ant-pagination-next,
+    .Org .ant-pagination .ant-pagination-prev {
+        background-color: #396cc8!important;
     }
 }
