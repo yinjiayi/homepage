@@ -18,9 +18,6 @@ import showdata from '../../data/liveshowdata.json';
 export default class Liveshow extends React.Component{
     constructor(props){
        super(props)
-       this.state ={
-           
-       }
     }
 
  
@@ -46,7 +43,7 @@ export default class Liveshow extends React.Component{
                         {
                             data.speechlist.map((item,index)=>{
                                 return (
-                                    item.flag === "over"?"":
+                                    item.url?"":
                                     <LiveModal 
                                     key = {index}
                                     item ={item}/>
@@ -58,7 +55,7 @@ export default class Liveshow extends React.Component{
                         {
                             data.speechlist.map((item,index)=>{
                                 return (
-                                    item.flag === "over"?
+                                    item.url?
                                     <LiveModal 
                                     flag="over"
                                     key = {index}
