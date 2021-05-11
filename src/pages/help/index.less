@@ -1,5 +1,5 @@
 .HelpBanner{
-    background-image: url(./../../img/contact/bannerC.jpg);
+    background-image: url(./../../img/contact/bannerC.png);
     width: 100%;
     height: 280px;
     background-size: cover;
@@ -11,7 +11,9 @@
     justify-content: center;
     align-items: center;
 }
-
+.HelpBanner {
+    height: 400px;
+}
 .HelpBannerText{
     font-family: PingFang-SC-Medium;
 	font-size: 32px;
@@ -73,12 +75,6 @@
     display: inline-block;
     margin-left: 16px;
     margin-right: 4px;
-}
-
-
-
-.Help{
-    background: #f5f6fa;
 }
 
 .helpTwoCode{
@@ -204,4 +200,98 @@
     
 }
 
+.helpLinkBg{
+    margin: 0 auto 30px;
+    font-size: 30px;
+}
 
+.helpContactBg{
+    margin: 0 auto 30px;
+    font-size: 30px;
+}
+.HelpBannerText {
+    width: 109px;
+}
+.HelpBannerText div {
+    width: 100%;
+    text-align: center;
+}
+.helpBlueText {
+    color: #006efe;
+    font-size: 20px;
+}
+.helpLinkBg.indexOneTitle::before,
+.helpContactBg.indexOneTitle::before {
+    content: url(./../../img/contact/left.png);
+    bottom: -22px;
+    left: 36px;
+    z-index: -1;
+}
+.helpLinkBg.indexOneTitle::after,
+.helpContactBg.indexOneTitle::after {
+     content: url(./../../img/contact/right.png);
+     bottom: 12px;
+     right: 16px;
+     z-index: -1;
+ }
+.helpEmail .helpemailtext {
+    font-size: 20px;
+    color: #006efe;
+}
+@media screen and (min-width: 100px) and (max-width: 750px) {
+    .helpEmail .helpemailtext a {
+        display: block;
+    }
+    .helpBlueText::before {
+        width: 0;
+    }
+    .Help .HelpBanner {
+        background-image: url(./../../img/contact/bannerM.png);
+        height: 350px;
+    }
+    .HelpBannerText {
+        display: none;
+    }
+    .Help .helpEmail {
+        margin-top: 20px;
+    }
+    .helpContactBg {
+        margin-bottom: 0;
+        width: 136px;
+        height: 34px;
+        background-size: cover;
+    }
+    .Help .helptitle {
+        margin-bottom: 20px;
+    }
+    .Help .helptitle.resourcelink{
+        margin-bottom: 40px;
+    }
+    .Help .helpBlueTextLine {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .helpLinkBg {
+        height: 34px;
+        width: unset;
+        font-size: 18px;
+        background-size: cover;
+        margin: 0 auto 20px;
+    }
+    .helpContactBg {
+        font-size: 18px;
+        width: unset;
+    }
+    .helpLinkBg.indexOneTitle::before,
+    .helpContactBg.indexOneTitle::before {
+        content: url(./../../img/contact/left_mo.png);
+        bottom: -6px;
+        left: 34px;
+    }
+    .helpLinkBg.indexOneTitle::after,
+    .helpContactBg.indexOneTitle::after {
+        content: url(./../../img/contact/right_mo.png);
+        bottom: 7px;
+        right: 28px;
+    }
+}

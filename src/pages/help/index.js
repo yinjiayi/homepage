@@ -48,7 +48,7 @@ class Help extends React.Component{
                 </div>
                 <div className="HelpResourceLink content1200">
                         <div className="helptitle resourcelink">
-                            <div className="indexOneTitle">
+                            <div className="helpLinkBg indexOneTitle">
                                 <span>{showdata.ressourcelink.name}</span>
                             </div>
                             <div className="helpBlueTextLine">
@@ -61,7 +61,7 @@ class Help extends React.Component{
                             this.props.chiFlag === "chi"?
                             <>
                             <div className="helptitle">
-                                <div className="indexOneTitle">
+                                <div className="helpContactBg indexOneTitle">
                                     <span>{showdata.contact.name}</span>
                                 </div>
                                 <div className="helpcontact">
@@ -85,7 +85,7 @@ class Help extends React.Component{
                             :
                             <div>
                                 <div className="helptitle eng">
-                                    <div className="indexOneTitle">
+                                    <div className="helpContactBg indexOneTitle">
                                         <span>{showdata.contact.name}</span>
                                     </div>
                                     <div className="helpcontact">

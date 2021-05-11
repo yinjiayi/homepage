@@ -8,6 +8,7 @@
     background-position: center;
 }
 
+<<<<<<< HEAD
 .OrglistSearch,
 .ProjectListBanner{
     margin:36px 0 20px;
@@ -43,6 +44,10 @@
         }
     }
 
+=======
+.OrgBanner{
+    height: 400px;
+>>>>>>> c6fa8ba48b49127dd90f65a1d71d9916f9c4438e
 }
 
 .OrgTab{
@@ -51,6 +56,10 @@
 	background-color: #3742b9;
     text-align: center;
     position: relative;
+}
+
+.OrgTab{
+    background: #ebeef2;
 }
 
 .Org{
@@ -73,12 +82,12 @@
 .OrgTabItem{
    line-height: 64px;
 	height: 100%;
-	
+
     background-color: #3742b9;
     position: relative;
     padding: 0 25px;
     color:#fff;
-   
+
     font-family: MicrosoftYaHei-Bold;
 	font-size: 24px;
     display: inline-block;
@@ -91,7 +100,68 @@
    transition: all 0.3s;
 }
 
-.OrgTabItem:hover{
-    background: rgba(60,60,250,.596);
+.Org {
+    background: #f1f1f3;
+}
+
+.OrgTabItem.activeItem {
+    background: #ebeef2;
+    color: #000;
+}
+
+.activeTab.activeItem {
+    background-color: #396cc8;
+    color: #fff;
+}
+
+
+.OrglistSearch,
+.ProjectListBanner {
+    .ant-input-search {
+        height: 62px !important;
+        border-radius: 6px!important;
+        border: 2px solid rgba(0, 0, 0, 0.1)!important;
+    }
+}
+
+.OrglistSearch .ant-input-affix-wrapper input {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 18px!important;
+}
+
+.OrglistBannerTotal {
+    color: #000;
+    font-size: 20px!important;
+}
+
+.OrglistBanner .italic {
+    color: #000;
+    font-style: normal;
+}
+
+@media screen and (min-width: 100px) and (max-width: 750px) {
+    .OrglistSearch,
+    .ProjectListBanner {
+        .ant-input-search {
+            height: 44px !important;
+            font-size: 14px;
+        }
+    }
+    .OrgBanner {
+        background-image: url(../../img/organisation/banner1-mo.png);
+        height: 350px;
+    }
+    .OrgTab {
+        height: 36px;
+    }
+    .Org .OrgTabItem {
+        line-height: 36px;
+    }
+    .OrglistBannerTotal {
+        font-size: 14px!important;
+    }
+    .OrglistBanner .italic {
+        font-size: 14px;
+    }
 }
 
