@@ -92,11 +92,6 @@ class HomePage extends React.Component{
         return(         
             <div className="homepage">
             <div className="GoApply" onClick={()=>{this.goLogoLink(applyurl)}}>{showdata.goapply}</div>
-<<<<<<< HEAD
-           
-=======
-            <Carousel>
->>>>>>> c6fa8ba48b49127dd90f65a1d71d9916f9c4438e
                 <div className="homepageBanner One">
                     <div className="homepageBannerTitle">{showdata.title}</div>
                     <div className="homepageTextOne">
