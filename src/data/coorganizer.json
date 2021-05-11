@@ -14,6 +14,11 @@
             "name":"Linux 人",
             "img":"linuxren.png",
             "url":""
+        },
+        {
+            "name":"hzuna",
+            "img":"hzuna.png",
+            "url":"https://www.hzuna.club"
         }
     ],
     
@@ -327,6 +332,72 @@
         "img": "zentao.png",
         "name": "禅道项目管理软件",
         "url": "https://www.zentao.net"
+    }, {
+       
+        "img": "mindspore.png",
+        "name": "MindSpore",
+        "url": "https://www.mindspore.cn"
+    }, {
+		"img":"rCOREOS.png",
+		"name":"rCore OS",	
+		"url":"https://github.com/rcore-os/"
+		
+	},{
+		"img":"rioslab.png",
+		"name":"RISC-V国际开源实验室（RIOS Lab）",
+		"url":"https://rioslab.org"
+	}, {
+		"img":"OpenMessaging.png",
+		"name":"OpenMessaging",
+		"url":"http://openmessaging.cloud/"
+	}, {
+		"img":"EventMesh.png",
+		"name":"Apache EventMesh(Incubating)社区",
+		"url":"https://eventmesh.apache.org"
+	}, {
+		"img":"Sentinel.png",
+		"name":"Sentinel",
+		"url":"https://sentinelguard.io"
+	}, {
+        "img": "kubeedge.png",
+        "name": "KubeEdge",
+        "url": "kubeedge.io"
+    }, {
+        "img": "alcbeijing.png",
+        "name": "Apache Local community Beijing",
+        "url": "https://alc-beijing.github.io/alc-site/"
+    }, {
+        "img": "OpenDigger.png",
+        "name": "OpenDigger",
+        "url": "https://github.com/X-lab2017/open-digger"
+    },{
+        "img": "LCUI.png",
+        "name": "LCUI",
+        "url": "lcui.lc-soft.io"
+    }, {
+        "img": "Dragonfly.png",
+        "name": "Dragonfly",
+        "url": "https://d7y.io/en-us/"
+    }, {
+        "img": "ApacheRocketMQ.png",
+        "name": "Apache RocketMQ 社区",
+        "url": "https://rocketmq.apache.org/"
+    }, {
+        "img": "SeverlessDevs.png",
+        "name": "Serverless Devs",
+        "url": "www.serverless-devs.com"
+    }, {
+        "img": "Arthas.png",
+        "name": "Arthas",
+        "url": "https://arthas.aliyun.com/"
+    }, {
+        "img": "OpenKruise.png",
+        "name": "OpenKruise",
+        "url": "https://github.com/openkruise/kruise"
+    }, {
+        "img": "ApacheDubbo.png",
+        "name": "Apache Dubbo",
+        "url": "https://dubbo.apache.org/"
     }
     
     ]

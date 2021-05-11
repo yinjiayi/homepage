@@ -16,10 +16,11 @@ import { connect } from 'react-redux';
 import { Input } from 'antd';
 import proData from '../../data/proList.json';
 import projectlist from '../../data/projectlist.json';
-import { Pagination } from 'antd';
-import { getSelectM,getSelectLang,getSelectDToChi,getLangDToChi} from './util.js'
+import {  Pagination } from 'antd';
+import { getSelectM,getSelectLang,getSelectDToChi,getLangDToChi,getTagSelect} from './util.js'
 import {getSplit,gohash,getSupportLanguage,gourl} from "../../util/url.js";
 const { Search } = Input;
+
 
 class ProjectlistN extends React.Component{
     constructor(props){
@@ -33,8 +34,9 @@ class ProjectlistN extends React.Component{
            projectlistdata:[],     // 单页显示的project数据
            degreeselect:"all",
            langSelect: "all",           //0,1,2
-           techSelect:"all",
-           areaSelect:"all"
+           tagSelect:"all",
+           indexname:""
+           
        }
        this.itemRender = this.itemRender.bind(this)
     }
@@ -57,13 +59,16 @@ class ProjectlistN extends React.Component{
     filterItem(value){  
         this.setState({ 
             degreeselect:"all" ,
-            langSelect: "all"          
+            langSelect: "all"  ,
+            tagSelect:"all"        
         })
         if(value){
             var showdataTemp = []
             const valuel = value.toLowerCase()
             this.state.datall.map((item)=>{           
                 if(item.name.toLowerCase().includes(valuel)||
+                item.tech_tag.toLowerCase().includes(valuel)||
+                item.domain_tag.toLowerCase().includes(valuel)||
                 item.label.includes(valuel)){
                     showdataTemp.push(item)
                 }
@@ -137,9 +142,10 @@ class ProjectlistN extends React.Component{
 
     filterTag(tag,flag){ 
         // 1.0 获取选择标签的值
-        let {degreeselect,langSelect} = this.state
+        let {degreeselect,langSelect,tagSelect} = this.state
         degreeselect = flag === "degree" ? tag : degreeselect
         langSelect = flag === "lang" ? tag : langSelect
+        tagSelect = flag === "tech" ? tag : tagSelect
         // 2.0 定义筛选出的数据数组
         let filterdata = [] 
         // 3.0 确定搜索的数组源
@@ -148,8 +154,8 @@ class ProjectlistN extends React.Component{
             showdatastock = "searchdatastock"
         }
             
-        // debugger
-        if( degreeselect=== "all" && langSelect === "all"){
+       
+        if( degreeselect=== "all" && langSelect === "all"&& tagSelect === "all"){
             this.setState({
                 datall:this.state[showdatastock],              
             })
@@ -157,19 +163,29 @@ class ProjectlistN extends React.Component{
             
             const degree = getSelectDToChi(degreeselect)
             const langnum = getLangDToChi(langSelect)
+            let tiaojian=[]
+            if(degreeselect !== "all"){
+                tiaojian.push("item.difficulty === degree")
+            }
+            if(langSelect!== "all"){
+                tiaojian.push("[langnum,0].indexOf(item.spl)>-1")
+            }
+         
+            if(tagSelect!=="all"){
+               
+                tagSelect = tagSelect.toLocaleLowerCase()+" "
+                tiaojian.push("(item.tech_tag.toLocaleLowerCase()+' '+item.domain_tag.toLocaleLowerCase()).includes(tagSelect)")
+            }
+           
 
-            filterdata = this.state[showdatastock].filter(item => {
-                if(degreeselect=== "all"){
-                    return item.spl === langnum
-                }else if(langSelect=== "all"){
-                    return  item.difficulty === degree
-                }else{
-                    return item.spl === langnum && item.difficulty === degree
-                }
+            filterdata = this.state[showdatastock].filter(item => {     
+               
+                const tech = (item.tech_tag.toLocaleLowerCase()+item.domain_tag.toLocaleLowerCase()).includes(tagSelect)
+                      
+               return eval(tiaojian.join("&&"))
                 
             });
-            
-        
+               
             this.setState({
                 datall:filterdata,              
             })
@@ -197,6 +213,14 @@ class ProjectlistN extends React.Component{
         this.filterTag(langtag,"lang")
     }
 
+    setTag(item){
+        const techtag = getTagSelect(item)
+        this.setState({
+            tagSelect:techtag
+        })
+        this.filterTag(techtag,"tech")
+    }
+
     
 
 
@@ -211,13 +235,23 @@ class ProjectlistN extends React.Component{
         }[degree]||"Low"
     }
 
+    setIndexPopOver(indexname){
+        let indexl = indexname
+        if(this.state.indexname === indexl){
+            indexl = ""
+        }
+        this.setState({
+            indexname:indexl
+        })
+    }
+
     
 
 
     render(){
-        
+        const taglist = projectlist.taglist
         let showdata = projectlist[this.props.chiFlag]
-        let {projectlistdata,degreeselect,langSelect,datall} = this.state
+        let {projectlistdata,degreeselect,langSelect,datall,tagSelect} = this.state
         let datalllength = datall.length
         return(         
             <div className="Projectlist">
@@ -283,6 +317,21 @@ class ProjectlistN extends React.Component{
                                 })
                             }
                         </div>
+                        <div className="ProjectListSelectItem Tag">
+                            <span className="ProjectListSelectItemTitle" >{showdata.tag}</span>
+                            {
+                                showdata.taglist.map((item,index)=>{
+                                    return (
+                                        <span 
+                                        key={index} 
+                                         onClick={()=>{this.setTag(item)}}
+                                        className={["ProjectListSelectItemContent",getTagSelect(item) === tagSelect ? "ProjectListSelectTagDe":""].join(" ")}>
+                                            {item}
+                                        </span>
+                                    )
+                                })
+                            }
+                        </div>
                     </div>
                     <div className="ProjectListLCWrapper">
                     <div className="ProjectListLC">
@@ -303,18 +352,33 @@ class ProjectlistN extends React.Component{
                                     return(
                                         <div className="ProjectListLCLine Item" key={index}>
                                             <span className="ProjectListLCID ">{item.label}</span>
-                                            <span className="ProjectListLCName" onClick={()=>{this.gohashlink(item.organchor,item.label)}}>
+                                            <span className="ProjectListLCName" onClick={()=>{this.gohashlink(item.anchor,item.label)}}>
                                                 
                                                 {getSplit( item.name,this.props.chiFlag)}
                                             </span>
-                                            <span className="ProjectListLCCommunity" onClick={()=>{this.gohashlink(item.organchor)}}>
+                                            <span className="ProjectListLCCommunity" onClick={()=>{this.gohashlink(item.anchor)}}>
                                                 {getSplit( item.orgname,this.props.chiFlag)}</span>
                                             <span className="ProjectListLCLang">{getSupportLanguage(item.spl)}</span>
                                             <span className="ProjectListLCDegree">{this.getDegreeBy(item.difficulty)}</span>
                                             <span className="ProjectListLCOperation Item">
                                                 
-                                                <span className="PLOperationButton prodetail" onClick={()=>{this.gohashlink(item.organchor,item.label)}}>{showdata.operationbutton[0]}</span>
-                                                <span className="PLOperationButton proapply">{showdata.operationbutton[1]}</span>
+                                                <span className="PLOperationButton prodetail" onClick={()=>{this.gohashlink(item.anchor,item.label)}}>{showdata.operationbutton[0]}</span>                                           
+                                                <span 
+                                                onClick={()=>{this.setIndexPopOver(index)}}
+                                                className={["PLOperationButton","proapply",this.state.indexname === index?"show":""].join(" ")}>
+                                                    
+                                                    <span>{showdata.operationbutton[1]}</span>
+                                                    <span className="PLPopOver">
+                                                        {showdata.popover[0]}<br/> 
+                                                        {showdata.popover[1]}
+                                                        <a href="https://portal.summer-ospp.ac.cn/summer/" target="_blank">
+                                                           {showdata.popover[2]}
+                                                        </a>
+                                                    </span>
+                                                
+                                                </span>
+                                                
+                                               
                                             </span>
                                         </div>
                                     )

@@ -1,131 +1,155 @@
-.OrgBanner{
-    width: 100%;
-    height: 280px;
-    background-color: #4f8eed;
-    background-image: url(../../img/organisation/banner1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.OrgBanner {
+  width: 100%;
+  height: 400px;
+  background-color: #eef7ff;
+  background-image: url(../../img/organisation/banner1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-
-.OrgBanner{
-    height: 400px;
-}
-
-.OrgTab{
-    width: 100%;
-    height: 64px;
-	background-color: #3742b9;
-    text-align: center;
-    position: relative;
-}
-
-.OrgTab{
-    background: #ebeef2;
-}
-
-.Org{
-    position: relative;
-    background-color: #d8dff1;
-    width: 100%;
-    height: 100%;
-    display: block;
-    min-height: calc(~'100vh - 100px');
-}
-
-.OrgTabWrapper{
-    position: relative;
-}
-
-.OrgWrapper{
-    overflow: auto;
-}
-
-
-
-.OrgTabItem{
-   line-height: 64px;
-	height: 100%;
-
-    background-color: #3742b9;
-    position: relative;
-    padding: 0 25px;
-    color:#fff;
-
-    font-family: MicrosoftYaHei-Bold;
-	font-size: 24px;
-    display: inline-block;
-    cursor: pointer;
-    font-weight: 700;
-}
-
-.OrgTabItem.activeTab{
-   background-color: #1d8eff;
-   transition: all 0.3s;
-}
-
-.Org {
-    background: #f1f1f3;
-}
-
-.OrgTabItem.activeItem {
-    background: #ebeef2;
-    color: #000;
-}
-
-.activeTab.activeItem {
-    background-color: #396cc8;
-    color: #fff;
-}
-
 
 .OrglistSearch,
 .ProjectListBanner {
-    .ant-input-search {
-        height: 62px !important;
-        border-radius: 6px!important;
-        border: 2px solid rgba(0, 0, 0, 0.1)!important;
+  margin: 36px 0 20px;
+  text-align: center;
+  .ant-input-search {
+    width: 600px;
+    height: 60px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: solid 1px #b7b7e5;
+  }
+
+  .ant-input-affix-wrapper {
+    height: 58px;
+    border: none;
+
+    input {
+      font-size: 20px;
     }
+  }
+
+  .ant-input-search-button {
+    height: 58px;
+    border: none;
+
+    .action-search {
+      line-height: 70px;
+    }
+
+    svg {
+      width: 1.5em;
+      height: 1.5em;
+    }
+  }
+}
+
+.OrgTab {
+  width: 100%;
+  height: 64px;
+  background-color: #3742b9;
+  text-align: center;
+  position: relative;
+}
+
+.OrgTab {
+  background: #ebeef2;
+}
+
+.Org {
+  position: relative;
+  background-color: #d8dff1;
+  width: 100%;
+  height: 100%;
+  display: block;
+  min-height: calc(~"100vh - 100px");
+}
+
+.OrgTabWrapper {
+  position: relative;
+}
+
+.OrgTabItem {
+  line-height: 64px;
+  height: 100%;
+
+  background-color: #3742b9;
+  position: relative;
+  padding: 0 25px;
+  color: #fff;
+
+  font-family: MicrosoftYaHei-Bold;
+  font-size: 24px;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.OrgTabItem.activeTab {
+  background-color: #1d8eff;
+  transition: all 0.3s;
+}
+
+.Org {
+  background: #f1f1f3;
+}
+
+.OrgTabItem.activeItem {
+  background: #ebeef2;
+  color: #000;
+}
+
+.activeTab.activeItem {
+  background-color: #396cc8;
+  color: #fff;
+}
+
+.OrglistSearch,
+.ProjectListBanner {
+  .ant-input-search {
+    height: 62px !important;
+    border-radius: 6px !important;
+    border: 2px solid rgba(0, 0, 0, 0.1) !important;
+  }
 }
 
 .OrglistSearch .ant-input-affix-wrapper input {
-    color: rgba(0, 0, 0, 0.5);
-    font-size: 18px!important;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 18px !important;
 }
 
 .OrglistBannerTotal {
-    color: #000;
-    font-size: 20px!important;
+  color: #000;
+  font-size: 20px !important;
 }
 
 .OrglistBanner .italic {
-    color: #000;
-    font-style: normal;
+  color: #000;
+  font-style: normal;
 }
 
 @media screen and (min-width: 100px) and (max-width: 750px) {
-    .OrglistSearch,
-    .ProjectListBanner {
-        .ant-input-search {
-            height: 44px !important;
-            font-size: 14px;
-        }
+  .OrglistSearch,
+  .ProjectListBanner {
+    .ant-input-search {
+      height: 44px !important;
+      font-size: 14px;
     }
-    .OrgBanner {
-        background-image: url(../../img/organisation/banner1-mo.png);
-        height: 350px;
-    }
-    .OrgTab {
-        height: 36px;
-    }
-    .Org .OrgTabItem {
-        line-height: 36px;
-    }
-    .OrglistBannerTotal {
-        font-size: 14px!important;
-    }
-    .OrglistBanner .italic {
-        font-size: 14px;
-    }
+  }
+  .OrgBanner {
+    background-image: url(../../img/organisation/banner1-mo.png);
+    height: 350px;
+  }
+  .OrgTab {
+    height: 36px;
+  }
+  .Org .OrgTabItem {
+    line-height: 36px;
+  }
+  .OrglistBannerTotal {
+    font-size: 14px !important;
+  }
+  .OrglistBanner .italic {
+    font-size: 14px;
+  }
 }
-

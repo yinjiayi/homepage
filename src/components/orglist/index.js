@@ -13,23 +13,33 @@
 import React from 'react'
 import './index.less';
 import data from '../../data/org.json';
-import orglist from '../../data/orglist2021.json';
 import { connect } from 'react-redux';
 import OrgTip from '../../components/OrgTip/index.js';
 import {getSplit} from "../../util/url.js";
 import { Input } from 'antd';
 const { Search } = Input;
+
+let orglist = []
 class Orglist extends React.Component{
     constructor(props){
        super(props)
        this.state ={
            data,
            orgflag:"",
-           showorglist:orglist,
+           showorglist:[],
            
        }
 
        this.closeModall  = this.closeModall.bind(this);    
+    }
+    componentDidMount(){
+        import("../../data/orglist2021.json").then((module)=>{
+            
+            orglist = module.default
+            this.setState({
+                showorglist:orglist
+            })
+        })
     }
 
     openOrgModal(anchor){

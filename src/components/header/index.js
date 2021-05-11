@@ -12,7 +12,6 @@
 
 import React from 'react'
 import './index.less';
-import {NavLink} from 'react-router-dom';
 import { connect } from 'react-redux';
 import data from './../../data/nav.json';
 import {titleChange,gohash} from './../../util/url.js';

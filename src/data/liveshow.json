@@ -4,36 +4,7 @@
     "livedata":"",
     "speechlist":[
         
-        {         
-            "title":"那些年我们一起申请和参与的开源programs",
-            "time":"2021.05.08",
-            
-            "profilelist":[
-                {
-                    "name":"夏小雅",
-                    "profile":"X-lab、CHAOSS社区、开源社 2020-2021、Google Summer of Docs参与者",
-                    "imgurl":"xiaxiaoya.jpg"
-                }
-            ],  
-            "speechcontent":"根据自身参与GSoD和参与进开源社区的经历，帮助高校同学们融入开源中去",
-            "ppt":"",
-            "url":""
-        },
-        {         
-            "title":"从个人项目开源到Apache Member的5年 -- 如何做一个专业的开源玩家",
-            "time":"2021.05.09",
-            
-            "profilelist":[
-                {
-                    "name":"吴晟",
-                    "profile":"tetrate.io创始工程师，开源爱好者。 Apache Member、Apache SkyWalking Founder、VP和PMC成员，Apache ShardingSphere 原型作者和PMC成员，Apache孵化器PMC成员， Apache APISIX PPMC成员， Apache ECharts、 Apache DolphinScheduler孵化器导师， Zipkin成员与贡献者， CNCF OpenTracing核心贡献者。",
-                    "imgurl":"wusheng.jpg"
-                }
-            ],  
-            "speechcontent":"",
-            "ppt":"",
-            "url":""
-        },
+        
         {
             "title":"开源治理的相关知识域",
             "time":"2021.05.15",
@@ -122,6 +93,35 @@
             "speechcontent":"开源社区基本结构~文化~原则~礼仪…以及自然参与的简洁姿态…",          
             "flag":"over",          
             "url":"https://www.bilibili.com/video/BV1AN411f7qk/"
+        },{         
+            "title":"那些年我们一起申请和参与的开源programs",
+            "time":"2021.05.08",          
+            "profilelist":[
+                {
+                    "name":"夏小雅",
+                    "profile":"X-lab、CHAOSS社区、开源社 2020-2021、Google Summer of Docs参与者",
+                    "imgurl":"xiaxiaoya.jpg"
+                }
+            ],  
+            "speechcontent":"根据自身参与GSoD和参与进开源社区的经历，帮助高校同学们融入开源中去",
+            "ppt":"",
+            "flag":"over", 
+            "url":"https://www.bilibili.com/video/BV1k54y157F2/"
+        },
+        {         
+            "title":"从个人项目开源到Apache Member的5年 -- 如何做一个专业的开源玩家",
+            "time":"2021.05.09",           
+            "profilelist":[
+                {
+                    "name":"吴晟",
+                    "profile":"tetrate.io创始工程师，开源爱好者。 Apache Member、Apache SkyWalking Founder、VP和PMC成员，Apache ShardingSphere 原型作者和PMC成员，Apache孵化器PMC成员， Apache APISIX PPMC成员， Apache ECharts、 Apache DolphinScheduler孵化器导师， Zipkin成员与贡献者， CNCF OpenTracing核心贡献者。",
+                    "imgurl":"wusheng.jpg"
+                }
+            ],  
+            "flag":"over", 
+            "speechcontent":"",
+            "ppt":"",
+            "url":"https://www.bilibili.com/video/BV1BQ4y1o7rA/"
         }
         
     ]

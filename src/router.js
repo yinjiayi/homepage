@@ -14,26 +14,44 @@ import React from 'react';
 import {HashRouter as Router, Route, Switch} from 'react-router-dom';
 import App from './App';
 import Wrapper from './wrapper.js';
-import Index from './pages/index/index.js';
 import HomePage from './pages/homepage/index.js';
 import Help from './pages/help/index.js';
 import Howitworks from './pages/howitworks/index.js';
 import Apply from './pages/apply/index.js';
 import Org from './pages/org/index.js';
-import Orglist from './components/orglist/index.js';
-import ProjectlistN from './components/projectlistN/index.js';
 import OrgDetail from './components/orgdetail/index.js';
 import Liveshow from './pages/liveshow/index.js';
 import ProjectDetail from './components/projectDetail/index.js';
+
+let Orglist
+let ProjectlistN
+
+
+
 export default class IRouter extends React.Component{
     constructor(props){
-        super(props);
-             
+        super(props);   
+        this.state={
+            Orglistflag:false,
+            ProjectlistNflag:false
+        }         
     }
 
-
-   
-
+    componentDidMount(){
+        import(/* webpackPrefetch: 5 */"./components/orglist/index.js").then((module)=>{
+            Orglist = module.default
+            this.setState({
+                Orglistflag:true
+            })
+        })
+        import(/* webpackPrefetch: 5 */"./components/projectlistN/index.js").then((module)=>{
+            ProjectlistN = module.default
+            this.setState({
+                ProjectlistNflag:true
+            })
+        })
+        
+    }
     render(){
         return(
             <Router >
@@ -41,6 +59,7 @@ export default class IRouter extends React.Component{
                     
                     <Route path="/" render={()=>
                         <Wrapper>
+                           
                             <Switch >
                                 
                                 <Route path="/homepage"component={HomePage} ></Route> 
@@ -48,8 +67,8 @@ export default class IRouter extends React.Component{
                                 <Route path="/org" component={Org}>
                                     <Org>                                  
                                         <Switch>
-                                            <Route path = {["/org", "/org/orglist"]}  component={Orglist} exact ></Route>                      
-                                            <Route path="/org/projectlist" component={ProjectlistN} exact></Route>  
+                                            <Route path = {["/org", "/org/orglist"]}  component={this.state.Orglistflag?Orglist:""} exact ></Route>                      
+                                            <Route path="/org/projectlist" component={this.state.ProjectlistNflag? ProjectlistN:""} exact></Route>  
                                             <Route path="/org/orgdetail/:orgname" component={OrgDetail} ></Route>  
                                             <Route path="/org/prodetail/:projectid" component={ProjectDetail} ></Route>     
                                         </Switch>                                     
@@ -57,11 +76,10 @@ export default class IRouter extends React.Component{
                                 </Route>
                                 <Route path="/howitworks"component={Howitworks} ></Route> 
                                 <Route path="/apply"component={Apply} ></Route>
-                                <Route path="/liveshow"component={Liveshow} ></Route>   
-                                <Route path="/index"component={Index} ></Route>   
-                                                                                                                 
+                                <Route path="/liveshow"component={Liveshow} ></Route>                                                                                                                      
                                 <Route path="/" component={HomePage} /> 
                             </Switch>
+                          
                         </Wrapper>
                     }/>
                 </App>

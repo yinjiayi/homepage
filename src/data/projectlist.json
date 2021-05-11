@@ -12,7 +12,7 @@
         "projectName":"项目名称",
         "projectCommunity":"社区名称",
         "operation":"操作",
-        "operationbutton":["项目详情","我要报名"],
+        "operationbutton":["项目详情","提交申请"],
         "proDi":"难  度：",
         "proDegree":"难度",
         "proD":"难度：",
@@ -34,7 +34,10 @@
         "outre":"项目产出要求",
         "techre":"项目技术要求",
         "language":"支持语言",
-        "langtag":["全部","中文","English","中文/English"]
+        "langtag":["全部","中文","English"],
+        "taglist":["全部","Go","Linux","Python","Java","C","Cloud Native","JavaScript","Container","PHP","AI","Big Data","OS","Dev Tools","Virtualization","Distributed System","Docker","NLP","Database","Rust","IOT"],
+        "popover":["5月24日至6月13日开放申请，","此前可","注册账号"],
+        "tag":"标签："
 
     },
     "en":{
@@ -50,9 +53,9 @@
         "projectName":"Name of Project ",
         "projectCommunity":"Name of Community",
         "operation":"Operation",
-        "operationbutton":["Detailed Info","Apply"],
+        "operationbutton":["Detailed","Apply"],
         "proDi":"Degree of Difficulty: ",
-        "proDegree":"Degree of Difficulty",
+        "proDegree":"Difficulty",
         "proD":"Degree of Difficulty: ",
         "proSelectStu":"Selected Student:",
         "proStore":"Repository of Project ",
@@ -71,7 +74,10 @@
         "outre":"Output requirements",
         "techre":"Technique requirements",
         "language":"Language",
-        "langtag":["All","中文","English","中文/English"]
+        "langtag":["All","中文","English"],
+        "taglist":["All","Go","Linux","Python","Java","C","Cloud Native","JavaScript","Container","PHP","AI","Big Data","OS","Dev Tools","Virtualization","Distributed System","Docker","NLP","Database","Rust","IOT"],
+        "popover":["Project application will open from May 24 to June 13.","","You can sign up now. "],
+        "tag":"Tag: "
         
     }
 }
