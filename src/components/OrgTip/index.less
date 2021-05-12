@@ -152,18 +152,153 @@
     background-color: #4c4cd9;
 }
 
-.OrgTipButton::before{
-    content:url(../../img/organisation/arrow.png);
-    position: absolute;
-    right: 10%;
-
-}
-
-
 .OrgListItem:nth-child(3n+2) .OrgTipItemContent {
     left: -409px;
 }
 
 .OrgListItem:nth-child(3n+3) .OrgTipItemContent {
     left: -818px;
+}
+
+.OrgListItemTip .triangle {
+    border: 40px solid transparent;
+    border-bottom-color: #fff;
+}
+
+.OrgTipFullDesc {
+    color: #343434;
+    font-family: FZLTHJW--GB1-0, FZLTHJW--GB1;
+}
+
+.Orgdivider {
+    margin-top: 20px;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.OrgTipArr {
+    margin-top: 20px;
+    margin-left: 22px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.OrgTipArr:before {
+    width: 6px;
+    height: 20px;
+    background: #4B9DFE;
+    margin-right: 16px;
+}
+
+.OrgTipArr a {
+    color: #4B9DFE;
+}
+
+.tagItem {
+    border-radius: 8px;
+    margin: 8px 20px 8px 20px;
+}
+
+.Domain {
+    background: #F5FBFF;
+    color: #4B9DFE;
+}
+
+.Tech {
+    background: #FCEDED;
+    color: #FF4A5B;
+}
+
+.OrgTipButton {
+    width: 96px;
+    height: 36px;
+    background: #4B9DFE;
+    font-size: 16px;
+    padding: 10px 16px;
+    line-height: 36px;
+}
+.OrgTipButton:hover {
+    background: #006bc5;
+}
+.OrgTipItemContent {
+    width: 1140px;
+}
+
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+    .OrgTipItemContent {
+        width: 97vw;
+    }
+    .Org .OrgTipItemContent {
+        width: 91vw;
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 750px) {
+    .Org .OrgTipItemContent {
+        margin-top: 20px!important;
+        width: 92vw;
+    }
+    .OrgListItemTip .triangle {
+        border: 20px solid transparent;
+        border-bottom-color: #fff;
+    }
+    .OrgTipTitle {
+        font-size: 16px!important;
+        font-weight: bold
+    }
+    .OrgTipFullDesc {
+        font-size: 14px;
+    }
+    .OrgTipArr {
+        font-size: 14px;
+        margin-left: 16px;
+        margin-top: 10px;
+    }
+    .tagItem {
+        padding: 3px 9px;
+        font-size: 10px;
+    }
+    .OrgTipButton {
+        width: 84px;
+        height: 26px;
+        line-height: 18px;
+        padding: 4px 14px;
+        font-size: 14px;
+    }
+    .OrgDetailState .ProjectListPageItemOne {
+        font-size: 14px;
+    }
+    .OrgDetailState .ProjectListApplyState {
+        font-size: 12px;
+        width: 170px!important;
+    }
+    .OrgDetailState {
+        padding-bottom: 0!important;
+        margin-bottom: 30px;
+    }
+    .projectListWrapper {
+        background: #FAFBFF;
+    }
+    .Org .projectListItem {
+        width: 94vw;
+    }
+    *, *::before, *::after {
+        box-sizing: border-box!important;
+    }
+    .orgProjectDes {
+        overflow-y: scroll;
+    }
+    .projectListItemLeft {
+        height: unset!important;
+        position: unset;
+        padding: 0;
+    }
+    .orgProjectBottomLeft {
+        font-size: 16px!important;
+        position: unset!important;
+        margin-top: 20px;
+        padding-bottom: 0!important;
+    }
+    .orgProjectTitle {
+        margin-bottom: 10px!important;
+    }
 }
