@@ -49,7 +49,6 @@ class Header extends React.Component{
     }
 
     goPage(linkurl){
-
         this.props.setPageFlag(linkurl)
         gohash("/"+linkurl)
 

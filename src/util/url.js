@@ -21,11 +21,10 @@ var gohash = (hash)=>{
     const langflag = window.location.hash.split("?")
     if(langflag.length === 2){
         lang = "?"+langflag[1]
-    }else{
-        window.scrollTo({
-            top: 0
-        });
     }
+    window.scrollTo({
+        top: 0
+    });
     window.location.hash = hash + lang
 }
 

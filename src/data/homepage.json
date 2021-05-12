@@ -57,27 +57,5 @@
         "logotitle":["Organizers and Partners","Host","Co-Host","Organizer","Media Partners","Partners"]
 
 
-    },
-    "host":[
-        {
-            "img":"iscas.jpg",
-            "url":"http://www.is.cas.cn/"
-        },
-        {
-            "img":"openeuler.jpg",
-            "url":"https://openeuler.org/zh/"
-        }
-    ],
-    "cohost":[
-        {
-            "name":"开源社",
-            "img":"kaiyuanshe.png",
-            "url":"https://kaiyuanshe.cn/"
-        },
-        {
-            "name":"思否",
-            "img":"segmentfault.png",
-            "url":"https://segmentfault.com/"
-        }
-    ]
+    }
 }

@@ -32,8 +32,11 @@ class Org extends React.Component{
         if(hashurl[2] === "projectlist"){
             orgflag = "projectlist"
         }
+        if(this.props.orgTabFlag !== orgflag){
+            this.props.setOrgTabFlag(orgflag)
+        }
 
-        this.props.setOrgTabFlag(orgflag)
+       
     }
 
     handleClick(hashurl){
@@ -57,7 +60,7 @@ class Org extends React.Component{
                                 <div  
                                     key={index} 
                                     onClick={()=>this.handleClick(item.hash)} 
-                                    className={["OrgTabItem",tabflag === item.hash ? "activeTab":""].join(" ")}> {item.name}</div>
+                                    className={["OrgTabItem activeItem",tabflag === item.hash ? "activeTab":""].join(" ")}> {item.name}</div>
                             )
                         })
                     }

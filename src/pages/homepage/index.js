@@ -88,11 +88,10 @@ class HomePage extends React.Component{
     render(){
         let showdata = this.state.data[this.props.chiFlag]
         
-        let {cohost,applyurl,host} = this.state.data
+        let {applyurl} = this.state.data
         return(         
             <div className="homepage">
             <div className="GoApply" onClick={()=>{this.goLogoLink(applyurl)}}>{showdata.goapply}</div>
-           
                 <div className="homepageBanner One">
                     <div className="homepageBannerTitle">{showdata.title}</div>
                     <div className="homepageTextOne">
@@ -100,9 +99,8 @@ class HomePage extends React.Component{
                         showdata.bannerone.map((item,index)=>{
                             return(
                                 <div className="homepageBannerFline" key={index} >
-                                    <span className="homepageBannerFlineIcon"></span>
                                     <span className="homepageBannerFlineText">
-                                    <span   dangerouslySetInnerHTML={{ __html: item }}></span>
+                                    <span   dangerouslySetInnerHTML={{ __html: index + 1 + '. ' + item }}></span>
                                     {
                                         index === 2?
                                         <span onClick={()=>{this.goLiveshow()}} className="homepageLinkguide">{showdata.detail}</span>:""
@@ -135,26 +133,32 @@ class HomePage extends React.Component{
                             }
                         </div>
                         <div className="homepageLogo">
-                            <div className="homepageLogoTitle">{showdata.logotitle[0]}</div>
+                            <div className="homepageLogoTitle">
+                                <span className="title-wrapper">
+                                    <span className="title-left-icon"></span>
+                                    <span className="title-text">{showdata.logotitle[0]}</span>
+                                    <span className="title-right-icon"></span>
+                                    </span>
+                            </div>
                            
                             <div className="homepageLogoItemTitle">
                                 {showdata.logotitle[1]}
                             </div>
                             <div className="homepageLogoItemList ">
-                                {this.createLogo("homepageLogoImage",host)}
+                                {this.createLogo("homepageLogoImage",logocoopdata.host)}
                             </div>
                             <div className="homepageLogoItemTitle">
                                 {showdata.logotitle[2]}
                             </div>
                             <div className="homepageLogoItemList ">
-                                {this.createLogo("homepageLogoImage",cohost)}
+                                {this.createLogo("homepageLogoImage",logocoopdata.cohost)}
                             </div>
                            
                             <div className="homepageLogoItemTitle ">
                                 {showdata.logotitle[3]}
                             </div>
                             <div className="homepageLogoItemList ">
-                                <div className="homepageLogoImage nanjing"></div>                            
+                            {this.createLogo("homepageLogoImage",logocoopdata.organizer)}                      
                             </div>
                             <div className="homepageLogoItemTitle ">
                                 {showdata.logotitle[4]}
