@@ -88,7 +88,7 @@ class HomePage extends React.Component{
     render(){
         let showdata = this.state.data[this.props.chiFlag]
         
-        let {cohost,applyurl} = this.state.data
+        let {applyurl} = this.state.data
         return(         
             <div className="homepage">
             <div className="GoApply" onClick={()=>{this.goLogoLink(applyurl)}}>{showdata.goapply}</div>
@@ -145,21 +145,20 @@ class HomePage extends React.Component{
                                 {showdata.logotitle[1]}
                             </div>
                             <div className="homepageLogoItemList ">
-                                <div className="homepageLogoImage Host"></div>
-                                <div className="homepageLogoImage openeuler"></div>
+                                {this.createLogo("homepageLogoImage",logocoopdata.host)}
                             </div>
                             <div className="homepageLogoItemTitle">
                                 {showdata.logotitle[2]}
                             </div>
                             <div className="homepageLogoItemList ">
-                                {this.createLogo("homepageLogoImage",cohost)}
+                                {this.createLogo("homepageLogoImage",logocoopdata.cohost)}
                             </div>
                            
                             <div className="homepageLogoItemTitle ">
                                 {showdata.logotitle[3]}
                             </div>
                             <div className="homepageLogoItemList ">
-                                <div className="homepageLogoImage nanjing"></div>                            
+                            {this.createLogo("homepageLogoImage",logocoopdata.organizer)}                      
                             </div>
                             <div className="homepageLogoItemTitle ">
                                 {showdata.logotitle[4]}

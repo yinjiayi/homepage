@@ -3,7 +3,7 @@
         {
             "name":"芽木科技",
             "img":"yamu.png",
-            "url":"https://www.debian.org/"
+            "url":"https://mp.weixin.qq.com/s/PYEb1bAKMBUyPIaT6DEdNA"
         },
         {
             "name":"oschina",
@@ -19,6 +19,34 @@
             "name":"hzuna",
             "img":"hzuna.png",
             "url":"https://www.hzuna.club"
+        }
+    ],
+    "host":[
+        {
+            "img":"iscas.jpg",
+            "url":"http://www.is.cas.cn/"
+        },
+        {
+            "img":"openeuler.jpg",
+            "url":"https://openeuler.org/zh/"
+        }
+    ],
+    "organizer":[
+        {
+            "img":"nanjing.jpg",
+            "url":"http://nj.iscas.ac.cn/"
+        }
+    ],
+    "cohost":[
+        {
+            "name":"开源社",
+            "img":"kaiyuanshe.png",
+            "url":"https://kaiyuanshe.cn/"
+        },
+        {
+            "name":"思否",
+            "img":"segmentfault.png",
+            "url":"https://segmentfault.com/"
         }
     ],
     

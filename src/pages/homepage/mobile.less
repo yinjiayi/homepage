@@ -1,752 +1,690 @@
-@media screen and (min-width: 100px)and (max-width: 750px){
-    .container{
-        .content1200{
-            width: 94vw;
-        }
+@media screen and (min-width: 100px) and (max-width: 750px) {
+  .container {
+    .content1200 {
+      width: 94vw;
     }
-    .displayblock{
-        display: block !important;
+  }
+  .displayblock {
+    display: block !important;
+  }
+
+  .displaynone {
+    display: none;
+  }
+
+  .header {
+    .osscHeaderLogo {
+      width: 55vw;
     }
 
-    .displaynone{
+    .headerChiEn {
+      font-size: 12px;
+      margin-left: 6px;
+    }
+
+    .headerMobileIcon {
+      background-image: url(./../../img/icon_nav.png);
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-left: 8px;
+    }
+
+    .headerTabWrapper {
+      display: none;
+    }
+
+    .headerMobileList {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      text-align: center;
+      right: 0;
+      left: 0;
+      z-index: 10;
+      top: 0;
+      background-color: #187ef2;
+      padding: 30vh 0;
+
+      .osscListItem {
+        padding: 10px 0;
+        font-size: 20px;
+        text-decoration: none;
+        color: #fff;
+        position: relative;
+      }
+    }
+    .headerClose {
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      background-image: url(./../../img/close.svg);
+      background-size: contain;
+      right: 5vw;
+      top: 2vh;
+    }
+  }
+
+  .footer {
+    .footerWrapper {
+      font-size: 12px;
+      text-align: center;
+    }
+  }
+
+  .indexOne {
+    .indexOneTitle {
+      font-size: 20px;
+    }
+    .indexOneListItemTitle {
+      font-size: 16px;
+    }
+    .indexOneListLine.right .indexOneListItem {
+      padding-left: 25px;
+    }
+    .indexOneListLine.left .indexOneListItem {
+      padding-right: 16px;
+    }
+
+    .indexOneListItemTime {
+      font-size: 14px;
+    }
+  }
+
+  .index {
+    .indexText {
+      width: 78vw;
+      margin-top: 20px;
+      height: 100px;
+    }
+
+    .indexBanner {
+      background-image: url(./../../img/index/bannerM.jpg);
+      height: 366px;
+    }
+    .indexButton {
+      width: 200px;
+    }
+
+    .indexButtonText {
+      font-size: 14px;
+
+      letter-spacing: 0;
+    }
+    .indexButtonText::after {
+      width: 15px;
+      height: 15px;
+      top: 3px;
+
+      right: -23px;
+    }
+    .indexTwo {
+      text-align: center;
+    }
+
+    .indexTwoText {
+      font-size: 18px;
+    }
+
+    .indexTwoBlue {
+      font-size: 14px;
+    }
+  }
+
+  .homepage {
+    .homepageBannerFlineIcon {
+      width: 25px;
+      height: 25px;
+    }
+
+    .fire {
+      width: 2rem;
+    }
+
+    .homepageDesc {
+      line-height: 4rem;
+    }
+
+    .homepageIconItemText {
+      font-size: 13px !important;
+      line-height: 14px !important;
+      display: inline;
+    }
+    .homepageBannerFlineText {
+      padding-left: 10px;
+    }
+    .homepageTextOne {
+      width: 87vw;
+    }
+    .homepageLogoItemList.Coop {
+      width: 100%;
+    }
+    .homepageBanner.Two {
+      .homepageTitle {
+        font-size: 8vw;
+      }
+      .homepageTitleTime {
+        font-size: 4vw;
+        margin-top: 40px;
+        margin-bottom: 68px;
+      }
+    }
+    .homepageBanner {
+      background-image: url(./../../img/index/bannerM.jpg);
+      max-height: 400px;
+    }
+
+    .homepageIconItemImage {
+      width: 30vw;
+      height: 20vw;
+    }
+
+    .homepageLogoImage {
+      width: 80vw;
+      height: 12.7vw;
+      max-width: 384px;
+      margin-bottom: 24px;
+    }
+    .homepagelogocoop {
+      margin-bottom: 24px;
+    }
+
+    .homepageText {
+      padding-top: 54px;
+      font-size: 17px;
+      line-height: 28px;
+    }
+
+    .homepageIcon {
+      margin: 10px 0 50px;
+      flex-wrap: wrap;
+    }
+
+    .homepageIconItem {
+      width: 45vw;
+      flex: none;
+      max-width: 202px;
+      margin-bottom: 20px;
+    }
+
+    .homepageLogoTitle {
+      font-size: 24px;
+    }
+
+    .CoopTitle {
+      flex-direction: column;
+    }
+  }
+
+  .Help {
+    .helpBlueTextLine {
+      flex-direction: column;
+      .helpBlueText.One {
+        margin-right: 0;
+      }
+    }
+    .HelpBanner {
+      background-image: url(./../../img/contact/bannerM.jpg);
+    }
+    .helpBlueText,
+    .helpEmail {
+      font-size: 18px;
+      a,
+      .helpemailtext {
+        font-size: 16px !important;
+      }
+    }
+
+    .emaillogo {
+      width: 24px;
+      height: 24px;
+    }
+    .indexOneTitle {
+      font-size: 22px;
+    }
+    .helptitle,
+    .helptitle.resourcelink {
+      margin-bottom: 50px;
+    }
+
+    .helpcontact {
+      flex-direction: column;
+    }
+    .helpTwoCode {
+      flex-direction: column;
+      align-items: center;
+    }
+    .helpTwoCodeItem {
+      width: 50vw;
+      height: 53vw;
+      max-width: 310px;
+      max-height: 330px;
+      margin-bottom: 20px;
+    }
+    .helpTwoCode {
+      padding-top: 0;
+    }
+    .helptitle.eng {
+      .helpECList {
+        font-size: 18px;
+        margin-left: 0;
+      }
+    }
+  }
+
+  .Howitworks {
+    .HowitworksContent {
+      margin-bottom: 0;
+      margin: 40px 0;
+    }
+
+    .HowitworksContentTitle {
+      font-weight: bold;
+    }
+    .HowitworksContentContent {
+      color: #666;
+    }
+    .HowitworksContentTitle::before {
+      position: absolute;
+      content: "";
+      width: 4px;
+      height: 100%;
+      background: #366afc;
+      left: -3vw;
+    }
+    .HowitworksBanner {
+      height: auto;
+    }
+    .HowitworksBannerTitle {
+      font-size: 21px;
+      padding: 30px 0 30px;
+      letter-spacing: 1px;
+    }
+    .HowitworksBannerTitleMobile {
+      display: block;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 18px;
+      color: #fff;
+      .HowitworkOne {
+        font-size: 26px;
+        /* text-align: center; */
+        color: #fff;
+        margin-bottom: 6px;
+      }
+    }
+  }
+
+  .HowitworksList {
+    flex-direction: column;
+    .HowitworksListItem {
+      width: 100% !important;
+      margin-bottom: 30px;
+    }
+    .HowitworksListItemImage {
+      position: absolute;
+      /* margin-top: 12px; */
+      width: 26px;
+      margin-top: -20px;
+      min-height: 30px;
+    }
+    .HowitworksListItemTitle {
+      font-size: 20px;
+      margin: 0;
+      position: absolute;
+      left: 12vw;
+      top: -5px;
+    }
+
+    .HowitworksListItemContent {
+      width: 81vw;
+      margin-left: 12vw;
+      text-align: left;
+      font-size: 14px;
+      margin-top: 24px;
+      line-height: 24px;
+    }
+  }
+
+  .Apply {
+    .ApplyBanner {
+      padding-top: 6vw;
+      height: 350px;
+    }
+    .ApplyRes {
+      padding-top: 60px;
+      padding-bottom: 48px;
+      .HowitworksListItem {
+        text-align: left;
+        .ApplyListItemTitle {
+          margin-bottom: 10px;
+        }
+        .HowitworksListItemContent {
+          color: #666;
+          font-size: 16px;
+          margin: 0;
+          width: 90vw;
+          text-indent: 2em;
+        }
+      }
+      .ApplyListItemTitle::before {
+        position: absolute;
+        content: "";
+        width: 4px;
+        height: 100%;
+        background: #366afc;
+        left: -3vw;
+      }
+    }
+  }
+
+  .en {
+    .indexOne {
+      .indexOneList {
+        width: auto;
+      }
+      .indexOneListItemTitle {
+        font-size: 14px;
+      }
+    }
+
+    .ProjectDetail {
+      .ProDeLineItem {
+        width: 100%;
+      }
+
+      .ProDeTaLine {
+        display: block;
+      }
+
+      .ProDeRe {
+        font-size: 1rem;
+      }
+      .ProDeReRight {
         display: none;
+      }
+
+      .ProDeReCon {
+        padding-left: 0;
+      }
+
+      .ProDeTagContent {
+        margin-top: 0;
+      }
+    }
+    .homepage {
+      .homepageBannerTitle {
+        padding: 5.3rem 0;
+      }
+
+      .homepageBanner.Two {
+        .homepageTitleTime {
+          font-size: 3vw !important;
+          letter-spacing: 0 !important;
+        }
+
+        .homepageTitleGuide {
+          font-size: 3vw;
+        }
+      }
+
+      .homepageDesc {
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+      .homepageText {
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+      .homepageTextOne {
+        width: 90%;
+      }
+
+      .homepageBannerFline {
+        font-size: 13px;
+        line-height: 16px;
+      }
+    }
+  }
+
+  html {
+    font-size: 5px;
+  }
+
+  .Org {
+    .OrgTipItemContent {
+      width: 94vw;
+    }
+    .OrgListItem .OrgTipItemContent {
+      left: 0 !important;
     }
 
-    .header{
-        .osscHeaderLogo{
-            width: 55vw;
-        }
+    .OrgListWrapper {
+      grid-template-columns: repeat(auto-fill, 94vw);
+      margin: 0 auto;
+    }
+    .OrgTabItem {
+      font-size: 4rem;
+      padding: 0 2rem;
+    }
 
-        .headerChiEn{
-            font-size: 12px;
-            margin-left: 6px;
-        }
+    .OrgListItemModal {
+      width: 90vw;
+      max-width: 386px;
+    }
 
-        .headerMobileIcon{
-            background-image: url(./../../img/icon_nav.png);
-            width: 16px;
-            height: 16px;
-            display: inline-block;
+    .OrgListItemModalImage {
+      width: 100%;
+    }
+  }
+
+  .Org {
+    .ProjectListLC {
+      font-size: 12px;
+      min-width: 900px;
+    }
+
+    .ProjectListLCWrapper {
+      width: 100%;
+      overflow-x: scroll;
+    }
+    .ProjectListSelectItem {
+      font-size: 13px;
+    }
+
+    .ProjectListLCOperation {
+      width: 36%;
+    }
+
+    .ProjectListLCLine.Header .ProjectListLCName,
+    .ProjectListLCLine.Header .ProjectListLCCommunity {
+      text-align: left;
+    }
+
+    .ProjectListPageState {
+      flex-direction: column;
+      font-size: 14px;
+      padding-bottom: 7px;
+      margin-top: 10px;
+    }
+    .OrglistSearch,
+    .ProjectListBanner {
+      flex-direction: column;
+      margin-bottom: 0;
+      .ant-input-search {
+        width: 90vw;
+        height: 42px;
+      }
+      .ant-input-affix-wrapper {
+        height: 40px;
+        input {
+          font-size: 14px;
+        }
+      }
+      .ant-input-search-button {
+        height: 40px;
+      }
+    }
+
+    .ProjectListRankItem {
+      margin: 0;
+    }
+    .ProjectListRank {
+      line-height: 45px;
+    }
+    .ProjectListPage {
+      margin: 5px 0 10px;
+    }
+
+    .projectListItem {
+      flex-direction: column;
+      height: auto;
+      width: 90vw;
+    }
+
+    .projectListItemLeft {
+      width: 100%;
+    }
+    .projectListItemRight {
+      width: 100%;
+      height: auto;
+    }
+
+    .orgProjectButton {
+      position: relative;
+      margin-top: 0;
+      right: 0;
+    }
+
+    .ant-pagination {
+      .ant-pagination-next,
+      .ant-pagination-prev {
+        width: 64px;
+        height: 32px;
+        font-size: 14px;
+        background-color: #1d8eff !important;
+        line-height: 32px;
+      }
+
+      .ant-pagination-item {
+        width: 32px;
+        height: 32px;
+
+        line-height: 32px;
+      }
+    }
+  }
+
+  .mobiledisplaynone {
+    display: none;
+  }
+
+  .Liveshow {
+    .LiveshowBanner {
+      height: 340px;
+      padding: 0 10px;
+    }
+    .LiveshowBannerTitle {
+      font-size: 36px;
+      line-height: 36px;
+    }
+
+    .LiveshowBannerorg {
+      font-size: 14px;
+
+      line-height: 18px;
+      margin-bottom: 15px;
+    }
+
+    .LiveshowBannerText {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
+  .ProjectDetail {
+    .orgListNavBarItem {
+      font-size: 12px;
+    }
+
+    .ProDeHeader {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      height: auto;
+      padding-top: 15px;
+    }
+    .tagItem {
+      padding: 6px 8px;
+      margin: 6px 13px 5px 0;
+      font-size: 13px;
+    }
+
+    .ProDeTitle {
+      font-size: 16px;
+    }
+    .ProDeTagItem {
+      font-size: 13px;
+      min-width: 70px;
+    }
+
+    .ProDeReCon,
+    .ProDeTaLine {
+      font-size: 13px;
+    }
+
+    .ProDeReItem {
+      margin-bottom: 10px;
+    }
+    .ProDeLine {
+      flex-direction: column;
+      font-size: 13px;
+    }
+    .ProDeLineItem {
+      margin-bottom: 20px;
+    }
+  }
+
+  .LiveShowWrapper {
+    .LiveShowContent {
+      .LiveShowItem {
+        padding: 20px 18px 0;
+        .LiveShowItemProfile .LiveShowItemProfileName {
+          display: inline-flex;
+        }
+        .LiveShowItemHeader {
+          flex-direction: column;
+          .LiveShowItemHeaderImage {
+            width: 100%;
             background-size: contain;
-            background-repeat: no-repeat;
-            margin-left: 8px;
-        }
-
-        .headerTabWrapper{
-            display: none;
-        }
-
-        .headerMobileList{
-            position: fixed;
-            width: 100vw;
-            height: 100vh;
+          }
+          .LiveShowItemHeaderTitle {
+            width: 100%;
             text-align: center;
-            right: 0;
-            left: 0;
-            z-index: 10;
-            top: 0;
-            background-color: #187ef2;
-            padding: 30vh 0;
-
-           .osscListItem {
-                padding: 10px 0;
-                font-size: 20px;
-                text-decoration: none;
-                color: #fff;
-                position: relative;
+            margin-top: 14px;
+            .LiveShowItemHeaderTitleOne {
+              line-height: 24px;
+              font-size: 18px;
+              margin-bottom: 4px;
             }
+            .LiveShowItemHeaderTitleTwo {
+              margin-bottom: 18px;
+              font-size: 13px;
+            }
+            .LiveShowItemHeaderButton {
+              margin: 0 auto;
+            }
+          }
+
+          .LiveShowItemHeaderTwoCode {
+            margin: 10px auto -5px;
+          }
         }
-        .headerClose{
-            position: absolute;
-            width: 35px;
-            height: 35px;
-            background-image: url(./../../img/close.svg);
-            background-size: contain;
-            right: 5vw;
-            top: 2vh;
-        }
+      }
     }
-
-   .footer{
-    .footerWrapper{
-        font-size: 12px;
-        text-align: center;
-    }
-   }
-
-    .indexOne{
-        .indexOneTitle{
-            font-size: 20px;
-            }
-            .indexOneListItemTitle{
-                font-size: 16px;
-            }
-            .indexOneListLine.right .indexOneListItem{
-                padding-left: 25px;
-            }
-            .indexOneListLine.left .indexOneListItem{
-                padding-right: 16px;
-            }
-        
-            .indexOneListItemTime{
-                font-size: 14px;
-            }
-    }
-
-    .index{
-        .indexText{
-            width: 78vw;
-            margin-top: 20px;
-            height: 100px;
-        }
-        
-        .indexBanner{
-        
-            background-image: url(./../../img/index/bannerM.jpg);
-            height: 366px;
-        
-        }
-        .indexButton{
-            width: 200px;
-        }
-
-        .indexButtonText{
-            font-size: 14px;
-            
-            letter-spacing: 0;
-        }
-        .indexButtonText::after{
-            width: 15px;
-            height: 15px;
-            top: 3px;
-
-            right: -23px;
-        }
-        .indexTwo{
-            text-align: center;
-        }
-
-        
-        .indexTwoText{
-            font-size: 18px;
-        }
-
-        .indexTwoBlue{
-            font-size: 14px;
-        }
-    }
-
-    .homepage{
-        .homepageBannerFlineIcon{
-            width: 25px;
-            height: 25px;
-            
-        }
-
-        .fire{
-            width: 2rem;
-        }
-
-        .homepageDesc{
-            line-height: 4rem;
-        }
-
-        .homepageIconItemText{
-            font-size: 13px !important;
-            line-height: 14px!important;
-            display: inline;
-        }
-        .homepageBannerFlineText{
-            padding-left: 10px;
-        }
-        .homepageTextOne{
-            width: 87vw;
-        }
-        .homepageLogoItemList.Coop{
-            width: 100%;
-        }
-        .homepageBanner.Two{
-            .homepageTitle{
-                font-size: 8vw;
-            }
-            .homepageTitleTime{
-                font-size: 4vw;
-                margin-top: 40px;
-                margin-bottom: 68px;
-            }
-        }
-        .homepageBanner{
-            background-image: url(./../../img/index/bannerM.jpg);
-            max-height: 400px;
-        }
-
-        .homepageIconItemImage {
-            width: 30vw;
-            height: 20vw;
-        }
-
-        .homepageLogoImage{
-            width: 80vw;
-            height: 12.7vw;
-            max-width: 384px;
-            margin-bottom: 24px;
-            
-        }
-        .homepagelogocoop{
-            margin-bottom: 24px;
-        }
-
-
-        .homepageText{
-            padding-top: 54px;
-            font-size: 17px;
-            line-height: 28px;
-        }
-
-       
-        .homepageIcon {
-           
-            margin: 10px 0 50px;
-            flex-wrap: wrap;
-        }
-
-        .homepageIconItem {
-            width: 45vw;
-            flex: none;
-            max-width: 202px;
-            margin-bottom: 20px;
-
-        }
-
-        
-
-     
-
-
-        .homepageLogoTitle{
-            font-size: 24px;
-        }
-
-        .CoopTitle{
-            flex-direction: column;
-        }
-
-    }
-
-   
-
-    .Help{
-        .helpBlueTextLine{
-            flex-direction: column;
-            .helpBlueText.One{
-                margin-right:0;
-            }
-        }
-        .HelpBanner{
-            background-image: url(./../../img/contact/bannerM.jpg);
-        }
-        .helpBlueText,
-        .helpEmail{
-            font-size: 18px;
-            a,
-            .helpemailtext {
-                font-size: 16px !important;}
-        }
-
-       .emaillogo{
-        width: 24px;
-        height: 24px;
-       }
-        .indexOneTitle{
-            font-size: 22px;
-        }
-        .helptitle,
-        .helptitle.resourcelink {
-            margin-bottom: 50px;
-        }
-
-        .helpcontact{
-            flex-direction: column;
-        }
-        .helpTwoCode{
-            flex-direction: column;
-            align-items: center;
-        }
-        .helpTwoCodeItem{
-            width: 50vw;
-            height: 53vw;
-            max-width: 310px;
-            max-height: 330px;
-            margin-bottom: 20px;
-        }
-        .helpTwoCode{
-            padding-top: 0;
-        }
-        .helptitle.eng{
-            .helpECList{
-                font-size: 18px;
-                margin-left: 0;
-            }
-        }
-    }
-
-    
-
-    .Howitworks{
-        
-        .HowitworksContent{
-            margin-bottom: 0;
-            margin: 40px 0;
-        }
-       
-        .HowitworksContentTitle{
-            font-weight: bold;
-        }
-        .HowitworksContentContent{
-            color:#666;
-        }
-        .HowitworksContentTitle::before{
-            position: absolute;
-            content: "";
-            width: 4px;
-            height: 100%;
-            background: #366afc;
-            left: -3vw;
-
-        }
-        .HowitworksBanner{
-            height: auto;
-        }
-        .HowitworksBannerTitle{
-            font-size: 21px;
-            padding: 30px 0 30px;
-            letter-spacing: 1px;
-        }
-        .HowitworksBannerTitleMobile{
-            display: block;
-            text-align: center;
-            padding: 20px 0; 
-            font-size: 18px;
-            color: #fff;
-            .HowitworkOne{
-                font-size: 26px;
-                /* text-align: center; */
-                color: #fff;
-                margin-bottom: 6px;
-            }
-        }
-
-    }
-
-    .HowitworksList{
-        flex-direction: column;
-        .HowitworksListItem {
-            width: 100% !important;
-            margin-bottom: 30px;
-        }
-        .HowitworksListItemImage{
-             position: absolute;
-            /* margin-top: 12px; */
-            width: 26px;
-            margin-top: -20px;
-            min-height: 30px;
-        }
-        .HowitworksListItemTitle{
-            font-size: 20px;
-            margin: 0;
-            position: absolute;
-            left: 12vw;
-            top: -5px;
-        }
-        
-        .HowitworksListItemContent{
-            width: 81vw;
-            margin-left: 12vw;
-            text-align: left;
-            font-size: 14px;
-            margin-top: 24px;
-            line-height: 24px;
-        }
-    }
-
-    .Apply{
-
-        .ApplyBanner{
-            padding-top: 6vw;
-            height: 350px;
-        }
-        .ApplyRes{
-            padding-top: 60px;
-            padding-bottom: 48px;
-            .HowitworksListItem{
-                text-align: left;
-                .ApplyListItemTitle {
-                    margin-bottom: 10px;
-                }
-                .HowitworksListItemContent {
-                    color: #666;
-                    font-size: 16px;
-                    margin: 0;
-                    width: 90vw;
-                    text-indent: 2em;
-                }
-            }
-            .ApplyListItemTitle::before {
-                position: absolute;
-                content: "";
-                width: 4px;
-                height: 100%;
-                background: #366afc;
-                left: -3vw;
-            }
-    
-        }
-        
-        
-       
-       
-    }
-
-    .en{
-        
-        .indexOne{
-            .indexOneList{
-                width: auto;
-            }
-            .indexOneListItemTitle {
-                font-size: 14px;
-            }
-        }
-
-        .ProjectDetail{
-            .ProDeLineItem{
-                width: 100%;
-            }
-
-            .ProDeTaLine{
-                display: block;
-            }
-
-            .ProDeRe{
-                font-size: 1rem;
-            }
-            .ProDeReRight{
-                display: none;
-            }
-
-            .ProDeReCon{
-                padding-left: 0;
-            }
-
-            .ProDeTagContent{
-                margin-top:0
-            }
-        }
-        .homepage{
-
-            .homepageBannerTitle{
-                padding:5.3rem 0;
-            }
-
-         
-
-            .homepageBanner.Two{
-                .homepageTitleTime{
-                    font-size: 3vw !important;
-                    letter-spacing: 0 !important;
-                }
-    
-                .homepageTitleGuide{
-                    font-size:3vw;
-                }
-            }
-
-            .homepageDesc{
-                font-size: 14px;
-                line-height: 20px;
-            }
-
-            .homepageText{
-                font-size: 14px;
-                line-height: 20px;
-            }
-    
-            .homepageTextOne{
-                width: 90%;
-            }
-    
-            .homepageBannerFline {
-                font-size: 13px;
-                line-height: 16px;
-            }
-
-            
-
-        }
-
-        
-
-        
-
-
-    }
-
-    html{
-        font-size: 5px;
-    }
-
-    .Org{
-        .OrgTipItemContent{
-            width: 94vw;
-        }
-        .OrgListItem .OrgTipItemContent {
-            left: 0 !important;
-        }
-
-        .OrgListWrapper{
-            grid-template-columns: repeat(auto-fill,94vw);
-            margin: 0 auto;
-        }
-        .OrgTabItem{
-            font-size: 1.2rem;
-            padding: 0 2rem;
-        }
-
-        
-        .OrgListItemModal{
-  
-            width: 90vw;
-            max-width: 386px;
-            
-           
-        }
-
-        .OrgListItemModalImage{
-            width: 100%;
-        }
-    }
-
-    .Org{
-        .ProjectListLC{
-            font-size: 12px;        
-            min-width:900px;      
-        }
-
-        .ProjectListLCWrapper{
-            width: 100%;
-            overflow-x: scroll;
-        }
-        .ProjectListSelectItem{
-            font-size: 13px;
-        }
-
-        
-
-        .ProjectListLCOperation{
-            width: 36%;
-        }
-
-     
-
-        .ProjectListLCLine.Header .ProjectListLCName, .ProjectListLCLine.Header .ProjectListLCCommunity{
-            text-align: left;
-        }
-
-        .ProjectListPageState{
-            flex-direction: column;
-            font-size: 14px;
-            padding-bottom: 7px;
-            margin-top: 10px;
-        }
-        .OrglistSearch,
-        .ProjectListBanner{
-            flex-direction: column;
-            margin-bottom: 0;
-            .ant-input-search{
-                width: 90vw;
-                height: 42px;
-            }
-            .ant-input-affix-wrapper{
-                height: 40px;
-                input {
-                    font-size: 14px;
-                }
-                
-            }
-            .ant-input-search-button{
-                height: 40px;
-            }
-
-        }
-        
-        .ProjectListRankItem{
-            margin:0;
-        }
-        .ProjectListRank{
-            line-height: 45px;
-        }
-        .ProjectListPage{
-            margin:5px 0 10px;
-        }
-
-        .projectListItem{
-            flex-direction: column;
-            height: auto;
-            width: 90vw;
-        }
-
-        .projectListItemLeft{
-            width: 100%;
-        }
-        .projectListItemRight{
-            width: 100%;
-            height: auto;
-
-        }
-
-        .orgProjectButton{
-            position: relative;
-            margin-top:0;
-            right: 0;
-        }
-
-        .ant-pagination{
-            .ant-pagination-next,
-            .ant-pagination-prev {
-                width: 64px;
-                height: 32px;
-                font-size: 14px;
-                background-color: #1d8eff !important;
-                line-height: 32px;
-            }
-
-            .ant-pagination-item {
-                width: 32px;
-                height: 32px;
-                
-                line-height: 32px;
-            }
-
-        }
-        
-
-       
-    }
-
-    .mobiledisplaynone{
-        display: none;
-    }
-
-    .Liveshow{
-
-        .LiveshowBanner{
-            height: 340px;
-            padding: 0 10px;
-        }
-        .LiveshowBannerTitle{
-            font-size: 36px;
-            line-height: 36px;
-        }
-
-        .LiveshowBannerorg{
-            font-size: 14px;
-           
-            line-height: 18px;
-            margin-bottom: 15px;
-        }
-
-        .LiveshowBannerText{
-            font-size: 18px;
-            line-height: 22px;
-        }
-    }
-
-    .ProjectDetail{
-        .orgListNavBarItem{
-            font-size: 12px;
-        }
-        
-        .ProDeHeader{
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
-            height: auto;
-            padding-top:15px;
-        }
-        .tagItem{
-            padding: 6px 8px;
-            margin: 6px 13px 5px 0;
-            font-size: 13px;
-        }
-
-        .ProDeTitle{
-            font-size: 16px;
-        }
-        .ProDeTagItem{
-            font-size: 13px;
-            min-width: 70px;
-        }
-
-        .ProDeReCon,
-        .ProDeTaLine{
-            font-size: 13px;
-        }
-
-        .ProDeReItem{
-            margin-bottom: 10px;
-        }
-        .ProDeLine{
-            flex-direction: column;
-            font-size: 13px;
-        }
-        .ProDeLineItem{
-            margin-bottom: 20px;
-        }
-    }
-
-
-    .LiveShowWrapper{
-        .LiveShowContent{
-            .LiveShowItem{
-                padding: 20px 18px 0;
-                .LiveShowItemProfile .LiveShowItemProfileName{
-                    display: inline-flex;
-                }
-                .LiveShowItemHeader{
-                    flex-direction: column;
-                    .LiveShowItemHeaderImage{
-                        width: 100%;
-                        background-size: contain;
-                        
-                    }
-                    .LiveShowItemHeaderTitle{
-                        width: 100%;
-                        text-align: center;
-                        margin-top: 14px;
-                        .LiveShowItemHeaderTitleOne{
-                            line-height: 24px;
-                            font-size: 18px;
-                            margin-bottom: 4px;
-                        }
-                        .LiveShowItemHeaderTitleTwo{
-                            margin-bottom: 18px;
-                            font-size: 13px;
-                        }
-                        .LiveShowItemHeaderButton{
-                            margin:0 auto
-                        }
-                    }
-
-                    .LiveShowItemHeaderTwoCode{
-                        margin: 10px auto -5px;
-                    }
-
-                }
-            }
-        }
-        
-
-    }
-    
-    
+  }
 }
