@@ -22,7 +22,8 @@ import Org from './pages/org/index.js';
 import OrgDetail from './components/orgdetail/index.js';
 import Liveshow from './pages/liveshow/index.js';
 import ProjectDetail from './components/projectDetail/index.js';
-
+// import Orglist from "./components/orglist/index.js"
+// import ProjectlistN from "./components/projectlistN/index.js"
 let Orglist
 let ProjectlistN
 
@@ -38,18 +39,23 @@ export default class IRouter extends React.Component{
     }
 
     componentDidMount(){
+       setTimeout(()=>{
         import(/* webpackPrefetch: 5 */"./components/orglist/index.js").then((module)=>{
             Orglist = module.default
             this.setState({
                 Orglistflag:true
             })
+            console.log(1111)
         })
         import(/* webpackPrefetch: 5 */"./components/projectlistN/index.js").then((module)=>{
             ProjectlistN = module.default
             this.setState({
                 ProjectlistNflag:true
             })
+            console.log(22222)
         })
+       },1500)
+       
         
     }
     render(){

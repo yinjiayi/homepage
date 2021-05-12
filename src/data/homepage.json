@@ -58,7 +58,16 @@
 
 
     },
-    "host":["iscas.jpg","openeuler.jpg"],
+    "host":[
+        {
+            "img":"iscas.jpg",
+            "url":"http://www.is.cas.cn/"
+        },
+        {
+            "img":"openeuler.jpg",
+            "url":"https://openeuler.org/zh/"
+        }
+    ],
     "cohost":[
         {
             "name":"开源社",
