@@ -53,9 +53,17 @@ class OrgTip extends React.Component{
                         this.props.item.mail_list?
                         <div className="OrgTipMailList OrgTipArr">
                             {this.props.showdata.maillist}
-                            <a href={"mailto:"+this.props.item.mail_list}  target="_blank" rel="noopener noreferrer">
-                                {this.props.item.mail_list}
-                            </a>
+                            {
+                                this.props.item.mail_list.split(" ").map((item,index)=>{
+                                    return (
+                                        <a href={"mailto:"+item} key={index} target="_blank" rel="noopener noreferrer">
+                                            {item}
+                                        </a>
+
+                                    )
+                                })
+                            }
+                            
                         </div>:""
 
                     }

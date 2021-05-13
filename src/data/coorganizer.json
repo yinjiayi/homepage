@@ -446,7 +446,33 @@
     },{
         "name": "JustAuth",
         "img": "JustAuth.png",
-        "url": "https://justauth.wiki"}
+        "url": "https://justauth.wiki"
+    },
+    {
+        "img": "vineyard.png",
+        "name": "Vineyard",
+        "url": "https://v6d.io"     
+    },
+    {
+        "img": "wine.png",
+        "name": "Wine",
+        "url": "https://www.winehq.org"
+    },
+    {
+        "img": "ROS.png",
+        "name": "ROS",
+        "url": "http://ros.org/"
+    },
+    {
+        "img": "maxkey.png",
+        "name": "MaxKey社区",
+        "url": "https://maxkeytop.gitee.io/"
+    },
+    {
+        "img": "tensorbase.png",
+        "name": "TensorBase",
+        "url": "https://github.com/tensorbase/tensorbase"
+    }
     
     ]
 }

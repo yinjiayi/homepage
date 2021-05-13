@@ -1,304 +1,286 @@
-.tagItem{
-    display: inline-block;
-    letter-spacing: 1px;
-    padding: 10px 14px;
-    margin: 8px 20px 8px 0;
-    border-radius: 4px;
-  
-    font-size: 16px;
-}
-.Domain{
-    background-color: #d8deff;
-    color: #3456ff;
-}
-
-.Tech{
-    background-color: #d8ebff;
-    color: #198bff;
-}
-
-.triangle{
-    height: 0;
-    width: 0;
-    border: 10px solid transparent;
-    border-bottom-color: #fff;
-    background-color: transparent;
-    position: absolute;
-    bottom: 100%;
-    left: 171px;
-}
-
-.OrgListItemTip.hide{
-    display: none;
-
-}
-
-.OrgListItemTip.orgdetail{
-    display: block !important;
-    .triangle,
-    .OrgTipClose,
-    .OrgTipButton{
-        display: none;
-    }
-}
-
-.OrgListItemTip.show{
-    display: block;
-    
-}
-
-.OrgListItemTip{
-    position: relative;
-    
-   
-}
-
-.OrgTipItemContent{
-    position: relative;
-    background-color: #fff;
-    width: 1200px;
-    border-radius: .25em;
-    -webkit-justify-content: left;
-    justify-content: left;
-    -webkit-flex-direction: column;
-    flex-direction: column;
-    margin-top: 20px;
-    padding: 20px 30px;
-    text-align: left;  
-}
-
-.OrgTipClose{
-    position: absolute;
-    right: 20px;
-    top: 5px;
-    height: 20px;
-    width: 20px;
-    cursor: pointer;
-    font-size: 30px;
-    color: #666a80;
-}
-
-.OrgTipClose::before{
-    content: "\00D7";
-}
-
-.OrgTipTitle{
-    font-size: 30px;
-    color: #535667;
-    text-align: left;
-}
-
-.OrgTipFullDesc{
-    font-size: 16px;
-    color: #666a80;
-    line-height: 31px;
-    text-align: left;
-    margin-top: 20px;
-}
-
-.Orgdivider{
-    background: #e5e5e5;
-    height: 2px;
-    margin-top: 10px;
-    padding: 0;
-    margin-left: -30px;
-    width: calc(~'100% + 60px');
-}
-
-.OrgTipArr{
-    margin-top: 10px;
-    color: #666a80;
-    line-height: 31px;
-    font-size: 16px;
-    margin-left: 12px;
-    width: 80%;
-    a{
-        color: #8f00f3;
-        display: inline-block;
-        margin-left: 5px;
-    }
-}
-.OrgTipArr:before{
-    position: absolute;
-    content: "";
-    width: 4px;
-    height: 16px;
-    margin-top: 8px;
-    background: #aa80ff;
-    left: 32px;
-    line-height: 31px;
-}
-
-.OrgTipButton{
-    padding: 10px 46px 10px 28px;
-	background-color: #1d8eff;
-	border-radius: 4px;
-    line-height: 18px;
-    font-family: MicrosoftYaHei;
-	font-size: 18px;
-	font-weight: normal;
-	font-stretch: normal;
-	position: relative;
-	letter-spacing: 0px;
-	color: #ffffff;
-    text-align: center;
-    display: inline-block;
-    margin-top:18px;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.OrgTipButton:hover{
-    background-color: #4c4cd9;
-}
-
-.OrgListItem:nth-child(3n+2) .OrgTipItemContent {
-    left: -409px;
-}
-
-.OrgListItem:nth-child(3n+3) .OrgTipItemContent {
-    left: -818px;
-}
-
-.OrgListItemTip .triangle {
-    border: 40px solid transparent;
-    border-bottom-color: #fff;
-}
-
-.OrgTipFullDesc {
-    color: #343434;
-    font-family: FZLTHJW--GB1-0, FZLTHJW--GB1;
-}
-
-.Orgdivider {
-    margin-top: 20px;
-    height: 1px;
-    background: rgba(0, 0, 0, 0.1);
-}
-
-.OrgTipArr {
-    margin-top: 20px;
-    margin-left: 22px;
-    color: rgba(0, 0, 0, 0.5);
-}
-
-.OrgTipArr:before {
-    width: 6px;
-    height: 20px;
-    background: #4B9DFE;
-    margin-right: 16px;
-}
-
-.OrgTipArr a {
-    color: #4B9DFE;
-}
-
 .tagItem {
-    border-radius: 8px;
-    margin: 8px 20px 8px 20px;
-}
+  display: inline-block;
+  letter-spacing: 1px;
+  padding: 10px 14px;
+  margin: 8px 20px 8px 0;
+  border-radius: 4px;
 
+  font-size: 16px;
+}
 .Domain {
-    background: #F5FBFF;
-    color: #4B9DFE;
+  background-color: #d8deff;
+  color: #3456ff;
 }
 
 .Tech {
-    background: #FCEDED;
-    color: #FF4A5B;
+  background-color: #d8ebff;
+  color: #198bff;
+}
+
+.triangle {
+  height: 0;
+  width: 0;
+  border: 10px solid transparent;
+  border-bottom-color: #fff;
+  background-color: transparent;
+  position: absolute;
+  bottom: 100%;
+  left: 171px;
+}
+
+.OrgListItemTip.hide {
+  display: none;
+}
+
+.OrgListItemTip.orgdetail {
+  display: block !important;
+  .triangle,
+  .OrgTipClose,
+  .OrgTipButton {
+    display: none;
+  }
+}
+
+.OrgListItemTip.show {
+  display: block;
+}
+
+.OrgListItemTip {
+  position: relative;
+}
+
+.OrgTipItemContent {
+  position: relative;
+  background-color: #fff;
+  width: 1200px;
+  border-radius: 0.25em;
+  -webkit-justify-content: left;
+  justify-content: left;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 20px 30px;
+  text-align: left;
+}
+
+.OrgTipClose {
+  position: absolute;
+  right: 20px;
+  top: 5px;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  font-size: 30px;
+  color: #666a80;
+}
+
+.OrgTipClose::before {
+  content: "\00D7";
+}
+
+.OrgTipTitle {
+  font-size: 30px;
+  color: #535667;
+  text-align: left;
+}
+
+.OrgTipFullDesc {
+  font-size: 16px;
+  color: #666a80;
+  line-height: 31px;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.Orgdivider {
+  background: #e5e5e5;
+  height: 2px;
+  margin-top: 10px;
+  padding: 0;
+  margin-left: -30px;
+  width: calc(~"100% + 60px");
+}
+
+.OrgTipArr {
+  margin-top: 10px;
+  margin-left: 22px;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 31px;
+  font-size: 16px;
+  margin-left: 12px;
+  a {
+    color: #4b9dfe;
+    display: inline-block;
+    margin-left: 5px;
+  }
+}
+
+.OrgTipArr:before {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 20px;
+  background: #4b9dfe;
+  margin-top: 8px;
+  left: 32px;
+  line-height: 31px;
 }
 
 .OrgTipButton {
-    width: 96px;
-    height: 36px;
-    background: #4B9DFE;
-    font-size: 16px;
-    padding: 10px 16px;
-    line-height: 36px;
+  padding: 10px 46px 10px 28px;
+  background-color: #1d8eff;
+  border-radius: 4px;
+  line-height: 18px;
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  position: relative;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-align: center;
+  display: inline-block;
+  margin-top: 18px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.OrgTipButton:hover {
+  background-color: #4c4cd9;
+}
+
+.OrgListItem:nth-child(3n + 2) .OrgTipItemContent {
+  left: -409px;
+}
+
+.OrgListItem:nth-child(3n + 3) .OrgTipItemContent {
+  left: -818px;
+}
+
+.OrgListItemTip .triangle {
+  border: 40px solid transparent;
+  border-bottom-color: #fff;
+}
+
+.OrgTipFullDesc {
+  color: #343434;
+  font-family: FZLTHJW--GB1-0, FZLTHJW--GB1;
+}
+
+.Orgdivider {
+  margin-top: 20px;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.tagItem {
+  border-radius: 8px;
+  margin: 8px 20px 8px 20px;
+}
+
+.Domain {
+  background: #f5fbff;
+  color: #4b9dfe;
+}
+
+.Tech {
+  background: #fceded;
+  color: #ff4a5b;
+}
+
+.OrgTipButton {
+  width: 96px;
+  height: 36px;
+  background: #4b9dfe;
+  font-size: 16px;
+  padding: 10px 16px;
+  line-height: 36px;
 }
 .OrgTipButton:hover {
-    background: #006bc5;
+  background: #006bc5;
 }
 .OrgTipItemContent {
-    width: 1140px;
+  width: 1140px;
 }
 
 @media screen and (min-width: 750px) and (max-width: 1200px) {
-    .OrgTipItemContent {
-        width: 97vw;
-    }
-    .Org .OrgTipItemContent {
-        width: 91vw;
-    }
+  .OrgTipItemContent {
+    width: 97vw;
+  }
+  .Org .OrgTipItemContent {
+    width: 91vw;
+  }
 }
 
 @media screen and (min-width: 100px) and (max-width: 750px) {
-    .Org .OrgTipItemContent {
-        margin-top: 20px!important;
-        width: 92vw;
-    }
-    .OrgListItemTip .triangle {
-        border: 20px solid transparent;
-        border-bottom-color: #fff;
-    }
-    .OrgTipTitle {
-        font-size: 16px!important;
-        font-weight: bold
-    }
-    .OrgTipFullDesc {
-        font-size: 14px;
-    }
-    .OrgTipArr {
-        font-size: 14px;
-        margin-left: 16px;
-        margin-top: 10px;
-    }
-    .tagItem {
-        padding: 3px 9px;
-        font-size: 10px;
-    }
-    .OrgTipButton {
-        width: 84px;
-        height: 26px;
-        line-height: 18px;
-        padding: 4px 14px;
-        font-size: 14px;
-    }
-    .OrgDetailState .ProjectListPageItemOne {
-        font-size: 14px;
-    }
-    .OrgDetailState .ProjectListApplyState {
-        font-size: 12px;
-        width: 170px!important;
-    }
-    .OrgDetailState {
-        padding-bottom: 0!important;
-        margin-bottom: 30px;
-    }
-    .projectListWrapper {
-        background: #FAFBFF;
-    }
-    .Org .projectListItem {
-        width: 94vw;
-    }
-    *, *::before, *::after {
-        box-sizing: border-box!important;
-    }
-    .orgProjectDes {
-        overflow-y: scroll;
-    }
-    .projectListItemLeft {
-        height: unset!important;
-        position: unset;
-        padding: 0;
-    }
-    .orgProjectBottomLeft {
-        font-size: 16px!important;
-        position: unset!important;
-        margin-top: 20px;
-        padding-bottom: 0!important;
-    }
-    .orgProjectTitle {
-        margin-bottom: 10px!important;
-    }
+  .Org .OrgTipItemContent {
+    margin-top: 20px !important;
+    width: 92vw;
+  }
+  .OrgListItemTip .triangle {
+    border: 20px solid transparent;
+    border-bottom-color: #fff;
+  }
+  .OrgTipTitle {
+    font-size: 16px !important;
+    font-weight: bold;
+  }
+  .OrgTipFullDesc {
+    font-size: 14px;
+  }
+  .OrgTipArr {
+    font-size: 14px;
+    margin-left: 16px;
+    margin-top: 10px;
+  }
+  .tagItem {
+    padding: 3px 9px;
+    font-size: 10px;
+  }
+  .OrgTipButton {
+    width: 84px;
+    height: 26px;
+    line-height: 18px;
+    padding: 4px 14px;
+    font-size: 14px;
+  }
+  .OrgDetailState .ProjectListPageItemOne {
+    font-size: 14px;
+  }
+  .OrgDetailState .ProjectListApplyState {
+    font-size: 12px;
+    width: 170px !important;
+  }
+  .OrgDetailState {
+    padding-bottom: 0 !important;
+    margin-bottom: 30px;
+  }
+  .projectListWrapper {
+    background: #fafbff;
+  }
+  .Org .projectListItem {
+    width: 94vw;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box !important;
+  }
+  .orgProjectDes {
+    overflow-y: scroll;
+  }
+  .projectListItemLeft {
+    height: unset !important;
+    position: unset;
+    padding: 0;
+  }
+  .orgProjectBottomLeft {
+    font-size: 16px !important;
+    position: unset !important;
+    margin-top: 20px;
+    padding-bottom: 0 !important;
+  }
+  .orgProjectTitle {
+    margin-bottom: 10px !important;
+  }
 }
