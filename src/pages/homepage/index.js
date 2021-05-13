@@ -163,7 +163,7 @@ class HomePage extends React.Component{
                             <div className="homepageLogoItemTitle ">
                                 {showdata.logotitle[4]}
                             </div>
-                            <div className="homepageLogoItemList ">
+                            <div className="homepageLogoItemList Media">
                                 {this.createLogo("homepagelogoMedia",logocoopdata.media)}                           
                             </div>
 
