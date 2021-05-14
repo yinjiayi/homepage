@@ -116,15 +116,15 @@
 			"url": "https://www.bilibili.com/video/BV1k54y157F2/"
 		},
 		{
-			"title": "从个人项目开源到Apache Member的5年 -- 如何做一个专业的开源玩家",
+			"title": "Apache软件基金会20年",
 			"time": "2021.05.09",
 			"profilelist": [{
 				"name": "吴晟",
-				"profile": "tetrate.io创始工程师，开源爱好者。 Apache Member、Apache SkyWalking Founder、VP和PMC成员，Apache ShardingSphere 原型作者和PMC成员，Apache孵化器PMC成员， Apache APISIX PPMC成员， Apache ECharts、 Apache DolphinScheduler孵化器导师， Zipkin成员与贡献者， CNCF OpenTracing核心贡献者。",
+				"profile": "Apache软件基金会董事，Apache Member，Apache SkyWalking创始人和VP",
 				"imgurl": "wusheng.jpg"
 			}],
 			"flag": "over",
-			"speechcontent": "",
+			"speechcontent": "介绍Apache软件基金会20年的成就，历史以及背后的逻辑。Apache Way在Apache成员心中的理解。",
 			"ppt": "",
 			"url": "https://www.bilibili.com/video/BV1BQ4y1o7rA/"
 		}
