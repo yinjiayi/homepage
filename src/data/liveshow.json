@@ -3,7 +3,7 @@
 	"spaceurl": "https://space.bilibili.com/578074510",
 	"livedata": "",
 	"speechlist": [{
-			"title": "开源治理的相关知识域",
+			"title": "开源：献给世界的礼物",
 			"time": "2021.05.15",
 			"profilelist": [{
 				"name": "庄表伟",
@@ -46,7 +46,7 @@
 			"time": "2021.05.23",
 			"profilelist": [{
 				"name": "郑振宇",
-				"profile": "重症开源爱好者，专注于大数据调度、微服务基础设施构建。",
+				"profile": "6+年主流开源社区开发经验，先后参与OpenStack、Libvirt、Hadoop等主流开源社区上游贡献。目前致力于推动ARM数据中心开源软件生态发展。",
 				"imgurl": "zhengzhenyu.jpg"
 			}],
 			"speechcontent": "软件供应链的可靠性和连续性是近年来国内关注度很高的话题之一，使用开源软件是解决供应链问题的重要手段之一。充分运用开源手段可以高效、可持续的推动开源软件供应链成熟。本分享将结合推动国产化硬件接入主流开源社区集成验证平台的实际经验，从贡献、使能、掌握、影响等角度为听众分享通过开源手段巩固基础软件供应链的最佳实践。",
@@ -116,15 +116,15 @@
 			"url": "https://www.bilibili.com/video/BV1k54y157F2/"
 		},
 		{
-			"title": "从个人项目开源到Apache Member的5年 -- 如何做一个专业的开源玩家",
+			"title": "Apache软件基金会20年",
 			"time": "2021.05.09",
 			"profilelist": [{
 				"name": "吴晟",
-				"profile": "tetrate.io创始工程师，开源爱好者。 Apache Member、Apache SkyWalking Founder、VP和PMC成员，Apache ShardingSphere 原型作者和PMC成员，Apache孵化器PMC成员， Apache APISIX PPMC成员， Apache ECharts、 Apache DolphinScheduler孵化器导师， Zipkin成员与贡献者， CNCF OpenTracing核心贡献者。",
+				"profile": "Apache软件基金会董事，Apache Member，Apache SkyWalking创始人和VP",
 				"imgurl": "wusheng.jpg"
 			}],
 			"flag": "over",
-			"speechcontent": "",
+			"speechcontent": "介绍Apache软件基金会20年的成就，历史以及背后的逻辑。Apache Way在Apache成员心中的理解。",
 			"ppt": "",
 			"url": "https://www.bilibili.com/video/BV1BQ4y1o7rA/"
 		}
