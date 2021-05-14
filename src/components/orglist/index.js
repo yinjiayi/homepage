@@ -62,6 +62,7 @@ class Orglist extends React.Component{
        
         if(value){
             var showdataTemp = []
+            value = value.toLocaleLowerCase()
             orglist.map((item)=>{
                 
                 if(item.title.toLocaleLowerCase().includes(value)||
