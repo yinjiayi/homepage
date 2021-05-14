@@ -59,11 +59,12 @@ class Orglist extends React.Component{
     }
 
     filterItem(value){
-      
+       
         if(value){
             var showdataTemp = []
             orglist.map((item)=>{
-                if(item.title.toString().includes(value)||
+                
+                if(item.title.toLocaleLowerCase().includes(value)||
                 item.description.toLocaleLowerCase().includes(value)){
                     showdataTemp.push(item)
                 }
