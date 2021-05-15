@@ -472,6 +472,50 @@
         "img": "tensorbase.png",
         "name": "TensorBase",
         "url": "https://github.com/tensorbase/tensorbase"
+    },
+    {
+        "img": "joomla.png",
+        "name": "Joomla!",
+        "url": "https://www.joomla.org/"
+    },
+    {
+        "img": "nginx.png",
+        "name": "NGINX开源社区",
+        "url": "https://www.nginx.org.cn/"
+    },
+    {
+        "img": "ChaosBlade.png",
+        "name": "ChaosBlade",
+        "url": "https://chaosblade.io/"
+    },{
+        "img": "NoneBot.png",
+        "name": "NoneBot",
+        "url": "https://github.com/nonebot"
+    },
+    {
+        "img": "kubevela.png",
+        "name": "KubeVela",
+        "url": "https://kubevela.io/"
+    },
+    {
+        "img": "mica.png",
+        "name": "mica",
+        "url": "http://wiki.dreamlu.net"
+    },
+    {
+        "img": "threturingway.png",
+        "name": "The Turing Way",
+        "url": "https://github.com/alan-turing-institute/the-turing-way"
+    },
+    {
+        "img": "OpenYurt.png",
+        "name": "OpenYurt",
+        "url": "https://github.com/openyurtio/openyurt"
+    },
+    {
+        "img": "libreoffice.png",
+        "name": "LibreOffice",
+        "url": "https://www.libreoffice.org/"
     }
     
     ]
