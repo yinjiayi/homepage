@@ -11570,4 +11570,215 @@
 	"mail_list": "jin.phd@gmail.com",
 	"email": "jin.phd@gmail.com",
 	"project_list": []
+},
+{
+	"userId": 922,
+	"anchor": "joomla",
+	"slide": "",
+	"video": "",
+	"img": "joomla.png",
+	"title": "Joomla!",
+	"orgTypeDesc": "开源社区",
+	"orgType": 1,
+	"project_url": "",
+	"url": "https://www.joomla.org/",
+	"description": "Joomla is one of the world's most popular software packages used to build websites and online apps. Joomla is supported by a large ecosystem powering about 2% of known businesses.",
+	"full_des": "The Joomla CMS is a PHP-based application that powers about 2.2% of the web, 3.5% of all CMS based websites, as well as many intranets. Joomla has been downloaded over 119 Million times.The Joomla project has hundreds of contributors, organized in a set of working groups and teams, and a leadership group. Joomla is a community-driven FOSS project developed and maintained by an international community encompassing over 150 countries. Joomla is used by millions of websites and web applications ranging from the hobbyist, professional web developer, to large enterprises, for both the World Wide Web and intranets.The Joomla Project is a community effort which strives to engage contributors from diverse backgrounds and varying interests and skills in building and supporting great software together. The [mission, vision, and values](https://www.joomla.org/about-joomla/the-project/mission-vision-and-values.html \"Joomla Mission vision and values\") of the Joomla Project reflect this.",
+	"tech_tag": [
+		"JavaScript",
+		"PHP",
+		"Git"
+	],
+	"domain_tag": [
+		"Dev Tools",
+		"Web",
+		"Programming Language"
+	],
+	"mail_list": "",
+	"email": "soos@joomla.org",
+	"project_list": []
+},
+{
+	"userId": 1009,
+	"anchor": "nginx",
+	"slide": "",
+	"video": "",
+	"img": "nginx.png",
+	"title": "NGINX开源社区",
+	"project_url": "",
+	"url": "https://www.nginx.org.cn/",
+	"description": "NGINX社区，秉持“开放，包容，沟通，贡献“之宗旨，致力于打造一个开放、活跃的“NGINX爱好者之家“。",
+	"full_des": "NGINX开源社区意在为所有NGINX的用户、开发者和技术爱好者，提供一个自由学习、深度交流、互动讨论、自我成长的平台。NGINX开源社区为开发者提供技术学习的资源、互动问答的平台以及业内交流的活动。在NGINX开源社区，开发者有疑惑不解可以随时问询以求佳答；开发者有心得观点，可以随时发表文章与他人分享；开发者想学习钻研，可以在大咖系列大讲堂遨游汲取精华。",
+	"tech_tag": ["Cloud Native", "Container", "Distributed System", "Kubernetes", "Micro Service", "NGINX"],
+	"domain_tag": [
+		"Cloud Native",
+		"Web"
+	],
+	"mail_list": "",
+	"email": "nginxosscommunity@163.com",
+	"project_list": []
+},
+{
+	"userId": 990,
+	"anchor": "chaosblade",
+	"slide": "",
+	"video": "",
+	"img": "ChaosBlade.png",
+	"title": "ChaosBlade",
+	"project_url": "",
+	"url": "https://chaosblade.io/",
+	"description": "ChaosBlade 是初由阿里巴巴主导创建混沌工程开源社区，主要开发维护 ChaosBlade 相关项目。",
+	"full_des": "ChaosBlade 是阿里巴巴 2019 年开源的混沌工程项目，现已进入 CNCF Sandbox。主要包含混沌工程实验工具 chaosblade 和混沌工程平台 chaosblade-box，旨在通过混沌工程帮助企业解决云原生过程中高可用问题。实验工具 chaosblade 支持 3 大系统平台，4 种编程语言应用，共涉及 200 多的实验场景，3000 多个实验参数，可以精细化的控制实验范围。混沌工程平台 chaosblade-box 支持实验工具托管，除已托管 chaosblade 外，还支持 Litmuschaos 实验工具。已登记使用企业 40 多家，其中已在工商银行、中国移动、小米、京东等企业中落地使用。",
+	"tech_tag": ["Go", "Linux", "Java", "Cloud Native", "Container", "NodeJS", "React", "C++", "Distributed System", "Database", "Kubernetes", "Docker"],
+	"domain_tag": ["Cloud Native", "Dev Tools", "Chaos Engineering"],
+	"mail_list": "x.caspar@gmail.com",
+	"email": "chaosblade.io.01@gmail.com",
+	"project_list": []
+},{
+	"userId": 1032,
+	"anchor": "nonebot",
+	"slide": "",
+	"video": "",
+	"img": "NoneBot.png",
+	"title": "NoneBot",
+	"project_url": "",
+	"url": "https://github.com/nonebot",
+	"description": "跨平台的 Python 异步聊天机器人开发框架",
+	"full_des": "NoneBot 是一个跨平台的 Python 异步机器人框架，能够支持包括 QQ、钉钉等多种聊天机器人平台，并通过插件机制提供了高度的可扩展性，使开发者可以快速的开发各类聊天机器人，成功案例包括 AI 对话机器人、手游数据助手、粉丝应援机器人、教务查询助手等，深得广大开发者和用户喜爱。",
+	"tech_tag": [
+		"Python",
+		"Chatbot"
+	],
+	"domain_tag": [
+		"Dev Tools",
+		"Web",
+		"Chatbot"
+	],
+	"mail_list": "",
+	"email": "contact@nonebot.dev",
+	"project_list": []
+},
+{
+	"userId": 1014,
+	"anchor": "kubevela",
+	"slide": "",
+	"video": "",
+	"img": "kubevela.png",
+	"title": "KubeVela",
+	"orgTypeDesc": "开源社区",
+	"url": "https://kubevela.io/",
+	"description": "KubeVela 是一个简单易用且高度可扩展的应用管理平台与核心引擎。KubeVela 是基于 Kubernetes 与 OAM 技术构建的。",
+	"full_des": "对于应用开发人员来讲，KubeVela 是一个非常低心智负担的云原生应用管理平台，核心功能是让开发人员方便快捷地在 Kubernetes 上定义与交付现代微服务应用，无需了解任何 Kubernetes 本身相关的细节。在这一点上，KubeVela 可以被认为是云原生社区的 Heroku。另一方面，对于平台团队来讲，KubeVela 是一个强大并且高可扩展的云原生应用平台核心引擎。基于这样一个引擎，平台团队可以快速、高效地以 Kubernetes 原生的方式在 KubeVela 中植入任何来自云原生社区的应用管理能力，从而基于 KubeVela 打造出自己需要的云原生平台，比如：云原生数据库 PaaS、云原生 AI 平台、甚至 Serverless 服务。在这一点上，KubeVela 可以被认为是一个“以应用为中心”的 Kubernetes 发行版，以 OAM 为核心，让平台团队可以基于 KubeVela 快速打造出属于自己的 PaaS、Serverless 乃至任何面向用户的云原生平台项目。",
+	"tech_tag": [
+		"Go",
+		"Linux",
+		"Cloud Native",
+		"Container",
+		"Distributed System",
+		"Micro Service",
+		"Docker"
+	],
+	"domain_tag": [
+		"Cloud Native",
+		"Container",
+		"Distributed System",
+		"OAM"
+	],
+	"mail_list": "",
+	"email": "feedback@mail.kubevela.io",
+	"project_list": []
+},
+{
+	"userId": 1029,
+	"anchor": "mica",
+	"slide": "",
+	"video": "",
+	"img": "mica.png",
+	"title": "mica",
+	"project_url": "",
+	"url": "http://wiki.dreamlu.net",
+	"description": "致力于 Spring Cloud 微服务生态。包括微信开发、mqtt、Spring 生态等组件帮助。",
+	"full_des": "mica(微服务工具集)：https://gitee.com/596392912/micamica-auto (Spring boot starter 利器): https://gitee.com/596392912/mica-automica-weixin（jfinal weixin 的 spring boot starter）：https://gitee.com/596392912/mica-weixinmica-mqtt（基于 t-io 实现的 mqtt组件）：https://gitee.com/596392912/mica-mqtt",
+	"tech_tag": [
+		"Java",
+		"Cloud Native",
+		"Git"
+	],
+	"domain_tag": [
+		"Web"
+	],
+	"mail_list": "596392912@qq.com",
+	"email": "mica@dreamlu.net",
+	"project_list": []
+},
+{
+	"userId": 1000,
+	"anchor": "theturingway",
+	"slide": "",
+	"video": "",
+	"img": "threturingway.png",
+	"title": "The Turing Way",
+	"project_url": "",
+	"url": "https://github.com/alan-turing-institute/the-turing-way",
+	"description": "The Turing Way’s goal is to provide all the information that researchers need at the start of their projects to ensure that they are easy to reproduce at the end. It is an open-source project that involves and supports its diverse community to make data science reproducible, ethical, collaborative and inclusive for everyone. The Turing Way hosts an ever-expanding resource developed as an online community-driven book, which is built on open source infrastructure such as Jupyter Book, Netlify, Binder and Git.",
+	"full_des": "The Turing Way resources are open source and are made as a web-based book with 5 guides (Reproducibility, Project Design, Communication, Collaboration and Ethical Research), and a Community handbook.The project is led by Kirstie Whitaker and Malvika Sharan, who have successfully built a community of practice based around the moonshot goal of making reproducible research ‘too easy not to do’. The outputs belong to The Turing Way community and everyone can freely read, reuse, distribute, modify, and contribute back to the resources in the book.We foster a culture of collaboration by opening this project for contributions in many different ways, and enabling an inclusive workspace by providing clear contributing guidelines. Our community represents a diverse range of scientific disciplines and backgrounds. There are currently &gt;250 Github contributors and more than 5000 unique users monthly. The project is used by many research communities, projects and policies internationally.",
+	"tech_tag": [
+		"Open Source Infrastructure",
+		" Reproducibility",
+		" Research practices",
+		" SOftware engineering",
+		" Ethics",
+		" Collaboration",
+		" Communication"
+	],
+	"domain_tag": [
+		"Data Science",
+		" documentation",
+		" learning materials",
+		" computation best practices"
+	],
+	"mail_list": "Lead developer/maintainer: Dr. Malvika Sharan  Twitter: https://twitter.com/turingway  mailing list: https://tinyletter.com/TuringWay/archive  Gitter: https://gitter.im/alan-turing-institute/the-turing-way",
+	"email": "theturingway@gmail.com",
+	"project_list": []
+},
+{
+	"userId": 1040,
+	"anchor": "openyurt",
+	"slide": "",
+	"video": "",
+	"img": "OpenYurt.png",
+	"title": "OpenYurt",
+	"project_url": "",
+	"url": "https://github.com/openyurtio/openyurt",
+	"description": "OpenYurt是业界首个非侵入式的云原生边缘计算平台，目前已经进入CNCF沙箱项目。",
+	"full_des": "业界首个非侵入式的云原生边缘计算平台，开源3个月后进入CNCF沙箱项目。OpenYurt 秉承“Extending your native Kubernetes to Edge”的非侵入式设计理念，拥有可实现边缘计算全场景覆盖的能力。目前OpenYurt 已实现全网覆盖和本地覆盖的全场景落地，全网覆盖的应用场景如 CDN、音视频直播、物联网、物流、工业大脑、城市大脑等；本地覆盖的应用场景和案例如阿里云 LinkEdge、优酷、盒马、AIBox、银泰商城等。",
+	"tech_tag": ["Go", "Cloud Native", "Container", "Distributed System", "Kubernetes", "Automation", "Micro Service", "Docker", "IoT"],
+	"domain_tag": ["Cloud Native", "Container", "Distributed System", "edge-computing","kubernetes"],
+	"mail_list": "rambohe.ch@gmail.com f.guo@alibaba-inc.com",
+	"email": "rambohe.ch@gmail.com",
+	"project_list": []
+},
+{
+	"userId": 911,
+	"anchor": "libreoffice",
+	"slide": "",
+	"video": "",
+	"img": "libreoffice.png",
+	"title": "LibreOffice",
+	"project_url": "",
+	"url": "https://www.libreoffice.org/",
+	"description": "LibreOffice is a lively and diverse community, delivering a full-featured cross-platform office suite. We value new contributors, just as we prize Open Source and Open Standards.",
+	"full_des": "LibreOffice is a Free & Open Source Office suite used by millions of users worldwide. It is compatible with many file formats like Microsoft® Word, Excel, PowerPoint and Publisher. At its heart, LibreOffice is built around an open standard, the OpenDocument Format, as its native file format.The development of LibreOffice is supported by The Document Foundation which provides the infrastructure for the project.We believe that users should have the freedom to run, copy, distribute, study, change and improve the software that we distribute. We campaign for these freedoms because we believe that everyone deserves them.We believe that Free Software can provide better-quality, higher-reliability, increased-security, and greater-flexibility than proprietary alternatives. LibreOffice is a large project (approx. 6MLOC), which makes it interestingly complex, but at the same time, provides a place for all sorts of contribution & skills.",
+	"tech_tag": [
+		"Python",
+		"C++",
+		"Build system"
+	],
+	"domain_tag": [
+		"Productivity",
+		"Desktop"
+	],
+	"mail_list": "",
+	"email": "ilmari.lauhakangas@libreoffice.org",
+	"project_list": []
 }]
