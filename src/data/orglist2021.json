@@ -13,7 +13,8 @@
 	"domain_tag": ["Big Data", "Distributed System", "Workflow"],
 	"mail_list": "dev@dolphinscheduler.apache.org",
 	"email": "dev@dolphinscheduler.apache.org",
-	"project_list": [{
+	"project_list": [
+		{
 		"name": "license检测功能",
 		"remark": "",
 		"difficulty": "中",
@@ -11483,7 +11484,7 @@
 	"title": "JustAuth",
 	"project_url": "",
 	"url": "https://justauth.wiki",
-	"description": "开源赋能开发者。 Just auth for any app",
+	"description": "致力于开源的授权认证技术开发、布道，包括 Social Login、OAuth 2.0、OIDC、SAML、LDAP、MFA、SSO。以开源之名，赋能开发者。",
 	"full_des": "JustAuth 开源社区，致力于以开源的技术，赋能开发者。名下开源项目 JustAuth 深受开发者喜欢，在 Gitee 和 Github 中的累计关注量达 18K，并荣获 Gitee GVP 称号，目前已有多个企业、组织和开源项目正在使用 JustAuth 完成极速的第三方登录集成。同时基于 JustAuth，结合目前流行的登录技术（OAuth 2.0，SAML、OIDC、LDAP、CAS等）又开源出了 JustAuthPlus。JustAuthPlus（以下简称JAP）是一款开源的登录认证中间件，基于模块化设计，为所有需要登录认证的 WEB 应用提供一套标准的技术解决方案，开发者可以基于 JAP 适配绝大多数的 WEB 系统（自有系统、联邦协议）。",
 	"tech_tag": ["Go", "Python", "Java", "JavaScript", "PHP", "NodeJS", "Git", "Docker", "OAuth2.0", "OIDC", "SAML", "LDAP"],
 	"domain_tag": ["Dev Tools", "单点登录", "第三方登录", "身份认证", "IAM", "IDaaS", "多因素认证"],
