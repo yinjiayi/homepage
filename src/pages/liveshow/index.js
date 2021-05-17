@@ -84,31 +84,7 @@ export default class Liveshow extends React.Component{
                                 
                             })
                         }
-                        {/* <div className="LiveShowContentTitle">即将直播</div> 
-                        {
-                            data.speechlist.map((item,index)=>{
-                                return (
-                                    item.url?"":
-                                    <LiveModal 
-                                    key = {index}
-                                    item ={item}/>
-
-                                )
-                            })
-                        } 
-                        <div className="LiveShowContentTitle">历史直播</div> 
-                        {
-                            data.speechlist.map((item,index)=>{
-                                return (
-                                    item.url?
-                                    <LiveModal 
-                                    flag="over"
-                                    key = {index}
-                                    item ={item}/>:""
-
-                                )
-                            })
-                        }  */}
+                       
                     
                     </div>
 
