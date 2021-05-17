@@ -516,6 +516,21 @@
         "img": "libreoffice.png",
         "name": "LibreOffice",
         "url": "https://www.libreoffice.org/"
+    },
+    {
+        "img": "openSUSE.png",
+        "name": "openSUSE",
+        "url": "https://www.opensuse.org/"
+    },
+    {
+        "img": "SIMD.png",
+        "name": "openSSIMD EverywhereUSE",
+        "url": "https://github.com/simd-everywhere/simde"
+    },
+    {
+        "img": "Seata.png",
+        "name": "Seata",
+        "url": "https://seata.io/zh-cn/"
     }
     
     ]
