@@ -40,32 +40,32 @@ export default class LiveModal extends React.Component{
                 <div className="LiveShowItemHeaderTitle">
                     <div className="LiveShowItemHeaderTitleOne">{this.props.item.title}</div>
                     {
-                        this.props.flag === 'over' ?
-                            <>
-                             <div className="LiveShowItemHeaderTitleTwo LiveShowItemOver">{this.props.item.time}</div>
-                               {
-                                   this.props.item.url?
-                                   <div 
-                                    onClick={()=>{gourl(this.props.item.url)}}
-                                    className="LiveShowItemHeaderButton" >观看回放</div>:""
-                               }
-                                
-                                {
-                                this.props.item.ppt?
-                                    <a     
-                                download={this.props.item.pptname}  
-                                href = {'https://isrc.iscas.ac.cn/summer2020/downloads/'+this.props.item.ppt}                    
-                                className="LiveShowItemHeaderPPTX" >下载PPT</a>:""
-                                }
-                            </>
+                        this.props.item.url?
+                        <>
+                            <div 
+                                className="LiveShowItemHeaderTitleTwo LiveShowItemOver">
+                                    {this.props.item.time}
+                            </div>
+                            <div 
+                                onClick={()=>{gourl(this.props.item.url)}}
+                                className="LiveShowItemHeaderButton" >观看回放
+                            </div>
+                        </>
                         :
-                        <div>
-                            <div className="LiveShowItemHeaderTitleTwo">{this.props.item.time}</div>
-                        <div 
-                            onClick={()=>{gourl(this.state.liveurl)}}
-                            className="LiveShowItemHeaderButton" >观看直播</div>
-                        </div>
-
+                        <>
+                            <div className="LiveShowItemHeaderTitleTwo">{this.props.item.time} 20:00</div>
+                            <div 
+                                onClick={()=>{gourl(this.state.liveurl)}}
+                                className="LiveShowItemHeaderButton" >观看直播</div>
+                        </>
+                    }
+                                
+                    {
+                        this.props.item.ppt?
+                            <a     
+                        download={this.props.item.pptname}  
+                        href = {'https://isrc.iscas.ac.cn/summer2020/downloads/'+this.props.item.ppt}                    
+                        className="LiveShowItemHeaderPPTX" >下载PPT</a>:""
                     }
                    
                 </div>

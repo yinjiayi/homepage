@@ -18,13 +18,23 @@ import showdata from '../../data/liveshowdata.json';
 export default class Liveshow extends React.Component{
     constructor(props){
        super(props)
+       this.state={
+           tabSelect:0,
+       }
+    }
+
+    setTab(keyindex){
+        this.setState({
+            tabSelect:keyindex
+        })
     }
 
  
 
 
     render(){
-       
+        const {tablist} = data;
+        const tabheader = Object.keys(tablist)
         return(         
             <div className="Liveshow">
                 <div className="LiveshowBanner">
@@ -38,8 +48,43 @@ export default class Liveshow extends React.Component{
 
                 </div>
                 <div className="LiveShowWrapper">
+                    <div className="LiveShowTabHeader">
+                        {
+                            tabheader.map((item,index)=>{
+                                return(
+                                    <span 
+                                    onClick={()=>{this.setTab(index)}}
+                                    key={index} 
+                                    className={["LiveShowTabHeaderItem",this.state.tabSelect === index?'active':""].join(" ")}>
+                                        {item}
+                                    </span>
+                                )
+                            })
+                        }
+
+                    </div>
                     <div className="LiveShowContent content1200">
-                        <div className="LiveShowContentTitle">即将直播</div> 
+                        {
+                            tabheader.map((item,index)=>{
+                                return (
+                                    <div 
+                                    className={["LiveModalWrapper" ,this.state.tabSelect === index?"show":""].join(" ")}
+                                    key={index}>
+                                        {
+                                            tablist[item].map((sitem,sindex)=>{
+                                                return(
+                                                    <LiveModal 
+                                                        key = {sindex}
+                                                        item ={sitem}/>
+                                                )
+                                            })
+                                        }
+                                    </div>
+                                )
+                                
+                            })
+                        }
+                        {/* <div className="LiveShowContentTitle">即将直播</div> 
                         {
                             data.speechlist.map((item,index)=>{
                                 return (
@@ -63,7 +108,7 @@ export default class Liveshow extends React.Component{
 
                                 )
                             })
-                        } 
+                        }  */}
                     
                     </div>
 

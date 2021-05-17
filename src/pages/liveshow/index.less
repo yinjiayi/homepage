@@ -11,13 +11,13 @@
 
 .LiveshowBannerTitle {
   font-family: MicrosoftYaHei-Bold;
-  font-size: 72px;
-  line-height: 72px;
+  font-size: 49px;
+  line-height: 59px;
   font-weight: normal;
   font-stretch: normal;
   letter-spacing: 0px;
-  color: #f5f6fa;
-  padding: 85px 0 18px;
+  color: #000000;
+  padding: 112px 0 6px;
 }
 
 .LiveshowBannerorg {
@@ -39,13 +39,6 @@
   line-height: 45px;
   letter-spacing: 0px;
   color: #ffffff;
-}
-
-.LiveshowBannerTitle {
-  font-size: 49px;
-  line-height: 59px;
-  color: #000000;
-  padding: 112px 0 6px;
 }
 
 .LiveshowBannerorg {
@@ -106,100 +99,62 @@
 .LiveShowWrapper .LiveShowItemHeaderImage {
   height: 153px !important;
 }
-@media screen and (min-width: 100px) and (max-width: 750px) {
-  .Liveshow .LiveshowBanner {
-    background-image: url(../../img/liveshow/banner-h5.png);
-    background-size: 100% 100%;
-    height: 350px;
-    padding-top: 55px;
-  }
-
-  .LiveshowBannerTitle {
-    padding: unset;
-    margin: 0 auto !important;
-    text-align: center;
-    color: #fff;
-    font-size: 18px !important;
-    line-height: 40px;
-    width: 90%;
-    margin: 0 auto;
-    background-color: #006cc5;
-    border-radius: 68px;
-  }
-
-  .Liveshow .LiveshowBannerorg {
-    font-size: 13px;
-    color: #000;
-    line-height: 15px;
-    margin-top: 17px;
-    margin-bottom: 40px;
-  }
-
-  .Liveshow .LiveshowBannerText {
-    width: 89%;
-    text-align: center;
-    color: #000000;
-    font-size: 15px;
-    line-height: 28px;
-    margin: 0 auto;
-  }
-
-  .LiveShowContentTitle {
-    font-size: 18px;
-    line-height: 26px;
-    color: #000000;
-    margin: 40px 0 20px;
-    padding: 0 !important;
-  }
-
-  .LiveShowWrapper
-    .LiveShowContent
-    .LiveShowItem
-    .LiveShowItemHeader
-    .LiveShowItemHeaderTitle
-    .LiveShowItemHeaderTitleOne {
-    font-size: 16px !important;
-    line-height: 26px !important;
-    margin-bottom: 10px !important;
-  }
-
-  .LiveShowWrapper
-    .LiveShowContent
-    .LiveShowItem
-    .LiveShowItemHeader
-    .LiveShowItemHeaderTitle
-    .LiveShowItemHeaderTitleTwo {
-    font-size: 14px;
-  }
-
-  .LiveShowWrapper
-    .LiveShowContent
-    .LiveShowItem
-    .LiveShowItemHeader
-    .LiveShowItemHeaderTitle
-    .LiveShowItemHeaderButton {
-    width: 84px;
-    height: 26px;
-    font-size: 14px;
-    line-height: 26px;
-  }
-
-  .LiveShowItemHeaderTwoCode img {
-    width: 80px !important;
-    height: 80px !important;
-  }
-
-  .LiveShowItemHeaderTwoCode {
-    width: 80px !important;
-    height: 80px !important;
-  }
-
-  .LiveShowWrapper .LiveShowItemProfile .LiveShowItemProfileContent {
-    font-size: 14px;
-    line-height: 26px;
-  }
-
-  .LiveShowWrapper .LiveShowItemHeaderImage {
-    height: 125px !important;
-  }
+.LiveShowTabHeader {
+  background-color: #fff;
+  height: 64px;
+  font-family: MicrosoftYaHei-Bold;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 38px;
 }
+
+.LiveShowTabHeaderItem {
+  position: relative;
+  padding: 20px 30px;
+  display: inline-block;
+  line-height: 24px;
+  margin-right: 2px;
+  background-color: #f6f7f8;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.LiveShowTabHeaderItem.active {
+  background-color: #4b9dfe;
+  color: #fff;
+}
+
+.LiveModalWrapper.show {
+  display: block;
+}
+
+.LiveModalWrapper {
+  position: relative;
+  display: none;
+}
+// @media screen and (min-width: 100px) and (max-width: 750px) {
+
+//   .LiveShowWrapper
+//     .LiveShowContent
+//     .LiveShowItem
+//     .LiveShowItemHeader
+//     .LiveShowItemHeaderTitle
+
+//   .LiveShowWrapper
+//     .LiveShowContent
+//     .LiveShowItem
+//     .LiveShowItemHeader
+//     .LiveShowItemHeaderTitle
+
+//   .LiveShowWrapper
+//     .LiveShowContent
+//     .LiveShowItem
+//     .LiveShowItemHeader
+//     .LiveShowItemHeaderTitle
+
+//   .LiveShowWrapper .LiveShowItemProfile
+
+// }
