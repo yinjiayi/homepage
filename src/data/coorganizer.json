@@ -24,6 +24,16 @@
             "name":"掘金",
             "img":"juejin.png",
             "url":"https://juejin.cn/"
+        },
+        {
+            "name":"INFOQ",
+            "img":"infoq.png",
+            "url":"https://www.infoq.com/"
+        },
+        {
+            "name":"CSDN",
+            "img":"csdn.png",
+            "url":"https://www.csdn.net/"
         }
     ],
     "host":[
@@ -531,6 +541,10 @@
         "img": "Seata.png",
         "name": "Seata",
         "url": "https://seata.io/zh-cn/"
+    }, {
+        "img": "openms.png",
+        "name": "openMS",
+        "url": "https://www.openms.de/"
     }
     
     ]
