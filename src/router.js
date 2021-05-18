@@ -45,14 +45,12 @@ export default class IRouter extends React.Component{
             this.setState({
                 Orglistflag:true
             })
-            console.log(1111)
         })
         import(/* webpackPrefetch: 5 */"./components/projectlistN/index.js").then((module)=>{
             ProjectlistN = module.default
             this.setState({
                 ProjectlistNflag:true
             })
-            console.log(22222)
         })
        },1500)
        
