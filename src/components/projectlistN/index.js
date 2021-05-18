@@ -69,6 +69,7 @@ class ProjectlistN extends React.Component{
                 if(item.name.toLowerCase().includes(valuel)||
                 item.tech_tag.toLowerCase().includes(valuel)||
                 item.domain_tag.toLowerCase().includes(valuel)||
+                item.orgname.toLowerCase().includes(valuel)||
                 item.label.includes(valuel)){
                     showdataTemp.push(item)
                 }
