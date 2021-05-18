@@ -14079,4 +14079,20 @@
 	"mail_list": "sachsenb@informatik.uni-tuebingen.de pfeuffer@informatik.uni-tuebingen.de Chris.Bielow@fu-berlin.de hannes.rost@utoronto.ca",
 	"email": "sachsenberg@gmail.com",
 	"project_list": []
+}, {
+	"userId": 1094,
+	"anchor": "torounikernel",
+	"slide": "",
+	"video": "",
+	"img": "toro.png",
+	"title": "Toro unikernel",
+	"project_url": "",
+	"url": "http://www.torokernel.io",
+	"description": "Toro is a project that aims at improving the way microservices are deployed in the cloud by heavily leveraging in virtualization technologies like KVM, VirtIO and Ceph (https://github.com/torokernel/torokernel).",
+	"full_des": "Current cloud infrastructure allows to implement cheap microservices by using Virtual Machines(VMs) and/or containers. When a cloud-based architecture is chosen, microservices are deployed on VMs which are guests that run a General Purpose OS. The unnecessary overhead due to the use of a General Purpose OS to run a dedicated application prevents cloud architectures to scale well. In this context, Toro is a dedicated unikernel to run microservices. The unikernel and the microservices are compiled together which results in a image that can be deployed in a cloud provider. In addition, Toro relies on cutting-edge technologies like virtio-fs, virtio-vsock and microvm, which allow the microservices to be deployed as minimalist Virtual Machine thus consuming less resources.",
+	"tech_tag": ["Linux", "Cloud Native", "Micro Service", "Git"],
+	"domain_tag": ["OS", "Cloud Native", "Virtualization", "Programming Language"],
+	"mail_list": "https://groups.google.com/g/torokernel/about",
+	"email": "torokernel@gmail.com",
+	"project_list": []
 }]

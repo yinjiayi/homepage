@@ -545,6 +545,10 @@
         "img": "openms.png",
         "name": "openMS",
         "url": "https://www.openms.de/"
+    }, {
+        "img": "toro.png",
+        "name": "Toro unikernel",
+        "url": "http://www.torokernel.io"
     }
     
     ]
