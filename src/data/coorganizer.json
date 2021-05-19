@@ -28,7 +28,7 @@
         {
             "name":"INFOQ",
             "img":"infoq.png",
-            "url":"https://www.infoq.com/"
+            "url":"https://www.infoq.cn/"
         },
         {
             "name":"CSDN",
@@ -549,6 +549,27 @@
         "img": "toro.png",
         "name": "Toro unikernel",
         "url": "http://www.torokernel.io"
+    },
+    {
+        "img": "openailab.png",
+        "name": "OPEN AI LAB",
+        "url": "www.openailab.com"
+
+    },
+	{
+        "img": "mars.png",
+        "name": "Mars",
+        "url": "https://docs.pymars.org/en/latest/"
+    },
+    {
+        "img": "rocketbooster.png",
+        "name": "Rocket Booster",
+        "url": "https://booster.js.org"
+    },
+    {
+        "img": "sureness.png",
+        "name": "Sureness社区",
+        "url": "https://su.usthe.com/"
     }
     
     ]
