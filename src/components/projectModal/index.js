@@ -87,8 +87,10 @@ class ProjectModal extends React.Component{
 
                 </div>
                 <div className="projectListItemRight">
-                    <div className="orgProjectDes">
-                        {getSplit(item.description,this.props.chiFlag)}
+                    <div 
+                        className="orgProjectDes"
+                        dangerouslySetInnerHTML={{ __html: getSplit(item.description,this.props.chiFlag) }}>
+                        
                         </div>
                     <div className="proCardUL">
                         <ul className="projectListItemRightUl">

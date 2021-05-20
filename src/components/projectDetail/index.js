@@ -107,7 +107,10 @@ class ProjectDetail extends React.Component{
                 <div className="ProjectDetailWrapper">
                     <div className="ProDeHeader">
                         
-                        <span className="ProDeTitle">{getSplit(prodetail.name,this.props.chiFlag)}</span>
+                        <span 
+                        className="ProDeTitle" 
+                        >
+                            {getSplit(prodetail.name,this.props.chiFlag)}</span>
                         <span className="ProDeID">
                             <span className="ProDeIDTitle">{showdata.projectNumber}：</span>
                             {prodetail.label}
@@ -173,8 +176,10 @@ class ProjectDetail extends React.Component{
                             <div className="ProDeTagItem ">
                                 <span>{showdata.desc}</span>
                             </div>
-                            <div  className="ProDeTag ">
-                                {getSplit(prodetail.description,this.props.chiFlag)}
+                            <div  
+                            dangerouslySetInnerHTML={{ __html: getSplit(prodetail.description,this.props.chiFlag) }}
+                            className="ProDeTag ">
+                               
                             </div>
 
                         </div>
