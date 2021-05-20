@@ -10598,7 +10598,7 @@
                 "remark": "\r\n参考资料：\r\nhttps://gitee.com/openeuler/stratovirt/tree/master/docs",
                 "difficulty": "低",
                 "mentor": "杨老师",
-                "contact": "<yangming73@huawei.com>",
+                "contact": "<1520509639@qq.com>",
                 "uniont": null,
                 "student_count": 0,
                 "description": "轻量虚拟机（Micro VM）是近几年新兴的一项虚拟化技术，StratoVirt是华为openEuler社区开源的轻量虚拟化软件，基于Rust语言编写，具备功能完善、安全可靠、启动快速、内存底噪小等特点，在容器和serverless场景有广阔的应用空间。本实验的目标是基于StratoVirt现有的能力，基于virtio以及balloon现有的能力，增加balloon的内存信息统计功能。最终实现通过qmp命令查询到虚拟机内存使用信息的功能。",
@@ -12525,7 +12525,7 @@
             },
             {
                 "name": "基于Wechaty 开发开源的二师兄社群逗乐机器人",
-                "remark": null,
+                "remark": "",
                 "difficulty": "中",
                 "mentor": "王丹丹",
                 "contact": "<valeriewyd@gmail.com>",
@@ -16199,7 +16199,7 @@
                 "student_count": 0,
                 "description": "UKUI 文件管理器，即 Peony（https://github.com/ukui/peony）是围绕qt和gio构建的开源项目。除此之外，它提供了一组扩展接口，用于实现诸如菜单、文件视图、属性窗口以及预览窗格等UI部件的功能扩展（https://github.com/ukui/peony-extensions）。     本课题的主旨是实现一个关于 Peony 的预览窗格插件项目，使 Peony 能够实现常用文件在右侧预览窗格中展示其内容，并且对于部分格式(PDF、图片等)文件提供简易编辑的功能。||Peony, aka UKUI File Manager(Homepage: https://github.com/ukui/peony) is an open source project built around Qt5 and GIO.  In addition, it provides a set of extension interfaces for implementing functional extensions to UI components such as context menus, file views, property windows, and preview panes. You can visit all extensions on https://github. com/ukui/peony-extensions.     The purpose of this project is to implement a preview panel extension for Peony, so that Peony can support preview content of the most file types in the right preview panel, and for some formats(PDF, images, etc.) to provide simple editing features.    ",
                 "label": "210120164",
-                "link": "",
+                "link": " https://github.com/UbuntuKylin/Summer-2021-of-Open-Source-Promotion-Plan/blob/main/en_US/Implementation%20of%20the%20Peony%20File%20Manager%20preview%20feature.md",
                 "tech_tag": [
                     "Linux",
                     "C++",
@@ -16231,7 +16231,7 @@
                 ],
                 "orgID": 166,
                 "spl": 0,
-                "organchor": "youqilin",
+                "organchor": "ubuntukylin",
                 "orgname": "优麒麟社区"
             },
             {
@@ -16244,7 +16244,7 @@
                 "student_count": 0,
                 "description": "ukui-search （https://github.com/ukui/ukui-search）是ukui桌面环境下的一款全局搜索应用,其前端基于qt实现，目前ukui-search计划基于qt插件机制开发一套插件扩展接口，以实现更多搜索内容的聚合搜索。     本项目的目标在于基于ukui-search的扩展接口，提供一个支持新的搜索内容的扩展插件。可以是在线内容或本地内容或者你想到的任意内容。||ukui-search (https://github.com/ukui/ukui-search) is a global search application for ukui desktop environment, its front-end is based on qt implementation, currently ukui-search plans to develop a set of plugin extension interface based on qt plugin mechanism, in order to achieve more search content aggregation search.     The goal of this project is to provide an extension plugin to support new search content based on the extension interface of ukui-search. It can be online/offline content or any content you can imagine.    ",
                 "label": "210120176",
-                "link": "",
+                "link": "https://gitee.com/ubuntukylin/Summer-2021-of-Open-Source-Promotion-Plan/blob/main/zh_CN/ukui-search%20%E8%81%9A%E5%90%88%E6%90%9C%E7%B4%A2%E6%8F%92%E4%BB%B6.md",
                 "tech_tag": [
                     "Linux",
                     "C++",
@@ -16268,7 +16268,7 @@
                 ],
                 "orgID": 166,
                 "spl": 0,
-                "organchor": "youqilin",
+                "organchor": "ubuntukylin",
                 "orgname": "优麒麟社区"
             },
             {
@@ -16301,7 +16301,7 @@
                 ],
                 "orgID": 166,
                 "spl": 0,
-                "organchor": "youqilin",
+                "organchor": "ubuntukylin",
                 "orgname": "优麒麟社区"
             },
             {
@@ -16329,7 +16329,7 @@
                 ],
                 "orgID": 166,
                 "spl": 1,
-                "organchor": "youqilin",
+                "organchor": "ubuntukylin",
                 "orgname": "优麒麟社区"
             },
             {
@@ -16358,7 +16358,7 @@
                 ],
                 "orgID": 166,
                 "spl": 0,
-                "organchor": "youqilin",
+                "organchor": "ubuntukylin",
                 "orgname": "优麒麟社区"
             }
         ]
@@ -28675,13 +28675,13 @@
             },
             {
                 "name": "Mars Tensor API 实现",
-                "remark": null,
+                "remark": "",
                 "difficulty": "低",
                 "mentor": "何开圣",
                 "contact": "<kaisheng.hks@alibaba-inc.com>",
                 "uniont": null,
                 "student_count": 0,
-                "description": "Mars Tensor 已经兼容大部分 Numpy API 以及部分 scipy API，实现剩余常用接口：  • numpy.pad  • numpy masked array operations  • hypergeometric functions 等 special functions(https://docs.scipy.org/doc/scipy/reference/special.html#module-scipy.special)  • scipy.stats.rankdata and other statistical functions(https://docs.scipy.org/doc/scipy/reference/stats.html)  • numpy.linalg(https://numpy.org/doc/stable/reference/routines.linalg.html)  • ...",
+                "description": "Mars Tensor 已经兼容大部分 Numpy API 以及部分 scipy API，实现剩余常用接口：  numpy.pad; numpy masked array operations; hypergeometric functions 等 special functions; scipy.stats.rankdata and other statistical functions; numpy.linalg(https://numpy.org/doc/stable/reference/routines.linalg.html) 等",
                 "label": "211080745",
                 "link": "",
                 "tech_tag": [
@@ -28778,13 +28778,13 @@
             },
             {
                 "name": "分类回归算法实现",
-                "remark": null,
+                "remark": "",
                 "difficulty": "高",
                 "mentor": "何开圣",
                 "contact": "<kaisheng.hks@alibaba-inc.com>",
                 "uniont": null,
                 "student_count": 0,
-                "description": "Mars learn 对应 sklearn API 接口的实现，目前实现的接口有 NearestNeighbors 等常用算法，基于 Mars 框架完成对应以下算法的 API (或者其他常用接口)：  • sklearn.linear_model.LogisticRegression  • sklearn.linear_model.SGDClassifier  • sklearn.ensemble.RandomForestClassifier  • sklearn.preprocessing.LabelEncoder  • sklearn.preprocessing.OneHotEncoder  • ...",
+                "description": "Mars learn 对应 sklearn API 接口的实现，目前实现的接口有 NearestNeighbors 等常用算法，基于 Mars 框架完成对应以下算法的 API (或者其他常用接口)：  sklearn.linear_model.LogisticRegression; sklearn.linear_model.SGDClassifier; sklearn.ensemble.RandomForestClassifier; sklearn.preprocessing.LabelEncoder; sklearn.preprocessing.OneHotEncoder",
                 "label": "211080748",
                 "link": "",
                 "tech_tag": [
@@ -29082,5 +29082,285 @@
                 "orgname": "Sureness社区"
             }
         ]
+    },
+    {
+        "userId": 1230,
+        "anchor": "dtp",
+        "slide": "",
+        "video": "",
+        "img": "dtp.png",
+        "title": "DTP",
+        "project_url": "",
+        "url": "https://star-tsinghua.github.io/DTP/",
+        "description": "DTP（Deadline-aware Transport Protocol）是清华大学智能网络架构研究组开发的一个面向时延的传输协议。该协议在第二届AITrans智能网络技术挑战赛（www.aitrans.online）中作为基础环境使用。",
+        "full_des": "DTP 是一个面向确定性时延的传输协议，应用将传输数据块的时延需求告知DTP，DTP通过调度和FEC等手段尽力满足，可以减轻应用开发者的负担并提升传输的性能。DTP通过发送端调度来优先保证高优先级数据的传输，利用冗余模块来避免重传，同时基于QUIC（Cloudflare的QUICHE）实现，易于部署和使用",
+        "tech_tag": [
+            "Rust"
+        ],
+        "domain_tag": [
+            "Computer Network"
+        ],
+        "mail_list": "shihang7422166@gmail.com",
+        "email": "shi-h15@mails.tsinghua.edu.cn",
+        "project_list": [
+            {
+                "name": "补充单元测试以及函数文档 for MPDTP",
+                "remark": null,
+                "difficulty": "低",
+                "mentor": "左旭彤",
+                "contact": "<zuoxt18@mails.tsinghua.edu.cn>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "MPDTP即为multi path DTP，可以支持两条路同时发送数据，现在已有整体测试，但各个单元测试仍不完善，有些单元测试随着函数功能的变化已无法通过，有些新增的函数缺少测试以及文档，本项目力图完善函数的单元测试以及文档。",
+                "label": "211120785",
+                "link": "",
+                "tech_tag": [
+                    "Rust"
+                ],
+                "domain_tag": [
+                    "Computer Network"
+                ],
+                "oR": [
+                    "rustdoc 输出完整的文档",
+                    "cargo test全部通过"
+                ],
+                "tR": [
+                    "会Rust语言"
+                ],
+                "orgID": 1230,
+                "spl": 1,
+                "organchor": "dtp",
+                "orgname": "DTP"
+            },
+            {
+                "name": "补充单元测试以及函数文档 for DTP",
+                "remark": null,
+                "difficulty": "低",
+                "mentor": "石航",
+                "contact": "<hangshi11@qq.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "DTP现在已有整体测试，但各个单元测试仍不完善，有些单元测试随着函数功能的变化已无法通过，有些新增的函数缺少测试以及文档，本项目力图完善函数的单元测试以及文档。",
+                "label": "211120786",
+                "link": "",
+                "tech_tag": [
+                    "Rust"
+                ],
+                "domain_tag": [
+                    "Computer Network"
+                ],
+                "oR": [
+                    "rustdoc 输出完整的文档",
+                    "cargo test全部通过"
+                ],
+                "tR": [
+                    "会Rust语言"
+                ],
+                "orgID": 1230,
+                "spl": 1,
+                "organchor": "dtp",
+                "orgname": "DTP"
+            },
+            {
+                "name": "HTTP/3 拓展实现",
+                "remark": null,
+                "difficulty": "中",
+                "mentor": "石航",
+                "contact": "<hangshi11@qq.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "DTP是在QUIC基础上拓展实现而来，HTTP/3是基于QUIC之上的应用层，原仓库中的HTTP/3无法直接使用DTP，需要进行API和帧格式的修改。",
+                "label": "211120787",
+                "link": "",
+                "tech_tag": [
+                    "Rust"
+                ],
+                "domain_tag": [
+                    "Computer Network"
+                ],
+                "oR": [
+                    "HTTP/3 整体测试通过",
+                    "HTTP/3 代码中的单元测试通过"
+                ],
+                "tR": [
+                    "会Rust语言",
+                    "了解HTTP以及传输层协议的基本原理"
+                ],
+                "orgID": 1230,
+                "spl": 1,
+                "organchor": "dtp",
+                "orgname": "DTP"
+            },
+            {
+                "name": "BBR v2 实现",
+                "remark": null,
+                "difficulty": "高",
+                "mentor": "石航",
+                "contact": "<hangshi11@qq.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "现有DTP中的BBR是v1版本，之后BBR v2版本解决了BBR v1版本的诸多问题，请将其移植到DTP中，必要的话可以修改现有DTP的拥塞控制的接口。",
+                "label": "211120789",
+                "link": "",
+                "tech_tag": [
+                    "Rust"
+                ],
+                "domain_tag": [
+                    "Computer Network"
+                ],
+                "oR": [
+                    "实现可用的BBR v2拥塞控制算法，发送速率的变化与参考实现差不多"
+                ],
+                "tR": [
+                    "会Rust语言",
+                    "了解拥塞控制算法"
+                ],
+                "orgID": 1230,
+                "spl": 1,
+                "organchor": "dtp",
+                "orgname": "DTP"
+            },
+            {
+                "name": "Live Video System 应用整合",
+                "remark": null,
+                "difficulty": "高",
+                "mentor": "石航",
+                "contact": "<hangshi11@qq.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "Live Video System 现在可以使用DTP，但实现了自己应用层的pacer 模块来配置应用下发数据块的速度，实际上这个pacer模块可以利用DTP的API来实现，进一步简化应用的代码，同时将buffer的控制都集中在DTP中可以进一步提升性能。",
+                "label": "211120790",
+                "link": "",
+                "tech_tag": [
+                    "Rust"
+                ],
+                "domain_tag": [
+                    "Computer Network"
+                ],
+                "oR": [
+                    "Live Video System的应用层代码被简化，pacer模块完全使用DTP实现",
+                    "性能相比原来的系统不降低"
+                ],
+                "tR": [
+                    "会Rust语言",
+                    "熟悉实时音视频的技术栈"
+                ],
+                "orgID": 1230,
+                "spl": 1,
+                "organchor": "dtp",
+                "orgname": "DTP"
+            },
+            {
+                "name": "传输层各个功能模块化接口设计以及实现",
+                "remark": null,
+                "difficulty": "高",
+                "mentor": "石航",
+                "contact": "<hangshi11@qq.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "DTP 致力于成为可配置的模块化传输协议，传输协议中的不同传输功能可以交给开发者任意定制，现在DTP的调度器和拥塞控制算法已有初步的模块化接口，应用开发者可以使用任何语言来实现需要的拥塞控制算法。但其他模块比如丢包检测，流量控制，RTO机制，ACK机制等仍不可定制。请设计并且实现对应模块化的定制接口。",
+                "label": "211120791",
+                "link": "",
+                "tech_tag": [
+                    "Rust"
+                ],
+                "domain_tag": [
+                    "Computer Network"
+                ],
+                "oR": [
+                    "实现至少两个传输功能的模块化，设计并且实现对应的接口，与DTP对接完善。"
+                ],
+                "tR": [
+                    "会Rust语言",
+                    "熟悉传输层协议的各个模块"
+                ],
+                "orgID": 1230,
+                "spl": 1,
+                "organchor": "dtp",
+                "orgname": "DTP"
+            },
+            {
+                "name": "MPDTP 快速 ACK 实现",
+                "remark": null,
+                "difficulty": "中",
+                "mentor": "左旭彤",
+                "contact": "<zuoxt18@mails.tsinghua.edu.cn>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "MPDTP 现在的ACK只能两条路各自ack自己这条路上发出去的包，RTT较大链路的ACK包只能从原链路回来，而实际上这个ACK是可以从快链路回来以加速ACK的。这也是MPTCP里面的常规做法。请实现ACK可以从任何一条路返回的功能。",
+                "label": "211120792",
+                "link": "",
+                "tech_tag": [
+                    "Rust"
+                ],
+                "domain_tag": [
+                    "Computer Network"
+                ],
+                "oR": [
+                    "实现 ACK 可以从任何一条路返回的功能。通过测试。"
+                ],
+                "tR": [
+                    "会Rust语言",
+                    "了解Multi path 传输的基本原理"
+                ],
+                "orgID": 1230,
+                "spl": 1,
+                "organchor": "dtp",
+                "orgname": "DTP"
+            },
+            {
+                "name": "MPDTP 握手过程改进",
+                "remark": null,
+                "difficulty": "高",
+                "mentor": "石航",
+                "contact": "<hangshi11@qq.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "MPDTP现在的握手过程没有对第二条路径进行认证。请参考MPQUIC的draft来实现add address 的功能，实现完善的握手机制。",
+                "label": "211120793",
+                "link": "",
+                "tech_tag": [
+                    "Rust"
+                ],
+                "domain_tag": [
+                    "Computer Network"
+                ],
+                "oR": [
+                    "添加add address frame的处理逻辑。",
+                    "完善握手过程，修改state machine和c的部分配合完成握手。"
+                ],
+                "tR": [
+                    "会Rust语言",
+                    "会socket网络编程",
+                    "了解Multi Path 握手过程的基本原理"
+                ],
+                "orgID": 1230,
+                "spl": 1,
+                "organchor": "dtp",
+                "orgname": "DTP"
+            }
+        ]
+    },
+    {
+        "userId": 1462,
+        "anchor": "springcloudalibaba",
+        "slide": "",
+        "video": "",
+        "img": "spring_cloud_alibaba.png",
+        "title": "Spring Cloud Alibaba",
+        "project_url": "",
+        "url": "https://github.com/alibaba/spring-cloud-alibaba",
+        "description": "Spring Cloud Alibaba 致力于提供微服务开发的一站式解决方案",
+        "full_des": "Spring Cloud Alibaba 致力于提供微服务开发的一站式解决方案。此项目包含开发分布式应用微服务的必需组件，方便开发者通过 Spring Cloud 编程模型轻松使用这些组件来开发分布式应用服务。依托 Spring Cloud Alibaba，您只需要添加一些注解和少量配置，就可以将 Spring Cloud 应用接入阿里微服务解决方案，通过阿里中间件来迅速搭建分布式应用系统。",
+        "tech_tag": [
+            "Java"
+        ],
+        "domain_tag": [
+            "Cloud Native",
+            "Distributed System"
+        ],
+        "mail_list": "chenxilzx1@gmail.com  echooy.mxq@gmail.com  btbr403@gmail.com  wangiegie@gmail.com  sczyh16@gmail.com",
+        "email": "chenxilzx1@gmail.com",
+        "project_list": []
     }
 ]
