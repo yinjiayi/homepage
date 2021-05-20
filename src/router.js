@@ -36,6 +36,7 @@ let ProjectlistN
      }
  
      componentDidMount(){
+         console.log(111)
         Orglist = asyncComponent(() => import('./components/orglist/index.js'));
         ProjectlistN = asyncComponent(() => import('./components/projectlistN/index.js'));  
          

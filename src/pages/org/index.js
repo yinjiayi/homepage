@@ -34,6 +34,7 @@ class Org extends React.Component{
         }
         if(this.props.orgTabFlag !== orgflag){
             this.props.setOrgTabFlag(orgflag)
+           
         }
 
        
