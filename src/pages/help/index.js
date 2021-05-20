@@ -58,7 +58,7 @@ class Help extends React.Component{
                                             <div 
                                                 className="helpBlueText" 
                                                 key={index}
-                                                onClick={()=>this.goLink(item[1])}>
+                                                onClick={()=>this.goLink("https://summer.iscas.ac.cn/help"+item[1])}>
                                                 <span className="underline">{item[0]}</span>
                                                 {this.state.lf}
                                             </div>
