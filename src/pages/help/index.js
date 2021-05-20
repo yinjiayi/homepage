@@ -52,8 +52,22 @@ class Help extends React.Component{
                                 <span>{showdata.ressourcelink.name}</span>
                             </div>
                             <div className="helpBlueTextLine">
-                            <div className="helpBlueText One" onClick={()=>this.goLink(showdata.kilink)}><span className="underline">{showdata.ressourcelink.keyissue}</span>{this.state.lf}</div>
-                            <div className="helpBlueText" onClick={()=>this.goLink(showdata.link)}><span className="underline">{showdata.ressourcelink.community}</span>{this.state.lf}</div>
+                                {
+                                    showdata.list.map((item,index)=>{
+                                        return (
+                                            <div 
+                                                className="helpBlueText" 
+                                                key={index}
+                                                onClick={()=>this.goLink(item[1])}>
+                                                <span className="underline">{item[0]}</span>
+                                                {this.state.lf}
+                                            </div>
+
+                                        )
+                                    })
+                                }
+                            {/* <div className="helpBlueText One" onClick={()=>this.goLink(showdata.kilink)}><span className="underline">{showdata.ressourcelink.keyissue}</span>{this.state.lf}</div>
+                            <div className="helpBlueText" onClick={()=>this.goLink(showdata.link)}><span className="underline">{showdata.ressourcelink.community}</span>{this.state.lf}</div> */}
                             </div>
                             
                         </div>
