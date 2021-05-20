@@ -34,16 +34,16 @@
             "community":"Community Participation "
         },
         "list":[
-            ["Frequently Asked","/"],
-            ["Roles","/roles/"],
-            ["Timeline","/timeline/"],
-            ["Student Guide","/student/"],
-            ["Community","/community/"],
-            ["Communities List","/communities-list/"],
-            ["Mentor","/mentor/"],
-            ["Cooperation","/cooperation/"],
-            ["Contact Us","/contactus/"],
-            ["Acknowledgements","/acknowledgements/"]
+            ["Frequently Asked","/en/"],
+            ["Roles","/en/roles/"],
+            ["Timeline","/en/timeline/"],
+            ["Student Guide","/en/student/"],
+            ["Community","/en/community/"],
+            ["Communities List","/en/communities-list/"],
+            ["Mentor","/en/mentor/"],
+            ["Cooperation","/en/cooperation/"],
+            ["Contact Us","/en/contactus/"],
+            ["Acknowledgements","/en/acknowledgements/"]
         ],
         "contact":{
             "name":"Official Contacts",
