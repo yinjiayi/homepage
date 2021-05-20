@@ -173,7 +173,7 @@ class OrgDetail extends React.Component{
                             </div>
 
                         }                      
-                        <div className="ProjectListApplyState">{protext.applyState[2]}</div>
+                        {/* <div className="ProjectListApplyState">{protext.applyState[2]}</div> */}
                     </div>
                     <div className="projectListWrapper">
                         {
