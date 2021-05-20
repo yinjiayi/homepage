@@ -20,57 +20,14 @@
  import Apply from './pages/apply/index.js';
  import Org from './pages/org/index.js';
  import OrgDetail from './components/orgdetail/index.js';
-import SpinLoading  from './components/spin/index.js';
+
 import Liveshow from './pages/liveshow/index.js';
- import ProjectDetail from './components/projectDetail/index.js';
- // import Orglist from "./components/orglist/index.js"
- // import ProjectlistN from "./components/projectlistN/index.js"
+import ProjectDetail from './components/projectDetail/index.js';
+import {asyncComponent} from './components/asynccomp/index.js'
 let Orglist
 let ProjectlistN
 
-export const asyncComponent = loadComponent => (
 
-    class AsyncComponent extends React.Component {
-        constructor(...args){
-            super(...args);
-    
-            this.state = {
-                Component: null,
-            };
-
-            this.hasLoadedComponent = this.hasLoadedComponent.bind(this);
-        }
-        componentDidMount() {
-            if(this.hasLoadedComponent()){
-                return;
-            }
-    
-            loadComponent()
-                .then(module => module.default ? module.default : module)
-                .then(Component => {
-                    this.setState({
-                        Component
-                    });
-                })
-                .catch(error => {
-                    /*eslint-disable*/
-                    console.error('cannot load Component in <AsyncComponent>');
-                    /*eslint-enable*/
-                    throw error;
-                })
-        }
-        hasLoadedComponent() {
-            return this.state.Component !== null;
-        }
-        render(){
-            const {
-                Component
-            } = this.state;
-
-            return (Component) ? <Component {...this.props} /> : <SpinLoading/>;
-        }
-    }
-);
 
  export default class IRouter extends React.Component{
      constructor(props){

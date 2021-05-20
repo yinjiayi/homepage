@@ -16,7 +16,7 @@ import data from '../../data/org.json';
 import { connect } from 'react-redux';
 import OrgTip from '../../components/OrgTip/index.js';
 import {getSplit} from "../../util/url.js";
-import { Input,Spin, Space } from 'antd';
+import { Input } from 'antd';
 
 const { Search } = Input;
 
@@ -113,12 +113,7 @@ class Orglist extends React.Component{
                     <span className="italic">{showdata.rank}</span>
                     
                 </div>
-                {
-                     showorglist.length === 0 ?
-                     <Space size="large">
-                         <Spin size="large" />
-                     </Space>:
-                    <div className="OrgListWrapper">
+                <div className="OrgListWrapper">
                     {                     
                         showorglist.map((item,index)=>{
                             const iconUrl = require('./../../img/organisation/'+item.img).default;
@@ -148,7 +143,6 @@ class Orglist extends React.Component{
                     }
 
                 </div>
-                }
 
 
             </div>

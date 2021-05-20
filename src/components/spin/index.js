@@ -14,19 +14,12 @@
  import { Spin, Space } from 'antd';
  import "./index.less"
  class SpinLoading extends React.Component{
-    
- 
-
-     render(){
-        
+     render(){    
          return(         
             <Space size="large">
                 <Spin size="large" />
             </Space>
-          )
-        
-         
-         
+          )                  
      }
  }
  
