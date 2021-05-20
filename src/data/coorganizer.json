@@ -579,6 +579,11 @@
         "img": "dtp.png",
         "name": "DTP",
         "url": "https://star-tsinghua.github.io/DTP/"
+    },
+    {
+        "img": "openct.png",
+        "name": "北京师范大学OpenCT社区",
+        "url": "https://open-ct.com/landing"
     }
     
     ]

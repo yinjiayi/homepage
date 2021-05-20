@@ -1371,7 +1371,7 @@
             "Distributed System",
             "云原生分布式存储"
         ],
-        "mail_list": "chubaofs-users@groups.io",
+        "mail_list": "",
         "email": "chubaofs-users@groups.io",
         "project_list": [
             {
@@ -1425,7 +1425,9 @@
         "tech_tag": [
             "Python",
             "Deep Learning Framework",
-            "深度学习，卷积神经网络，视觉算法"
+            "深度学习",
+            "卷积神经网络",
+            "视觉算法"
         ],
         "domain_tag": [
             "AI",
@@ -1756,8 +1758,8 @@
             "OS",
             "Programming Language"
         ],
-        "mail_list": "Github Issue https://github.com/RT-Thread/rt-thread/issues",
-        "email": "support@rt-thread.com",
+        "mail_list": "",
+        "email": "andychen@rt-thread.com",
         "project_list": [
             {
                 "name": "将canfestival迁移到基于rt-thread的 ls1b 平台",
@@ -2180,6 +2182,183 @@
                 "spl": 1,
                 "organchor": "rtthread",
                 "orgname": "RT-Thread —— 小而美的物联网操作系统||RT"
+            },
+            {
+                "name": "RT-Thred Smart x86移植",
+                "remark": null,
+                "difficulty": "高",
+                "mentor": "Bernard Xiong",
+                "contact": "<bernard.xiong@rt-thread.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "目前RT-Thread Smart主要支持了ARM Cortex-A（如树莓派），MIPS64（如龙芯2K1000），RISC-V（如嘉楠K210、全志 D1）。而对于大家更为广泛使用的PC，x86架构还不支持。RT-Thread Smart for x86就是一份对PC的基础移植，主要是对主要环境的移植，例如控制台，ATA硬盘，有线以太网等。",
+                "label": "210180820",
+                "link": "",
+                "tech_tag": [
+                    "C",
+                    "RTOS"
+                ],
+                "domain_tag": [
+                    "OS"
+                ],
+                "oR": [
+                    "代码符合RT-Thread代码风格要求，代码符合RT-Thread BSP代码风格要求",
+                    "加入x86的BSP，主要更改在BSP、libcpu及lwP部分等",
+                    "代码能够合入到RT-Thread Smart的upstream",
+                    "RT-Thread Smart针对x86的移植，可以运行在VirtualBox或QEMU模拟器上，也能运行在真实电脑上",
+                    "可以支持ATA的硬盘，pcnet等模拟器中场景的网卡",
+                    "● RT-Thread Smart针对x86移植的文档说明",
+                    "能够运行busybox程序"
+                ],
+                "tR": [
+                    "良好的C/C++代码编写风格",
+                    "熟悉x86体系架构，熟悉x86下的中断处理，页表等"
+                ],
+                "orgID": 209,
+                "spl": 1,
+                "organchor": "rtthread",
+                "orgname": "RT-Thread —— 小而美的物联网操作系统||RT"
+            },
+            {
+                "name": "RT-Thread环境下手持智能机械故障诊断仪项目",
+                "remark": null,
+                "difficulty": "高",
+                "mentor": "胡永涛",
+                "contact": "<hythait@163.com>",
+                "uniont": "郭占鑫<guozhanxin@rt-thread.com>",
+                "student_count": 0,
+                "description": "手持智能机械故障诊断仪通过振动信号采集及分析，实现现场机械设备关键零部件如轴承、齿轮、联轴器等的状态监测及故障诊断。本项目目标是基于RT-Thread操作系统，设计一个集采集-传输-分析于一体的智能机械故障诊断仪。振动传感器可采用模拟传感器或数字传感器，采样频率≥1kHz，集成神经网络智能故障诊断模型，直接对所采集信号进行故障分析，并将分析结果进行现场显示，并传输至云平台。",
+                "label": "210180821",
+                "link": "",
+                "tech_tag": [
+                    "C",
+                    "AI",
+                    "RTOS",
+                    "IoT"
+                ],
+                "domain_tag": [
+                    "AI",
+                    "OS"
+                ],
+                "oR": [
+                    "完整的故障诊断仪实现及流程演示",
+                    "故障诊断仪的使用手册",
+                    "代码符合RT-Thread代码风格要求，代码符合RT-Thread BSP代码风格要求"
+                ],
+                "tR": [
+                    "故障诊断仪终端在ART-Pi主板，RT-Thread系统上实现",
+                    "云平台可采用AIRIOT、Onenet等，或自建私有云平台"
+                ],
+                "orgID": 209,
+                "spl": 1,
+                "organchor": "rtthread",
+                "orgname": "RT-Thread —— 小而美的物联网操作系统||RT"
+            },
+            {
+                "name": "基于RT-Thread的共享车位锁的开发",
+                "remark": null,
+                "difficulty": "中",
+                "mentor": "赵涛",
+                "contact": "<253401001@qq.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "本项目最终开发一套完整的物联网设备共享车位锁，具体包括使用RT-Thread的端设备、云平台、应用端APP或小程序三部分，功能应包括车位锁拥有者、使用者、开发者三种角色的关切。",
+                "label": "210180822",
+                "link": "",
+                "tech_tag": [
+                    "C",
+                    "RTOS"
+                ],
+                "domain_tag": [
+                    "OS"
+                ],
+                "oR": [
+                    "基于RT-Thread设计共享车位锁端设备",
+                    "开发上线应用小程序或APP",
+                    "在gitee提交完整的演示demo视频文档教程"
+                ],
+                "tR": [
+                    "熟悉RT-Thread的移植及外设驱动实现功底",
+                    "有较好的前端基础"
+                ],
+                "orgID": 209,
+                "spl": 1,
+                "organchor": "rtthread",
+                "orgname": "RT-Thread —— 小而美的物联网操作系统||RT"
+            },
+            {
+                "name": "结构化数据表示方法及vscode查看插件",
+                "remark": null,
+                "difficulty": "中",
+                "mentor": "刘智允",
+                "contact": "<liuzhiyun@rt-thread.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "定义一种方式对结构化数据进行JSON schema描述，同时编写工具可以对C/C++结构体或IDL文件自动生成对应的JSON schema描述文件；编写vscode插件，可以很好的依据对应的JSON schema描述文件来查看、修改这样的结构化数据。",
+                "label": "210180823",
+                "link": "",
+                "tech_tag": [
+                    "C",
+                    "JavaScript",
+                    "C++",
+                    "IoT"
+                ],
+                "domain_tag": [
+                    "Dev Tools",
+                    "Web",
+                    "Programming Language"
+                ],
+                "oR": [
+                    "定义的描述规范简洁明了",
+                    "以JavaSript脚本方式编写的C/C++结构体，IDL文件生成JSON schema工具",
+                    "依据JSON schema描述文件data.schema.json对二进制数据文件data.bin进些解析",
+                    "可以在vscode上显示这类的结构化数据",
+                    "可以在vscode上编辑、修改二进制的结构化数据，并写回到data.bin文件中"
+                ],
+                "tR": [
+                    "良好的代码编写风格",
+                    "熟悉使用JavaScript",
+                    "熟悉编写vscode插件，对前端数据可视化技术有了解"
+                ],
+                "orgID": 209,
+                "spl": 1,
+                "organchor": "rtthread",
+                "orgname": "RT-Thread —— 小而美的物联网操作系统||RT"
+            },
+            {
+                "name": "用户态Linux驱动子系统环境",
+                "remark": null,
+                "difficulty": "高",
+                "mentor": "何元杰",
+                "contact": "<scheyuanjie@163.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "在RT-Thread Smart的用户态上支持Linux的内核驱动开发环境，具备Linux的系列头文件，及和驱动密切相关，缺少的函数API实现；使得移植Linux的一些驱动到RT-Thread Smart用户态变得非常容易。",
+                "label": "210180826",
+                "link": "",
+                "tech_tag": [
+                    "Linux",
+                    "C",
+                    "RTOS"
+                ],
+                "domain_tag": [
+                    "OS"
+                ],
+                "oR": [
+                    "符合RT-Thread代码规范",
+                    "RT-Thread Smart用户态下的Linux驱动开发环境，包括系列头文件",
+                    "希望对Linux原生驱动基础设备驱动框架修改非常少，便于后续的升级",
+                    "可以用Linux的一些驱动实现对它进行验证，例如网卡驱动，USB驱动等"
+                ],
+                "tR": [
+                    "熟悉一定的外设",
+                    "熟悉Linux设备驱动子系统",
+                    "熟悉C代码编程"
+                ],
+                "orgID": 209,
+                "spl": 1,
+                "organchor": "rtthread",
+                "orgname": "RT-Thread —— 小而美的物联网操作系统||RT"
             }
         ]
     },
@@ -2198,7 +2377,7 @@
             "Go",
             "Java",
             "Distributed System",
-            "Stroage"
+            "Storage"
         ],
         "domain_tag": [
             "Cloud Native",
@@ -2457,6 +2636,45 @@
                 "spl": 1,
                 "organchor": "apachepulsar",
                 "orgname": "Apache Pulsar 社区"
+            },
+            {
+                "name": "提升 Apache Pulsar 文档质量：易懂、易用、易查找",
+                "remark": "",
+                "difficulty": "中",
+                "mentor": "Jennifer Huang",
+                "contact": "<hjf@streamnative.io>",
+                "uniont": "Yu Liu<yu@streamnative.io>",
+                "student_count": 0,
+                "description": "安装应用 [Apache Pulsar](http://pulsar.apache.org/docs/en/next/standalone/)，站在用户视角，完善、修改 Apache Pulsar 官方文档安装、部署、客户端部分。让小白用户能够根据官方文档快速在本地、Docker、K8s 中安装、启动、部署 Pulsar，并熟练配置 Pulsar 支持的客户端。",
+                "label": "210350803",
+                "link": "",
+                "tech_tag": [
+                    "Cloud Native",
+                    "Distributed System",
+                    "Git"
+                ],
+                "domain_tag": [
+                    "Cloud Native",
+                    "Big Data",
+                    "Distributed System",
+                    "Web"
+                ],
+                "oR": [
+                    "根据 Pulsar 文档，在本地、Docker、K8s 中安装使用 Pulsar，使用 Pulsar 客户端",
+                    "根据用户体验，修改完善 Pulsar 文档，提升文档的可读性和易用性",
+                    "与导师共同整理文档架构，提升文档的查找度",
+                    "文档写作风格符合 [Google Dev Doc Style Guide](https://developers.google.com/style/)"
+                ],
+                "tR": [
+                    "重视文档易用体验",
+                    "理解 Apache Pulsar 技术",
+                    "了解技术写作指南",
+                    "熟练使用 MarkDown、Github"
+                ],
+                "orgID": 282,
+                "spl": 1,
+                "organchor": "apachepulsar",
+                "orgname": "Apache Pulsar 社区"
             }
         ]
     },
@@ -2472,15 +2690,15 @@
         "description": "Emacs China是由国内的Emacs爱好者成立的Emacs社区，致力于Emacs相关的技术讨论。",
         "full_des": "Emacs China是由国内的Emacs爱好者成立的Emacs社区，致力于Emacs相关的技术讨论。",
         "tech_tag": [
-            "Emacs",
+            "Linux",
             "Python",
             "Lisp"
         ],
         "domain_tag": [
-            "Emacs"
+            "Dev Tools"
         ],
-        "mail_list": "无。可以在Emacs China发帖联系",
-        "email": "无。可以在Emacs China发帖联系",
+        "mail_list": "emacs-devel@gnu.org",
+        "email": "matthewzmd@gmail.com",
         "project_list": [
             {
                 "name": "Emacs EAF：重构并细分EAF的自定义配置设计",
@@ -2627,7 +2845,7 @@
             "Rust",
             "Kubernetes",
             "TypeScript",
-            "Micro Sevice"
+            "Micro Service"
         ],
         "domain_tag": [
             "Cloud Native",
@@ -3069,22 +3287,28 @@
         "description": "SkyWalking is an open source APM for distributed system. Tracing, Metrics and Logging all-in-one solution. Make your services reliable.",
         "full_des": "Apache SkyWalking is a highly diverse community. We as a top-level project of Apache Software Foundation, have 400+ developers all over the world.",
         "tech_tag": [
+            "Go",
+            "Python",
+            "Java",
+            "Cloud Native",
+            "JavaScript",
+            "Container",
+            "PHP",
+            "NodeJS",
+            "C++",
+            "Distributed System",
+            "Kubernetes",
+            "Micro Service",
+            "Docker",
             "APM",
-            "Tracing",
-            "Metrics",
-            "Logging",
-            "Event",
-            "Performance"
+            " Observability"
         ],
         "domain_tag": [
-            "Observability",
-            "Micro service",
-            "Service Mesh",
-            "应用性能监控",
-            "分布式追踪",
-            "分布式系统性能"
+            "Cloud Native",
+            "Distributed System",
+            "Tracing"
         ],
-        "mail_list": "dev@skywalking.apache.org (Mail to dev-subscribe@skywalking.apache.org to subscribe)",
+        "mail_list": "dev@skywalking.apache.org",
         "email": "dev@skywalking.apache.org",
         "project_list": [
             {
@@ -3719,21 +3943,25 @@
         "description": "云原生、高性能、可扩展的微服务 API 网关||Cloud-native, high-performance, scalable microservices API gateway",
         "full_des": "Apache APISIX 是云原生、高性能、可扩展的微服务 API 网关，它基于 Nginx 和 etcd 来实现，具备动态路由、插件热加载、 gRPC 代理、协议转换等功能，适合微服务体系下的 API 管理。||Apache APISIX is a cloud-native, high-performance, scalable microservices API gateway based on Nginx and etcd, with dynamic routing, plugin hot-loading, gRPC proxy, protocol conversion, and other features, suitable for API management under the microservices system.",
         "tech_tag": [
-            "网关",
-            "Nginx",
+            "Go",
             "C",
-            "Lua",
-            "API",
-            "Golang",
-            "k8s",
-            "Helm Chart"
+            "Cloud Native",
+            "JavaScript",
+            "Container",
+            "NodeJS",
+            "React",
+            "Kubernetes",
+            "TypeScript",
+            "Micro Service",
+            "Git",
+            "Docker",
+            "IoT"
         ],
         "domain_tag": [
-            "中间件",
-            "微服务"
+            "Cloud Native"
         ],
-        "mail_list": "开发者邮箱列表：dev@apisix.apache.org 订阅指南：https://apisix.apache.org/subscribe-guide",
-        "email": "wenming@apache.org",
+        "mail_list": "dev@apisix.apache.org",
+        "email": "dev@apisix.apache.org",
         "project_list": [
             {
                 "name": " Apache APISIX 缓存校验工具||Apache APISIX cache verification tool ",
@@ -4540,15 +4768,16 @@
         "tech_tag": [
             "Java",
             "Database",
-            "Stroage",
+            "Storage",
             "Git",
             "IoT"
         ],
         "domain_tag": [
             "Big Data",
-            "Timeseries，Database"
+            "Timeseries",
+            "Database"
         ],
-        "mail_list": "dev@iotdb.apache.org（订阅 dev-subscribe@iotdb.apache.org)",
+        "mail_list": "dev@iotdb.apache.org",
         "email": "dev@iotdb.apache.org",
         "project_list": [
             {
@@ -5104,10 +5333,12 @@
         "domain_tag": [
             "Linux Kernel",
             "OS",
-            "CPU，Compiler，Renderer"
+            "CPU",
+            "Compiler",
+            "Renderer"
         ],
         "mail_list": "simple-xx@googlegroups.com  zone.niuzh@hotmail.com  302807330@qq.com",
-        "email": "https://github.com/Simple-XX/Summer202X",
+        "email": "null@null.com",
         "project_list": [
             {
                 "name": "为SimpleCPU实现可背靠背执行Cache",
@@ -5492,10 +5723,11 @@
             "NodeJS",
             "C++",
             "Rust",
-            "Stroage",
+            "Storage",
             "Git",
             "Docker",
-            "Mirrors，Qt"
+            "Mirrors",
+            "Qt"
         ],
         "domain_tag": [
             "Linux Kernel",
@@ -5809,7 +6041,7 @@
             "Algorithms",
             " Data Structures"
         ],
-        "mail_list": "https://t.me/oiwiki> 以及 QQ 群 588793226",
+        "mail_list": "",
         "email": "hi@oi-wiki.org",
         "project_list": [
             {
@@ -6279,11 +6511,11 @@
         "description": "openLooKeng是一款开源的数据虚拟化引擎，像使用数据库一样使用大数据。||openLooKeng is a distributed, low latency, reliable data engine for all data, big or small, local or remote. It help big data users to use big data like database.",
         "full_des": "openLooKeng是一款开源的高性能数据虚拟化引擎，提供统一SQL接口，具备跨数据源/数据中心分析能力以及面向交互式、批、流等融合查询场景。openLooKeng致力于为大数据用户提供极简的数据分析体验，让用户像使用“数据库”一样使用“大数据”。||openLooKeng is a drop in engine which enables in-situ analytics on any data, anywhere, including geographically remote data sources. It provides a global view of all of your data via its SQL 2003 interface. With high availability, auto-scaling, built-in caching and indexing support, openLooKeng is ready for enterprise workload with required reliability.The goal of openLooKeng is to support data exploration, ad hoc queries, and batch processing with near real time latency ranging from 100+ms to minutes, without moving your data around. openLooKeng also supports hierarchical deployment enabling geographically remote openLooKeng clusters to participate in the same query. With its cross region query plan optimization capability, queries involving remote data can achieve close to “local” performance.",
         "tech_tag": [
-            "大数据",
-            "数据虚拟化引擎"
+            "Big Data"
         ],
         "domain_tag": [
-            "大数据"
+            "Big Data",
+            "数据虚拟化引擎"
         ],
         "mail_list": "dev@openlookeng.io",
         "email": "contact@openlookeng.io",
@@ -6930,7 +7162,7 @@
             "Distributed System"
         ],
         "domain_tag": [
-            "Vitualization",
+            "Virtualization",
             "Distributed System"
         ],
         "mail_list": "zstack@googlegroups.com  wei.wang@zstack.io",
@@ -7017,13 +7249,16 @@
         "description": "共建开放、包容、活跃的 Jenkins 社区||Build an open, inclusive, active Jenkins community",
         "full_des": "Jenkins 中文社区是由 Jenkins 国内的爱好者、贡献者组成，共同推广以及完善 CI/CD 技术的学习试用和落地。我们秉承开源的精神，在社区治理上高度开放，代码、文档以及设计等开源免费，致力于为我们的用户带来更好的体验。||Jenkins Chinese community is composed of Jenkins domestic fans and contributors to jointly promote and improve the learning, trial, and implementation of CI/CD technology. We uphold the spirit of open source and are highly open in community governance. Open source code, documentation, and design are free, and we are committed to bringing a better experience to our users.",
         "tech_tag": [
-            "jenkins"
+            "Go",
+            "Java",
+            "Git",
+            "Jenkins"
         ],
         "domain_tag": [
             "CI/CD",
-            "jenkins",
-            "DevOps",
-            "OpenSource"
+            " jenkins",
+            " DevOps",
+            " OpenSource"
         ],
         "mail_list": "developer@jenkins-zh.cn",
         "email": "admins@jenkins-zh.cn",
@@ -7083,14 +7318,19 @@
         "full_des": "openEuler 是一个开源、免费的 Linux 发行版平台，将通过开放的社区形式与全球的开发者共同构建一个开放、多元和架构包容的软件生态体系。同时，openEuler 也是一个创新的平台，鼓励任何人在该平台上提出新想法、开拓新思路、实践新方案。||An open source and a free platform for Linux released edition, which aims to build an open, diversified and architecture inclusive software ecosystem with global developers through openEuler community. At the same time, it is also an innovative platform, which encourages anyone to put forward new ideas, develop new ideas and practice new schemes.",
         "tech_tag": [
             "Linux",
-            "操作系统",
-            "虚拟化",
-            "容器"
+            "Cloud Native",
+            "Container",
+            "AI",
+            "Kubernetes",
+            "IoT"
         ],
         "domain_tag": [
-            "操作系统"
+            "Linux Kernel",
+            "OS",
+            "Container",
+            "Virtualization"
         ],
-        "mail_list": "community@openeuler.org",
+        "mail_list": "",
         "email": "contact@openeuler.io",
         "project_list": [
             {
@@ -10958,6 +11198,736 @@
                 "spl": 1,
                 "organchor": "openeuler",
                 "orgname": "openEuler社区||openEuler Community"
+            },
+            {
+                "name": "调研 Linux桌面测试自动化工具",
+                "remark": null,
+                "difficulty": "中",
+                "mentor": "李老师",
+                "contact": "<liyongqiang329@163.com>",
+                "uniont": "徐老师<lemon.higgins@aliyun.com>",
+                "student_count": 0,
+                "description": "调研当前市面上主流的Linux桌面系统自动化测试工具，linux桌面从KDE/GNOME/MATE/XFCE/Unity/Cinnamon这几类桌面的上游社区进行调研，分析其所用自动化测试工具如何实现，使用，及其优缺点。  输出存放仓库：https://gitee.com/openeuler/test-tools",
+                "label": "210010811",
+                "link": "",
+                "tech_tag": [
+                    "Linux",
+                    "测试"
+                ],
+                "domain_tag": [
+                    "OS"
+                ],
+                "oR": [
+                    "自动化工具（能够不受分辨率影响）环境搭建文档（搭建过程，用例添加动作说明，过程问题及解决方案）",
+                    "分析对比报告",
+                    "效果演示视频"
+                ],
+                "tR": [
+                    "熟悉测试",
+                    "熟悉linux",
+                    "熟悉Linux主流桌面系统"
+                ],
+                "orgID": 132,
+                "spl": 1,
+                "organchor": "openeuler",
+                "orgname": "openEuler社区||openEuler Community"
+            },
+            {
+                "name": "基于mugen测试框架开发实现前端管理，实现任务触发及最终的结果展示",
+                "remark": null,
+                "difficulty": "低",
+                "mentor": "徐老师",
+                "contact": "<lemon.higgins@aliyun.com>",
+                "uniont": "李老师<liyongqiang329@163.com>",
+                "student_count": 0,
+                "description": "当前openEuler社区已经开源测试框架mugen，见链接：https://gitee.com/openeuler/test-tools/tree/master/mugen  为  为更好的管理各类测试活动，需要开发基于mugen框架的前端，具体包括两个方面：  1、对接后端实现任务触发  2、结合数据库实现结果展示    代码仓：  https://gitee.com/openeuler/test-tools/tree/master",
+                "label": "210010812",
+                "link": "",
+                "tech_tag": [
+                    "Linux",
+                    "测试"
+                ],
+                "domain_tag": [
+                    "OS"
+                ],
+                "oR": [
+                    "前端功能(任务触发&结果展示)代码"
+                ],
+                "tR": [
+                    "熟悉前端页面相关开发",
+                    "熟悉VUE 或者 nodejs开发语言",
+                    "了解linux shell常用命令",
+                    "熟悉数据库相关开发"
+                ],
+                "orgID": 132,
+                "spl": 1,
+                "organchor": "openeuler",
+                "orgname": "openEuler社区||openEuler Community"
+            },
+            {
+                "name": "开源软件源码license文本信息扫描工具开发",
+                "remark": "相关项目链接（仓库列表等）：\r\nopenEuler合规SIG组：https://gitee.com/openeuler/compliance\r\n张飞扫描工具托管地址：https://gitee.com/compliance-tools/compliance-zhangfei.git\r\n\r\n相关资料：\r\nOSI许可证清单：https://opensource.org/licenses-draft\r\nFSF许可证清单：https://www.gnu.org/licenses/license-list.en.html\r\nSPDX许可证清单；https://spdx.org/licenses/\r\nlicense扫描工具原理分析：https://scancode-analyzer.readthedocs.io/en/latest/index.html",
+                "difficulty": "中",
+                "mentor": "杨老师",
+                "contact": "<yangcong_hit@163.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "一个典型的开源软件项目通常会使用数百个第三方依赖。引入第三方软件的过程中，许可证和元数据并不总是很容易找到并且不规范化。张飞扫描工具是一款license源码扫描工具，帮助用户识别源码中所包含的license信息，其扫描结果包含：  license是否符合SPDX（Software Package Data Exchange， 一种记录有关软件许可信息的文件格式： 标准化的简短标识符，全名，许可证文本以及URL等）标准、license官网链接、license类型、license在源码的起止信息等。",
+                "label": "210010813",
+                "link": "",
+                "tech_tag": [
+                    "Linux",
+                    "开源linsence"
+                ],
+                "domain_tag": [
+                    "OS"
+                ],
+                "oR": [
+                    "1、 支持以参数化的形式扫描压缩文件，目前扫描压缩文件需要使用extractcode组件先解压，然后再扫描。需要达成以参数--extractcode直接扫描压缩文件的能力。",
+                    "2、 判断相应的license是否符合OSI(Open Source Initiative)标准， FSF(Free Software Foundation)标准。",
+                    "3、 过滤富媒体文件（如音频、视频、图片、二进制文件）。大多数扫描情况下，富媒体文件不包含license信息，影响license扫描效率，能够在扫描时自动过滤富媒体文件，提升扫描效率。",
+                    "4、 可选： 支持软件包url扫描功能。目前张飞扫描工具需要先下载软件包，然后调用扫描工具进行扫描。"
+                ],
+                "tR": [
+                    "1、 熟悉使用python语言进行开发。",
+                    "2、 熟悉正则表达式，对常用匹配算法有一定的了解。",
+                    "3、 熟悉常用的开源许可证，一定程度上了解开源许可证的权利、义务、限制等概念。"
+                ],
+                "orgID": 132,
+                "spl": 1,
+                "organchor": "openeuler",
+                "orgname": "openEuler社区||openEuler Community"
+            },
+            {
+                "name": "为openEuler操作系统移植RDMA协议栈OFED",
+                "remark": null,
+                "difficulty": "中",
+                "mentor": "潘老师",
+                "contact": "<pan.zheng@datenlord.io>",
+                "uniont": "王老师<pwang7@foxmail.com>",
+                "student_count": 0,
+                "description": "RDMA的官方组织是超算中心常用的高性能网络，OFED是OpenFabrics Alliance维护的RDMA用户态library和系统态driver。本题要求为openEuler操作系统移植OFED，使得在openEuler上可以支持RDMA设备、运行RDMA程序。要求移植的OFED支持X86和ARM体系架构。    相关项目链接（仓库列表等）：  OpenFabrics Alliance：https://www.openfabrics.org/ofed-for-linux/",
+                "label": "210010815",
+                "link": "",
+                "tech_tag": [
+                    "Linux",
+                    "C"
+                ],
+                "domain_tag": [
+                    "OS"
+                ],
+                "oR": [
+                    "openEuler操作系统上安装、部署、运行OFED。"
+                ],
+                "tR": [
+                    "1、 熟悉使用C语言进行开发。 2、 熟悉RDMA协议。 3、 熟悉OFED安装、部署、运行。"
+                ],
+                "orgID": 132,
+                "spl": 1,
+                "organchor": "openeuler",
+                "orgname": "openEuler社区||openEuler Community"
+            },
+            {
+                "name": "用Rust实现DPDK封装",
+                "remark": null,
+                "difficulty": "高",
+                "mentor": "潘老师",
+                "contact": "<pan.zheng@datenlord.io>",
+                "uniont": "王老师<pwang7@foxmail.com>",
+                "student_count": 0,
+                "description": "DPDK是Intel推出的开源高性能用户态网络协议栈，DPDK是用C实现的。本题要求实现DPDK的Rust safe封装，不能只是unsafe封装，使得Rust开发者可以用safe Rust开发DPDK程序。进一步，采用Rust异步编程实现DPDK封装有额外加分。    相关项目链接（仓库列表等）：  Rust异步：https://rust-lang.github.io/async-book/  DPDK：https://www.dpdk.org/",
+                "label": "210010816",
+                "link": "",
+                "tech_tag": [
+                    "Linux",
+                    "Rust"
+                ],
+                "domain_tag": [
+                    "OS",
+                    "Rust"
+                ],
+                "oR": [
+                    "1、 实现DPDK的Rust safe封装。",
+                    "2、 可选： 采用Rust异步编程实现DPDK封装。"
+                ],
+                "tR": [
+                    "1、 熟悉使用Rust语言进行开发。",
+                    "2、 熟悉Rust异步编程",
+                    "3、 熟悉DPDK开发。"
+                ],
+                "orgID": 132,
+                "spl": 1,
+                "organchor": "openeuler",
+                "orgname": "openEuler社区||openEuler Community"
+            },
+            {
+                "name": "基于openEuler操作系统搭建开源EDA工具OpenLane自动化处理流程",
+                "remark": null,
+                "difficulty": "中",
+                "mentor": "潘老师",
+                "contact": "<pan.zheng@datenlord.io>",
+                "uniont": "王老师<pwang7@foxmail.com>",
+                "student_count": 0,
+                "description": "OpenLane是开源的全流程EDA工具，可以实现从硬件描述语言RTL开发、逻辑综合、时序约束、布局布线、时钟树综合等等，直到生成最终流片用的GDSII文件。本题要求基于openEuler操作系统实现OpenLane自动化流程，每次提交RTL代码就自动触发EDA流程，OpenLane成功运行完毕，则自动保存GDSII文件，碰到任何错误就自动报错，发邮件通知代码提交者。    相关项目链接（仓库列表等）：  OpenLane：https://github.com/efabless/openlane  OpenLane Document: https://openlane.readthedocs.io/en/develop/",
+                "label": "210010817",
+                "link": "",
+                "tech_tag": [
+                    "Linux",
+                    "EDA"
+                ],
+                "domain_tag": [
+                    "OS"
+                ],
+                "oR": [
+                    "openEuler操作系统上安装、部署、运行OpenLane。"
+                ],
+                "tR": [
+                    "1、 熟悉EDA流程。",
+                    "2、 熟悉OpenLane安装、部署、运行。"
+                ],
+                "orgID": 132,
+                "spl": 1,
+                "organchor": "openeuler",
+                "orgname": "openEuler社区||openEuler Community"
+            },
+            {
+                "name": "UCX通信库的Rust异步封装",
+                "remark": null,
+                "difficulty": "中",
+                "mentor": "王老师",
+                "contact": "<wrji0408@gmail.com>",
+                "uniont": "王老师<pwang7@foxmail.com>",
+                "student_count": 0,
+                "description": "UCX 是一个高性能网络通信库，它作为 MPI 所依赖的通信模块之一在高性能计算领域得到广泛的使用。UCX 使用 C 语言编写，为了方便在 Rust 项目中使用它，我们需要将它的 C 接口包装成 Rust 库，并充分利用 Rust 的 async 协程来包装异步 IO 接口，从而极大降低应用的编程复杂度。目前我们已经对其中 UCP 的部分接口进行了包装，本项目需要实现者阅读 UCX 手册、参考现有代码，完成对 UCT 接口的 Rust 封装，并配合必要的文档、测试和示例代码。    相关项目链接（仓库）：  https://github.com/wangrunji0408/async-ucx  https://github.com/openucx/ucx  https://github.com/async-rdma/async-rdma",
+                "label": "210010818",
+                "link": "",
+                "tech_tag": [
+                    "Linux",
+                    "C"
+                ],
+                "domain_tag": [
+                    "OS"
+                ],
+                "oR": [
+                    "1、完成对 UCT 和剩余 UCP 接口的 Rust 封装",
+                    "2、对官方提供的示例程序 uct_hello_world 实现 Rust 版本",
+                    "3、按 Rust 社区标准，提供必要的文档、测试和示例代码，最终发布到 crates.io",
+                    "4、Bonus：完善 UCP Wakeup 接口，使得程序空闲时能够释放 CPU 资源",
+                    "5、Bonus：将 UCX 的编译集成到 Rust 库的构建过程中，使得开发者无需自己安装 UCX"
+                ],
+                "tR": [
+                    "1、会用 Rust 语言，了解 Rust 软件包的发布和维护过程",
+                    "2、理解 Rust 的 async 协程机制",
+                    "3、熟悉异步 IO 编程模式"
+                ],
+                "orgID": 132,
+                "spl": 1,
+                "organchor": "openeuler",
+                "orgname": "openEuler社区||openEuler Community"
+            },
+            {
+                "name": "将LFS-10.1-systemd项目进行openEuler适配",
+                "remark": "相关资料：\r\nLFS官网：https://www.linuxfromscratch.org/\r\nLFS-10.1-systemd指导手册: https://www.linuxfromscratch.org/lfs/downloads/10.1-systemd/\r\nopenEuler kernel仓：https://gitee.com/openeuler/kernel\r\nStratovirt: https://gitee.com/openeuler/stratovirt",
+                "difficulty": "中",
+                "mentor": "李老师",
+                "contact": "<libaolin@huawei.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "LFS，全称Linux From Scratch，是杰勒德·比克曼斯等人编写的安装Linux的教科书，描述了从源代码编译Linux系统的方法，比较适合高校学生了解学习Linux操作系统构成。目前LFS-10.1版本使用的是Linux kernel社区5.10版本内核，为促进高校学生学习openEuler的热情，本任务需要将LFS-10.1-systemd项目进行openEuler相关适配改造，如将LFS项目中的内核替换为openEuler-21.03版本内核（5.10）并书写新版LFS-10.1-systemd-openEuler构建指导手册。",
+                "label": "210010831",
+                "link": "",
+                "tech_tag": [
+                    "Linux"
+                ],
+                "domain_tag": [
+                    "Linux Kernel",
+                    "OS"
+                ],
+                "oR": [
+                    "将LFS-10.1-systemd项目中的内核替换为openEuler-21.03版本内核",
+                    "完成改造后的LFS-10.1-systemd-openEuler项目构建并启动成功",
+                    "将改造后的新系统镜像作为虚拟机镜像，通过qemu/StratoVirt创建虚拟机",
+                    "书写LFS-10.1-systemd-openEuler构建指导手册，格式参考LFS原有手册",
+                    "将相关成果贡献至openEuler社区"
+                ],
+                "tR": [
+                    "熟悉openEuler操作系统的安装使用",
+                    "熟悉软件包的编译安装并能解决编译问题",
+                    "shell脚本的熟练使用",
+                    "掌握qemu或StratoVirt至少一种VMM相关知识并能进行基本操作"
+                ],
+                "orgID": 132,
+                "spl": 1,
+                "organchor": "openeuler",
+                "orgname": "openEuler社区||openEuler Community"
+            },
+            {
+                "name": "为openEuler操作系统中安装的memcached应用进行性能调优",
+                "remark": null,
+                "difficulty": "中",
+                "mentor": "高老师",
+                "contact": "<bei540296467@yahoo.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "openEuler操作系统自带的A-Tune工具提供了系统性能自动调优tuning功能，利用AI技术实现可调参数的自动搜索和动态性能调优，可大大节省系统性能调优的人力投入。本次项目利用A-Tune tuning模块对memcached应用的性能进行调优。    相关项目链接（仓库列表等）：  https://gitee.com/openeuler/A-Tune",
+                "label": "210010832",
+                "link": "",
+                "tech_tag": [
+                    "Linux",
+                    "AI"
+                ],
+                "domain_tag": [
+                    "OS"
+                ],
+                "oR": [
+                    "输出memcached应用的默认基线性能报告",
+                    "输出memcached应用调优后的性能报告",
+                    "输出影响memcached应用性能的关键参数集",
+                    "将调优的结果提交到A-Tune代码仓"
+                ],
+                "tR": [
+                    "1、 熟悉Python/Go/Shell语言。 2、 熟悉memcached应用"
+                ],
+                "orgID": 132,
+                "spl": 1,
+                "organchor": "openeuler",
+                "orgname": "openEuler社区||openEuler Community"
+            },
+            {
+                "name": "为openEuler操作系统中安装的kafka应用进行性能调优",
+                "remark": null,
+                "difficulty": "中",
+                "mentor": "韩老师",
+                "contact": "<hanxinke@huawei.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "openEuler操作系统自带的A-Tune工具提供了系统性能自动调优tuning功能，利用AI技术实现可调参数的自动搜索和动态性能调优，可大大节省系统性能调优的人力投入。本次项目利用A-Tune tuning模块对kafka应用的性能进行调优。    相关项目链接（仓库）：  https://gitee.com/openeuler/A-Tune",
+                "label": "210010833",
+                "link": "",
+                "tech_tag": [
+                    "Linux"
+                ],
+                "domain_tag": [
+                    "AI",
+                    "OS"
+                ],
+                "oR": [
+                    "输出kafka应用的默认基线性能报告",
+                    "输出kafka应用调优后的性能报告",
+                    "输出影响kafka应用性能的关键参数集",
+                    "将调优的结果提交到A-Tune代码仓"
+                ],
+                "tR": [
+                    "熟悉Python/Go/Shell语言",
+                    "熟悉kafka应用"
+                ],
+                "orgID": 132,
+                "spl": 1,
+                "organchor": "openeuler",
+                "orgname": "openEuler社区||openEuler Community"
+            },
+            {
+                "name": "为openEuler操作系统中安装的TiDB应用进行性能调优",
+                "remark": null,
+                "difficulty": "中",
+                "mentor": "黄老师",
+                "contact": "<huangduirong@huawei.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "openEuler操作系统自带的A-Tune工具提供了系统性能自动调优tuning功能，利用AI技术实现可调参数的自动搜索和动态性能调优，可大大节省系统性能调优的人力投入。本次项目利用A-Tune tuning模块对TiDB应用的性能进行调优。    相关项目链接（仓库）：  https://gitee.com/openeuler/A-Tune",
+                "label": "210010834",
+                "link": "",
+                "tech_tag": [
+                    "Linux"
+                ],
+                "domain_tag": [
+                    "AI",
+                    "OS"
+                ],
+                "oR": [
+                    "输出TiDB应用的默认基线性能报告",
+                    "输出TiDB应用调优后的性能报告",
+                    "输出影响TiDB应用性能的关键参数集",
+                    "将调优的结果提交到A-Tune代码仓"
+                ],
+                "tR": [
+                    "熟悉Python/Go/Shell语言",
+                    "熟悉TiDB应用"
+                ],
+                "orgID": 132,
+                "spl": 1,
+                "organchor": "openeuler",
+                "orgname": "openEuler社区||openEuler Community"
+            },
+            {
+                "name": "为openEuler操作系统中安装的gaussdb应用进行性能调优",
+                "remark": null,
+                "difficulty": "中",
+                "mentor": "谢老师",
+                "contact": "<xiezhipeng1@huawei.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "openEuler操作系统自带的A-Tune工具提供了系统性能自动调优tuning功能，利用AI技术实现可调参数的自动搜索和动态性能调优，可大大节省系统性能调优的人力投入。本次项目利用A-Tune tuning模块对gaussdb应用的性能进行调优。、    相关项目链接（仓库列表等）：  https://gitee.com/openeuler/A-Tune",
+                "label": "210010835",
+                "link": "",
+                "tech_tag": [
+                    "Linux"
+                ],
+                "domain_tag": [
+                    "AI",
+                    "OS"
+                ],
+                "oR": [
+                    "输出gaussdb应用的默认基线性能报告",
+                    "输出gaussdb应用调优后的性能报告",
+                    "输出影响gaussdb应用性能的关键参数集",
+                    "将调优的结果提交到A-Tune代码仓"
+                ],
+                "tR": [
+                    "熟悉Python/Go/Shell语言",
+                    "熟悉gaussdb应用"
+                ],
+                "orgID": 132,
+                "spl": 1,
+                "organchor": "openeuler",
+                "orgname": "openEuler社区||openEuler Community"
+            },
+            {
+                "name": "识别软件包里的Python脚本与其调用的系统命令和服务",
+                "remark": "项目详细描述：https://gitee.com/openeuler-competition/summer-2021/issues/I3R99W?from=project-issue",
+                "difficulty": "高",
+                "mentor": "李老师",
+                "contact": "<lijunyi088@163.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "赛题背景：    RPM软件包中会存在一些 Shell或Python脚本 ，他们会调用一些系统命令和服务，通常情况下，是需要我们实际执行这些脚本才能知道他们执行了哪些操作，调用了什么系统命令或服务， 各位聪明开发者们 ，如果我们能在不执行的情况下，识别出这些脚本所进行的操作（正则，NLP等等方法），就能提前对 软件兼容性 进行分析，本次赛题需要你能 识别Python脚本 ，并进行分析。    赛题描述：    识别出RPM软件包里的所有存在的Python脚本，并识别出对应Python脚本调用的系统命令和服务    补充说明：    假设一个rpm包是 xxx-1.0.rpm 另外一个是他的升级版 xxx-2.0.rpm，通过对比两个rpm包中的脚本的差异（得分细节条目2，3，4），就可以解决部分软件兼容性的问题，软件兼容性问题对操作系统意义重大！",
+                "label": "210010836",
+                "link": "",
+                "tech_tag": [
+                    "Linux",
+                    "Python"
+                ],
+                "domain_tag": [
+                    "OS"
+                ],
+                "oR": [
+                    "输入：一个RPM软件包",
+                    "输出：报告形式不限，可以是直接页面打印，Excel，PDF等形式",
+                    "得分细节：  给定RPM包，识别RPM包里所有的Python脚本，也有可能没有（10%）  在上一条基础上，识别出脚本中带有启动，关闭，重启操作的系统服务（10%）  在上一条基础上，识别出脚本调用的系统命令，例如/bin目录下的命令（20%）  在上一条基础上，识别出该命令是RPM软件包自己带的还是操作系统的，例如/bin目录下的命令就是操作系统自带的，不是软件包的（30%）",
+                    "附加得分：  在完成以上至少2项基础功能之上，可以做出漂亮的UI界面，web端等漂亮的可交互界面（+30%） 在完成以上至少2项基础功能之上，可以批量识别大量软件包（100+数量以上）并批量产出报告（+30%） 在完成以上至少2项基础功能之上，可以输入两个以上的RPM软件包，对得分细节中条目2，3，4的结果进行对比，输出可视化差异报告（+%30）"
+                ],
+                "tR": [
+                    "熟悉linux操作系统",
+                    "熟练掌握Python脚本"
+                ],
+                "orgID": 132,
+                "spl": 1,
+                "organchor": "openeuler",
+                "orgname": "openEuler社区||openEuler Community"
+            },
+            {
+                "name": "识别软件包里的Shell脚本与其调用的系统命令和服务",
+                "remark": "项目详细描述：https://gitee.com/openeuler-competition/summer-2021/issues/I3R9IQ?from=project-issue",
+                "difficulty": "高",
+                "mentor": "李老师",
+                "contact": "<lijunyi088@163.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "赛题背景：    RPM软件包中会存在一些 Shell或Python脚本 ，他们会调用一些系统命令和服务，通常情况下，是需要我们实际执行这些脚本才能知道他们执行了哪些操作，调用了什么系统命令或服务， 各位聪明开发者们 ，如果我们能在不执行的情况下，识别出这些脚本所进行的操作（正则，NLP等等方法），就能提前对 软件兼容性 进行分析，本次赛题需要你能 识别Shell脚本 ，并进行分析。    赛题描述：    识别出RPM软件包里所有的Shell脚本，并识别出对应Shell脚本调用的系统命令和服务",
+                "label": "210010838",
+                "link": "",
+                "tech_tag": [
+                    "Linux",
+                    "shell"
+                ],
+                "domain_tag": [
+                    "OS"
+                ],
+                "oR": [
+                    "输入：一个RPM软件包",
+                    "输出：报告形式不限，可以是直接页面打印，Excel，PDF等形式",
+                    "得分细节：  给定RPM包，识别RPM包里所有的Shell脚本，也有可能没有（10%）  在上一条基础上，识别出脚本中带有启动，关闭，重启操作的系统服务（10%）  在上一条基础上，识别出脚本调用的系统命令，例如/bin目录下的命令（20%）  在上一条基础上，识别出该命令是RPM软件包自己带的还是操作系统的，例如/bin目录下的命令就是操作系统自带的，不是软件包的（30%）",
+                    "附加得分：  在完成以上至少2项基础功能之上，可以做出漂亮的UI界面，web端等漂亮的可交互界面（+30%） 在完成以上至少2项基础功能之上，可以批量识别大量包并批量产出报告（+30%） 在完成以上至少2项基础功能之上，可以输入两个以上的RPM软件包，对得分细节中条目2，3，4的结果进行对比，输出可视化差异报告（+%30）",
+                    "补充说明：  假设一个rpm包是 xxx-1.0.rpm 另外一个是他的升级版 xxx-2.0.rpm，通过对比两个rpm包中的脚本的差异（得分细节条目2，3，4），就可以解决部分软件兼容性的问题，软件兼容性问题对操作系统意义重大！"
+                ],
+                "tR": [
+                    "熟悉linux操作系统",
+                    "熟练掌握Shell脚本"
+                ],
+                "orgID": 132,
+                "spl": 1,
+                "organchor": "openeuler",
+                "orgname": "openEuler社区||openEuler Community"
+            },
+            {
+                "name": "openEuler社区官网和文档官网SEO优化",
+                "remark": null,
+                "difficulty": "低",
+                "mentor": "郑老师",
+                "contact": "<zhengyuhang@huawei.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "目前openEuler社区官网(https://openeuler.org/)和文档官网(https://docs.openeuler.org/) 的SEO表现不是很好，亟待优化。(本次任务仅针对百度搜索SEO优化)  目前项目组已经对两个官网的SEO现状进行了分析，需要您参与一起完成：  1.使用工具或者白盒方法，对已有两个官网的SEO现状进行分析，对目前已有的分析报告提出建议和补充；  2.针对分析报告和改进点，对两个官网进行SEO优化，优化代码提交并合入到代码仓库；  3.输出SEO优化前后对比报告；  4.针对SEO的改进点，形成规范文档，指导贡献者（例如博客提交的SEO规范），避免随着贡献越来越多，SEO性能再次下降。",
+                "label": "210010839",
+                "link": "",
+                "tech_tag": [
+                    "Linux",
+                    "vuepress"
+                ],
+                "domain_tag": [
+                    "OS",
+                    "SEO"
+                ],
+                "oR": [
+                    "输出明确的开发计划，并按时完成；",
+                    "(加分项)使用工具或者白盒方法，对已有两个官网的SEO现状进行分析，对目前已有的分析报告提出建议和补充；",
+                    "针对分析报告和改进点，对两个官网进行SEO优化，优化代码提交并合入到代码仓库；",
+                    "输出优化前后SEO效果对比报告；",
+                    "针对SEO的改进点，形成规范文档，指导贡献者（例如博客提交的写作规范等）贡献代码和内容。"
+                ],
+                "tR": [
+                    "了解SEO优化手段，有相关实践经验更加；",
+                    "了解vuepress（openEuler官网基础框架）、hugo（docs官网基础框架）、Javascript、node.js等网站本地部署&开发所需的框架、工具和技术；",
+                    "了解git使用方法，了解fork开发模式；",
+                    "熟悉markdown写作。"
+                ],
+                "orgID": 132,
+                "spl": 1,
+                "organchor": "openeuler",
+                "orgname": "openEuler社区||openEuler Community"
+            },
+            {
+                "name": "智能分析可执行文件命令的差异",
+                "remark": "附示例图片的详细项目描述见：https://gitee.com/openeuler-competition/summer-2021/issues/I3RC9K?from=project-issue\r\n\r\n给开发者们的建议：\r\n\r\n我相信聪明的你们已经想到，可以通过man，help这样的方式结合diff来判断参数变化，当然这样是可以的，但是这样不符合题目的要求：智能分析和尽可能通过不执行的方式。所以我们希望你通过解析文件的方式来完成以上分析，例如NLP，词法分析或者建立正则库解析参数。",
+                "difficulty": "中",
+                "mentor": "李老师",
+                "contact": "<lijunyi088@163.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "项目背景：    聪明的开发者们，相信你们一定体会过升级系统或者软件带来的快乐，但看着软件版本号的上升带来的却是各处不兼容的痛苦，正所谓升级一时爽，事后哈哈哈！    在Linux操作系统中，软件版本升级会导致一些可执行文件命令的变化，例如/bin目录下的一些文件命令变化，如果有其他程序调用了些变化了的命令，一定就会出现各种Error，对此我们需要你的帮助！    项目描述：    给定两个可执行文件，尽可能通过不执行的方式，智能分析出这两个可执行文件命令的差异    提示1：这些可执行文件可能是shell脚本，可能是python脚本，也可能是二进制文件    提示2：这些命令的参数可能会发生变化，下面我举两个例子，测试的命令脚本可以在这里下载：https://gitee.com/lovelijunyi/summer-2021_testfile    可以看到exe-tool-1.0升级为exe-tool-2.0后命令参数发生了差异，2.0减少了-L参数",
+                "label": "210010840",
+                "link": "",
+                "tech_tag": [
+                    "Linux"
+                ],
+                "domain_tag": [
+                    "OS"
+                ],
+                "oR": [
+                    "输入：两个可执行文件",
+                    "输出：差异报告，报告形式不限，可以是直接页面打印，Excel，PDF等形式",
+                    "得分细节（请先仔细阅读上述2点提示）：  首先需要能识别出可执行文件的类型，python还是shell还是二进制bin文件（5%） 在上一条的基础上，三种不同的情况，走不同的分支，判断执行命令的参数是否有差异，这里不判断执行情况（15%） 在上一条的基础上，判断命令的执行实际结果是否有差异（15%） 在上一条的基础上，将差异结果进行汇总分析，并输出可以阅读的报告（25%）",
+                    "附加得分：  在完成以上至少2项基础功能之上，可以做出漂亮的UI界面，web端等漂亮的可交互界面（+30%） 在全部完成以上功能之上，可以批量识别大批量（100+）三种类型的脚本，并输出差异比对报告（+40%）"
+                ],
+                "tR": [
+                    "熟悉linux操作系统",
+                    "熟练掌握Shell脚本"
+                ],
+                "orgID": 132,
+                "spl": 1,
+                "organchor": "openeuler",
+                "orgname": "openEuler社区||openEuler Community"
+            },
+            {
+                "name": "DPDK，SPDK 用户态驱动开发和兼容性测试用例补充",
+                "remark": "参考网址\r\n（1）SPDK Community Home Page : http://www.SPDK.io/\r\n（2）Github : https://github.com/spdk/spdk\r\n（3）Trello : https://trello.com/spdk\r\n（4）GerritHub : https://review.gerrithub.io/#/q/project:spdk/spdk+status:open\r\n（5）IRC : https://freenode.net/",
+                "difficulty": "中",
+                "mentor": "姚老师",
+                "contact": "<neil.yao@huawei.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "本项目主要为运行于openEuler系统的oec-hardware硬件兼容性套件，增加DPDK和SPDK技术方面的通用验证能力。对支持DPDK的硬件（包括CPU和NIC），支持SPDK的NVMe存储硬件，提供兼容性验证和性能验证能力，包括用户态驱动的加载和卸载，网卡数据传输和NVMe存储盘读写的性能测试。",
+                "label": "210010841",
+                "link": "",
+                "tech_tag": [
+                    "Linux"
+                ],
+                "domain_tag": [
+                    "OS"
+                ],
+                "oR": [
+                    "DPDK和SPDK用户态驱动的编写",
+                    "完成DPDK和SPDK用户态驱动和oec-hardware硬件兼容性套件的集成，能识别支持DPDK的硬件（包括CPU和NIC），支持SPDK的NVMe存储硬件，并完成硬件的初始化和驱动加载",
+                    "编写DPDK和SPDK的通用用例，完成对支持DPDK的硬件（包括CPU和NIC），支持SPDK的NVMe存储硬件的数据传输和读写的性能测试"
+                ],
+                "tR": [
+                    "熟悉linux，大内存页hug pages技术，kernel bypass技术",
+                    "熟悉DPDK和SPDK的基本原理和编程接口"
+                ],
+                "orgID": 132,
+                "spl": 1,
+                "organchor": "openeuler",
+                "orgname": "openEuler社区||openEuler Community"
+            },
+            {
+                "name": "基于secGear机密计算框架实现软件TPM",
+                "remark": null,
+                "difficulty": "高",
+                "mentor": "高老师",
+                "contact": "<gaoguijin@huawei.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "TPM（Trusted Platform Module）安全芯片是指符合TPM国际标准的芯片。通过机密计算硬件及软件技术，可以实现符合标准的软件TPM，为无硬件TPM的平台提供TPM安全能力。openEuler社区提供secGear机密计算框架，支持开发者机密计算应用。  相关项目链接（仓库列表等）：  https://gitee.com/openeuler/secGear",
+                "label": "210010842",
+                "link": "",
+                "tech_tag": [
+                    "Linux"
+                ],
+                "domain_tag": [
+                    "OS",
+                    "安全"
+                ],
+                "oR": [
+                    "实现符合TPM2.0规范的密钥生成、管理及使用特性",
+                    "实现符合TPM2.0规范的软件可信度量特性",
+                    "实现符合TPM2.0规范的数据加封解封特性",
+                    "输出用户使用手册",
+                    "代码提交至openEuler sig-confidential-computing"
+                ],
+                "tR": [
+                    "熟悉基于硬件安全执行环境的机密计算技术",
+                    "熟悉TPM安全芯片及标准，以及可信计算技术",
+                    "熟悉C语言"
+                ],
+                "orgID": 132,
+                "spl": 1,
+                "organchor": "openeuler",
+                "orgname": "openEuler社区||openEuler Community"
+            },
+            {
+                "name": "openEuler社区体验地图的Web 3D小游戏开发",
+                "remark": null,
+                "difficulty": "中",
+                "mentor": "郑老师",
+                "contact": "<zhengyuhang@huawei.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "我们打算做一个基于openEuler社区体验地图的Web 3D小游戏（欧拉大陆）,游戏介绍如下：  1.用户通过控制游戏人物探索欧拉大陆，完成openEuler全场景体验；  2.无账号系统，无后端保存功能。  我们有专门体验团队负责游戏剧本、3D模型、音乐等素材的准备，只需要您参与进来：  1.基于已有的游戏剧本、3D模型、音乐等素材，使用Cocos Creator完成游戏场景搭建和游戏脚本（TypeScript）开发和完善；  2.发布游戏，并且上线到openEuler社区官网。",
+                "label": "210010843",
+                "link": "",
+                "tech_tag": [
+                    "TypeScript"
+                ],
+                "domain_tag": [
+                    "Programming Language",
+                    "游戏开发"
+                ],
+                "oR": [
+                    "1.了解3D游戏开发概念和流程；",
+                    "2.了解Cocos Creator、Unity等3D游戏制作平台，有相关实践经验和作品更佳；",
+                    "3.熟悉前端编程语言和相关技术，了解或使用过过TypeScript更佳；",
+                    "4.有良好的编程习惯；",
+                    "5.熟练使用git，熟悉fork开发模式。"
+                ],
+                "tR": [
+                    "1.制定明确的开发计划，并按时完成；",
+                    "2.完成游戏的开发和交付，作品效果与设计稿一致；",
+                    "3.产出代码贡献到openEuler仓库，并完成合入；",
+                    "4.完成游戏上线到openEuler社区官网。"
+                ],
+                "orgID": 132,
+                "spl": 1,
+                "organchor": "openeuler",
+                "orgname": "openEuler社区||openEuler Community"
+            },
+            {
+                "name": "适配回合upstream社区qemu 4.2的microvm等Feature",
+                "remark": null,
+                "difficulty": "低",
+                "mentor": "邢老师",
+                "contact": "<xingchaochao@huawei.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "Centos 8.1版本当前最新版本是qemu 4.2，因为Centos停服有部分客户期望从centos切换到openEuler版本，但是期望切换到openEuler qemu 4.1后，希望4.2特性不丢失。    相关链接：  https://gitee.com/openeuler/qemu/wikis/qemu%204.2%20Feature%E5%9B%9E%E5%90%88?sort_id=4017367  https://www.qemu.org/2019/12/13/qemu-4-2-0/",
+                "label": "210010844",
+                "link": "",
+                "tech_tag": [
+                    "Linux",
+                    "qemu"
+                ],
+                "domain_tag": [
+                    "OS"
+                ],
+                "oR": [
+                    "回合upstream的qemu 4.2版本里已经明确9个Feature到openEuler qemu 4.1分支；",
+                    "对这些Feature做基本验证，确保回合后特性无低级质量问题；",
+                    "分析openEuler qemu 4.1至今qemu最新版本（当前为qemu 6.1）中各个版本价值特性列表，给出回合建议；"
+                ],
+                "tR": [
+                    "熟悉C语言能独立开发小型系统程序；",
+                    "了解qemu组件，了解虚拟化基本技术原理；"
+                ],
+                "orgID": 132,
+                "spl": 1,
+                "organchor": "openeuler",
+                "orgname": "openEuler社区||openEuler Community"
+            },
+            {
+                "name": "开发Linux 跨进程共享地址空间引擎",
+                "remark": null,
+                "difficulty": "高",
+                "mentor": "黎老师",
+                "contact": "<liliang6@me.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "现代的 Linux 操作系统中的用户态程序均基于 Virtual Address。不用用户态程序的 Virtual Address 相互独立，即用户态程序独占各自的 Virtual Address Space。当两个或者多个进程进行进程间通信时，通过基于 share memory 的 IPC 机制可以将不同 Virtual Address Space 中的 Virtual Address 指向相同的 physical memory。但 App1 中 “共享内存” 所占用的 Virtual Address 和 App2 中 “共享内存” 所占用 的 Virtual Address 可能并不相同。试想有一个 ‘SVA engine’，通过 ‘SVA engine’ 提供的操作接口，将多个 APP 挂载到 ‘SVA engine’ 上。挂载到 ‘SVA engine’ 上同一个 ‘channel’ 的 APP 将共享 Virtual Address Space 中的一段或者多段虚拟地址。",
+                "label": "210010846",
+                "link": "",
+                "tech_tag": [
+                    "Linux"
+                ],
+                "domain_tag": [
+                    "OS"
+                ],
+                "oR": [
+                    "独立的内核模块，可支持 Linux 进程共享（分段的）虚拟地址空间；",
+                    "对 Linux 内核尽量小的侵入式改动；",
+                    "2 个以上的 Linux demo app，可以直接通过 SVA 共享数据结构；"
+                ],
+                "tR": [
+                    "基于 openEuler 内核",
+                    "基本 ARM64 体系架构",
+                    "独立的内核模块实现",
+                    "支持 4 个以上的进程共享分段的虚拟地址空间",
+                    "支持进程动态分享虚拟地址空间"
+                ],
+                "orgID": 132,
+                "spl": 1,
+                "organchor": "openeuler",
+                "orgname": "openEuler社区||openEuler Community"
+            },
+            {
+                "name": "开源项目开发者组织识别",
+                "remark": null,
+                "difficulty": "高",
+                "mentor": "李老师",
+                "contact": "<lixianlin1@huawei.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "目前各平台的开发者都是离散的，没有任何关联，运营团队识别不了商业价值和贡献。    通过各平台的开发者信息，识别出其所属组织，便于体现出社区的商业价值，以及指导运营人员引导组织进行合作，扩展社区的能力。    本任务会提供源数据供同学们研究。数据包括多个平台的样本数据。",
+                "label": "210010847",
+                "link": "",
+                "tech_tag": [
+                    "Python",
+                    "Java"
+                ],
+                "domain_tag": [
+                    "Big Data"
+                ],
+                "oR": [
+                    "输出开源项目组织视图数据表",
+                    "输出开源项目组织关系视图数据表",
+                    "输出开源项目开发者组织关系分布视图数据表"
+                ],
+                "tR": [
+                    "了解linux操作系统",
+                    "熟悉java、python",
+                    "了解数据结构、特征工程等"
+                ],
+                "orgID": 132,
+                "spl": 1,
+                "organchor": "openeuler",
+                "orgname": "openEuler社区||openEuler Community"
             }
         ]
     },
@@ -10994,12 +11964,12 @@
         "description": "一款开源的 Kubernetes 发行版容器平台||Enterprise-grade container platform tailored for multicloud and multi-cluster management",
         "full_des": "<a href=\"https://kubesphere.io/\" target=\"_blank\" >KubeSphere</a>是在<a href=\"https://https://kubernetes.io/\" target=\"_blank\" >Kubernetes</a>之上构建的面向云原生应用的分布式操作系统，完全开源，支持多云与多集群管理，提供全栈的 IT 自动化运维能力，简化企业的 DevOps 工作流。它的架构可以非常方便地使第三方应用与云原生生态组件进行即插即用 (plug-and-play) 的集成。||<a href=\"https://kubesphere.io/\" target=\"_blank\" >KubeSphere</a> is a distributed operating system providing cloud native stack with <a href=\"https://https://kubernetes.io/\" target=\"_blank\" >Kubernetes</a> as its kernel, and aims to be plug-and-play architecture for third-party applications seamless integration to boost its ecosystem. KubeSphere is also a multi-tenant enterprise-grade container platform with full-stack automated IT operation and streamlined DevOps workflows.",
         "tech_tag": [
+            "Go",
             "Kubernetes",
+            "Docker",
             "DevOps",
-            "ServiceMesh",
-            "Golang",
-            "Prometheus",
-            "Docker"
+            " ServiceMesh",
+            " Prometheus"
         ],
         "domain_tag": [
             "云原生",
@@ -11050,7 +12020,7 @@
             },
             {
                 "name": "Notification Manager 发送通知到 pushover",
-                "remark": null,
+                "remark": "",
                 "difficulty": "中",
                 "mentor": "霍秉杰",
                 "contact": "<benjamin@yunify.com>",
@@ -11122,13 +12092,13 @@
             },
             {
                 "name": "集成 Gatekeeper 【KubeSphere Gatekeeper Integration】",
-                "remark": "更多项目详情：https://github.com/kubesphere/community/blob/master/sig-advocacy-and-outreach/summer-ospp/kubesphere-gatekeeper-integration_zh-CN.md\r\n\r\n【More project details：https://github.com/kubesphere/community/blob/master/sig-advocacy-and-outreach/summer-ospp/kubesphere-gatekeeper-integration_zh-CN.md】",
+                "remark": "More project details：https://github.com/kubesphere/community/blob/master/sig-advocacy-and-outreach/summer-ospp/kubesphere-gatekeeper-integration_zh-CN.md\r\n\r\n【更多项目详情：https://github.com/kubesphere/community/blob/master/sig-advocacy-and-outreach/summer-ospp/kubesphere-gatekeeper-integration_zh-CN.md】",
                 "difficulty": "中",
                 "mentor": "万宏明",
                 "contact": "<coder.scala@gmail.com>",
                 "uniont": "马岩<rolandma@yunify.com>",
                 "student_count": 0,
-                "description": "目标：将 Gatekeeper 集成到 KubeSphere，支持一些基础、通用的准入策略配置。  背景：Kubernetes 允许通过 admission webhooks 将策略决策与 API 服务的内部工作解耦，每当创建、更新或删除资源时都会执行这些策略。Gatekeeper 提供了一个 validating webhook，它强制执行由 Open Policy Agent 执行的基于 CRD 的策略，我们可以在 KubeSphere 集成 Gatekeeper 提供的策略管理功能，通过 CRD 来管理一些常用的规则策略。  详情：Open Policy Agent, CNCF孵化中的应用于云原生环境的规则策略引擎。 Gatekeeper, 基于K8s admission webhook 和 OPA 的策略管理工具。  我们希望集成 Gatekeeper 到 KubeSphere 中，管理一些基础的策略，例如：必须使用受信任的镜像仓库、部署的工作负载必须包含必填的控制字段。  【Open Policy Agent, a policy engine for Cloud Native environments hosted by CNCF as an incubation-level project. Gatekeeper, policy management tool based on K8s admission webhook and OPA.    We want to integrate Gatekeeper into KubeSphere as an admission policy engine.】",
+                "description": "目标：将 Gatekeeper 集成到 KubeSphere，支持一些基础、通用的准入策略配置。  背景：Kubernetes 允许通过 admission webhooks 将策略决策与 API 服务的内部工作解耦，每当创建、更新或删除资源时都会执行这些策略。Gatekeeper 提供了一个 validating webhook，它强制执行由 Open Policy Agent 执行的基于 CRD 的策略，我们可以在 KubeSphere 集成 Gatekeeper 提供的策略管理功能，通过 CRD 来管理一些常用的规则策略。  详情：Open Policy Agent, CNCF孵化中的应用于云原生环境的规则策略引擎。 Gatekeeper, 基于K8s admission webhook 和 OPA 的策略管理工具。  我们希望集成 Gatekeeper 到 KubeSphere 中，管理一些基础的策略，例如：必须使用受信任的镜像仓库、部署的工作负载必须包含必填的控制字段。||Open Policy Agent, a policy engine for Cloud Native environments hosted by CNCF as an incubation-level project. Gatekeeper, policy management tool based on K8s admission webhook and OPA.    We want to integrate Gatekeeper into KubeSphere as an admission policy engine.    ",
                 "label": "210030538",
                 "link": "",
                 "tech_tag": [
@@ -11239,15 +12209,18 @@
         "description": "高性能、高可用、高可靠分布式存储系统||A  High-performance, high-availability, and high-reliability distributed storage system",
         "full_des": "CURVE是网易自主设计研发的高性能、高可用、高可靠分布式存储系统，具有非常良好的扩展性。基于该存储底座可以打造适用于不同应用场景的存储系统，如块存储、对象存储、云原生数据库等。当前我们基于CURVE已经实现了高性能块存储系统，支持快照克隆和恢复 ,支持QEMU虚拟机和物理机NBD设备两种挂载方式, 在网易内部作为高性能云盘使用。||CURVE is a distributed storage system designed and developed independently by NetEase, featured with high performance, high availability, high reliability and well expansibility, and it can serve as the basis for storage systems designed for different scenario (e.g. block storage, object storage and cloud database).    So far, we have implemented a high performance block storage system, which supports snapshot, clone and recovery, and it can be attached to QEMU virtual machine or physical machine (by curve-nbd). CURVE has been served as an elastic block storage service inside NetEase for a certain time, during which high performance and reliability have shown.",
         "tech_tag": [
-            "distributed",
-            "block storage",
-            "high performance"
+            "Linux",
+            "C++",
+            "Distributed System",
+            "Storage"
         ],
         "domain_tag": [
-            "高性能分布式存储"
+            "Cloud Native",
+            "Distributed System",
+            "block storage"
         ],
-        "mail_list": "Wang Pan, <hzwangpan@corp.netease.com>, @aspirer",
-        "email": "storage_mgm@163.com](mailto:storage_mgm@163.com)",
+        "mail_list": "hzwangpan@corp.netease.com  lixiaocui1@corp.netease.com  hzchenwei7@corp.netease.com  xuchaojie@corp.netease.com  wuhanqing@corp.netease.com  chenyunhui@corp.netease.com  wanghai01@corp.netease.com  huyao@corp.netease.com",
+        "email": "storage_mgm@163.com",
         "project_list": [
             {
                 "name": "ChunkServer端client模块增加打开文件缓存超时或淘汰策略",
@@ -11474,18 +12447,15 @@
         "description": "一个开源、免费的在大学校园里很活跃的操作系统，有操作系统内核，也有图形化的界面。",
         "full_des": "Bookos是一个培养中国青少年操作系统人才的社区，社区是有组织的运营的。主要是引导对操作系统感兴趣的高中生和大学生系统的学习的操作系统，从感兴趣难入门，到能在大学实现一个简单的操作系统，社区由胡自成负责bookos的技术和代码开发，李石亮负责引导喜爱底层的大学生做系统性的学习引导从算法，简单的程序结构，到简单的操作系统实现。万晓兰老师负责经济上的支持。到目前为止，有核心的社区人员30-40人，比较松散的成员有80人左右，更松散的qq群有700人。核心的社区人员其中8人都实现过简单的操作系统。开发的主要工作是由胡自成等5人完成，其他核心成员一起讨论技术问题，提供企业的信息，给出实现的建议。李石亮和万晓兰负责解决学生中的困难和就业上的困难，让他们安心的学习底层的技术，做到学习底层和就业两方面不耽误。",
         "tech_tag": [
-            "操作系统",
-            "Git",
-            "GCC",
-            "内核"
+            "Linux",
+            "C"
         ],
         "domain_tag": [
-            "操作系统",
-            "内核",
-            "人才的培养"
+            "Linux Kernel",
+            "OS"
         ],
-        "mail_list": "",
-        "email": "2323168280@qq.com 胡自成",
+        "mail_list": "2323168280@qq.com 胡自成  1940629296@qq.com 李石亮",
+        "email": "1940629296@qq.com",
         "project_list": [
             {
                 "name": "Bookos 内存管理页面交换模块",
@@ -11732,20 +12702,32 @@
         "description": "大数据流水线管理与调度系统",
         "full_des": "PiFlow是一款基于分布式计算Spark开发的大数据流水线系统，以所见即所得的简洁方式，实现大数据采集、处理、存储与分析流程化配置、运行与智能监控，提供了100+的标准化数据处理组件， 包括Hadoop 、Spark、MLlib、Hive、Solr、Redis等。支持面向领域、灵活的二次组件开发。具备亿级数据的ETL处理能力，性能优越，支持数据溯源。同步开源在github/gitee社区。获GVP-码云最有价值开源项目奖、首届\"中国开源软件创意大赛\"二等奖。目前已应用至6家企业中，场景包括大数据处理框架、数据资产管理、医疗健康大数据、机器学习、知识图谱构建等。",
         "tech_tag": [
-            "Scala",
-            "Java",
+            "Linux",
             "Python",
-            "Maven",
-            "Git"
+            "Java",
+            "JavaScript",
+            "Distributed System",
+            "Git",
+            "Docker",
+            "Scala",
+            "Spark",
+            "Hadoop",
+            "Flink",
+            "Hive",
+            "HBase",
+            "ElasticSearch",
+            "Solr",
+            "Redis",
+            "..."
         ],
         "domain_tag": [
-            "大数据处理",
-            "流水线",
-            "调度",
-            "机器学习"
+            "AI",
+            "Big Data",
+            "Web",
+            "Big data pipe line"
         ],
-        "mail_list": "",
-        "email": "",
+        "mail_list": "xjzhu@cnic.cn  zjp@cnic.cn  sxideal@163.com  06whuxx@163.com  ygang@cnic.cn  bf219319@163.com  songdongze@cnic.cn  anhong12@cnic.cn",
+        "email": "xjzhu@cnic.cn",
         "project_list": [
             {
                 "name": "基于Flink的Kafka组件开发",
@@ -12163,25 +13145,26 @@
         "description": "Wechaty is a Conversational RPA SDK for Chatbot Makers to build WeChat and Whatsapp bots with ease.",
         "full_des": "Conversational RPA SDK Wechaty 是一个开源聊天机器人框架SDK，于 2016 年发布于 GitHub，是一个基于 Apache-2.0 许可证的开源项目，具有高度封装、高可用的特性，支持 NodeJs,  Python,  Go 和 Java 等多语言版本。\n 经过4年多的发展，现在 Wechaty 开源社区已经拥有数十位 Committers，百余位 Contributors ，并被近万名 GitHub 开发者 Star 。使用 Wechaty 的开发者已覆盖数万人，并拥有基于微信群的数千人活跃开发者群。Wechaty 社区的 Contributors 遍布全球多个国家地区，和各大互联网公司，职业背景从程序员到设计师，从大学教授到创业者，非常多样化。GitHub 上有千余个开源项目基于 Wechaty 构建了聊天机器人，这些开发者用户也极大地促进了社区的活跃和发展。\nWechaty自身对代码质量的管理，使用了 GitHub Actions 的 DevOps 工具完成了 CI/CD 工作流，从自动化单元测试到自动打包集成测试，从自动发布 NPM 包到自动构建和发布对应版本的 Docker Image ，实现了全自动的社区代码发布，极大的提高了社区的协同效率。在开源社区管理上，Wechaty 遵循 The Apache Way ，拥有 PMC / Committer 管理制度，和完善的 Issue / PR / Release 等管理制度。\n截止2020年，Wechaty 已经有超百万次 NPM 安装下载，并由社区自发推动了 Python, Go, Java, Scala, CSharp, PHP 等语言的适配和发布，是国内最活跃的 Conversational AI Chatbot 开发者社区。Wechaty 支持的功能包括：接收消息，发送消息、添加好友、为好友备注、接受好友请求、发起群聊、加人入群等功能。只需要6行代码，你就可以 通过个人号 搭建一个 微信机器人功能 ，用来自动管理微信消息。\n更多功能包括：\n消息处理：关键词回复\n群管理：自动入群，拉人，踢人\n自动处理好友请求\n智能对话：通过简单配置，即可加入智能对话系统，完成指定任务||Wechaty is a Conversational RPA SDK for chatbot makers that can create a bot in 6 lines of code with the most popular IMs like WeChat, Whatsapp, WeCom, Gitter, etc.\nLong Description (may include limited Markdown up to 2000 characters):Wechaty is a Conversational RPA (Robotic Process Automation) SDK for Chatbot Makers which can create a bot in 6 lines of JavaScript, Python, Go, Java, .NET, PHP, and Scala, with cross-platform support including Linux, Windows, macOS, and Docker, on top of the most popular IMs like WeChat, Whatsapp, WeCom, Gitter, etc.",
         "tech_tag": [
-            "Conversational",
-            "AI",
-            "RPA",
-            "NLP",
-            "TypeScript",
+            "Go",
             "Python",
-            "MachineLearning",
-            "DeepLearning",
-            "Docker",
-            "DevOps",
-            "Node.js"
+            "Java",
+            "JavaScript",
+            "PHP",
+            "NodeJS",
+            "AI",
+            "Deep Learning Framework",
+            "TypeScript",
+            "NLP",
+            "Git",
+            "Docker"
         ],
         "domain_tag": [
-            "Chatbot",
-            "Conversational AI",
-            "NLP"
+            "AI",
+            "Dev Tools",
+            "Programming Language"
         ],
-        "mail_list": "wechaty@googlegroups.com,Gitter: https://gitter.im/wechaty/wechaty",
-        "email": "wechaty@chatie.io",
+        "mail_list": "froxanne1024@gmail.com  1435130236@qq.com  zixia@zixia.net  huan@chatie.io",
+        "email": "wechaty@googlegroups.com",
         "project_list": [
             {
                 "name": "开发基于 Wechaty 实现微俱乐部会员&活动管理的微信小程序",
@@ -12575,20 +13558,11 @@
         "description": "开源社是由国内外支持开源的社区、个人及企业，依“贡献，共识，共治”原则，所组织的厂商中立、纯志愿者、非营利的开源联盟，旨在共创健康可持续发展的开源生态体系，并推动中国开源社区成为全球开源软件的积极参与及贡献者。我们专注于开源治理、国际接轨、社区发展和开源项目。|| Kaiyuanshe is a vendor-neutral, volunteer-only, non-profit alliance of domestic and international open source communities, individuals and enterprises, based on the principle of \"Contribute, Consensus, Govern\", to create a healthy and sustainable Open-source ecosystem and promote the Chinese Open-source community as an active participant and contributor to global open-source software. We focus on Open-source governance, international alignment, community development and Open-source projects. These descriptions will be displayed on the organization list page (Short Description) and on your organization's page.",
         "full_des": "开源社是由国内外支持开源的社区、个人及企业，依“贡献，共识，共治”原则，所组织的厂商中立、纯志愿者、非营利的开源联盟，旨在共创健康可持续发展的开源生态体系，并推动中国开源社区成为全球开源软件的积极参与及贡献者。我们专注于开源治理、国际接轨、社区发展和开源项目。https://kaiyuanshe.cn/profile/about/|| Kaiyuanshe is a vendor-neutral, volunteer-only, non-profit alliance of domestic and international open source communities, individuals and enterprises, based on the principle of \"Contribute, Consensus, Govern\", to create a healthy and sustainable Open-source ecosystem and promote the Chinese Open-source community as an active participant and contributor to global open-source software. We focus on Open-source governance, international alignment, community development and Open-source projects. These descriptions will be displayed on the organization list page (Short Description) and on your organization's page.\nhttps://kaiyuanshe.cn/profile/about/",
         "tech_tag": [
-            "开源社区",
-            "公益组织",
-            "Open-source community",
-            "Public interest organization"
+            "无"
         ],
         "domain_tag": [
             "开源治理",
-            "社区发展",
-            "国际接轨",
-            "开源项目",
-            "Open Source Governance",
-            "Community Development",
-            "International Connections",
-            "Open Source Projects"
+            "开源社区治理"
         ],
         "mail_list": "",
         "email": "admin@kaiyuanshe.org",
@@ -12606,18 +13580,29 @@
         "description": "开源分布式图数据库||An open-source distributed graph database. High throughput with low latency.",
         "full_des": "Nebula Graph 是一款开源的图数据库，擅长处理千亿顶点和万亿条边的超大规模数据集，同时保持毫秒级延时。Nebula Graph 于 2019 年 5 月开源，目前迭代至 2.0 版本，已经有多家互联网头部企业用于实时推荐、风险控制、机器学习等场景。||Nebula Graph is an open-source distributed graph database capable of hosting super large scale graphs with dozens of billions of vertices (nodes) and trillions of edges, with milliseconds of latency. It was open sourced in May 2019 and the most recent version is v2.0. Nebula Graph has been adopted by dozens of huge Internet companies for various scenarios such as real-time recommendations, fraud detection, and machine learning.",
         "tech_tag": [
-            "分布式",
-            "数据库",
-            "图数据库",
+            "Go",
+            "Linux",
+            "Python",
+            "Java",
+            "C",
+            "Cloud Native",
+            "Container",
+            "React",
             "C++",
-            "图计算",
-            "Linux"
+            "Distributed System",
+            "Database",
+            "Kubernetes",
+            "Storage",
+            "Docker"
         ],
         "domain_tag": [
-            "图数据库",
-            "分布式系统"
+            "Big Data",
+            "Dev Tools",
+            "Distributed System",
+            "Database",
+            "Graph Database"
         ],
-        "mail_list": "暂无，可以通过 GitHub Issues 跟社区沟通",
+        "mail_list": "",
         "email": "info@vesoft.com",
         "project_list": [
             {
@@ -13019,18 +14004,21 @@
         "description": "泰晓科技是一个知名公益性 Linux 技术社区 —— 聚焦 Linux，追本溯源，见微知著！|| Tiny Lab is a public Chinese Linux community, focus on Linux kernel and embedded Linux system!",
         "full_des": "泰晓科技是一个知名公益性 Linux 技术社区，创立于 2010 年，长期聚焦 Linux 系统技术交流和产品实践，追本溯源，见微知著，致力于推动业界创造更极致的 Linux 产品。|| Tiny Lab is a public Chinese Linux community, founded in 2010, focus on Linux kernel and embedded Linux system, especially about product practice, committed to promote the industry to develop better Linux products.",
         "tech_tag": [
-            "Linux Lab",
-            "技术交流",
-            "产品实践",
-            "Linux"
+            "Linux",
+            "C",
+            "RTOS",
+            "Git",
+            "Docker",
+            "System Optimization"
         ],
         "domain_tag": [
-            "Linux 内核",
-            "Linux 实验环境",
-            "实时系统",
-            "系统优化"
+            "Linux Kernel",
+            "OS",
+            "Tracing",
+            "Programming Language",
+            "Linux Lab"
         ],
-        "mail_list": "http://tinylab.org/about    ",
+        "mail_list": "falcon@tinylab.org  admin@taotieren.com  iosdevlog@iosdevlog.com  rxd@tinylab.org",
         "email": "contact@tinylab.org",
         "project_list": [
             {
@@ -13249,25 +14237,25 @@
         "description": "AOSC 是围绕 Linux 发行版 AOSC OS 形成的开源社区。",
         "full_des": "安同开源社区（Anthon Open Source Community, 简称 AOSC）是围绕社区项目 AOSC OS 形成的开源社区。AOSC OS 是一款遵循简约、本地化、包容、可持续及精制原则独立开发的通用 Linux 发行版，致力于改善开源软件的使用体验。",
         "tech_tag": [
-            "内核",
-            "RISC-V",
-            "嵌入式",
             "Linux",
-            "阿里平头哥 (T-Head)",
-            "Rust",
-            "C",
             "Python",
+            "C",
+            "Rust",
+            "Git",
+            "RISC-V",
+            "Embedded",
+            "Ali T-Head",
             "Bash",
             "GTK",
-            "本地化 (L10n)",
-            "Dpkg 包管理"
+            "Localization",
+            "Dpkg"
         ],
         "domain_tag": [
-            "Linux 发行版",
-            "中文本地化"
+            "Linux Kernel",
+            "Localization"
         ],
-        "mail_list": " discussions@lists.aosc.io ",
-        "email": " discussions@lists.aosc.io",
+        "mail_list": "discussions@lists.aosc.io",
+        "email": "discussions@lists.ao",
         "project_list": [
             {
                 "name": "全志 RISC-V 芯片主线化开发工作||Allwinner RISC-V Chip Mainline Development",
@@ -13335,7 +14323,7 @@
                 "tR": [
                     "能够阅读英文文档（语言官方文档 / API 等）。||Reading and comprehending relevant technical documentations (official language documentations and API references).",
                     "熟练使用一种语言（建议 Python）的字符串处理功能。||String manipulations in at least one programming language (preferably Python).",
-                    "Filesystem manipulations in at least one programming language (preferably Python or Bash).【熟练使用一种语言（建议 Python / Bash）的文件系统】处理功能。】",
+                    "熟练使用一种语言（建议 Python / Bash）的文件系统处理功能。||Filesystem manipulations in at least one programming language (preferably Python or Bash).",
                     "了解使用该语言访问网路 API 以取得文字的功能。||Network APIs in the language of your choice.",
                     "了解并可简单使用一种数据库（建议 SQLite）。||Using a simple database (preferably SQLite).",
                     "使用较少的依赖，便于在源服务器上（无 root 的 CLI）快速部署与执行。||Using minimal dependencies to ensure easy deployment on the repository server (non-root CLI environment).",
@@ -13473,13 +14461,14 @@
         "description": "俱乐部会员以众筹和众包的开源协作形式完善和推广GoodERP产品并提供相关服务",
         "full_des": "面向年营业额在2千万到2亿元的增长型企业，需要按需定制的信息化系统支撑业务稳步增长，GoodERP是一款开源ERP软件，具备财务、人事、项目、采购、销售、库存等核心功能。不同于现有市场的套装软件或云软件，GoodERP不限用户数，模块化二次开发，源码和数据自主掌控，是开源专业化IT服务的载体。",
         "tech_tag": [
-            "Python3",
-            "Postgresql",
-            "xml",
-            "jquery"
+            "Python",
+            "Database",
+            "Git"
         ],
         "domain_tag": [
-            "ERP 企业管理软件"
+            "ERP",
+            " 管理软件",
+            " 信息化"
         ],
         "mail_list": "",
         "email": "jeff@osbzr.com",
@@ -13516,6 +14505,67 @@
                 "spl": 1,
                 "organchor": "gooderp",
                 "orgname": "GoodERP开源俱乐部"
+            },
+            {
+                "name": "GoodERP业务场景列表",
+                "remark": null,
+                "difficulty": "低",
+                "mentor": "王剑峰",
+                "contact": "<wjfonhand@gmail.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "以文档形式列出GoodERP支持的业务场景和标准功能操作流程",
+                "label": "210470804",
+                "link": "",
+                "tech_tag": [
+                    "文档"
+                ],
+                "domain_tag": [
+                    "ERP",
+                    " 管理软件",
+                    " 信息化"
+                ],
+                "oR": [
+                    "完整的场景列表文档"
+                ],
+                "tR": [
+                    "markdown",
+                    "gitee"
+                ],
+                "orgID": 155,
+                "spl": 1,
+                "organchor": "gooderp",
+                "orgname": "GoodERP开源俱乐部"
+            },
+            {
+                "name": "针对GoodERP发票生成金税系统可读取的xml文件",
+                "remark": null,
+                "difficulty": "低",
+                "mentor": "王剑峰",
+                "contact": "<wjfonhand@gmail.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "出纳在收到销售部门的开票申请后，需要定期导出发票申请为金税开票系统可读的xml文件，以提升开具发票的效率",
+                "label": "210470806",
+                "link": "",
+                "tech_tag": [
+                    "Python"
+                ],
+                "domain_tag": [
+                    "ERP",
+                    " 管理软件",
+                    " 信息化"
+                ],
+                "oR": [
+                    "独立可安装的模块"
+                ],
+                "tR": [
+                    "100%测试覆盖率"
+                ],
+                "orgID": 155,
+                "spl": 1,
+                "organchor": "gooderp",
+                "orgname": "GoodERP开源俱乐部"
             }
         ]
     },
@@ -13535,15 +14585,15 @@
             "JavaScript",
             "Distributed System",
             "Database",
-            "Stroage",
-            "Vue，"
+            "Storage",
+            "Vue"
         ],
         "domain_tag": [
             "Distributed System",
             "Web",
             "Programming Language"
         ],
-        "mail_list": "  eduoj@googlegroups.com",
+        "mail_list": "eduoj@googlegroups.com",
         "email": "i@leoleoasd.me",
         "project_list": [
             {
@@ -13760,13 +14810,23 @@
         "description": "OneFlow 是一个专注性能的深度学习框架",
         "full_des": "OneFlow 是一个专注性能的深度学习框架，期待对分布式机器学习有兴趣的开发者加入，共同将 OneFlow 打造成世界一流的 AI 基础设施。",
         "tech_tag": [
-            "ML",
-            "distributed"
+            "Python",
+            "AI",
+            "C++",
+            "Distributed System",
+            "Deep Learning Framework",
+            "NLP",
+            "CV",
+            "CTR"
         ],
         "domain_tag": [
-            "深度学习"
+            "AI",
+            "OS",
+            "Big Data",
+            "Distributed System",
+            "deep learning"
         ],
-        "mail_list": "https://github.com/Oneflow-Inc/oneflow/issues",
+        "mail_list": "",
         "email": "contact@oneflow.org",
         "project_list": [
             {
@@ -14160,7 +15220,7 @@
         "domain_tag": [
             "Database Management System"
         ],
-        "mail_list": "partner@postgresqlchina.com",
+        "mail_list": "peter.eisentraut@enterprisedb.com   andres@anarazel.de  magnus@hagander.net  jonathan.katz@excoventures.com  tgl@sss.pgh.pa.us  bruce@momjian.us  dpage@pgadmin.org",
         "email": "partner@postgresqlchina.com",
         "project_list": [
             {
@@ -14367,17 +15427,27 @@
         "title": "Milvus",
         "project_url": "",
         "url": "https://www.milvus.io/",
-        "description": "Milvus 是一款开源的特征向量相似度搜索引擎",
-        "full_des": "Milvus 是一款开源的特征向量相似度搜索引擎，具有使用方便、实用可靠、易于扩展、稳定高效和搜索迅速等特点。Milvus 已经被广泛应用于多个领域，其中包括图像处理、机器视觉、自然语言处理、语音识别、推荐系统以及新药发现等。",
+        "description": "Milvus 是全球最受欢迎的开源向量数据库||Milvus is the world's most popular open-source vector database.",
+        "full_des": "Milvus 是一款开源的向量数据库，具有使用方便、实用可靠、易于扩展、稳定高效和搜索迅速等特点。Milvus 已经被广泛应用于多个领域，其中包括图像处理、机器视觉、自然语言处理、语音识别、推荐系统以及新药发现等。||Milvus is an open-source vector database that is highly flexible, reliable, and blazing fast. It supports adding, deleting, updating, and near real-time search of vectors on a trillion-byte scale. Milvus has been widely used in many fields, including image processing, computer vision, natural language processing, speech recognition, recommendation systems, and new drug discovery.",
         "tech_tag": [
-            "深度学习 ",
-            "计算机视觉",
+            "Go",
+            "Python",
+            "Cloud Native",
+            "Container",
+            "C++",
+            "Distributed System",
+            "Database",
+            "Kubernetes",
+            "Deep Learning Framework",
             "NLP",
-            "语音识别",
-            "向量数据库"
+            "Storage",
+            "Docker"
         ],
         "domain_tag": [
-            "非结构化数据处理"
+            "AI",
+            "Cloud Native",
+            "Big Data",
+            "Distributed System"
         ],
         "mail_list": "https://lists.lfaidata.foundation/g/milvus-technical-discuss",
         "email": "community@zilliz.com",
@@ -15196,16 +16266,14 @@
         "description": "Apache ECharts 是一个使用 JavaScript 实现的开源可视化库。",
         "full_des": "Apache ECharts 是一个使用 JavaScript 实现的开源可视化库，可以流畅的运行在 PC 和移动设备上，兼容当前绝大部分浏览器，提供直观，交互丰富，可高度个性化定制的数据可视化图表。",
         "tech_tag": [
-            "Dataviz",
-            "Canvas",
-            "SVG",
-            "TypeScript"
+            "JavaScript"
         ],
         "domain_tag": [
-            "可视化"
+            "Virtualization",
+            "Web"
         ],
         "mail_list": "dev@echarts.apache.org",
-        "email": "dev@echarts.apache.org",
+        "email": "me@zhangwenli.com",
         "project_list": [
             {
                 "name": "Apache ECharts example website with third-party editors；Apache ECharts官网示例支持第三方编辑器",
@@ -15455,16 +16523,13 @@
         "description": "CarbonData是一个大数据开源项目，2017年正式成为ASF开源顶级项目。",
         "full_des": "CarbonData是一种新的高性能数据存储格式，已在20+企业生产环境上部署和使应用，企业数据规模达到万亿。针对当前大数据领域分析场景需求各异而导致的存储冗余问题，业务驱动下的数据分析灵活性要求越来越高，CarbonData提供了一种新的融合数据存储方案，以一份数据同时支持多种应用场景，并通过多级索引、字典编码、预聚合、动态Partition、准实时数据查询、列存等特性提升了IO扫描和计算性能，实现百亿数据级秒级响应。",
         "tech_tag": [
-            "big-data",
-            "data-store"
+            "Java"
         ],
         "domain_tag": [
-            "大数据",
-            "数据存储",
-            "数据格式"
+            "Big Data"
         ],
         "mail_list": "dev@carbondata.apache.org",
-        "email": "chenliang613@apache.org (PMC Chair's mail) 或者发邮件给dev@carbondata.apache.org",
+        "email": "chenliang613@apache.org",
         "project_list": [
             {
                 "name": "华为首个大数据开源项目||Apache CarbonData ",
@@ -15503,6 +16568,102 @@
                 "spl": 0,
                 "organchor": "apachecarbondata",
                 "orgname": "Apache CarbonData"
+            },
+            {
+                "name": "索引优化",
+                "remark": null,
+                "difficulty": "高",
+                "mentor": "陈亮",
+                "contact": "<chenliang6136@gmail.com>",
+                "uniont": "蔡强<qiangcai@apache.org>",
+                "student_count": 0,
+                "description": "针对现有Apache CarbonData的索引特性做优化，开发一个完整的DEMO，实现PB级数据，秒级查询。",
+                "label": "210410799",
+                "link": "",
+                "tech_tag": [
+                    "Java",
+                    "Storage",
+                    "Git"
+                ],
+                "domain_tag": [
+                    "Big Data",
+                    "Programming Language"
+                ],
+                "oR": [
+                    "一个完整的数据湖DEMO",
+                    "索引的查询优化"
+                ],
+                "tR": [
+                    "SQL",
+                    "scala/java"
+                ],
+                "orgID": 320,
+                "spl": 1,
+                "organchor": "apachecarbondata",
+                "orgname": "Apache CarbonData"
+            },
+            {
+                "name": "CarbonData集成Spark 3.X",
+                "remark": null,
+                "difficulty": "高",
+                "mentor": "陈亮",
+                "contact": "<chenliang6136@gmail.com>",
+                "uniont": "蔡强<qiangcai@apache.org>",
+                "student_count": 0,
+                "description": "与项目导师一起，完成CarbonData集成Spark 3.X的任务。",
+                "label": "210410800",
+                "link": "",
+                "tech_tag": [
+                    "Java",
+                    "Storage",
+                    "Git"
+                ],
+                "domain_tag": [
+                    "Big Data",
+                    "Programming Language"
+                ],
+                "oR": [
+                    "完成10个PR开发（含测试用例）"
+                ],
+                "tR": [
+                    "scala/java",
+                    "spark"
+                ],
+                "orgID": 320,
+                "spl": 1,
+                "organchor": "apachecarbondata",
+                "orgname": "Apache CarbonData"
+            },
+            {
+                "name": "CarbonData与presto集成的优化",
+                "remark": null,
+                "difficulty": "高",
+                "mentor": "陈亮",
+                "contact": "<chenliang6136@gmail.com>",
+                "uniont": "蔡强<qiangcai@apache.org>",
+                "student_count": 0,
+                "description": "优化CarbonData与presto集成模块，提升查询性能",
+                "label": "210410801",
+                "link": "",
+                "tech_tag": [
+                    "Java",
+                    "Git"
+                ],
+                "domain_tag": [
+                    "Big Data",
+                    "Programming Language"
+                ],
+                "oR": [
+                    "完成10个PR开发（含测试用例）"
+                ],
+                "tR": [
+                    "scala/java",
+                    "presto"
+                ],
+                "orgID": 320,
+                "spl": 1,
+                "organchor": "apachecarbondata",
+                "orgname": "Apache CarbonData"
             }
         ]
     },
@@ -15518,15 +16679,17 @@
         "description": "Dubbo-go 架起 Dubbo 和 go 之间的桥梁，带领Java生态享受云原生时代的技术红利。 ",
         "full_des": "Apache Dubbo Go 语言实现，架起java和go之间的桥梁，与 gRPC/Spring Cloud 生态互联互通，带领Java生态享受云原生时代的技术红利。",
         "tech_tag": [
-            "分布式",
             "Go",
-            "微服务"
+            "Distributed System",
+            "Micro Service"
         ],
         "domain_tag": [
-            "微服务治理",
-            "云原生"
+            "Cloud Native",
+            "Distributed System",
+            "Web",
+            "Programming Language"
         ],
-        "mail_list": "dev@dubbo.apache.org",
+        "mail_list": "",
         "email": "dev@dubbo.apache.org",
         "project_list": [
             {
@@ -15911,19 +17074,26 @@
         "description": "TDengine是涛思数据专为物联网、车联网、工业互联网、IT运维等设计和优化的大数据平台。||TDengine is an open-source big data platform designed and optimized for Internet of Things (IoT), Connected Vehicles, and Industrial IoT.",
         "full_des": "北京涛思数据科技有限公司(TAOS Data) 瞄准日益增长的物联网数据市场，专注时序空间大数据的存储、查询、分析和计算。不依赖任何开源或第三方软件，开发了拥有自主知识产权、自主可控的高性能、可伸缩、高可靠、零管理的物联网大数据平台TDengine，可广泛运用于物联网、车联网、工业互联网、IT运维等领域。公司已经申请多项技术发明专利，且全部提交PCT专利申请。涛思数据采用AGPL许可证，已经将TDengine的内核(存储和计算引擎)以及社区版100%开源。涛思数据将尽最大努力打造开发者社区，维护这个开源的商业模式，相信不将最核心的代码开源，任何软件都将无法赢得市场。涛思数据希望通过开源，快速获得市场反馈，完善产品，完善生态，而且吸引更多的开发者加入到这个项目中。||To address the technology challenges in the exponential growth of connected devices, TAOS Data is aimed at building a big data platform for Internet of Things (IoT). With a deep understanding of data characteristics of the IoT, TAOS Data has designed an innovative way to collect, store, compute, and analyze time-series data. Its flagship product, TDengine, outperforms other time-series databases by at least 10 times in terms of insert/query performance.TDengine’s kernel (storage and computing engine) and community edition are 100% open-sourced under the AGPL license. TAOS Data is fully committed to maintaining this open development model and believes that no software will win the market unless its core functionalities are fully open.",
         "tech_tag": [
-            "分布式计算",
-            "大数据处理",
+            "Go",
+            "Python",
+            "Java",
+            "C",
+            "NodeJS",
+            "Distributed System",
+            "Database",
+            "Kubernetes",
             "高性能存储",
             "流式计算"
         ],
         "domain_tag": [
-            "物联网",
-            "大数据",
+            "Big Data",
+            "Distributed System",
             "IT运维",
+            "物联网",
             "工业互联网",
             "车联网"
         ],
-        "mail_list": "tdengine@taosdata.com; support@taosdata.com; xtzang@taosdata.com; sdsang@taosdata.com",
+        "mail_list": "tdengine@taosdata.com  xtzang@taosdata.com  sdsang@taosdata.com  jlsong@taosdata.com",
         "email": "tdengine@taosdata.com",
         "project_list": [
             {
@@ -16179,12 +17349,14 @@
         "full_des": "优麒麟（Ubuntu Kylin）是由中国 CCN（由CSIP、Canonical、NUDT三方联合组建）开源创新联合实验室与麒麟软件有限公司主导开发的全球开源项目，其宗旨是通过研发用户友好的桌面环境以及特定需求的应用软件，为全球 Linux 桌面用户带来非凡的全新体验！优麒麟开源操作系统自2013年创建至今，已累计发行16个版本，下载量超过3200万次，向开源社区贡献代码数百万行，被 Linux、Debian、Ubuntu、OpenStack、Ceph等国际开源社区接收的 patch 超过 7000 个，在全球范围内拥有数十万活跃用户。",
         "tech_tag": [
             "Linux",
-            "Desktop Environment",
-            "桌面环境"
+            "C++",
+            "Git"
         ],
         "domain_tag": [
-            "Linux Native 应用",
-            "Linux 桌面环境"
+            "Desktop Environment",
+            "Linux Native Application",
+            "Linux 桌面环境",
+            "Linux Native 应用"
         ],
         "mail_list": "ubuntukylin-members@lists.launchpad.net",
         "email": "contact@ubuntukylin.com",
@@ -16199,7 +17371,7 @@
                 "student_count": 0,
                 "description": "UKUI 文件管理器，即 Peony（https://github.com/ukui/peony）是围绕qt和gio构建的开源项目。除此之外，它提供了一组扩展接口，用于实现诸如菜单、文件视图、属性窗口以及预览窗格等UI部件的功能扩展（https://github.com/ukui/peony-extensions）。     本课题的主旨是实现一个关于 Peony 的预览窗格插件项目，使 Peony 能够实现常用文件在右侧预览窗格中展示其内容，并且对于部分格式(PDF、图片等)文件提供简易编辑的功能。||Peony, aka UKUI File Manager(Homepage: https://github.com/ukui/peony) is an open source project built around Qt5 and GIO.  In addition, it provides a set of extension interfaces for implementing functional extensions to UI components such as context menus, file views, property windows, and preview panes. You can visit all extensions on https://github. com/ukui/peony-extensions.     The purpose of this project is to implement a preview panel extension for Peony, so that Peony can support preview content of the most file types in the right preview panel, and for some formats(PDF, images, etc.) to provide simple editing features.    ",
                 "label": "210120164",
-                "link": " https://github.com/UbuntuKylin/Summer-2021-of-Open-Source-Promotion-Plan/blob/main/en_US/Implementation%20of%20the%20Peony%20File%20Manager%20preview%20feature.md",
+                "link": "https://gitee.com/ubuntukylin/Summer-2021-of-Open-Source-Promotion-Plan/blob/main/zh_CN/Peony%20%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%99%A8%E9%A2%84%E8%A7%88%E7%89%B9%E6%80%A7%E7%9A%84%E5%AE%9E%E7%8E%B0.md",
                 "tech_tag": [
                     "Linux",
                     "C++",
@@ -16375,25 +17547,13 @@
         "description": "Codename One is a mobile first cross platform environment for Java and Kotlin developers. It can compile Java bytecode to native OS executables (iOS, Android, UWP etc.). It's a complete mobile platform featuring virtual machines, simulator, design tools (visual theme/builder/css), IDE integrations, ports to multiple OS's and much more. It provides full access to the underlying native OS code (e.g. Objective-C, C#, Dalvik/ART) through a portable abstraction which enables 100% code reuse.",
         "full_des": "Codename One is the only platform that... Has Write Once Run Anywhere support with no special hardware requirements and 100% code reuse Compiles Java or Kotlin into native code for iOS, UWP (Universal Windows Platform), Android and even JavaScript (with seamless PWA and Thread support) Is Easy to use with 100% portable Drag and Drop GUI builder Has Full access to underlying native OS capabilities using the native OS programming language (e.g. Objective-C) without compromising portability Has full control over every pixel on the screen! Just override paint and draw or use a glass pane to draw anywhere... Lets you use native widgets (views) and mix them with Codename One components within the same hierarchy (heavyweight/lightweight mixing) Supports seamless Continuous Integration out of the box",
         "tech_tag": [
-            "JVM",
-            "Java",
-            "Cross Platform",
-            "Mobile",
-            "JDWP",
-            "Accessibility"
+            "Java"
         ],
         "domain_tag": [
-            "Mobile",
-            "Java",
-            "Kotlin",
-            "iOS",
-            "Android",
-            "UWP",
-            "WORA",
-            "JVM"
+            "Dev Tools"
         ],
-        "mail_list": "https://groups.google.com/g/codenameone-discussions We plan to launch a slack group for developers as well",
-        "email": "",
+        "mail_list": "codenameone-discussions@googlegroups.com",
+        "email": "support@codenameone.com",
         "project_list": [
             {
                 "name": "Port Codename One to Python - Mobile/Desktop development in Python",
@@ -16772,9 +17932,9 @@
         "description": "一套用于快速构建金融级云原生架构的中间件||A collection of middleware components designed to build financial-level distributed architecture",
         "full_des": "SOFAStack™（Scalable Open Financial Architecture Stack）是一套用于快速构建金融级云原生架构的中间件，也是在金融场景里锤炼出来的最佳实践，并且具备以下特点：开放：技术栈全面开源共建、 保持社区中立、兼容社区 兼容开源生态，组件可插拔， SOFAStack 组件与其它开源组件可相互集成或替换;金融级：包含构建金融级云原生架构所需的各个组件，让用户更加专注于业务开发，满足用户场景的现状和未来需求，经历过大规模场景的锤炼，特别是严苛的金融场景;云原生：基于 SOFAStack 可快速搭建云原生微服务体系，快速开发更具可靠性和扩展性、更加易于维护的云原生应用||SOFAStack™（Scalable Open Financial Architecture Stack）is a collection of middleware components designed to build financial-level distributed architecture and is also the best practice fully validated in financial scenarios. It has several features:Open: Buildpack is fully open-source, keeps community neutral and is compatible with community. SOFAStack components are pluggable and compatible with the open-source ecosystem, so they can be integrated or replaced with other open-source components.Financial-grade: Contains the components needed to build a financial-level cloud native architecture, which have been fully tempered in large-scale scenarios, especially harsh financial scenarios, thus enabling developers to focus more on service development and meeting the current and future needs of user scenarios.Cloud Native: Based on SOFAStack, you can quickly build a cloud-native microservice system and develop cloud-native applications that are more reliable, scalable, and easier to maintain.",
         "tech_tag": [
-            "Golang",
+            "Go",
             "Java",
-            "云原生"
+            "Cloud Native"
         ],
         "domain_tag": [
             "微服务",
@@ -17116,7 +18276,7 @@
             "Git"
         ],
         "domain_tag": [
-            "Vitualization",
+            "Virtualization",
             "Community",
             " Metrics",
             " Governance"
@@ -17193,6 +18353,40 @@
                 ],
                 "orgID": 211,
                 "spl": 0,
+                "organchor": "chaoss",
+                "orgname": "CHAOSS"
+            },
+            {
+                "name": "Expanding and restyling the GrimoireLab tutorial",
+                "remark": "",
+                "difficulty": "中",
+                "mentor": "Venu Vardhan",
+                "contact": "<venuvardhanreddytekula8@gmail.com>",
+                "uniont": "Venu Vardhan<venuvardhanreddytekula8@gmail.com>",
+                "student_count": 0,
+                "description": "GrimoireLab is a powerful open-source platform that provides support for monitoring and in-depth analysis of software projects. It produces a rich set of metrics with data extracted from more than 30 tools related to contributing to Open Source development such as version control systems, issue trackers and forums. These metrics are shown and exploited on Web dynamic dashboards, which can be easily inspected by decision-makers to help them understand the evolution and health of their projects.  The main entry point to learn about GrimoireLab is the tutorial, which provides a walkthrough of the platform and its components. Recently, the community has requested to revamp and expand its content to include additional information such as dashboard customization and management.",
+                "label": "210190824",
+                "link": "",
+                "tech_tag": [
+                    "Python",
+                    "Git",
+                    "Docker"
+                ],
+                "domain_tag": [
+                    "Container"
+                ],
+                "oR": [
+                    "Refactor the content of the tutorial with the TOC proposed in the issue",
+                    "Revamp the content of the tutorial. Some content can be taken from chaoss/grimoirelab, chaoss/grimoirelab-sirmordred, Bitergia/c/FAQ, jsmanrique/grimoirelab-user-guide",
+                    "Restyle the tutorial with a new template",
+                    "Replace the current images with new ones. Some images can be taken from jsmanrique/grimoirelab-user-guide",
+                    "Align the new content with the getting started guides available in the different GrimoireLab components"
+                ],
+                "tR": [
+                    "Python, Jekyll, and Docker are suggested technology to know, but can be learned during the program."
+                ],
+                "orgID": 211,
+                "spl": 2,
                 "organchor": "chaoss",
                 "orgname": "CHAOSS"
             }
@@ -17349,7 +18543,7 @@
             "AI",
             "Big Data",
             "Dev Tools",
-            "Vitualization",
+            "Virtualization",
             "Distributed System",
             "Programming Language"
         ],
@@ -17835,10 +19029,10 @@
             "RPA"
         ],
         "domain_tag": [
-            "开源治理",
-            "跨平台自动化"
+            "Open source governance",
+            "Workflow automation"
         ],
-        "mail_list": "frank_zsy@hypertrons.io wsl@hypertrons.io lhming23@outlook.com",
+        "mail_list": "frank_zsy@hypertrons.io  wsl@hypertrons.io  lhming23@outlook.com",
         "email": "dev@hypertrons.io",
         "project_list": [
             {
@@ -18281,18 +19475,18 @@
         "description": "DatenLord是新一代云原生分布式存储，专门解决异构、多云场景下数据统一存储管理的问题。 DatenLord由来自多名Google、华为的资深工程师发起，采用软硬结合的方式实现高性能存储。目前，DatenLord大量采用内核旁路、硬件加速等底层技术，诸如io_uring、RDMA、SerDes等软硬件技术手段，实现存储性能的十倍以上提升。",
         "full_des": "存储是非常有技术挑战的领域，非常典型的软硬结合的技术领域，其难度堪比操作系统内核，不亚于芯片的研发难度。DatenLordd的主要技术亮点如下： 1、DatenLord采用全新自研架构，绕过操作系统内核，自主控制存储IO，极大地发挥出新一代存储硬件的高性能。目前存储硬件的革新正在驱动存储软件架构升级。闪存硬盘日趋流行，非易失内存的出现，使得现有操作系统内核里对存储的管理变成存储性能瓶颈。DatenLord采用异步编程架构并绕过操作系统内核，实现完全不依赖内核，自主调度管理存储IO，极大地提升了存储的性能。 2、DatenLord提供统一的存储接口，满足不同场景需求。目前存储领域存在多种异构存储接口，包括文件存储、对象存储、块存储等，分别满足不同场景存储需求。但是不同的存储接口需要应用来适配，对应用最友好的是文件存储，但是文件存储的容量有限，无法线性扩展，迁移困难。对海量数据管理最友好的是对象存储，但是应用需要适配对象存储的接口。块存储是为虚拟化场景提供存储支持，应用不能直接访问。DatenLord整合多种存储接口，在面向应用时提供文件存储，在面向跨云数据管理时提供对象存储，在对接虚拟化场景时提供块存储，并实现数据对多个存储接口的互通。 3、DatenLord利用片上系统提升存储性能。片上系统是目前硬件和云计算领域最热门的技术之一，采用硬件芯片来完成特定场景的计算任务。DatenLord采用FPGA可编程芯片和ASIC专用芯片实现存储场景的相关计算功能，诸如数据加密解密、数据压缩解压缩、音视频编解码、模式识别等场景，有力提升数据存储和处理的性能。",
         "tech_tag": [
-            "Linux Kernel",
-            "Cloud Native",
-            "Distributed System",
-            "Storage"
-        ],
-        "domain_tag": [
             "Linux",
             "Distributed System",
             "Rust",
             "Kubernetes",
             "RDMA",
             "FPGA"
+        ],
+        "domain_tag": [
+            "Linux Kernel",
+            "Cloud Native",
+            "Distributed System",
+            "Storage"
         ],
         "mail_list": "",
         "email": "dev@datenlord.io",
@@ -18779,7 +19973,8 @@
         ],
         "domain_tag": [
             "OS",
-            "嵌入式软件开发，开源社区"
+            "嵌入式软件开发",
+            "开源社区"
         ],
         "mail_list": "",
         "email": "summer2021@minigui.com",
@@ -19137,7 +20332,7 @@
             "React",
             "Rust",
             "TypeScript",
-            "Stroage",
+            "Storage",
             "Git",
             "Docker"
         ],
@@ -19280,12 +20475,6 @@
         "description": "北京「龙归科技」是一个专注于低代码赋能企业级信息化服务提供商。核心创始人团队来自绿盟安全、红帽开源操作系统、知名游戏玩蟹科技、知名开源社区等专家共同创立。 ArkID 方舟一账通：是一个开源 IDaaS 框架，基于 Vue + Django 框架，插件化、多租户、支持多种认证协议",
         "full_des": "「龙归科技」致力于让中国每一个企业拥有专属的自动化办公操作系统，助力企业或政府拥抱（Cloud Native First）云原生优先战略，帮助客户构筑以「身份与应用」为中心的现代化 IT 基础设施！从而实现「企业数字化转型」及「软件行业工业化生产」 ！ 主打产品：ArkID 方舟一帐通，统一身份认证平台；ArkOS 方舟操作系统：一个企业级办公自动化操作系统，结合自研低代码应用开发平台，构建产业生态，专注为各类企业与组织机构打造一体化全栈云原生平台。系统自带应用包括：ArkID，ArkIDE，ArkPlatform，App Store 等产品。截至目前，公司已经获得 15个 软件著作权、2个 发明专利，并与2020年11月份，获得 北京海淀区中关村国家高新技术企业认定。 ArkID 方舟一账通：是一个开源 IDaaS 框架，基于 Vue + Django 框架，插件化、多租户、支持多种认证协议，如：OAuth 2.0、LDAP、SAML 2.0、OIDC 等。既可作为企业终端客户统一管理 CIAM，也可作为企业内部雇员、外部伙伴统一身份管理IAM。彻底告别企业内多系统、多账号的治理烦恼, 保障企业信息安全！聚焦在在数字政府一网通办、智慧教育、智慧医疗、智慧交通、金融科技、工业互联网-数字化转型等多系统账号体系打通场景！",
         "tech_tag": [
-            "OS",
-            "Cloud Native",
-            "Container",
-            "Programming Language"
-        ],
-        "domain_tag": [
             "Python",
             "JavaScript",
             "NodeJS",
@@ -19293,6 +20482,12 @@
             "Automation",
             "Git",
             "Docker"
+        ],
+        "domain_tag": [
+            "OS",
+            "Cloud Native",
+            "Container",
+            "Programming Language"
         ],
         "mail_list": "",
         "email": "bd@longguikeji.com",
@@ -19314,8 +20509,8 @@
             "Go",
             "Linux",
             "Cloud Native",
-            "Container",
             "JavaScript",
+            "Container",
             "React",
             "TypeScript",
             "Git",
@@ -19327,7 +20522,7 @@
             "Distributed System",
             "Web"
         ],
-        "mail_list": "wsl@hypertrons.io liuchangfreeman@live.com",
+        "mail_list": "wsl@hypertrons.io  liuchangfreeman@live.com",
         "email": "dev@hypertrons.io",
         "project_list": [
             {
@@ -19390,7 +20585,7 @@
             "Virtualization",
             "Distributed System",
             "Web",
-            "Programming"
+            "Programming Language"
         ],
         "tech_tag": [
             "Python",
@@ -19398,13 +20593,13 @@
             "Database",
             "TypeScript",
             "Automation",
-            "Git",
             "Micro Service",
             "Storage",
+            "Git",
             "Docker",
             "IoT",
             "C#",
-            ".NET Core"
+            " .NET Core"
         ],
         "mail_list": "zsu@senparc.com",
         "email": "zsu@senparc.com",
@@ -19513,7 +20708,7 @@
             "Virtualization",
             "Tracing"
         ],
-        "mail_list": null,
+        "mail_list": "",
         "email": "kerneltravel@groups.163.com",
         "project_list": []
     },
@@ -19531,19 +20726,19 @@
         "description": "云联融合云（Yunion Cloud）是一个开源的多云平台。",
         "full_des": "云联融合云（Yunion Cloud）是一个开源的多云平台。融合云构建在用户分布于多云基础设施之上，通过技术手段将分布于多云的异构IT资源统一管理，将多底层多云的差异向用户屏蔽，并通过网络和调度实现资源的融合与打通，在多云之上进行抽象，向用户呈现统一的使用界面和API接口，让用户就像使用一个云平台一样使用分布于多云的资源，实现一个统一的“云上之云”的云平台。",
         "tech_tag": [
-            "Cloud Native",
-            "Container",
-            "Virtualization"
-        ],
-        "domain_tag": [
-            "Cloud Native",
             "Go",
             "Linux",
+            "Cloud Native",
             "Container",
             "Kubernetes",
             "Automation",
             "Git",
             "Docker"
+        ],
+        "domain_tag": [
+            "Cloud Native",
+            "Container",
+            "Virtualization"
         ],
         "mail_list": "",
         "email": "operation@yunion.cn",
@@ -19695,7 +20890,14 @@
         "tech_tag": [
             "Go",
             "Storage",
-            "Git"
+            "Git",
+            "FTP",
+            "HDFS",
+            "IPFS",
+            "Storj",
+            "WebDAV",
+            "minio",
+            "对象存储"
         ],
         "domain_tag": [
             "Cloud Native",
@@ -20607,6 +21809,40 @@
                 "tR": [
                     "Golang",
                     "SQLite"
+                ],
+                "orgID": 557,
+                "spl": 1,
+                "organchor": "chshdxmglrj",
+                "orgname": "禅道项目管理软件"
+            },
+            {
+                "name": "禅道技术文章翻译、社区发布",
+                "remark": "",
+                "difficulty": "中",
+                "mentor": "李晓琳",
+                "contact": "<a1215870132@163.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "禅道新升级为通用的项目管理平台，管理理念升级，需产出DevOps、自动化测试、CMMI等相关技术类翻译文章。尤其关于CMMI V2.0的中文文章较少，多存在于CMMI institute官网，不利于项目在国内推广，希望学生可产出开源文章发布在社区及其他平台。该项目也会承担一部分禅道社区推广、公众号管理等临时任务。",
+                "label": "210620809",
+                "link": "",
+                "tech_tag": [
+                    "PHP",
+                    "Git",
+                    "CMMI"
+                ],
+                "domain_tag": [
+                    "Dev Tools",
+                    "Programming Language"
+                ],
+                "oR": [
+                    "每周一篇文章翻译（具体可协商）",
+                    "翻译文章分发"
+                ],
+                "tR": [
+                    "熟悉CMMI",
+                    "了解devops",
+                    "具有编程、英文知识"
                 ],
                 "orgID": 557,
                 "spl": 1,
@@ -21976,7 +23212,7 @@
                 "contact": "<xi.w@rioslab.org>",
                 "uniont": null,
                 "student_count": 0,
-                "description": "RISC-V 国际开源实验室（RIOS）的首个开源 RISC-V 架构微型计算机 PicoRio。PicoRio项目涵扩了对Chromium OS内核以及V8 JavaScript 引擎的RISC-V平台移植和支持。 可运行完整的Linux和FreeRTOS系统。PicoRio项目将于2021年完成ARM A75级别的芯片设计和验证，将用于 RISC-V 的平板电脑/笔记本电脑，其中所有应用程序软件和存储都在云中运行（类似 Chromebook）。  本课题的目标是在 PicoRio 上面通过软件和硬件协同的方式，提升整体的系统性能和安全性。    <b>项目奖励</b>:   比赛优胜的团队不仅能获得本比赛所设立的奖项，并且有机会获得以下额外奖励：   将获得清华大学summer camp的实习机会，参加面试，争取清华大学研究生/博士的保送名额。   与Google Skywater Open Foundry合作，免费提供芯片流片的机会。   将获得RISC-V创始人，图灵奖得主Dr. David A. Patterson本人亲笔签名的书籍一本。    <b>项目特征</b>:  开源硬件  高性能处理器设计  微架构信息安全  操作系统协同  License: 3-clause BSD    <b>预期目标</b>：  注意：下面的内容是建议内容，不要求必须全部完成。选择本项目的同学也可与导师联系，提出自己的新想法，如导师认可，可加入预期目标    <b>Task 1: CPU Design and Performance Optimizations on PicoRio</b>    优化开源CPU PicoRio处理器的性能和设计，可实现的功能拓展包括:     多发射 (Multi-issue)   多核的缓存一致性设计 (Multicore Cache Coherence)   非阻塞式缓存 (Non-blocking Cache)   乱序执行 (Out-of-Order Execution)   数据预取等等 (Data Prefetching, etc.)  本课题将提供PicoRio的RTL代码以及完整工具链，并将在FPGA上对扩展的PicoRio处理器之上运行Linux，并根据性能指标performance，power and die area来进行性能评价。    <b>Task 2: RISC-V Trusted Execution Environment (TEE) Design based on Physical Memory Protection Unit</b>    通过对PiciRio处理器微架构扩展实现基于RISC-V PMP unit的Enclave系统实现。在Enclave环境下支持基本的应用程序执行。  利用Linux完成Untrusted OS环境以检测物理内存隔离（Physical Memory Isolation）的效果测试。  硬件扩展根据性能指标 performance，power and die area来进行评价。  Enclave的整体性能将和第一题所提交的处理器性能对比来判定安全扩展所带来的额外开销。",
+                "description": "RISC-V 国际开源实验室（RIOS）的首个开源 RISC-V 架构微型计算机 PicoRio。PicoRio项目涵扩了对Chromium OS内核以及V8 JavaScript 引擎的RISC-V平台移植和支持。 可运行完整的Linux和FreeRTOS系统。PicoRio项目将于2021年完成ARM A75级别的芯片设计和验证，将用于 RISC-V 的平板电脑/笔记本电脑，其中所有应用程序软件和存储都在云中运行（类似 Chromebook）。  本课题的目标是在 PicoRio 上面通过软件和硬件协同的方式，提升整体的系统性能和安全性。    <b>项目奖励</b>:   比赛优胜的团队不仅能获得本比赛所设立的奖项，并且有机会获得以下额外奖励：  <b>1. 将获得清华大学summer camp的实习机会，参加面试，争取清华大学研究生/博士的保送名额。  2. 与Google Skywater Open Foundry合作，免费提供芯片流片的机会。  3. 将获得RISC-V创始人，图灵奖得主Dr. David A. Patterson本人亲笔签名的书籍一本。</b>    <b>项目特征</b>:  开源硬件  高性能处理器设计  微架构信息安全  操作系统协同  License: 3-clause BSD    <b>预期目标</b>：  注意：下面的内容是建议内容，不要求必须全部完成。选择本项目的同学也可与导师联系，提出自己的新想法，如导师认可，可加入预期目标    <b>Task 1: CPU Design and Performance Optimizations on PicoRio</b>    优化开源CPU PicoRio处理器的性能和设计，可实现的功能拓展包括:     多发射 (Multi-issue)   多核的缓存一致性设计 (Multicore Cache Coherence)   非阻塞式缓存 (Non-blocking Cache)   乱序执行 (Out-of-Order Execution)   数据预取等等 (Data Prefetching, etc.)  本课题将提供PicoRio的RTL代码以及完整工具链，并将在FPGA上对扩展的PicoRio处理器之上运行Linux，并根据性能指标performance，power and die area来进行性能评价。    <b>Task 2: RISC-V Trusted Execution Environment (TEE) Design based on Physical Memory Protection Unit</b>    通过对PiciRio处理器微架构扩展实现基于RISC-V PMP unit的Enclave系统实现。在Enclave环境下支持基本的应用程序执行。  利用Linux完成Untrusted OS环境以检测物理内存隔离（Physical Memory Isolation）的效果测试。  硬件扩展根据性能指标 performance，power and die area来进行评价。  Enclave的整体性能将和第一题所提交的处理器性能对比来判定安全扩展所带来的额外开销。",
                 "label": "210730388",
                 "link": "",
                 "tech_tag": [
@@ -22049,7 +23285,7 @@
             "Distributed System"
         ],
         "mail_list": "openmessaging@googlegroups.com",
-        "email": "vongosling@apache.org",
+        "email": "openmessaging@googlegroups.com",
         "project_list": [
             {
                 "name": "Support more cloud-native patterns in OpenChaos",
@@ -22187,8 +23423,7 @@
         "domain_tag": [
             "Cloud Native",
             "Distributed System",
-            "EDA",
-            "Event Driven"
+            "EDA;Event Driven"
         ],
         "mail_list": "dev@eventmesh.apache.org",
         "email": "dev@eventmesh.apache.org",
@@ -22887,7 +24122,7 @@
             "开源治理",
             "data-analysis"
         ],
-        "mail_list": "frank_zsy@tongji.edu.cn weng_zhen_jie@163.com",
+        "mail_list": "frank_zsy@tongji.edu.cn  weng_zhen_jie@163.com",
         "email": "frank_zsy@tongji.edu.cn",
         "project_list": [
             {
@@ -23135,7 +24370,168 @@
         ],
         "mail_list": "garfieldhu@aliyun.com  sunwp244372610@163.com  ansinlee@qq.com  majinjing3@gmail.com  gaius.qi@gmail.com",
         "email": "weipeng.swp@alibaba-inc.com",
-        "project_list": []
+        "project_list": [
+            {
+                "name": "dragonfly2.0产品化建设",
+                "remark": null,
+                "difficulty": "中",
+                "mentor": "孙伟鹏",
+                "contact": "<244372610@qq.com>",
+                "uniont": "胡作政<garfieldhu@aliyun.com>,李玉海<ansinlee@qq.com>",
+                "student_count": 0,
+                "description": "Dragonfly 是一款基于 P2P 的智能镜像和文件分发工具。它旨在提高文件传输的效率和速率，最大限度地利用网络带宽，尤其是在分发大量数据时，例如应用分发、缓存分发、日志分发和镜像分发。    在阿里巴巴，Dragonfly 每个月会被调用 20 亿次，分发的数据量高达 3.4PB，并且还在快速增加。Dragonfly 已成为阿里巴巴基础设施中的重要一环。    尽管容器技术大部分时候简化了运维工作，但是它也带来了一些挑战：例如镜像分发的效率问题，尤其是必须在多个主机上复制镜像分发时。    Dragonfly 在这种场景下能够完美支持 Docker 和 PouchContainer。它也兼容其他格式的容器。相比原生方式，它能将容器分发速度提高 57 倍，并让 Registry 网络出口流量降低 99.5%。    Dragonfly 能让所有类型的文件、镜像或数据分发变得简单而经济。    但目前蜻蜓的运维操作主要还是人肉去进行，没有相关的管控入口，导致运维效率低下，用户受众少。极大限制了蜻蜓的推广。所以需要有志之士一起来扛起蜻蜓",
+                "label": "210720827",
+                "link": "",
+                "tech_tag": [
+                    "Go",
+                    "Cloud Native",
+                    "Container",
+                    "Distributed System",
+                    "Kubernetes",
+                    "Docker"
+                ],
+                "domain_tag": [
+                    "Cloud Native",
+                    "Container",
+                    "Programming Language"
+                ],
+                "oR": [
+                    "搭建蜻蜓管控系统，操作简单易用",
+                    "接口文档通俗易懂",
+                    "对蜻蜓各个系统熟练掌握",
+                    "能够为开源社区持续提交代码"
+                ],
+                "tR": [
+                    "golang",
+                    "linux",
+                    "react",
+                    "shell",
+                    "mysql",
+                    "redis",
+                    "k8s",
+                    "docker"
+                ],
+                "orgID": 718,
+                "spl": 0,
+                "organchor": "dragonfly",
+                "orgname": "Dragonfly"
+            },
+            {
+                "name": "dragonfly2.0 调度系统升级",
+                "remark": "",
+                "difficulty": "高",
+                "mentor": "李玉海",
+                "contact": "<ansinlee@qq.com>",
+                "uniont": "孙伟鹏<244372610@qq.com>,胡作政<garfieldhu@aliyun.com>",
+                "student_count": 0,
+                "description": "Dragonfly 作为一款P2P文件分发系统，已经成为CNCF孵化项目。整个系统高效的分发效率，调度系统起到了关键作用。而且调度系统设计的越合理，整个系统的性能能够获取越大的提升，可以说调度系统是整个蜻蜓的核心中的核心，因此调度算法的优化对于整个项目来说是一个很大的挑战，目前我们也在积极需求志同道合的朋友一起来完善这个伟大的项目，所以我们需要有算法背景的同学一起加入我们",
+                "label": "210720828",
+                "link": "",
+                "tech_tag": [
+                    "Go",
+                    "Linux",
+                    "Deep Learning Framework"
+                ],
+                "domain_tag": [
+                    "Cloud Native",
+                    "Container",
+                    "Programming Language"
+                ],
+                "oR": [
+                    "将机器学习算法应用于我们的调度系统，使得整个文件分发的效率更优",
+                    "成为开源社区commiter，能够影响更多的同学"
+                ],
+                "tR": [
+                    "golang",
+                    "linux",
+                    "IP/TCP",
+                    "socket"
+                ],
+                "orgID": 718,
+                "spl": 0,
+                "organchor": "dragonfly",
+                "orgname": "Dragonfly"
+            },
+            {
+                "name": "dragonfly2.0 文件读写",
+                "remark": "",
+                "difficulty": "中",
+                "mentor": "胡作政",
+                "contact": "<garfieldhu@aliyun.com>",
+                "uniont": "孙伟鹏<244372610@qq.com>,李玉海<ansinlee@qq.com>",
+                "student_count": 0,
+                "description": "Dragonfly 作为一款文件分发系统，对文件的网络传输和存储读写要求非常高，目前我们在调研各种业界先进方案，力求将蜻蜓的文件读写性能提升到一个全新的阶段，期待你们的加入   我们的官网  https://d7y.io/zh-cn/index.html",
+                "label": "210720829",
+                "link": "",
+                "tech_tag": [
+                    "Go",
+                    "Linux",
+                    "Cloud Native",
+                    "Container",
+                    "Kubernetes",
+                    "Git",
+                    "Docker"
+                ],
+                "domain_tag": [
+                    "Cloud Native",
+                    "Programming Language"
+                ],
+                "oR": [
+                    "调研业界先进文件读写方案",
+                    "贡献项目文件读写功能代码",
+                    "成为开源社区committer，持续为社区发光发热"
+                ],
+                "tR": [
+                    "golang",
+                    "linux",
+                    "IP/TCP",
+                    "storage"
+                ],
+                "orgID": 718,
+                "spl": 0,
+                "organchor": "dragonfly",
+                "orgname": "Dragonfly"
+            },
+            {
+                "name": "dragonfly2.0 文件传输及读写性能升级",
+                "remark": "",
+                "difficulty": "高",
+                "mentor": "胡作政",
+                "contact": "<garfieldhu@aliyun.com>",
+                "uniont": "孙伟鹏<244372610@qq.com>,李玉海<ansinlee@qq.com>",
+                "student_count": 0,
+                "description": "Dragonfly 作为一款文件分发系统，对文件的网络传输和存储读写要求非常高，目前我们在调研各种业界先进方案，力求将蜻蜓的文件读写性能提升到一个全新的阶段，期待你们的加入   我们的官网  https://d7y.io/zh-cn/index.html",
+                "label": "210720845",
+                "link": "",
+                "tech_tag": [
+                    "Go",
+                    "Linux",
+                    "Cloud Native",
+                    "Container",
+                    "Kubernetes",
+                    "Git",
+                    "Docker"
+                ],
+                "domain_tag": [
+                    "Cloud Native",
+                    "Programming Language"
+                ],
+                "oR": [
+                    "调研业界先进文件读写方案",
+                    "贡献项目文件读写功能代码",
+                    "成为开源社区committer，持续为社区发光发热"
+                ],
+                "tR": [
+                    "golang",
+                    "linux",
+                    "IP/TCP"
+                ],
+                "orgID": 718,
+                "spl": 1,
+                "organchor": "dragonfly",
+                "orgname": "Dragonfly"
+            }
+        ]
     },
     {
         "userId": 717,
@@ -23540,7 +24936,7 @@
             "Dev Tools"
         ],
         "mail_list": "hengyunabc@gmail.com",
-        "email": "",
+        "email": "312461311@qq.com",
         "project_list": [
             {
                 "name": "Arthas 使用JVMTI 接口实现高级功能",
@@ -23662,12 +25058,12 @@
             "Cloud Native",
             "Container"
         ],
-        "mail_list": "FillZpp.pub@gmail.com furykerry@gmail.com",
+        "mail_list": "FillZpp.pub@gmail.com  furykerry@gmail.com",
         "email": "FillZpp.pub@gmail.com",
         "project_list": [
             {
                 "name": "开发 OpenKruise 版本的 kubectl 插件",
-                "remark": null,
+                "remark": "",
                 "difficulty": "中",
                 "mentor": "王思宇",
                 "contact": "<jiuzhu.wsy@alibaba-inc.com>",
@@ -23698,13 +25094,13 @@
                     "推荐熟悉 Kubernetes 同学参与"
                 ],
                 "orgID": 654,
-                "spl": 0,
+                "spl": 1,
                 "organchor": "openkruise",
                 "orgname": "OpenKruise"
             },
             {
                 "name": "为 OpenKruise 搭建开发 kruise-state-metrics 项目",
-                "remark": null,
+                "remark": "",
                 "difficulty": "中",
                 "mentor": "王思宇",
                 "contact": "<jiuzhu.wsy@alibaba-inc.com>",
@@ -23735,13 +25131,13 @@
                     "推荐熟悉 Kubernetes 同学参与"
                 ],
                 "orgID": 654,
-                "spl": 0,
+                "spl": 1,
                 "organchor": "openkruise",
                 "orgname": "OpenKruise"
             },
             {
                 "name": "帮助 KubeVela 支持 Kruise 更多特性",
-                "remark": null,
+                "remark": "",
                 "difficulty": "中",
                 "mentor": "王思宇",
                 "contact": "<jiuzhu.wsy@alibaba-inc.com>",
@@ -23772,13 +25168,13 @@
                     "推荐熟悉 Kubernetes 同学参与"
                 ],
                 "orgID": 654,
-                "spl": 0,
+                "spl": 1,
                 "organchor": "openkruise",
                 "orgname": "OpenKruise"
             },
             {
                 "name": "开发 OpenKruise 的 KubeFed 联邦扩展",
-                "remark": null,
+                "remark": "",
                 "difficulty": "中",
                 "mentor": "王思宇",
                 "contact": "<jiuzhu.wsy@alibaba-inc.com>",
@@ -23809,7 +25205,7 @@
                     "推荐熟悉 Kubernetes 同学参与"
                 ],
                 "orgID": 654,
-                "spl": 0,
+                "spl": 1,
                 "organchor": "openkruise",
                 "orgname": "OpenKruise"
             }
@@ -24965,10 +26361,10 @@
         ],
         "domain_tag": [
             "Cloud Native",
-            "Distributed System",
-            "Big Data"
+            "Big Data",
+            "Distributed System"
         ],
-        "mail_list": "linzhu.ht@alibaba-inc.com lxj193371@alibaba-inc.com wenyuan.ywy@alibaba-inc.com qiaozi.zwb@alibaba-inc.com siyuanzhang.zsy@alibaba-inc.com diwen.zdw@alibaba-inc.com",
+        "mail_list": "v6d@list.alibaba-inc.com",
         "email": "vineyard@alibaba-inc.com",
         "project_list": [
             {
@@ -25236,7 +26632,234 @@
         ],
         "mail_list": "wine-devel@winehq.org",
         "email": "wine-devel@winehq.org",
-        "project_list": []
+        "project_list": [
+            {
+                "name": "Implement robocopy.exe",
+                "remark": null,
+                "difficulty": "高",
+                "mentor": "Zebediah Figura",
+                "contact": "<z.figura12+ospp_summer@gmail.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "Robocopy, for \"Robust File Copy\", is a command-line directory and/or file replication command for Microsoft Windows.  it has been a standard feature of Windows since Windows Vista and Windows Server 2008.     Some Windows applications' installers require robocopy. - https://bugs.winehq.org/show_bug.cgi?id=43653    Work would consist of implementing the basic functionality of the program, including flags needed by the relevant programs.",
+                "label": "210900805",
+                "link": "",
+                "tech_tag": [
+                    "Linux",
+                    "C"
+                ],
+                "domain_tag": [
+                    "OS",
+                    "Dev Tools",
+                    "Programming Language"
+                ],
+                "oR": [
+                    "Implement an opensource implementation of robocopy, which supports some most widely used flags",
+                    "Code merged into wine upstream",
+                    "Benefit at least one real-world app in https://bugs.winehq.org/show_bug.cgi?id=43653"
+                ],
+                "tR": [
+                    "C",
+                    "Git",
+                    "Linux"
+                ],
+                "orgID": 948,
+                "spl": 2,
+                "organchor": "wine",
+                "orgname": "Wine"
+            },
+            {
+                "name": "vkd3d-shader enhancements - Port wined3d's GLSL (OpenGL Shading Language) generator to vkd3d-shader",
+                "remark": null,
+                "difficulty": "高",
+                "mentor": "Henri Verbeet",
+                "contact": "<hverbeet+ospp_summer@gmail.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "The ability to translate Direct3D shaders to GLSL is useful outside of wined3d as well. Porting the GLSL generator to vkd3d-shader would make it much easier to use for projects other than Wine, including vkd3d-compiler for offline compilation. In combination with a HLSL compiler, this would allow translation of HLSL to GLSL.",
+                "label": "210900808",
+                "link": "",
+                "tech_tag": [
+                    "Linux",
+                    "C",
+                    "Git",
+                    "OpenGL"
+                ],
+                "domain_tag": [
+                    "Linux Kernel",
+                    "Programming Language",
+                    "Graphics"
+                ],
+                "oR": [
+                    "wined3d's GLSL generator merged into vkd3d-shader"
+                ],
+                "tR": [
+                    "C",
+                    "Git"
+                ],
+                "orgID": 948,
+                "spl": 2,
+                "organchor": "wine",
+                "orgname": "Wine"
+            },
+            {
+                "name": "vkd3d-shader enhancements - Documentation improvements",
+                "remark": null,
+                "difficulty": "中",
+                "mentor": "Henri Verbeet",
+                "contact": "<hverbeet+ospp_summer@gmail.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "We have some API documentation, and some example code in the form of the \"gears\" and \"triangle\" demos.    It would be nice to also have some \"tutorial\" style documentation to help people get started.",
+                "label": "210900814",
+                "link": "",
+                "tech_tag": [
+                    "Linux",
+                    "C",
+                    "OpenGL"
+                ],
+                "domain_tag": [
+                    "OS",
+                    "Graphics"
+                ],
+                "oR": [
+                    "Documentation",
+                    "More demos merged into code base"
+                ],
+                "tR": [
+                    "C",
+                    "OpenGL",
+                    "vkd3d"
+                ],
+                "orgID": 948,
+                "spl": 2,
+                "organchor": "wine",
+                "orgname": "Wine"
+            },
+            {
+                "name": "Improve Wine TestBot - avoid reloading pages all the time",
+                "remark": null,
+                "difficulty": "高",
+                "mentor": "François Gouget",
+                "contact": "<fgouget@codeweavers.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "The goal would be to avoid reloading pages all the time, starting with the Job details page and moving on to other pages if time permits.        A prime target would be the job details page which reloads every time one shows / hides a log or a screenshot. Dealing with screenshots should be easy. The interesting part would be to have the website provide an API to retrieve the logs which the JavaScript code would then insert in the right place, taking into account that logs are not available until a task has completed. Also, instead of reloading the whole page regularly, the JavaScript code should query for changes to the Job status and update the page accordingly.      Similarly, instead of reloading all of the main page regularly, JavaScript could be used to retrieve just the new jobs and status changes, and then update the page.      The job submit page could also use JavaScript to have all operations happen on a single page and make uploading the patch / executable smoother.      Finally, refreshing the activity page could benefit from a similar treatment to the main page.      Note: As part of this project you will have to set up your own TestBot instance, that is the Engine, webserver and a QEmu VM.",
+                "label": "210900819",
+                "link": "",
+                "tech_tag": [
+                    "JavaScript",
+                    "JavaScript"
+                ],
+                "domain_tag": [
+                    "Virtualization",
+                    "Web"
+                ],
+                "oR": [
+                    "instead of reloading all of the main page regularly, JavaScript could be used to retrieve just the new jobs and status changes, and then update the Wine Test page"
+                ],
+                "tR": [
+                    "Perl",
+                    "JavaScript",
+                    "REST"
+                ],
+                "orgID": 948,
+                "spl": 2,
+                "organchor": "wine",
+                "orgname": "Wine"
+            },
+            {
+                "name": "vkd3d-shader enhancement - Convert existing Direct3D 12 tests to the shader_runner framework",
+                "remark": null,
+                "difficulty": "高",
+                "mentor": "Henri Verbeet",
+                "contact": "<hverbeet+ospp_summer@gmail.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "Much like Vulkan, Direct3D 12 is an API that requires many things which would be done implicitly by other APIs to be done explicitly by the user of the API. That has its advantages, but one of the consequences is that many of the d3d12 tests ended up being more verbose than equivalent d3d11 tests. The shader_runner framework in vkd3d is similar in concept to Piglit's shader_runner, and allows tests to be written in a more declarative and much more concise style, at the expense of some flexibility. Where possible, we would like to convert our existing d3d12 tests to shader_runner tests. Note that until vkd3d-shader's HLSL compiler is sufficiently complete, shaders would need to be specified in binary form, like they currently are in the existing tests.",
+                "label": "210900825",
+                "link": "",
+                "tech_tag": [
+                    "C"
+                ],
+                "domain_tag": [
+                    "OS",
+                    "Graphics"
+                ],
+                "oR": [
+                    "Wine's  Direct3D 12 tests are converted to the shader_runner framework"
+                ],
+                "tR": [
+                    "C",
+                    "Graphics"
+                ],
+                "orgID": 948,
+                "spl": 2,
+                "organchor": "wine",
+                "orgname": "Wine"
+            },
+            {
+                "name": "Improvie HiDPI support",
+                "remark": null,
+                "difficulty": "中",
+                "mentor": "Zhiyi Zhang",
+                "contact": "<yi.gd.cn+ospp_summer@gmail.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "Wine currently supports HiDPI. But there're many places in Wine UI that don't take HiDPI into consideration. An example application is Control Spy v6 2.0 with DPI set to 192. DateTime Picker doesn't have enough space, same for Edit, Hot Key, Month Calendar, Status Bar, SysLink, Tab Control, Trackbar, and Up/Down. Note that it may be an application bug. But there are other places in Wine apps as well, e.g., print preview button and toolbar size in WordPad.     First, get a scope of Wine common controls/user controls/applications that need to be fixed. Then for further improvements, you may work on setting the recommended DPI scale at Wine startup or dynamic DPI change at runtime.",
+                "label": "210900830",
+                "link": "",
+                "tech_tag": [
+                    "Linux",
+                    "C",
+                    "Git"
+                ],
+                "domain_tag": [
+                    "OS",
+                    "Display"
+                ],
+                "oR": [
+                    "Create a doc/wiki for Wine's HiDPI support",
+                    "Fix at least one app's HiDpi behavior (third party or Wine builtin app)"
+                ],
+                "tR": [
+                    "C"
+                ],
+                "orgID": 948,
+                "spl": 2,
+                "organchor": "wine",
+                "orgname": "Wine"
+            },
+            {
+                "name": "Implement keyboard shortcut support for Datetime Picker Control",
+                "remark": null,
+                "difficulty": "低",
+                "mentor": "Jactry Zeng",
+                "contact": "<jactry92+ospp_summer@gmail.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "The idea is to add support of all/some of the keyboard shortcuts to Wine's Datetime Picker Control, so that we can select a day by the keyboard.   These hotkeys are mentioned in this MSDN page: https://docs.microsoft.com/en-us/windows/win32/controls/month-calendar-controls#selecting-a-day   Wine bug 50511 will also benefit from this work.",
+                "label": "210900837",
+                "link": "",
+                "tech_tag": [
+                    "C",
+                    "Git"
+                ],
+                "domain_tag": [
+                    "OS"
+                ],
+                "oR": [
+                    "At least four shortcuts are merged into Wine's codebase"
+                ],
+                "tR": [
+                    "C"
+                ],
+                "orgID": 948,
+                "spl": 2,
+                "organchor": "wine",
+                "orgname": "Wine"
+            }
+        ]
     },
     {
         "userId": 775,
@@ -25375,13 +26998,13 @@
             },
             {
                 "name": "Path Smoothing / 路径平滑",
-                "remark": null,
+                "remark": "",
                 "difficulty": "中",
                 "mentor": "Steven Macenski",
                 "contact": "<stevenmacenski@gmail.com>",
                 "uniont": null,
                 "student_count": 0,
-                "description": "This project is to create a generic path smoothing node or library to help in smoothing out paths generated from search-based planners used in Nav2 (Dijkstra, A*, NavFn, Hybrid-A*, State Lattice, etc) to make them more drivable at higher speeds and remove any non-optimal artifacts from the searching process due to imperfect heuristic functions.    该项目目标是创建一个通用的路径平滑ROS节点或库，对Nav2中基于搜索的规划器（包括Dijkstra, A*, NavFn, Hybrid-A*, State Lattice等）生成的路径进行平滑处理，确保这些路径在高速环境下更加可控，并消除由于启发式函数不完善而导致搜索过程中的非最优效果。    Common ways to smooth paths include:  - Non-linear optimization   - Gradient Descent (related)   - Splines   - Curve fitting   - etc    常见的平滑路径的方法包括:  - 非线性优化  - 梯度下降法(相关)  - 样条  - 曲线拟合  - 其他    Your task will be to create a path smoother that will take in a given path and smooth it to be more drivable and return that path to the requester.    该项目的任务是创建一条路径平滑器，对路径进行平滑处理，并使其更加可控，然后将该路径返回给请求者。",
+                "description": "[With the community development proceeding, the smoothing problem is partially done, so the project may not accept request in the future]  This project is to create a generic path smoothing node or library to help in smoothing out paths generated from search-based planners used in Nav2 (Dijkstra, A*, NavFn, Hybrid-A*, State Lattice, etc) to make them more drivable at higher speeds and remove any non-optimal artifacts from the searching process due to imperfect heuristic functions.    [由于社区开发的进展，smoothing问题已经得到部分解决，未来本项目可能不接受申请]  该项目目标是创建一个通用的路径平滑ROS节点或库，对Nav2中基于搜索的规划器（包括Dijkstra, A*, NavFn, Hybrid-A*, State Lattice等）生成的路径进行平滑处理，确保这些路径在高速环境下更加可控，并消除由于启发式函数不完善而导致搜索过程中的非最优效果。    Common ways to smooth paths include:  - Non-linear optimization   - Gradient Descent (related)   - Splines   - Curve fitting   - etc    常见的平滑路径的方法包括:  - 非线性优化  - 梯度下降法(相关)  - 样条  - 曲线拟合  - 其他    Your task will be to create a path smoother that will take in a given path and smooth it to be more drivable and return that path to the requester.    该项目的任务是创建一条路径平滑器，对路径进行平滑处理，并使其更加可控，然后将该路径返回给请求者。",
                 "label": "210910784",
                 "link": "",
                 "tech_tag": [
@@ -25404,6 +27027,178 @@
                     "Mobile robot navigation experience/移动机器人导航经验",
                     "Geometry, splines, and/or optimization/几何学，样条函数和/或优化",
                     "Recommended: Gazebo simulation, ROS navigation/有Gazebo仿真和ROS 导航经验更佳"
+                ],
+                "orgID": 775,
+                "spl": 0,
+                "organchor": "ros",
+                "orgname": "ROS"
+            },
+            {
+                "name": "精简ROS2节点和检测过程||Reduce ROS2 Nodes and Determinism ",
+                "remark": "",
+                "difficulty": "中",
+                "mentor": "Steven Macenski",
+                "contact": "<stevenmacenski@gmail.com>",
+                "uniont": "巨震<juzhenathw@163.com>",
+                "student_count": 0,
+                "description": "精简ROS2节点和决策  任务描述    无可否认，这个项目是对于不熟悉ROS2内在细节和层次的人来说是有点抽象。如果你愿意投入这个项目，你将成为少数几个真正理解ROS2内部工作原理的人之一，这也会成为你的一个非常有竞争力的技能。我们不要求申请这个项目的同学具备完成任务的先验知识，在参与项目的过程中，我们会帮助同学学习必要的知识。    在Foxy发行版之前，ROS2进行了架构上的调整，以确保所有运行多个ROS2节点的单个进程都能够共享网络中的DDS资源，这一点非常重要，因为每增加一个DDS共享者，都会产生额外的系统开销。    为了让Nav2充分利用这一点，我们需要调整对ROS2节点(node)和执行器(executor)的使用，以进一步减少现有节点对象的数量。当我们基于早期的ROS2构建Nav2时，需要在单个server中使用多个节点，以处理Action请求和其他回调。而现在，我们可以为特定任务使用多线程spinner、毁掉函数组和单个执行器(executor)。    这个项目将包括识别Nav2技术栈中的所有Node对象(control + f可以更快的查找)，并与导师合作，以确保到夏季结束时，每个server只包含一个节点。此外，行为树插件应该更新为利用回调函数组，以确保任何单个行为树节点持续运行，以检查其毁掉中是否有新的消息，这样，根据相同的机制，行为树节点只触发自己的回调函数    如果感兴趣，我们可以提供关于这个项目的更多细节，以下链接也提供了更多的上下文。相信我，在这个夏天，这是一个很有可能实现的目标，也会让你看清 Nav2和 rclcpp 的本质，让你对未来的职业生涯具有一个更清晰的认知(能够将这些机制掌握到这种程度的ROS2开发者大概只有10%，这个项目会让你跻身于这前10%的行列）||Reduce ROS2 Nodes and Determinism    Task description        This project is admittedly abstract to explain to someone unfamiliar with the inner-details of ROS2 and its layers. If you’re interested in working on this, you will become one of the few that truly understand the inner workings of it and be a very marketable skill. We do not expect anyone applying for this project to have that knowledge beforehand and we will help you learn the necessary items.          ROS2 architecturally was changed before Foxy in order to ensure that any single process containing multiple ROS2 node objects will share the same DDS participant on the network. This is important due to the overhead that each additional DDS participant has on the system.      In order for nav2 to leverage this the best, we need to adjust our usage of ROS2 nodes and executors to further minimize the number of node objects in existance. In the early days of ROS2 when Nav2 was being built, we were required to have many nodes in a single server in order to handle action requests and other callbacks. Now, we can make use of multi-threaded spinners, callback groups, and individual executors for specific tasks.        This project will involve identifying all of the Node objects in the stack (control+F makes this easy) and work with mentors to ensure by the end of the summer each server contains only a single node. Additionally, the behavior tree plugins should be updated to leverage callback groups to ensure that any single BT node spinning to check if any new messages are on its callback will only trigger its own callback by the same mechanisms.        More details about this project can be supplied if interested, but the tickets linked below also provide more context. Trust me to say this is a very achievable goal over the course of the summer and will also let you look under the hood of both Nav2 and rclcpp, giving you valuable insight future in your career (and put you in the top 10% of ROS2 developers that know it to this degree).    ",
+                "label": "210910794",
+                "link": "",
+                "tech_tag": [
+                    "C++",
+                    "Robotics",
+                    " ROS"
+                ],
+                "domain_tag": [
+                    "Programming Language",
+                    "Robotics"
+                ],
+                "oR": [
+                    " 将Nav2技术栈中多余的ROS2节点删除，并替换为执行器或多线程执行器||Remove excess ROS2 nodes from stack and replace with executors and multi -threaded executors ",
+                    "将行为树节点的spinner替换为本地执行器，确保执行过程确定并且只处理当前行为属节点的回调函数组||Replace Behavior Tree node spinners with local executors to ensure deterministic execution & processing only callback groups of the current BT node ",
+                    "如果时间允许，为Nav2创建一个单独的可执行main()函数，编排所有Nav2进程并提高基准性能测试||If time allots, create a single main() function Nav2 executable composing all Nav2 processes and benchmarking improvements in performance "
+                ],
+                "tR": [
+                    "C++",
+                    "ROS2"
+                ],
+                "orgID": 775,
+                "spl": 0,
+                "organchor": "ros",
+                "orgname": "ROS"
+            },
+            {
+                "name": " Twist到Twiststamped替换，以及运行时配置更新||Convert Twist to TwistStamped in Ecosystem and Run-Time Configuration ",
+                "remark": "",
+                "difficulty": "中",
+                "mentor": "Steven Macenski",
+                "contact": "<stevenmacenski@gmail.com>",
+                "uniont": "巨震<juzhenathw@163.com>",
+                "student_count": 0,
+                "description": "这个项目包括两个较小的项目，可以很容易地并行工作。  子项目A: 在生态系统中将Twist转换为TwistStamped  在导航过程中，产生的cmd_vel消息上下文中存在Twist信息，这个项目的目的是找到ROS2生态栈中，哪些地方利用了这个Twist信息。这些地方可能包括Nav2、ROS2控制、Gazebo的ROS插件以及Yuk速度过滤器，主要的机器人驱动等。下面的链接中包含了之前已经发现的点。  一旦你基于生态系统中建立一个使用Twist的列表，就可以对这些代码库相应的ROS2分支提交PR，修改其接口，用TwistStamped替代Twist。  子项目B: 运行时参数配置更新  与此同时，当你在等待项目A中提交的PR被何如或退回时，可以着手子项目B，让Nav2中主要参数可以在运行时更新。在 ROS2中，这是通过参数变更的事件回调来完成的。下面的列表，列出了动态配置参数支持的插件或Server。||This project is comprised of 2 smaller projects that can be easily worked on in parallel.  Subproject A: Convert Twist to TwistStamped in Ecosystem      The aim of this project is to identify places in the ROS2 ecosystem that make use of Twist in the context of cmd_vel coming out of Navigation. This includes things like Nav2, ROS2 Control, Gazebo ROS Plugins, Yuk’s Velocity Filter, major robot drivers, etc. A set of previously identified places is shown in the ticket linked below.      Once you’ve created a list of places in the ecosystem where it is used, your project will be to submit PRs on their ROS2 branches to change the interface to make use of a TwistStamped instead of a Twist.      Subproject B: Run-time Reconfiguration of Parameters      In the meantime while you’re waiting for PRs to be merged or blocked by reviews on converting all of the ecosystems cmd_vel use of Twist to TwistStamped, your project will be to enable run-time reconfiguration of the major parameters in Nav2. In ROS2 this is done via the parameter change event callbacks. See tickets below for a list of plugins or servers needing dynamically reconfigurable parameter support added.    ",
+                "label": "210910795",
+                "link": "",
+                "tech_tag": [
+                    "C++",
+                    "Robotics"
+                ],
+                "domain_tag": [
+                    "Programming Language",
+                    "Robotics"
+                ],
+                "oR": [
+                    " 将Nav2生态中的主要项目更新为TwistStamped||Convert all the major ecosystem projects into TwistStamped ",
+                    "为Nav2中需要动态配置更新的插件和server增加运行时配置更新||Enable run-time reconfiguration of the remaining plugins and servers in Nav2 missing ",
+                    " 确保配置更新是线程安全的，可以利用所，原子变量和回调函数组||Ensure that reconfiguration is thread-safe by using locks, atomic variables, or callback groups "
+                ],
+                "tR": [
+                    "C++",
+                    "Python3",
+                    "ROS2"
+                ],
+                "orgID": 775,
+                "spl": 0,
+                "organchor": "ros",
+                "orgname": "ROS"
+            },
+            {
+                "name": " 集成动态障碍物检测功能||Navigation Dynamic Obstacle Integration ",
+                "remark": "",
+                "difficulty": "高",
+                "mentor": "Steven Macenski",
+                "contact": "<stevenmacenski@gmail.com>",
+                "uniont": "巨震<juzhenathw@163.com>",
+                "student_count": 0,
+                "description": "长期以来，Navigation技术栈在广泛的环境中提供了可靠的导航。控制器可以在有动态障碍物的情况下有效地工作，而不需要对动态障碍物的特性进行明确的建模。然而，随着这个领域的发展，我们看到越来越多基于ROS的机器人被部署在充满人的空间，必须更多地考虑动态障碍，如人，购物车，动物和交通工具。        该任务中，要集成现有机器学习工具，这些机器学习工具(ComplexYolo、 Yolo3D 等)创建动态障碍信息，并应用于导航技术栈。这个过程不要求你重新训练模型，或者成为3D机器学习专家，但是一些基本的知识会很有帮助。下面链接中的项目已经开始开发，需要进一步完成。包括完成正在进行的工作，用YOLACT Edge取代Detectron2，并在GPU上对这些功能进行基准测试，以验证足够的运行时性能，以及其他切线特性开发。        这项任务将涉及确定一些技术，产生关于动态障碍物的位置和速度信息，可以在移动机器人上运行(使用高功率 Intel CPU、 Nvidia Jetson SoC、GPU外设等) ，并运行在ROS和Navigation上。接下来，你将帮助创建一个新的Costmap Layer，使用这些信息来标记Costmap中的动态障碍物，以确保机器人不会与未来障碍物的轨迹发生碰撞。        如果时间允许，您还可以将这些动态信息集成到路径规划器和/或控制器中，帮助直接运行。有可能与另一个社区成员合作完成。||The Navigation Stack has long provided robust navigation in a wide range of environments. Controllers have been developed to operate effectively in the presence of dynamic obstacles without explicitly modeling the characteristics of dynamic obstacles. However, as the field has progressed and we see more and more robots using ROS deployed in human-filled spaces, more consideration must be taken with respect to dynamic obstacles such as people, carts, animals, and vehicles.    Your task will be to create integrations with existing machine learning tools that create dynamic obstacle information (ComplexYolo, Yolo3D, etc) and tie them into the navigation stack for use. It is not in the scope for you to retrain or otherwise become an expert in 3D machine learning, but some basic knowledge will be helpful. We already have a starting point in the project links below that needs to be driven to completion. This includes completing the on-going work to integrate yolact edge into this work to replace detectron2 and benchmark these capabilities on GPUs to verify sufficient run-time performance, as well as other tangental feature development.    This task will involve identifying a few techniques that produce position and velocity information about dynamic obstacles that can run on a mobile robot (using high-power Intel CPU, Nvidia Jetson SoC, external GPUs, etc) and get them running with ROS and Navigation. Next, you will help create a new costmap layer to use this information to mark the dynamic obstacle in the costmap to ensure a robot does not collide with a future trajectory of an obstacle.    If time permits, you may also work to also integrate this dynamic information into a path planner and/or controller to help in direct motion consideration. This will likely be in collaboration with another community member.    ",
+                "label": "210910796",
+                "link": "",
+                "tech_tag": [
+                    "AI",
+                    "C++",
+                    "Robotics"
+                ],
+                "domain_tag": [
+                    "AI",
+                    "Robotics"
+                ],
+                "oR": [
+                    "在ROS2中集成一种机器学习的动态障碍物检测算法||Integrations of 1 method of dynamic obstacle detection in ROS 2, using machine learning ",
+                    "使用真实数据测试动态障碍物检测算法，或使用机器人直接进行现场的功能测试||Test these capabilities on real data or a live robot to demonstrate functionality ",
+                    " 测试覆盖率不低于85%||85% test coverage or higher "
+                ],
+                "tR": [
+                    "C++, Python ,ROS",
+                    "移动机器人导航经验||Mobile robot navigation experience",
+                    " 几何学和统计学||Geometry and statistics ",
+                    "有Gazebo仿真和ROS 导航经验更佳||Recommended: Gazebo simulation, ROS navigation"
+                ],
+                "orgID": 775,
+                "spl": 0,
+                "organchor": "ros",
+                "orgname": "ROS"
+            },
+            {
+                "name": "高级Navigation测试框架||Advanced Navigation Testing Framework ",
+                "remark": "",
+                "difficulty": "中",
+                "mentor": "Steven Macenski",
+                "contact": "<stevenmacenski@gmail.com>",
+                "uniont": "巨震<juzhenathw@163.com>",
+                "student_count": 0,
+                "description": "从ROS1到ROS2，ROS2导航技术栈一个显著的变化就是更加侧重于测试和可靠性。我们目前的测试覆盖率为85% ，并在持续集成(CI)中进行完整的系统仿真，用一个真正的机器人完成真正的导航任务来测试整个导航系统。您的任务是将测试覆盖率增加到90% (或者从开始任务时增加5%) ，并改进现有的系统测试，以模拟一个更加现实的环境。然后，实现一个环境，能够主动阻碍机器人，让其完全无法完成导航任务，来测试最坏的情况。||The ROS 2 Navigation Stack has had a focus on testing and reliability as a characteristic change from ROS 1 to ROS 2. We currently have a test coverage rate of 85% and do full system simulations in Continuous Integration (CI) to test the entire navigation system with a real robot completing real navigation tasks. Your task will be to increase the testing coverage rate to 90% (or +5% from your starting) and improve on the existing system tests to represent a more realistic environment. You will then work to make sure of that environment to actively block the robot from completing its task to simulate worst-case conditions.    ",
+                "label": "210910797",
+                "link": "",
+                "tech_tag": [
+                    "C++",
+                    "Robotics"
+                ],
+                "domain_tag": [
+                    "Robotics"
+                ],
+                "oR": [
+                    "根据codecov 的报告，代码行测试行覆盖率提高到90%或更高(目前为85%)||Test line coverage of 90% or higher on the repository as reported by codecov (currently 85%) ",
+                    " 改进仿真环境，能够服务更真实的移动机器人应用||An improved simulation environment for a more realistic mobile robotics application ",
+                    "更新系统测试，以利用该环境模拟错误或非理想情况||Updated system tests to take advantage of that environment to fault or un-ideal cases of the stack"
+                ],
+                "tR": [
+                    "C++, Python3, gtest",
+                    " Gazebo，建议对Gazebo插件有一定了解||Gazebo, recommended experience with Gazebo plugins ",
+                    "建议具有一定的机器人导航经验||Recommended: Navigation experience "
+                ],
+                "orgID": 775,
+                "spl": 0,
+                "organchor": "ros",
+                "orgname": "ROS"
+            },
+            {
+                "name": "语义集成||Semantic Integration /",
+                "remark": "",
+                "difficulty": "高",
+                "mentor": "Steven Macenski",
+                "contact": "<stevenmacenski@gmail.com>",
+                "uniont": "巨震<juzhenathw@163.com>",
+                "student_count": 0,
+                "description": "这个项目是创建一个语义库，并将其集成到 Nav2系统中。其主要目的是支持一种通用的语义表示格式，导航(以及可能的其他 ROS 项目)可以使用这种格式来表示它们的环境、其中的对象或意向点。  在创建通用表示方法之后，将此功能集成到Nav2中进行演示，例如在有预定义潜在语义的情况下，用一个路线规划服务器，替换已有规划服务器(非自由空间规划)，也可以选择其他场景进行演示。||This project is to create a semantics library and integrate it into the Nav2 system. The major aim is to enable a generic semantic representation format that navigation (and potentially other ROS projects) may use for representing their environment, objects within it, or points of interest.    After creating the generic representation, your project will be to create demonstrations within Nav2 using this capability including a route planning server to replace the planner server in situations where you have a pre-defined set of potential locales (non-free space planning) and another demonstration of your choice.      ",
+                "label": "210910798",
+                "link": "",
+                "tech_tag": [
+                    "Robotics",
+                    " ROS"
+                ],
+                "domain_tag": [
+                    "Robotics"
+                ],
+                "oR": [
+                    " 将通用语义标准添加到Nav2的文档中||Generic semantics standard added to Nav2 documentation ",
+                    " 通用语义的ROS2库，实现该标准，应用程序易于获得、拉取或分析语义以实现特定目标||Generic semsntics ROS2 library that implements the standard and makes it easy for applications to get, retreive, or analyze semantic data for custom purposes ",
+                    "路径服务器，提供导航图和/或路径跟随功能||A route server to enable navigation-graph and/or route following capabilities ",
+                    "1 more demonstration using the semantics library of your choice (could be costmap layer with different rules in different rooms or with different objects, a multi-story building demo using semantic info to allow a robot to plan and execute multi-story trajectories, etc)"
+                ],
+                "tR": [
+                    "C++, Python, ROS2",
+                    "移动机器人导航或操作经验||Mobile robot navigation or manipulation experience ",
+                    "感知、语义信息动机或类似技术||Perception, semantic information motivation, or similar ",
+                    "有Gazebo仿真和ROS 导航经验更佳||Recommended: Gazebo simulation, ROS navigation"
                 ],
                 "orgID": 775,
                 "spl": 0,
@@ -25444,7 +27239,7 @@
             "SSO",
             "RBAC"
         ],
-        "mail_list": "shimingxy@qq.com",
+        "mail_list": "shimingxy@qq.com  shimingxy@163.com",
         "email": "shimingxy@qq.com",
         "project_list": [
             {
@@ -26735,7 +28530,7 @@
             "edge-computing",
             "kubernetes"
         ],
-        "mail_list": "rambohe.ch@gmail.com f.guo@alibaba-inc.com",
+        "mail_list": "rambohe.ch@gmail.com  f.guo@alibaba-inc.com",
         "email": "rambohe.ch@gmail.com",
         "project_list": [
             {
@@ -26914,20 +28709,21 @@
         ],
         "domain_tag": [
             "Productivity",
-            "Desktop"
+            "Desktop",
+            "Office"
         ],
         "mail_list": "",
         "email": "ilmari.lauhakangas@libreoffice.org",
         "project_list": [
             {
                 "name": "Develop an individual target to build the LibreOffice help tools and help files with Meson",
-                "remark": "This is part of a feasibility study of building LibreOffice using Meson / 关于使用 Meson 构建 LibreOffice 的可行性研究\r\n\r\nCurrently the LibreOffice build system uses autoconf and make. Most of the complex stuff is organized in the LibreOffice-internal, high-level build system written in make, called gbuild. It offers a lot of functionality to make it easy for developers to build LibreOffice or external libraries on various platforms with a multitude of configuration options. Generally this works well for LibreOffice, until you need to either extend gbuild or even fix a bug. gbuild itself is ~18,000 lines of code and lives in solenv/gbuild/. Additionally the configure.ac file adds ~13,000 lines of mainly shell code and m4 macro calls. And since the whole make code is ~150,000 lines, it takes a lot of time to start a new build. On a first impression a lot of the gbuild functionality can be mapped to meson functionality in a straight-forward way, but as always the first 80% are the easiest.\r\n\r\nThere is already some kind of playground branch as private/jmux/meson, based on the initial work done by the meson author Jussi Pakkanen in https://github.com/jpakkane/core/commits/master. It currently builds ~80 of the ~200 internal LibreOffice libraries and completely depends on a Linux system to provide the external libraries. The branch currently builds inside a Ubuntu 20.04 / focal chroot (schroot setup can be provided). There is a rebased and fixed version available as private/jmux/meson-gsoc-2021. It's a rebase of the old branch to current master (as in 2021-04-05) and it still builds with Ubuntu 20.04.\r\n\r\nThis is currently a Linux-only idea. It seems it's a realistic goal to get LibreOffice building and running in the project timeframe on Linux without depending of the possibility to build all the external libraries too.\r\n\r\nFor some more information:\r\n\r\nhttps://lists.freedesktop.org/archives/libreoffice/2020-February/084575.html\r\nhttps://mesonbuild.com/\r\nhttps://conan.io/\r\nhttps://gerrit.libreoffice.org/plugins/gitiles/core/+log/refs/heads/private/jmux/meson\r\nhttps://nibblestew.blogspot.com/2020/02/building-very-small-subset-of.html\r\nhttps://nibblestew.blogspot.com/2020/02/trying-to-build-slightly-larger-slice.html\r\nhttps://nibblestew.blogspot.com/2020/02/building-even-more-of-libreoffice-with.html\r\nhttps://nibblestew.blogspot.com/2020/02/unity-build-test-with-meson-libreoffice.html\r\nhttps://github.com/jpakkane/core/commits/master",
+                "remark": "This is part of a feasibility study of building LibreOffice using Meson\r\nCurrently the LibreOffice build system uses autoconf and make. Most of the complex stuff is organized in the LibreOffice-internal, high-level build system written in make, called gbuild. It offers a lot of functionality to make it easy for developers to build LibreOffice or external libraries on various platforms with a multitude of configuration options. Generally this works well for LibreOffice, until you need to either extend gbuild or even fix a bug. gbuild itself is ~18,000 lines of code and lives in solenv/gbuild/. Additionally the configure.ac file adds ~13,000 lines of mainly shell code and m4 macro calls. And since the whole make code is ~150,000 lines, it takes a lot of time to start a new build. On a first impression a lot of the gbuild functionality can be mapped to meson functionality in a straight-forward way, but as always the first 80% are the easiest.\r\n\r\nThere is already some kind of playground branch as private/jmux/meson, based on the initial work done by the meson author Jussi Pakkanen in https://github.com/jpakkane/core/commits/master. It currently builds ~80 of the ~200 internal LibreOffice libraries and completely depends on a Linux system to provide the external libraries. The branch currently builds inside a Ubuntu 20.04 / focal chroot (schroot setup can be provided). There is a rebased and fixed version available as private/jmux/meson-gsoc-2021. It's a rebase of the old branch to current master (as in 2021-04-05) and it still builds with Ubuntu 20.04.\r\n\r\nThis is currently a Linux-only idea. It seems it's a realistic goal to get LibreOffice building and running in the project timeframe on Linux without depending of the possibility to build all the external libraries too.\r\n\r\nFor some more information:\r\n\r\nhttps://lists.freedesktop.org/archives/libreoffice/2020-February/084575.html\r\nhttps://mesonbuild.com/\r\nhttps://conan.io/\r\nhttps://gerrit.libreoffice.org/plugins/gitiles/core/+log/refs/heads/private/jmux/meson\r\nhttps://nibblestew.blogspot.com/2020/02/building-very-small-subset-of.html\r\nhttps://nibblestew.blogspot.com/2020/02/trying-to-build-slightly-larger-slice.html\r\nhttps://nibblestew.blogspot.com/2020/02/building-even-more-of-libreoffice-with.html\r\nhttps://nibblestew.blogspot.com/2020/02/unity-build-test-with-meson-libreoffice.html\r\nhttps://github.com/jpakkane/core/commits/master\r\n\r\n【关于使用 Meson 构建 LibreOffice 的可行性研究】",
                 "difficulty": "高",
                 "mentor": "Jan-Marek Glogowski",
                 "contact": "<glogow@fbihome.de>",
                 "uniont": "Jussi Pakkanen<jpakkane@gmail.com>,Olivier Hallot<olivier.hallot@libreoffice.org>",
                 "student_count": 0,
-                "description": "创建单独的构建目标，以使用 Meson 构建 LibreOffice 帮助的工具和文档 / Develop an individual target to build the LibreOffice help tools and help files with Meson",
+                "description": "创建单独的构建目标，以使用 Meson 构建 LibreOffice 帮助的工具和文档||Develop an individual target to build the LibreOffice help tools and help files with Meson    ",
                 "label": "210840769",
                 "link": "",
                 "tech_tag": [
@@ -26951,13 +28747,13 @@
                     "some C / C++ to understand compiler errors"
                 ],
                 "orgID": 911,
-                "spl": 2,
+                "spl": 0,
                 "organchor": "libreoffice",
                 "orgname": "LibreOffice"
             },
             {
-                "name": "编写 Meson 代码用于构建所依赖的外部代码项目 / Develop some Meson code to build external projects",
-                "remark": "This is part of a feasibility study of building LibreOffice using Meson / 关于使用 Meson 构建 LibreOffice 的可行性研究\r\n\r\nCurrently the LibreOffice build system uses autoconf and make. Most of the complex stuff is organized in the LibreOffice-internal, high-level build system written in make, called gbuild. It offers a lot of functionality to make it easy for developers to build LibreOffice or external libraries on various platforms with a multitude of configuration options. Generally this works well for LibreOffice, until you need to either extend gbuild or even fix a bug. gbuild itself is ~18,000 lines of code and lives in solenv/gbuild/. Additionally the configure.ac file adds ~13,000 lines of mainly shell code and m4 macro calls. And since the whole make code is ~150,000 lines, it takes a lot of time to start a new build. On a first impression a lot of the gbuild functionality can be mapped to meson functionality in a straight-forward way, but as always the first 80% are the easiest.\r\n\r\nThere is already some kind of playground branch as private/jmux/meson, based on the initial work done by the meson author Jussi Pakkanen in https://github.com/jpakkane/core/commits/master. It currently builds ~80 of the ~200 internal LibreOffice libraries and completely depends on a Linux system to provide the external libraries. The branch currently builds inside a Ubuntu 20.04 / focal chroot (schroot setup can be provided). There is a rebased and fixed version available as private/jmux/meson-gsoc-2021. It's a rebase of the old branch to current master (as in 2021-04-05) and it still builds with Ubuntu 20.04.\r\n\r\nThis is currently a Linux-only idea. It seems it's a realistic goal to get LibreOffice building and running in the project timeframe on Linux without depending of the possibility to build all the external libraries too.\r\n\r\nFor some more information:\r\nhttps://lists.freedesktop.org/archives/libreoffice/2020-February/084575.html\r\nhttps://mesonbuild.com/\r\nhttps://conan.io/\r\nhttps://gerrit.libreoffice.org/plugins/gitiles/core/+log/refs/heads/private/jmux/meson\r\nhttps://nibblestew.blogspot.com/2020/02/building-very-small-subset-of.html\r\nhttps://nibblestew.blogspot.com/2020/02/trying-to-build-slightly-larger-slice.html\r\nhttps://nibblestew.blogspot.com/2020/02/building-even-more-of-libreoffice-with.html\r\nhttps://nibblestew.blogspot.com/2020/02/unity-build-test-with-meson-libreoffice.html\r\nhttps://github.com/jpakkane/core/commits/master",
+                "name": "Develop some Meson code to build external projects【编写 Meson 代码用于构建所依赖的外部代码项目 】",
+                "remark": "This is part of a feasibility study of building LibreOffice using Meson \r\n\r\nCurrently the LibreOffice build system uses autoconf and make. Most of the complex stuff is organized in the LibreOffice-internal, high-level build system written in make, called gbuild. It offers a lot of functionality to make it easy for developers to build LibreOffice or external libraries on various platforms with a multitude of configuration options. Generally this works well for LibreOffice, until you need to either extend gbuild or even fix a bug. gbuild itself is ~18,000 lines of code and lives in solenv/gbuild/. Additionally the configure.ac file adds ~13,000 lines of mainly shell code and m4 macro calls. And since the whole make code is ~150,000 lines, it takes a lot of time to start a new build. On a first impression a lot of the gbuild functionality can be mapped to meson functionality in a straight-forward way, but as always the first 80% are the easiest.\r\n\r\nThere is already some kind of playground branch as private/jmux/meson, based on the initial work done by the meson author Jussi Pakkanen in https://github.com/jpakkane/core/commits/master. It currently builds ~80 of the ~200 internal LibreOffice libraries and completely depends on a Linux system to provide the external libraries. The branch currently builds inside a Ubuntu 20.04 / focal chroot (schroot setup can be provided). There is a rebased and fixed version available as private/jmux/meson-gsoc-2021. It's a rebase of the old branch to current master (as in 2021-04-05) and it still builds with Ubuntu 20.04.\r\n\r\nThis is currently a Linux-only idea. It seems it's a realistic goal to get LibreOffice building and running in the project timeframe on Linux without depending of the possibility to build all the external libraries too.\r\n\r\nFor some more information:\r\nhttps://lists.freedesktop.org/archives/libreoffice/2020-February/084575.html\r\nhttps://mesonbuild.com/\r\nhttps://conan.io/\r\nhttps://gerrit.libreoffice.org/plugins/gitiles/core/+log/refs/heads/private/jmux/meson\r\nhttps://nibblestew.blogspot.com/2020/02/building-very-small-subset-of.html\r\nhttps://nibblestew.blogspot.com/2020/02/trying-to-build-slightly-larger-slice.html\r\nhttps://nibblestew.blogspot.com/2020/02/building-even-more-of-libreoffice-with.html\r\nhttps://nibblestew.blogspot.com/2020/02/unity-build-test-with-meson-libreoffice.html\r\nhttps://github.com/jpakkane/core/commits/master\r\n\r\n【关于使用 Meson 构建 LibreOffice 的可行性研究】",
                 "difficulty": "高",
                 "mentor": "Jan-Marek Glogowski",
                 "contact": "<glogow@fbihome.de>",
@@ -26992,8 +28788,8 @@
                 "orgname": "LibreOffice"
             },
             {
-                "name": "继续完成将 LibreOffice 中的代码库移植到 Meson 的工作 / Continue migrating LibreOffice libraries to Meson",
-                "remark": "This is part of a feasibility study of building LibreOffice using Meson / 关于使用 Meson 构建 LibreOffice 的可行性研究\r\n\r\nCurrently the LibreOffice build system uses autoconf and make. Most of the complex stuff is organized in the LibreOffice-internal, high-level build system written in make, called gbuild. It offers a lot of functionality to make it easy for developers to build LibreOffice or external libraries on various platforms with a multitude of configuration options. Generally this works well for LibreOffice, until you need to either extend gbuild or even fix a bug. gbuild itself is ~18,000 lines of code and lives in solenv/gbuild/. Additionally the configure.ac file adds ~13,000 lines of mainly shell code and m4 macro calls. And since the whole make code is ~150,000 lines, it takes a lot of time to start a new build. On a first impression a lot of the gbuild functionality can be mapped to meson functionality in a straight-forward way, but as always the first 80% are the easiest.\r\n\r\nThere is already some kind of playground branch as private/jmux/meson, based on the initial work done by the meson author Jussi Pakkanen in https://github.com/jpakkane/core/commits/master. It currently builds ~80 of the ~200 internal LibreOffice libraries and completely depends on a Linux system to provide the external libraries. The branch currently builds inside a Ubuntu 20.04 / focal chroot (schroot setup can be provided). There is a rebased and fixed version available as private/jmux/meson-gsoc-2021. It's a rebase of the old branch to current master (as in 2021-04-05) and it still builds with Ubuntu 20.04.\r\n\r\nThis is currently a Linux-only idea. It seems it's a realistic goal to get LibreOffice building and running in the project timeframe on Linux without depending of the possibility to build all the external libraries too.\r\n\r\nFor some more information:\r\nhttps://lists.freedesktop.org/archives/libreoffice/2020-February/084575.html\r\nhttps://mesonbuild.com/\r\nhttps://conan.io/\r\nhttps://gerrit.libreoffice.org/plugins/gitiles/core/+log/refs/heads/private/jmux/meson\r\nhttps://nibblestew.blogspot.com/2020/02/building-very-small-subset-of.html\r\nhttps://nibblestew.blogspot.com/2020/02/trying-to-build-slightly-larger-slice.html\r\nhttps://nibblestew.blogspot.com/2020/02/building-even-more-of-libreoffice-with.html\r\nhttps://nibblestew.blogspot.com/2020/02/unity-build-test-with-meson-libreoffice.html\r\nhttps://github.com/jpakkane/core/commits/master",
+                "name": "继续完成将 LibreOffice 中的代码库移植到 Meson 的工作||Continue migrating LibreOffice libraries to Meson",
+                "remark": "This is part of a feasibility study of building LibreOffice using Meson \r\n\r\nCurrently the LibreOffice build system uses autoconf and make. Most of the complex stuff is organized in the LibreOffice-internal, high-level build system written in make, called gbuild. It offers a lot of functionality to make it easy for developers to build LibreOffice or external libraries on various platforms with a multitude of configuration options. Generally this works well for LibreOffice, until you need to either extend gbuild or even fix a bug. gbuild itself is ~18,000 lines of code and lives in solenv/gbuild/. Additionally the configure.ac file adds ~13,000 lines of mainly shell code and m4 macro calls. And since the whole make code is ~150,000 lines, it takes a lot of time to start a new build. On a first impression a lot of the gbuild functionality can be mapped to meson functionality in a straight-forward way, but as always the first 80% are the easiest.\r\n\r\nThere is already some kind of playground branch as private/jmux/meson, based on the initial work done by the meson author Jussi Pakkanen in https://github.com/jpakkane/core/commits/master. It currently builds ~80 of the ~200 internal LibreOffice libraries and completely depends on a Linux system to provide the external libraries. The branch currently builds inside a Ubuntu 20.04 / focal chroot (schroot setup can be provided). There is a rebased and fixed version available as private/jmux/meson-gsoc-2021. It's a rebase of the old branch to current master (as in 2021-04-05) and it still builds with Ubuntu 20.04.\r\n\r\nThis is currently a Linux-only idea. It seems it's a realistic goal to get LibreOffice building and running in the project timeframe on Linux without depending of the possibility to build all the external libraries too.\r\n\r\nFor some more information:\r\nhttps://lists.freedesktop.org/archives/libreoffice/2020-February/084575.html\r\nhttps://mesonbuild.com/\r\nhttps://conan.io/\r\nhttps://gerrit.libreoffice.org/plugins/gitiles/core/+log/refs/heads/private/jmux/meson\r\nhttps://nibblestew.blogspot.com/2020/02/building-very-small-subset-of.html\r\nhttps://nibblestew.blogspot.com/2020/02/trying-to-build-slightly-larger-slice.html\r\nhttps://nibblestew.blogspot.com/2020/02/building-even-more-of-libreoffice-with.html\r\nhttps://nibblestew.blogspot.com/2020/02/unity-build-test-with-meson-libreoffice.html\r\nhttps://github.com/jpakkane/core/commits/master\r\n\r\n【关于使用 Meson 构建 LibreOffice 的可行性研究】",
                 "difficulty": "高",
                 "mentor": "Jan-Marek Glogowski",
                 "contact": "<glogow@fbihome.de>",
@@ -27023,12 +28819,12 @@
                     "some C / C++ to understand compiler errors"
                 ],
                 "orgID": 911,
-                "spl": 2,
+                "spl": 0,
                 "organchor": "libreoffice",
                 "orgname": "LibreOffice"
             },
             {
-                "name": "基于机器学习为向 gerrit 提交的代码补丁自动选择需要运行的测试（并标记缺失配套测试的补丁） / Select tests (or flag patches with missing tests) to run on Gerrit patches based on machine learning",
+                "name": "Select tests (or flag patches with missing tests) to run on Gerrit patches based on machine learning【基于机器学习为向 gerrit 提交的代码补丁自动选择需要运行的测试（并标记缺失配套测试的补丁） 】",
                 "remark": "Many, but not all of the technical requirements might be acquired before starting on the project, while joining the community",
                 "difficulty": "高",
                 "mentor": "Thorsten Behrens",
@@ -27062,8 +28858,8 @@
                 "orgname": "LibreOffice"
             },
             {
-                "name": "实现 Calc 中的表格样式 / Implement table styles in Calc",
-                "remark": null,
+                "name": "Implement table styles in Calc【实现 Calc 中的表格样式 】",
+                "remark": "",
                 "difficulty": "高",
                 "mentor": "Eike Rathke",
                 "contact": "<erack@redhat.com>",
@@ -27096,8 +28892,8 @@
                 "orgname": "LibreOffice"
             },
             {
-                "name": "改进导入 Zoner Draw 文件的过滤器 / Improve Zoner Draw import filter",
-                "remark": null,
+                "name": "Improve Zoner Draw import filter【改进导入 Zoner Draw 文件的过滤器 】",
+                "remark": "",
                 "difficulty": "高",
                 "mentor": "David Tardon",
                 "contact": "<dtardon@redhat.com>",
@@ -27128,8 +28924,8 @@
                 "orgname": "LibreOffice"
             },
             {
-                "name": "改进导入 Adobe Pagemaker 文件的过滤器 / Improve Adobe Pagemaker import filter",
-                "remark": null,
+                "name": "Improve Adobe Pagemaker import filter【改进导入 Adobe Pagemaker 文件的过滤器】",
+                "remark": "",
                 "difficulty": "高",
                 "mentor": "David Tardon",
                 "contact": "<dtardon@redhat.com>",
@@ -27197,7 +28993,7 @@
             "Container",
             "Virtualization"
         ],
-        "mail_list": "opensuse-project@opensuse.org factory-opensuse@opensuse.org",
+        "mail_list": "opensuse-project@opensuse.org  factory-opensuse@opensuse.org",
         "email": "opensuse-project@opensuse.org",
         "project_list": [
             {
@@ -28119,9 +29915,9 @@
         ],
         "domain_tag": [
             "Bioinformatics",
-            "Computational Biology"
+            " Computational Biology"
         ],
-        "mail_list": "sachsenb@informatik.uni-tuebingen.de pfeuffer@informatik.uni-tuebingen.de Chris.Bielow@fu-berlin.de hannes.rost@utoronto.ca",
+        "mail_list": "sachsenb@informatik.uni-tuebingen.de  pfeuffer@informatik.uni-tuebingen.de  Chris.Bielow@fu-berlin.de  hannes.rost@utoronto.ca",
         "email": "sachsenberg@gmail.com",
         "project_list": [
             {
@@ -28593,8 +30389,8 @@
         "tech_tag": [
             "Python",
             "Cloud Native",
-            "Distributed System",
-            "Kubernetes"
+            "AI",
+            "Distributed System"
         ],
         "domain_tag": [
             "AI",
@@ -28602,7 +30398,7 @@
             "Big Data",
             "Distributed System"
         ],
-        "mail_list": "heks93@163.com  qinxuye@gmail.com  swj0066@gmail.com",
+        "mail_list": "mars-dev@googlegroups.com",
         "email": "mars-dev@googlegroups.com",
         "project_list": [
             {
@@ -28925,9 +30721,77 @@
             "Distributed System",
             "Web"
         ],
-        "mail_list": "siujoeng.lau@gmail.com lxycs@umich.edu xiaoyang.liu@ucla.edu",
+        "mail_list": "xiaoyang.liu@ucla.edu",
         "email": "xiaoyang.liu@ucla.edu",
-        "project_list": []
+        "project_list": [
+            {
+                "name": "HTML Rewriter",
+                "remark": null,
+                "difficulty": "中",
+                "mentor": "Xiaoyang Liu",
+                "contact": "<xiaoyang.liu@ucla.edu>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "Rocket Booster 目前无法修改源站返回的静态资源. 本项目的目标是使用 Cloudflare Workers 提供的 HTMLRewriter API, 根据用户配置在边缘节点修改源站返回的 HTML 文件, 并使用 Cloudflare Cache API 或 Workers KV 对修改后的文件进行缓存.",
+                "label": "211100802",
+                "link": "",
+                "tech_tag": [
+                    "JavaScript",
+                    "NodeJS",
+                    "TypeScript"
+                ],
+                "domain_tag": [
+                    "Web"
+                ],
+                "oR": [
+                    "使用 HTMLRewriter API 修改网页内容 (文本替换, 删除元素, etc.)",
+                    "使用 Cache API 或 Workers KV 缓存修改结果",
+                    "使用 Google Cloud Translation API 翻译网页的文本",
+                    "根据用户配置, 为网页添加组件, 例如 GDPR Cookie Consent, Scroll back to top button, etc."
+                ],
+                "tR": [
+                    "了解前端开发的相关知识 (HTML, CSS, JavaScript, TypeScript)",
+                    "使用 Git 协作开发"
+                ],
+                "orgID": 1325,
+                "spl": 1,
+                "organchor": "rocketbooster",
+                "orgname": "Rocket Booster"
+            },
+            {
+                "name": "Rocket Booster 网站与 CI/CD 优化",
+                "remark": "",
+                "difficulty": "中",
+                "mentor": "Xiaoyang Liu",
+                "contact": "<xiaoyang.liu@ucla.edu>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "Rocket Booster 的官方网站 booster.js.org 目前使用 Hugo 作为静态页面生成引擎, 难以实现对语法和页面的定制. 因此, Rocket Booster 计划将网站迁移到基于 React 的 Docusaurus 页面生成框架, 实现对页面的深度定制. 此外, 我们还希望利用 GitHub Actions 来优化开发流程, 实现自动部署.",
+                "label": "211100807",
+                "link": "",
+                "tech_tag": [
+                    "JavaScript",
+                    "React",
+                    "TypeScript"
+                ],
+                "domain_tag": [
+                    "Web"
+                ],
+                "oR": [
+                    "使用 React 与 Docusaurus 开发 booster.js.org 文档网站",
+                    "使用 GitHub Actions 实现 Rocket Booster Template 自动部署",
+                    "使用 Jest 与 Codecov 为 Rocket Booster 编写单元测试, 生成覆盖率报告"
+                ],
+                "tR": [
+                    "了解前端开发的相关知识 (HTML, CSS, JavaScript, TypeScript, React)",
+                    "使用 Git 协作开发"
+                ],
+                "orgID": 1325,
+                "spl": 1,
+                "organchor": "rocketbooster",
+                "orgname": "Rocket Booster"
+            }
+        ]
     },
     {
         "userId": 1330,
@@ -29361,6 +31225,66 @@
         ],
         "mail_list": "chenxilzx1@gmail.com  echooy.mxq@gmail.com  btbr403@gmail.com  wangiegie@gmail.com  sczyh16@gmail.com",
         "email": "chenxilzx1@gmail.com",
+        "project_list": [
+            {
+                "name": "实现 spring cloud alibaba + dubbo3 与原生 dubbo3 交叉互调",
+                "remark": null,
+                "difficulty": "高",
+                "mentor": "陈曦",
+                "contact": "<chenxilzx1@163.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "spring cloud alibaba、 dubbo3 作为两套不同的微服务框架，开发者经常遇到如何取舍的问题。虽然现在 spring cloud alibaba 可以集成 dubbo 框架。但是整个集群中，两套框架仍然是非此即彼的。  为了更好的方便用户使用，以及降低用户的决策成本。需要实现通过 spring cloud aliaba 集成的 dubbo3 与原生 dubbo3 实现交叉互调用。这样用户就可以平滑的两套系统之间的任意切换。",
+                "label": "211130810",
+                "link": "",
+                "tech_tag": [
+                    "Java",
+                    "Distributed System",
+                    "Micro Service"
+                ],
+                "domain_tag": [
+                    "Cloud Native",
+                    "Distributed System"
+                ],
+                "oR": [
+                    "在 spring cloud alibaba 中实现对 dubbo3 的集成",
+                    "实现 spring cloud alibaba + dubbo3 可以和原生 dubbo3 交叉互调"
+                ],
+                "tR": [
+                    "熟练使用java，尤其是多线程相关",
+                    "熟悉 spring、dubbo 框架"
+                ],
+                "orgID": 1462,
+                "spl": 1,
+                "organchor": "springcloudalibaba",
+                "orgname": "Spring Cloud Alibaba"
+            }
+        ]
+    },
+    {
+        "userId": 1452,
+        "anchor": "openct",
+        "slide": "",
+        "video": "",
+        "img": "openct.png",
+        "title": "北京师范大学OpenCT社区",
+        "project_url": "",
+        "url": "https://open-ct.com/landing",
+        "description": "北京师范大学在线教育OpenCT社区，由北京师范大学中国基础教育质量监测协同创新中心刘坚教授的博士生罗海风于2019年12月组织发起，在码云和github上创建仓库存储，拟通过暑期2021组织筹备面向社会进行开源。目前社区成员由刘坚教授及其博士后、博士生、硕士生共22名成员组成，此外还有全职+兼职专业技术开发人员8-10名左右协助开发，社区目前搭建的指向5C核心素养的高阶思维能力系统有自己的网站主页、论坛、OA系统、命题系统、问卷系统、出报告系统等系列在线教育的平台，且平台已经历了全国多地的数万人的大规模样本使用，同时，平台拟在2021第六届中国教育创新成果公益博览会展出，是北师大唯一的开源教育平台，期望可以通过开源引领在线教育技术的发展，改变在线教育体系的风向，促进教育教学的改革和发展。",
+        "full_des": "中共中央国务院印发的《深化新时代教育评价改革总体方案》明确要求“用5-10 年的时间，基本形成富有时代特征、彰显中国特色、体现世界水平的教育评价体系”，这一评价体系将更加突出立德树人，更加聚焦学生发展核心素养。发展学生核心素养作为教育部深化基础教育课程改革的重要标志，明确要求写入中小学课程方案和各学科课程标准，并在教材修订、教学实践和课程评价中全面落实。因此，从关注知识掌握、技能训练、解题能力转向全面开展学生核心素养的评价研究，不仅具有十分重要的学术价值和理论贡献，而且对于冲破长期困扰我国社会的应试教育枷锁、促进基础教育整体转型升级、培育新时代需要的建设者，对于全面建成创新型国家、实现中华民族伟大复兴，更具有重要的现实意义和深远的历史意义。 为了给核心素养的培养与评价提供新思路，探索不同课程对学生核心素养发展的贡献度及其内在机制，为扭转我国长期以来存在的以学科为中心的应试倾向提供新的理论支持，北京师范大学中国基础教育质量监测协同创新中心的刘坚教授组织及其博士生罗海风组织团队开展了“基于计算机交互环境的核心素养培养及测评研究”的课题，采取质性和量化相结合的混合研究方法，结合我国学生的特点和文化背景，以5C 核心素养模型为理论框架，开发了在线交互式5C 核心素养学、练、评系统OpenCT，并进行了大规模的应用，该系统目前已在全国范围内拥有数万的学生用户。为引导教育领域的技术发展，特将系统开源，希望可以成为教育领域的技术风向标，为教育界的开源引领潮流。 OpenCT高阶思维学练评体系，以5C核心素养为基本理论指导框架，整合五大功能架构：（1）交互式任务零代码批量化命制，颠覆传统在线任务的开发模式；（2）嵌入多功能在线学习模块，轻松发布学习资源；（3）轻量级架构，满足大规模在线网络问卷及测试；（4）基于状态的数据采集新机制，过程性数据自动分析，结果性数据一键导出；（5）自动生成报告，加速对学生作答的反馈机制。 旨在打造一个颠覆传统技术的新型生态化系统，为一线师生提供开放的学、练、测、评体系，助力基础教育的线上化发展。未来拟发起以5C核心素养为内容基础的国际5C高阶思维挑战赛，在全国招募一线教师线上批量化命制交互式任务，引领在线测评的发展方向，为中小学生核心素养的发展提供切实有效的路径。",
+        "tech_tag": [
+            "Go",
+            "Python",
+            "JavaScript",
+            "React"
+        ],
+        "domain_tag": [
+            "AI",
+            "Big Data",
+            "Web"
+        ],
+        "mail_list": "lhf@mail.bnu.edu.cn 89982416@qq.com 8644357@qq.com",
+        "email": "lhf@mail.bnu.edu.cn",
         "project_list": []
     }
 ]

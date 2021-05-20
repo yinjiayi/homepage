@@ -20,40 +20,24 @@
  import Apply from './pages/apply/index.js';
  import Org from './pages/org/index.js';
  import OrgDetail from './components/orgdetail/index.js';
- import Liveshow from './pages/liveshow/index.js';
- import ProjectDetail from './components/projectDetail/index.js';
- // import Orglist from "./components/orglist/index.js"
- // import ProjectlistN from "./components/projectlistN/index.js"
- let Orglist
- let ProjectlistN
- 
- 
- 
+
+import Liveshow from './pages/liveshow/index.js';
+import ProjectDetail from './components/projectDetail/index.js';
+import {asyncComponent} from './components/asynccomp/index.js'
+let Orglist
+let ProjectlistN
+
+
+
  export default class IRouter extends React.Component{
      constructor(props){
          super(props);   
-         this.state={
-             Orglistflag:false,
-             ProjectlistNflag:false
-         }         
+              
      }
  
      componentDidMount(){
-        setTimeout(()=>{
-         import(/* webpackPrefetch: 5 */"./components/orglist/index.js").then((module)=>{
-             Orglist = module.default
-             this.setState({
-                 Orglistflag:true
-             })
-         })
-         import(/* webpackPrefetch: 5 */"./components/projectlistN/index.js").then((module)=>{
-             ProjectlistN = module.default
-             this.setState({
-                 ProjectlistNflag:true
-             })
-         })
-        },1500)
-        
+        Orglist = asyncComponent(() => import('./components/orglist/index.js'));
+        ProjectlistN = asyncComponent(() => import('./components/projectlistN/index.js'));  
          
      }
      render(){
@@ -71,8 +55,10 @@
                                  <Route path="/org" component={Org}>
                                      <Org>                                  
                                          <Switch>
-                                             <Route path = {["/org", "/org/orglist"]}  component={this.state.Orglistflag?Orglist:""} exact ></Route>                      
-                                             <Route path="/org/projectlist" component={this.state.ProjectlistNflag? ProjectlistN:""} exact></Route>  
+                                             {/* <Route path = {["/org", "/org/orglist"]}  component={this.state.Orglistflag?Orglist:""} exact ></Route>                      
+                                             <Route path="/org/projectlist" component={this.state.ProjectlistNflag? ProjectlistN:""} exact></Route>  */}
+                                             <Route path = {["/org", "/org/orglist"]}  component={Orglist} exact ></Route>                      
+                                             <Route path="/org/projectlist" component={ProjectlistN} exact></Route> 
                                              <Route path="/org/orgdetail/:orgname" component={OrgDetail} ></Route>  
                                              <Route path="/org/prodetail/:projectid" component={ProjectDetail} ></Route>     
                                          </Switch>                                     

@@ -133,10 +133,10 @@ class Header extends React.Component{
                                 const linkurl = link[index]
                                 return (
                                    
-                                    <div key={index} className={[pageflagredux ===linkurl?"active":"" ,"headerWrapItem"].join(" ")}>
+                                    <div key={index} className={[pageflagredux ===linkurl?"active":"" ,"headerWrapItem", linkurl].join(" ")}>
                                     <div 
                                         onClick={()=>{this.goPage(linkurl)}}
-                                        className={["headerTabItem","headerNav", linkurl].join(" ")}>
+                                        className={["headerTabItem","headerNav"].join(" ")}>
                                         <span>{ele.name}</span>
                                     </div>                                
                                     </div>
