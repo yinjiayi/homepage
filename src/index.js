@@ -6,7 +6,6 @@ import './pages/homepage/mobile.less';
 import './pages/homepage/common.less';
 import './pages/index/index.less';
 import IRouter from './router.js';
-import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>

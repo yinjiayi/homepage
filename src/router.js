@@ -10,84 +10,84 @@
  * See the Mulan PSL v2 for more details.
  */
 
-import React from 'react';
-import {HashRouter as Router, Route, Switch} from 'react-router-dom';
-import App from './App';
-import Wrapper from './wrapper.js';
-import HomePage from './pages/homepage/index.js';
-import Help from './pages/help/index.js';
-import Howitworks from './pages/howitworks/index.js';
-import Apply from './pages/apply/index.js';
-import Org from './pages/org/index.js';
-import OrgDetail from './components/orgdetail/index.js';
-import Liveshow from './pages/liveshow/index.js';
-import ProjectDetail from './components/projectDetail/index.js';
-// import Orglist from "./components/orglist/index.js"
-// import ProjectlistN from "./components/projectlistN/index.js"
-let Orglist
-let ProjectlistN
-
-
-
-export default class IRouter extends React.Component{
-    constructor(props){
-        super(props);   
-        this.state={
-            Orglistflag:false,
-            ProjectlistNflag:false
-        }         
-    }
-
-    componentDidMount(){
-       setTimeout(()=>{
-        import(/* webpackPrefetch: 5 */"./components/orglist/index.js").then((module)=>{
-            Orglist = module.default
-            this.setState({
-                Orglistflag:true
-            })
-        })
-        import(/* webpackPrefetch: 5 */"./components/projectlistN/index.js").then((module)=>{
-            ProjectlistN = module.default
-            this.setState({
-                ProjectlistNflag:true
-            })
-        })
-       },1500)
-       
+ import React from 'react';
+ import {HashRouter as Router, Route, Switch} from 'react-router-dom';
+ import App from './App';
+ import Wrapper from './wrapper.js';
+ import HomePage from './pages/homepage/index.js';
+ import Help from './pages/help/index.js';
+ import Howitworks from './pages/howitworks/index.js';
+ import Apply from './pages/apply/index.js';
+ import Org from './pages/org/index.js';
+ import OrgDetail from './components/orgdetail/index.js';
+ import Liveshow from './pages/liveshow/index.js';
+ import ProjectDetail from './components/projectDetail/index.js';
+ // import Orglist from "./components/orglist/index.js"
+ // import ProjectlistN from "./components/projectlistN/index.js"
+ let Orglist
+ let ProjectlistN
+ 
+ 
+ 
+ export default class IRouter extends React.Component{
+     constructor(props){
+         super(props);   
+         this.state={
+             Orglistflag:false,
+             ProjectlistNflag:false
+         }         
+     }
+ 
+     componentDidMount(){
+        setTimeout(()=>{
+         import(/* webpackPrefetch: 5 */"./components/orglist/index.js").then((module)=>{
+             Orglist = module.default
+             this.setState({
+                 Orglistflag:true
+             })
+         })
+         import(/* webpackPrefetch: 5 */"./components/projectlistN/index.js").then((module)=>{
+             ProjectlistN = module.default
+             this.setState({
+                 ProjectlistNflag:true
+             })
+         })
+        },1500)
         
-    }
-    render(){
-        return(
-            <Router >
-                <App>
-                    
-                    <Route path="/" render={()=>
-                        <Wrapper>
+         
+     }
+     render(){
+         return(
+             <Router >
+                 <App>
+                     
+                     <Route path="/" render={()=>
+                         <Wrapper>
+                            
+                             <Switch >
+                                 
+                                 <Route path="/homepage"component={HomePage} ></Route> 
+                                 <Route path="/help"component={Help} ></Route>
+                                 <Route path="/org" component={Org}>
+                                     <Org>                                  
+                                         <Switch>
+                                             <Route path = {["/org", "/org/orglist"]}  component={this.state.Orglistflag?Orglist:""} exact ></Route>                      
+                                             <Route path="/org/projectlist" component={this.state.ProjectlistNflag? ProjectlistN:""} exact></Route>  
+                                             <Route path="/org/orgdetail/:orgname" component={OrgDetail} ></Route>  
+                                             <Route path="/org/prodetail/:projectid" component={ProjectDetail} ></Route>     
+                                         </Switch>                                     
+                                     </Org>   
+                                 </Route>
+                                 <Route path="/howitworks"component={Howitworks} ></Route> 
+                                 <Route path="/apply"component={Apply} ></Route>
+                                 <Route path="/liveshow"component={Liveshow} ></Route>                                                                                                                      
+                                 <Route path="/" component={HomePage} /> 
+                             </Switch>
                            
-                            <Switch >
-                                
-                                <Route path="/homepage"component={HomePage} ></Route> 
-                                <Route path="/help"component={Help} ></Route>
-                                <Route path="/org" component={Org}>
-                                    <Org>                                  
-                                        <Switch>
-                                            <Route path = {["/org", "/org/orglist"]}  component={this.state.Orglistflag?Orglist:""} exact ></Route>                      
-                                            <Route path="/org/projectlist" component={this.state.ProjectlistNflag? ProjectlistN:""} exact></Route>  
-                                            <Route path="/org/orgdetail/:orgname" component={OrgDetail} ></Route>  
-                                            <Route path="/org/prodetail/:projectid" component={ProjectDetail} ></Route>     
-                                        </Switch>                                     
-                                    </Org>   
-                                </Route>
-                                <Route path="/howitworks"component={Howitworks} ></Route> 
-                                <Route path="/apply"component={Apply} ></Route>
-                                <Route path="/liveshow"component={Liveshow} ></Route>                                                                                                                      
-                                <Route path="/" component={HomePage} /> 
-                            </Switch>
-                          
-                        </Wrapper>
-                    }/>
-                </App>
-            </Router>
-        );
-    }
-}
+                         </Wrapper>
+                     }/>
+                 </App>
+             </Router>
+         );
+     }
+ }
