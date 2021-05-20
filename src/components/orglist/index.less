@@ -1,103 +1,116 @@
-.OrglistBanner{
-    position: relative;
-    text-align: right;
-    font-family: SourceHanSansCN-Regular;
-	font-size: 16px;
-	font-weight: normal;
-	
-	color: #5c5c5c;
-    padding:24px 0;
-    display: flex;
-    justify-content: space-between;
+.OrglistBanner {
+  position: relative;
+  text-align: right;
+  font-family: SourceHanSansCN-Regular;
+  font-size: 16px;
+  font-weight: normal;
+  color: #5c5c5c;
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
 }
 
+.Orglist {
+  .ant-space {
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 30px;
+    .ant-spin-dot {
+      width: 3em;
+      height: 3em;
+    }
 
-
-.OrglistBannerTotal{
-    font-size: 18px;
+    .ant-spin-lg .ant-spin-dot i {
+      width: 40px;
+      height: 40px;
+    }
+  }
 }
 
-.italic{
-    font-style: italic;
+.OrglistBannerTotal {
+  font-size: 18px;
 }
 
-.content1200{
-    width: 1200px;
-    position: relative;
-    margin:0 auto
+.italic {
+  font-style: italic;
 }
 
-.OrgListItem{
-    margin-bottom: 27px;
+.content1200 {
+  width: 1200px;
+  position: relative;
+  margin: 0 auto;
 }
 
-.OrgListWrapper{
-    position: relative;
-    display: grid;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
-    grid-template-columns: repeat(auto-fill,386px);
-    overflow: hidden;
+.OrgListItem {
+  margin-bottom: 27px;
 }
 
-.OrgListItemModal{
-    position: relative;
-    text-align: left;
-    width: 386px;
-    height: 340px;
-    margin: 0 auto;
-    background-color: #fff;
-    cursor: pointer;
+.OrgListWrapper {
+  position: relative;
+  display: grid;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fill, 386px);
+  overflow: hidden;
 }
 
-.OrgListItemModalImage{
-    background-size: contain;
-    width: 382px;
-    height: 228px;
-    background-position: 50%;
-    margin: 0 auto;
-    background-repeat: no-repeat;
+.OrgListItemModal {
+  position: relative;
+  text-align: left;
+  width: 386px;
+  height: 340px;
+  margin: 0 auto;
+  background-color: #fff;
+  cursor: pointer;
 }
 
-.OrgListItemModalTitle{
-    font-weight: bold;
-    font-size: 18px;
-    letter-spacing: .005em;
-    padding: 0 18px 0;
-    height: 48px;
-    box-sizing: border-box;
-    color: #333333;
-    line-height: 22px;
-
+.OrgListItemModalImage {
+  background-size: contain;
+  width: 382px;
+  height: 228px;
+  background-position: 50%;
+  margin: 0 auto;
+  background-repeat: no-repeat;
 }
 
-.OrgListItemModalDesc{
-    color: #666a80;
-    font-size: 18px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    padding: 0 18px 0;
-    height: 48px ;
-    display:-webkit-box;
-    -webkit-line-clamp:2; 
-    -webkit-box-orient:vertical;
-    line-height: 24px;
+.OrgListItemModalTitle {
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 0.005em;
+  padding: 0 18px 0;
+  height: 48px;
+  box-sizing: border-box;
+  color: #333333;
+  line-height: 22px;
 }
 
-.OrgListItemModalDesc{
-    font-size: 16px;
-    color: #343434;
+.OrgListItemModalDesc {
+  color: #666a80;
+  font-size: 18px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 0 18px 0;
+  height: 48px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-height: 24px;
 }
 
-.OrgListItemModalTitle{
-    font-size: 16px;
+.OrgListItemModalDesc {
+  font-size: 16px;
+  color: #343434;
+}
+
+.OrgListItemModalTitle {
+  font-size: 16px;
 }
 
 .OrgTipTitle {
-    color: #000000!important;
-    font-size: 26px!important;
+  color: #000000 !important;
+  font-size: 26px !important;
 }
 
 .OrgTipItemContent {
-    margin-top: 40px!important;
+  margin-top: 40px !important;
 }
