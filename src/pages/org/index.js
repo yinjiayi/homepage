@@ -16,6 +16,8 @@ import {withRouter} from 'react-router-dom';
 import data from './../../data/org.json';
 import { connect } from 'react-redux';
 import { gohash } from '../../util/url';
+
+
 class Org extends React.Component{
     constructor(props){
        super(props)
@@ -34,7 +36,11 @@ class Org extends React.Component{
         }
         if(this.props.orgTabFlag !== orgflag){
             this.props.setOrgTabFlag(orgflag)
+           
+           
         }
+       
+        window.location.hash = '/org/'+orgflag
 
        
     }

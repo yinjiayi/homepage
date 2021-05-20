@@ -10834,14 +10834,14 @@
                 "orgname": "openEuler社区||openEuler Community"
             },
             {
-                "name": "新增stratovirt支持balloon内存信息统计",
-                "remark": "\r\n参考资料：\r\nhttps://gitee.com/openeuler/stratovirt/tree/master/docs",
+                "name": "新增stratovirt支持balloon内存信息统计||Add stratovirt to support balloon memory information statistics",
+                "remark": "\r\n\r\nReference：https://gitee.com/openeuler/stratovirt/tree/master/docs\r\n【参考资料：\r\nhttps://gitee.com/openeuler/stratovirt/tree/master/docs】",
                 "difficulty": "低",
                 "mentor": "杨老师",
                 "contact": "<1520509639@qq.com>",
                 "uniont": null,
                 "student_count": 0,
-                "description": "轻量虚拟机（Micro VM）是近几年新兴的一项虚拟化技术，StratoVirt是华为openEuler社区开源的轻量虚拟化软件，基于Rust语言编写，具备功能完善、安全可靠、启动快速、内存底噪小等特点，在容器和serverless场景有广阔的应用空间。本实验的目标是基于StratoVirt现有的能力，基于virtio以及balloon现有的能力，增加balloon的内存信息统计功能。最终实现通过qmp命令查询到虚拟机内存使用信息的功能。",
+                "description": "轻量虚拟机（Micro VM）是近几年新兴的一项虚拟化技术，StratoVirt是华为openEuler社区开源的轻量虚拟化软件，基于Rust语言编写，具备功能完善、安全可靠、启动快速、内存底噪小等特点，在容器和serverless场景有广阔的应用空间。本实验的目标是基于StratoVirt现有的能力，基于virtio以及balloon现有的能力，增加balloon的内存信息统计功能。最终实现通过qmp命令查询到虚拟机内存使用信息的功能。||Micro VM is a new virtualization technology in recent years, while Stratovirt is a lightweight virtualization application in Huawei openEuler open-source community. Based on the Rust programming language, Stratovirt has lots of advantages such as fully functional, trustworthy, fast-booting and less memory noise， so that it can be widely used in container and serverless scenarios. This implementation is targeted to add balloon statistics function for StratoVirt based on existing capabilities of Stratovirt, add get memory usage of GuestOS through qmp command.",
                 "label": "210010501",
                 "link": "https://gitee.com/openeuler-competition/summer-2021/issues/I3Q1A8?from=project-issue",
                 "tech_tag": [
@@ -10851,15 +10851,15 @@
                     "OS"
                 ],
                 "oR": [
-                    "基于现有的balloon设备，新增balloon的内存信息统计功能。",
-                    "总结整个开发流程和遇到的问题，并形成文档"
+                    "基于现有的balloon设备，新增balloon的内存信息统计功能。||Add balloon statistics function for StratoVirt based on existing capabilities of Stratovirt.",
+                    "总结整个开发流程和遇到的问题，并形成文档||Summarize developing steps and problem you meet."
                 ],
                 "tR": [
-                    "熟悉Rust语言",
-                    "了解虚拟化技术"
+                    "熟悉Rust语言||Familiar with rust programming language.",
+                    "了解虚拟化技术||Familiar with virtualization technology."
                 ],
                 "orgID": 132,
-                "spl": 1,
+                "spl": 0,
                 "organchor": "openeuler",
                 "orgname": "openEuler社区||openEuler Community"
             },
@@ -11928,6 +11928,393 @@
                 "spl": 1,
                 "organchor": "openeuler",
                 "orgname": "openEuler社区||openEuler Community"
+            },
+            {
+                "name": "开源社区运营活动效果评估",
+                "remark": null,
+                "difficulty": "高",
+                "mentor": "李老师",
+                "contact": "<lixianlin1@huawei.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "活动是推广的一种手段，活动的目的就是让更多的人了解我们的产品，使用我们的产品，为我们社区做出贡献，成为我们社区的一员。什么样的活动才能吸引更多的人才？举办此次活动的到底有多大的影响力？我们就需要评价这次活动的价值。  活动效果的评估，不仅仅是为了体现此次活动的价值，也要能够指导我们进行下一次活动的方案优化。什么样的活动更吸引人，什么类型的人来参加更合适，在什么地方举办活动更好。    活动包括：B站、抖音、线下meetup、各种会议、比赛等等    本任务会提供部分活动的样本数据。",
+                "label": "210010849",
+                "link": "",
+                "tech_tag": [
+                    "Linux",
+                    "Python",
+                    "Java"
+                ],
+                "domain_tag": [
+                    "OS",
+                    "Big Data"
+                ],
+                "oR": [
+                    "输出活动评价的方案设计文档，详细的代码实现",
+                    "输出此次活动的优势、缺点分析",
+                    "对下一次活动的活动效果预测准确率达到50%以上"
+                ],
+                "tR": [
+                    "了解linux操作系统",
+                    "熟悉java、python",
+                    "熟悉特征工程、机器学习算法"
+                ],
+                "orgID": 132,
+                "spl": 1,
+                "organchor": "openeuler",
+                "orgname": "openEuler社区||openEuler Community"
+            },
+            {
+                "name": "招募云原生K8S集群管理解决方案Eggo体验官",
+                "remark": null,
+                "difficulty": "低",
+                "mentor": "刘老师",
+                "contact": "<liuhao27@huawei.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "Eggo项目旨在解决大规模生产环境K8S集群自动化部署问题、部署流程跟踪以及提供高度的灵活性。通过结合GitOps管理、跟踪部署配置，通过云原生的方式实现集群的部署，实现集群部署集群的能力。    相关项目：    https://gitee.com/openeuler/eggo",
+                "label": "210010850",
+                "link": "",
+                "tech_tag": [
+                    "Linux"
+                ],
+                "domain_tag": [
+                    "OS",
+                    "Cloud Native"
+                ],
+                "oR": [
+                    "输出改进建议报告书，包含至少10条建议，有效建议比例不低于60%；",
+                    "把改进建议，提到eggo社区的issue列表中；",
+                    "提交至少6个有效问题的修改pr，并合入社区；"
+                ],
+                "tR": [
+                    "了解K8S集群部署；",
+                    "熟悉go语言；"
+                ],
+                "orgID": 132,
+                "spl": 1,
+                "organchor": "openeuler",
+                "orgname": "openEuler社区||openEuler Community"
+            },
+            {
+                "name": "实现Eggo的kubeadm模式的控制面模块",
+                "remark": null,
+                "difficulty": "中",
+                "mentor": "刘老师",
+                "contact": "<liuhao27@huawei.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "Eggo项目旨在解决大规模生产环境K8S集群自动化部署问题、部署流程跟踪以及提供高度的灵活性。通过结合GitOps管理、跟踪部署配置，通过云原生的方式实现集群的部署，实现集群部署集群的能力。    由于Eggo需要支持多种部署方式，当前社区主力在开发二进制部署模式，本任务需要开发人员基于当前架构，支持kubeadm的部署方式。  概要设计地址：https://gitee.com/openeuler/eggo/raw/master/docs/imgs/eggo_general_design_deploy1.png",
+                "label": "210010851",
+                "link": "",
+                "tech_tag": [
+                    "Linux"
+                ],
+                "domain_tag": [
+                    "OS",
+                    "Cloud Native"
+                ],
+                "oR": [
+                    "完成kubeadm部署模式的controlplane和bootstrap模块",
+                    "输出完善的设计文档；",
+                    "输出完善的测试用例；",
+                    "代码质量高；"
+                ],
+                "tR": [
+                    "了解K8S集群部署；",
+                    "熟悉go语言；"
+                ],
+                "orgID": 132,
+                "spl": 1,
+                "organchor": "openeuler",
+                "orgname": "openEuler社区||openEuler Community"
+            },
+            {
+                "name": "实现Eggo的kubeadm模式的基础设施与etcd模块",
+                "remark": null,
+                "difficulty": "中",
+                "mentor": "张老师",
+                "contact": "<zhangxiaoyu58@huawei.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "Eggo项目旨在解决大规模生产环境K8S集群自动化部署问题、部署流程跟踪以及提供高度的灵活性。通过结合GitOps管理、跟踪部署配置，通过云原生的方式实现集群的部署，实现集群部署集群的能力。    由于Eggo需要支持多种部署方式，当前社区主力在开发二进制部署模式，本任务需要开发人员基于当前架构，支持kubeadm的部署方式。  概要设计地址：https://gitee.com/openeuler/eggo/raw/master/docs/imgs/eggo_general_design_deploy1.png    相关项目链接：    https://gitee.com/openeuler/eggo",
+                "label": "210010852",
+                "link": "",
+                "tech_tag": [
+                    "Linux"
+                ],
+                "domain_tag": [
+                    "OS",
+                    "Cloud Native"
+                ],
+                "oR": [
+                    "完成kubeadm部署模式的infrastructure、etcd和upgrade/clean模块；",
+                    "输出完善的设计文档；",
+                    "输出对应的测试用例"
+                ],
+                "tR": [
+                    "了解K8S集群部署；",
+                    "熟悉go语言；"
+                ],
+                "orgID": 132,
+                "spl": 1,
+                "organchor": "openeuler",
+                "orgname": "openEuler社区||openEuler Community"
+            },
+            {
+                "name": "用Rust为RDMA实现K8S的CNI容器网络接口",
+                "remark": "相关项目链接（仓库列表等）：\r\nK8S CNI：https://github.com/containernetworking/cni\r\nRDMA: https://github.com/linux-rdma/rdma-core\r\nhttps://www.openfabrics.org/ofed-for-linux/",
+                "difficulty": "高",
+                "mentor": "田老师",
+                "contact": "<qi.tian@datenlord.io>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "RDMA是高性能网络协议，常用于高性能计算场景。Kubernetes (K8S)是目前主流的容器调度引擎，Container Network Interface (CNI)是K8S给容器提供的网络接口。为了方便在K8S场景下的容器应用使用RDMA网络，需要为RDMA实现CNI接口。本题要求采用Rust编程语言来实现RDMA的CNI接口。",
+                "label": "210010854",
+                "link": "",
+                "tech_tag": [
+                    "Linux",
+                    "Rust"
+                ],
+                "domain_tag": [
+                    "OS"
+                ],
+                "oR": [
+                    "RDMA的CNI接口实现。"
+                ],
+                "tR": [
+                    "熟悉RDMA。",
+                    "熟悉K8S CNI接口。",
+                    "熟悉Rust。"
+                ],
+                "orgID": 132,
+                "spl": 1,
+                "organchor": "openeuler",
+                "orgname": "openEuler社区||openEuler Community"
+            },
+            {
+                "name": "用Rust实现Serverless无感知存储层",
+                "remark": null,
+                "difficulty": "高",
+                "mentor": "施老师",
+                "contact": "<jicheng.shi@datenlord.io>",
+                "uniont": "王老师<pwang7@foxmail.com>",
+                "student_count": 0,
+                "description": "Serverless在云计算中具有越来越重要的地位，其易开发和易扩展的特性使其受到了越来越多用户的拥戴。现有Serverless开源框架已经能够做到帮助用户在多个云计算服务商中迁移应用，但是却无法无缝衔接持久化数据读取。Serverless框架中集成无感知数据存储层能大大改善这一现状，提升用户的使用体验。本题目要求调研现有Serverless实现框架，然后用Rust实现Serverless无感知数据存储层。",
+                "label": "210010856",
+                "link": "",
+                "tech_tag": [
+                    "Linux",
+                    "Rust"
+                ],
+                "domain_tag": [
+                    "OS"
+                ],
+                "oR": [
+                    "Serverless无感知数据存储层。"
+                ],
+                "tR": [
+                    "熟悉Rust。",
+                    "熟悉Serverless框架，诸如AWS lambda、serverless.com等。"
+                ],
+                "orgID": 132,
+                "spl": 1,
+                "organchor": "openeuler",
+                "orgname": "openEuler社区||openEuler Community"
+            },
+            {
+                "name": "制作openEuler桌面版发行版",
+                "remark": "相关资料：\r\nopenEuler镜像下载地址：https://repo.openeuler.org/openEuler-21.03/",
+                "difficulty": "低",
+                "mentor": "李老师",
+                "contact": "<libaolin@huawei.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "openEuler社区目前的发型版中没有集成桌面环境，但是在高校学习中，学生普遍使用桌面版Linux操作系统，如Ubuntu；为了方便高校学生学习openEuler，现需要制作集成桌面环境的openEuler发现版镜像。    硬件平台：PC、虚拟机  软件平台：openEuler 21.03",
+                "label": "210010857",
+                "link": "",
+                "tech_tag": [
+                    "Linux"
+                ],
+                "domain_tag": [
+                    "OS"
+                ],
+                "oR": [
+                    "任选一款主流的Linux发型版桌面包，集成到openEuler-21.03版本中，并打包成镜像文件；",
+                    "要求桌面环境美观、流畅，没有乱码等问题，并集成常用工作学习软件；",
+                    "将相关成果贡献至openEuler社区。"
+                ],
+                "tR": [
+                    "熟悉openEuler操作系统的安装使用；",
+                    "熟悉软件包的编译安装并能解决编译问题；",
+                    "具备一定性能调优经验；"
+                ],
+                "orgID": 132,
+                "spl": 1,
+                "organchor": "openeuler",
+                "orgname": "openEuler社区||openEuler Community"
+            },
+            {
+                "name": "使用 Rust 语言开发 Kubernetes Obejct 解析引擎",
+                "remark": "相关资料：\r\n\r\nhttps://www.jianshu.com/p/35d9ddaddcd8\r\nhttps://kubernetes.io/zh/docs/concepts/overview/working-with-objects",
+                "difficulty": "高",
+                "mentor": "马老师",
+                "contact": "<maquanyi@openeuler.io>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "Kubernetes 是云原生技术栈的核心，Kubernetes Object 对象是 Kubernetes 持久化保存的核心。所有的工作负载都是基于 Object 结构继承和解析。题目的目标是构建精简版本的 Kubernetes ，需要能够解析 Kubernetes 对象，并且使用更加安全系统级语言 Rust 进行开发。",
+                "label": "210010858",
+                "link": "",
+                "tech_tag": [
+                    "Linux",
+                    "Rust"
+                ],
+                "domain_tag": [
+                    "OS"
+                ],
+                "oR": [
+                    "解析 Kubernetes Pod、Deployment、ReplicaSet、StatefulSet、DaemonSet、Job 和 CronJob",
+                    "CLI 命令行",
+                    "Engine 程序能够以 Daemon 方式常驻运行，提供 HTTP/HTTPS 访问接口"
+                ],
+                "tR": [
+                    "熟悉 Kubernetes",
+                    "熟悉 Rust"
+                ],
+                "orgID": 132,
+                "spl": 1,
+                "organchor": "openeuler",
+                "orgname": "openEuler社区||openEuler Community"
+            },
+            {
+                "name": "使用 Rust 语言解析 Git 对象",
+                "remark": "相关资料：\r\n\r\nhttps://medium.com/mindorks/what-is-git-object-model-6009c271ca66\r\nhttp://shafiul.github.io/gitbook/1_the_git_object_model.html\r\nhttps://jingsam.github.io/2018/06/03/git-objects.html",
+                "difficulty": "高",
+                "mentor": "马老师",
+                "contact": "<maquanyi@openeuler.io>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "Git对象包含三种：数据对象、树对象、提交对象。数据对象是文件的内容，不包括文件名、权限等信息；树对象是文件目录树，记录了文件获取目录的名称、类型、模式信息；提交对象是用来保存提交的作者、时间等。数据对象解决了数据存储的问题，树对象解决了文件名存储问题，提交对象解决了提交信息的存储问题。题目的目标是编写引擎，能够解析 Git 的各种对象，并且能够为对象设计数据存储机制，可以将对象存储在数据库中。    硬件平台：树莓派  软件平台：openEuler 21.03",
+                "label": "210010859",
+                "link": "",
+                "tech_tag": [
+                    "Linux",
+                    "Rust",
+                    "Git"
+                ],
+                "domain_tag": [
+                    "OS"
+                ],
+                "oR": [
+                    "能够解析 Kernel 的代码并存储在数据库中",
+                    "有 CLI 命令行支撑验证"
+                ],
+                "tR": [
+                    "熟悉 Rust",
+                    "熟悉Git"
+                ],
+                "orgID": 132,
+                "spl": 1,
+                "organchor": "openeuler",
+                "orgname": "openEuler社区||openEuler Community"
+            },
+            {
+                "name": "使用 Rust 编写一个 DAG 解析引擎",
+                "remark": "相关资料：\r\n\r\nhttps://medium.com/mindorks/what-is-git-object-model-6009c271ca66\r\nhttps://www.jianshu.com/p/c7dbc61cda1d",
+                "difficulty": "高",
+                "mentor": "马老师",
+                "contact": "<maquanyi@openeuler.io>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "DAG 是 Directed Acyclic Graph 的缩写，中文称为有向无环图。DAG 是计算机领域一种常用数据结构，因为独特的拓扑结构所带来的优异特性，经常被用于处理动态规划、导航中寻求最短路径、数据压缩等多种算法场景。同时 DAG 也可以用于工作流的引擎。本题目的目标是使用 Rust 语言编写 DAG 解析引擎，同时实现 DAG 的数据存储能力。",
+                "label": "210010861",
+                "link": "",
+                "tech_tag": [
+                    "Linux",
+                    "Rust"
+                ],
+                "domain_tag": [
+                    "OS"
+                ],
+                "oR": [
+                    "设计 YAML 格式的 DAG 描述",
+                    "解析 YAML 文件的内容并执行 DAG",
+                    "有 CLI 命令行支撑验证"
+                ],
+                "tR": [
+                    "熟悉Rust语言"
+                ],
+                "orgID": 132,
+                "spl": 1,
+                "organchor": "openeuler",
+                "orgname": "openEuler社区||openEuler Community"
+            },
+            {
+                "name": "将Graphene引入openEuler，并利用secGear改造",
+                "remark": "相关链接：\r\n\r\nGraphene项目主页：https://github.com/oscarlab/graphene\r\nsecGear项目主页：https://gitee.com/openeuler/secGear\r\nopenEuler软件包制作指南：https://gitee.com/openeuler/community/blob/master/zh/contributors/packaging.md",
+                "difficulty": "高",
+                "mentor": "闫老师",
+                "contact": "<yanlu14@huawei.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "Graphene是一个轻量级LibOS，可在隔离的环境中运行应用程序。目前，Graphene可运行在Linux平台，并支持运行在Linux平台的Intel SGX enclave内，用于将未修改的应用程序引入到基于SGX的机密计算中。Graphene-SGX中，enclave与host交互是通过直接调用Intel提供的EENTER等指令实现的，可利用机密计算框架secGear进行改造，通过secGear提供的enclave生命周期管理函数以及在edl中定义ecall/ocall函数的方式实现。",
+                "label": "210010863",
+                "link": "",
+                "tech_tag": [
+                    "Linux",
+                    "机密计算，openEuler"
+                ],
+                "domain_tag": [
+                    "OS"
+                ],
+                "oR": [
+                    "在openEuler上使用rpmbuild工具完成RPM打包。",
+                    "在openEuler Gitee软件仓库中创建Graphene软件仓库，并提交对应Spec文件、源码包和适配patch文件等。",
+                    "利用secGear机密计算框架改造Graphene-SGX中enclave与host的交互部分。"
+                ],
+                "tR": [
+                    "熟悉C语言，熟练使用Linux操作系统",
+                    "熟悉机密计算技术",
+                    "了解LibOS"
+                ],
+                "orgID": 132,
+                "spl": 1,
+                "organchor": "openeuler",
+                "orgname": "openEuler社区||openEuler Community"
+            },
+            {
+                "name": "openEuler官网文档友好性提升",
+                "remark": null,
+                "difficulty": "低",
+                "mentor": "乔老师",
+                "contact": "<qiaominna@huawei.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "openEuler是一个支持多处理器架构、统一和开放的开源操作系统，社区已发布官方文档，帮助用户和合作伙伴使用openEuler操作系统。  官方文档地址：https://docs.openeuler.org/zh/  gitee地址：https://gitee.com/openeuler/docs/tree/master/  当前文档存在结构不清晰，部分用户场景资料缺失的问题，为了更好的帮助用户了解和使用openEuler，推出官方文档友好性提升任务。  领取任务的同学可以从用户场景出发，识别并改善文档中不友好的问题，补充官方文档中场景缺失的文档。",
+                "label": "210010866",
+                "link": "",
+                "tech_tag": [
+                    "Linux"
+                ],
+                "domain_tag": [
+                    "OS",
+                    "文档"
+                ],
+                "oR": [
+                    ".熟悉操作系统知识；",
+                    "有良好的技术写作专业素养和文字表述能力；",
+                    "参与过产品或解决方案相关的技术文档写作。"
+                ],
+                "tR": [
+                    "制定明确的文档优化计划，并按时完成；",
+                    "提交issue到openEuler docs仓库，定期与导师沟通任务进展和问题；",
+                    "提交PR到openEuler docs仓库，经评审后合入主库；",
+                    "优化文档上线到官网。"
+                ],
+                "orgID": 132,
+                "spl": 1,
+                "organchor": "openeuler",
+                "orgname": "openEuler社区||openEuler Community"
             }
         ]
     },
@@ -12053,14 +12440,14 @@
                 "orgname": "KubeSphere 开源社区||KubeSphere Community"
             },
             {
-                "name": "KubeSphere 集成 Tekton【 KubeSphere Tekton Integration 】",
-                "remark": "更多信息，请查阅官方 GitHub\r\nhttps://github.com/kubesphere/community/blob/master/sig-advocacy-and-outreach/summer-ospp/README.md",
+                "name": "KubeSphere 集成 Tekton",
+                "remark": "https://github.com/kubesphere/community/blob/master/sig-advocacy-and-outreach/summer-ospp/README.md",
                 "difficulty": "中",
                 "mentor": "陈少文",
                 "contact": "<mail@chenshaowen.com>",
                 "uniont": "Rick<rickzhao@yunify.com>",
                 "student_count": 0,
-                "description": "目标：集成 Tekton 作为 KubeSphere DevOps 可选的 CI/CD 引擎。  背景：Tekton 是一个云原生的 CI/CD 项目。相较于 Jenkins，Tekton 可以充分利用 Kubernetes 生态系统的优势。例如，Tekton 一个是无服务器的组件，非常容易扩展。然而，由于 Tekton 缺乏用户友好的用户界面，新用户可能很难操作它。我们希望能充分利用 Tekton 的优势，使其在 KubeSphere 中易于使用。  详情：目前，Jenkins 是 KubeSphere DevOps 组件的引擎。Pipeline controller 负责将流水线的 CRD 转换为 Jenkins Job。 请考虑CRD的兼容性，尽可能让 Jenkins 和 Tekton 共用一个 CRD。  范围：  可以先完成 Tekton 的部署，然后完成 Trigger、Task、Pipeline 的管理，接着是图形化的编辑、运行、查看。在图形化阶段，可以尝试考虑兼容 CRD。  【 Currently, Jenkins is the engine of KubeSphere DevOps component. The Pipeline controller is responsible for converting the CRD of pipelines to Jenkins jobs. Please consider the compatibility of CRD. Whenever possible, Jenkins and Tekton share a CRD. 】",
+                "description": "目标：集成 Tekton 作为 KubeSphere DevOps 可选的 CI/CD 引擎。  背景：Tekton 是一个云原生的 CI/CD 项目。相较于 Jenkins，Tekton 可以充分利用 Kubernetes 生态系统的优势。例如，Tekton 一个是无服务器的组件，非常容易扩展。然而，由于 Tekton 缺乏用户友好的用户界面，新用户可能很难操作它。我们希望能充分利用 Tekton 的优势，使其在 KubeSphere 中易于使用。  详情：目前，Jenkins 是 KubeSphere DevOps 组件的引擎。Pipeline controller 负责将流水线的 CRD 转换为 Jenkins Job。 请考虑CRD的兼容性，尽可能让 Jenkins 和 Tekton 共用一个 CRD。  范围：  可以先完成 Tekton 的部署，然后完成 Trigger、Task、Pipeline 的管理，接着是图形化的编辑、运行、查看。在图形化阶段，可以尝试考虑兼容 CRD。",
                 "label": "210030537",
                 "link": "",
                 "tech_tag": [
@@ -12086,19 +12473,19 @@
                     "Jenkins[可选]"
                 ],
                 "orgID": 149,
-                "spl": 0,
+                "spl": 1,
                 "organchor": "kubesphere",
                 "orgname": "KubeSphere 开源社区||KubeSphere Community"
             },
             {
-                "name": "集成 Gatekeeper 【KubeSphere Gatekeeper Integration】",
-                "remark": "More project details：https://github.com/kubesphere/community/blob/master/sig-advocacy-and-outreach/summer-ospp/kubesphere-gatekeeper-integration_zh-CN.md\r\n\r\n【更多项目详情：https://github.com/kubesphere/community/blob/master/sig-advocacy-and-outreach/summer-ospp/kubesphere-gatekeeper-integration_zh-CN.md】",
+                "name": "集成 Gatekeeper",
+                "remark": "更多项目详情：https://github.com/kubesphere/community/blob/master/sig-advocacy-and-outreach/summer-ospp/kubesphere-gatekeeper-integration_zh-CN.md",
                 "difficulty": "中",
                 "mentor": "万宏明",
                 "contact": "<coder.scala@gmail.com>",
                 "uniont": "马岩<rolandma@yunify.com>",
                 "student_count": 0,
-                "description": "目标：将 Gatekeeper 集成到 KubeSphere，支持一些基础、通用的准入策略配置。  背景：Kubernetes 允许通过 admission webhooks 将策略决策与 API 服务的内部工作解耦，每当创建、更新或删除资源时都会执行这些策略。Gatekeeper 提供了一个 validating webhook，它强制执行由 Open Policy Agent 执行的基于 CRD 的策略，我们可以在 KubeSphere 集成 Gatekeeper 提供的策略管理功能，通过 CRD 来管理一些常用的规则策略。  详情：Open Policy Agent, CNCF孵化中的应用于云原生环境的规则策略引擎。 Gatekeeper, 基于K8s admission webhook 和 OPA 的策略管理工具。  我们希望集成 Gatekeeper 到 KubeSphere 中，管理一些基础的策略，例如：必须使用受信任的镜像仓库、部署的工作负载必须包含必填的控制字段。||Open Policy Agent, a policy engine for Cloud Native environments hosted by CNCF as an incubation-level project. Gatekeeper, policy management tool based on K8s admission webhook and OPA.    We want to integrate Gatekeeper into KubeSphere as an admission policy engine.    ",
+                "description": "目标：将 Gatekeeper 集成到 KubeSphere，支持一些基础、通用的准入策略配置。  背景：Kubernetes 允许通过 admission webhooks 将策略决策与 API 服务的内部工作解耦，每当创建、更新或删除资源时都会执行这些策略。Gatekeeper 提供了一个 validating webhook，它强制执行由 Open Policy Agent 执行的基于 CRD 的策略，我们可以在 KubeSphere 集成 Gatekeeper 提供的策略管理功能，通过 CRD 来管理一些常用的规则策略。  详情：Open Policy Agent, CNCF孵化中的应用于云原生环境的规则策略引擎。 Gatekeeper, 基于K8s admission webhook 和 OPA 的策略管理工具。  我们希望集成 Gatekeeper 到 KubeSphere 中，管理一些基础的策略，例如：必须使用受信任的镜像仓库、部署的工作负载必须包含必填的控制字段。",
                 "label": "210030538",
                 "link": "",
                 "tech_tag": [
@@ -12123,7 +12510,7 @@
                     "Kubernetes"
                 ],
                 "orgID": 149,
-                "spl": 0,
+                "spl": 1,
                 "organchor": "kubesphere",
                 "orgname": "KubeSphere 开源社区||KubeSphere Community"
             },
@@ -12192,6 +12579,202 @@
                 ],
                 "orgID": 149,
                 "spl": 0,
+                "organchor": "kubesphere",
+                "orgname": "KubeSphere 开源社区||KubeSphere Community"
+            },
+            {
+                "name": "OpenFunction 的函数构建器开发",
+                "remark": "",
+                "difficulty": "中",
+                "mentor": "霍秉杰",
+                "contact": "<benjamin@yunify.com>",
+                "uniont": "方阗<fangtian@yunify.com>",
+                "student_count": 0,
+                "description": "目标：  开发并优化函数构建器，使其可以识别 Python、Nodejs、Java、PHP（可选）、Rust（可选）语言，并将函数构建成可以运行在 OpenFunction 中的应用镜像。  项目背景：  OpenFunction 是一个云原生的开源函数即服务（Functions-as-a-Service）平台，旨在让用户专注于他们的业务逻辑，而不必担心底层运行环境和基础设施。用户只需要以函数的形式提交业务相关的源代码，即可将服务按需运行在集群中。  Tekton 是一个云原生的 CI/CD 项目。  Cloud Native Buildpacks 是一个云原生的 OCI 标准镜像制作工具。（以下简称 Buildpacks ）  项目详情：  OpenFunction 的 builders 组件集成了 Tekton 与 Buildpacks ，用于完成将用户提交的函数代码制作成可以运行在 Kubernetes 中的应用负载镜像这一部分工作。  Tekton 负责编排整个由代码到应用镜像的制作过程，包含：拉取镜像、准备环境变量、使用 Buildpacks 制作镜像、输出镜像到指定仓库 等几个主要步骤。  Buildpacks 负责识别代码的语言类型，然后准备好相关的编译环境，再将代码通过模板渲染为可运行的应用。  我们希望：  它可以支持更多的主流语言（及更多的语言版本）  可以优化代码构建的策略、减少代码构建的时间  项目范围：  可以先熟悉 OpenFunction ，再使用 OpenFunction/builder 构建你的函数并成功运行。",
+                "label": "210030855",
+                "link": "",
+                "tech_tag": [
+                    "Go",
+                    "Python",
+                    "Java",
+                    "Cloud Native",
+                    "PHP",
+                    "NodeJS",
+                    "React",
+                    "Rust",
+                    "Kubernetes"
+                ],
+                "domain_tag": [
+                    "Cloud Native",
+                    "Web"
+                ],
+                "oR": [
+                    "完成新的语言构建器制作，包括不限于：1. PHP 语言构建器；2. Rust 语言构建器；",
+                    "优化现有语言构建器，包括不限于：1. 提供更多版本支持；2. 构建策略优化；",
+                    "编写语言构建器的测试案例、使用说明",
+                    "产出你关于 OpenFunction 、Tekton 、Buildpacks 的认知与理解"
+                ],
+                "tR": [
+                    "Golang",
+                    "Kubernetes",
+                    "Tekton",
+                    "Cloud Native Buildpacks",
+                    "OpenFunction",
+                    "Python、Nodejs、Java、PHP、Rust[均可选]"
+                ],
+                "orgID": 149,
+                "spl": 1,
+                "organchor": "kubesphere",
+                "orgname": "KubeSphere 开源社区||KubeSphere Community"
+            },
+            {
+                "name": "OpenFunction 的 nodejs 函数框架开发",
+                "remark": "",
+                "difficulty": "中",
+                "mentor": "霍秉杰",
+                "contact": "<benjamin@yunify.com>",
+                "uniont": "方阗<fangtian@yunify.com>",
+                "student_count": 0,
+                "description": "项目目标  开发用于处理 nodejs 代码的函数框架，为用户的业务代码提供适用于云原生环境的多种工具套件。  项目背景    OpenFunction 是一个云原生的开源函数即服务（Functions-as-a-Service）平台，旨在让用户专注于他们的业务逻辑，而不必担心底层运行环境和基础设施。用户只需要以函数的形式提交业务相关的源代码，即可将服务按需运行在集群中。    Dapr 是一种可移植的，serverless的，事件驱动的运行时，它使开发人员可以轻松构建弹性，无状态和有状态微服务，这些服务运行在云和边缘上，并包含多种语言和开发框架。    Knative 是谷歌开源的serverless 架构方案，旨在提供一套简单易用的serverless 方案，把serverless 标准化。    项目详情    在当下的 serverless 框架中，事件来源将驱动 serverless 孵化工作负载。从而就要求用户应用可以支持多种驱动来源，如 HTTP、CloudEvent、Dapr bindings 等。为了减少用户编写应用的成本，OpenFunction 需要为用户函数提供用于适配 serverless 生态的工具套件。    此工具套件需要具备两个主要能力：    Main 函数模板渲染    在 OpenFunction 的函数构建过程中，函数构建器将相关的 crd 资源属性及环境变量传入 Main 函数模板，渲染后产出最终应用负载中的代码。    函数工具套件    用于为用户函数提供适配 serverless 生态的工具套件，如支持 HTTP、CloudEvent、Dapr bindings 等驱动。    目前我们的函数构建器使用了 GoogleCloudPlatform 的 functions-framework 。该 functions-framework 目前不支持 HTTP、CloudEvent 之外的驱动。    我们希望：    产出可以适配 HTTP、CloudEvent、Dapr bindings 的 nodejs 函数框架  项目范围    可以先熟悉 OpenFunction ，再使用 OpenFunction/builder 构建你的函数并成功运行。",
+                "label": "210030860",
+                "link": "",
+                "tech_tag": [
+                    "Go",
+                    "Cloud Native",
+                    "NodeJS",
+                    "Kubernetes"
+                ],
+                "domain_tag": [
+                    "Cloud Native",
+                    "Container",
+                    "Web"
+                ],
+                "oR": [
+                    "完成可以处理 nodejs 代码的函数框架；",
+                    "编写 nodejs 函数框架的测试案例、使用说明",
+                    "产出你关于 OpenFunction 、functions-framework 的认知与理解"
+                ],
+                "tR": [
+                    "Nodejs",
+                    "Kubernetes",
+                    "CloudEvent",
+                    "Dapr",
+                    "OpenFunction",
+                    "Cloud Native Buildpacks",
+                    "Golang、Knative[可选]"
+                ],
+                "orgID": 149,
+                "spl": 1,
+                "organchor": "kubesphere",
+                "orgname": "KubeSphere 开源社区||KubeSphere Community"
+            },
+            {
+                "name": "OpenFunction 项目官网开发",
+                "remark": "",
+                "difficulty": "低",
+                "mentor": "周鹏飞",
+                "contact": "<pengfeizhou@yunify.com>",
+                "uniont": "Sherlock<sherlockxu@yunify.com>",
+                "student_count": 0,
+                "description": "OpenFunction 项目官网开发    项目目标    在项目导师的帮助下，为全新的 Serverless 开源项目 OpenFunction 从零开始搭建与开发项目的官方网站，并完成项目上线。    项目背景    OpenFunction 是一个全新发布的云原生的开源函数即服务（Functions-as-a-Service）平台，目前代码与文档已在 GitHub 完全开源，需要开发一个静态网站作为 OpenFunction 项目和社区的官网与文档页面。    项目详情    社区计划使用流行的静态网站生成的框架 Hugo 作为 OpenFunction 官网项目的主要技术栈，结合前端编程语言 JavaScript、HTML、CSS 来进行网页交互与渲染的开发。    我们希望：    它可以支持展示多版本与多语言的文档  具备标准静态网站的项目框架，可灵活增删网站页面与内容  与产品、开发、设计师协作完成官网的上线与运行  项目范围    可以先熟悉 Hugo，再尝试使用 Hugo 的文档网站模板来搭建一个基本的示例网站。",
+                "label": "210030881",
+                "link": "",
+                "tech_tag": [
+                    "Cloud Native",
+                    "JavaScript",
+                    "NodeJS"
+                ],
+                "domain_tag": [
+                    "Web"
+                ],
+                "oR": [
+                    "完成官网（openfunction.dev）的最终发布与上线",
+                    "使用 Markdown 编写部分官网文档与产品页的基本信息",
+                    "产出你关于 Hugo、JavaScript、React 等技术的认知与理解"
+                ],
+                "tR": [
+                    "JavaScript",
+                    "HTML, CSS",
+                    "Markdown",
+                    "Hugo [可选]",
+                    "Nodejs [可选]"
+                ],
+                "orgID": 149,
+                "spl": 1,
+                "organchor": "kubesphere",
+                "orgname": "KubeSphere 开源社区||KubeSphere Community"
+            },
+            {
+                "name": "KubeSphere 项目官网优化",
+                "remark": null,
+                "difficulty": "低",
+                "mentor": "刘博",
+                "contact": "<liubo@yunify.com>",
+                "uniont": "周鹏飞<pengfeizhou@yunify.com>",
+                "student_count": 0,
+                "description": "项目目标  在项目导师的帮助下，为开源项目 KubeSphere 完善 KubeSphere 官网以及文档网站，实现部分功能特性发布到线上。  项目背景    KubeSphere 是在 Kubernetes 之上构建的以应用为中心的多租户容器平台，目前所有代码与文档已在 GitHub 完全开源，需要为当前的项目官网 kubesphere.io 开发新的功能介绍页面，根据运营的需求优化官网与文档页面的用户体验。    项目详情    社区使用流行的静态网站生成的框架 Hugo 作为 KubeSphere 官网项目的主要技术栈，结合前端编程语言 JavaScript、HTML、CSS 来进行网页交互与渲染的开发。    项目范围    可以先熟悉 Hugo 以及 KubeSphere 目前的 Website 仓库代码，再使用前端编程语言结合产品经理与设计师的需求完成页面开发。",
+                "label": "210030891",
+                "link": "",
+                "tech_tag": [
+                    "JavaScript",
+                    "NodeJS",
+                    "React"
+                ],
+                "domain_tag": [
+                    "Web"
+                ],
+                "oR": [
+                    "完成 KubeSphere 官网（kubesphere.io）多个新的产品功能页面最终发布与上线",
+                    "使用 Markdown 编写部分官网文档与产品页的基本信息",
+                    "官方文档的前端交互体验优化，实现用户对文档反馈的自动收集",
+                    "产出你关于 Hugo、JavaScript、React 等技术的认知与理解"
+                ],
+                "tR": [
+                    "JavaScript",
+                    "HTML, CSS",
+                    "Markdown",
+                    "Hugo [可选]",
+                    "Nodejs [可选]"
+                ],
+                "orgID": 149,
+                "spl": 1,
+                "organchor": "kubesphere",
+                "orgname": "KubeSphere 开源社区||KubeSphere Community"
+            },
+            {
+                "name": "KubeSphere 官网文档写作与本地化",
+                "remark": null,
+                "difficulty": "低",
+                "mentor": "周鹏飞",
+                "contact": "<pengfeizhou@yunify.com>",
+                "uniont": "Sherlock<sherlockxu@yunify.com>",
+                "student_count": 0,
+                "description": "项目目标    在项目导师的帮助下，为开源项目 KubeSphere 撰写新的产品文档，根据用户需求为官方文档的本地化，将英文文档翻译成中文文档。  项目背景    KubeSphere 是在 Kubernetes 之上构建的以应用为中心的多租户容器平台，目前所有代码与文档已在 GitHub 完全开源，需要为当前的项目官网 kubesphere.io 根据社区用户的需求翻译文档，主要是将英文文档进行本地化，翻译成中文文档。    对于有技术背景的同学，也可以直接来参与撰写新的中文技术文档或技术博客。    项目范围    项目包括 KubeSphere 与 K8s 集群的安装部署、快速入门、功能使用、最佳实践、运维指南、贡献者指南等文档。",
+                "label": "210030892",
+                "link": "",
+                "tech_tag": [
+                    "Cloud Native",
+                    "Container",
+                    "Kubernetes",
+                    "Docker"
+                ],
+                "domain_tag": [
+                    "Cloud Native",
+                    "Web"
+                ],
+                "oR": [
+                    "在 KubeSphere 中文文档页面发布个人翻译后的作品",
+                    "对于专业的技术写作、技术翻译与本地化有系统的了解",
+                    "熟悉 Kubernetes、Docker、Jenkins 等热门的云原生技术"
+                ],
+                "tR": [
+                    "优秀的计算机领域知识",
+                    "优秀的英语书写与翻译能力",
+                    "Markdown",
+                    "Hugo [可选]"
+                ],
+                "orgID": 149,
+                "spl": 1,
                 "organchor": "kubesphere",
                 "orgname": "KubeSphere 开源社区||KubeSphere Community"
             }
@@ -13212,7 +13795,7 @@
                 "difficulty": "中",
                 "mentor": "吴京京",
                 "contact": "<wjmcater@gmail.com>",
-                "uniont": "李卓桓<huan@chatie.io>",
+                "uniont": null,
                 "student_count": 0,
                 "description": "基于 Itchat 为 Python Wechaty 实现社区首个 Python 语言的本地 Puppet    背景介绍  Wechaty 社区目前已经支持微信、Whatsapp、企业微信、飞书等常见流行即时通讯工具，并且能够通过多语言 SDK （比如 Python Wechaty） 进行调用。    Python Wechaty 目前通过 Puppet Service 模块，基于 gRPC 与 TypeScript 语言的服务器进行通讯，实现对 Python 语言的支持。    我们在本次 Summer 2021 的项目中，希望可以开发一个基于 Python 语言的 Wechaty Puppet Provider 实现（模块名：wechaty-puppet-itchat），通过封装 Itchat ，使其成为 Python Wechaty 可以使用的社区生态模块。    需求介绍  使用 https://github.com/wechaty/python-wechaty-puppet-service 项目作为模版，将核心代码文件 https://github.com/wechaty/python-wechaty-puppet-service/blob/master/src/wechaty_puppet_service/puppet.py 中的 gRPC 调用，全部替换（封装）为 Itchat 模块的调用。    在初期开发中，能够实现文本消息的接收和发送，即可完成原型验证 POC 。    除了 Python 代码之外，还可以参考以下两个链接：    1. TypeScript Puppet Official Documentation: https://wechaty.github.io/wechaty-puppet/typedoc/classes/puppet.html  2. Wechaty Puppet Specification: https://wechaty.js.org/docs/specs/puppet",
                 "label": "210220087",
@@ -20710,7 +21293,512 @@
         ],
         "mail_list": "",
         "email": "kerneltravel@groups.163.com",
-        "project_list": []
+        "project_list": [
+            {
+                "name": "NUMA节点的CPU UNCORE共享资源的争用感知与评估",
+                "remark": null,
+                "difficulty": "中",
+                "mentor": "赵晨雨",
+                "contact": "<lonemorelightp@163.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "NUMA架构是目前商用服务器使用的一种主流架构，其分布式内存设计提高了多处理器系统的可扩展性。但是，NUMA下各种共享资源的争用却影响着应用程序的性能。共享资源竞争主要发生在节点内处理器的UNCORE部分，其包含了三种主要的竞争资源：LLC（ Last Level Cache）、 QPI链路和内存控制器（IMC），这三种访存性能事件可以反映节点的访存压力情况。因此，感知NUMA内节点的访存压力情况，对于指导多线程应用程序的优化具有重要作用。本题目首先要求自己设计并实现一种框架，在内核态下从Intel处理器的PMU中读取UNCORE的三种访存性能事件类型（LLC、QPI、IMC）的计数值，并在用户态进行展示。三种类型下具体的访存性能事件的选取由自己选定，所选取的性能事件需要能反映出当前节点的访存压力情况。其次，用户态程序需要依据性能事件计数值评估每个节点的访存压力，并依据压力由高到低将节点进行排序。最后，要求所实现框架能够成功运行。",
+                "label": "210520848",
+                "link": "",
+                "tech_tag": [
+                    "Go",
+                    "Linux",
+                    "Python",
+                    "C"
+                ],
+                "domain_tag": [
+                    "Linux Kernel",
+                    "Web",
+                    "Programming Language"
+                ],
+                "oR": [
+                    "仓库代码一份",
+                    "项目详细文档一份"
+                ],
+                "tR": [
+                    "Linux kernel 内存管理部分",
+                    "golang",
+                    "C语言",
+                    "机器学习"
+                ],
+                "orgID": 281,
+                "spl": 1,
+                "organchor": "linuxneihe",
+                "orgname": "Linux内核之旅开源社区"
+            },
+            {
+                "name": "LMP项目下插件和数据提取功能的优化",
+                "remark": null,
+                "difficulty": "低",
+                "mentor": "赵晨雨",
+                "contact": "<lonemorelightp@163.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "LMP是一个基于BCC(BPF Compiler Collection)的Linux系统性能数据实时展示的web工具，是Linux内核之旅社区项目。目前LMP项目中，插件在执行过程中会直接将性能数据存放到数据存储模块中，因为eBPF的特性，在磁盘IO等场景会出现数据提取和存储死循环的问题，现需要将数据提取和数据存储隔离为两个服务，该功能方案较多，需要提出不同的方案并比较优劣，选取最佳方案实现，在此过程中可以优化LMP插件API。",
+                "label": "210520864",
+                "link": "",
+                "tech_tag": [
+                    "Python",
+                    "Database",
+                    "Git"
+                ],
+                "domain_tag": [
+                    "Web",
+                    "Programming Language"
+                ],
+                "oR": [
+                    "仓库代码一份",
+                    "详细文档一份"
+                ],
+                "tR": [
+                    "python开发技能",
+                    "SQL基础"
+                ],
+                "orgID": 281,
+                "spl": 1,
+                "organchor": "linuxneihe",
+                "orgname": "Linux内核之旅开源社区"
+            },
+            {
+                "name": "Linux内核下CPU cache统计及预测",
+                "remark": null,
+                "difficulty": "中",
+                "mentor": "赵晨雨",
+                "contact": "<lonemorelightp@163.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "缓存的引入，平衡了CPU和内存的处理速度。但随即带来的缓存争用，无疑影响了CPU以及其上运行进程的性能。因此，了解缓存的分布情况，对缓解缓存争用，从而实现CPU利用率最大化和负载均衡等目标，都有着巨大的指导意义。本题首先要求从Linux内核中实时提取到CPU cache相关数据后，经过处理，可以在网页前端展示系统当前的缓存分布情况，并且需要将该功能实现为社区项目LMP的插件，并成功对接到LMP中；其次需要选择一个合适的预测算法，根据当前缓存分布情况，给出下个阶段可能的缓存分布，其中性能数据需要存放在LMP的数据存储模块中，并且需要将该模型对接到社区项目LMP中，并能够成功运行。",
+                "label": "210520865",
+                "link": "",
+                "tech_tag": [
+                    "Go",
+                    "Linux",
+                    "C",
+                    "AI"
+                ],
+                "domain_tag": [
+                    "Linux Kernel",
+                    "AI",
+                    "Tracing",
+                    "Programming Language"
+                ],
+                "oR": [
+                    "仓库代码一份",
+                    "详细文档一份"
+                ],
+                "tR": [
+                    "golang",
+                    "python",
+                    "机器学习基础知识",
+                    "Linux内核下CPU管理"
+                ],
+                "orgID": 281,
+                "spl": 1,
+                "organchor": "linuxneihe",
+                "orgname": "Linux内核之旅开源社区"
+            },
+            {
+                "name": "LMP项目前端网页优化",
+                "remark": null,
+                "difficulty": "低",
+                "mentor": "陈继峰",
+                "contact": "<chenlinuxer@163.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "LMP是一个基于BCC(BPF Compiler Collection)的Linux系统性能数据实时展示的web工具，是Linux内核之旅社区项目。LMP项目目前需要优化前端页面，本题目要求采用vue框架，配合后端逻辑实现前端指标展示、指标选取、指标状态展示和性能数据可视化展示功能，要求功能完备，页面美观。",
+                "label": "210520867",
+                "link": "",
+                "tech_tag": [
+                    "JavaScript"
+                ],
+                "domain_tag": [
+                    "Virtualization",
+                    "Web"
+                ],
+                "oR": [
+                    "仓库代码一份",
+                    "详细文档一份"
+                ],
+                "tR": [
+                    "前端开发技能",
+                    "vue框架"
+                ],
+                "orgID": 281,
+                "spl": 1,
+                "organchor": "linuxneihe",
+                "orgname": "Linux内核之旅开源社区"
+            },
+            {
+                "name": "基于eBPF的DDos攻击检测",
+                "remark": null,
+                "difficulty": "中",
+                "mentor": "陈继峰",
+                "contact": "<chenlinuxer@163.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "网络安全问题一直是人们最关注的问题之一。ddos攻击仍是最常见、最常用的的一种攻击手段。 由于其使用简单、攻击效果明显能够快速的消耗系统资源，使得正常的服务请求不能够正常访问。因此，如果能够追踪不同的ddos攻击方式在linux系统攻击的过程。提取ddos在攻击过程中表现出的不同的一些行为特征和指标数据，进行检测分析，对系统防御具有重要的意义。eBPF技术在系统追踪、观测、性能调优、安全和网络领域发挥着重要的角色。eBPF技术的出现对ddos攻击的过程进行跟踪观测成为了可能。因此本题目要求通过eBPF技术提取ddos攻击在linux系统的指标数据。设计出相应的检测算法，算法要能够进行ddos攻击的溯源，找到攻击的源头。最后，可以使用xdp技术对攻击的源头进行防御，数据提取功能和检测算法需要对接到LMP项目中。",
+                "label": "210520868",
+                "link": "",
+                "tech_tag": [
+                    "Go",
+                    "Linux",
+                    "Python"
+                ],
+                "domain_tag": [
+                    "Linux Kernel",
+                    "AI",
+                    "Web"
+                ],
+                "oR": [
+                    "仓库代码一份",
+                    "详细文档一份"
+                ],
+                "tR": [
+                    "golang开发技能",
+                    "机器学习基础知识",
+                    "python开发技能",
+                    "ddos攻击"
+                ],
+                "orgID": 281,
+                "spl": 1,
+                "organchor": "linuxneihe",
+                "orgname": "Linux内核之旅开源社区"
+            },
+            {
+                "name": "LMP项目下插件API的优化",
+                "remark": null,
+                "difficulty": "低",
+                "mentor": "陈继峰",
+                "contact": "<chenlinuxer@163.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "LMP是一个基于BCC(BPF Compiler Collection)的Linux系统性能数据实时展示的web工具，是Linux内核之旅社区项目。目前LMP项目中支持接入BCC类型的插件，每一个插件需要调用项目提供的API接口才能将性能数据写入到influxdb数据库。本题目要求优化API接口和插件管理，设计出一套较为完善和稳定的API接口，并优化所有的插件管理，例如目录管理等。",
+                "label": "210520869",
+                "link": "",
+                "tech_tag": [
+                    "Python",
+                    "Database"
+                ],
+                "domain_tag": [
+                    "Programming Language"
+                ],
+                "oR": [
+                    "仓库代码一份",
+                    "详细文档一份"
+                ],
+                "tR": [
+                    "python开发技能"
+                ],
+                "orgID": 281,
+                "spl": 1,
+                "organchor": "linuxneihe",
+                "orgname": "Linux内核之旅开源社区"
+            },
+            {
+                "name": "基于eBPF的网络性能监控与异常检测",
+                "remark": null,
+                "difficulty": "中",
+                "mentor": "陈莉君",
+                "contact": "<cljcore@126.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "随着网络规模的不断扩大，网络性能异常的问题越来越突出，网络性能的监控与异常检测尤为重要。网络故障或网络入侵等通常会引起网络性能异常，网络异常检测是维护网络正常运行、确保网络安全的一个重要手段。异常检测首先建立系统、网络和程序的正常模式，在后续检测过程，把偏离该模式的行为判定为网络异常事件或行为。传统的网络性能一般通过网络测量、 SNMP 或系统日志的方式计算得到，本课题要求基于eBPF技术进行获取网络性能数据。首先，分析Linux内核源代码，找出网络性能指标的监控点，使用eBPF技术提取内核网络性能数据，并进行可视化展示。其次，选择合适的算法检测网络性能的异常状况。异常检测可以分为固定阈值检测或自适应检测。目前采用的异常检测方法和基于固定阈值过滤的策略，其基本思想是对每种性能值设定一个阈值，性能数据超过阈值便被认定为异常事件。自适应异常检测算法，通常可以分为 3 种类型：基于统计特征的算法 ，基于机器学习的算法和基于数据挖掘的算法。最后，对接到社区项目LMP中，并能够成功运行。",
+                "label": "210520870",
+                "link": "",
+                "tech_tag": [
+                    "Go",
+                    "Linux",
+                    "Python"
+                ],
+                "domain_tag": [
+                    "Linux Kernel",
+                    "AI",
+                    "Tracing"
+                ],
+                "oR": [
+                    "仓库代码一份",
+                    "详细文档一份"
+                ],
+                "tR": [
+                    "golang",
+                    "python",
+                    "网络基本知识",
+                    "机器学习基础知识"
+                ],
+                "orgID": 281,
+                "spl": 1,
+                "organchor": "linuxneihe",
+                "orgname": "Linux内核之旅开源社区"
+            },
+            {
+                "name": "Linux内核下系统内存及进程内存相关信息提取及预测",
+                "remark": null,
+                "difficulty": "中",
+                "mentor": "陈莉君",
+                "contact": "<cljcore@126.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "首先：本题需要提取下列4个指标：  全系统的内存水位变化  按内存段提取进程的内存用量  按进程提取页换入信息  按进程提取巨页缺页错误相关信息  其次：要求从Linux内核中实时提取到相关数据后，经过处理，可以在网页前端展示系统当前的内存情况，并且需要将该功能实现为社区项目LMP的插件，并成功对接到LMP中  最后：需要选择一个合适的预测算法，根据当前内存指标情况，给出下个阶段可能的指标大小，其中指标数据需要存放在LMP的数据存储模块中，并且需要将该模型对接到社区项目LMP中，并能够成功运行。",
+                "label": "210520871",
+                "link": "",
+                "tech_tag": [
+                    "Go",
+                    "Linux",
+                    "Python"
+                ],
+                "domain_tag": [
+                    "Linux Kernel",
+                    "AI",
+                    "Programming Language"
+                ],
+                "oR": [
+                    "仓库代码一份",
+                    "详细文档一份"
+                ],
+                "tR": [
+                    "golang",
+                    "python",
+                    "Linux内核内存管理基础知识",
+                    "机器学习基础知识"
+                ],
+                "orgID": 281,
+                "spl": 1,
+                "organchor": "linuxneihe",
+                "orgname": "Linux内核之旅开源社区"
+            },
+            {
+                "name": "LMP下数据处理的支持",
+                "remark": null,
+                "difficulty": "低",
+                "mentor": "陈莉君",
+                "contact": "<cljcore@126.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "LMP是一个基于BCC(BPF Compiler Collection)的Linux系统性能数据实时展示的web工具，是Linux内核之旅社区项目。LMP项目正在规划数据处理功能，即数据采集模块提取到性能数据后，会将数据保存到数据存储模块，但是这些数据是原始数据，并不能直接交给机器学习模型处理，本题目需要实现数据存储模块中数据的预处理功能，例如数据清洗、数据转换、数据标准化等，并且需要采用不同方式来实现以上功能，所有功能需要对接到LMP项目中，并且可以正常使用。",
+                "label": "210520872",
+                "link": "",
+                "tech_tag": [
+                    "Go",
+                    "Python"
+                ],
+                "domain_tag": [
+                    "AI"
+                ],
+                "oR": [
+                    "仓库代码一份",
+                    "详细文档一份"
+                ],
+                "tR": [
+                    "python开发技能",
+                    "数据处理基础知识"
+                ],
+                "orgID": 281,
+                "spl": 1,
+                "organchor": "linuxneihe",
+                "orgname": "Linux内核之旅开源社区"
+            },
+            {
+                "name": "通过预选重要内核参数实现更快的IO性能调优",
+                "remark": null,
+                "difficulty": "中",
+                "mentor": "许振文",
+                "contact": "<helight@qq.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "IO子系统拥有许多能够显著影响Linux系统行为的内核参数，调整这些参数可以显著提高性能。由于IO系统可调节参数较多，自动调优框架会花费大量时间探索庞大的配置空间，并且需要随着工作负载的变化而重复这一过程。  研究表明，有些参数相比其他参数对性能的影响更大，因此关注数量较少的更重要的参数可以加快自动调整系统的速度，因为需要探索的参数空间较小。  本题目要求设计并实现一个框架，首先能够对IO子系统全部可调节参数形成的参数空间进行合理降维，依据降维后的参数空间作为当前系统配置，运行工作负载并记录该点的性能指标（例如吞吐量、延时），输出配置空间中的点和对应的性能指标形成数据集。  然后提出重要性指标，通过机器学习方法预选出重要参数并进行重要性排序，能够使用前端页面展示当前IO子系统的Top5重要参数。  最后，选手可自行选择离线训练或者在线训练的方式预选重要参数，离线训练时间应尽可能短，预选参数达到的性能尽可能高，参数空间覆盖面应尽可能广。",
+                "label": "210520873",
+                "link": "",
+                "tech_tag": [
+                    "Go",
+                    "Linux",
+                    "Python"
+                ],
+                "domain_tag": [
+                    "Linux Kernel",
+                    "AI",
+                    "OS"
+                ],
+                "oR": [
+                    "仓库代码一份",
+                    "详细文档一份"
+                ],
+                "tR": [
+                    "Linux IO子系统基础知识",
+                    "机器学习基础知识",
+                    "python开发技能"
+                ],
+                "orgID": 281,
+                "spl": 1,
+                "organchor": "linuxneihe",
+                "orgname": "Linux内核之旅开源社区"
+            },
+            {
+                "name": "Linux内核TCP性能分析工具",
+                "remark": null,
+                "difficulty": "低",
+                "mentor": "许振文",
+                "contact": "<helight@qq.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "LMP（Linux microscope）是Linux内核之旅社区开发的一款基于BCC(BPF Compiler Collection)的Linux系统性能数据实时展示的web工具，是Linux内核之旅社区项目。TCP虽然作为可靠的传输层网络协议，但在最初设计的时候并没有把所有的应用场景考虑到，大型网络相关项目开发时往往会考虑优化TCP协议性能，这就需要提供TCP协议性能分析工具提供运维测试，eBPF技术的出现使得我们从内核角度去看待网络性能，因此本题目要求使用eBPF技术实现TCP层的性能监控，不限于传统的网络指标，需要探索Linux内核中TCP层有哪些可以利用的数据，要求至少从Linux内核中以下5个处理维度中选取4个维度对TCP性能进行刻画展示：1、数据包连接、传输情况；2、丢包或重传；3、拥塞控制；4、Conncet(三次握手)连接延迟、5、HTTP处理，并且需要采用BCC方式开发，并成功对接到社区LMP项目中。",
+                "label": "210520874",
+                "link": "",
+                "tech_tag": [
+                    "Linux",
+                    "Python"
+                ],
+                "domain_tag": [
+                    "Linux Kernel",
+                    "Tracing",
+                    "Programming Language"
+                ],
+                "oR": [
+                    "仓库代码一份",
+                    "详细文档一份"
+                ],
+                "tR": [
+                    "Linux kernel网络子系统基础知识",
+                    "python开发技能"
+                ],
+                "orgID": 281,
+                "spl": 1,
+                "organchor": "linuxneihe",
+                "orgname": "Linux内核之旅开源社区"
+            },
+            {
+                "name": "LMP（Linux microscope）项目插件添加",
+                "remark": null,
+                "difficulty": "低",
+                "mentor": "许振文",
+                "contact": "<helight@qq.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "LMP（Linux microscope）是Linux内核之旅社区开发的一款基于BCC(BPF Compiler Collection)的Linux系统性能数据实时展示的web工具，与常规Linux系统性能数据展示工具不同，该项目是一种内核态监控方案，目前在ubuntu18.04上测试通过，内核版本4.15.0。LMP数据提取模块支持多种插件类型，包括BCC插件、CBPF插件、SHELL插件等。目前项目主体架构开发已经完成，但bcc插件数量较少，使得LMP无法发挥出其真正能力，故需要向LMP中添加插件，丰富插件库，更好的支撑项目发展。在BCC现有工具中，对接包括scheduler、Virtual Memory、Sockets、TCP/UDP、VFS、File Systems、Volume Manager、Block Device等子系统的性能监测工具到LMP系统之中。",
+                "label": "210520875",
+                "link": "",
+                "tech_tag": [
+                    "Linux",
+                    "Python"
+                ],
+                "domain_tag": [
+                    "Linux Kernel",
+                    "Programming Language"
+                ],
+                "oR": [
+                    "仓库代码一份",
+                    "详细文档一份"
+                ],
+                "tR": [
+                    "python开发能力",
+                    "Linux基础知识"
+                ],
+                "orgID": 281,
+                "spl": 1,
+                "organchor": "linuxneihe",
+                "orgname": "Linux内核之旅开源社区"
+            },
+            {
+                "name": "HTTP、DNS网络态势预测",
+                "remark": null,
+                "difficulty": "低",
+                "mentor": "刘钊远",
+                "contact": "<lzy781@126.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "LMP是一个基于BCC(BPF Compiler Collection)的Linux系统性能数据实时展示的web工具，是Linux内核之旅社区项目。eBPF技术的出现使得我们可以更为精确地提取网络指标，因此本题目要求使用eBPF技术实现HTTP、DNS的性能监控，不限于传统的网络指标，需要探索Linux内核中可以利用的HTTP、DNS数据，要求至少从以下6个处理维度中选取4个维度对HTTP、DNS性能进行刻画展示：1、HTTP请求；2、HTTP响应；3、HTTP延时；4、DNS请求5、DNS响应6、DNS延时，从而达到探索Linux内核的目的。所有指标需要以插件形式成功对接到LMP项目之中。",
+                "label": "210520877",
+                "link": "",
+                "tech_tag": [
+                    "Linux",
+                    "Python"
+                ],
+                "domain_tag": [
+                    "Linux Kernel",
+                    "Programming Language"
+                ],
+                "oR": [
+                    "仓库代码一份",
+                    "详细文档一份"
+                ],
+                "tR": [
+                    "Linux kernel网络子系统基础知识",
+                    "python开发技能"
+                ],
+                "orgID": 281,
+                "spl": 1,
+                "organchor": "linuxneihe",
+                "orgname": "Linux内核之旅开源社区"
+            },
+            {
+                "name": "LMP下数据存储模块的优化",
+                "remark": null,
+                "difficulty": "低",
+                "mentor": "刘钊远",
+                "contact": "<lzy781@126.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "LMP是一个基于BCC(BPF Compiler Collection)的Linux系统性能数据实时展示的web工具，是Linux内核之旅社区项目。目前LMP项目中，插件提取的性能数据全部存储于influxdb中，本题目要求将目前项目中的数据存储模块中数据库换为ES数据库，并可正常支持项目目前的所有功能，并需要提供详细的文档说明。",
+                "label": "210520878",
+                "link": "",
+                "tech_tag": [
+                    "Go",
+                    "Python",
+                    "Database"
+                ],
+                "domain_tag": [
+                    "Programming Language"
+                ],
+                "oR": [
+                    "仓库代码一份",
+                    "详细文档一份"
+                ],
+                "tR": [
+                    "python开发技能",
+                    "了解golang"
+                ],
+                "orgID": 281,
+                "spl": 1,
+                "organchor": "linuxneihe",
+                "orgname": "Linux内核之旅开源社区"
+            },
+            {
+                "name": "LMP下应用程序进程线程的动态捕获",
+                "remark": null,
+                "difficulty": "低",
+                "mentor": "刘钊远",
+                "contact": "<lzy781@126.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "LMP是一个基于BCC(BPF Compiler Collection)的Linux系统性能数据实时展示的web工具，是Linux内核之旅社区项目。本题目要求利用eBPF技术实现应用程序进程线程的动态捕获，通过在内核中找到进程/线程的入口函数和出口函数，动态捕获应用程序在运行过程中产生的进程或者线程，并且需要成功对接到LMP项目中，且捕获到的PID等信息可以为其余插件服务。",
+                "label": "210520879",
+                "link": "",
+                "tech_tag": [
+                    "Linux",
+                    "Python"
+                ],
+                "domain_tag": [
+                    "Linux Kernel",
+                    "Programming Language"
+                ],
+                "oR": [
+                    "仓库代码一份",
+                    "详细文档一份"
+                ],
+                "tR": [
+                    "python开发技能",
+                    "Linux kernel进程管理基础知识"
+                ],
+                "orgID": 281,
+                "spl": 1,
+                "organchor": "linuxneihe",
+                "orgname": "Linux内核之旅开源社区"
+            }
+        ]
     },
     {
         "userId": 459,
@@ -24096,6 +25184,38 @@
                 "spl": 1,
                 "organchor": "alcbeijing",
                 "orgname": "Apache Local community Beijing"
+            },
+            {
+                "name": "ApacheCon会务系统",
+                "remark": null,
+                "difficulty": "中",
+                "mentor": "姜宁",
+                "contact": "<willem.jiang@icloud.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "为了支持ApacheCon会务举办， 需要对接CFP系统生成讲师以及议程相关数据， 需要对接网站生成系统https://github.com/alc-beijing/acasia2021，同时还需要管理讲师信息和志愿者招募信息。",
+                "label": "210700896",
+                "link": "",
+                "tech_tag": [
+                    "Java"
+                ],
+                "domain_tag": [
+                    "Web"
+                ],
+                "oR": [
+                    "需求分析问答",
+                    "项目任务分解，以及计划书",
+                    "源代码文件",
+                    "部署运行说明文档"
+                ],
+                "tR": [
+                    "能够快速部署并发布",
+                    "有完整的用户权限管理"
+                ],
+                "orgID": 694,
+                "spl": 1,
+                "organchor": "alcbeijing",
+                "orgname": "Apache Local community Beijing"
             }
         ]
     },
@@ -24302,13 +25422,13 @@
             },
             {
                 "name": "LCUI 的布局引擎开发",
-                "remark": null,
+                "remark": "",
                 "difficulty": "高",
                 "mentor": "刘超",
                 "contact": "<lc-soft@live.cn>",
                 "uniont": null,
                 "student_count": 0,
-                "description": "LCUI 的布局引擎支持正常流布局和弹性盒子布局，它的工作流程是根据于每个 UI 组件中的样式和布局参数计算它们的几何属性，与 UI 组件模块有着较强的依赖关系。由于依赖关系的存在使得它不利于做单元测试，对其做单元测试必须先初始化 UI 组件模块，而且按照模块化设计思想，布局引擎应该被 UI 组件模块单向依赖，且应该设计成包含布局元素定义、布局参数定义和相关接口的独立模块，UI 组件模块只需要负责将布局元素附加在 UI 组件上并管理好布局元素之间的关系和布局参数即可。出于这些问题的考虑，我们希望开发一个独立于 LCUI 项目的布局引擎来解决它们。",
+                "description": "LCUI 的布局引擎支持正常流布局和弹性盒子布局，它的工作流程是根据于每个 UI 组件中的样式和布局参数计算它们的几何属性，与 UI 组件模块有着较强的依赖关系。由于依赖关系的存在使得它不利于做单元测试，对其做单元测试必须先初始化 UI 组件模块，而且按照模块化设计思想，布局引擎应该设计成包含布局元素定义、布局参数定义和相关接口的独立模块，被 UI 组件模块单向依赖，UI 组件模块只需要负责将布局元素附加在 UI 组件上并管理好布局元素之间的关系和布局参数即可。出于这些问题的考虑，我们希望开发一个独立于 LCUI 项目的布局引擎来解决它们。",
                 "label": "210710510",
                 "link": "",
                 "tech_tag": [
@@ -26858,6 +27978,70 @@
                 "spl": 2,
                 "organchor": "wine",
                 "orgname": "Wine"
+            },
+            {
+                "name": "Evaluate performance of hqemu in Hangover",
+                "remark": "To work on this you will need an arm64 Linux machine",
+                "difficulty": "高",
+                "mentor": "Stefan Dösinger",
+                "contact": "<stefandoesinger+ospp_summer@gmail.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "Hangover (https://github.com/AndreRH/hangover) is a proof of concept of integrating a CPU emulator - in this case qemu - with Wine to run x86 Windows applications on non-x86 host CPUs without running a full Linux userspace stack inside the emulator. While its design is not suitable for upstream integration, it is useful for performance evaluation.    hqemu is a modification of qemu to generate more efficient translated code with the help of LLVM.    This project proposal is about merging together the hqemu modifications and hangover qemu modifications to evaluate the combined performance. Hangover ideally keeps the amount of code that needs to be emulated small and hqemu speeds up the emulation. If combined, they might either synergize well, or the faster emulation makes hangover's high level thunks moot.    To work on this you will need an arm64 Linux machine. Hangover is notoriously difficult to build. Please try to build and run both Hangover and hqemu separately before submitting your application. Try to get an idea of the modifications each project makes to qemu and how to reconcile them.",
+                "label": "210900876",
+                "link": "",
+                "tech_tag": [
+                    "C"
+                ],
+                "domain_tag": [
+                    "OS",
+                    "Virtualization",
+                    "Programming Language",
+                    "qemu"
+                ],
+                "oR": [
+                    "Write a performance report for hqemu",
+                    "Establish a workflow to reproduce this test",
+                    "Code merged into hangover codebase (or create a new repo)"
+                ],
+                "tR": [
+                    "C",
+                    "qemu"
+                ],
+                "orgID": 948,
+                "spl": 2,
+                "organchor": "wine",
+                "orgname": "Wine"
+            },
+            {
+                "name": "Make Wine's builtin explorer.exe more useful",
+                "remark": "This project would benefit Android users. However, you don't need an Android device for this project.",
+                "difficulty": "中",
+                "mentor": "André Hentschel",
+                "contact": "<nerv@dawncrow.de>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "Wine's file explorer allows a user to browse files but many features are missing. In particular, there is no support for drag & drop copying and moving of files and directories.    On many platforms, using a native file browser is a more natural alternative. However, on Android (and Chrome OS) machines, improving Wine's file browser could be better than using a native file browser. This is because of the Android security model and file system structure. Wine, when installed on Android, lives in a sandbox running as its own user, and on a non-rooted device, a native file browser will not have access to the files inside the Wine prefix. A user who wants to copy files from the limited areas of shared storage (i.e., the Downloads folder) into the c: drive, or vice versa, basically has to use a wine command prompt. Adding move / copy features to Wine's file explorer would provide a more user-friendly mechanism (which could also be used on other Wine platforms if desired).    Not being able to interact easily with the wineprefix is a major and basic usability issue with Wine on Android and Chrome OS.",
+                "label": "210900880",
+                "link": "",
+                "tech_tag": [
+                    "C"
+                ],
+                "domain_tag": [
+                    "OS"
+                ],
+                "oR": [
+                    "Wine's builtin explorer support basic drag & drop copying and moving of files and directories",
+                    "Code change merged into Wine's codebase"
+                ],
+                "tR": [
+                    "C",
+                    "GUI knowledge"
+                ],
+                "orgID": 948,
+                "spl": 2,
+                "organchor": "wine",
+                "orgname": "Wine"
             }
         ]
     },
@@ -27586,6 +28770,42 @@
                 "tR": [
                     "git",
                     "linux"
+                ],
+                "orgID": 816,
+                "spl": 0,
+                "organchor": "tensorbase",
+                "orgname": "TensorBase"
+            },
+            {
+                "name": "Top Performance ClickHouse HTTP Protocol Server in Rust",
+                "remark": "*Rust skill is not must-have*. Welcome any students if you have a good master of programming languages such as C/C++.",
+                "difficulty": "高",
+                "mentor": "金明剑",
+                "contact": "<jin.phd@gmail.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "*    You add a top performance ClickHouse HTTP server into TensorBase to make TensorBase to talk with ClickHouse HTTP client.         *   You need to understand current top performance TensorBase ClickHouse compatible server and network side things, the frontend of query process, and contribute to the key path.",
+                "label": "210810853",
+                "link": "",
+                "tech_tag": [
+                    "Linux",
+                    "Rust",
+                    "network"
+                ],
+                "domain_tag": [
+                    "Linux Kernel",
+                    "Web",
+                    "http"
+                ],
+                "oR": [
+                    "design document",
+                    "code",
+                    "review"
+                ],
+                "tR": [
+                    "git",
+                    "rust",
+                    "http"
                 ],
                 "orgID": 816,
                 "spl": 0,
@@ -31283,8 +32503,503 @@
             "Big Data",
             "Web"
         ],
-        "mail_list": "lhf@mail.bnu.edu.cn 89982416@qq.com 8644357@qq.com",
+        "mail_list": "lhf@mail.bnu.edu.cn  89982416@qq.com  8644357@qq.com",
         "email": "lhf@mail.bnu.edu.cn",
-        "project_list": []
+        "project_list": [
+            {
+                "name": "OpenCT在线交互式测试平台",
+                "remark": null,
+                "difficulty": "高",
+                "mentor": "罗海风",
+                "contact": "<bnulhf@126.com>",
+                "uniont": "王田<202031630007@mail.bnu.edu.cn>",
+                "student_count": 0,
+                "description": "目前OpenCT社区正在打造一款教育类的在线交互式测试平台，本项目主要是针对后台任务命制系统，希望通过零代码实现类似页面H5小游戏的在线交互式任务，同时以状态序列为基础来记录任务操作者的过程性数据，目前平台已有一定的基础，已经实现了单页面任务的零代码命制任务功能，需要进一步更新迭代，实现多页面的零代码命制任务功能。",
+                "label": "211150862",
+                "link": "",
+                "tech_tag": [
+                    "Go",
+                    "JavaScript",
+                    "React"
+                ],
+                "domain_tag": [
+                    "Web"
+                ],
+                "oR": [
+                    "实现后台任务命制过程中的多画布串联",
+                    "为系统嵌入更多的功能板块，如3D旋转等",
+                    "为平台实现更多的在线交互式操作"
+                ],
+                "tR": [
+                    "熟悉go语言",
+                    "熟悉react",
+                    "了解一些游戏引擎",
+                    "了解一些页面H5在线游戏的原理"
+                ],
+                "orgID": 1452,
+                "spl": 1,
+                "organchor": "openct",
+                "orgname": "北京师范大学OpenCT社区"
+            },
+            {
+                "name": "OpenCT平台前端设计及页面开发",
+                "remark": null,
+                "difficulty": "中",
+                "mentor": "罗海风",
+                "contact": "<bnulhf@126.com>",
+                "uniont": "田艳艳<202021630012@mail.bnu.edu.cn>",
+                "student_count": 0,
+                "description": "对OpenCT平台的官网前后台、学生测试页面、在线资源页面、论坛、OA系统等页面进行设计和实现。",
+                "label": "211150882",
+                "link": "",
+                "tech_tag": [
+                    "Go",
+                    "JavaScript",
+                    "React",
+                    "Git"
+                ],
+                "domain_tag": [
+                    "Web"
+                ],
+                "oR": [
+                    "官网前后台各子页面的设计",
+                    "官网前后台各子页面的效果实现",
+                    "部分在线交互式学习任务的页面效果设计及美化",
+                    "部分在线交互式测试任务的页面效果设计及美化"
+                ],
+                "tR": [
+                    "熟悉JavaScript",
+                    "有一定的审美和设计基础",
+                    "熟悉photoshop等作图工具者优先uxian"
+                ],
+                "orgID": 1452,
+                "spl": 1,
+                "organchor": "openct",
+                "orgname": "北京师范大学OpenCT社区"
+            },
+            {
+                "name": "OpenCT在线交互式任务实现及题库系统",
+                "remark": null,
+                "difficulty": "高",
+                "mentor": "王田",
+                "contact": "<202031630007@mail.bnu.edu.cn>",
+                "uniont": "董晓舒<201931630005@mail.bnu.edu.cn>",
+                "student_count": 0,
+                "description": "基于教育研究者研发的在线交互式任务脚本，开发系列在线交互式学习及测试任务，并为这些任务搭建配套的题库管理系统，对任务进行版本管理、组卷、属性管理等。",
+                "label": "211150884",
+                "link": "",
+                "tech_tag": [
+                    "Go",
+                    "JavaScript",
+                    "React",
+                    "Git"
+                ],
+                "domain_tag": [
+                    "Cloud Native",
+                    "Web"
+                ],
+                "oR": [
+                    "一系列页面交互式任务",
+                    "整合页面交互式任务的在线题库"
+                ],
+                "tR": [
+                    "熟悉JavaScript",
+                    "熟悉react",
+                    "熟悉go语言"
+                ],
+                "orgID": 1452,
+                "spl": 1,
+                "organchor": "openct",
+                "orgname": "北京师范大学OpenCT社区"
+            },
+            {
+                "name": "OpenCT教育大数据分析及可视化模型",
+                "remark": "",
+                "difficulty": "高",
+                "mentor": "董晓舒",
+                "contact": "<201931630005@mail.bnu.edu.cn>",
+                "uniont": "王佳敏<1300791618@qq.com>",
+                "student_count": 0,
+                "description": "针对学生在学习及在线测试过程中产生的教育大数据集进行挖掘，寻找合适的机器学习模型，对大数据集进行训练，形成教育数据分析模型，并寻找合适的可视化模型对其进行可视化呈现。同时结合目前项目的发展，对已有的数据分析路径进行自动化实现。",
+                "label": "211150886",
+                "link": "",
+                "tech_tag": [
+                    "Go",
+                    "Python",
+                    "AI",
+                    "Git"
+                ],
+                "domain_tag": [
+                    "AI",
+                    "Big Data",
+                    "Virtualization"
+                ],
+                "oR": [
+                    "训练教育大数据的系列分析模型",
+                    "对模型分析的结果进行可视化呈现",
+                    "形成教育大数据的自动化分析系统"
+                ],
+                "tR": [
+                    "熟悉Python",
+                    "熟悉go语言",
+                    "有过机器学习训练数据模型的经验",
+                    "了解数据可视化的一些基本图表模型"
+                ],
+                "orgID": 1452,
+                "spl": 1,
+                "organchor": "openct",
+                "orgname": "北京师范大学OpenCT社区"
+            },
+            {
+                "name": "OpenCT在线课程系统",
+                "remark": null,
+                "difficulty": "中",
+                "mentor": "王佳敏",
+                "contact": "<1300791618@qq.com>",
+                "uniont": "罗海风<bnulhf@126.com>,王田<202031630007@mail.bnu.edu.cn>",
+                "student_count": 0,
+                "description": "在平台原有课程资源实现的基础上，进一步设计和研发在线课程系统，助力线上教与学，实现在线的课程资源陈设以及直播等。同时对课程进行过程中的学生反馈进行数据采集等。",
+                "label": "211150887",
+                "link": "",
+                "tech_tag": [
+                    "Go",
+                    "JavaScript",
+                    "React",
+                    "Git"
+                ],
+                "domain_tag": [
+                    "Web"
+                ],
+                "oR": [
+                    "在线微课的资源放置功能模块",
+                    "在线直播的功能模块",
+                    "在线直播功能模块中的数据采集"
+                ],
+                "tR": [
+                    "熟悉go语言",
+                    "熟悉react"
+                ],
+                "orgID": 1452,
+                "spl": 1,
+                "organchor": "openct",
+                "orgname": "北京师范大学OpenCT社区"
+            },
+            {
+                "name": "OpenCT自动化报告系统",
+                "remark": null,
+                "difficulty": "中",
+                "mentor": "田艳艳",
+                "contact": "<202021630012@mail.bnu.edu.cn>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "实现教育大数据结果的报告自动化即时生成，为学生的在线学习和测试提供快速的反馈机制，结合数据可视化系统的功能，即时生成可供下载的可视化报告。",
+                "label": "211150889",
+                "link": "",
+                "tech_tag": [
+                    "Go",
+                    "JavaScript",
+                    "React",
+                    "Git"
+                ],
+                "domain_tag": [
+                    "Cloud Native",
+                    "Web"
+                ],
+                "oR": [
+                    "对已有的自动化出报告系统进行完善",
+                    "实现更多数据可视化结果的报告呈现"
+                ],
+                "tR": [
+                    "熟悉go语言",
+                    "熟悉react"
+                ],
+                "orgID": 1452,
+                "spl": 1,
+                "organchor": "openct",
+                "orgname": "北京师范大学OpenCT社区"
+            },
+            {
+                "name": "OpenCT教育课程视频影响的自动化分析系统",
+                "remark": null,
+                "difficulty": "高",
+                "mentor": "罗海风",
+                "contact": "<bnulhf@126.com>",
+                "uniont": "王田<202031630007@mail.bnu.edu.cn>,董晓舒<201931630005@mail.bnu.edu.cn>,王佳敏<1300791618@qq.com>",
+                "student_count": 0,
+                "description": "探索视频类课程资源的自动化编码和分析，希望通过机器学习、AI算法等对录制的课堂教学资源进行自动化分析，形成课程资源的自动化分析系统，提升一线教学课堂的评价效率。",
+                "label": "211150893",
+                "link": "",
+                "tech_tag": [
+                    "Go",
+                    "Python",
+                    "AI",
+                    "Deep Learning Framework",
+                    "Git"
+                ],
+                "domain_tag": [
+                    "AI"
+                ],
+                "oR": [
+                    "视频课程的自动化编码分析系统",
+                    "音频教育资源的自动化编码分析系统"
+                ],
+                "tR": [
+                    "熟悉go语言",
+                    "熟悉机器学习、AI算法等训练模型",
+                    "熟悉音视频的自动化转录编码"
+                ],
+                "orgID": 1452,
+                "spl": 1,
+                "organchor": "openct",
+                "orgname": "北京师范大学OpenCT社区"
+            },
+            {
+                "name": "OpenCT在线交互式任务的美工设计",
+                "remark": null,
+                "difficulty": "低",
+                "mentor": "董晓舒",
+                "contact": "<201931630005@mail.bnu.edu.cn>",
+                "uniont": "王田<202031630007@mail.bnu.edu.cn>,田艳艳<202021630012@mail.bnu.edu.cn>",
+                "student_count": 0,
+                "description": "对教育研究者设计的任务脚本进行插图设计及绘制，对在线交互式学习及测试任务的情境进行设计和美化，对所有在线交互式任务的画面风格进行品控，适配相应的学生学段及年龄。",
+                "label": "211150895",
+                "link": "",
+                "tech_tag": [
+                    "JavaScript",
+                    "Git"
+                ],
+                "domain_tag": [
+                    "Web"
+                ],
+                "oR": [
+                    "对所有交互式任务进行美工设计",
+                    "把控所有交互式情境的风格和效果"
+                ],
+                "tR": [
+                    "熟悉JavaScript",
+                    "有一定的美工基础",
+                    "了解一些不同年龄段的人群的画面喜好"
+                ],
+                "orgID": 1452,
+                "spl": 1,
+                "organchor": "openct",
+                "orgname": "北京师范大学OpenCT社区"
+            }
+        ]
+    },
+    {
+        "userId": 1513,
+        "anchor": "kubedl",
+        "slide": "",
+        "video": "",
+        "img": "kubedl.png",
+        "title": "KubeDL",
+        "project_url": "",
+        "url": "https://kubedl.io/",
+        "description": "KubeDL is short for Kubernetes-Deep-Learning. It is a unified operator that supports running multiple types of distributed deep learning/machine learning workloads on Kubernetes. Check the website: https://kubedl.io",
+        "full_des": "github: https://github.com/alibaba/kubedlKubeDL enables deep learning workloads to run on Kubernetes more easily and efficiently. Its core functionalities include:• Support different training(Tensorflow, Pytorch, Mars etc.) and inference frameworks (TensorRT, Triton etc.) in a single unified controller.• Model lineage and versioning to track the history of a model natively in CRD:  when the model is trained using which data and which image,  each version of the model,  whch version is runnng etc.• Atomatic tuning for inference worload in its container resource and performance.",
+        "tech_tag": [
+            "Go",
+            "Cloud Native",
+            "Container",
+            "AI",
+            "Kubernetes",
+            "Deep Learning Framework"
+        ],
+        "domain_tag": [
+            "AI",
+            "Cloud Native",
+            "Container",
+            "Distributed System"
+        ],
+        "mail_list": "qiukai.cqk@alibaba-inc.com  yinghao.yyh@alibaba-inc.com  zuofeng.zc@alibaba-inc.com  jian.h@alibaba-inc.com",
+        "email": "community@kubedl.io",
+        "project_list": [
+            {
+                "name": "KubeDL支持Elastic Training",
+                "remark": "",
+                "difficulty": "高",
+                "mentor": "陈裘凯",
+                "contact": "<cqk0100@gmail.com>",
+                "uniont": null,
+                "student_count": 0,
+                "description": "越来越多的分布式AI训练任务开始尝试弹性训练的场景，如基于horovod的弹性，以及新开源的elastic-torch等，KubeDL需要支持好这些弹性AI训练作业，设计用户友好的api，完善AI训练作业的生命周期管理能力，成为Cloud Native AI领域的一个最佳实践。",
+                "label": "211160883",
+                "link": "",
+                "tech_tag": [
+                    "Go",
+                    "Cloud Native",
+                    "AI",
+                    "Kubernetes",
+                    "Deep Learning Framework"
+                ],
+                "domain_tag": [
+                    "AI",
+                    "Cloud Native",
+                    "Distributed System"
+                ],
+                "oR": [
+                    "调研当前弹性训练框架",
+                    "设计良好的弹性训练Job API",
+                    "优质的编码及测试"
+                ],
+                "tR": [
+                    "对Cloud Native领域有兴趣",
+                    "有Go语言/Kubernetes基础的最佳"
+                ],
+                "orgID": 1513,
+                "spl": 1,
+                "organchor": "kubedl",
+                "orgname": "KubeDL"
+            },
+            {
+                "name": "针对Serving场景的轻量级流量控制",
+                "remark": "",
+                "difficulty": "高",
+                "mentor": "陈裘凯",
+                "contact": "<cqk0100@gmail.com>",
+                "uniont": "余英豪<yinghao.yyh@alibaba-inc.com>",
+                "student_count": 0,
+                "description": "在AI推理的场景中，通常涉及到多模型的服务（加载不同版本的AI模型并向用户提供推理服务），对于多模型共存的场景中通常需要对用户的推理请求做一些精细化的路由，而目前的开源方案通常依赖比较重的istio等微服务流量治理框架，KubeDL计划建设轻量级的服务级别的流量管理，对未来模型灰度，多阶段推理，批量推理等场景做更好的优化。",
+                "label": "211160885",
+                "link": "",
+                "tech_tag": [
+                    "Go",
+                    "Cloud Native",
+                    "AI",
+                    "Kubernetes",
+                    "Deep Learning Framework"
+                ],
+                "domain_tag": [
+                    "AI",
+                    "Cloud Native",
+                    "Container"
+                ],
+                "oR": [
+                    "调研目前基于k8s的AI推理服务方案",
+                    "设计服务级别的流量管理模块",
+                    "能够实现简单的流量路由"
+                ],
+                "tR": [
+                    "对Cloud Native领域有兴趣",
+                    "有Go语言/Kubernetes基础的最佳",
+                    "熟悉AI推理框架更加，如TFSering"
+                ],
+                "orgID": 1513,
+                "spl": 1,
+                "organchor": "kubedl",
+                "orgname": "KubeDL"
+            },
+            {
+                "name": "增强AI模型的管理能力",
+                "remark": "",
+                "difficulty": "中",
+                "mentor": "陈裘凯",
+                "contact": "<cqk0100@gmail.com>",
+                "uniont": "何剑<jian.h@alibaba-inc.com>",
+                "student_count": 0,
+                "description": "KubeDL支持了AI训练作业完成之后自动生产模型，并保存模型的流水线能力，当前已经支持了本地volume和阿里云NAS。用户保存模型的方式有多种多样，如果能够支持更丰富的模型管理能力，更流畅地对接AI训练过程，将极大提升AI科学家的使用体验，加速创新落地。",
+                "label": "211160888",
+                "link": "",
+                "tech_tag": [
+                    "Go",
+                    "Cloud Native",
+                    "AI",
+                    "Kubernetes"
+                ],
+                "domain_tag": [
+                    "AI",
+                    "Cloud Native",
+                    "Container"
+                ],
+                "oR": [
+                    "调研AI科学家的模型管理方式",
+                    "实现更丰富的模型管理能力",
+                    "优化从训练到模型管理到部署推理服务的全过程"
+                ],
+                "tR": [
+                    "对Cloud Native领域有兴趣",
+                    "有Go语言/Kubernetes基础的最佳",
+                    "熟悉AI推理框架更加，如TFSering"
+                ],
+                "orgID": 1513,
+                "spl": 1,
+                "organchor": "kubedl",
+                "orgname": "KubeDL"
+            },
+            {
+                "name": "KubeDL集成fluid实现AI训练作业的缓存加速",
+                "remark": "",
+                "difficulty": "中",
+                "mentor": "余英豪",
+                "contact": "<yinghao.yyh@alibaba-inc.com>",
+                "uniont": "陈裘凯<cqk0100@gmail.com>",
+                "student_count": 0,
+                "description": "Fluid是一个云原生领域的缓存加速方案，而IO越来越成为AI训练作业的瓶颈，两者天然可以进行比较好的结合，KubeDL计划与Fluid进行更好地集成，大大加速AI训练作业的效率。",
+                "label": "211160890",
+                "link": "",
+                "tech_tag": [
+                    "Go",
+                    "Cloud Native",
+                    "AI",
+                    "Distributed System",
+                    "Kubernetes"
+                ],
+                "domain_tag": [
+                    "AI",
+                    "Cloud Native",
+                    "Big Data"
+                ],
+                "oR": [
+                    "学习Fluid的缓存加速实现方案",
+                    "设计KubeDL与Fluid的集成方案与API",
+                    "编码实现缓存加速能力的集成并进行完备的功能测试",
+                    "产出缓存加速前后的性能对比报告"
+                ],
+                "tR": [
+                    "对Cloud Native领域有兴趣",
+                    "有Go语言/Kubernetes基础的最佳",
+                    "对分布式缓存等领域有所了解"
+                ],
+                "orgID": 1513,
+                "spl": 1,
+                "organchor": "kubedl",
+                "orgname": "KubeDL"
+            },
+            {
+                "name": "完善KubeDL的CI/CD能力",
+                "remark": "",
+                "difficulty": "中",
+                "mentor": "余英豪",
+                "contact": "<yinghao.yyh@alibaba-inc.com>",
+                "uniont": "陈裘凯<cqk0100@gmail.com>",
+                "student_count": 0,
+                "description": "完善KubeDL的CI/CD能力，设计并编写end-to-end的测试用例，覆盖KubeDL的核心功能，实现代码CI时基于Travis的自动化测试，保证每一次代码提交/合并之后的一致性，大大增强代码库的鲁棒性。",
+                "label": "211160894",
+                "link": "",
+                "tech_tag": [
+                    "Go",
+                    "Cloud Native",
+                    "Kubernetes"
+                ],
+                "domain_tag": [
+                    "Cloud Native"
+                ],
+                "oR": [
+                    "学习CI/CD框架的工作原理与配置方式",
+                    "设计优质的end-to-end测试用例，并使用ginkgo框架进行测试用例的编码",
+                    "打通travis这个CI/CD平台，实现自动触发与卡点"
+                ],
+                "tR": [
+                    "对Cloud Native领域有兴趣",
+                    "有Go语言/Kubernetes基础的最佳",
+                    "对CI/CD流水线有所了解最佳"
+                ],
+                "orgID": 1513,
+                "spl": 1,
+                "organchor": "kubedl",
+                "orgname": "KubeDL"
+            }
+        ]
     }
 ]

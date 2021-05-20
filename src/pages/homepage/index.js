@@ -35,11 +35,15 @@ class HomePage extends React.Component{
         gohash("/liveshow")
     }
 
-    createLogo(logoclassname,data){
+    createLogo(logoclassname,data,path){
+        let pathurl = 'logo/'
+        if(path){
+            pathurl=path
+        }
         
         var logo=[];     
-        data.map((item,index)=>{
-            const iconUrl = require('./../../img/logo/'+item.img).default;
+        data.map((item,index)=>{        
+            const iconUrl = require('./../../img/'+`${pathurl}${item.img}`).default;
             logo.push(
                 <div 
                 key={index}
@@ -174,6 +178,8 @@ class HomePage extends React.Component{
                             </div>
                             <div className="homepageLogoItemList Coop">
                                 {this.createLogo("homepagelogocoop",logocoopdata.cooper)}
+                                <br/>
+                                {this.createLogo("homepagelogocoop",logocoopdata.university,'school/')}
                             </div>
                            
                         </div>

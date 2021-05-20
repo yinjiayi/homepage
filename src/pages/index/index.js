@@ -26,15 +26,6 @@ class Index extends React.Component{
     gourl(url){
         window.open(url)
     }
-    // componentDidMount(){
-    //     // this.setState({
-    //     //     showdata:this.state.data[this.props.chiFlag]
-    //     // })
-    // }
-
-
-    
-
 
 
 
