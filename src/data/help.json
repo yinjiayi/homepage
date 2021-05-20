@@ -1,4 +1,5 @@
 {
+    
     "chi":{
         
         "ressourcelink":{
@@ -6,6 +7,18 @@
             "keyissue":"热点问题",
             "community":"社区加入"
         },
+        "list":[
+            ["热点问题","/"],
+            ["活动角色","/roles/"],
+            ["活动日程","/timeline/"],
+            ["学生指南","/student/"],
+            ["社区指南","/community/"],
+            ["社区名单","/communities-list/"],
+            ["导师指南","/mentor/"],
+            ["合作推广","/cooperation/"],
+            ["联系我们","/contactus/"],
+            ["感谢","/acknowledgements/"]
+        ],
         "contact":{
             "name":"官方联系方式",
             "email":"官方邮箱",
@@ -20,6 +33,18 @@
             "keyissue":"Key Issues",
             "community":"Community Participation "
         },
+        "list":[
+            ["Frequently Asked","/"],
+            ["Roles","/roles/"],
+            ["Timeline","/timeline/"],
+            ["Student Guide","/student/"],
+            ["Community","/community/"],
+            ["Communities List","/communities-list/"],
+            ["Mentor","/mentor/"],
+            ["Cooperation","/cooperation/"],
+            ["Contact Us","/contactus/"],
+            ["Acknowledgements","/acknowledgements/"]
+        ],
         "contact":{
             "name":"Official Contacts",
             "email":"Official Email",
