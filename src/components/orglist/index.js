@@ -34,6 +34,7 @@ class Orglist extends React.Component{
 
        this.closeModall  = this.closeModall.bind(this);    
     }
+
     // componentDidMount(){
        
     //        import("../../data/orglist2021.json").then((module)=>{        

@@ -42,8 +42,7 @@ class HomePage extends React.Component{
         }
         
         var logo=[];     
-        data.map((item,index)=>{
-           
+        data.map((item,index)=>{        
             const iconUrl = require('./../../img/'+`${pathurl}${item.img}`).default;
             logo.push(
                 <div 

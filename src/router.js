@@ -24,8 +24,8 @@
 import Liveshow from './pages/liveshow/index.js';
 import ProjectDetail from './components/projectDetail/index.js';
 import {asyncComponent} from './components/asynccomp/index.js'
-let Orglist
-let ProjectlistN
+let Orglist = asyncComponent(() => import('./components/orglist/index.js'));
+let ProjectlistN = asyncComponent(() => import('./components/projectlistN/index.js')); 
 
 
 
@@ -35,12 +35,7 @@ let ProjectlistN
               
      }
  
-     componentDidMount(){
-         console.log(111)
-        Orglist = asyncComponent(() => import('./components/orglist/index.js'));
-        ProjectlistN = asyncComponent(() => import('./components/projectlistN/index.js'));  
-         
-     }
+    
      render(){
          return(
              <Router >
@@ -58,7 +53,7 @@ let ProjectlistN
                                          <Switch>
                                              {/* <Route path = {["/org", "/org/orglist"]}  component={this.state.Orglistflag?Orglist:""} exact ></Route>                      
                                              <Route path="/org/projectlist" component={this.state.ProjectlistNflag? ProjectlistN:""} exact></Route>  */}
-                                             <Route path = {["/org", "/org/orglist"]}  component={Orglist} exact ></Route>                      
+                                             <Route path = {["/org", "/org/orglist", "/orglist"]}  component={Orglist} exact ></Route>                      
                                              <Route path="/org/projectlist" component={ProjectlistN} exact></Route> 
                                              <Route path="/org/orgdetail/:orgname" component={OrgDetail} ></Route>  
                                              <Route path="/org/prodetail/:projectid" component={ProjectDetail} ></Route>     
