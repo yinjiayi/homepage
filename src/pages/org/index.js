@@ -35,12 +35,11 @@ class Org extends React.Component{
             orgflag = "projectlist"
         }
         if(this.props.orgTabFlag !== orgflag){
-            this.props.setOrgTabFlag(orgflag)
-           
-           
+            this.props.setOrgTabFlag(orgflag)     
         }
        
-        window.location.hash = '/org/'+orgflag
+       
+        
 
        
     }
