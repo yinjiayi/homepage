@@ -246,6 +246,12 @@ class ProjectlistN extends React.Component{
         })
     }
 
+    applyproject(){
+        const proidlist=[26,27,28,29,30,31]
+        let index = Math.floor((Math.random()*proidlist.length))
+        window.open("https://test-portal-2.summer-ospp.ac.cn/summerTest/system/user/profile/enroll/"+index)
+    }
+
     
 
 
@@ -368,14 +374,14 @@ class ProjectlistN extends React.Component{
                                                 onClick={()=>{this.setIndexPopOver(index)}}
                                                 className={["PLOperationButton","proapply",this.state.indexname === index?"show":""].join(" ")}>
                                                     
-                                                    <span>{showdata.operationbutton[1]}</span>
-                                                    <span className="PLPopOver">
+                                                    <span onClick={()=>{this.applyproject()}}>{showdata.operationbutton[1]}</span>
+                                                    {/* <span className="PLPopOver">
                                                         {showdata.popover[0]}<br/> 
                                                         {showdata.popover[1]}
                                                         <a href="https://portal.summer-ospp.ac.cn/summer/" target="_blank">
                                                            {showdata.popover[2]}
                                                         </a>
-                                                    </span>
+                                                    </span> */}
                                                 
                                                 </span>
                                                 
