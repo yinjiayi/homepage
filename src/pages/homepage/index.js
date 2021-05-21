@@ -147,6 +147,12 @@ class HomePage extends React.Component{
                             <div className="homepageLogoItemList ">
                                 {this.createLogo("homepageLogoImage",logocoopdata.host)}
                             </div>
+                            <div className="homepageLogoItemTitle ">
+                                {showdata.logotitle[3]}
+                            </div>
+                            <div className="homepageLogoItemList ">
+                            {this.createLogo("homepageLogoImage",logocoopdata.organizer)}                      
+                            </div>
                             <div className="homepageLogoItemTitle">
                                 {showdata.logotitle[2]}
                             </div>
@@ -154,12 +160,7 @@ class HomePage extends React.Component{
                                 {this.createLogo("homepageLogoImage",logocoopdata.cohost)}
                             </div>
                            
-                            <div className="homepageLogoItemTitle ">
-                                {showdata.logotitle[3]}
-                            </div>
-                            <div className="homepageLogoItemList ">
-                            {this.createLogo("homepageLogoImage",logocoopdata.organizer)}                      
-                            </div>
+                            
                             <div className="homepageLogoItemTitle ">
                                 {showdata.logotitle[4]}
                             </div>
