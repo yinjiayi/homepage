@@ -50,7 +50,51 @@
   color: #1d8eff;
 }
 
+.ProjectTip.displaynone {
+  display: none;
+}
+
+.ProjectTip {
+  position: relative;
+  top: -62px;
+  right: -131px;
+
+  .ProjectTipWeb {
+    width: 212px;
+    height: 120px;
+    position: absolute;
+  }
+
+  .ProjectTipWebClose {
+    width: 20px;
+    height: 20px;
+    right: -24px;
+  }
+}
+
+.ProjectTipWeb {
+  background-image: url(./../../img/tip/cn.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.ProjectTipWebClose {
+  background-image: url(./../../img/tip/close.png);
+  right: 0;
+  position: absolute;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
 .en {
+  .ProjectTipWeb {
+    background-image: url(./../../img/tip/en.png);
+    background-repeat: no-repeat;
+  }
+
+  .ProjectTipWebClose {
+    right: -51px;
+  }
   .ProjectListApplyState {
     line-height: 18px;
   }
@@ -101,10 +145,10 @@
 .ProjectListSelect {
   position: relative;
   width: 100%;
-  background-color: #ffffff;
-  border: solid 1px #a6a6a6;
-  padding: 0 10px;
-  margin-bottom: 10px;
+  background: #f1f1f3;
+
+  padding: 0;
+  margin: 20px 0 30px;
 }
 
 .ProjectListSelectItem {
@@ -321,12 +365,7 @@
 .ProjectListBanner .ant-input-affix-wrapper input {
   font-size: 18px;
 }
-.ProjectListSelect {
-  border: none;
-  background: #f1f1f3;
-  padding: 0;
-  margin: 20px 0 30px;
-}
+
 .ProjectListSelectItem.Degree .ProjectListSelectItemTitle {
   letter-spacing: normal;
   color: #000;
@@ -431,5 +470,28 @@
   .Org .ant-pagination .ant-pagination-next,
   .Org .ant-pagination .ant-pagination-prev {
     background-color: #396cc8 !important;
+  }
+}
+
+@media screen and (max-width: 1480px) {
+  .ProjectTip {
+    right: 32px;
+  }
+  .ProjectListLC {
+    padding-top: 53px;
+  }
+  .ProjectTipWeb {
+    background-image: url(./../../img/tip/phonecn.png);
+    background-repeat: no-repeat;
+  }
+
+  .en {
+    .ProjectTip {
+      right: 62px;
+    }
+    .ProjectTipWeb {
+      background-image: url(./../../img/tip/p_en.png);
+      background-repeat: no-repeat;
+    }
   }
 }

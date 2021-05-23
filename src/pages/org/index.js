@@ -37,7 +37,7 @@ class Org extends React.Component{
         if(this.props.orgTabFlag !== orgflag){
             this.props.setOrgTabFlag(orgflag)     
         }
-       
+        
        
         
 
@@ -72,7 +72,7 @@ class Org extends React.Component{
                     
                    
                 </div>
-                <div className="OrgWrapper content1200">
+                <div className="OrgWrapper">
                  {this.props.children}
                 </div>
                
