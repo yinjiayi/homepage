@@ -16,4 +16,4 @@ pages:
     paths:
       - public # mandatory, other folder won't work
   only:
-    - feature/link
+    - master
