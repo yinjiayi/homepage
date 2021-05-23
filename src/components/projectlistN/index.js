@@ -265,6 +265,12 @@ class ProjectlistN extends React.Component{
         }
     }
 
+    goEnroll(label){
+        const langflag = this.props.chiFlag === 'en'?2:1;
+    
+        gourl("https://portal.summer-ospp.ac.cn/summer/system/user/profile/enroll/"+label+"/"+langflag)
+    }
+
 
 
     
@@ -402,7 +408,7 @@ class ProjectlistN extends React.Component{
                                                 onClick={()=>{this.setIndexPopOver(index)}}
                                                 className={["PLOperationButton","proapply",this.state.indexname === index?"show":""].join(" ")}>
                                                     
-                                                    <span onClick={()=>{gourl("https://portal.summer-ospp.ac.cn/summer/system/user/profile/enroll/"+item.label)}}>{showdata.operationbutton[1]}</span>
+                                                    <span onClick={()=>{this.goEnroll(item.label)}}>{showdata.operationbutton[1]}</span>
                                                     {/* <span className="PLPopOver">
                                                         {showdata.popover[0]}<br/> 
                                                         {showdata.popover[1]}
