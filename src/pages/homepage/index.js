@@ -91,11 +91,12 @@ class HomePage extends React.Component{
 
     render(){
         let showdata = this.state.data[this.props.chiFlag]
-        
-        let {applyurl} = this.state.data
         return(         
             <div className="homepage">
-            <div className="GoApply" onClick={()=>{this.goLogoLink(applyurl)}}>{showdata.goapply}</div>
+            <div className="GoApply"
+                dangerouslySetInnerHTML={{ __html: showdata.goapply }}>
+               
+            </div>
                 <div className="homepageBanner One">
                     <div className="homepageBannerTitle">{showdata.title}</div>
                     <div className="homepageTextOne">
