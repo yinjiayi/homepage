@@ -19,6 +19,9 @@ import projectlist from '../../data/projectlist.json';
 import {  Pagination } from 'antd';
 import { getSelectM,getSelectLang,getSelectDToChi,getLangDToChi,getTagSelect} from './util.js'
 import {getSplit,gohash,getSupportLanguage,gourl} from "../../util/url.js";
+import TipChi from "./../../img/tip/cn.png";
+
+
 const { Search } = Input;
 
 
@@ -35,7 +38,8 @@ class ProjectlistN extends React.Component{
            degreeselect:"all",
            langSelect: "all",           //0,1,2
            tagSelect:"all",
-           indexname:""
+           indexname:"",
+           tipflag:true
            
        }
        this.itemRender = this.itemRender.bind(this)
@@ -246,9 +250,22 @@ class ProjectlistN extends React.Component{
         })
     }
 
-    // applyproject(proid){
-    //     window.open("https://test-portal-2.summer-ospp.ac.cn/summerTest/system/user/profile/enroll/"+index)
-    // }
+    setTipNone(){
+        this.setState({
+            tipflag:false
+        })
+    }
+
+    goApply(){
+        let url="https://portal.summer-ospp.ac.cn/summer/login?"
+        if(this.props.chiFlag === "en"){
+            gourl(`${url}lang=en_US`)
+        }else{
+            gourl(`${url}lang=zh_CN`)
+        }
+    }
+
+
 
     
 
@@ -260,7 +277,7 @@ class ProjectlistN extends React.Component{
         let datalllength = datall.length
         return(         
             <div className="Projectlist">
-               <div className="ProjectListBanner">
+               <div className="ProjectListBanner ">
                 <Search                      
                         placeholder={showdata.searchPlaceholder}
                         allowClear
@@ -280,76 +297,89 @@ class ProjectlistN extends React.Component{
                     </div>            
                     */}
                </div> 
-               <div className="projectListWrapper content1200">
-                    <div className="ProjectListPageState">
-                        <div className="ProjectListPage">
-                            <span className="ProjectListPageItemOne">{showdata.pronum[0]} {datalllength} {showdata.pronum[1]}</span>
-                            <span className="ProjectListPageItem">
-                                {showdata.pagenum[0]}{this.state.page} {showdata.pagenum[1]} 
-                                <span className="ProjectListPageItemSum">{showdata.pagesum[0]} {Math.ceil(datalllength/this.state.pagesize)} {showdata.pagesum[1]}</span>
-                            </span>
+               <div className="projectListWrapper">
+                    <div className=" content1200">
+                        <div  className="ProjectListPageState">
+                            <div className="ProjectListPage">
+                                <span className="ProjectListPageItemOne">{showdata.pronum[0]} {datalllength} {showdata.pronum[1]}</span>
+                                <span className="ProjectListPageItem">
+                                    {showdata.pagenum[0]}{this.state.page} {showdata.pagenum[1]} 
+                                    <span className="ProjectListPageItemSum">{showdata.pagesum[0]} {Math.ceil(datalllength/this.state.pagesize)} {showdata.pagesum[1]}</span>
+                                </span>
+                            </div>
                         </div>
                         {/* <div className="ProjectListApplyState">{showdata.applyState[2]}</div> */}
+                        <div className="ProjectListSelect">
+                            <div className="ProjectListSelectItem Degree">
+                                <span className="ProjectListSelectItemTitle" >{showdata.proDi}</span>
+                                {
+                                    showdata.prodegree.map((item,index)=>{
+                                        return (
+                                            <span 
+                                            key={index} 
+                                            onClick={()=>{this.setDegree(item)}}
+                                            className={["ProjectListSelectItemContent",getSelectM(item) === degreeselect ? "ProjectListSelectTagDe":""].join(" ")}>
+                                                {item}
+                                            </span>
+                                        )
+                                    })
+                                }
+                            </div>
+                            <div className="ProjectListSelectItem Lang">
+                                <span className="ProjectListSelectItemTitle" >{showdata.lang}</span>
+                                {
+                                    showdata.langtag.map((item,index)=>{
+                                        return (
+                                            <span 
+                                            key={index} 
+                                            onClick={()=>{this.setLang(item)}}
+                                            className={["ProjectListSelectItemContent",getSelectLang(item) === langSelect ? "ProjectListSelectTagDe":""].join(" ")}>
+                                                {item}
+                                            </span>
+                                        )
+                                    })
+                                }
+                            </div>
+                            <div className="ProjectListSelectItem Tag">
+                                <span className="ProjectListSelectItemTitle" >{showdata.tag}</span>
+                                {
+                                    showdata.taglist.map((item,index)=>{
+                                        return (
+                                            <span 
+                                            key={index} 
+                                            onClick={()=>{this.setTag(item)}}
+                                            className={["ProjectListSelectItemContent",getTagSelect(item) === tagSelect ? "ProjectListSelectTagDe":""].join(" ")}>
+                                                {item}
+                                            </span>
+                                        )
+                                    })
+                                }
+                            </div>
+                        </div>
                     </div>
-                    <div className="ProjectListSelect">
-                        <div className="ProjectListSelectItem Degree">
-                            <span className="ProjectListSelectItemTitle" >{showdata.proDi}</span>
-                            {
-                                showdata.prodegree.map((item,index)=>{
-                                    return (
-                                        <span 
-                                        key={index} 
-                                        onClick={()=>{this.setDegree(item)}}
-                                        className={["ProjectListSelectItemContent",getSelectM(item) === degreeselect ? "ProjectListSelectTagDe":""].join(" ")}>
-                                            {item}
-                                        </span>
-                                    )
-                                })
-                            }
-                        </div>
-                        <div className="ProjectListSelectItem Lang">
-                            <span className="ProjectListSelectItemTitle" >{showdata.lang}</span>
-                            {
-                                showdata.langtag.map((item,index)=>{
-                                    return (
-                                        <span 
-                                        key={index} 
-                                        onClick={()=>{this.setLang(item)}}
-                                        className={["ProjectListSelectItemContent",getSelectLang(item) === langSelect ? "ProjectListSelectTagDe":""].join(" ")}>
-                                            {item}
-                                        </span>
-                                    )
-                                })
-                            }
-                        </div>
-                        <div className="ProjectListSelectItem Tag">
-                            <span className="ProjectListSelectItemTitle" >{showdata.tag}</span>
-                            {
-                                showdata.taglist.map((item,index)=>{
-                                    return (
-                                        <span 
-                                        key={index} 
-                                         onClick={()=>{this.setTag(item)}}
-                                        className={["ProjectListSelectItemContent",getTagSelect(item) === tagSelect ? "ProjectListSelectTagDe":""].join(" ")}>
-                                            {item}
-                                        </span>
-                                    )
-                                })
-                            }
-                        </div>
-                    </div>
-                    <div className="ProjectListLCWrapper">
+
+                    <div className="ProjectListLCWrapper content1200">
+                        
                     <div className="ProjectListLC">
+                        
                         <div className="ProjectListLCLine Header">
                             <span className="ProjectListLCID ">{showdata.projectNumber}</span>
                             <span className="ProjectListLCName">{showdata.projectName}</span>
                             <span className="ProjectListLCCommunity">{showdata.projectCommunity}</span>
                             <span className="ProjectListLCLang">{showdata.language}</span>
                             <span className="ProjectListLCDegree">{showdata.proDegree}</span>
-                            <span className="ProjectListLCOperation">{showdata.operation}</span>
+                            <span className="ProjectListLCOperation">
+                                <div className={["ProjectTip",this.state.tipflag?"":"displaynone"].join(" ")}>
+                                    <div className="ProjectTipWeb" onClick={()=>this.goApply()}></div>
+                                    <div className="ProjectTipWebClose" onClick={()=>{
+                                        this.setTipNone()
+                                    }}></div>
+                                </div>
+                                <span>{showdata.operation}</span>
+                            </span>
                         </div>
                        
-
+                        
                         {
                           
                                          
@@ -397,6 +427,7 @@ class ProjectlistN extends React.Component{
 
                     </div>
                     </div>
+                    <div className=" content1200">
                     <Pagination 
                     current={this.state.page}
                     defaultPageSize ={this.state.pagesize} 
@@ -405,6 +436,9 @@ class ProjectlistN extends React.Component{
                     onChange={this.onChange}
                     showSizeChanger={false}
                     /> 
+
+                    </div>
+                   
 
                </div>
                

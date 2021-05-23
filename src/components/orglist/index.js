@@ -103,7 +103,7 @@ class Orglist extends React.Component{
         let showorglist = this.state.showorglist
         const lenorg = showorglist.length
         return(         
-            <div className="Orglist">  
+            <div className="Orglist  content1200">  
                 <div className="OrglistSearch">  
                  <Search                      
                         placeholder={showdata.searchPlaceholder}
