@@ -97,7 +97,7 @@ class ProjectDetail extends React.Component{
         let showdata = projectlist[this.props.chiFlag]
         let prodetail = this.state.showPro   
         return(         
-            <div className="ProjectDetail">
+            <div className="ProjectDetail content1200">
                 <div className="ProjectDetailNavLink">   
                     <span className="orgListNavBarItem orgClick" onClick={()=>{gohash('/org/orglist')}}>社区列表</span>
                     <span className="orgListNavBarItem orgClick" onClick={()=>{gohash('/org/orgdetail/'+prodetail.organchor)}}> &gt; {getSplit(prodetail.orgname,this.props.chiFlag)}</span>
