@@ -51,17 +51,18 @@ const ProjectlistN = React.lazy(() => import('./components/projectlistN/index.js
                                  <Route path="/homepage"component={HomePage} ></Route> 
                                  <Route path="/help"component={Help} ></Route>
                                  <Route path="/org" component={Org}>
-                                 <Suspense maxDuration={500}  fallback={<SpinLoading/>}>
+                                 
                                      <Org>                                  
-                                         <Switch>                             
+                                         <Switch>   
+                                            <Suspense maxDuration={500}  fallback={<SpinLoading/>}>                          
                                              <Route path = {["/org", "/org/orglist", "/orglist"]}  component={Orglist} exact ></Route>                      
                                              <Route path="/org/projectlist" component={ProjectlistN} exact></Route> 
-                                            
+                                             </Suspense> 
                                              <Route path="/org/orgdetail/:orgname" component={OrgDetail} ></Route>  
                                              <Route path="/org/prodetail/:projectid" component={ProjectDetail} ></Route>     
                                          </Switch>                                     
                                      </Org>
-                                     </Suspense>   
+                                       
                                  </Route>
                                  <Route path="/howitworks"component={Howitworks} ></Route> 
                                  <Route path="/apply"component={Apply} ></Route>
