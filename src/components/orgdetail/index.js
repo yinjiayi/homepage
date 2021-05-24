@@ -153,8 +153,8 @@ class OrgDetail extends React.Component{
         const projectlist = showorgdata.project_list
         const projectlistlen = projectlist.length
         return(         
-            <div className="OrgDetail">   
-                <div className="OrgDetailNavLink content1200">   
+            <div className="OrgDetail content1200">   
+                <div className="OrgDetailNavLink ">   
                     <span className="orgListNavBarItem orgClick" onClick={()=>{gohash("/org/orglist")}}>社区列表</span>
                     <span className="orgListNavBarItem orgGrey"> &gt; 社区详情</span>              
                 </div>
