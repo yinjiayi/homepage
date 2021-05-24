@@ -15,7 +15,7 @@ import './index.less';
 import { connect } from 'react-redux';
 import {withRouter} from 'react-router-dom';
 import projectlist from '../../data/projectlist.json';
-import {getSplit,getSupportLanguage,gohash} from "../../util/url.js";
+import {getSplit,getSupportLanguage,goenroll,gohash} from "../../util/url.js";
 import data from '../../data/orglist2021.json';
 class ProjectDetail extends React.Component{
     constructor(props){
@@ -235,9 +235,15 @@ class ProjectDetail extends React.Component{
                             }
 
                         </div>
+                        <div 
+                            className="OrgTipButton" 
+                            onClick={()=>{goenroll(prodetail.proid,this.props.chiFlag)}}>
+                                {showdata.operationbutton[1]}
+                        </div>
 
                     </div>
-
+                    
+                    
                 </div>
                
 

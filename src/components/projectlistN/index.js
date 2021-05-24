@@ -18,7 +18,7 @@ import proData from '../../data/proList.json';
 import projectlist from '../../data/projectlist.json';
 import {  Pagination } from 'antd';
 import { getSelectM,getSelectLang,getSelectDToChi,getLangDToChi,getTagSelect} from './util.js'
-import {getSplit,gohash,getSupportLanguage,gourl} from "../../util/url.js";
+import {getSplit,gohash,getSupportLanguage,gourl,goenroll} from "../../util/url.js";
 import TipChi from "./../../img/tip/cn.png";
 
 
@@ -265,19 +265,12 @@ class ProjectlistN extends React.Component{
         }
     }
 
-    goEnroll(proid){
-        const langflag = this.props.chiFlag === 'en'?2:1;
-    
-        gourl("https://portal.summer-ospp.ac.cn/summer/system/user/profile/enroll/"+proid+"/"+langflag)
-    }
-
 
 
     
 
 
     render(){
-        const taglist = projectlist.taglist
         let showdata = projectlist[this.props.chiFlag]
         let {projectlistdata,degreeselect,langSelect,datall,tagSelect} = this.state
         let datalllength = datall.length
@@ -408,7 +401,7 @@ class ProjectlistN extends React.Component{
                                                 onClick={()=>{this.setIndexPopOver(index)}}
                                                 className={["PLOperationButton","proapply",this.state.indexname === index?"show":""].join(" ")}>
                                                     
-                                                    <span onClick={()=>{this.goEnroll(item.proid)}}>{showdata.operationbutton[1]}</span>
+                                                    <span onClick={()=>{goenroll(item.proid,this.props.chiFlag)}}>{showdata.operationbutton[1]}</span>
                                                     {/* <span className="PLPopOver">
                                                         {showdata.popover[0]}<br/> 
                                                         {showdata.popover[1]}

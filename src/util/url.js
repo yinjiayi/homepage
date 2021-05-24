@@ -16,6 +16,11 @@ var gourl = (url)=>{
     window.open(url)
 }
 
+var goenroll = (proid,chien)=>{
+    const langflag = chien === 'en'?2:1;
+    gourl("https://portal.summer-ospp.ac.cn/summer/system/user/profile/enroll/"+proid+"/"+langflag)
+}
+
 var gohash = (hash)=>{
     let lang = ""
     const langflag = window.location.hash.split("?")
@@ -91,5 +96,6 @@ export {
     gohash,
     titleChange,
     getSplit,
-    getSupportLanguage
+    getSupportLanguage,
+    goenroll
 }
