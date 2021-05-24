@@ -10,7 +10,7 @@
  * See the Mulan PSL v2 for more details.
  */
 
- import React from 'react';
+ import React , { Suspense }from 'react';
  import {HashRouter as Router, Route, Switch} from 'react-router-dom';
  import App from './App';
  import Wrapper from './wrapper.js';
@@ -20,12 +20,15 @@
  import Apply from './pages/apply/index.js';
  import Org from './pages/org/index.js';
  import OrgDetail from './components/orgdetail/index.js';
-
 import Liveshow from './pages/liveshow/index.js';
 import ProjectDetail from './components/projectDetail/index.js';
-import {asyncComponent} from './components/asynccomp/index.js'
-let Orglist = asyncComponent(() => import('./components/orglist/index.js'));
-let ProjectlistN = asyncComponent(() => import('./components/projectlistN/index.js')); 
+import {asyncComponent} from './components/asynccomp/index.js';
+import SpinLoading  from './components/spin/index.js';
+const Orglist = React.lazy(() => import('./components/orglist/index.js'));
+const ProjectlistN = React.lazy(() => import('./components/projectlistN/index.js'));
+
+
+
 
 
 
@@ -40,34 +43,35 @@ let ProjectlistN = asyncComponent(() => import('./components/projectlistN/index.
          return(
              <Router >
                  <App>
-                     
+                 
                      <Route path="/" render={()=>
                          <Wrapper>
                             
-                             <Switch >
-                                 
+                             <Switch >                           
                                  <Route path="/homepage"component={HomePage} ></Route> 
                                  <Route path="/help"component={Help} ></Route>
                                  <Route path="/org" component={Org}>
+                                 <Suspense maxDuration={500}  fallback={<SpinLoading/>}>
                                      <Org>                                  
-                                         <Switch>
-                                             {/* <Route path = {["/org", "/org/orglist"]}  component={this.state.Orglistflag?Orglist:""} exact ></Route>                      
-                                             <Route path="/org/projectlist" component={this.state.ProjectlistNflag? ProjectlistN:""} exact></Route>  */}
+                                         <Switch>                             
                                              <Route path = {["/org", "/org/orglist", "/orglist"]}  component={Orglist} exact ></Route>                      
                                              <Route path="/org/projectlist" component={ProjectlistN} exact></Route> 
+                                            
                                              <Route path="/org/orgdetail/:orgname" component={OrgDetail} ></Route>  
                                              <Route path="/org/prodetail/:projectid" component={ProjectDetail} ></Route>     
                                          </Switch>                                     
-                                     </Org>   
+                                     </Org>
+                                     </Suspense>   
                                  </Route>
                                  <Route path="/howitworks"component={Howitworks} ></Route> 
                                  <Route path="/apply"component={Apply} ></Route>
                                  <Route path="/liveshow"component={Liveshow} ></Route>                                                                                                                      
                                  <Route path="/" component={HomePage} /> 
                              </Switch>
-                           
+                            
                          </Wrapper>
                      }/>
+                    
                  </App>
              </Router>
          );
