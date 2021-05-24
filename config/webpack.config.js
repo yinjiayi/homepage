@@ -416,6 +416,7 @@ module.exports = function (webpackEnv) {
                       },
                     },
                   ],
+                  ["syntax-dynamic-import"],
                   isEnvDevelopment &&
                     shouldUseReactRefresh &&
                     require.resolve('react-refresh/babel'),
