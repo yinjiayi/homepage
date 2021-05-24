@@ -57,9 +57,10 @@ const ProjectlistN = React.lazy(() => import('./components/projectlistN/index.js
                                             <Suspense maxDuration={500}  fallback={<SpinLoading/>}>                          
                                              <Route path = {["/org", "/org/orglist", "/orglist"]}  component={Orglist} exact ></Route>                      
                                              <Route path="/org/projectlist" component={ProjectlistN} exact></Route> 
-                                             </Suspense> 
+                                             
                                              <Route path="/org/orgdetail/:orgname" component={OrgDetail} ></Route>  
-                                             <Route path="/org/prodetail/:projectid" component={ProjectDetail} ></Route>     
+                                             <Route path="/org/prodetail/:projectid" component={ProjectDetail} ></Route>   
+                                             </Suspense>  
                                          </Switch>                                     
                                      </Org>
                                        
