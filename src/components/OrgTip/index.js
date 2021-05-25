@@ -13,7 +13,7 @@
 import React from 'react'
 import './index.less';
 import { connect } from 'react-redux';
-import {getSplit,gohash} from "../../util/url.js";
+import {getSplit,gohash, gourl} from "../../util/url.js";
 
 
 class OrgTip extends React.Component{
@@ -105,6 +105,15 @@ class OrgTip extends React.Component{
                             })
                         }
                     </div>
+                    {
+                        this.props.item.video?
+                        <div className="OrgTipArr OrgTipVideo">
+                            <span>{this.props.showdata.video}</span>
+                            <span className="OrgTipVideoButton" onClick={()=>{gourl(this.props.item.video)}}></span>
+                        </div>:""
+
+                    }
+                    
                     <div className="OrgTipButton" 
                     onClick={()=>{this.goOrgDetail()}}
                     >{this.props.showdata.button}</div>

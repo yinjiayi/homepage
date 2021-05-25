@@ -13,7 +13,7 @@
 import React from 'react'
 import './index.less';
 import { connect } from 'react-redux'
-import {getSplit,getSupportLanguage,gohash} from "../../util/url.js";
+import {getSplit,getSupportLanguage,gohash,gourl} from "../../util/url.js";
 class ProjectModal extends React.Component{
     constructor(props){
        super(props)
@@ -47,7 +47,7 @@ class ProjectModal extends React.Component{
 
     goHash(){
         this.props.setProDetail(this.props.item)
-        gohash("/org/prodetail/"+this.props.item.label)
+        gourl("/#/org/prodetail/"+this.props.item.label)
     }
 
   
