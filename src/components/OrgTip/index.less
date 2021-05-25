@@ -50,6 +50,19 @@
   position: relative;
 }
 
+.OrgTipVideoButton {
+  background-image: url(./../../img/tip/tri.png);
+  display: inline-block;
+  width: 72px;
+  height: 32px;
+  background-color: #b3d9ff;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
 .OrgTipItemContent {
   position: relative;
   background-color: #fff;
@@ -187,20 +200,16 @@
   background: #006bc5;
 }
 
-// @media screen and (min-width: 750px) and (max-width: 1200px) {
-//   .OrgTipItemContent {
-//     width: 97vw;
-//   }
-//   .Org .OrgTipItemContent {
-//     width: 91vw;
-//   }
-// }
+.OrgTipVideo {
+  margin-top: 40px;
+  display: flex;
+}
+
+.OrgTipVideoButton:hover {
+  background-color: #9bc4ee;
+}
 
 @media screen and (min-width: 100px) and (max-width: 750px) {
-  // .Org .OrgTipItemContent {
-  //   margin-top: 20px !important;
-  //   width: 92vw;
-  // }
   .OrgListItemTip .triangle {
     border: 20px solid transparent;
     border-bottom-color: #fff;
