@@ -12794,7 +12794,7 @@
                 "remark": "",
                 "difficulty": "中",
                 "mentor": "Rick",
-                "contact": "<rickzhao@yunify.cn>",
+                "contact": "<rickzhao@yunify.com>",
                 "uniont": "陈少文<mail@chenshaowen.com>",
                 "student_count": 0,
                 "description": "Jenkins是一个具有丰富的插件生态的开源自动化服务。基于 Java 实现，并提供了超过 1,700 插件，几乎可以实现各种方面的自动化。Jenkins 是 KubeSphere DevOps 组件的核心引擎。Pipeline controller 负责把流水线的 CRD 资源转换并同步为 Jenkins 的任务。  你可以从 pkg/simple/client/devops 找到 Jenkins 客户端部分的代码||Jenkins is the leading open-source automation server. Built with Java, it provides over 1,700 plugins to support automating virtually anything. Jenkins is the engine of KubeSphere DevOps component. The Pipeline controller is responsible for converting the CRD of pipelines to Jenkins jobs.  You can find the code base of Jenkins client from pkg/simple/client/devops.    ",
