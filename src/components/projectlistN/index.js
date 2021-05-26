@@ -368,7 +368,7 @@ class ProjectlistN extends React.Component{
                             <span className="ProjectListLCLang">{showdata.language}</span>
                             <span className="ProjectListLCDegree">{showdata.proDegree}</span>
                             <span className="ProjectListLCOperation">
-                                <div className={["ProjectTip",this.state.tipflag?"":"displaynone"].join(" ")}>
+                                <div className={["ProjectTip",this.state.tipflag && projectlistdata.length > 0?"":"displaynone"].join(" ")}>
                                     <div className="ProjectTipWeb" onClick={()=>this.goApply()}></div>
                                     <div className="ProjectTipWebClose" onClick={()=>{
                                         this.setTipNone()
