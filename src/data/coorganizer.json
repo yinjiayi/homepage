@@ -34,6 +34,11 @@
             "name":"CSDN",
             "img":"csdn.png",
             "url":"https://www.csdn.net/"
+        },
+        {
+            "name":"Gitee",
+            "img":"gitee.png",
+            "url":"https://gitee.com"
         }
     ],
     "host":[
