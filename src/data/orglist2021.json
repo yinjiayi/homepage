@@ -5534,7 +5534,7 @@
         "img": "simplexx.jpg",
         "title": "Simple-XX||Simple-XX",
         "project_url": "https://github.com/Simple-XX/Summer202X/tree/master/2021",
-        "url": "https://github.com/Simple",
+        "url": "https://github.com/Simple-XX",
         "description": "帮助初学者实现复杂系统。||To help beginners implement complex systems.",
         "full_des": "在学习操作系统、编译原理时觉得难学难懂？你需要自己动手实现它！我们社区使用基于 Git 分支的增量式方案，向初学者提供简单的代码实现，帮助你快速成长。社区贡献者由在校学生组成，欢迎加入我们。||Do you find it difficult to understand when learning operating systems and compilingprinciples? You need to do it yourself! Our community uses an incremental scheme based onGit branch to provide simple code implementation for beginners and help you acquiremaster quickly. Community contributors are made up of on-campus students. Welcome tojoin us.",
         "tech_tag": [
