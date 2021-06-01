@@ -108,7 +108,13 @@ class OrgTip extends React.Component{
                     {
                         this.props.item.video?
                         <div className="OrgTipArr OrgTipVideo">
-                            <span>{this.props.showdata.video}</span>
+                           {
+                                this.props.item.userId !== 132? <span>{this.props.showdata.video}</span>:
+                                this.props.chiFlag === "chi"?<span>openEuler项目任务视频讲解合集 </span>: <span>openEuler project introduction video list  </span>
+                               
+                           }
+                            &nbsp;
+                           
                             <span className="OrgTipVideoButton" onClick={()=>{gourl(this.props.item.video)}}></span>
                         </div>:""
 
