@@ -23,6 +23,7 @@ class Header extends React.Component{
             data,
             // pageflag:"index",
             moblieListFlag:false,
+            
        }
     }
 
