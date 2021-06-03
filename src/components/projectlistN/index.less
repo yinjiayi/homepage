@@ -102,22 +102,9 @@
     .ProjectListLCName {
       text-align: left;
     }
-    .ProjectListLCCommunity {
+
+    .ProjectListLCNumber {
       text-align: left;
-      width: 220px;
-    }
-
-    .ProjectListLCDegree {
-      width: 170px;
-    }
-
-    .ProjectListLCOperation {
-      width: 168px;
-      text-align: left;
-    }
-
-    .ProjectListLCLang {
-      text-align: right;
     }
   }
 
@@ -265,10 +252,10 @@
 }
 
 .ProjectListLCLine {
+  height: 56px;
   line-height: 36px;
   width: 100%;
   padding-left: 15px;
-  height: 36px;
   display: flex;
   align-items: center;
 }
@@ -288,9 +275,9 @@
 }
 
 .ProjectListLCName {
-  width: 450px;
+  width: 400px;
+  color: #396cc8;
   display: inline-block;
-  color: #1d8eff;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -304,11 +291,15 @@
   display: inline-block;
   text-align: center;
 }
+.ProjectListLCNumber {
+  width: 80px;
+  text-align: center;
+}
 
 .ProjectListLCCommunity {
-  width: 250px;
+  width: 200px;
   display: inline-block;
-  color: #000000;
+  color: rgba(0, 0, 0, 0.85);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -318,9 +309,9 @@
 }
 
 .ProjectListLCDegree {
-  width: 100px;
+  width: 80px;
   display: inline-block;
-  color: #000000;
+  color: rgba(0, 0, 0, 0.85);
   text-align: center;
 }
 
@@ -337,17 +328,18 @@
 }
 
 .ProjectListLCLine.Header {
-  height: 40px;
+  height: 60px;
+  background: #edf0f8;
   line-height: 40px;
-  background-color: #7485a7;
+
   span {
-    color: #fff !important;
+    color: #000 !important;
     cursor: default;
   }
 
   .ProjectListLCName,
   .ProjectListLCCommunity {
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -397,46 +389,17 @@
 .ProjectListBanner {
   margin: 50px 0;
 }
-.ProjectListLCID {
-  width: 140px;
-}
-.ProjectListLCLine.Header {
-  height: 60px;
-  background: #edf0f8;
-}
-.ProjectListLCLine.Header span {
-  color: #000 !important;
-}
-.ProjectListLCLine {
-  height: 56px;
-  padding-left: 60px;
-  width: unset;
-}
+
 .ProjectListLCLine.Item:nth-child(2n) {
   background: #ffffff;
 }
-.ProjectListLCLine.Header .ProjectListLCName,
-.ProjectListLCLine.Header .ProjectListLCCommunity {
-  text-align: left;
-}
-.ProjectListLCOperation {
-  text-align: left;
-}
-.ProjectListLCName {
-  width: 412px;
-  color: #396cc8;
-}
+
 *,
 *::before,
 *::after {
   box-sizing: unset;
 }
-.ProjectListLCCommunity {
-  color: rgba(0, 0, 0, 0.85);
-}
-.ProjectListLCDegree {
-  color: rgba(0, 0, 0, 0.85);
-}
+
 .PLOperationButton {
   width: 84px;
   height: 36px;
