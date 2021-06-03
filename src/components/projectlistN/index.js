@@ -19,7 +19,7 @@ import projectlist from '../../data/projectlist.json';
 import {  Pagination } from 'antd';
 import { getSelectM,getSelectLang,getSelectDToChi,getLangDToChi,getTagSelect} from './util.js'
 import {getSplit,gohash,getSupportLanguage,gourl,goenroll} from "../../util/url.js";
-import TipChi from "./../../img/tip/cn.png";
+import studata from '../../data/stunum.json'
 
 
 const { Search } = Input;
@@ -367,6 +367,7 @@ class ProjectlistN extends React.Component{
                             <span className="ProjectListLCCommunity">{showdata.projectCommunity}</span>
                             <span className="ProjectListLCLang">{showdata.language}</span>
                             <span className="ProjectListLCDegree">{showdata.proDegree}</span>
+                            <span className="ProjectListLCNumber">{showdata.prostunum}</span>
                             <span className="ProjectListLCOperation">
                                 <div className={["ProjectTip",this.state.tipflag && projectlistdata.length > 0?"":"displaynone"].join(" ")}>
                                     <div className="ProjectTipWeb" onClick={()=>this.goApply()}></div>
@@ -394,6 +395,7 @@ class ProjectlistN extends React.Component{
                                                 {getSplit( item.orgname,this.props.chiFlag)}</span>
                                             <span className="ProjectListLCLang">{getSupportLanguage(item.spl)}</span>
                                             <span className="ProjectListLCDegree">{this.getDegreeBy(item.difficulty)}</span>
+                                            <span className="ProjectListLCNumber">{studata[item.proid]||0}</span>
                                             <span className="ProjectListLCOperation Item">
                                                 
                                                 <span className="PLOperationButton prodetail" onClick={()=>{this.gohashlink(item.anchor,item.label)}}>{showdata.operationbutton[0]}</span>                                           

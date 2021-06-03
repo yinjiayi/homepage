@@ -14,6 +14,7 @@ import React from 'react'
 import './index.less';
 import { connect } from 'react-redux'
 import {getSplit,getSupportLanguage,gohash,gourl} from "../../util/url.js";
+import studata from '../../data/stunum.json'
 class ProjectModal extends React.Component{
     constructor(props){
        super(props)
@@ -79,6 +80,7 @@ class ProjectModal extends React.Component{
                         <div className="orgProjectBottomLeft">
                             <div>{showdata.proDi}{this.getDegreeBy(item.difficulty)}</div>
                             <div>{showdata.lang}{getSupportLanguage(item.spl)}</div>
+                            <div>{showdata.orgstunum}{studata[item.proid.toString()]||0}</div>
                             {/* 功能暂未上线 */}
                             {/* <div>{showdata.proSelectStu}{item.student_name}</div> */}
                             {/* <div className="orgProjectName">{item.orgtitle}</div> */}
