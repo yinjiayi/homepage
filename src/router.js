@@ -66,7 +66,6 @@ const ProjectlistN = React.lazy(() => import('./components/projectlistN/index.js
                                              </Suspense>  
                                          </Switch>                                     
                                      </Org>
-                                       
                                  </Route>
                                  <Route path="/howitworks"component={Howitworks} ></Route> 
                                  <Route path="/apply"component={Apply} ></Route>
