@@ -30,21 +30,15 @@ class Wrapper extends React.Component{
     }
 
     getStunum(){
-        fetch('https://portal.summer-ospp.ac.cn/summer/rest/getToken?username=380024560@qq.com&password=Aa123456').then(res=>res.json()).then(rsp=>{
-            fetch('https://portal.summer-ospp.ac.cn/summer/rest/applyforproject?activityId=1&pageSize=1000',{
-                method:'GET',
-                headers:{
-                    'token':rsp.data.token
-                }
-            }).then(res=>res.json()).then(rsp1=>{
-                console.log(rsp1)
-                let pro_result = rsp1 ? rsp1.data.result : []
-                let stunum = {}
-                pro_result.forEach(ele => {
-                    stunum[ele.orgProgramId] = ele.applyStudentList.length
-                });
-                this.props.setStuData(stunum)
-            })
+        fetch('https://portal.summer-ospp.ac.cn/summer/rest2/applyforproject?activityId=1&pageSize=1000',{
+            method:'GET'
+        }).then(res=>res.json()).then(rsp1=>{
+            let pro_result = rsp1 ? rsp1.data.result : []
+            let stunum = {}
+            pro_result.forEach(ele => {
+                stunum[ele.orgProgramId] = ele.applyStudentList.length
+            });
+            this.props.setStuData(stunum)
         })
         .catch(err => console.log(err))
     }
