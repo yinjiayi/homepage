@@ -19,7 +19,7 @@ import projectlist from '../../data/projectlist.json';
 import {  Pagination } from 'antd';
 import { getSelectM,getSelectLang,getSelectDToChi,getLangDToChi,getTagSelect} from './util.js'
 import {getSplit,gohash,getSupportLanguage,gourl,goenroll} from "../../util/url.js";
-import studata from '../../data/stunum.json'
+// import studata from '../../data/stunum.json'
 
 
 const { Search } = Input;
@@ -274,6 +274,7 @@ class ProjectlistN extends React.Component{
         let showdata = projectlist[this.props.chiFlag]
         let {projectlistdata,degreeselect,langSelect,datall,tagSelect} = this.state
         let datalllength = datall.length
+        let {studata} = this.props
         return(         
             <div className="Projectlist">
                <div className="ProjectListBanner ">
@@ -458,7 +459,8 @@ class ProjectlistN extends React.Component{
 const mapStateToProps = (state)=>{
 
     return {
-       chiFlag:state.chiFlag
+       chiFlag:state.chiFlag,
+       studata:state.studata
    }
  }
 
