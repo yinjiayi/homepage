@@ -16,6 +16,7 @@ import { connect } from 'react-redux';
 import data from "./../../data/homepage.json";
 import {gohash, gourl} from "./../../util/url.js";
 import logocoopdata from "./../../data/coorganizer.json"
+
 class HomePage extends React.Component{
     constructor(props){
        super(props)
@@ -23,6 +24,7 @@ class HomePage extends React.Component{
             data
        }
     }
+
     goLogoLink(url){
         if(url){
             gourl(url)

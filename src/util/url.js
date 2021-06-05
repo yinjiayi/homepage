@@ -10,8 +10,6 @@
  * See the Mulan PSL v2 for more details.
  */
 
-
-
 var gourl = (url)=>{
     window.open(url)
 }
@@ -32,7 +30,6 @@ var gohash = (hash)=>{
     });
     window.location.hash = hash + lang
 }
-
 
 
 const linkDataMap = {
@@ -87,9 +84,6 @@ var getSupportLanguage = function(num){
         2:"English"
     }[num]||"中文"
 }
-
-
-
 
 export {
     gourl,
