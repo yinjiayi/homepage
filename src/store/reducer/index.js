@@ -1,9 +1,12 @@
+import studatas from '../../data/stunum.json'
+
 const initState = {
     chiFlag:"chi", // chi|en
     orgdetail:{},  // 显示orgDetail数据
     prodetail:{},   // 显示ProjectDetail数据
     orgTabFlag:"orglist",  // orglist|projectlist
     pageflag:"index",
+    studata:studatas      //定义接口获取的学生人数
 }
 
 export const reducer = (state = initState,action)=>{
@@ -45,6 +48,11 @@ export const reducer = (state = initState,action)=>{
                 ...state,
                 pageflag:action.payload
             }
+        case "setStuData":
+                return{
+                    ...state,
+                    studata:action.payload
+                }
         default:
             return state
 
