@@ -14,7 +14,7 @@ import React from 'react'
 import './index.less';
 import { connect } from 'react-redux'
 import {getSplit,getSupportLanguage,gohash,gourl} from "../../util/url.js";
-import studata from '../../data/stunum.json'
+// import studata from '../../data/stunum.json'
 class ProjectModal extends React.Component{
     constructor(props){
        super(props)
@@ -59,7 +59,7 @@ class ProjectModal extends React.Component{
     render(){
         // let showdata = this.props.showdata
         // let item = this.props.item
-        const {showdata,item,prourl} = this.props
+        const {showdata,item,prourl,studata} = this.props
         return(         
             <div id={item.label} className={["projectListItem",this.getDegree(item.difficulty)].join(" ")} >
                 <div className="projectListItemLeft">
@@ -125,7 +125,8 @@ class ProjectModal extends React.Component{
 const mapStateToProps = (state)=>{
 
     return {
-       chiFlag:state.chiFlag
+       chiFlag:state.chiFlag,
+       studata:state.studata
    }
  }
 
