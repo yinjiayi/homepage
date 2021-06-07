@@ -6,11 +6,6 @@
             "url":"https://mp.weixin.qq.com/s/PYEb1bAKMBUyPIaT6DEdNA"
         },
         {
-            "name":"oschina",
-            "img":"oschina.png",
-            "url":"https://www.oschina.net/"
-        },
-        {
             "name":"Linux 人",
             "img":"linuxren.png",
             "url":"http://www.linuxren.org.cn/"
@@ -67,6 +62,11 @@
             "name":"思否",
             "img":"segmentfault.png",
             "url":"https://segmentfault.com/"
+        },
+        {
+            "name":"oschina",
+            "img":"oschina.png",
+            "url":"https://www.oschina.net/"
         }
     ],
     
