@@ -54,7 +54,7 @@ const ProjectlistN = React.lazy(() => import('./components/projectlistN/index.js
                                  <Route path="/homepage"component={HomePage} ></Route> 
                                  <Route path="/help"component={Help} ></Route>
                                  <Route path="/org" component={Org}>
-                                 
+                    
                                      <Org>                                  
                                          <Switch>   
                                             <Suspense maxDuration={500}  fallback={<SpinLoading/>}>                          
