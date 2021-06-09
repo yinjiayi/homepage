@@ -1,9 +1,8 @@
-name: build-test
+name: schedule_update
 
 on:
-  push:
   schedule:
-    - cron: '* * * * *'
+    - cron: '*/5 * * * *'
 
 jobs:
   build:
@@ -11,19 +10,19 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        persist-credentials: true # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
-        fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
+        persist-credentials: true
+        fetch-depth: 0
     - name: Create local changes
       run: |
         echo `date` >> a.time
     - name: Commit files
       run: |
         git config --local user.email "jiayi@iscas.ac.cn"
-        git config --local user.name "github-actions[bot]"
+        git config --local user.name "Github_Action[bot]"
         git add a.time
-        git commit -m "Add changes"
+        git commit -m "Update Files"
     - name: Push changes
-      uses: ad-m/github-push-action@master
+      uses: summer-ospp/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: ${{ github.ref }}
