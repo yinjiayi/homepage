@@ -1,28 +1,28 @@
 name: build-test
 
-on: [pull_request]
+on:
+  schedule:
+    - cron: '* * * * *'
 
 jobs:
-  release:
-    name: Test Homepage
+  build:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-
-    - name: Environment 
-      uses: actions/setup-node@v1
-      with:
-        node-version: 12 
-
-    - name: Test
+    - name: checkout actions
+    - uses: actions/checkout@v1
+    
+    - name: Update paper list
       run: |
-        npm install
-        CI=false npm run build
-
-    - name: Artifacts
-      uses: actions/upload-artifact@v2
+        echo `date` >> a.time
+		
+    - name: commit
+      run: |
+        git config --global user.email "jiayi@iscas.ac.cn"
+        git config --global user.name "Jiayi Yin"
+        git add .
+        git commit -m "update time" -a
+		
+    - name: Push changes
+      uses: ad-m/github-push-action@master
       with:
-        name: pull-request-artifact
-        path: |
-          build
+        github_token: ${{ secrets.GITHUB_TOKEN }}
