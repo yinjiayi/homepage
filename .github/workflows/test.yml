@@ -14,14 +14,14 @@ jobs:
     - name: Update paper list
       run: |
         echo `date` >> a.time
-		
+
     - name: commit
       run: |
         git config --global user.email "jiayi@iscas.ac.cn"
         git config --global user.name "Jiayi Yin"
         git add .
         git commit -m "update time" -a
-		
+
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
