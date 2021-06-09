@@ -1,8 +1,9 @@
 name: schedule_update
 
 on:
+  push:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '*/30 * * * *'
 
 jobs:
   build:
