@@ -16,6 +16,8 @@ jobs:
     - name: Create local changes
       run: |
         ## 修改内容，调用脚本修改文件。如有 token 或账号密码，加入 secrets 里面。
+        ## 举例 echo `date`
+        echo `date` >> a.time
     - name: Commit files
       run: |
         git config --local user.email "jiayi@iscas.ac.cn"
